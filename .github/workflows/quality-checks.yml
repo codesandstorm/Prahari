@@ -1,0 +1,55 @@
+﻿# PRAHARI Quality Checks
+# Runs on every push and pull request.
+#
+# CI validates documentation structure and runs non-integration tests.
+# Integration tests (marked with @pytest.mark.integration) are excluded
+# because they require raw source PDFs that are not committed to Git.
+#
+# Local full-data validation differs from CI:
+#   - CI: python -m pytest -m "not integration"
+#   - Local (with PDFs): python -m pytest  (runs all tests)
+#   - Docs validation: python scripts/validate_docs.py  (both CI and local)
+
+name: Quality Checks
+
+on:
+  push:
+    branches: [ main, dev, "gate-*" ]
+  pull_request:
+    branches: [ main, dev ]
+
+jobs:
+  validate-docs:
+    name: Documentation Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate documentation structure
+        run: python scripts/validate_docs.py
+
+  run-tests:
+    name: Unit and Integration-Safe Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests (excluding integration tests that need raw PDFs)
+        run: python -m pytest -m "not integration" -v
+        # Integration tests require raw PDF files in data/raw/ which are not
+        # committed to Git. Run locally with: python -m pytest (no marker filter)
