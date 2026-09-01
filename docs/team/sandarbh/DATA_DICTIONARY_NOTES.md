@@ -1,8 +1,22 @@
-# Data Dictionary Notes
+﻿# Data Dictionary Notes
+
+**Owner:** Sandarbh
+**Area:** Data Engineering / Data Dictionary
+**Document Type:** RESEARCH
+**Status:** RESEARCH IN PROGRESS
+**Last Updated:** 2026-09-01
+**Depends On:** DATA_CONTRACT.md
+**Used By:** Backend (Jashan), ML (Pavitra), entire team
+**Canonical:** YES
+
+> Previously: `docs/DATA_DICTIONARY_NOTES.md`  
+> Moved to: `docs/team/sandarbh/DATA_DICTIONARY_NOTES.md` — 2026-09-01
+
+---
 
 **Document Purpose:** Working notes on field definitions. This feeds into
 `data/metadata/data_dictionary.csv`.  
-**Status:** DRAFT — populated from project brief. All fields marked appropriately.
+**Status:** DRAFT â€” populated from project brief. All fields marked appropriately.
 
 ---
 
@@ -28,10 +42,10 @@
 | `agency` | Implementing agency | ALL | PLAUSIBLE | May be labeled differently across eras |
 | `ministry` | Responsible ministry / department | OCMS+ | UNKNOWN | May appear as metadata or header, not project-row field |
 | `sector` | Infrastructure sector | OCMS+ | UNKNOWN | May appear as section header only |
-| `state` | State of implementation | ALL | PLAUSIBLE | — |
+| `state` | State of implementation | ALL | PLAUSIBLE | â€” |
 | `date_of_approval` | Date project was formally approved | ALL | PLAUSIBLE | Format varies; "DOA" in legacy era |
 | `start_date` | Project start date | PAIMANA V1+ | UNKNOWN | May not appear in older reports |
-| `original_cost` | Original approved cost (₹ crore) | ALL | PLAUSIBLE | "Original Cost" in modern; may be labeled differently in OCMS |
+| `original_cost` | Original approved cost (â‚¹ crore) | ALL | PLAUSIBLE | "Original Cost" in modern; may be labeled differently in OCMS |
 | `original_doc` | Original / target date of completion | ALL | PLAUSIBLE | "DOC" in legacy era |
 
 ---
@@ -40,8 +54,8 @@
 
 | Field | Meaning | Source Schema | Status | Notes |
 |---|---|---|---|---|
-| `revised_cost` | Revised / anticipated cost as of reporting month (₹ crore) | ALL | PLAUSIBLE | "Anticipated Cost" in older reports |
-| `cumulative_expenditure` | Cumulative expenditure as of reporting month (₹ crore) | ALL | PLAUSIBLE | — |
+| `revised_cost` | Revised / anticipated cost as of reporting month (â‚¹ crore) | ALL | PLAUSIBLE | "Anticipated Cost" in older reports |
+| `cumulative_expenditure` | Cumulative expenditure as of reporting month (â‚¹ crore) | ALL | PLAUSIBLE | â€” |
 | `physical_progress_pct` | Physical completion percentage as of reporting month | PAIMANA V1+ | UNKNOWN | May not appear in legacy/OCMS era |
 | `revised_doc` | Revised anticipated date of completion as of reporting month | ALL | PLAUSIBLE | "Anticipated DOC" in older reports |
 | `project_status_raw` | Status string as extracted (active / delayed / completed etc.) | LEGACY+ | PLAUSIBLE | Not normalised at extraction; raw string preserved |
@@ -53,7 +67,7 @@
 | Field | Meaning | Source Schema | Status | Notes |
 |---|---|---|---|---|
 | `actual_completion_date` | Date project actually completed | PAIMANA V2 | PLAUSIBLE | From Completed Projects table |
-| `reported_cumulative_expenditure` | Cumulative expenditure at time of completion reporting (₹ crore) | PAIMANA V2 | PLAUSIBLE | May NOT equal final cost — see official caveat in brief |
+| `reported_cumulative_expenditure` | Cumulative expenditure at time of completion reporting (â‚¹ crore) | PAIMANA V2 | PLAUSIBLE | May NOT equal final cost â€” see official caveat in brief |
 
 ---
 
@@ -73,7 +87,7 @@
 
 | Field | Reason for Rejection |
 |---|---|
-| *(none yet)* | — |
+| *(none yet)* | â€” |
 
 ---
 
@@ -86,10 +100,11 @@
 |---|---|---|---|
 | `original_cost` | INPUT FEATURE | LOW | Available at project start |
 | `date_of_approval` | INPUT FEATURE | LOW | Available at project start |
-| `start_date` | INPUT FEATURE | LOW | — |
-| `original_doc` | INPUT FEATURE | LOW | — |
+| `start_date` | INPUT FEATURE | LOW | â€” |
+| `original_doc` | INPUT FEATURE | LOW | â€” |
 | `revised_cost` | LABEL COMPONENT | HIGH (if future value used) | Past values = features; future = label |
 | `revised_doc` | LABEL COMPONENT | HIGH (if future value used) | As above |
 | `actual_completion_date` | LABEL ONLY | CRITICAL | Never use as feature |
 | `physical_progress_pct` | INPUT FEATURE (past only) | MEDIUM | Historical trend valid; future value = leak |
 | `cumulative_expenditure` | INPUT FEATURE (past only) | MEDIUM | As above |
+

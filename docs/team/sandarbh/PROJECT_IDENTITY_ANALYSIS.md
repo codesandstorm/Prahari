@@ -1,7 +1,21 @@
-# Project Identity Analysis
+﻿# Project Identity Analysis
+
+**Owner:** Sandarbh
+**Area:** Data Engineering / Identity Research
+**Document Type:** RESEARCH
+**Status:** RESEARCH IN PROGRESS
+**Last Updated:** 2026-09-01
+**Depends On:** SCHEMA_EVOLUTION.md, DATA_CONTRACT.md
+**Used By:** Data Engineering, ML pipeline
+**Canonical:** YES
+
+> Previously: `docs/PROJECT_IDENTITY_ANALYSIS.md`  
+> Moved to: `docs/team/sandarbh/PROJECT_IDENTITY_ANALYSIS.md` — 2026-09-01
+
+---
 
 **Document Purpose:** Track the investigation of project identity across reporting eras.  
-**Status:** NOT STARTED — all claims below are research questions, not findings.
+**Status:** NOT STARTED â€” all claims below are research questions, not findings.
 
 ---
 
@@ -90,24 +104,24 @@ Each question below must be answered through evidence, not assumption.
 
 ## Identity Resolution Rules (Draft)
 
-> These rules will be finalised after Q1–Q10 are answered.
+> These rules will be finalised after Q1â€“Q10 are answered.
 
-**Rule 1 — Preferred identity:** Use `Project Code` as primary identifier in PAIMANA V2 era.
+**Rule 1 â€” Preferred identity:** Use `Project Code` as primary identifier in PAIMANA V2 era.
 
-**Rule 2 — Cross-era bridge:** Use `Legacy OCMS Code` (where populated) to link PAIMANA records
+**Rule 2 â€” Cross-era bridge:** Use `Legacy OCMS Code` (where populated) to link PAIMANA records
 to OCMS-era records.
 
-**Rule 3 — Unresolvable records:** If identity cannot be established with confidence,
+**Rule 3 â€” Unresolvable records:** If identity cannot be established with confidence,
 mark the project as `identity_status = UNRESOLVED`. Do NOT silently merge or infer.
 
-**Rule 4 — No uncontrolled fuzzy matching:** Name-based fuzzy matching must only be used
+**Rule 4 â€” No uncontrolled fuzzy matching:** Name-based fuzzy matching must only be used
 as a research tool to surface candidates, never as automatic record linkage.
 
 ---
 
 ## Outputs to be Created
 
-- `data/validation/identity_audit.csv` — Per-project identity resolution status
+- `data/validation/identity_audit.csv` â€” Per-project identity resolution status
 - Updated `project_master.csv` with `identity_confidence` column
 
 ---
@@ -118,3 +132,4 @@ as a research tool to surface candidates, never as automatic record linkage.
 - The same project may be listed under different agencies if agency changes.
 - Completed projects may reappear in the completed-projects table of a future report.
 - Projects may be merged, split, or administratively cancelled and re-initiated.
+

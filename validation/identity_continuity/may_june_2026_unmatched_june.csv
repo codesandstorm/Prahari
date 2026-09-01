@@ -1,0 +1,58 @@
+observation_id,project_code_raw,project_name_raw,agency_raw,state_raw,source_id,raw_row_locator,evidence_class
+OBS-202606-01800,108841,"Amended BharatNet Program - KTK, GOA, PY",Department of Telecommunications,PAN India,SRC-2026-06,"pdf_page_index=157,table_index=0,row_index=13",UNMATCHED_JUNE
+OBS-202606-01806,222253,Amended BharatNet Program - UP (East),Department of Telecommunications,Uttar Pradesh,SRC-2026-06,"pdf_page_index=158,table_index=0,row_index=1",UNMATCHED_JUNE
+OBS-202606-01031,618051,Rehabilitation and Upgrading of NH-707 OLD 72-B Package - 2 Hewna to Ashyari,MoRTH,Himachal Pradesh,SRC-2026-06,"pdf_page_index=111,table_index=0,row_index=12",UNMATCHED_JUNE
+OBS-202606-01644,618307,"Rehabilitation and up-gradation of road from km 16.077 to km 43.935 total length
+27.858 km of Lalchara-Kanchanpur section via Shivbari on NH-44A to 2 lane with
+paved shoulder in the state of Tripura on EPC Mode Pkg-2 under BharatMala
+Pariyojana Manu-Simlung -2",NHIDCL,Tripura,SRC-2026-06,"pdf_page_index=147,table_index=0,row_index=17",UNMATCHED_JUNE
+OBS-202606-01525,618648,"Development of 6-lane Greenfield Southern Ludhiana Bypass from intersection with
+NH-44 near Village Rajgarh to intersection with Delhi Katra Expressway NE-5 near
+Village Ballowal, km 0000 to km 25240",NHAI,Punjab,SRC-2026-06,"pdf_page_index=141,table_index=0,row_index=2",UNMATCHED_JUNE
+OBS-202606-01101,618729,"6 Lane Greenfield Varanasi- Ranchi- Kolkata Highway from Donoreshan village to
+junction with NH-20 in Bongabar village from km 288.600 to km 325.500 Pkg -11",NHAI,Jharkhand,SRC-2026-06,"pdf_page_index=116,table_index=0,row_index=1",UNMATCHED_JUNE
+OBS-202606-01103,618733,"6L Greenfield Varanasi- Ranchi- Kolkata Highway from junction with NH-20 in
+Bongabar village to junction with NH-30 in Lepo village from km 325.500 to km
+358.500 Pkg -12",NHAI,Jharkhand,SRC-2026-06,"pdf_page_index=116,table_index=0,row_index=3",UNMATCHED_JUNE
+OBS-202606-01633,618814,"4L Access Controlled Greenfield Highway section on NH163G Warangal-Khammam
+from Oorugonda village in Hanamkonda District at Design Ch. 112.240 Km to
+Venkatpur village in Warangal District at Design Ch. 150.240 KmPackage-I",NHAI,Telangana,SRC-2026-06,"pdf_page_index=147,table_index=0,row_index=6",UNMATCHED_JUNE
+OBS-202606-01716,618842,"2L PS Greenfield bypass lalganj ajhara, mohanganj and Raniganj on Raebareli -
+Jaunpur Section Design km 0.00 to Km 53177 of NH-31",NHAI,Uttar Pradesh,SRC-2026-06,"pdf_page_index=152,table_index=0,row_index=6",UNMATCHED_JUNE
+OBS-202606-01050,618892,"4 Lane with Paved Shoulder from Dareota Village to Kalar Bala NH 205, Design
+Chainage -Km 33185 to Km 41000, Design Length-7.815 Km Package-IIB",NHAI,Himachal Pradesh,SRC-2026-06,"pdf_page_index=112,table_index=0,row_index=14",UNMATCHED_JUNE
+OBS-202606-00976,619039,"Balance Works of Rehabilitation and Up gradation of NH-43 New NH-30 from Krn
+162120 to Krn 173500 Length 11.380 Km. Keshkal Bypass 4-Lane with Paved
+shoulder in the State Of Chhattisgarh under NHDP-IV through Engineering,
+Procurement & Construction EPC Basis",MoRTH,Chhattisgarh,SRC-2026-06,"pdf_page_index=108,table_index=0,row_index=11",UNMATCHED_JUNE
+OBS-202606-01158,619065,"4L Expressway from Km 26.400 to km 53.500 of Malur to Bangarpet section of
+Bangalore-Chennai Expressway Phase-I Package-II",NHAI,Karnataka,SRC-2026-06,"pdf_page_index=119,table_index=0,row_index=9",UNMATCHED_JUNE
+OBS-202606-01594,619113,4L of Padalur - Trichy section from km. 285.00 to km. 325.00 of NH - 45 Pkg VI-C,NHAI,Tamil Nadu,SRC-2026-06,"pdf_page_index=144,table_index=0,row_index=19",UNMATCHED_JUNE
+OBS-202606-01330,619204,"Capacity Augmentation in the stretch of Pimpri Sado Vadape section of NH848 Km.
+460900 to Km. 537000 by Construction of Slip/Service Road on either side at various
+locations total length 25.140 Km LHSRHS, Flyover 2 x 25m at Borivali Junction Km.
+528550 & LVUP 1 x 15m at Sherekarpada Km. 528800",NHAI,Maharashtra,SRC-2026-06,"pdf_page_index=129,table_index=0,row_index=6",UNMATCHED_JUNE
+OBS-202606-00852,619248,"lmprovement and Widening to 2-lane with Paved Shoulder of NH-13 & 15 Old NH-52
+from Existing Km 745.60 Design Km 0.000 to Existing km 770.600 Design Km 24.819
+Brahmakund T-junction to Kamlang T-Junction, Existing Length 25.00 Km, Design
+Length 24.819 Km in the state of Arunachal Pradesh on EPC mode Pkg-1",NHIDCL,Arunachal Pradesh,SRC-2026-06,"pdf_page_index=100,table_index=0,row_index=14",UNMATCHED_JUNE
+OBS-202606-01560,619270,"Upgradation of 6 laned Jaipur- Kishangarh section of NH-48 from km 274100 to
+363885 involving construction of flyovers and Service road in Rajasthan On
+Engineering, Procurement & Construction EPC Mode",NHAI,Rajasthan,SRC-2026-06,"pdf_page_index=143,table_index=0,row_index=2",UNMATCHED_JUNE
+OBS-202606-01561,619271,"Construction of Elevated Corridor at Kherwara Town on Udaipur Ratanpur Shamlaji
+Section of NH-48 in Udaipur District in the State of Rajasthan on EPC mode",NHAI,Rajasthan,SRC-2026-06,"pdf_page_index=143,table_index=0,row_index=3",UNMATCHED_JUNE
+OBS-202606-01332,619298,"Construction of 6 Lane Elevated corridor from KM 612582 to KM 617540 including
+construction of Service Roads in Kolhapur City on NH -48 in the State of Maharashtra
+on EPC mode under NHO",NHAI,Maharashtra,SRC-2026-06,"pdf_page_index=129,table_index=0,row_index=8",UNMATCHED_JUNE
+OBS-202606-01333,619299,"Construction of a 6-Lane Elevated Corridor from Km 593766 to Km 596620 Including
+Construction of Service Roads in Kagal City on NH-48 in the State of Maharashtra on
+EPC Mode.",NHAI,Maharashtra,SRC-2026-06,"pdf_page_index=129,table_index=0,row_index=9",UNMATCHED_JUNE
+OBS-202606-01334,619300,"Construction of Four Lane Nagpur-Katol section of NH-353J including Mitigation
+Structures from Design Ch. 37000 to Ch. 45990 Tiger Corridor-I Mitigation Structures
+from Design Ch. 37000 to Ch. 45990 Tiger Corridor-I in the State of Maharashtra on
+EPC Mode",NHAI,Maharashtra,SRC-2026-06,"pdf_page_index=129,table_index=0,row_index=10",UNMATCHED_JUNE
+OBS-202606-00979,619347,"Balance Work Estimate of Rehabilitation and Up-gradation of NH- 43 from Km.
+468.600 to Km. 531.250 Pathalgaon to kunkuri Section to two-lane with paved
+shoulder in the State of Chhattisgarh on SBD mode under NHO under Annual plan
+2025-26",MoRTH,Chhattisgarh,SRC-2026-06,"pdf_page_index=108,table_index=0,row_index=14",UNMATCHED_JUNE
+OBS-202606-01807,708687,Amended BharatNet Program - UP (West),Department of Telecommunications,Uttar Pradesh,SRC-2026-06,"pdf_page_index=158,table_index=0,row_index=2",UNMATCHED_JUNE

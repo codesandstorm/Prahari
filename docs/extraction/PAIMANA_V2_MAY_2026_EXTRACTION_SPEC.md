@@ -1,4 +1,15 @@
-# PAIMANA V2 May 2026 Table 6 extraction specification
+﻿# PAIMANA V2 May 2026 Table 6 Extraction Specification
+
+**Owner:** Sandarbh
+**Area:** Extraction / May 2026
+**Document Type:** APPROVED
+**Status:** APPROVED — frozen specification
+**Last Updated:** 2026-09-01
+**Depends On:** PAIMANA_V2_EXTRACTION_SPEC.md (June 2026), MAY_2026_SCHEMA_COMPARISON.md
+**Used By:** Data Engineering pipeline, auditors
+**Canonical:** YES
+
+---
 
 ## Source and scope
 
@@ -7,7 +18,7 @@
 - SHA-256: `480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005`
 - Reporting month: `2026-05`
 - Automated schema: `PAIMANA_V2`, confidence `HIGH`
-- Table: Table 6 — All Ongoing Projects
+- Table: Table 6 â€” All Ongoing Projects
 - Report count evidence: 1,987 ongoing projects on physical PDF page 4,
   printed page 3.
 
@@ -21,7 +32,7 @@
 | Page after table | 163 | 162 |
 
 Page 163 contains no table and is excluded. Data-page discovery independently
-returns the contiguous physical range 54–162.
+returns the contiguous physical range 54â€“162.
 
 ## Exact eight-column structure
 
@@ -45,7 +56,7 @@ The source dash `-` is preserved. Legacy OCMS Code is source-missing for 817
 rows and PMGID for 786 rows; populated values are retained without mapping.
 
 For 1,976 rows the DoC cell has an unparenthesized target value followed by a
-parenthesized revised value. Eleven rows (serials 446–451, 464, 467, 470–472)
+parenthesized revised value. Eleven rows (serials 446â€“451, 464, 467, 470â€“472)
 contain only the parenthesized source value `(-)`. For these, the May adapter
 records an empty `original_target_doc_raw`, records `-` as
 `revised_doc_raw`, and retains the exact `doc_cell_raw` value `(-)`.
@@ -82,3 +93,4 @@ risk values are produced.
 May is a **COMPATIBLE_VARIATION**. The frozen June implementation remains
 unchanged. May has a separate adapter and reuses only evidence-backed structural
 constants/classification; its single-line DoC behavior is May-specific.
+

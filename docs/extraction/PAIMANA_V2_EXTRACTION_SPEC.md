@@ -1,4 +1,18 @@
-# PAIMANA V2 June 2026 Table 6 Extraction Specification
+﻿# PAIMANA V2 June 2026 Table 6 Extraction Specification
+
+**Owner:** Sandarbh
+**Area:** Extraction / June 2026
+**Document Type:** APPROVED
+**Status:** APPROVED — frozen specification
+**Last Updated:** 2026-09-01
+**Depends On:** DATA_CONTRACT.md
+**Used By:** Data Engineering pipeline, auditors
+**Canonical:** YES
+
+> Previously: `docs/PAIMANA_V2_EXTRACTION_SPEC.md`  
+> Moved to: `docs/extraction/PAIMANA_V2_EXTRACTION_SPEC.md` — 2026-09-01
+
+---
 
 ## Verified source
 
@@ -7,7 +21,7 @@
 - Reporting month: `2026-06`
 - SHA-256: `d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15`
 - Automated schema: `PAIMANA_V2`, confidence `HIGH`
-- Table: `Table 6 — All Ongoing Projects`
+- Table: `Table 6 â€” All Ongoing Projects`
 
 The source is resolved through `source_manifest.csv` and its SHA is checked
 before and after extraction. The July-named duplicate is not eligible.
@@ -24,7 +38,7 @@ Physical PDF pages and printed report labels are separate fields:
 | Final data page | 159 | 158 |
 | Following notes section | 160 | 159 |
 
-Physical pages 59–159 contain the data table. Physical page 160 contains a
+Physical pages 59â€“159 contain the data table. Physical page 160 contains a
 note about unpublished projects and is not part of the table.
 
 ## Exact visible columns
@@ -48,7 +62,7 @@ silently corrected in raw source-cell metadata.
 - The eight-column header repeats on every data page and is rejected.
 - Project rows are identified conservatively by a decimal serial number in
   column 1 and exactly eight table cells.
-- Serial numbers naturally cover 1–1847 exactly once.
+- Serial numbers naturally cover 1â€“1847 exactly once.
 - Project names and agencies frequently wrap across visual lines but remain in
   one table cell; no cross-page project row was observed.
 - The compound identity cell is parsed from the bottom: the final line contains
@@ -83,7 +97,7 @@ silently corrected in raw source-cell metadata.
 ## Extraction method and fields
 
 Method: `pdfplumber_table`, using `page.extract_tables()` on physical pages
-59–159.
+59â€“159.
 
 Verified extracted fields:
 
@@ -101,3 +115,4 @@ Verified extracted fields:
 Fields intentionally not interpreted: ministry, sector, normalized dates,
 normalized costs, normalized progress, cross-month identity, labels, features,
 and risk values.
+

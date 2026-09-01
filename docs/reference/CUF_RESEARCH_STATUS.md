@@ -1,4 +1,18 @@
-# CUF Research Status
+﻿# CUF Research Status
+
+**Owner:** Akshita (domain lead) + Sandarbh
+**Area:** Reference / CUF / Data Sources
+**Document Type:** RESEARCH
+**Status:** NOT STARTED
+**Last Updated:** 2026-09-01
+**Depends On:** NONE
+**Used By:** Entire team
+**Canonical:** YES
+
+> Previously: `docs/CUF_RESEARCH_STATUS.md`  
+> Moved to: `docs/reference/CUF_RESEARCH_STATUS.md` — 2026-09-01
+
+---
 
 **Document Purpose:** Track research into MoSPI Common Upload Form (CUF) fields
 and their relationship to PRAHARI's data model.  
@@ -33,11 +47,11 @@ detailed fields that are aggregated or omitted in published Flash Reports.
 
 ## CUF Field Inventory
 
-> **Status: UNKNOWN — CUF documentation not yet obtained.**
+> **Status: UNKNOWN â€” CUF documentation not yet obtained.**
 
 | CUF Field | Present in Flash Reports? | Notes |
 |---|---|---|
-| *(To be populated after CUF documentation is obtained)* | — | — |
+| *(To be populated after CUF documentation is obtained)* | â€” | â€” |
 
 ---
 
@@ -77,3 +91,4 @@ the Gate 2 dataset is validated.**
 ---
 
 *This document will be updated when CUF documentation is obtained.*
+

@@ -1,0 +1,109 @@
+agency_raw,evidence_class,june_agency_raw,june_observation_id,june_project_name_raw,june_state_raw,manual_identity_evidence,manual_same_project,may_agency_raw,may_observation_id,may_project_name_raw,may_state_raw,metadata_classification,observation_id,project_code_raw,project_name_raw,raw_row_locator,review_notes,reviewer,sample_category,source_id,state_raw,varying_fields
+,VERIFIED_EXACT_CODE,National Mission for Clean Ganga,OBS-202606-01808,"Interception and Diversion and STP works in Bhagalpur under Hybrid annuity based
+PPP mode-Namami Gange Programme",Bihar,,,National Mission for Clean Ganga,OBS-202605-01948,"Interception and Diversion and STP works in Bhagalpur under Hybrid annuity based
+PPP mode-Namami Gange Programme",Bihar,CODE_MATCH_TEXT_CONSISTENT,,616600,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,Power Grid Corporation of India Limited [POWERGRID],OBS-202606-00223,"Transmission system for evacuation of power from REZ in Rajasthan 20GW under
+Phase-III Part J","Multi-States (Delhi,
+Rajasthan)",,,Power Grid Corporation of India Limited [POWERGRID],OBS-202605-00226,"Transmission system for evacuation of power from REZ in Rajasthan 20GW under
+Phase-III Part J","Multi-States (Delhi,
+Rajasthan)",CODE_MATCH_TEXT_CONSISTENT,,611735,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,North Central Railway,OBS-202606-00754,Lalitpur-Birari with flyover at Lalitpur- 16 Km,Uttar Pradesh,,,North Central Railway,OBS-202605-00770,Lalitpur-Birari with flyover at Lalitpur- 16 Km,Uttar Pradesh,CODE_MATCH_TEXT_CONSISTENT,,705766,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,MoRTH,OBS-202606-01604,"6-Laning of Pune-Hyderabad Section of NH-65 from Km 493/0 to Km 524/0 from
+Sangareddy X Roads to Madinaguda in the State of Telangana",Telangana,,,MoRTH,OBS-202605-01723,"6-Laning of Pune-Hyderabad Section of NH-65 from Km 493/0 to Km 524/0 from
+Sangareddy X Roads to Madinaguda in the State of Telangana",Telangana,CODE_MATCH_TEXT_CONSISTENT,,617939,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,MoRTH,OBS-202606-01621,"Rehabilitation and Up-gradation of Valigonda to Thorrur Section to Two Lane with
+Paved Shoulders from Km 39.180 to Km 108.300 of NH-930P in the State of
+Telangana on Engineering, Procurement and Construction EPC Basis",Telangana,,,MoRTH,OBS-202605-01749,"Rehabilitation and Up-gradation of Valigonda to Thorrur Section to Two Lane with
+Paved Shoulders from Km 39.180 to Km 108.300 of NH-930P in the State of
+Telangana on Engineering, Procurement and Construction EPC Basis",Telangana,CODE_MATCH_TEXT_CONSISTENT,,618186,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,Northeast Frontier Railway [NFR],OBS-202606-00660,Katihar Kumedpur & Katihar Mukuria BG Doubling Project,"Multi-States
+(Bihar, West
+Bengal)",,,Northeast Frontier Railway [NFR],OBS-202605-00673,Katihar Kumedpur & Katihar Mukuria BG Doubling Project,"Multi-States
+(Bihar, West
+Bengal)",CODE_MATCH_TEXT_CONSISTENT,,617245,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,SECR,OBS-202606-00549,"Gauge Conversion of Kendri-Dhamtari including Abhanpur - Rajim Branch line 67.20
+Kms - 2nd Material Modification to Raipur Titlagarh doubling.",Chhattisgarh,,,SECR,OBS-202605-00560,"Gauge Conversion of Kendri-Dhamtari including Abhanpur - Rajim Branch line 67.20
+Kms - 2nd Material Modification to Raipur Titlagarh doubling.",Chhattisgarh,CODE_MATCH_TEXT_CONSISTENT,,602792,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,NHIDCL,OBS-202606-00864,"Construction and up gradation to 4-Lane of existing two lane with paved shoulder from
+Hapachara to Tulungia road of NH-117 of existing Km 0.00 to km 14.050 and Design
+Km 0.000 to km 14.660 under BMP on EPC mode",Assam,,,NHIDCL,OBS-202605-00894,"Construction and up gradation to 4-Lane of existing two lane with paved shoulder from
+Hapachara to Tulungia road of NH-117 of existing Km 0.00 to km 14.050 and Design
+Km 0.000 to km 14.660 under BMP on EPC mode",Assam,CODE_MATCH_TEXT_CONSISTENT,,618289,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,MoRTH,OBS-202606-01176,"Widening to 2 Lanes with paved shoulders from Km.87/000 to 133/720 Nattukal to
+Thanau Jn. in Palakkad of NH-966 Old NH-213 on EPC mode Basis under NHO
+Annual Plan 2016-17 in the state of Kerala",Kerala,,,MoRTH,OBS-202605-01245,"Widening to 2 Lanes with paved shoulders from Km.87/000 to 133/720 Nattukal to
+Thanau Jn. in Palakkad of NH-966 Old NH-213 on EPC mode Basis under NHO
+Annual Plan 2016-17 in the state of Kerala",Kerala,CODE_MATCH_TEXT_CONSISTENT,,618070,,,,,EXACT_CODE_NO_VARIATION,,,
+,VERIFIED_EXACT_CODE,Ministry of Petroleum & Natural Gas,OBS-202606-00431,Durgapur - Haldia Pipeline [Section-3B of JHBDPL Project],West Bengal,,,Ministry of Petroleum & Natural Gas,OBS-202605-00439,Durgapur - Haldia Pipeline [Section-3B of JHBDPL Project],West Bengal,CODE_MATCH_TEXT_CONSISTENT,,617302,,,,,EXACT_CODE_NO_VARIATION,,,
+,EXACT_CODE_WITH_METADATA_VARIATION,CAOCWR WR mor,OBS-202606-00566,Petlad-Bhadran 22.5 km,Gujarat,,,Western Railway,OBS-202605-00578,Petlad Bhadran 23 Kms,Gujarat,CODE_MATCH_MULTIPLE_VARIATIONS,,611945,,,,,EXACT_CODE_NAME_VARIATION,,,project_name_raw;agency_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,MoRTH,OBS-202606-00790,"Rehabilitation and Up-gradation of Dhindi - Digamarru section from Km 126/510 to Km
+135/740 of NH -214 New NH -216 and digamarru -Losari section from Km 0/000 tp
+Km 34/230 of NH-214 A New Nh-216 to two lane with paved shoulder in the state of
+AP-NH",Andhra Pradesh,,,MoRTH,OBS-202605-00813,"Rehabilitation and Up-gradation of Dhindi - Digamarru section from Km 126/510 to Km
+135/740 of NH -214New NH -216 and digamarru -Losari section from Km 0/000 tp Km
+34/230 of NH-214 ANew Nh-216 to two lane with paved shoulder in the state of AP-
+NH",Andhra Pradesh,CODE_MATCH_NAME_VARIATION,,618236,,,,,EXACT_CODE_NAME_VARIATION,,,project_name_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,NHIDCL,OBS-202606-00771,"Rehabilitation and up-gradation and completion of balance works of the section from
+Km 107.760 km to 129.445 km After Middle strait to Humphrey, Km 130.600 to
+138.300 After Humphrey to Kadamtala of NH-4 Intermediate/2-Lane with hard
+shoulder in the Union Territory of Andaman & Nicobar Islands on EPC basis Package-
+IIIA","Andaman &
+Nicobar",,,NHIDCL,OBS-202605-00787,"Rehabilitation and up-gradation of section to Intermediate/2-Lane with hard shoulder
+from Km 107.760 to Km 129.445 After Middle strait to Humphrey, Km 130.600 to Km
+138.00 After Humphrey to Kadamtala & Km 155.00 to Km 181.0 End of Jarwa to
+Rangat of NH-04 in UT of A&N on EPC Package-IIIA","Andaman &
+Nicobar",CODE_MATCH_NAME_VARIATION,,619184,,,,,EXACT_CODE_NAME_VARIATION,,,project_name_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,MoRTH,OBS-202606-00792,"Rehabilitation & Upgradation of NH214 New NH-216 from Km 34/230 to Km 84/550
+Losari to Machavaram Section to two lane with paved shoulder in the state of
+Andhrapradesh under NHDP-IV through Engineering, Procurement& Construction
+EPC mode.",Andhra Pradesh,,,MoRTH,OBS-202605-00816,"Rehabilitation & Upgradation of NH214New NH-216 from Km 34/230 to Km 84/550
+Losari to Machavaram Section to two lane with paved shoulder in the state of
+Andhrapradesh under NHDP-IV through Engineering, Procurement& Construction
+EPC mode.",Andhra Pradesh,CODE_MATCH_NAME_VARIATION,,618239,,,,,EXACT_CODE_NAME_VARIATION,,,project_name_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,Jaipur Metro Rail Corporation,OBS-202606-00272,"Rajasthan Metro Rail Project Phase 1C from Badi Chaupar to Transport Nagar via
+Galta Gate",Rajasthan,,,Jaipur Metro Rail Corporation,OBS-202605-00276,Jaipur Metro Phase 1C from Badi Chaupar to Transport Nagar via Ramganj,Rajasthan,CODE_MATCH_NAME_VARIATION,,612066,,,,,EXACT_CODE_NAME_VARIATION,,,project_name_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,MoRTH,OBS-202606-01138,"Widening to two lane with paved shoulder of NH-73New spur road Ujire -
+Dharmasthala - Periyashanthi in the State of Karnataka under NHO on HAM Mode
+Job No. NH-73Spur-KNT-2023-24-996",Karnataka,,,MoRTH,OBS-202605-01205,"Widening to Two Lane with Paved Shoulder of NH-73 New Spur Road Ujire -
+Dharmasthala - Periyashanthi in the State of Karnataka under on HAM under NHO
+Annual Plan 2023-24Job No NH-73Spur-KNT-2023-24-996",Karnataka,CODE_MATCH_NAME_VARIATION,,618189,,,,,EXACT_CODE_NAME_VARIATION,,,project_name_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,NHAI,OBS-202606-01301,"Vadodara Mumbai Expressway Phase II - Pkg XVII [Km. 69.800 to Km. 79.783 of
+Spur] Bhoj - Morbe",Maharashtra,,,National Highways Authority of India [NHAI],OBS-202605-01384,"Vadodara Mumbai Expressway Phase II - Pkg XVII [Km. 69.800 to Km. 79.783 of
+Spur] Bhoj - Morbe",Maharashtra,CODE_MATCH_AGENCY_VARIATION,,618473,,,,,EXACT_CODE_AGENCY_VARIATION,,,agency_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,WCL - CIL,OBS-202606-00103,ADASA UG TO OC MINE,Maharashtra,,,Western Coalfields Limited [WCL],OBS-202605-00104,ADASA UG TO OC MINE,Maharashtra,CODE_MATCH_AGENCY_VARIATION,,616223,,,,,EXACT_CODE_AGENCY_VARIATION,,,agency_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,NHAI,OBS-202606-01313,"Strengthening of Existing Alignment of Pandharpur Town Part Bypassed Section of
+NH 965 from KM 36.230 to KM 44.230 from Chh. Shivaji Maharaj Chowk to Wakhari",Maharashtra,,,National Highways Authority of India [NHAI],OBS-202605-01396,"Strengthening of Existing Alignment of Pandharpur Town Part Bypassed Section of
+NH 965 from KM 36.230 to KM 44.230 from Chh. Shivaji Maharaj Chowk to Wakhari",Maharashtra,CODE_MATCH_AGENCY_VARIATION,,618628,,,,,EXACT_CODE_AGENCY_VARIATION,,,agency_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,NHAI,OBS-202606-00836,"6L Access Controlled Greenfield Highway from Somavarappadu Ch.314.600 to
+Muppavaram Ch.343240 of [NH-544G] Package-14",Andhra Pradesh,,,National Highways Authority of India [NHAI],OBS-202605-00865,"6L Access Controlled Greenfield Highway from Somavarappadu Ch.314.600 to
+Muppavaram Ch.343240 of [NH-544G] Package-14",Andhra Pradesh,CODE_MATCH_AGENCY_VARIATION,,619125,,,,,EXACT_CODE_AGENCY_VARIATION,,,agency_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,NHAI,OBS-202606-01454,"Improvement & Up-gradation of NH-734 Section of Moradabad-Thakurdwara Kashipur
+including Moradabad & Kashipur Bypasse Package-III Kashipur Bypass Length
+14.490 Km., Starts from Ch. 38770 and ends at Ch. 53260 existing Ch. 05560","Multi-States (Uttar
+Pradesh,
+Uttarakhand)",,,National Highways Authority of India [NHAI],OBS-202605-01555,"Improvement & Up-gradation of NH-734 Section of Moradabad-Thakurdwara Kashipur
+including Moradabad & Kashipur Bypasse Package-III Kashipur Bypass Length
+14.490 Km., Starts from Ch. 38770 and ends at Ch. 53260 existing Ch. 05560","Multi-States (Uttar
+Pradesh,
+Uttarakhand)",CODE_MATCH_AGENCY_VARIATION,,618928,,,,,EXACT_CODE_AGENCY_VARIATION,,,agency_raw
+,EXACT_CODE_WITH_METADATA_VARIATION,NHAI,OBS-202606-01420,Bal. Works of Fagne Km. 510.000 to Maharashtra/Gujarat Border Km. 650.794,"Multi-States
+(Gujarat,
+Maharashtra)",,,National Highways Authority of India [NHAI],OBS-202605-01512,Bal. Works of Fagne Km. 510.000 to Maharashtra/Gujarat Border Km. 650.794,"Multi-States
+(Gujarat,
+Maharashtra)",CODE_MATCH_AGENCY_VARIATION,,618637,,,,,EXACT_CODE_AGENCY_VARIATION,,,agency_raw
+National Highways Authority of India [NHAI],UNMATCHED_MAY,,,,,,,,,,,,OBS-202605-01697,618773,Tuticorin - Tirunelveli from km. 0.00 to km. 47.250,"pdf_page_index=145,table_index=0,row_index=9",,,UNMATCHED_MAY,SRC-2026-05,Tamil Nadu,
+National Highways Authority of India [NHAI],UNMATCHED_MAY,,,,,,,,,,,,OBS-202605-01836,618553,"6L of Agra Bypass Northern connecting Km. 174.500 of NH-2 new NH-19 to Km.
+141.000 of Yamuna Expressways","pdf_page_index=153,table_index=0,row_index=12",,,UNMATCHED_MAY,SRC-2026-05,Uttar Pradesh,
+National Highways Authority of India [NHAI],UNMATCHED_MAY,,,,,,,,,,,,OBS-202605-01311,618701,"Balance work of 4L of Nauradehi Sanctuary de-scoped stretch of Hiran River to
+Sindoor River from Km. 66.00 to 130.00 NH-12 New NH-45","pdf_page_index=122,table_index=0,row_index=9",,,UNMATCHED_MAY,SRC-2026-05,Madhya Pradesh,
+National Highways Authority of India [NHAI],UNMATCHED_MAY,,,,,,,,,,,,OBS-202605-00986,618915,"4L of Bal. works of Patna - Gaya -Dobhi Pkg-II from km. 39.00 to km. 83.00 of Old NH-
+83","pdf_page_index=103,table_index=0,row_index=17",,,UNMATCHED_MAY,SRC-2026-05,Bihar,
+NHAI,UNMATCHED_JUNE,,,,,,,,,,,,OBS-202606-01716,618842,"2L PS Greenfield bypass lalganj ajhara, mohanganj and Raniganj on Raebareli -
+Jaunpur Section Design km 0.00 to Km 53177 of NH-31","pdf_page_index=152,table_index=0,row_index=6",,,UNMATCHED_JUNE,SRC-2026-06,Uttar Pradesh,
+NHAI,UNMATCHED_JUNE,,,,,,,,,,,,OBS-202606-01594,619113,4L of Padalur - Trichy section from km. 285.00 to km. 325.00 of NH - 45 Pkg VI-C,"pdf_page_index=144,table_index=0,row_index=19",,,UNMATCHED_JUNE,SRC-2026-06,Tamil Nadu,
+NHAI,UNMATCHED_JUNE,,,,,,,,,,,,OBS-202606-01561,619271,"Construction of Elevated Corridor at Kherwara Town on Udaipur Ratanpur Shamlaji
+Section of NH-48 in Udaipur District in the State of Rajasthan on EPC mode","pdf_page_index=143,table_index=0,row_index=3",,,UNMATCHED_JUNE,SRC-2026-06,Rajasthan,
+NHIDCL,UNMATCHED_JUNE,,,,,,,,,,,,OBS-202606-00852,619248,"lmprovement and Widening to 2-lane with Paved Shoulder of NH-13 & 15 Old NH-52
+from Existing Km 745.60 Design Km 0.000 to Existing km 770.600 Design Km 24.819
+Brahmakund T-junction to Kamlang T-Junction, Existing Length 25.00 Km, Design
+Length 24.819 Km in the state of Arunachal Pradesh on EPC mode Pkg-1","pdf_page_index=100,table_index=0,row_index=14",,,UNMATCHED_JUNE,SRC-2026-06,Arunachal Pradesh,

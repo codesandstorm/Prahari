@@ -1,8 +1,48 @@
-# Team Lead Technical Understanding
+﻿# PRAHARI — Project Overview
 
-**Document Purpose:** Conceptual reference for team leads — explains the WHY behind
+**Owner:** Team (Sandarbh — primary author)
+**Area:** Shared / Project Understanding
+**Document Type:** REFERENCE
+**Status:** APPROVED
+**Last Updated:** 2026-09-01
+**Depends On:** NONE
+**Used By:** Entire team, new members, Codex/Antigravity agents
+**Canonical:** YES
+
+> Previously: `docs/TEAM_LEAD_TECHNICAL_UNDERSTANDING.md`  
+> Moved to: `docs/shared/PROJECT_OVERVIEW.md` — 2026-09-01
+
+---
+
+**Document Purpose:** Conceptual reference for the entire team — explains the WHY behind
 key technical decisions. Written for clarity, not to impress. Does not contain
 invented PRAHARI results.
+
+---
+
+## What is PRAHARI?
+
+PRAHARI (Predictive Risk Assessment for HIgh-value Infrastructure) is an explainable,
+confidence-aware predictive decision-intelligence layer intended to sit on top of
+PAIMANA (Project Assessment, Infrastructure Monitoring and Analytics for Nation-building),
+MoSPI's infrastructure project monitoring platform.
+
+**PRAHARI complements PAIMANA. It is decision support, not automated government action.**
+
+PRAHARI will eventually become:
+- A system that can predict cost and schedule overruns before they formally materialise
+- A risk-scoring and early-warning engine
+- A benchmarking and prioritisation tool
+- An evidence-grounded decision-intelligence layer
+
+The system is architected as evidence-gated layers:
+
+```
+Rules       → data integrity, temporal integrity, operational guardrails
+Statistics  → scientific baseline (must be beaten before ML is added)
+Supervised ML → candidate predictive engine (gated on validated data)
+LLM         → optional downstream explanation/query layer (grounded, not predictive)
+```
 
 ---
 
@@ -31,8 +71,7 @@ ongoing projects. When we align the same project across reports, we get a time s
 of how that project evolved — its cost grew, its schedule slipped, its physical
 progress changed.
 
-This is fundamentally different from cross-sectional data (one observation per entity,
-one point in time). Longitudinal data requires different handling:
+This is fundamentally different from cross-sectional data. Longitudinal data requires:
 - Projects cannot be randomly split row-by-row into train/test sets.
 - Features must respect the direction of time.
 - The history of a project up to month T is different from its future after T.
@@ -45,8 +84,6 @@ A project ID is the **canonical identifier** that lets us say "these two rows re
 to the same physical infrastructure project".
 
 In modern PAIMANA V2 reports, the `Project Code` column serves this role.
-
-In older reports, this identifier may not exist in the same form.
 The `Legacy OCMS Code` field in modern reports is supposed to bridge old and new.
 
 Whether these identifiers are reliable, stable, and complete is a **research question**
@@ -84,11 +121,11 @@ This alignment is the central task of Gate 2.
 
 ## 6. Which Fields Are Stable?
 
-Static fields are those that ideally should not change from month to month:
-project name, agency, state, approval date, start date, original cost, original target DOC.
+Static fields: project name, agency, state, approval date, start date, original cost,
+original target DOC.
 
-In practice, minor administrative changes can cause apparent "changes" in these fields.
-This is why anomaly detection must flag unexpected changes rather than silently accept them.
+In practice, minor administrative changes can cause apparent "changes". Anomaly
+detection must flag unexpected changes rather than silently accept them.
 
 ---
 
@@ -97,46 +134,37 @@ This is why anomaly detection must flag unexpected changes rather than silently 
 An outcome is something that happens **after** the prediction date.
 
 Examples:
-- Did the revised cost increase by more than 20% in the next 12 months? (cost overrun outcome)
-- Was the revised DOC pushed back more than 6 months? (schedule overrun outcome)
-- Was the project completed on its current revised DOC? (schedule outcome)
+- Did the revised cost increase by more than 20% in the next 12 months?
+- Was the revised DOC pushed back more than 6 months?
+- Was the project completed on its current revised DOC?
 
-These outcomes are derived from future observations of the same project.
-During dataset preparation, they become labels.
-They must NEVER appear as input features to a model.
+These outcomes are derived from future observations and become labels during dataset
+preparation. They must NEVER appear as input features to a model.
 
 ---
 
 ## 8. What Is Temporal Leakage?
 
-Temporal leakage is when a model is given information that would not have been
-available at the time the prediction was supposed to be made.
+Temporal leakage is when a model is given information not available at the time
+the prediction was supposed to be made.
 
-For example:
-- If a model trained to predict cost overruns is given the future revised cost as
-  an input, it is trivially easy to detect the overrun — but only because we gave
-  away the answer.
-- In production, the future revised cost does not exist yet. The model would fail.
+Temporal leakage causes evaluation metrics to be optimistically biased. The model
+appears to perform well in testing but fails in deployment.
 
-Temporal leakage causes evaluation metrics to be optimistically biased.
-The model appears to perform well in testing but fails in deployment.
-
-See `docs/TEMPORAL_LEAKAGE_NOTES.md` for a full risk catalogue.
+See [`docs/team/sandarbh/TEMPORAL_LEAKAGE_NOTES.md`](../team/sandarbh/TEMPORAL_LEAKAGE_NOTES.md)
+for the full risk catalogue.
 
 ---
 
 ## 9. Why Should Project-Month Rows Not Be Randomly Split?
 
-In typical ML, we randomly split examples into training and test sets.
-
 With project-month data, a random split may assign month T+6 of project P to the
 training set and month T of project P to the test set. The model effectively trains
-on the "future" of a project and tests on its "past".
+on the "future" of a project.
 
-The correct approach is either:
+The correct approach:
 - **Project-level split**: all months of project P go to either train OR test, never both.
-- **Temporal split**: all observations before date D are training; all observations
-  after date D are test.
+- **Temporal split**: all observations before date D are training; all after D are test.
 
 ---
 
@@ -146,20 +174,11 @@ Completed projects are the only projects where we know the actual outcome:
 - Actual completion date (vs. original target and last revised target)
 - Final reported cumulative expenditure (vs. original and revised cost)
 
-These become the labels for supervised learning in later gates.
 Only completed projects can provide verified outcome labels.
-
-The quality and completeness of the completed-projects table in each Flash Report
-therefore directly limits what can be learned.
 
 ---
 
 ## 11. How Are Prediction Horizons Tested?
-
-A prediction horizon is: "how far in advance of the outcome can we predict it?"
-
-Example: Can we predict, 12 months before a project's revised completion date,
-whether that date will be pushed back again?
 
 Testing prediction horizons requires:
 1. A longitudinal dataset spanning multiple years.
@@ -172,8 +191,6 @@ This is only possible after Gate 2 is complete and data spans enough years.
 ---
 
 ## 12. Why Benchmark Conventional Statistics Against ML?
-
-The SIH problem specifically asks this. Reasons include:
 
 - If a simple linear regression performs as well as a neural network, the simpler
   model is preferred for interpretability and trust in a government context.
@@ -191,8 +208,6 @@ A calibrated model is one where its stated confidence matches empirical accuracy
 Example: If a model says "80% probability of cost overrun" for 100 projects,
 approximately 80 of those should actually experience a cost overrun.
 
-An uncalibrated model may be systematically overconfident or underconfident.
-
 For administrative decision support, calibration matters because stakeholders need
 to understand what a "high risk" score actually means in practice.
 
@@ -202,11 +217,13 @@ to understand what a "high risk" score actually means in practice.
 
 [PLACEHOLDER — To be designed after Gate 3]
 
-The general expected path:
+General expected path:
 - Model produces predictions + confidence scores + SHAP explanations.
 - These are stored in a database (or flat files in early stage).
 - A backend API (FastAPI or similar) reads predictions and exposes them.
 - The frontend dashboard queries the API.
+
+See [`docs/shared/API_DATA_HANDOFF.md`](API_DATA_HANDOFF.md) for the provisional handoff contract.
 
 ---
 
@@ -216,6 +233,8 @@ The general expected path:
 
 Likely approach: REST API with JSON responses. Each project has an endpoint
 returning current risk scores, trend data, and explanation tokens.
+
+See [`docs/team/jashan/API_CONTRACTS.md`](../team/jashan/API_CONTRACTS.md) for backend API contract progress.
 
 ---
 
@@ -227,15 +246,11 @@ An LLM:
 - Has no mechanism for uncertainty quantification or calibration.
 - Can hallucinate plausible-sounding project statistics.
 
-LLMs are appropriate for:
-- Summarising verified findings.
-- Answering natural-language questions grounded in verified data.
-- Generating report text from structured model outputs.
+LLMs are appropriate for: summarising verified findings, answering NL questions
+grounded in verified data, generating report text from structured model outputs.
 
-LLMs are NOT appropriate for:
-- Making the primary predictive judgment on cost or schedule.
-- Replacing a validated statistical model.
-- Inventing risk scores.
+LLMs are NOT appropriate for: making the primary predictive judgment on cost or
+schedule, replacing a validated statistical model, or inventing risk scores.
 
 ---
 

@@ -1,0 +1,376 @@
+observation_id,project_code_raw,project_name_raw,agency_raw,state_raw,source_id,raw_row_locator,evidence_class
+OBS-202605-00350,400035,"Grass Root Rail-fed Depot at Sekerkote, Agartala as resitement of existing
+Dharmanagar Depot",Indian Oil Corporation Limited [IOCL],Tripura,SRC-2026-05,"pdf_page_index=71,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-00527,611752,GOOTY-PENDEKALLU DOUBLING 29.225 Km,South Central Railway [SCR] - II,Andhra Pradesh,SRC-2026-05,"pdf_page_index=80,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-00239,611948,"Transmission system for evacuation of power from REZ in Rajasthan 20 GW under
+Phase-III part H",Power Grid Corporation of India Limited [POWERGRID],Rajasthan,SRC-2026-05,"pdf_page_index=65,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-00182,611967,"Transmission Scheme for Solar Energy Zone in Ananthpuram 2500MW and Kurnool
+1000MW",Power Grid Corporation of India Limited [POWERGRID],Andhra Pradesh,SRC-2026-05,"pdf_page_index=62,table_index=0,row_index=11",UNMATCHED_MAY
+OBS-202605-00516,617253,Revamping of old sub-systems of Blast Furnace 3 at Bokaro Steel Plant,Steel Authority of India Limited [SAIL],Jharkhand,SRC-2026-05,"pdf_page_index=79,table_index=0,row_index=14",UNMATCHED_MAY
+OBS-202605-00596,617372,Doubling between Pradhankunta-Patherih-Bhojudih of East Central Railway,East Central Railway [ECR] - I,Jharkhand,SRC-2026-05,"pdf_page_index=83,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-01648,617891,"Construction of Two lane with Paved Shoulder for Fatehpur Bypass Design Km 0.000
+to Km 7.400 , Mandawa Bypass Design Km 20.925 to Km 27.300 & Jhunjhunu Bypass
+Design Km 41.625 to Km 54.689 of NH-11 on EPC Mode in the state of Rajasthan .",MoRTH,Rajasthan,SRC-2026-05,"pdf_page_index=142,table_index=0,row_index=11",UNMATCHED_MAY
+OBS-202605-01649,617900,"Upgradation to Two Lane Paved Shoulder in km 33/0 to 126/520 of NH-23 Old NH-
+11B Kothun-Lalsot-Karoli-Dholpur road in the state of Rajasthan under EPC mode
+Length-93.52 Km.",MoRTH,Rajasthan,SRC-2026-05,"pdf_page_index=142,table_index=0,row_index=12",UNMATCHED_MAY
+OBS-202605-00790,617907,"Rehabilitation and Up-gradation from Km 170700 Bhadrachalam to Km 234567 Konta
+on NH-30 to Two lane with Paved Shoulder in the State of Andra Pradesh on EPC
+mode.",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=92,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-01326,617917,"Construction of 4 Lane Flyover at Nagpur RTO Chowk To Nagpur University Campus
+from Ch 2/250 to 5/100 and 4 lane flyover at wadi/midc junction from km 8/360 to km,
+10/300 on NH 53 in state of Maharashtra.",MoRTH,Maharashtra,SRC-2026-05,"pdf_page_index=123,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-01586,617924,"Construction of bypass to Nayagarh town from km 235.469 to 252.482 of NH-57
+including land acquisition in the state of Odisha.",MoRTH,Odisha,SRC-2026-05,"pdf_page_index=139,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-01328,617933,"Up-gradation to four lane/ Two lane with paved shoulders configuration of Kalyan -
+Murbad - Malshej Ghat - Nirmal Road NH- 61 km 15/200 to Km 38/00 and from Km.
+58/00 to Km 84/00 Design length 48.58 km of NH-61 on EPC Mode in Thane District
+in the state of Maharashtra",MoRTH,Maharashtra,SRC-2026-05,"pdf_page_index=123,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-01332,617944,"Kashedi ghat tunnel NH-66 [Bhogaon Khurd - Kashedi section] 4 lanes under NHDP
+on EPC mode",MoRTH,Maharashtra,SRC-2026-05,"pdf_page_index=123,table_index=0,row_index=11",UNMATCHED_MAY
+OBS-202605-01182,617954,"Balance work of Rehabilitation and upgrading to 2lane/2lane with paved shoulder
+configuration and strengthening from from Km 343.80 to 400.33 of Gowribidanur-Chik
+Ballapur section in the state of Karnataka Under Annual Plan 2021-22 under EPC
+Mode.-952",MoRTH,Karnataka,SRC-2026-05,"pdf_page_index=115,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01780,617957,"Construction of Jasra Bypass with four lane paved shoulder configurationfrom Km
+379.670 on NH-76New NH-35 to Km 18.00 on NH-27New NH-30 on EPC in the State
+of Uttar Pradesh.",MoRTH,Uttar Pradesh,SRC-2026-05,"pdf_page_index=150,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-00938,617959,"Rehabilitation & Widening work for 2 Lane with Paved Shoulder of Existing NH-80
+from km 70.15 to Km 121.025 of Munger-Suttanganj -BhagatpurMirzachowki section
+on EPC Mode in the State of Bihar.",MoRTH,Bihar,SRC-2026-05,"pdf_page_index=101,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01890,617970,"Reconstruction of existing 2 L/IL to 2L with paved shoulder from existing km 52.200 to
+92.880 of NH-",MoRTH,Uttarakhand,SRC-2026-05,"pdf_page_index=156,table_index=0,row_index=11",UNMATCHED_MAY
+OBS-202605-01008,617973,"Strengthening and widening of existing 2 lane road to two lane paved shoulder from
+km 7.750 to 26.542 & km. 32.093 to 45.786 of NH-130 on EPC mode in the state of
+chhattisgarh.job No. 130-CG-2017-18-348",MoRTH,Chhattisgarh,SRC-2026-05,"pdf_page_index=105,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-01892,617975,"Rehabilitation and upgradation to 2 lane with paved shoulder configuration from km
+122.00 Dharasu Bend to km 147.230 Silkyara Bend of NH-94 in the state of
+Uttarakhand",MoRTH,Uttarakhand,SRC-2026-05,"pdf_page_index=156,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-01043,617977,Development of Chiloda - Gandhinagar- Sarkhej ofNH-147 Package -II,MoRTH,Gujarat,SRC-2026-05,"pdf_page_index=107,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-01726,617981,"Widening to Two with Paved shoulders from Km 59.500 to Km 132.033 of
+Manneguda- Ravunapally section of NH-163 Erstwhile SH-4 in the State of Telangana
+on EPC mode under NH O Annual Plan 2016-17",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=146,table_index=0,row_index=18",UNMATCHED_MAY
+OBS-202605-01727,617982,"Widening and strengthening of existing 2-lane to 2- lane with paved shoulders from km
+159/0 to 165/4 and 186/0 to 215/0 of NH-163 on EPC mode int the state of Telangana",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=147,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-00797,617990,"Construction of bypass road to Adoni town connecting NH-167 Hagari - Jadcharla
+road from km.62/700 to 71/400 in Kurnool District in the State of Andhra Pradesh.",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=92,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-01729,617992,"Rehabilitation & upgradation of NH - 167 from design km 187.723 to 234.434
+Miryalaguda to Kodad section to two lane with paved shoulder on EPC mode in the
+state of Telangana",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=147,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01730,617993,"Rehabilitation and upgradation of NH-167 from design km 157.707 to 187.723 design
+length 30.016 km to two lane with paved shoulders of Alinagar-Miryalaguda Sec on
+EPC mode in the state of Telangana",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=147,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-01733,617996,"Widening to 2/4 Lane with paved shoulders from Km 182.120 to Km 227.600 of NH
+167 on Haggari-Jadcherla Road on EPC mode under NHO in the state of Telangana",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=147,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-01559,618002,"Widening of existing single lane to intermediate lane road from Mokokchung to Chare
+via Dikhu in the state of Nagaland on EPC mode",MoRTH,Nagaland,SRC-2026-05,"pdf_page_index=137,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-00944,618006,Sitamarhi-Jaynagar Section km 79.400 to km 156.500 Lot-II,MoRTH,Bihar,SRC-2026-05,"pdf_page_index=101,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-00945,618007,Jaynagar-Narahia Section km 156.500 to km 219.945 Lot-III,MoRTH,Bihar,SRC-2026-05,"pdf_page_index=101,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01783,618008,"Construction of four-lane elevated viaduct from km.4634 to km.6345 on NH-24A
+including Retaining wall, service lane, at grade road and improvement of junctions, on
+EPC mode",MoRTH,Uttar Pradesh,SRC-2026-05,"pdf_page_index=150,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-01736,618026,"Rehabilitation and upgradation to two lane with paved shoulders from Km 0/000 to
+72/6 of NH-365 Nakrekal to Tanamcherla section under NHDP IV in the state of
+Telangana under EPC mode",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=147,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01278,618045,"Construction of Mihona bypass, Lahar bypass, Daboh bypass & Bhander Bypass total
+length 20.60 km to 2-lane with paved shoulder from on Mihona-Bhander-MP/UP
+border section of NH 552E in the State of Madhya Pradesh on EPC mode",MoRTH,Madhya Pradesh,SRC-2026-05,"pdf_page_index=120,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01341,618046,"Rehabilitation & Up-gradation of Sabalkhed to Ashti Section from Km 37900 to Km
+55100 & Chinchpur to Jamkhed Section from km 70000 to km 72922 of NH-561 to
+Two lane with Paved shoulder/ Four lane configuration in the State of Maharashtra on
+EPC Mode Length20.122km.",MoRTH,Maharashtra,SRC-2026-05,"pdf_page_index=124,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01094,618050,"Rehabilitation and Upgradation to 2-lane/Intermediate lane configuration of Ashyari-
+Shri Kyari Section km 50.000 to km 75.000 of NH-707 in the state of Himachal
+Pradesh under Green National Highways Corridor Project GNHCP with the loan
+assistance of World Bank on EPC mode.",MoRTH,Himachal Pradesh,SRC-2026-05,"pdf_page_index=109,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-00803,618062,"Dornala to Kunta Junction from Design Chainage Km 244000 to 267990 section of
+NH-765 Package-2",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=92,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-01014,618064,"Up-gradation of NH-930 Sherpar to Kohka from Km.67880 to Km.114860 to 2LPS in
+Chhattisgarh under EPC mode",MoRTH,Chhattisgarh,SRC-2026-05,"pdf_page_index=105,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-01015,618078,"Up-gradation of NH-130C Abhanpur to Paund from NH Km. 0000 to KM 40380 to two
+lane with paved shoulders in the State of Chhattisgarh on EPC mode.",MoRTH,Chhattisgarh,SRC-2026-05,"pdf_page_index=105,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-01155,618083,"Construction of byepass around Lohardaga town of NH-143A in the Sate of Jharkhand
+under EPC mode.",MoRTH,Jharkhand,SRC-2026-05,"pdf_page_index=113,table_index=0,row_index=11",UNMATCHED_MAY
+OBS-202605-01349,618090,Sarsam - Kothari of NH-161A - 2L PS from Km.33/00 to 90/00,MoRTH,Maharashtra,SRC-2026-05,"pdf_page_index=124,table_index=0,row_index=11",UNMATCHED_MAY
+OBS-202605-01654,618093,"Up-gradation to 2 lane with Paved shoulder from Charbhuja at Design km 0.00
+existing km 150.00 to Neechli Oden Nathdwara at Design ch. Km 88.800 existing km
+55.950 of NH-162E on EPC mode.",MoRTH,Rajasthan,SRC-2026-05,"pdf_page_index=143,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-01354,618099,"Rehabilitation & up-gradation for Talere Gaganbawada - kolhapur Road NH 166G
+stretch start from km. 0/00 to Km. 06/00 and km. 13/00 to km 19/440 of NH-166G,
+length 12.440 km in the State of Maharashtra.",MoRTH,Maharashtra,SRC-2026-05,"pdf_page_index=125,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-01795,618110,"Improvement and upgradation to two lane with Paved Shoulder configuration from
+existing km 55.00 to km 90.00 Design length 34.76 of NH-227A near Chhapia Village
+to near Sikriganj in the State of UP on EPC Mode.",MoRTH,Uttar Pradesh,SRC-2026-05,"pdf_page_index=151,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01656,618118,"Upgradation of two lane paved shoulder from Shahpura existing km. 0.00 Design Ch.
+000 to Thanagazi existing Km.37352 Design Ch. 36810 of NH-248A on EPC
+mode in the State of Rajasthan.",MoRTH,Rajasthan,SRC-2026-05,"pdf_page_index=143,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01742,618132,"Widening & strengthening of existing carriageway in 2 lane with paved shoulders from
+km 25/0 to 59/2 design Ch km 25.467 to 59.200 of NH - 353C on EPC mode in the
+state of Telangana",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=147,table_index=0,row_index=16",UNMATCHED_MAY
+OBS-202605-01357,618136,"Upgradatiobn and Rehabilitation of Section of NH 361 F from Parli 00/000 to
+Gangakhed 30/400 to Two Lanes with paved shoulder / Four lane configurations on
+EPC mode in the State of Maharashtra.",MoRTH,Maharashtra,SRC-2026-05,"pdf_page_index=125,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-01745,618142,"Widening to Two lane with Paved shoulders from km.40/410 to 84/037 of
+Thirumanlagiri-- Suryapet Section of NH-365B earstwhile section of SH-16",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=148,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01746,618143,"widening to two lane with Paved shoulders from Km.0/970 to Km.40/410 of Jangaon -
+Thirumal giriof NH- 365B in the state of Telanganaon EPC mode under NHO Annual
+Plan 2016-17",MoRTH,Telangana,SRC-2026-05,"pdf_page_index=148,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-01198,618144,"Construction of Major Bridge Across Sharavathi Backwaters and approches between
+Ambargodu and Kalasavalli Near Sigandhur in Sagar Taluk on NH 369E in the State
+of Karnataka on EPC mode.Job No. NH-369E-KNT-2018-19-895 dated 06.03.2019.",MoRTH,Karnataka,SRC-2026-05,"pdf_page_index=116,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-00807,618145,"Widening to two lane with paved shoulder of Rampachodavaram - Koyyuru section of
+NH 516E from Km 43700 to Km 113820 in the State of Andhra Pradesh on EPC
+mode Job No. 737",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=93,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-00808,618161,"Widening and Reconstruction of existing road to four lane from Km.56400 to Km
+120300 i.e. from B.Kothapalli Junction to Gorantla excluding Kadiri Bypass from Km
+70200 to Km 77105 of NH 716G in the State of Andhra Pradesh on EPC mode Job
+no. 742",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=93,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-01807,618167,"Rehabilitation & Upgradation of NH-731A from Km.0.00 to Km.35.00 to 2-lane with
+paved shoulder under EPC mode",MoRTH,Uttar Pradesh,SRC-2026-05,"pdf_page_index=151,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-01375,618181,"Rehabilitation / Upgradation to 4 Lane with Paved shoulder of Existing Section in
+Sillod Town with Design Ch. Km54500 to Km 60679 [Length6.179 km] section of NH
+753F Aurangabad-Jalgaon road on EPC Mode in the State of Maharashtra",MoRTH,Maharashtra,SRC-2026-05,"pdf_page_index=126,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-00809,618191,"Rehabilitation and upgradation of NH-167AD from Macherla to Dachepalli via Paluvai
+Junction, Rentachinthala, Gurazala from Km.0.000 to 43.659 to two lane with paved
+shoulders in the state of Andhra Pradesh job-729",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=93,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-00810,618192,"Duttalur at NH-565 Junction to Kavali Joining on NH-16 Chainage Km. 36/400 to Km.
+107/224 excluding the stretch from Km 101.880 to 105.300 67.404 Km of NH-167BG
+from in the State of Andhra Pradesh on EPC mode",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=93,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-01898,618208,"Construction and upgradation of existing road to 2-lane with paved shoulder from
+existing chainage Km 509.725 to Km 528.000 design chainage Km 490.550 to Km
+507.850 of NH-58 new NH-07 Benakuli bend to Mana Village in EPC mode under
+Chardham Programme in the State of Uttarakhand.",MoRTH,Uttarakhand,SRC-2026-05,"pdf_page_index=157,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-01124,618220,"Reconstruction and widening to 2 lane with paved shoulder from existing chainage km
+102000 to km 134950 Design chainage km 90150 to km 116980 including construction
+of Naushera Tunnel Total length of tunnel 0.700 km under 31 TF on Akhnoor-Poonch
+road NH-144A in the UT of Jammu & Kashmir under Project Sampark BRO on EPC
+mode Package-V Job no NH-144A-J&K-2020-21-104",MoRTH,"Jammu and
+Kashmir",SRC-2026-05,"pdf_page_index=111,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-01811,618229,"Rehabilitation and upgradation to 2-lane with paved sholuders configuration of Near
+Karri village-Etawah section Km30.000 to Km 57.346 Pakage-II of NH-92 in state of
+Uttar Pradesh undergreen national Highway Corridor ProjectGNHCP with the loan
+assistance of world Bank on EPC mode.",MoRTH,Uttar Pradesh,SRC-2026-05,"pdf_page_index=152,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-00814,618237,"Rehabilitation and Up-gradation of Pasarlapudi to Dhindi section from Km 105/170 to
+Km 126/510 of NH -214 New NH -216 to two lane with paved shoulder in the state of
+Andhra Pradesh under NHDP-IV",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=93,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-00821,618258,"Two laning with paved shoulders of Gondiguda to Araku uptoBhallaguda section of NH
+516E",MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=93,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-00822,618259,Two laning with paved shoulders of Paderu to GundigudaSection of NH 516E,MoRTH,Andhra Pradesh,SRC-2026-05,"pdf_page_index=93,table_index=0,row_index=16",UNMATCHED_MAY
+OBS-202605-00890,618285,"Widening/Improvement to 4 -Lane with Paved Shoulder from Ch. 88.000km to
+Ch.99.930 km Design Ch.84.100km to Ch.96.000 km of Sagunbashi forest near
+Nichinta to starting of Krishnai Bypass Section of Bilasipura Guwahati road NH 17 on
+EPC Package-7",NHIDCL,Assam,SRC-2026-05,"pdf_page_index=97,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-00905,618327,"Widening/Improvement to 4-Lane with Paved Shoulder from KM 113300 to Km
+146230 Design Chainage 113830 to 145712 of Kwaram Taro Village - Dillai Section in
+Assam on EPC Package-6",NHIDCL,Assam,SRC-2026-05,"pdf_page_index=98,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-01568,618329,"Construction of 4/6 Laning from Km 132.375 to Km 153.058 Total New Alignment
+length of 20.683 Km of Daboka-Dimapur Section Dimapur Bypass Nagaland Portion
+of NH-36 & 39 in the State of Nagaland on EPC basis under PhaseA of SARDP-NE",NHIDCL,Nagaland,SRC-2026-05,"pdf_page_index=137,table_index=0,row_index=14",UNMATCHED_MAY
+OBS-202605-00906,618330,"Construction of 4/6 Laning from existing Km 159.400 of NH-36 to existing Km 102.500
+of NH-39 and upto end point of Assam portion [Design Km 118.050 to design Km
+132.375] Total New Alignment length of 14.325 Km of Daboka -Dimapur Section
+Dimapur Bypass in the state of Assam under SARDP-NE 'Phase-A' on EPC mode
+Assam Portion",NHIDCL,Assam,SRC-2026-05,"pdf_page_index=99,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-01467,618341,"Up-gradation to 2-lane with paved shoulders of Ngopa - Pawlrang section of NH 102B
+of Aizawl - Imphal Economic Corridor from Existing Chainage km 32.796 to km 72.030
+[Design Chainage km 31.280 to km 68.170] in the State of Mizoram under Bharatmala
+Pariyojna on EPC mode under NHO-NE Package-2 Keifang- Tuivai Pkg-2",NHIDCL,Mizoram,SRC-2026-05,"pdf_page_index=132,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01468,618342,"Rehabilitation and upgradation to 2 Lane with Paved shoulder of Economic corridor of
+NH-6 from Design chaiange Km 0.000 to Km 13.510 Package-1 in the state of
+Mizoram under Bharatmala Pariyojana on EPC mode",NHIDCL,Mizoram,SRC-2026-05,"pdf_page_index=132,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-01469,618343,"Rehabilitation and Up gradation to 2-lane with paved shoulder of Keifang Section
+Economic Corridor of NH-06 from Existing Chainage Km 30050 Keifang to Km 50360
+Keifang, Design Chainage Km 27400 to Km 45040 PkgIII in the State of Mizoram
+under Bharatmala Pariyojna on EPC Mode Seling-Dulte - III",NHIDCL,Mizoram,SRC-2026-05,"pdf_page_index=132,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-00915,618372,"Widening / Improvement to 4-Lane with Paved Shoulder configuration of existing
+single lane road from Kachukhana Harichara Paglagaunj to Dhubri - Phulbari Bridge
+approach Package-II of Srirampur - Dhubri Section of NH-127B from existing Km
+28.050 to Km 55.060 Design Km 27.650 to Km 54.154, Design Length26.504 Km
+under JICA ODA Loan assistance Phase-V [Srirampur - Dhubri Pkg-2]",NHIDCL,Assam,SRC-2026-05,"pdf_page_index=99,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01474,618381,"Widening and up-gradation to 2-lane with paved shoulder configuration and geometric
+improvements from km 250.00 Lunglei to km 298.00 on Aizawl-Tuipang section under
+JICA ODA Loan assistance Phase-I Package-6",NHIDCL,Mizoram,SRC-2026-05,"pdf_page_index=132,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01475,618382,"Widening and up-gradation to 2-lane with paved shoulder configuration and geometric
+improvements from km 298.00 to km 339.00 on Aizawl-Tuipang section under JICA
+ODA Loan assistance Phase-I Package-7",NHIDCL,Mizoram,SRC-2026-05,"pdf_page_index=132,table_index=0,row_index=11",UNMATCHED_MAY
+OBS-202605-01477,618384,"Widening and Up-gradation to 2- Lane with Paved Shoulder Configuration and
+geometric improvement from Km. 166. 000 to Km 208.000 Package-4 on Aizawl
+Tuipang Section of NH-54 in the State of Mizoram Package-4",NHIDCL,Mizoram,SRC-2026-05,"pdf_page_index=132,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-01777,618386,"Rehabilitation & Upgradation of Road from Km 0.00 to Km 18.600 Total length-18.600
+km of Kumarghat-Kailashahar section on NH-208 to 2-lane with Paved shoulder on
+EPC bais under NHO",NHIDCL,Tripura,SRC-2026-05,"pdf_page_index=150,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-01133,618396,"Construction & Upgradation to 2 lane with paved shoulder from Design Km. 31.449
+Khellani Ex. Km 44.946 to Km 51.700 Prem Nagar Ex. Km 68617 of 20.251 Km length
+on Khellani - Kishtwar - Chattroo section of NH-244 in the UT of J&K on EPC Mode
+under NHO-Gen PKG- 1",NHIDCL,"Jammu and
+Kashmir",SRC-2026-05,"pdf_page_index=112,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-00877,618432,"Construction of Balance work of 2-Lane with PS of Joram-Koloriang Road NH-713 on
+EPC basis from Design Km 44.989 to Km 61.547 Existing Km 50.050 to Km 70.000 in
+the state of Arunachal Pradesh under SARDP-NE Pkg-3",NHIDCL,Arunachal Pradesh,SRC-2026-05,"pdf_page_index=97,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-01659,618456,"Delhi-Vadodara Greenfield Alignment NH-148N Pkg-14 Ch. 388.420 to Ch. 419.000
+[Junction with NH- 76 to Junction with NH-12 near village Ummedpura]",National Highways Authority of India [NHAI],Rajasthan,SRC-2026-05,"pdf_page_index=143,table_index=0,row_index=6",UNMATCHED_MAY
+OBS-202605-01051,618464,"Vadodara Mumbai Expressway Ena -Kim Phase IB - Pkg VI [Km 217.500 to Km
+254.430]",National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=107,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-01052,618465,"Vadodara Mumbai Expressway Gandeva to Ena Phase IB - Pkg VII [Km 190.00 to Km
+217.500]",National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=107,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01379,618468,"Vadodara Mumbai Expressway Phase II - Pkg XI [Km. 77.000 to Km. 103.400] Ganjad
+- Talsari",National Highways Authority of India [NHAI],Maharashtra,SRC-2026-05,"pdf_page_index=126,table_index=0,row_index=12",UNMATCHED_MAY
+OBS-202605-01083,618484,"Delhi-Amritsar-Katra Expressway Phase-I Pkg-III from Junction with Jind-Panipat road
+NH-352A near Gangana village to Junction with Jind-Karnal road NH-709A near
+Alewa village Km 60800 to Km 91400",National Highways Authority of India [NHAI],Haryana,SRC-2026-05,"pdf_page_index=109,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-01084,618485,"Delhi-Amritsar-Katra Expressway Phase-I Pkg-IV from Junction with Jind-Karnal road
+NH-709A near Alewa village to Junction with Ambala-Kaithal-Hissar road NH-152 near
+Kharak Pandwa village Km 91400 to Km 120250",National Highways Authority of India [NHAI],Haryana,SRC-2026-05,"pdf_page_index=109,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01620,618487,"Delhi-Amritsar-Katra Expressway Phase-I Pkg-VII from Junction with Patiala-Bathinda
+road NH-7 near Bhawanigarh to Junction with Ludhiana-Malerhkotla SH-11 near
+Bhogiwal village Km 188830 to km 225770",National Highways Authority of India [NHAI],Punjab,SRC-2026-05,"pdf_page_index=140,table_index=0,row_index=18",UNMATCHED_MAY
+OBS-202605-01827,618498,6L Greenfield Kanpur - Lucknow Expressway Pkg II from km. 28.500 to km. 73.744,National Highways Authority of India [NHAI],Uttar Pradesh,SRC-2026-05,"pdf_page_index=153,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01055,618501,"Ahmedabad - Dholera Pkg I from km. 0.00 to km. 22.00 [Sardar Patel Ring Road -
+Sindhrej Village]",National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=107,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-01056,618502,"Ahmedabad - Dholera Pkg II from km. 22.00 to km. 48.52 [Sindhrej Village - Vejallka
+Village]",National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=107,table_index=0,row_index=14",UNMATCHED_MAY
+OBS-202605-01533,618515,"6L from Belgaum to Sankeshwar Bypass from Km. 515.000 to Km. 555.017 of NH-48
+Pkg-I",National Highways Authority of India [NHAI],"Multi-States
+(Karnataka,
+Maharashtra)",SRC-2026-05,"pdf_page_index=135,table_index=0,row_index=17",UNMATCHED_MAY
+OBS-202605-00829,618527,"Six Laning of Vijayawada Bypass from Gollapudi to Chinnakakani in Vijayawada -
+Gundugolanu Section from km. 30.00 to km. 47.881 Pkg-IV",National Highways Authority of India [NHAI],Andhra Pradesh,SRC-2026-05,"pdf_page_index=94,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-01495,618532,"6L of Aurangabad to Bihar-Jharkhand border Chordaha section from km. 209.827 to
+Km. 249.525 of NH-19 PKG-02",National Highways Authority of India [NHAI],"Multi-States
+(Bihar, Jharkhand)",SRC-2026-05,"pdf_page_index=133,table_index=0,row_index=16",UNMATCHED_MAY
+OBS-202605-01836,618553,"6L of Agra Bypass Northern connecting Km. 174.500 of NH-2 new NH-19 to Km.
+141.000 of Yamuna Expressways",National Highways Authority of India [NHAI],Uttar Pradesh,SRC-2026-05,"pdf_page_index=153,table_index=0,row_index=12",UNMATCHED_MAY
+OBS-202605-01689,618562,Dindigul Bypass - Samyanallore from km. 373.275 to km. 426.00,National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=145,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-01838,618565,"Strengthening of existing 4L Ayodhya Bypass Section from design Km. 121 600 to
+Km. 144020 of NH 28 New NH 27Pkg-3",NHAI,Uttar Pradesh,SRC-2026-05,"pdf_page_index=153,table_index=0,row_index=14",UNMATCHED_MAY
+OBS-202605-00959,618570,"4L Elevated Highway and at grade improvements at Gopalganj Town from Km.
+384.000 to Km. 386.750 on NH-27",National Highways Authority of India [NHAI],Bihar,SRC-2026-05,"pdf_page_index=102,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-00929,618576,"6L Standalone Flyovers at Raha, Demow, Borghat, Kathiatali junctions and ROB at
+Jagiroad on stretches of NH 36 and NH 27",National Highways Authority of India [NHAI],Assam,SRC-2026-05,"pdf_page_index=100,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01030,618578,"6L Access Controlled Highway from DND Maharani Bagh - Jn. with Jaitpur - Pushta
+Road of NH-148NA from km. 0.00 to km. 9.00 in NCR",National Highways Authority of India [NHAI],Delhi,SRC-2026-05,"pdf_page_index=106,table_index=0,row_index=6",UNMATCHED_MAY
+OBS-202605-00961,618582,"4L of Galgalia - Bahadurganj section from Km 0.000 to Km 49.000 Package-I of
+NH327E",National Highways Authority of India [NHAI],Bihar,SRC-2026-05,"pdf_page_index=102,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-00962,618583,"4L of Bahadurganj Araria section from Km 49.000 to Km 94.000 Package-II of NH-
+327E",National Highways Authority of India [NHAI],Bihar,SRC-2026-05,"pdf_page_index=102,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01062,618614,Sanchore - Santalpur from km 67.000 - km 99.000 of NH-754K AJ-RGBS-Package-3,National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=108,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-01544,618624,Mangloor to Telangana Maharashtra Border,National Highways Authority of India [NHAI],"Multi-States
+(Maharashtra,
+Telangana)",SRC-2026-05,"pdf_page_index=136,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-01292,618625,Indore - Gujarat / MP Border from km. Km 9.500 to Km 171.000 of NH-59 in MP,National Highways Authority of India [NHAI],Madhya Pradesh,SRC-2026-05,"pdf_page_index=121,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-01397,618638,Tarsod - Fagne section of NH-6,National Highways Authority of India [NHAI],Maharashtra,SRC-2026-05,"pdf_page_index=127,table_index=0,row_index=14",UNMATCHED_MAY
+OBS-202605-01398,618652,Chakur Loha Section of NH-361 from km 114.600 to km 187.80,National Highways Authority of India [NHAI],Maharashtra,SRC-2026-05,"pdf_page_index=127,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-01299,618665,4L of Sagar - Mohari from Km.8 to Km.50 Pkg-I,National Highways Authority of India [NHAI],Madhya Pradesh,SRC-2026-05,"pdf_page_index=121,table_index=0,row_index=16",UNMATCHED_MAY
+OBS-202605-01507,618676,"6L of Dhanara - Hatibena Section from Km 124.611 to km 146.50 of NH-130-CD
+Package OD-1",National Highways Authority of India [NHAI],"Multi-States
+(Chhattisgarh,
+Odisha)",SRC-2026-05,"pdf_page_index=134,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01310,618695,Indore - Harda Pkg-III [Nanasa to Pidgaon Section from km 95.000 to km 142.445],National Highways Authority of India [NHAI],Madhya Pradesh,SRC-2026-05,"pdf_page_index=122,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-01214,618698,Challakere to Hariyur section from km 358.500 to km 414.205 of NH-150 A,National Highways Authority of India [NHAI],Karnataka,SRC-2026-05,"pdf_page_index=117,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-01065,618699,Pipli Bhavnagar-Package 1 from km 136.025 to km 169.328,National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=108,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-01311,618701,"Balance work of 4L of Nauradehi Sanctuary de-scoped stretch of Hiran River to
+Sindoor River from Km. 66.00 to 130.00 NH-12 New NH-45",National Highways Authority of India [NHAI],Madhya Pradesh,SRC-2026-05,"pdf_page_index=122,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-01693,618743,Trichy 135.800 to Karur 218.000 section of NH-67 - Trichy Bypass,National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=145,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-01695,618745,"4L of Vadugapatti to Therkuvenganallur Rajapalyam section from km 36.000 to km
+71.600 of NH-744",National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=145,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-00845,618748,"Khammam-Devarapalle Pkg IV [4L Access Controlled Greenfield from Recherla village
+to Gurvaygudem village Design Chainage 105236 to 132664]",National Highways Authority of India [NHAI],Andhra Pradesh,SRC-2026-05,"pdf_page_index=95,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-01550,618755,"4L of left out existing road section from Lalgopalganj Km 161.450 to Nawabganj Km
+180.200 in Prayagraj",National Highways Authority of India [NHAI],"Multi-States
+(Rajasthan, Uttar
+Pradesh)",SRC-2026-05,"pdf_page_index=136,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-01514,618760,"4L Greenfield a Malout bypass from ch. Km 44.500 to ch. Km 35.500 on NH-07 and
+Ch. Km 0.000 to Km 6.984 on NH-09 bMandi Dabwali Bypass from Ch. 38.450 Km to
+Km 27.910 Pkg-02",National Highways Authority of India [NHAI],"Multi-States
+(Haryana, Punjab)",SRC-2026-05,"pdf_page_index=134,table_index=0,row_index=17",UNMATCHED_MAY
+OBS-202605-01849,618770,"4L Spur of Panipat - Shamli connecting NH-709AD Panipat Shamli Muzaffarnagar
+and NH-709A Karnal Meerut bypassing Shamli district UP",National Highways Authority of India [NHAI],Uttar Pradesh,SRC-2026-05,"pdf_page_index=154,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-01486,618771,6L of Varadharajula to Kumarajapet from km 0.000 to km 43.800 of NH-716B Pkg-I,National Highways Authority of India [NHAI],"Multi-States
+(Andhra Pradesh,
+Tamil Nadu)",SRC-2026-05,"pdf_page_index=133,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-01697,618773,Tuticorin - Tirunelveli from km. 0.00 to km. 47.250,National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=145,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-00971,618774,Ara - Mohania Pkg-II,National Highways Authority of India [NHAI],Bihar,SRC-2026-05,"pdf_page_index=103,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-00973,618779,4L of Aurangabad-Paithan,NHAI,Bihar,SRC-2026-05,"pdf_page_index=103,table_index=0,row_index=4",UNMATCHED_MAY
+OBS-202605-01602,618819,Balance work of Panikoili Rimoli Section of new NH-20 from Km 0.00 to Km. 163.000,National Highways Authority of India [NHAI],Odisha,SRC-2026-05,"pdf_page_index=139,table_index=0,row_index=17",UNMATCHED_MAY
+OBS-202605-01526,618828,4L from Km 219.600 Khajuri to Km 260.483 Wyndhamganj on NH-75 Sec-V,National Highways Authority of India [NHAI],"Multi-States
+(Jharkhand, Uttar
+Pradesh)",SRC-2026-05,"pdf_page_index=135,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01169,618829,4L from km 196.87 Sankha to km 219.6 Khajuri on NH-75 [Rehla / Garhwa Bypass],National Highways Authority of India [NHAI],Jharkhand,SRC-2026-05,"pdf_page_index=114,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-01068,618834,"4L Kodinar - Veraval Package VI from km. 222.400 to km. 230.00 Kodinar Bypass of
+NH-8E NH 51 new",National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=108,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-01069,618835,"4L of Bal Works of Talaja - Mahuva from 54.990 km. to 100.450 km. of Old NH-8E
+Package-II",National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=108,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-00976,618839,Aunta - Simaria including Ganga Bridge,National Highways Authority of India [NHAI],Bihar,SRC-2026-05,"pdf_page_index=103,table_index=0,row_index=7",UNMATCHED_MAY
+OBS-202605-01024,618849,"Conversion of Partially Excavated Escape Tunnel to Uni-Directional 2L
+Tunnelincluding construction of cross passages and approach roads on either side of
+the tunnel from Km 12.732 to Km 14.568 of Kiratpur to Nerchowk Section of NH-21",National Highways Authority of India [NHAI],Chhattisgarh,SRC-2026-05,"pdf_page_index=105,table_index=0,row_index=17",UNMATCHED_MAY
+OBS-202605-01854,618854,2L PS of Raebareli - Jagdishpur with 4L Jagdishpur Bypass Spur,National Highways Authority of India [NHAI],Uttar Pradesh,SRC-2026-05,"pdf_page_index=154,table_index=0,row_index=12",UNMATCHED_MAY
+OBS-202605-01855,618855,"Improvement and Up-Gradation of Existing Road to 2/4L PS from Km 40.000 to
+88.750, start of Khutar bypass to start of Shahjahanpur bypass of NH 731Pkg-I",National Highways Authority of India [NHAI],Uttar Pradesh,SRC-2026-05,"pdf_page_index=154,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-01859,618864,"4L from Mathura Bypass Start at Existing Km. 154.20 of NH-44 to Gaju Village at Km
+32.982 of NH-530B Pkg-IB",National Highways Authority of India [NHAI],Uttar Pradesh,SRC-2026-05,"pdf_page_index=154,table_index=0,row_index=17",UNMATCHED_MAY
+OBS-202605-01860,618865,"4L from Gaju Village at Km. 32.982 to Devinagar Bypass End at Km. 208.000 of NH-
+530B Pkg-1C.",National Highways Authority of India [NHAI],Uttar Pradesh,SRC-2026-05,"pdf_page_index=154,table_index=0,row_index=18",UNMATCHED_MAY
+OBS-202605-01701,618874,Four Laning of Trichy - Dindigul from km. 333.00 to km. 421.273 of NH-45,National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=145,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-01704,618897,"4L of Sethiyathope -Cholapuram section from Km. 65.960 to Km. 116.440 section of
+NH45 C Pkg-II",National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=145,table_index=0,row_index=16",UNMATCHED_MAY
+OBS-202605-01554,618912,"Construction of Rudrapur Bypass Section from Km. 0.000 to 20.640 in the state of
+Uttar Pradesh & Uttarakhand",National Highways Authority of India [NHAI],"Multi-States (Uttar
+Pradesh,
+Uttarakhand)",SRC-2026-05,"pdf_page_index=136,table_index=0,row_index=19",UNMATCHED_MAY
+OBS-202605-01607,618913,4-L of Rajamunda to Barkote Section of NH-23 from km. 287.200 to km. 337.185,National Highways Authority of India [NHAI],Odisha,SRC-2026-05,"pdf_page_index=140,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-00986,618915,"4L of Bal. works of Patna - Gaya -Dobhi Pkg-II from km. 39.00 to km. 83.00 of Old NH-
+83",National Highways Authority of India [NHAI],Bihar,SRC-2026-05,"pdf_page_index=103,table_index=0,row_index=17",UNMATCHED_MAY
+OBS-202605-00987,618916,"4L of Bal. works of Patna - Gaya -Dobhi Pkg-III from km. 83.00 to km. 127.217 of Old
+NH-83",National Highways Authority of India [NHAI],Bihar,SRC-2026-05,"pdf_page_index=103,table_index=0,row_index=18",UNMATCHED_MAY
+OBS-202605-00857,618919,"4L PS from Mandlem Existing Km. 38.000/Design Km.30.600 to Atmakur Existing
+Km.73.000/Design Km 66.115 of NH340C Package2",National Highways Authority of India [NHAI],Andhra Pradesh,SRC-2026-05,"pdf_page_index=95,table_index=0,row_index=17",UNMATCHED_MAY
+OBS-202605-01515,618935,4L Ambala - Kalaamb from Km. -0.800 to Km. 33.015 of old NH-72,National Highways Authority of India [NHAI],"Multi-States
+(Haryana, Punjab)",SRC-2026-05,"pdf_page_index=134,table_index=0,row_index=18",UNMATCHED_MAY
+OBS-202605-01545,618938,"4L of Rajura-Korpana-Adilabad Road upto M.S. Border from km 32.910 to km 89.090
+of NH-353B",National Highways Authority of India [NHAI],"Multi-States
+(Maharashtra,
+Telangana)",SRC-2026-05,"pdf_page_index=136,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-01707,618943,Salem - Ulundurpet section from km 0.313 to km 136.670 of NH-68,National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=145,table_index=0,row_index=19",UNMATCHED_MAY
+OBS-202605-01174,618946,4L of Mehgama - Hansdiha from km. 41.900 to km. 93.000 of NH -133A Pkg-II,National Highways Authority of India [NHAI],Jharkhand,SRC-2026-05,"pdf_page_index=114,table_index=0,row_index=14",UNMATCHED_MAY
+OBS-202605-01875,618959,"4L Prayagraj Greenfield By-pass from design Km 50860 near Nibi Kala Uperhar to
+design Km 64763 on NH-19 near Khodaypur Kasgaon including Interchange loop at
+NH-19",National Highways Authority of India [NHAI],Uttar Pradesh,SRC-2026-05,"pdf_page_index=155,table_index=0,row_index=14",UNMATCHED_MAY
+OBS-202605-01671,619063,"4L Greenfield spur from Delhi-Vadodara Greenfield expressway near Bandikui to
+Jaipur",National Highways Authority of India [NHAI],Rajasthan,SRC-2026-05,"pdf_page_index=143,table_index=0,row_index=18",UNMATCHED_MAY
+OBS-202605-01074,619067,6L of Chiloda-Naroda section from Km. 540.595 to Km. 555.595 of NH-8Package-VII,National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=108,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-01608,619075,6L of Bhubaneswar - Jagatpur - Chandikhole Section of NH-16,National Highways Authority of India [NHAI],Odisha,SRC-2026-05,"pdf_page_index=140,table_index=0,row_index=6",UNMATCHED_MAY
+OBS-202605-01710,619083,"Thumbipadi-Namakkal from km. 180.00 to km. 248.625 Package No. NS-2/BOT/TN-
+02",National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=146,table_index=0,row_index=2",UNMATCHED_MAY
+OBS-202605-01711,619084,"Start of Karur Bypass - Dindigul from km. 292.600 to km. 305.600 Contract Package
+No. NS2/BOT/TN-4",National Highways Authority of India [NHAI],Tamil Nadu,SRC-2026-05,"pdf_page_index=146,table_index=0,row_index=3",UNMATCHED_MAY
+OBS-202605-01531,619104,"4L/2L PS of Govindpur Raiganj - Chas - WB border section of from km. 0.00 to km.
+56.889 of Old NH-32",National Highways Authority of India [NHAI],"Multi-States
+(Jharkhand, West
+Bengal)",SRC-2026-05,"pdf_page_index=135,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-01235,619121,4L of Hubli - Hospet Section of NH-63 from Km 128.850 to Km 272.571,National Highways Authority of India [NHAI],Karnataka,SRC-2026-05,"pdf_page_index=118,table_index=0,row_index=6",UNMATCHED_MAY
+OBS-202605-01510,619122,Akshardham - DL/UP Border Pkg-01,National Highways Authority of India [NHAI],"Multi-States (Delhi,
+Uttar Pradesh)",SRC-2026-05,"pdf_page_index=134,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-01237,619144,Hospet - Chitradurga from km. 299.00 to km. 418.750,National Highways Authority of India [NHAI],Karnataka,SRC-2026-05,"pdf_page_index=118,table_index=0,row_index=8",UNMATCHED_MAY
+OBS-202605-01078,619147,"4L of Bal Works of Mahuva to Kagvadar from 100.450 Km. to 140.470 Km. of NH-8E
+Pkg- III",National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=108,table_index=0,row_index=17",UNMATCHED_MAY
+OBS-202605-01079,619148,4L of Bhavnagar - Talaja Package-I from Km. 6.945 to Km. 54.990 of Old NH-8E,National Highways Authority of India [NHAI],Gujarat,SRC-2026-05,"pdf_page_index=108,table_index=0,row_index=18",UNMATCHED_MAY
+OBS-202605-01415,619209,"4L of existing 2/4L stretch from Lonand to Dive Ghat Km 166.400 to Km 220.900 of
+Mohol Alandi section of NH-965 Pkg - V",National Highways Authority of India [NHAI],Maharashtra,SRC-2026-05,"pdf_page_index=128,table_index=0,row_index=13",UNMATCHED_MAY
+OBS-202605-01003,619320,Muzaffarpur - Sonbarsa Section of NH-77 from km 2.800 to km 89.000,NHAI,Bihar,SRC-2026-05,"pdf_page_index=104,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-00008,701105,Goa Airport Terminal Building Extension Project,Airport Authority of India [AAI],Goa,SRC-2026-05,"pdf_page_index=54,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-00347,701263,Rajasthan Refinery Project,MinistryofPetroleumNaturalGas,Rajasthan,SRC-2026-05,"pdf_page_index=71,table_index=0,row_index=5",UNMATCHED_MAY
+OBS-202605-00703,705481,Ramganjmandi-Bhopal New Line Project [276.50 km],West Central Railway [WCR] - II,"Multi-States
+(Madhya Pradesh,
+Rajasthan)",SRC-2026-05,"pdf_page_index=88,table_index=0,row_index=1",UNMATCHED_MAY
+OBS-202605-00756,705489,Madurai- Tuticorin New Line,Ministry of Railways,Tamil Nadu,SRC-2026-05,"pdf_page_index=90,table_index=0,row_index=10",UNMATCHED_MAY
+OBS-202605-00733,705742,Jeypore-Malkanagiri New Railway Line Project,East Coast Railway [ECoR] - II,Odisha,SRC-2026-05,"pdf_page_index=89,table_index=0,row_index=9",UNMATCHED_MAY
+OBS-202605-00498,707414,"Multi Modal Transport Hub [MMTH] Project at Boraki in Greater Noida - Infrastructure
+Development - Phase 1",National Industrial Corridor Development Corporation,Uttar Pradesh,SRC-2026-05,"pdf_page_index=78,table_index=0,row_index=15",UNMATCHED_MAY
+OBS-202605-00403,709760,HP TDAE Unit in Mumbai Refinery,Hindustan Petroleum Corporation Limited,Maharashtra,SRC-2026-05,"pdf_page_index=73,table_index=0,row_index=19",UNMATCHED_MAY
+OBS-202605-00406,709782,ATF Pipeline from Jawaharlal Nehru Port Trust to Navi Mumbai International Airport,Indian Oil Corporation Limited [IOCL],Maharashtra,SRC-2026-05,"pdf_page_index=73,table_index=0,row_index=22",UNMATCHED_MAY
+OBS-202605-00569,709817,4TH LINE - DADHAPARA-BELHA [9.2 KM] [PB-72/NR/2022-23],SECR,Chhattisgarh,SRC-2026-05,"pdf_page_index=81,table_index=0,row_index=21",UNMATCHED_MAY
+OBS-202605-00220,900808,"Transmission System for Kurnool Wind Energy Zone/ Solar Energy Zone Part-A and
+Part-B",Power Grid Corporation of India Limited [POWERGRID],"Multi-States
+(Andhra Pradesh,
+Telangana)",SRC-2026-05,"pdf_page_index=64,table_index=0,row_index=10",UNMATCHED_MAY

@@ -1,7 +1,38 @@
-# Dataset README
+﻿# Data Contract
+
+**Owner:** Sandarbh (Data Engineering) + Team review
+**Area:** Shared / Data Architecture
+**Document Type:** APPROVED
+**Status:** ACTIVE — GATE 2 provisional; identity fields not yet final
+**Last Updated:** 2026-09-01
+**Depends On:** NONE
+**Used By:** Backend, ML, Frontend, Data Engineering
+**Canonical:** YES
+
+> Previously: `docs/DATASET_README.md`
+> Moved to: `docs/shared/DATA_CONTRACT.md` — 2026-09-01
+
+> [!IMPORTANT]
+> `project_month` is NOT final until project identity continuity is validated.
+> One observation = one project's reported state at one reporting month.
+> Backend must not independently reinterpret raw PDFs.
+
+---
+
+## Conceptual Entities
+
+| Entity | Table | Description |
+|---|---|---|
+| Project | project_master.csv | A unique infrastructure project. One row per project. |
+| ProjectSnapshot | project_month.csv | One project's state at one reporting month. |
+| ProjectIdentifier | columns on master | Project Code, Legacy OCMS Code, PMGID |
+| CompletionEvent | project_completion_events.csv | Outcome record for a completed project. |
+| Source/Provenance | data/metadata/provenance.csv | Row-level traceability to source PDF/page. |
+
+---
 
 **Document Purpose:** Human-readable guide to the dataset structure in `data/`.  
-**Status:** DRAFT — to be updated as extraction progresses.
+**Status:** DRAFT â€” to be updated as extraction progresses.
 
 ---
 
@@ -12,7 +43,7 @@ The PRAHARI dataset is a longitudinal, project-month panel dataset reconstructed
 The fundamental unit of observation is:
 
 ```
-PROJECT × REPORTING MONTH
+PROJECT Ã— REPORTING MONTH
 ```
 
 This means each row records the **state of a single project as reported in a single monthly report**.
@@ -38,7 +69,7 @@ One row per unique project.
 | `state` | string | State of implementation. |
 | `date_of_approval` | date | Date project was approved. |
 | `start_date` | date | Project start date. |
-| `original_cost` | float | Original approved cost (₹ crore). |
+| `original_cost` | float | Original approved cost (â‚¹ crore). |
 | `original_doc` | date | Original / target date of completion. |
 | `first_seen_report` | string | Reporting month when project first appeared (YYYY-MM). |
 | `source_file` | string | Source PDF filename for initial record. |
@@ -49,15 +80,15 @@ One row per unique project.
 
 ### `data/processed/project_month.csv`
 
-Contains **monthly observations** — fields that change over time.  
+Contains **monthly observations** â€” fields that change over time.  
 One row per project per reporting month.
 
 | Field | Type | Notes |
 |---|---|---|
 | `project_id` | string | Foreign key to `project_master`. |
 | `reporting_month` | string | YYYY-MM format. |
-| `revised_cost` | float | Revised / anticipated cost (₹ crore) as of this month. |
-| `cumulative_expenditure` | float | Cumulative expenditure (₹ crore) as of this month. |
+| `revised_cost` | float | Revised / anticipated cost (â‚¹ crore) as of this month. |
+| `cumulative_expenditure` | float | Cumulative expenditure (â‚¹ crore) as of this month. |
 | `physical_progress_pct` | float | Physical progress (%). |
 | `revised_doc` | date | Revised / anticipated date of completion as of this month. |
 | `project_status_raw` | string | Status string as-extracted from source. |
@@ -79,17 +110,17 @@ One row per project completion record as reported.
 | `project_name_raw` | string | Name as extracted. |
 | `agency` | string | Agency as extracted. |
 | `state` | string | State as extracted. |
-| `date_of_approval` | date | — |
-| `start_date` | date | — |
+| `date_of_approval` | date | â€” |
+| `start_date` | date | â€” |
 | `actual_completion_date` | date | Actual date of completion as reported. |
 | `original_doc` | date | Original / target date of completion. |
 | `revised_doc` | date | Revised date of completion (last known). |
-| `original_cost` | float | ₹ crore. |
-| `revised_cost` | float | ₹ crore. |
-| `reported_cumulative_expenditure` | float | ₹ crore. See note below. |
+| `original_cost` | float | â‚¹ crore. |
+| `revised_cost` | float | â‚¹ crore. |
+| `reported_cumulative_expenditure` | float | â‚¹ crore. See note below. |
 | `source_file` | string | Source PDF filename. |
-| `source_page` | int | — |
-| `source_table` | string | — |
+| `source_page` | int | â€” |
+| `source_table` | string | â€” |
 
 > **CAVEAT (from official source):** Cumulative expenditure for completed projects may NOT equal final project completion cost. Do not treat `reported_cumulative_expenditure` as the definitive final cost.
 
@@ -97,9 +128,9 @@ One row per project completion record as reported.
 
 ## Extracted (Intermediate) Tables
 
-`data/extracted/ongoing/<report>.csv` — Raw extraction, ongoing table.  
-`data/extracted/completed/<report>.csv` — Raw extraction, completed table.  
-`data/extracted/added/<report>.csv` — Raw extraction, newly-added projects table.
+`data/extracted/ongoing/<report>.csv` â€” Raw extraction, ongoing table.  
+`data/extracted/completed/<report>.csv` â€” Raw extraction, completed table.  
+`data/extracted/added/<report>.csv` â€” Raw extraction, newly-added projects table.
 
 These preserve the raw PDF extraction output before normalization.  
 **Never overwrite these files.** Normalization creates separate copies.
@@ -112,9 +143,9 @@ Every observation must ultimately be traceable to its source:
 
 ```
 project_id + reporting_month
-  → source_file (PDF filename)
-  → source_page (page number)
-  → source_table (table label in PDF)
+  â†’ source_file (PDF filename)
+  â†’ source_page (page number)
+  â†’ source_table (table label in PDF)
 ```
 
 These are recorded in `project_month.csv` and `project_completion_events.csv`.  
@@ -137,3 +168,4 @@ method, extractor version, and a stable raw-row locator.
 - [ ] Whether name changes occur for the same project: UNKNOWN
 - [ ] Whether project codes are ever reused: UNKNOWN
 - [ ] Whether cumulative expenditure ever non-monotonically decreases: UNKNOWN
+

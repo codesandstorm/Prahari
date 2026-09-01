@@ -1,5 +1,18 @@
-# Decision Log
+﻿# Decision Log
 
+**Owner:** Team (append-only — all members)
+**Area:** Shared / Decisions
+**Document Type:** APPROVED
+**Status:** ACTIVE — append only
+**Last Updated:** 2026-09-01
+**Depends On:** NONE
+**Used By:** Entire team
+**Canonical:** YES
+
+> Previously: `docs/DECISION_LOG.md`
+> Moved to: `docs/shared/DECISION_LOG.md` — 2026-09-01
+
+---
 **Document Purpose:** Record all significant technical decisions made during Gate 2.  
 **Format:** Append-only. Decisions are NEVER deleted; only superseded by new entries.
 
@@ -8,7 +21,7 @@
 ## Decision Template
 
 ```
-## DEC-NNN — [Short Title]
+## DEC-NNN â€” [Short Title]
 Date: YYYY-MM-DD
 Author: [name]
 Context: What situation required a decision?
@@ -21,7 +34,7 @@ Status: ACTIVE | SUPERSEDED by DEC-NNN
 
 ---
 
-## DEC-001 — Repository Structure Initialisation
+## DEC-001 â€” Repository Structure Initialisation
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Setup  
@@ -30,23 +43,23 @@ Status: ACTIVE | SUPERSEDED by DEC-NNN
 - Single flat directory of scripts
 - Modular `src/` layout with extraction, normalization, identity, validation, pipeline
 **Decision:** Modular `src/` layout as specified in the SIH project brief.  
-**Rationale:** Each phase (extraction → normalization → identity → validation) is
+**Rationale:** Each phase (extraction â†’ normalization â†’ identity â†’ validation) is
 distinct enough to warrant its own module. Future contributors can work in isolation.  
 **Consequences:** All scripts must use `config.yaml` for paths; no hard-coded absolute paths.  
 **Status:** ACTIVE
 
 ---
 
-## DEC-002 — PDF Extraction Library Choice
+## DEC-002 â€” PDF Extraction Library Choice
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Setup  
 **Context:** Two candidate libraries exist for PDF table extraction.  
 **Options Considered:**
-- `pdfplumber` — good for structured tables, explicit table detection
-- `PyMuPDF` — lower level, good for raw text blocks and page structure
-- `camelot` — table-focused but requires Ghostscript dependency
-- OCR (Tesseract) — for scanned/image PDFs
+- `pdfplumber` â€” good for structured tables, explicit table detection
+- `PyMuPDF` â€” lower level, good for raw text blocks and page structure
+- `camelot` â€” table-focused but requires Ghostscript dependency
+- OCR (Tesseract) â€” for scanned/image PDFs
 **Decision:** Use `pdfplumber` as primary; `PyMuPDF` as fallback and for metadata/integrity checks. No OCR unless normal extraction fails.  
 **Rationale:** Flash Reports are digitally typeset PDFs (not scanned). Text extraction should work without OCR. `pdfplumber` has strong table detection. `PyMuPDF` is useful for SHA-256, page count, and cross-validation.  
 **Consequences:** If any reports are scanned/image-based, this decision must be revisited.  
@@ -54,7 +67,7 @@ distinct enough to warrant its own module. Future contributors can work in isola
 
 ---
 
-## DEC-003 — No Uncontrolled Fuzzy Matching
+## DEC-003 â€” No Uncontrolled Fuzzy Matching
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Setup  
@@ -69,7 +82,7 @@ distinct enough to warrant its own module. Future contributors can work in isola
 
 ---
 
-## DEC-004 — Raw Extraction Files Are Immutable
+## DEC-004 â€” Raw Extraction Files Are Immutable
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Setup  
@@ -84,7 +97,7 @@ distinct enough to warrant its own module. Future contributors can work in isola
 
 ---
 
-## DEC-005 — No ML Until Gate 2 Is VERIFIED
+## DEC-005 â€” No ML Until Gate 2 Is VERIFIED
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Setup  
@@ -103,7 +116,7 @@ distinct enough to warrant its own module. Future contributors can work in isola
 
 ---
 
-## DEC-006 — Filename Convention Corrected to FlashReport_YYYY_MM.pdf
+## DEC-006 â€” Filename Convention Corrected to FlashReport_YYYY_MM.pdf
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Audit Pipeline  
@@ -118,61 +131,61 @@ distinct enough to warrant its own module. Future contributors can work in isola
 
 ---
 
-## DEC-007 — FlashReport_2026_07.pdf Contains June 2026 Data — July 2026 Not Obtained
+## DEC-007 â€” FlashReport_2026_07.pdf Contains June 2026 Data â€” July 2026 Not Obtained
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Audit Pipeline  
 **Context:** SHA-256 audit revealed `FlashReport_2026_07.pdf` and `FlashReport_2026_06.pdf` are byte-for-byte identical. Page-level text inspection confirmed both files state "JUNE 2026" on pages 1 and 4.  
 **Options Considered:**
-- Treat `_07` as July 2026 (REJECTED — contradicted by content)
+- Treat `_07` as July 2026 (REJECTED â€” contradicted by content)
 - Mark both as June 2026, flag July 2026 as missing
 - Delete one file
 **Decision:** Both files are recorded in the manifest as June 2026 reports. The July 2026 report is recorded as NOT OBTAINED. The primary extraction milestone shifts to June 2026.  
 **Rationale:** Content provenance rule: the file's internal content determines the report period, not its filename. Extraction on an incorrectly dated file would silently corrupt the temporal chain.  
-**Consequences:** (a) July 2026 milestone requires obtaining the actual July 2026 PDF from MoSPI/PAIMANA portal. (b) The project brief's expected row count of 1,775 was for July 2026 — the June 2026 file shows 1,847. These are DIFFERENT months.  
-**Status:** ACTIVE — action required
+**Consequences:** (a) July 2026 milestone requires obtaining the actual July 2026 PDF from MoSPI/PAIMANA portal. (b) The project brief's expected row count of 1,775 was for July 2026 â€” the June 2026 file shows 1,847. These are DIFFERENT months.  
+**Status:** ACTIVE â€” action required
 
 ---
 
-## DEC-008 — New Schema Era Defined: PAIMANA_V2_CANDIDATE
+## DEC-008 â€” New Schema Era Defined: PAIMANA_V2_CANDIDATE
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Audit Pipeline  
 **Context:** The original schema detection config defined PAIMANA_V2 with keywords "Legacy OCMS Code" and "PMGID". Neither keyword appears in any currently held PDF. The 2025-Jul, 2026-May, and 2026-Jun reports show a new structure: web-generated from the PAIMANA portal, Project Code embedded inline in rows.  
 **Options Considered:**
-- Force-classify 2026 reports as PAIMANA_V2 (REJECTED — unsupported by content)
-- Classify as UNKNOWN (REJECTED — we know it is PAIMANA but the sub-version is unclear)
+- Force-classify 2026 reports as PAIMANA_V2 (REJECTED â€” unsupported by content)
+- Classify as UNKNOWN (REJECTED â€” we know it is PAIMANA but the sub-version is unclear)
 - Create an interim category PAIMANA_V2_CANDIDATE
 **Decision:** New schema class `PAIMANA_V2_CANDIDATE` added to config. This represents the confirmed modern PAIMANA web-generated structure. The original PAIMANA_V2 definition remains but is marked PLAUSIBLE/NOT YET OBSERVED.  
-**Rationale:** Accurate schema labelling is critical — the extractor code branches on schema version. Using an incorrect label would cause the wrong extractor to be invoked.  
+**Rationale:** Accurate schema labelling is critical â€” the extractor code branches on schema version. Using an incorrect label would cause the wrong extractor to be invoked.  
 **Consequences:** A new extractor for PAIMANA_V2_CANDIDATE must be written. The column structure is: Sl.No | Project Name (Agency) (Project Code) | State | Date of Approval | DoC | Original Cost | Revised Cost | Cumulative Expenditure | Physical Progress.  
 **Status:** ACTIVE
 
 ---
 
-## DEC-009 — Three Partial/Excerpt Files Flagged as Not Full Reports
+## DEC-009 â€” Three Partial/Excerpt Files Flagged as Not Full Reports
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Audit Pipeline  
 **Context:** Three files have anomalously low page counts compared to their era peers:  
-- `FlashReport_2024_05(01).pdf`: 5 pages (peers: 267–309 pages)  
-- `FlashReport_July_2025 (1).pdf`: 67 pages (peers: 212–234 pages)  
+- `FlashReport_2024_05(01).pdf`: 5 pages (peers: 267â€“309 pages)  
+- `FlashReport_July_2025 (1).pdf`: 67 pages (peers: 212â€“234 pages)  
 **Options Considered:**
 - Proceed with extraction assuming they are representative samples
 - Flag as excerpts and defer extraction pending full files
-**Decision:** Both files flagged in manifest as LIKELY EXCERPT — NOT FULL REPORT. Extraction deferred. `FlashReport_2024_07(02).pdf` (267 pages) is accepted as a plausible full report despite the suffix.  
+**Decision:** Both files flagged in manifest as LIKELY EXCERPT â€” NOT FULL REPORT. Extraction deferred. `FlashReport_2024_07(02).pdf` (267 pages) is accepted as a plausible full report despite the suffix.  
 **Rationale:** Extracting a partial file and treating its row count as the complete monthly picture would introduce silent undercount bias.  
 **Consequences:** May 2024 and July 2025 monthly data unavailable until full reports are obtained.  
-**Status:** ACTIVE — action required
+**Status:** ACTIVE â€” action required
 
 ---
 
-## DEC-010 — OCR Ruled Out for All Currently Held Files
+## DEC-010 â€” OCR Ruled Out for All Currently Held Files
 
 **Date:** 2026-09-01  
 **Author:** PRAHARI Audit Pipeline  
 **Context:** Task 2 required assessing whether OCR was necessary for any held PDF.  
-**Options Considered:** N/A — binary assessment
+**Options Considered:** N/A â€” binary assessment
 **Decision:** OCR is NOT required. All 13 files are digitally typeset and yield extractable text via pdfplumber.  
 **Rationale:** Text character counts confirmed >200 chars/page across all sampled pages for all files. No zero-character pages observed.  
 **Consequences:** Do NOT add Tesseract or OCR dependencies at this stage. Reassess only if pre-2005 files are obtained.  
@@ -240,3 +253,5 @@ distinct enough to warrant its own module. Future contributors can work in isola
 **Context:** Codex review required that manual human hypotheses not be silently merged into automated detector output.
 **Decision:** The automated detector returns UNKNOWN_SCHEMA for 2026-era files. The human assessment (PAIMANA_V2_CANDIDATE, PLAUSIBLE) is stored in SchemaEvidence.manual_schema_assessment separately. These fields are never conflated.
 **Status:** ACTIVE
+
+
