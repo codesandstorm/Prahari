@@ -1,0 +1,25 @@
+field_name,meaning,data_type,source_table,source_schema,static_or_dynamic,missing_percentage,available_at_prediction_time,leakage_risk,candidate_ml_usage,notes
+project_code,Modern PAIMANA project identifier,string,All Ongoing Projects,PAIMANA_V2,STATIC,UNKNOWN,YES,LOW,IDENTIFIER,PLAUSIBLE — existence confirmed in project brief; not yet extracted
+legacy_ocms_code,Historical OCMS identifier (bridge field),string,All Ongoing Projects,PAIMANA_V2,STATIC,UNKNOWN,YES,LOW,IDENTIFIER,PLAUSIBLE — column present; completeness unknown
+pmgid,PMGID identifier,string,All Ongoing Projects,PAIMANA_V2,STATIC,UNKNOWN,YES,LOW,IDENTIFIER,PLAUSIBLE — column present; completeness unknown
+project_name,Name of the infrastructure project,string,All Ongoing Projects,ALL,STATIC,UNKNOWN,YES,LOW,CONTEXT ONLY,PLAUSIBLE — name changes possible; anomaly flag if changes
+agency,Implementing agency,string,All Ongoing Projects,ALL,STATIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,PLAUSIBLE — agency-level track record may be informative
+ministry,Responsible ministry / department,string,Report metadata,OCMS+,STATIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,UNKNOWN — may appear only as section header not project-row field
+sector,Infrastructure sector,string,Report section header,OCMS+,STATIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,UNKNOWN — may appear only as section grouping
+state,State of implementation,string,All Ongoing Projects,ALL,STATIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,PLAUSIBLE — state-level infrastructure factors may matter
+date_of_approval,Date project was formally approved,date,All Ongoing Projects,ALL,STATIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,PLAUSIBLE — DOA in legacy era; format varies
+start_date,Project start date,date,All Ongoing Projects,PAIMANA_V1+,STATIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,UNKNOWN — may not appear in OCMS/LEGACY era
+original_cost,Original approved cost in rupees crore,float,All Ongoing Projects,ALL,STATIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,PLAUSIBLE — fundamental project scale indicator
+original_doc,Original / target date of completion,date,All Ongoing Projects,ALL,STATIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,PLAUSIBLE — DOC in legacy era; format varies
+revised_cost,Revised anticipated cost as of reporting month in rupees crore,float,All Ongoing Projects,ALL,DYNAMIC,UNKNOWN,YES (past values only),HIGH (future values),PLAUSIBLE FEATURE (past trend),Past values and trends are features; future value is label component
+cumulative_expenditure,Cumulative expenditure as of reporting month in rupees crore,float,All Ongoing Projects,ALL,DYNAMIC,UNKNOWN,YES (past values only),MEDIUM (future values),PLAUSIBLE FEATURE (past trend),Should be monotonically increasing — decreases are anomalies
+physical_progress_pct,Physical completion percentage as of reporting month,float,All Ongoing Projects,PAIMANA_V1+,DYNAMIC,UNKNOWN,YES (past values only),MEDIUM (future values),PLAUSIBLE FEATURE (past trend),UNKNOWN in OCMS/LEGACY era; values outside 0-100 are anomalies
+revised_doc,Revised anticipated date of completion as of reporting month,date,All Ongoing Projects,ALL,DYNAMIC,UNKNOWN,YES (past values only),HIGH (future values),PLAUSIBLE FEATURE (past trend),Future value is label component for schedule overrun prediction
+project_status_raw,Status string as extracted (active / delayed / completed etc.),string,All Ongoing Projects,ALL,DYNAMIC,UNKNOWN,YES,LOW,PLAUSIBLE FEATURE,Raw string — not normalised; preserve and flag anomalies
+actual_completion_date,Date project actually completed (from Completed Projects table),date,Completed Projects,PAIMANA_V2,STATIC (event),UNKNOWN,NO — future outcome,CRITICAL,LABEL ONLY,NEVER use as input feature; this is the outcome
+reported_cumulative_expenditure,Cumulative expenditure at completion reporting in rupees crore,float,Completed Projects,PAIMANA_V2,STATIC (event),UNKNOWN,NO — future outcome,CRITICAL,LABEL COMPONENT,Official caveat: may NOT equal final project cost
+source_id,Immutable source manifest identifier,string,All tables,ALL,STATIC,0%,N/A (provenance),NONE,NOT APPLICABLE,Required foreign key to source_manifest.csv
+source_page,Page number in source PDF,integer,All tables,ALL,STATIC,0%,N/A (provenance),NONE,NOT APPLICABLE,Required provenance field
+source_table,Table label / section in source PDF,string,All tables,ALL,STATIC,0%,N/A (provenance),NONE,NOT APPLICABLE,Required provenance field
+reporting_month,Reporting month in YYYY-MM format,string,project_month.csv,N/A,STATIC (key),0%,N/A (key),NONE,NOT APPLICABLE,Fundamental temporal key — must not be missing
+extraction_flags,Pipe-delimited list of anomaly flags raised during extraction,string,project_month.csv,N/A,DYNAMIC,HIGH (many rows blank = no flags),N/A (metadata),NONE,NOT APPLICABLE,Blank = no flags; not the same as no anomalies

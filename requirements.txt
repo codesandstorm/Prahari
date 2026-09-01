@@ -1,0 +1,38 @@
+# ============================================================
+# PRAHARI — requirements.txt
+# Gate 2: Dataset Truth and Historical Dataset Reconstruction
+# ============================================================
+# DO NOT add ML libraries (scikit-learn, xgboost, etc.) until
+# Gate 2 is fully validated and Gate 3 is formally approved.
+# ============================================================
+
+# --- PDF extraction ---
+PyMuPDF>=1.23.0          # primary extraction (text + table structure)
+pdfplumber>=0.10.0       # fallback / cross-validation for tables
+
+# --- Data manipulation ---
+pandas>=2.1.0
+numpy>=1.26.0
+
+# --- Data validation / profiling ---
+great-expectations>=0.18.0   # optional: structured validation suites
+# ydata-profiling>=4.6.0     # optional: profiling reports (heavy dep)
+
+# --- Configuration ---
+PyYAML>=6.0.1
+
+# --- Hashing / integrity ---
+# hashlib is stdlib — no extra dep needed
+
+# --- Utilities ---
+tqdm>=4.66.0             # progress bars for batch extraction
+python-dateutil>=2.8.2   # robust date parsing
+openpyxl>=3.1.0          # read/write xlsx if any agency provides Excel
+
+# --- Testing ---
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# --- Linting / formatting (dev only) ---
+# black>=23.0
+# ruff>=0.1.0

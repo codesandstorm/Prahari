@@ -1,0 +1,249 @@
+# ============================================================
+# PRAHARI — config.yaml
+# Gate 2: Dataset Truth and Historical Dataset Reconstruction
+#
+# USAGE:
+#   All scripts load this file via src/utils/config_loader.py
+#   Never hard-code absolute paths in source files.
+# ============================================================
+
+project:
+  name: "PRAHARI"
+  version: "0.2.0-gate2"
+  gate: 2
+  description: "Predictive Risk Assessment for HIgh-value Infrastructure — Gate 2: Dataset Reconstruction"
+
+# FILENAME CONVENTION (VERIFIED 2026-09-01)
+# Actual files: FlashReport_YYYY_MM.pdf
+# Some historical files have non-standard suffixes e.g. FlashReport_2024_05(01).pdf
+# The mospy_flash_YYYY_MM.pdf convention assumed earlier is INCORRECT — do not use.
+
+# ============================================================
+# PATH ROOTS (all relative to repository root)
+# ============================================================
+paths:
+  data_root:           "data"
+  raw:                 "data/raw"
+  extracted_ongoing:   "data/extracted/ongoing"
+  extracted_completed: "data/extracted/completed"
+  extracted_added:     "data/extracted/added"
+  normalized:          "data/normalized"
+  interim:             "data/interim"
+  processed:           "data/processed"
+  validation:          "data/validation"
+  metadata:            "data/metadata"
+  outputs:             "outputs"
+  reports:             "outputs/reports"
+  figures:             "outputs/figures"
+  docs:                "docs"
+
+# ============================================================
+# SOURCE MANIFEST
+# ============================================================
+manifest:
+  file: "data/metadata/source_manifest.csv"
+
+# ============================================================
+# SCHEMA VERSIONS
+# Detection: src/extraction/schema_detector.py
+# Rule format: each schema has a list of "rules". Rules support:
+#   all_of   : ALL terms must be present to satisfy this rule
+#   any_of   : AT LEAST ONE term must be present
+#   min_hits : minimum count of distinct matched terms required
+#   confidence: HIGH | MEDIUM | LOW (reported when this rule fires)
+#   name     : human-readable rule identifier for audit trail
+#
+# Generic terms (DOC, code, report) must NOT appear alone in all_of.
+# Every rule must require context that is schema-specific.
+#
+# IMPORTANT: PAIMANA_V2_CANDIDATE is NOT a detector-produced schema.
+# The detector returns UNKNOWN_SCHEMA for these 2026-era files.
+# Manual assessments are stored separately in manual_schema_assessment.
+# ============================================================
+# SCHEMA DETECTION STATUS (Audit 2026-09-01):
+# PAIMANA_V2   → PLAUSIBLE — not yet observed in any held PDF
+# PAIMANA_V1   → VERIFIED — FlashReport_2024_06/07, 2025_05/06
+# OCMS         → VERIFIED — FlashReport_2015_06, _2020_07, _2023_07, _2024_05_part01
+# LEGACY       → VERIFIED — FlashReport_2005_06
+schema_versions:
+
+  PAIMANA_V2:
+    status: "PLAUSIBLE — not yet observed in any currently held PDF"
+    notes: "Full PAIMANA identity. Requires both Legacy OCMS Code AND PMGID columns."
+    rules:
+      - name: "paimana_v2_dual_identity"
+        all_of:
+          - "Legacy OCMS Code"
+          - "PMGID"
+        confidence: HIGH
+
+  PAIMANA_V1:
+    status: "VERIFIED — confirmed in FlashReport_2024_06, _07, FlashReport_2025_05, _06"
+    notes: "Project Code appears as a distinct column header. Must NOT also have Legacy OCMS Code (that would be V2)."
+    rules:
+      - name: "paimana_v1_project_code_column"
+        all_of:
+          - "Project Code"
+        any_of:
+          - "Project Assessment, Infrastructure Monitoring"
+          - "PAIMANA"
+        confidence: HIGH
+
+  OCMS:
+    status: "VERIFIED — confirmed in FlashReport_2015_06, _2020_07, _2023_07"
+    notes: "OCMS must appear as a keyword in context. Requires at least one additional structural marker."
+    rules:
+      - name: "ocms_primary_rule"
+        all_of:
+          - "OCMS"
+        any_of:
+          - "Online Computerised Monitoring System"
+          - "Original Cost"
+          - "Anticipated Cost"
+          - "Date of Commissioning"
+        confidence: HIGH
+      - name: "ocms_keyword_only"
+        all_of:
+          - "Online Computerised Monitoring System"
+        confidence: MEDIUM
+
+  LEGACY:
+    status: "VERIFIED — confirmed in FlashReport_2005_06"
+    notes: "DOA and DOC together establish LEGACY. Neither alone is sufficient — both are generic abbreviations."
+    rules:
+      - name: "legacy_doa_doc_pair"
+        all_of:
+          - "DOA"
+          - "DOC"
+        confidence: HIGH
+
+  UNKNOWN:
+    notes: "Catch-all. Not used as a rule — detector returns UNKNOWN_SCHEMA when no rule matches."
+
+
+# ============================================================
+# COLUMN NAME ALIASES
+# Raw PDF column headers → canonical PRAHARI field names.
+# This list is a STARTING POINT and will evolve with extraction.
+# Do NOT assume completeness.
+# ============================================================
+column_aliases:
+  # PAIMANA V2 headers
+  "Project Code":                    "project_code"
+  "Legacy OCMS Code":                "legacy_ocms_code"
+  "PMGID":                           "pmgid"
+  "Project Name":                    "project_name"
+  "Agency":                          "agency"
+  "State":                           "state"
+  "Date of Approval":                "date_of_approval"
+  "Start Date":                      "start_date"
+  "Original/Target Date of Completion": "original_doc"
+  "Revised Date of Completion":      "revised_doc"
+  "Original Cost":                   "original_cost"
+  "Revised Cost":                    "revised_cost"
+  "Cumulative Expenditure":          "cumulative_expenditure"
+  "Physical Progress":               "physical_progress_pct"
+
+  # OCMS-era aliases (approximate; to be refined on inspection)
+  "Name of Project":                 "project_name"
+  "Implementing Agency":             "agency"
+  "Anticipated Cost":                "revised_cost"
+  "Anticipated DOC":                 "revised_doc"
+  "Original DOC":                    "original_doc"
+  "DOA":                             "date_of_approval"
+  "Cumulative Expenditure (Rs. Cr)": "cumulative_expenditure"
+
+  # Legacy aliases (approximate)
+  "Status":                          "project_status_raw"
+
+# ============================================================
+# EXTRACTION SETTINGS
+# ============================================================
+extraction:
+  # CRITICAL UPDATE 2026-09-01:
+  # FlashReport_2026_07.pdf SHA-256 = FlashReport_2026_06.pdf SHA-256
+  # Both files contain JUNE 2026 content. July 2026 report is NOT YET OBTAINED.
+  # Primary extraction target revised to June 2026 pending July 2026 PDF acquisition.
+  primary_target:
+    source_id: "SRC-2026-06"
+    report_month: "2026-06"
+    source_file: "FlashReport_2026_06.pdf"
+    table_label: "All Ongoing Projects"
+    table_number: "Table 6"
+    table_heading_pdf_page_index: 58
+    table_data_start_pdf_page_index: 59
+    table_data_end_pdf_page_index: 159
+    representative_pdf_page_indices: [59, 109, 159]
+    completed_projects_pages: "35-42"  # VERIFIED from audit
+    expected_row_count_approx: 1847  # VERIFIED from page 4 text: '1847 | 17 Ongoing Projects'
+    notes: "Canonical June 2026 source. Resolve by source_id through source_manifest.csv. July 2026 is absent."
+
+  # Table type labels to look for in PDF
+  ongoing_table_labels:
+    - "All Ongoing Projects"
+    - "Ongoing Projects"
+    - "Status of Ongoing Projects"
+
+  completed_table_labels:
+    - "Completed Projects"
+    - "Status of Completed Projects"
+
+  # PDF engines to try, in order of preference
+  pdf_engines:
+    - "pdfplumber"
+    - "pymupdf"
+
+  # Maximum pages to inspect for table detection
+  max_pages_inspect: 20
+
+# ============================================================
+# NORMALIZATION SETTINGS
+# ============================================================
+normalization:
+  date_formats:
+    - "%d-%m-%Y"
+    - "%d/%m/%Y"
+    - "%b-%Y"
+    - "%B %Y"
+    - "%Y-%m-%d"
+    - "%d %b %Y"
+    - "%d-%b-%Y"
+
+  cost_unit: "crore_inr"   # All costs normalised to ₹ crore
+
+  missing_markers:
+    - ""
+    - "-"
+    - "N/A"
+    - "NA"
+    - "n.a."
+    - "Not Available"
+    - "Nil"
+    - "0"          # only flag as missing, do not auto-replace
+
+  # Anomaly flag thresholds (not hard rejection — flag and preserve)
+  anomaly_thresholds:
+    physical_progress_max_pct: 100.0
+    physical_progress_min_pct: 0.0
+    cost_negative_flag: true
+    cumulative_exceeds_revised_flag: true
+    doc_before_start_date_flag: true
+
+# ============================================================
+# VALIDATION SETTINGS
+# ============================================================
+validation:
+  manual_sample_size: 30          # rows to independently hand-check
+  output_file: "data/validation/extraction_validation.csv"
+  missingness_report: "data/validation/missingness_report.csv"
+  identity_audit: "data/validation/identity_audit.csv"
+  anomaly_report: "data/validation/anomaly_report.csv"
+
+# ============================================================
+# LOGGING
+# ============================================================
+logging:
+  level: "INFO"       # DEBUG | INFO | WARNING | ERROR
+  log_to_file: true
+  log_dir: "logs"
+  log_filename: "prahari_gate2.log"

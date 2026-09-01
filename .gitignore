@@ -1,0 +1,89 @@
+# ============================================================
+# PRAHARI .gitignore
+# ============================================================
+# Raw source PDFs — track via source_manifest.csv, not Git LFS.
+# Processed CSVs larger than ~50 MB should also be excluded.
+# ============================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+*.spec
+pip-wheel-metadata/
+*.whl
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.env
+*.env
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoint
+
+# --- Data: raw PDFs (large; track via manifest) ---
+data/raw/**/*.pdf
+data/raw/**/*.PDF
+
+# --- Data: interim & processed large files (optional) ---
+# Remove these exclusions if the team decides to commit CSVs.
+# data/processed/*.csv
+# data/interim/*.csv
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Secrets / credentials ---
+*.pem
+*.key
+secrets.yaml
+credentials.json
+
+# --- pytest / coverage ---
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# --- mypy ---
+.mypy_cache/
+
+# --- Distribution / packaging ---
+MANIFEST
+# --- Local Python environment ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Raw source PDFs ---
+data/raw/**/*.pdf
+data/raw/**/*.PDF
+
+# --- Temporary/manual OS lock files ---
+~$*
+*.tmp

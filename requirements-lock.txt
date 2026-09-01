@@ -1,0 +1,13 @@
+# Gate 2 reproducibility snapshot (Python 3.12)
+# Refresh only after the full test suite and real-PDF audit pass.
+PyMuPDF==1.25.5
+pdfplumber==0.11.9
+pdfminer.six==20251230
+pandas==3.0.1
+numpy==2.3.5
+PyYAML==6.0.2
+tqdm==4.67.1
+python-dateutil==2.9.0.post0
+openpyxl==3.1.5
+pytest==8.3.5
+pytest-cov==6.0.0
