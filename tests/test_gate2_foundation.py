@@ -132,12 +132,14 @@ def test_toc_evidence_is_distinguished_from_table_data():
 
 def test_provenance_registry_matches_pipeline_lifecycle():
     provenance = ROOT / "data/metadata/provenance.csv"
-    extracted = ROOT / "data/extracted/ongoing/ongoing_2026_06.csv"
-    if not extracted.exists():
+    extracted_files = sorted((ROOT / "data/extracted/ongoing").glob("ongoing_*.csv"))
+    if not extracted_files:
         assert validate_empty_provenance_registry(provenance) == []
         return
-    with extracted.open(encoding="utf-8", newline="") as handle:
-        expected_rows = sum(1 for _ in csv.DictReader(handle))
+    expected_rows = 0
+    for extracted in extracted_files:
+        with extracted.open(encoding="utf-8", newline="") as handle:
+            expected_rows += sum(1 for _ in csv.DictReader(handle))
     assert validate_provenance_registry(
         provenance, MANIFEST, expected_rows=expected_rows
     ) == []

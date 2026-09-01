@@ -91,7 +91,7 @@ def validate_provenance_registry(
         errors.append(f"provenance row count {len(rows)} != expected {expected_rows}")
 
     observation_ids: set[str] = set()
-    raw_locators: set[str] = set()
+    raw_locators: set[tuple[str, str]] = set()
     for index, row in enumerate(rows, start=1):
         errors.extend(
             f"provenance row {index}: {error}"
@@ -104,7 +104,10 @@ def validate_provenance_registry(
             errors.append(f"provenance row {index}: duplicate observation_id {observation_id}")
         observation_ids.add(observation_id)
         locator = row.get("raw_row_locator", "").strip()
-        if locator in raw_locators:
-            errors.append(f"provenance row {index}: duplicate raw_row_locator {locator}")
-        raw_locators.add(locator)
+        locator_key = (row.get("source_id", "").strip(), locator)
+        if locator_key in raw_locators:
+            errors.append(
+                f"provenance row {index}: duplicate source/raw_row_locator {locator_key}"
+            )
+        raw_locators.add(locator_key)
     return errors

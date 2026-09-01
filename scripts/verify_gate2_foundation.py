@@ -105,11 +105,13 @@ def main() -> int:
     assert not inspection.page_errors
     assert compute_sha256(source.path) == source.sha256
     provenance_path = REPO_ROOT / "data/metadata/provenance.csv"
-    extracted_path = REPO_ROOT / "data/extracted/ongoing/ongoing_2026_06.csv"
-    if extracted_path.exists():
+    extracted_paths = sorted((REPO_ROOT / "data/extracted/ongoing").glob("ongoing_*.csv"))
+    if extracted_paths:
         import csv
-        with extracted_path.open(encoding="utf-8", newline="") as handle:
-            provenance_rows = sum(1 for _ in csv.DictReader(handle))
+        provenance_rows = 0
+        for extracted_path in extracted_paths:
+            with extracted_path.open(encoding="utf-8", newline="") as handle:
+                provenance_rows += sum(1 for _ in csv.DictReader(handle))
         assert validate_provenance_registry(
             provenance_path, manifest_path, expected_rows=provenance_rows
         ) == []

@@ -1,0 +1,282 @@
+observation_id,reporting_month,serial_number_raw,project_name_raw,agency_raw,project_code_raw,legacy_ocms_code_raw,pmgid_raw,state_raw,approval_date_raw,start_date_raw,original_target_doc_raw,revised_doc_raw,original_cost_raw,revised_cost_raw,cumulative_expenditure_raw,physical_progress_raw,project_identity_cell_raw,approval_start_cell_raw,doc_cell_raw,cost_cell_raw,source_id,source_sha256,pdf_page_index,printed_page_number,source_table,source_table_number,extraction_method,extractor_version,raw_row_locator,manual_project_name_match,manual_project_code_match,manual_cost_match,manual_date_match,manual_progress_match,manual_overall_match,reviewer,review_notes
+OBS-202605-00072,2026-05,72,NIGAHI EXPANSION [15 TO 25 MTP,Northern Coalfields Limited [NCL],400321,N06000196,943,Madhya Pradesh,11/2020,11/2020,03/2025,03/2028,1729.68,1729.68,943.02,53.73,"NIGAHI EXPANSION [15 TO 25 MTP
+(Northern Coalfields Limited [NCL])
+(400321)
+(N06000196) (943)","11/2020
+(11/2020)","03/2025
+(03/2028)","1729.68
+(1729.68)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,57,56,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=57,table_index=0,row_index=8",,,,,,,,
+OBS-202605-00090,2026-05,90,MAKARDHOKRA EXPN OC 4.9 MTY,Western Coalfields Limited [WCL],615189,N06000253,-,Maharashtra,06/2022,06/2022,03/2026,-,361.87,361.87,96.8,12.2,"MAKARDHOKRA EXPN OC 4.9 MTY
+(Western Coalfields Limited [WCL])
+(615189)
+(N06000253) (-)","06/2022
+(06/2022)","03/2026
+(-)","361.87
+(361.87)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,58,57,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=58,table_index=0,row_index=4",,,,,,,,
+OBS-202605-00129,2026-05,129,Kakatiyakhani OC - 2 Project,Singareni Collieries Company Limited [SCCL],615865,N06000214,-,Telangana,08/2017,09/2017,03/2025,03/2026,442.42,442.42,253.15,63,"Kakatiyakhani OC - 2 Project
+(Singareni Collieries Company Limited [SCCL])
+(615865)
+(N06000214) (-)","08/2017
+(09/2017)","03/2025
+(03/2026)","442.42
+(442.42)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,59,58,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=59,table_index=0,row_index=20",,,,,,,,
+OBS-202605-00134,2026-05,134,JHANJRA EXPANSION UG,Eastern Coal Fields Limited [ECL],400312,N06000223,995,West Bengal,04/2020,04/2020,03/2029,-,1210.12,1210.12,628.68,52.04,"JHANJRA EXPANSION UG
+(Eastern Coal Fields Limited [ECL])
+(400312)
+(N06000223) (995)","04/2020
+(04/2020)","03/2029
+(-)","1210.12
+(1210.12)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,60,59,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=60,table_index=0,row_index=2",,,,,,,,
+OBS-202605-00179,2026-05,179,"Raghunathpur Thermal Power Station Phase II [2X660 MW] at Raghunathpur, Purulia,
+West Bengal",Damodar Valley Corporation,400062,-,4195,West Bengal,01/2023,02/2025,06/2029,-,17673,17673,2043.87,10,"Raghunathpur Thermal Power Station Phase II [2X660 MW] at Raghunathpur, Purulia,
+West Bengal
+(Damodar Valley Corporation)
+(400062)
+(-) (4195)","01/2023
+(02/2025)","06/2029
+(-)","17673
+(17673)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,62,61,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=62,table_index=0,row_index=6",,,,,,,,
+OBS-202605-00209,2026-05,209,"Transmission System for Evacuation of Power from Rajasthan REZ Ph-IV [Part-2 5.5
+GW] [Jaisalmer/Barmer Complex] Part C [SPV Name POWERGRID Mandsaur
+Transmission Limited]",Power Grid Corporation of India Limited [POWERGRID],615346,N18000392,6262,Madhya Pradesh,08/2024,08/2024,08/2026,02/2027,2708,2708,1543.56,68.12,"Transmission System for Evacuation of Power from Rajasthan REZ Ph-IV [Part-2 5.5
+GW] [Jaisalmer/Barmer Complex] Part C [SPV Name POWERGRID Mandsaur
+Transmission Limited]
+(Power Grid Corporation of India Limited [POWERGRID])
+(615346)
+(N18000392) (6262)","08/2024
+(08/2024)","08/2026
+(02/2027)","2708
+(2708)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,63,62,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=63,table_index=0,row_index=17",,,,,,,,
+OBS-202605-00235,2026-05,235,"Rajasthan REZ Ph-V [Part-1- 4 GW] [Sirohi/Nagaur] Complex [Rajasthan V Power
+Transmission Limited]",Power Grid Corporation of India Limited [POWERGRID],617186,N18000414,7491,"Multi-States
+(Madhya Pradesh,
+Rajasthan)",03/2025,03/2025,03/2027,06/2027,5028,5028,1106.16,28.05,"Rajasthan REZ Ph-V [Part-1- 4 GW] [Sirohi/Nagaur] Complex [Rajasthan V Power
+Transmission Limited]
+(Power Grid Corporation of India Limited [POWERGRID])
+(617186)
+(N18000414) (7491)","03/2025
+(03/2025)","03/2027
+(06/2027)","5028
+(5028)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,65,64,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=65,table_index=0,row_index=6",,,,,,,,
+OBS-202605-00239,2026-05,239,"Transmission system for evacuation of power from REZ in Rajasthan 20 GW under
+Phase-III part H",Power Grid Corporation of India Limited [POWERGRID],611948,N18000374,5434,Rajasthan,10/2023,10/2023,04/2025,06/2026,1910,1910,1852.7,99.46,"Transmission system for evacuation of power from REZ in Rajasthan 20 GW under
+Phase-III part H
+(Power Grid Corporation of India Limited [POWERGRID])
+(611948)
+(N18000374) (5434)","10/2023
+(10/2023)","04/2025
+(06/2026)","1910
+(1910)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,65,64,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=65,table_index=0,row_index=10",,,,,,,,
+OBS-202605-00281,2026-05,281,Kanpur Metro Rail Project,Uttar Pradesh metro rail corporation [UPMRC],702628,N28000144,3116,Uttar Pradesh,05/2019,11/2019,05/2024,03/2027,11076.48,11076.5,9121.15,81.95,"Kanpur Metro Rail Project
+(Uttar Pradesh metro rail corporation [UPMRC])
+(702628)
+(N28000144) (3116)","05/2019
+(11/2019)","05/2024
+(03/2027)","11076.48
+(11076.5)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,67,66,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=67,table_index=0,row_index=17",,,,,,,,
+OBS-202605-00295,2026-05,295,Jalandhar Water Supply Infrastructure Project,Ministry of Housing & Urban Affairs,703021,-,-,Punjab,11/2016,08/2020,08/2023,08/2026,258.53,266.64,161.02,90,"Jalandhar Water Supply Infrastructure Project
+(Ministry of Housing & Urban Affairs)
+(703021)
+(-) (-)","11/2016
+(08/2020)","08/2023
+(08/2026)","258.53
+(266.64)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,68,67,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=68,table_index=0,row_index=10",,,,,,,,
+OBS-202605-00314,2026-05,314,Hostel blocks & dining hall block,"Indian Institute of Technology, Mandi",612128,-,-,Himachal Pradesh,03/2023,03/2024,03/2026,07/2026,166.66,166.66,122.26,84,"Hostel blocks & dining hall block
+(Indian Institute of Technology, Mandi)
+(612128)
+(-) (-)","03/2023
+(03/2024)","03/2026
+(07/2026)","166.66
+(166.66)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,69,68,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=69,table_index=0,row_index=12",,,,,,,,
+OBS-202605-00411,2026-05,411,Mehsana-Bhatinda & Bhatinda-Jammu Natural Gas Pipeline,Ministry of Petroleum & Natural Gas,701330,-,739,"Multi-States
+(Gujarat, Haryana,
+Punjab,
+Rajasthan)",07/2011,07/2011,06/2024,03/2027,7392,7392,6357.26,90.2,"Mehsana-Bhatinda & Bhatinda-Jammu Natural Gas Pipeline
+(Ministry of Petroleum & Natural Gas)
+(701330)
+(-) (739)","07/2011
+(07/2011)","06/2024
+(03/2027)","7392
+(7392)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,74,73,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=74,table_index=0,row_index=5",,,,,,,,
+OBS-202605-00511,2026-05,511,NMDC Slurry Pipeline Project Phase-1,National Mineral Development Corporation Limited [NMDC],706811,N12000124,870,Chhattisgarh,11/2015,09/2020,06/2023,05/2026,2907,5427,3616.88,94.6,"NMDC Slurry Pipeline Project Phase-1
+(National Mineral Development Corporation Limited [NMDC])
+(706811)
+(N12000124) (870)","11/2015
+(09/2020)","06/2023
+(05/2026)","2907
+(5427)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,79,78,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=79,table_index=0,row_index=9",,,,,,,,
+OBS-202605-00604,2026-05,604,New Railway Line between Ginigera and Raichur [165.57 km],South Western Railway [SWR] - II,705434,-,885,Karnataka,03/2008,05/2009,03/2019,03/2027,2565,3034.98,2373.6,70.5,"New Railway Line between Ginigera and Raichur [165.57 km]
+(South Western Railway [SWR] - II)
+(705434)
+(-) (885)","03/2008
+(05/2009)","03/2019
+(03/2027)","2565
+(3034.98)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,83,82,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=83,table_index=0,row_index=12",,,,,,,,
+OBS-202605-00677,2026-05,677,Jagdalpur-Koraput,East Coast Railway [ECoR] - II,705511,N22000376,2306,"Multi-States
+(Chhattisgarh,
+Odisha)",12/2015,03/2016,03/2024,12/2026,1547,1547,1387.24,94.94,"Jagdalpur-Koraput
+(East Coast Railway [ECoR] - II)
+(705511)
+(N22000376) (2306)","12/2015
+(03/2016)","03/2024
+(12/2026)","1547
+(1547)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,86,85,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=86,table_index=0,row_index=19",,,,,,,,
+OBS-202605-00848,2026-05,848,"4L of Pileru to Kalur Section from Km 55.900 to Km 92.800 & Km 94.500 to Km
+95.717 of NH-71Package-II",National Highways Authority of India [NHAI],618777,N24001986,10553,Andhra Pradesh,03/2022,10/2023,11/2025,08/2026,1877.47,592.85,246.34,98.84,"4L of Pileru to Kalur Section from Km 55.900 to Km 92.800 & Km 94.500 to Km
+95.717 of NH-71Package-II
+(National Highways Authority of India [NHAI])
+(618777)
+(N24001986) (10553)","03/2022
+(10/2023)","11/2025
+(08/2026)","1877.47
+(592.85)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,95,94,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=95,table_index=0,row_index=8",,,,,,,,
+OBS-202605-01016,2026-05,1016,"Durg-Raipur Bypass Section Package - 1 from km. 0.00 to km. 44.50 near Tendesara
+to near Khatti Village",National Highways Authority of India [NHAI],618589,N24002045,10422,Chhattisgarh,06/2022,07/2023,07/2025,03/2027,1828,1656.73,715.96,69.87,"Durg-Raipur Bypass Section Package - 1 from km. 0.00 to km. 44.50 near Tendesara
+to near Khatti Village
+(National Highways Authority of India [NHAI])
+(618589)
+(N24002045) (10422)","06/2022
+(07/2023)","07/2025
+(03/2027)","1828
+(1656.73)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,105,104,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=105,table_index=0,row_index=9",,,,,,,,
+OBS-202605-01062,2026-05,1062,Sanchore - Santalpur from km 67.000 - km 99.000 of NH-754K AJ-RGBS-Package-3,National Highways Authority of India [NHAI],618614,N24001790,10441,Gujarat,02/2020,08/2021,08/2023,06/2026,752.3,765.25,569.58,99,"Sanchore - Santalpur from km 67.000 - km 99.000 of NH-754K AJ-RGBS-Package-3
+(National Highways Authority of India [NHAI])
+(618614)
+(N24001790) (10441)","02/2020
+(08/2021)","08/2023
+(06/2026)","752.3
+(765.25)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,108,107,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=108,table_index=0,row_index=1",,,,,,,,
+OBS-202605-01113,2026-05,1113,"4L of Kathlighat to Shakral Village from Km 128.835 to Km 146.300 of NH- 5 Shimla
+Bypass - Pkg I",National Highways Authority of India [NHAI],618921,N24002049,10667,Himachal Pradesh,03/2022,04/2023,04/2026,12/2027,1703.48,2648.8,980.97,53.81,"4L of Kathlighat to Shakral Village from Km 128.835 to Km 146.300 of NH- 5 Shimla
+Bypass - Pkg I
+(National Highways Authority of India [NHAI])
+(618921)
+(N24002049) (10667)","03/2022
+(04/2023)","04/2026
+(12/2027)","1703.48
+(2648.8)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,110,109,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=110,table_index=0,row_index=15",,,,,,,,
+OBS-202605-01118,2026-05,1118,"Widening and strengthening to 2 lane with paved shoulder from existing Ch. Km
+56720 to Km 100820 and Design Ch. From Km 62600 to Km 106360 Total
+Length43.760 Km on SRINAGAR -BARAMULA URINH-01 in the UT of Jammu &
+Kashmir under project BEACON, Border Roads Organization BRO on EPC mode.",MoRTH,618201,-,10208,"Jammu and
+Kashmir",09/2023,11/2024,11/2026,06/2027,702.1,702.1,0,49.22,"Widening and strengthening to 2 lane with paved shoulder from existing Ch. Km
+56720 to Km 100820 and Design Ch. From Km 62600 to Km 106360 Total
+Length43.760 Km on SRINAGAR -BARAMULA URINH-01 in the UT of Jammu &
+Kashmir under project BEACON, Border Roads Organization BRO on EPC mode.
+(MoRTH)
+(618201)
+(-) (10208)","09/2023
+(11/2024)","11/2026
+(06/2027)","702.1
+(702.1)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,111,110,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=111,table_index=0,row_index=2",,,,,,,,
+OBS-202605-01124,2026-05,1124,"Reconstruction and widening to 2 lane with paved shoulder from existing chainage km
+102000 to km 134950 Design chainage km 90150 to km 116980 including construction
+of Naushera Tunnel Total length of tunnel 0.700 km under 31 TF on Akhnoor-Poonch
+road NH-144A in the UT of Jammu & Kashmir under Project Sampark BRO on EPC
+mode Package-V Job no NH-144A-J&K-2020-21-104",MoRTH,618220,N24001897,10216,"Jammu and
+Kashmir",03/2021,07/2022,07/2024,03/2026,642.24,572.51,0,100,"Reconstruction and widening to 2 lane with paved shoulder from existing chainage km
+102000 to km 134950 Design chainage km 90150 to km 116980 including construction
+of Naushera Tunnel Total length of tunnel 0.700 km under 31 TF on Akhnoor-Poonch
+road NH-144A in the UT of Jammu & Kashmir under Project Sampark BRO on EPC
+mode Package-V Job no NH-144A-J&K-2020-21-104
+(MoRTH)
+(618220)
+(N24001897) (10216)","03/2021
+(07/2022)","07/2024
+(03/2026)","642.24
+(572.51)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,111,110,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=111,table_index=0,row_index=8",,,,,,,,
+OBS-202605-01189,2026-05,1189,"Widening to 2LPS from Km 71.00 to 104.00 Existing chainages Sarjapur to
+Pattadkallu on Bhanapur to Gaddanakeri section NH-367 in the State of Karnataka
+under NHO on EPC mode under Annual Plan 2022-23 NH-367-KNT-2022-23-972
+dated 08.02.2023",MoRTH,618027,-,-,Karnataka,02/2023,03/2024,03/2026,12/2026,445.62,445.62,0,85,"Widening to 2LPS from Km 71.00 to 104.00 Existing chainages Sarjapur to
+Pattadkallu on Bhanapur to Gaddanakeri section NH-367 in the State of Karnataka
+under NHO on EPC mode under Annual Plan 2022-23 NH-367-KNT-2022-23-972
+dated 08.02.2023
+(MoRTH)
+(618027)
+(-) (-)","02/2023
+(03/2024)","03/2026
+(12/2026)","445.62
+(445.62)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,115,114,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=115,table_index=0,row_index=10",,,,,,,,
+OBS-202605-01190,2026-05,1190,"Construction of Bypass at Kuknoor, Yelburga, Gajendragada of Bhanapur
+Gaddanakeri section of NH-367 in the State of Karnataka under NHO on EPC mode
+under Annual Plan 2022-23. NH-367-KNT-2022-23-973 dated 08.02.2023",MoRTH,618028,-,-,Karnataka,02/2023,06/2025,06/2027,06/2027,333.96,333.96,48.88,31,"Construction of Bypass at Kuknoor, Yelburga, Gajendragada of Bhanapur
+Gaddanakeri section of NH-367 in the State of Karnataka under NHO on EPC mode
+under Annual Plan 2022-23. NH-367-KNT-2022-23-973 dated 08.02.2023
+(MoRTH)
+(618028)
+(-) (-)","02/2023
+(06/2025)","06/2027
+(06/2027)","333.96
+(333.96)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,115,114,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=115,table_index=0,row_index=11",,,,,,,,
+OBS-202605-01372,2026-05,1372,"Widening and strengthening of Gangakhed to Kingaon section of NH-752K in Km
+38/750 to 72/304 Flexible Pavement Length33.554 km to 2-lane configuration
+on EPC mode in the State of Maharashtra.",MoRTH,618178,-,-,Maharashtra,02/2024,12/2024,06/2026,05/2026,162.67,162.67,0,72,"Widening and strengthening of Gangakhed to Kingaon section of NH-752K in Km
+38/750 to 72/304 Flexible Pavement Length33.554 km to 2-lane configuration
+on EPC mode in the State of Maharashtra.
+(MoRTH)
+(618178)
+(-) (-)","02/2024
+(12/2024)","06/2026
+(05/2026)","162.67
+(162.67)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,126,125,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=126,table_index=0,row_index=5",,,,,,,,
+OBS-202605-01382,2026-05,1382,"Vadodara Mumbai Expressway Phase II - Pkg XV [Km. 20.200 to Km. 43.000 of Spur]
+Akloli - Amne",National Highways Authority of India [NHAI],618471,N24001521,10330,Maharashtra,05/2021,11/2022,05/2024,06/2026,2610.88,2918.39,621.87,91.5,"Vadodara Mumbai Expressway Phase II - Pkg XV [Km. 20.200 to Km. 43.000 of Spur]
+Akloli - Amne
+(National Highways Authority of India [NHAI])
+(618471)
+(N24001521) (10330)","05/2021
+(11/2022)","05/2024
+(06/2026)","2610.88
+(2918.39)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,126,125,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=126,table_index=0,row_index=15",,,,,,,,
+OBS-202605-01388,2026-05,1388,6L of Kagal-Satara section from Km 658.000 to Km 725.000 of NH-48 Pkg-II,National Highways Authority of India [NHAI],618514,N24001493,-,Maharashtra,12/2021,12/2022,12/2024,12/2026,2330.71,317.4,197.23,73.96,"6L of Kagal-Satara section from Km 658.000 to Km 725.000 of NH-48 Pkg-II
+(National Highways Authority of India [NHAI])
+(618514)
+(N24001493) (-)","12/2021
+(12/2022)","12/2024
+(12/2026)","2330.71
+(317.4)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,127,126,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=127,table_index=0,row_index=5",,,,,,,,
+OBS-202605-01491,2026-05,1491,"4L Access Controlled Greenfield Highway section on NH-163G Khammam
+Vijayawada from BrahmanapalliK village at Design Ch. 250.400 Km to Remidicherla
+village at Design Ch. 280.200 KmPackage-II",National Highways Authority of India [NHAI],619143,-,11808,"Multi-States
+(Andhra Pradesh,
+Telangana)",03/2023,03/2025,03/2027,06/2027,826.01,862.58,103.08,22.58,"4L Access Controlled Greenfield Highway section on NH-163G Khammam
+Vijayawada from BrahmanapalliK village at Design Ch. 250.400 Km to Remidicherla
+village at Design Ch. 280.200 KmPackage-II
+(National Highways Authority of India [NHAI])
+(619143)
+(-) (11808)","03/2023
+(03/2025)","03/2027
+(06/2027)","826.01
+(862.58)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,133,132,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=133,table_index=0,row_index=12",,,,,,,,
+OBS-202605-01728,2026-05,1728,"Widening & Strengthening of Existing 2LPS to 4 lane PS from Km 150000 to Km
+159000 and Km 165400 to Km 186000 of NH-163 old NH-202 under NH O for the year
+2020-21 on EPC Mode in the state of Telangana.",MoRTH,617983,N24001925,-,Telangana,03/2021,07/2022,07/2024,06/2026,317.19,300.56,175.28,88,"Widening & Strengthening of Existing 2LPS to 4 lane PS from Km 150000 to Km
+159000 and Km 165400 to Km 186000 of NH-163 old NH-202 under NH O for the year
+2020-21 on EPC Mode in the state of Telangana.
+(MoRTH)
+(617983)
+(N24001925) (-)","03/2021
+(07/2022)","07/2024
+(06/2026)","317.19
+(300.56)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,147,146,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=147,table_index=0,row_index=2",,,,,,,,
+OBS-202605-01803,2026-05,1803,"Rehabilitation and Up-gradation from km. 0000 to km.40390 of NH-730S
+MaharajganjNichloulThuthibari to two lane with paved shoulders in the State of U.P.
+on Engineering, Procurement & Construction EPC Basis.",MoRTH,618163,N24001418,10195,Uttar Pradesh,03/2023,06/2024,12/2025,12/2026,809.25,603.19,0,59,"Rehabilitation and Up-gradation from km. 0000 to km.40390 of NH-730S
+MaharajganjNichloulThuthibari to two lane with paved shoulders in the State of U.P.
+on Engineering, Procurement & Construction EPC Basis.
+(MoRTH)
+(618163)
+(N24001418) (10195)","03/2023
+(06/2024)","12/2025
+(12/2026)","809.25
+(603.19)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,151,150,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=151,table_index=0,row_index=11",,,,,,,,
+OBS-202605-01877,2026-05,1877,"4 Lane Inner Ring Road around Allahabad City Pkg-1 Prayagraj Southern Bypass
+34.400 43.200",National Highways Authority of India [NHAI],618961,-,-,Uttar Pradesh,02/2025,12/2025,12/2027,12/2027,775.94,498.97,21.22,9.18,"4 Lane Inner Ring Road around Allahabad City Pkg-1 Prayagraj Southern Bypass
+34.400 43.200
+(National Highways Authority of India [NHAI])
+(618961)
+(-) (-)","02/2025
+(12/2025)","12/2027
+(12/2027)","775.94
+(498.97)",SRC-2026-05,480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005,155,154,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_may_table6:0.1.0,"pdf_page_index=155,table_index=0,row_index=16",,,,,,,,

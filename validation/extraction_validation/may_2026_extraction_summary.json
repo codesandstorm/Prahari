@@ -1,0 +1,1223 @@
+{
+  "source_id": "SRC-2026-05",
+  "source_sha256": "480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005",
+  "reporting_month": "2026-05",
+  "schema": "PAIMANA_V2",
+  "schema_confidence": "HIGH",
+  "source_table": "All Ongoing Projects",
+  "source_table_number": 6,
+  "title_pdf_page_index": 53,
+  "data_pdf_page_range": [
+    54,
+    162
+  ],
+  "printed_page_range": [
+    53,
+    161
+  ],
+  "expected_count_from_may_report": 1987,
+  "expected_count_evidence_pdf_page_index": 4,
+  "expected_count_evidence_printed_page_number": 3,
+  "accepted_project_rows": 1987,
+  "unresolved_rows": 0,
+  "difference": 0,
+  "duplicate_raw_locator_count": 0,
+  "duplicate_serial_count": 0,
+  "duplicate_observation_count": 0,
+  "natural_serial_integrity": true,
+  "rejection_types": {
+    "REPEATED_HEADER": 109,
+    "SECTION_HEADING": 48,
+    "TOTAL": 31
+  },
+  "missingness": {
+    "serial_number_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "project_name_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "agency_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "project_code_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "legacy_ocms_code_raw": {
+      "missing_count": 817,
+      "missing_pct": 41.12
+    },
+    "pmgid_raw": {
+      "missing_count": 786,
+      "missing_pct": 39.56
+    },
+    "state_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "approval_date_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "start_date_raw": {
+      "missing_count": 11,
+      "missing_pct": 0.55
+    },
+    "original_target_doc_raw": {
+      "missing_count": 11,
+      "missing_pct": 0.55
+    },
+    "revised_doc_raw": {
+      "missing_count": 352,
+      "missing_pct": 17.72
+    },
+    "original_cost_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "revised_cost_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cumulative_expenditure_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "physical_progress_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "project_identity_cell_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "approval_start_cell_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "doc_cell_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cost_cell_raw": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    }
+  },
+  "page_diagnostics": [
+    {
+      "pdf_page_index": 54,
+      "printed_page_number": 53,
+      "accepted_project_rows": 20,
+      "rejected_headers": 1,
+      "rejected_sections": 2,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 55,
+      "printed_page_number": 54,
+      "accepted_project_rows": 21,
+      "rejected_headers": 1,
+      "rejected_sections": 2,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 56,
+      "printed_page_number": 55,
+      "accepted_project_rows": 23,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 57,
+      "printed_page_number": 56,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 58,
+      "printed_page_number": 57,
+      "accepted_project_rows": 23,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 59,
+      "printed_page_number": 58,
+      "accepted_project_rows": 23,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 60,
+      "printed_page_number": 59,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 5,
+      "rejected_totals": 4,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 61,
+      "printed_page_number": 60,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 62,
+      "printed_page_number": 61,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 1,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 63,
+      "printed_page_number": 62,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 64,
+      "printed_page_number": 63,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 65,
+      "printed_page_number": 64,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 66,
+      "printed_page_number": 65,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 4,
+      "rejected_totals": 3,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 67,
+      "printed_page_number": 66,
+      "accepted_project_rows": 21,
+      "rejected_headers": 1,
+      "rejected_sections": 1,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 68,
+      "printed_page_number": 67,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 3,
+      "rejected_totals": 3,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 69,
+      "printed_page_number": 68,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 2,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 70,
+      "printed_page_number": 69,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 4,
+      "rejected_totals": 2,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 71,
+      "printed_page_number": 70,
+      "accepted_project_rows": 21,
+      "rejected_headers": 1,
+      "rejected_sections": 1,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 72,
+      "printed_page_number": 71,
+      "accepted_project_rows": 21,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 73,
+      "printed_page_number": 72,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 74,
+      "printed_page_number": 73,
+      "accepted_project_rows": 21,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 75,
+      "printed_page_number": 74,
+      "accepted_project_rows": 21,
+      "rejected_headers": 1,
+      "rejected_sections": 2,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 76,
+      "printed_page_number": 75,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 77,
+      "printed_page_number": 76,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 4,
+      "rejected_totals": 3,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 78,
+      "printed_page_number": 77,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 5,
+      "rejected_totals": 4,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 79,
+      "printed_page_number": 78,
+      "accepted_project_rows": 20,
+      "rejected_headers": 1,
+      "rejected_sections": 5,
+      "rejected_totals": 2,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 80,
+      "printed_page_number": 79,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 81,
+      "printed_page_number": 80,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 82,
+      "printed_page_number": 81,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 83,
+      "printed_page_number": 82,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 84,
+      "printed_page_number": 83,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 85,
+      "printed_page_number": 84,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 86,
+      "printed_page_number": 85,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 87,
+      "printed_page_number": 86,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 88,
+      "printed_page_number": 87,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 89,
+      "printed_page_number": 88,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 90,
+      "printed_page_number": 89,
+      "accepted_project_rows": 22,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 91,
+      "printed_page_number": 90,
+      "accepted_project_rows": 20,
+      "rejected_headers": 1,
+      "rejected_sections": 2,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 92,
+      "printed_page_number": 91,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 93,
+      "printed_page_number": 92,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 94,
+      "printed_page_number": 93,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 95,
+      "printed_page_number": 94,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 96,
+      "printed_page_number": 95,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 97,
+      "printed_page_number": 96,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 98,
+      "printed_page_number": 97,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 99,
+      "printed_page_number": 98,
+      "accepted_project_rows": 14,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 100,
+      "printed_page_number": 99,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 101,
+      "printed_page_number": 100,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 102,
+      "printed_page_number": 101,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 103,
+      "printed_page_number": 102,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 104,
+      "printed_page_number": 103,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 105,
+      "printed_page_number": 104,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 106,
+      "printed_page_number": 105,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 107,
+      "printed_page_number": 106,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 108,
+      "printed_page_number": 107,
+      "accepted_project_rows": 20,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 109,
+      "printed_page_number": 108,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 110,
+      "printed_page_number": 109,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 111,
+      "printed_page_number": 110,
+      "accepted_project_rows": 13,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 112,
+      "printed_page_number": 111,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 113,
+      "printed_page_number": 112,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 114,
+      "printed_page_number": 113,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 115,
+      "printed_page_number": 114,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 116,
+      "printed_page_number": 115,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 117,
+      "printed_page_number": 116,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 118,
+      "printed_page_number": 117,
+      "accepted_project_rows": 20,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 119,
+      "printed_page_number": 118,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 120,
+      "printed_page_number": 119,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 121,
+      "printed_page_number": 120,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 122,
+      "printed_page_number": 121,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 123,
+      "printed_page_number": 122,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 124,
+      "printed_page_number": 123,
+      "accepted_project_rows": 14,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 125,
+      "printed_page_number": 124,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 126,
+      "printed_page_number": 125,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 127,
+      "printed_page_number": 126,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 128,
+      "printed_page_number": 127,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 129,
+      "printed_page_number": 128,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 130,
+      "printed_page_number": 129,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 131,
+      "printed_page_number": 130,
+      "accepted_project_rows": 14,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 132,
+      "printed_page_number": 131,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 133,
+      "printed_page_number": 132,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 134,
+      "printed_page_number": 133,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 135,
+      "printed_page_number": 134,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 136,
+      "printed_page_number": 135,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 137,
+      "printed_page_number": 136,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 138,
+      "printed_page_number": 137,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 139,
+      "printed_page_number": 138,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 140,
+      "printed_page_number": 139,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 141,
+      "printed_page_number": 140,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 142,
+      "printed_page_number": 141,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 143,
+      "printed_page_number": 142,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 144,
+      "printed_page_number": 143,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 145,
+      "printed_page_number": 144,
+      "accepted_project_rows": 20,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 146,
+      "printed_page_number": 145,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 147,
+      "printed_page_number": 146,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 148,
+      "printed_page_number": 147,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 149,
+      "printed_page_number": 148,
+      "accepted_project_rows": 16,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 150,
+      "printed_page_number": 149,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 151,
+      "printed_page_number": 150,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 152,
+      "printed_page_number": 151,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 153,
+      "printed_page_number": 152,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 154,
+      "printed_page_number": 153,
+      "accepted_project_rows": 19,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 155,
+      "printed_page_number": 154,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 156,
+      "printed_page_number": 155,
+      "accepted_project_rows": 17,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 157,
+      "printed_page_number": 156,
+      "accepted_project_rows": 14,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 158,
+      "printed_page_number": 157,
+      "accepted_project_rows": 15,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 159,
+      "printed_page_number": 158,
+      "accepted_project_rows": 14,
+      "rejected_headers": 1,
+      "rejected_sections": 2,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 160,
+      "printed_page_number": 159,
+      "accepted_project_rows": 18,
+      "rejected_headers": 1,
+      "rejected_sections": 3,
+      "rejected_totals": 2,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 161,
+      "printed_page_number": 160,
+      "accepted_project_rows": 23,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 0,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "pdf_page_index": 162,
+      "printed_page_number": 161,
+      "accepted_project_rows": 7,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0
+    }
+  ],
+  "page_anomalies": [
+    {
+      "pdf_page_index": 162,
+      "printed_page_number": 161,
+      "accepted_project_rows": 7,
+      "rejected_headers": 1,
+      "rejected_sections": 0,
+      "rejected_totals": 1,
+      "rejected_other": 0,
+      "unresolved_rows": 0,
+      "reason": "COUNT_OUTLIER"
+    }
+  ],
+  "pre_extraction_sha256": "480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005",
+  "post_extraction_sha256": "480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005",
+  "extractor_version": "extractor_paimana_may_table6:0.1.0",
+  "extraction_method": "pdfplumber_table",
+  "may_vs_june": "COMPATIBLE_VARIATION",
+  "run_id": "extract-202605-20260901T145254Z",
+  "timestamp_utc": "2026-09-01T14:52:54.337640+00:00"
+}
