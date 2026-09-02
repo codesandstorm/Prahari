@@ -1,0 +1,2 @@
+canonical_project_id,project_code,presence_pattern,may_absence_verified,april_source_id,april_source_sha256,april_pdf_page_index,april_raw_row_locator,june_source_id,june_source_sha256,june_pdf_page_index,june_raw_row_locator,manual_gap_confirmed,reviewer,review_notes
+PRH-618814,618814,APR_JUN_ONLY,YES,SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,149,"pdf_page_index=149,table_index=0,row_index=1",SRC-2026-06,d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15,147,"pdf_page_index=147,table_index=0,row_index=6",,,

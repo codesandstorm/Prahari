@@ -1,0 +1,24 @@
+{
+  "dataset_version": "gate2-pilot-2026-04-06-v1",
+  "months_included": [
+    "2026-04",
+    "2026-05",
+    "2026-06"
+  ],
+  "input_hashes": {
+    "2026-04": "55d84996925b4d5d0f2bb3bc9367a685c2ad49a14c009acddc7662b0b9ee11dd",
+    "2026-05": "f0bd72a4534c2403bedb9890e25dd3522c4b8280362834de7d84d8f57738c04e",
+    "2026-06": "bf2b7d37c11096ddca9d365878b48725c8f81e7c39b9863979029ee2f78832d9"
+  },
+  "row_counts": {
+    "project_master": 2038,
+    "project_month": 5815
+  },
+  "identity_method": "EXACT_PROJECT_CODE_VALIDATED_PAIMANA_V2_PERIOD",
+  "limitations": [
+    "Presence patterns have no completion/addition/removal semantics.",
+    "April manual validation is recorded separately from the still-empty sample columns.",
+    "Identity rule is not generalized beyond April-June 2026.",
+    "No labels, features, outcomes, predictions, or risk values exist."
+  ]
+}
