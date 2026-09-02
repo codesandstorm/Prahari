@@ -1,0 +1,345 @@
+{
+  "source_id": "SRC-2025-09",
+  "source_sha256": "520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318",
+  "reporting_month": "2025-09",
+  "file_size_bytes": 6007329,
+  "physical_page_count": 72,
+  "text_extractability": "YES",
+  "official_ongoing_count": 794,
+  "count_evidence": {
+    "pdf_page_index": 4,
+    "printed_page_number": 3,
+    "section": "Overview",
+    "locator": "Ongoing Projects figure"
+  },
+  "table_title": "All Ongoing Projects",
+  "table_number": 6,
+  "title_pdf_page_index": 41,
+  "title_printed_page_number": 40,
+  "data_pdf_page_range": [
+    42,
+    71
+  ],
+  "printed_page_range": [
+    41,
+    70
+  ],
+  "schema_family": "PAIMANA_V1",
+  "schema_classification": "COMPATIBLE_VARIATION",
+  "variant": "PAIMANA_V1_INLINE_CODE",
+  "adapter": "PAIMANA_V1_INLINE_CODE",
+  "confidence": "HIGH",
+  "column_count": 8,
+  "accepted_project_rows": 794,
+  "structural_counts": {
+    "REPEATED_HEADER": 30,
+    "SECTION_HEADING": 40,
+    "TOTAL": 27,
+    "BLANK": 1,
+    "OTHER_NON_PROJECT": 11
+  },
+  "total_raw_table_rows": 903,
+  "unresolved_rows": 0,
+  "serial_min": 1,
+  "serial_max": 794,
+  "missing_serials": [],
+  "duplicate_serials": 0,
+  "out_of_order_serials": 0,
+  "project_code_missing": 0,
+  "project_code_duplicates": 0,
+  "project_code_malformed": 0,
+  "project_code_whitespace": 0,
+  "legacy_ocms": {
+    "present": 0,
+    "missing": 794
+  },
+  "pmgid": {
+    "present": 0,
+    "missing": 794
+  },
+  "field_quality": {
+    "row_count": 794,
+    "missing_token_definition": [
+      "",
+      "-",
+      "NA"
+    ],
+    "missing_counts": {
+      "project_name_raw": 0,
+      "agency_raw": 0,
+      "project_code_raw": 0,
+      "legacy_ocms_code_raw": 794,
+      "pmgid_raw": 794,
+      "state_raw": 1,
+      "approval_date_raw": 94,
+      "start_date_raw": 3,
+      "original_target_doc_raw": 0,
+      "revised_doc_raw": 239,
+      "original_cost_raw": 0,
+      "revised_cost_raw": 0,
+      "cumulative_expenditure_raw": 0,
+      "physical_progress_raw": 0
+    },
+    "missing_percent": {
+      "project_name_raw": 0.0,
+      "agency_raw": 0.0,
+      "project_code_raw": 0.0,
+      "legacy_ocms_code_raw": 100.0,
+      "pmgid_raw": 100.0,
+      "state_raw": 0.1259,
+      "approval_date_raw": 11.8388,
+      "start_date_raw": 0.3778,
+      "original_target_doc_raw": 0.0,
+      "revised_doc_raw": 30.1008,
+      "original_cost_raw": 0.0,
+      "revised_cost_raw": 0.0,
+      "cumulative_expenditure_raw": 0.0,
+      "physical_progress_raw": 0.0
+    },
+    "invalid_numeric_counts_excluding_missing": {
+      "original_cost_raw": 0,
+      "revised_cost_raw": 0,
+      "cumulative_expenditure_raw": 0,
+      "physical_progress_raw": 0
+    },
+    "required_field_audit": {
+      "approval_date_raw": {
+        "parsed": 700,
+        "missing": 94,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "start_date_raw": {
+        "parsed": 791,
+        "missing": 3,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "original_target_doc_raw": {
+        "parsed": 794,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "revised_doc_raw": {
+        "parsed": 555,
+        "missing": 239,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "original_cost_raw": {
+        "parsed": 794,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "revised_cost_raw": {
+        "parsed": 794,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "cumulative_expenditure_raw": {
+        "parsed": 794,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "physical_progress_raw": {
+        "parsed": 794,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      }
+    },
+    "imputation_applied": false
+  },
+  "provenance_failures": 0,
+  "duplicate_locators": 0,
+  "quality_gate": "PASS_AUTOMATED",
+  "page_diagnostics": [
+    {
+      "pdf_page_index": 42,
+      "REPEATED_HEADER": 1,
+      "SECTION_HEADING": 2,
+      "PROJECT_ROW": 25
+    },
+    {
+      "pdf_page_index": 43,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 29,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 44,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 31
+    },
+    {
+      "pdf_page_index": 45,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 31
+    },
+    {
+      "pdf_page_index": 46,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 30,
+      "TOTAL": 1,
+      "SECTION_HEADING": 1
+    },
+    {
+      "pdf_page_index": 47,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 27,
+      "TOTAL": 3,
+      "SECTION_HEADING": 4
+    },
+    {
+      "pdf_page_index": 48,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 25,
+      "TOTAL": 1,
+      "SECTION_HEADING": 1
+    },
+    {
+      "pdf_page_index": 49,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 22
+    },
+    {
+      "pdf_page_index": 50,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 22
+    },
+    {
+      "pdf_page_index": 51,
+      "BLANK": 1,
+      "OTHER_NON_PROJECT": 11,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 22
+    },
+    {
+      "pdf_page_index": 52,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 30,
+      "TOTAL": 1,
+      "SECTION_HEADING": 1
+    },
+    {
+      "pdf_page_index": 53,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 24,
+      "TOTAL": 3,
+      "SECTION_HEADING": 5
+    },
+    {
+      "pdf_page_index": 54,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 25,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 55,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 27,
+      "TOTAL": 1,
+      "SECTION_HEADING": 1
+    },
+    {
+      "pdf_page_index": 56,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 29
+    },
+    {
+      "pdf_page_index": 57,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 26
+    },
+    {
+      "pdf_page_index": 58,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 26,
+      "TOTAL": 3,
+      "SECTION_HEADING": 5
+    },
+    {
+      "pdf_page_index": 59,
+      "REPEATED_HEADER": 1,
+      "TOTAL": 6,
+      "SECTION_HEADING": 7,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 60,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 28,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 61,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 30
+    },
+    {
+      "pdf_page_index": 62,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 30
+    },
+    {
+      "pdf_page_index": 63,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 30
+    },
+    {
+      "pdf_page_index": 64,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 30
+    },
+    {
+      "pdf_page_index": 65,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 28
+    },
+    {
+      "pdf_page_index": 66,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 30
+    },
+    {
+      "pdf_page_index": 67,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 30
+    },
+    {
+      "pdf_page_index": 68,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 24,
+      "TOTAL": 2,
+      "SECTION_HEADING": 4
+    },
+    {
+      "pdf_page_index": 69,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 70,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 29,
+      "TOTAL": 1,
+      "SECTION_HEADING": 1
+    },
+    {
+      "pdf_page_index": 71,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 12,
+      "TOTAL": 1
+    }
+  ],
+  "extraction_sha256": "2412c0933d83e9d4ecd680fb413388535447243418ad2543ebf04a058f4f8405"
+}

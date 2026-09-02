@@ -1,0 +1,131 @@
+observation_id,reporting_month,serial_number_raw,project_name_raw,agency_raw,project_code_raw,legacy_ocms_code_raw,pmgid_raw,state_raw,approval_date_raw,start_date_raw,original_target_doc_raw,revised_doc_raw,original_cost_raw,revised_cost_raw,cumulative_expenditure_raw,physical_progress_raw,project_identity_cell_raw,approval_start_cell_raw,doc_cell_raw,cost_cell_raw,source_id,source_sha256,pdf_page_index,printed_page_number,source_table,source_table_number,extraction_method,extractor_version,raw_row_locator,sample_category,manual_row_confirmed,manual_identity_confirmed,manual_fields_confirmed,manual_provenance_confirmed,reviewer,review_notes
+OBS-202510-00001,2025-10,1,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport",Airport Authority of India [AAI],612786,-,-,Andhra Pradesh,03/2023,01/2024,01/2026,03/2026,265.91,265.91,67.22,39,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport
+(Airport Authority of India [AAI])
+(612786)","03/2023
+(01/2024)","01/2026
+(03/2026)","265.91
+(265.91)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,42,41,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=42,table_index=logical8,row_index=3",FIRST,,,,,,
+OBS-202510-00037,2025-10,37,JAGANNATHPUR OC RCE PROJECT,South Eastern Coalfields Limited [SECL],613800,-,-,Chhattisgarh,07/2016,07/2016,03/2025,03/2026,459.49,459.49,274.35,96,"JAGANNATHPUR OC RCE PROJECT
+(South Eastern Coalfields Limited [SECL])
+(613800)","07/2016
+(07/2016)","03/2025
+(03/2026)","459.49
+(459.49)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,43,42,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=43,table_index=logical8,row_index=15",SEEDED_FILL,,,,,,
+OBS-202510-00061,2025-10,61,AMALAGAMATED NTST KUJAMA OCP 8.5MTY,Ministry of Coal,611864,-,-,Jharkhand,01/2023,01/2023,03/2030,-,4011.85,4011.85,404.49,28,"AMALAGAMATED NTST KUJAMA OCP 8.5MTY
+(Ministry of Coal)
+(611864)","01/2023
+(01/2023)","03/2030
+(-)","4011.85
+(4011.85)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,44,43,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=44,table_index=logical8,row_index=7",EARLY_PAGE,,,,,,
+OBS-202510-00102,2025-10,102,AMALGAMATED INDER-KAMPTEE DEEP OC,Western Coalfields Limited [WCL],616050,-,-,Maharashtra,09/2018,09/2018,03/2024,03/2026,235.9,235.9,237.12,98,"AMALGAMATED INDER-KAMPTEE DEEP OC
+(Western Coalfields Limited [WCL])
+(616050)","09/2018
+(09/2018)","03/2024
+(03/2026)","235.9
+(235.9)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,45,44,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=45,table_index=logical8,row_index=17",HIGH_PROGRESS,,,,,,
+OBS-202510-00108,2025-10,108,BINA KAKRI AMALGAMATION EXPANS,Northern Coalfields Limited [NCL],400369,-,-,"Multi-States
+(Madhya Pradesh,
+Uttar Pradesh)",08/2020,08/2020,03/2024,03/2027,836.42,836.42,809.2,89,"BINA KAKRI AMALGAMATION EXPANS
+(Northern Coalfields Limited [NCL])
+(400369)","08/2020
+(08/2020)","03/2024
+(03/2027)","836.42
+(836.42)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,45,44,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=45,table_index=logical8,row_index=23",SEEDED_FILL,,,,,,
+OBS-202510-00160,2025-10,160,Dhaulasidh Hydro Electric Project [66 MW],Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,602582,-,-,Himachal Pradesh,10/2020,05/2021,11/2025,03/2027,687.97,1561.21,986.12,70,"Dhaulasidh Hydro Electric Project [66 MW]
+(Satluj Jal Vidyut Nigam [SJVN] Thermal Limited)
+(602582)","10/2020
+(05/2021)","11/2025
+(03/2027)","687.97
+(1561.21)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,47,46,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=47,table_index=logical8,row_index=21",SEEDED_FILL,,,,,,
+OBS-202510-00221,2025-10,221,Eastern Region Expansion Scheme-43 [ERES-43],Power Grid Corporation of India Limited [POWERGRID],617271,-,-,"Multi-States
+(Bihar, Odisha,
+West Bengal)",09/2024,09/2024,03/2026,06/2026,342.69,342.69,0.71,0,"Eastern Region Expansion Scheme-43 [ERES-43]
+(Power Grid Corporation of India Limited [POWERGRID])
+(617271)","09/2024
+(09/2024)","03/2026
+(06/2026)","342.69
+(342.69)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,49,48,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=49,table_index=logical8,row_index=23",ZERO_PROGRESS,,,,,,
+OBS-202510-00260,2025-10,260,DMRTS Phase - IV [3 Priority Corridors],Delhi Metro Rail Corporation Limited [DMRC],702632,-,-,Delhi,07/2019,07/2019,03/2025,03/2026,24948.65,24948.7,17838.17,71,"DMRTS Phase - IV [3 Priority Corridors]
+(Delhi Metro Rail Corporation Limited [DMRC])
+(702632)","07/2019
+(07/2019)","03/2025
+(03/2026)","24948.65
+(24948.7)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,51,50,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=51,table_index=logical8,row_index=27",SEEDED_FILL,,,,,,
+OBS-202510-00304,2025-10,304,Jhansi Water Supply Infrastructure Phase-II Project,Ministry of Housing & Urban Affairs,702949,-,-,Uttar Pradesh,03/2017,06/2019,07/2023,12/2025,561.74,561.74,4045.35,91,"Jhansi Water Supply Infrastructure Phase-II Project
+(Ministry of Housing & Urban Affairs)
+(702949)","03/2017
+(06/2019)","07/2023
+(12/2025)","561.74
+(561.74)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,53,52,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=53,table_index=logical8,row_index=8",MISSING_VALUE,,,,,,
+OBS-202510-00329,2025-10,329,Hostel 4 -Earlier Known as Hostel 20,"Indian Institute of Technology, Bombay",612135,-,-,Maharashtra,09/2022,12/2023,09/2025,12/2025,182.33,182.33,156.51,98,"Hostel 4 -Earlier Known as Hostel 20
+(Indian Institute of Technology, Bombay)
+(612135)","09/2022
+(12/2023)","09/2025
+(12/2025)","182.33
+(182.33)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,54,53,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=54,table_index=logical8,row_index=9",MIDDLE_PAGE,,,,,,
+OBS-202510-00345,2025-10,345,Construction of Aviation Fuel farm Facilities at Bhogapuram Airport,Ministry of Petroleum & Natural Gas,616235,-,-,Andhra Pradesh,08/2024,08/2024,03/2026,03/2026,240,240,61.94,77,"Construction of Aviation Fuel farm Facilities at Bhogapuram Airport
+(Ministry of Petroleum & Natural Gas)
+(616235)","08/2024
+(08/2024)","03/2026
+(03/2026)","240
+(240)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,55,54,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=55,table_index=logical8,row_index=3",SEEDED_FILL,,,,,,
+OBS-202510-00430,2025-10,430,MHN TCPP PGC BGC Project [MTPBP],Ministry of Petroleum & Natural Gas,709848,-,-,Offshore,06/2022,06/2022,05/2026,05/2026,2329.45,2354.23,1148.9,59,"MHN TCPP PGC BGC Project [MTPBP]
+(Ministry of Petroleum & Natural Gas)
+(709848)","06/2022
+(06/2022)","05/2026
+(05/2026)","2329.45
+(2354.23)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,58,57,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=58,table_index=logical8,row_index=5",SEEDED_FILL,,,,,,
+OBS-202510-00537,2025-10,537,KHARSIA- NAYA RAIPUR-PARMALKASA 5th and 6th Line [278KM],CAO/C/SECR,617200,-,-,Chhattisgarh,04/2025,04/2025,03/2031,-,7853.84,7853.84,0,0,"KHARSIA- NAYA RAIPUR-PARMALKASA 5th and 6th Line [278KM]
+(CAO/C/SECR)
+(617200)","04/2025
+(04/2025)","03/2031
+(-)","7853.84
+(7853.84)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,62,61,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=62,table_index=logical8,row_index=7",SEEDED_FILL,,,,,,
+OBS-202510-00565,2025-10,565,Samlaya Timba Road 54 km,PCE/WR,611970,-,-,Gujarat,02/2023,02/2023,03/2030,03/2030,670.17,670.17,44.8,12,"Samlaya Timba Road 54 km
+(PCE/WR)
+(611970)","02/2023
+(02/2023)","03/2030
+(03/2030)","670.17
+(670.17)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,63,62,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=63,table_index=logical8,row_index=5",SEEDED_FILL,,,,,,
+OBS-202510-00601,2025-10,601,Nimach-Ratlam Doubling [133 Km],Western Railway [WR] - II,705933,-,-,Madhya Pradesh,10/2021,10/2021,10/2027,10/2027,1095.88,1095.88,1067.49,89,"Nimach-Ratlam Doubling [133 Km]
+(Western Railway [WR] - II)
+(705933)","10/2021
+(10/2021)","10/2027
+(10/2027)","1095.88
+(1095.88)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,64,63,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=64,table_index=logical8,row_index=11",SEEDED_FILL,,,,,,
+OBS-202510-00663,2025-10,663,Chhota Udaipur - Dhar New Line Project [157 km],Western Railway [WR] - II,705454,-,-,"Multi-States
+(Gujarat, Madhya
+Pradesh)",11/2008,01/2014,12/2025,12/2025,1794,1794,1815.94,80,"Chhota Udaipur - Dhar New Line Project [157 km]
+(Western Railway [WR] - II)
+(705454)","11/2008
+(01/2014)","12/2025
+(12/2025)","1794
+(1794)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,66,65,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=66,table_index=logical8,row_index=14",LATE_PAGE,,,,,,
+OBS-202510-00693,2025-10,693,3rd & 4th line between Sarla - Sason [8 km] [PB 73/2023-24/NR],East Coast Railway [ECoR] - II,612834,-,-,Odisha,04/2023,04/2023,12/2025,-,252,252,88.95,48,"3rd & 4th line between Sarla - Sason [8 km] [PB 73/2023-24/NR]
+(East Coast Railway [ECoR] - II)
+(612834)","04/2023
+(04/2023)","12/2025
+(-)","252
+(252)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,67,66,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=67,table_index=logical8,row_index=16",SEEDED_FILL,,,,,,
+OBS-202510-00698,2025-10,698,New B.G Railway Line between Jeypore & Navarangpur [38 Km] with Electrification,Indian Railway and Govt of Odisha,617320,-,-,Odisha,07/2017,09/2022,09/2025,-,747.91,747.91,7.21,0,"New B.G Railway Line between Jeypore & Navarangpur [38 Km] with Electrification
+(Indian Railway and Govt of Odisha)
+(617320)","07/2017
+(09/2022)","09/2025
+(-)","747.91
+(747.91)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,67,66,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=67,table_index=logical8,row_index=21",SEEDED_FILL,,,,,,
+OBS-202510-00753,2025-10,753,"SER Upgradation of maintenance infrastructure at Shalimar into Vande Bharat Chair
+Car maintenance cum workshop depot.",South Eastern Railway - JH,617345,-,-,West Bengal,NA,12/2024,10/2026,-,226.87,226.87,0.21,5,"SER Upgradation of maintenance infrastructure at Shalimar into Vande Bharat Chair
+Car maintenance cum workshop depot.
+(South Eastern Railway - JH)
+(617345)","NA
+(12/2024)","10/2026
+(-)","226.87
+(226.87)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,69,68,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=69,table_index=logical8,row_index=16",SEEDED_FILL,,,,,,
+OBS-202510-00820,2025-10,820,Jamrani Dam Multipurpose Project,Irrigation-UK,613787,-,-,Uttarakhand,10/2023,11/2023,06/2029,-,2584.1,2584.1,968.52,16,"Jamrani Dam Multipurpose Project
+(Irrigation-UK)
+(613787)","10/2023
+(11/2023)","06/2029
+(-)","2584.1
+(2584.1)",SRC-2025-10,4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3,72,71,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=72,table_index=logical8,row_index=9",LAST,,,,,,

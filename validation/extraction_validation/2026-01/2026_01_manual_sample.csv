@@ -1,0 +1,166 @@
+observation_id,reporting_month,serial_number_raw,project_name_raw,agency_raw,project_code_raw,legacy_ocms_code_raw,pmgid_raw,state_raw,approval_date_raw,start_date_raw,original_target_doc_raw,revised_doc_raw,original_cost_raw,revised_cost_raw,cumulative_expenditure_raw,physical_progress_raw,project_identity_cell_raw,approval_start_cell_raw,doc_cell_raw,cost_cell_raw,source_id,source_sha256,pdf_page_index,printed_page_number,source_table,source_table_number,extraction_method,extractor_version,raw_row_locator,sample_category,manual_row_confirmed,manual_identity_confirmed,manual_fields_confirmed,manual_provenance_confirmed,reviewer,review_notes
+OBS-202601-00001,2026-01,1,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport",Airport Authority of India [AAI],612786,-,-,Andhra Pradesh,03/2023,01/2024,01/2026,05/2026,265.91,265.91,97.14,50,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport
+(Airport Authority of India [AAI])
+(612786)","03/2023
+(01/2024)","01/2026
+(05/2026)","265.91
+(265.91)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,62,61,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=62,table_index=logical8,row_index=3",FIRST,,,,,,
+OBS-202601-00091,2026-01,91,GOKUL EXTENSION OC MINE,Western Coalfields Limited [WCL],615192,-,-,Maharashtra,04/2021,04/2021,03/2026,-,309.58,309.58,48.32,8,"GOKUL EXTENSION OC MINE
+(Western Coalfields Limited [WCL])
+(615192)","04/2021
+(04/2021)","03/2026
+(-)","309.58
+(309.58)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,65,64,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=65,table_index=logical8,row_index=6",SEEDED_FILL,,,,,,
+OBS-202601-00121,2026-01,121,HINGULA II OC EXPN PH III 15 M,MCL - CIL,616232,-,-,Odisha,11/2022,11/2022,03/2029,-,1561.85,1561.85,275.56,26,"HINGULA II OC EXPN PH III 15 M
+(MCL - CIL)
+(616232)","11/2022
+(11/2022)","03/2029
+(-)","1561.85
+(1561.85)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,66,65,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=66,table_index=logical8,row_index=5",EARLY_PAGE,,,,,,
+OBS-202601-00211,2026-01,211,"Augmentation of 1x500 MVA 400/220kV ICT [3rd] at Thrissur VSC HVDC Station in
+Kerala",Power Grid Corporation of India Limited [POWERGRID],619028,-,-,Kerala,08/2025,08/2025,08/2027,-,173.14,173.14,0.9,0,"Augmentation of 1x500 MVA 400/220kV ICT [3rd] at Thrissur VSC HVDC Station in
+Kerala
+(Power Grid Corporation of India Limited [POWERGRID])
+(619028)","08/2025
+(08/2025)","08/2027
+(-)","173.14
+(173.14)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,69,68,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=69,table_index=logical8,row_index=13",SEEDED_FILL,,,,,,
+OBS-202601-00316,2026-01,316,"SOURCING OF BAUXITE ARRANGEMENT FOR 5TH STREAM ALUMINA
+REFINERY FROM SOUTH BLOCK MINING LEASE OF PANCHPATMAILI MINES",National Aluminium Company Limited [NALCO],709831,-,-,Odisha,11/2017,11/2019,05/2025,06/2026,483,483,423.32,91,"SOURCING OF BAUXITE ARRANGEMENT FOR 5TH STREAM ALUMINA
+REFINERY FROM SOUTH BLOCK MINING LEASE OF PANCHPATMAILI MINES
+(National Aluminium Company Limited [NALCO])
+(709831)","11/2017
+(11/2019)","05/2025
+(06/2026)","483
+(483)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,73,72,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=73,table_index=logical8,row_index=27",SEEDED_FILL,,,,,,
+OBS-202601-00413,2026-01,413,"City Gas Distribution Project at Beed, Jalgaon and Jalna Districts",MinistryofPetroleumNaturalGas,709771,-,-,Maharashtra,03/2022,03/2022,09/2031,09/2031,865,865,77.25,3,"City Gas Distribution Project at Beed, Jalgaon and Jalna Districts
+(MinistryofPetroleumNaturalGas)
+(709771)","03/2022
+(03/2022)","09/2031
+(09/2031)","865
+(865)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,77,76,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=77,table_index=logical8,row_index=15",MISSING_VALUE,,,,,,
+OBS-202601-00514,2026-01,514,NMDC Slurry Pipeline Project Phase-1,National Mineral Development Corporation Limited [NMDC],706811,-,-,Chhattisgarh,11/2015,09/2020,06/2023,03/2026,2907,5427,3362.98,91,"NMDC Slurry Pipeline Project Phase-1
+(National Mineral Development Corporation Limited [NMDC])
+(706811)","11/2015
+(09/2020)","06/2023
+(03/2026)","2907
+(5427)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,81,80,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=81,table_index=logical8,row_index=20",SEEDED_FILL,,,,,,
+OBS-202601-00635,2026-01,635,3rd Line Wardha - Ballarshah [132 Kilometres],Central Railway [CR] - II,705502,-,-,Maharashtra,03/2016,12/2016,12/2025,02/2026,1384.72,2033.59,1743.27,98,"3rd Line Wardha - Ballarshah [132 Kilometres]
+(Central Railway [CR] - II)
+(705502)","03/2016
+(12/2016)","12/2025
+(02/2026)","1384.72
+(2033.59)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,85,84,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=85,table_index=logical8,row_index=17",HIGH_PROGRESS,,,,,,
+OBS-202601-00681,2026-01,681,"MUMBAI CENTRAL VIRAR VADODARA AHMEDABAAD TRAIN PROTECTION
+SYSTEM 500 RKM",Western Railway,611452,-,-,"Multi-States
+(Gujarat,
+Maharashtra)",09/2019,03/2023,12/2025,12/2026,311,311,263.42,93,"MUMBAI CENTRAL VIRAR VADODARA AHMEDABAAD TRAIN PROTECTION
+SYSTEM 500 RKM
+(Western Railway)
+(611452)","09/2019
+(03/2023)","12/2025
+(12/2026)","311
+(311)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,87,86,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=87,table_index=logical8,row_index=5",SEEDED_FILL,,,,,,
+OBS-202601-00741,2026-01,741,Dholpur - Sirmuttra Gauge Conversion,North Central Railway,705482,-,-,Rajasthan,03/2022,04/2020,02/2019,02/2027,747,747,446.59,47,"Dholpur - Sirmuttra Gauge Conversion
+(North Central Railway)
+(705482)","03/2022
+(04/2020)","02/2019
+(02/2027)","747
+(747)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,89,88,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=89,table_index=logical8,row_index=7",MIDDLE_PAGE,,,,,,
+OBS-202601-00853,2026-01,853,Roing-Hunli Road Greenfield Alignment Project,NHIDCL,618434,-,-,Arunachal Pradesh,02/2017,03/2018,03/2022,04/2025,1718.59,1718.59,0,77,"Roing-Hunli Road Greenfield Alignment Project
+(NHIDCL)
+(618434)","02/2017
+(03/2018)","03/2022
+(04/2025)","1718.59
+(1718.59)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,93,92,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=93,table_index=logical8,row_index=19",SEEDED_FILL,,,,,,
+OBS-202601-00870,2026-01,870,"Widening/lmprovement of Existing 2 lane to 4-Laning of Karimganj-Silchar section of
+NH-37 from Design Ch 0.000 near Silchar ISBT to Design Ch 15.970 near Kalinagar
+Pt I on NH-37 in Assam on HAM Mode Pkg-1",NHIDCL,618313,-,-,Assam,03/2024,09/2025,09/2027,-,1181.55,1181.55,0,0,"Widening/lmprovement of Existing 2 lane to 4-Laning of Karimganj-Silchar section of
+NH-37 from Design Ch 0.000 near Silchar ISBT to Design Ch 15.970 near Kalinagar
+Pt I on NH-37 in Assam on HAM Mode Pkg-1
+(NHIDCL)
+(618313)","03/2024
+(09/2025)","09/2027
+(-)","1181.55
+(1181.55)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,94,93,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=94,table_index=logical8,row_index=16",ZERO_PROGRESS,,,,,,
+OBS-202601-01068,2026-01,1068,"Upgradation and Strengthening of Chenani to Nashri Section via Patnitop of NH244
+from Km 0.000 to Km 39.100",National Highways Authority of India [NHAI],618967,-,-,"Jammu and
+Kashmir",03/2024,08/2024,08/2026,-,295.06,295.06,101.52,41,"Upgradation and Strengthening of Chenani to Nashri Section via Patnitop of NH244
+from Km 0.000 to Km 39.100
+(National Highways Authority of India [NHAI])
+(618967)","03/2024
+(08/2024)","08/2026
+(-)","295.06
+(295.06)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,104,103,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=104,table_index=logical8,row_index=6",SEEDED_FILL,,,,,,
+OBS-202601-01124,2026-01,1124,Nidagatta-Mysore Pkg II,National Highways Authority of India [NHAI],619120,-,-,Karnataka,02/2018,12/2019,06/2022,09/2023,2919.8,4113.89,711.44,99,"Nidagatta-Mysore Pkg II
+(National Highways Authority of India [NHAI])
+(619120)","02/2018
+(12/2019)","06/2022
+(09/2023)","2919.8
+(4113.89)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,106,105,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=106,table_index=logical8,row_index=23",SEEDED_FILL,,,,,,
+OBS-202601-01195,2026-01,1195,"Rehabilitation/ Upgradation of existing Highway to four lane standards in Kurkheda
+town from km.413257 to km 410775, Two lane in Shankarpur Gurnuli km 42400 to km
+43100 section and Reconstruction of Major Bridge at Ch. 448558 Bhuti Nallah and Ch.
+411695 Sati River bridge, Minor Bridge at Ch. 411477 and Ch. 405800 Lendhari
+Bridge of NH 543 Bhamhapuri-wadsa-kurkheda-korchi-Deori-Amgaon road on EPC
+mode in the State of Maharashtra",MoRTH,618042,-,-,Maharashtra,03/2022,11/2023,05/2025,-,163.86,163.86,0,34,"Rehabilitation/ Upgradation of existing Highway to four lane standards in Kurkheda
+town from km.413257 to km 410775, Two lane in Shankarpur Gurnuli km 42400 to km
+43100 section and Reconstruction of Major Bridge at Ch. 448558 Bhuti Nallah and Ch.
+411695 Sati River bridge, Minor Bridge at Ch. 411477 and Ch. 405800 Lendhari
+Bridge of NH 543 Bhamhapuri-wadsa-kurkheda-korchi-Deori-Amgaon road on EPC
+mode in the State of Maharashtra
+(MoRTH)
+(618042)","03/2022
+(11/2023)","05/2025
+(-)","163.86
+(163.86)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,109,108,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=109,table_index=logical8,row_index=19",SEEDED_FILL,,,,,,
+OBS-202601-01196,2026-01,1196,"Rehabilitation & Up-gradation of Sabalkhed to Ashti Section from Km 37900 to Km
+55100 & Chinchpur to Jamkhed Section from km 70000 to km 72922 of NH-561 to
+Two lane with Paved shoulder/ Four lane configuration in the State of Maharashtra on
+EPC Mode Length20.122km.",MoRTH,618046,-,-,Maharashtra,03/2022,04/2023,09/2024,-,213.33,213.33,0,95,"Rehabilitation & Up-gradation of Sabalkhed to Ashti Section from Km 37900 to Km
+55100 & Chinchpur to Jamkhed Section from km 70000 to km 72922 of NH-561 to
+Two lane with Paved shoulder/ Four lane configuration in the State of Maharashtra on
+EPC Mode Length20.122km.
+(MoRTH)
+(618046)","03/2022
+(04/2023)","09/2024
+(-)","213.33
+(213.33)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,109,108,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=109,table_index=logical8,row_index=20",SEEDED_FILL,,,,,,
+OBS-202601-01378,2026-01,1378,"Construction of 2-Lane with hard shoulders of Merangkong-Tamlu-Mon MTM Road
+from existing Km 20.456 to Km 41.065 Design Km. 20 to Km. 40.0 Design Length-
+20.000 Km in the State of Nagaland under SARDP-NE Phase-A Pkg-2 Balance work",NHIDCL,618423,-,-,Nagaland,03/2018,08/2023,08/2025,-,215.79,215.79,25.25,95,"Construction of 2-Lane with hard shoulders of Merangkong-Tamlu-Mon MTM Road
+from existing Km 20.456 to Km 41.065 Design Km. 20 to Km. 40.0 Design Length-
+20.000 Km in the State of Nagaland under SARDP-NE Phase-A Pkg-2 Balance work
+(NHIDCL)
+(618423)","03/2018
+(08/2023)","08/2025
+(-)","215.79
+(215.79)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,118,117,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=118,table_index=logical8,row_index=13",SEEDED_FILL,,,,,,
+OBS-202601-01496,2026-01,1496,"Rehabilitation and upgradation to two lane with paved shoulders from Km 0/000 to
+72/6 of NH-365 Nakrekal to Tanamcherla section under NHDP IV in the state of
+Telangana under EPC mode",MoRTH,618026,-,-,Telangana,06/2017,11/2017,10/2019,-,605.08,605.08,0,99,"Rehabilitation and upgradation to two lane with paved shoulders from Km 0/000 to
+72/6 of NH-365 Nakrekal to Tanamcherla section under NHDP IV in the state of
+Telangana under EPC mode
+(MoRTH)
+(618026)","06/2017
+(11/2017)","10/2019
+(-)","605.08
+(605.08)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,124,123,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=124,table_index=logical8,row_index=2",LATE_PAGE,,,,,,
+OBS-202601-01498,2026-01,1498,"Widening and strengthening to 4 lane / 2-lane with paved shoulders of Mahabubnagar
+- Chincholi section from km 60/255 to Km 102/834 of NH-167N in the State of
+Telangana on EPC mode.",MoRTH,618105,-,-,Telangana,03/2022,10/2023,10/2025,-,631.49,631.49,71.91,30,"Widening and strengthening to 4 lane / 2-lane with paved shoulders of Mahabubnagar
+- Chincholi section from km 60/255 to Km 102/834 of NH-167N in the State of
+Telangana on EPC mode.
+(MoRTH)
+(618105)","03/2022
+(10/2023)","10/2025
+(-)","631.49
+(631.49)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,124,123,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=124,table_index=logical8,row_index=4",SEEDED_FILL,,,,,,
+OBS-202601-01702,2026-01,1702,Jamrani Dam Multipurpose Project,Irrigation-UK,613787,-,-,Uttarakhand,10/2023,11/2023,06/2029,-,2584.1,2584.1,991.09,21,"Jamrani Dam Multipurpose Project
+(Irrigation-UK)
+(613787)","10/2023
+(11/2023)","06/2029
+(-)","2584.1
+(2584.1)",SRC-2026-01,9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83,133,132,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=133,table_index=logical8,row_index=18",LAST,,,,,,
