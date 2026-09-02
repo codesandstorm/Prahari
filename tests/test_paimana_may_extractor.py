@@ -42,6 +42,7 @@ def parse(row: list[str] | None = None):
     )
 
 
+@pytest.mark.integration
 def test_may_source_resolves_canonically():
     source = resolve_source(SOURCE_ID, MANIFEST, ROOT)
     assert source.filename == "FlashReport_2026_05.pdf"

@@ -6,6 +6,8 @@ import json
 from collections import Counter
 from pathlib import Path
 
+import pytest
+
 from src.pipeline.build_longitudinal_pilot import (
     DATASET_VERSION,
     MAY_CSV_SHA256,
@@ -99,9 +101,13 @@ def test_no_completion_or_ml_fields_are_created():
         assert not any(any(term in field.casefold() for term in forbidden) for field in fields)
 
 
-def test_input_and_source_hashes_are_unchanged():
+def test_input_hashes_are_unchanged():
     assert sha(ROOT / "data/extracted/ongoing/ongoing_2026_05.csv") == MAY_CSV_SHA256
     assert sha(ROOT / "data/extracted/ongoing/ongoing_2026_06.csv") == JUNE_CSV_SHA256
+
+
+@pytest.mark.integration
+def test_source_pdf_hashes_are_unchanged():
     assert sha(ROOT / "data/raw/2026/FlashReport_2026_05.pdf") == MAY_PDF_SHA
     assert sha(ROOT / "data/raw/2026/FlashReport_2026_06.pdf") == JUNE_PDF_SHA
 

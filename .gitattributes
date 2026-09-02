@@ -1,0 +1,7 @@
+# Frozen extraction evidence is byte-addressed. Keep its validated CSV record
+# terminators and embedded field newlines exactly as committed on every OS.
+data/extracted/ongoing/ongoing_2026_04.csv binary
+data/extracted/ongoing/ongoing_2026_05.csv binary
+data/extracted/ongoing/ongoing_2026_06.csv binary
+data/processed/pilot_2026_04_06/*.csv binary
+data/processed/pilot_2026_05_06/*.csv binary
