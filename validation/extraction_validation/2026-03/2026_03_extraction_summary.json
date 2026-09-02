@@ -1,0 +1,716 @@
+{
+  "source_id": "SRC-2026-03",
+  "source_sha256": "e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253",
+  "reporting_month": "2026-03",
+  "file_size_bytes": 6827436,
+  "physical_page_count": 157,
+  "text_extractability": "YES",
+  "official_ongoing_count": 1941,
+  "count_evidence": {
+    "pdf_page_index": 4,
+    "printed_page_number": 3,
+    "section": "Overview",
+    "locator": "Ongoing Projects figure"
+  },
+  "table_title": "All Ongoing Projects",
+  "table_number": 6,
+  "title_pdf_page_index": 54,
+  "title_printed_page_number": 53,
+  "data_pdf_page_range": [
+    55,
+    156
+  ],
+  "printed_page_range": [
+    54,
+    155
+  ],
+  "schema_family": "PAIMANA_V1",
+  "schema_classification": "COMPATIBLE_VARIATION",
+  "variant": "PAIMANA_V1_WITH_LEGACY",
+  "adapter": "PAIMANA_V1_WITH_LEGACY",
+  "confidence": "HIGH",
+  "column_count": 8,
+  "accepted_project_rows": 1941,
+  "structural_counts": {
+    "REPEATED_HEADER": 102,
+    "SECTION_HEADING": 49,
+    "TOTAL": 32,
+    "BLANK": 4,
+    "OTHER_NON_PROJECT": 8
+  },
+  "total_raw_table_rows": 2136,
+  "unresolved_rows": 0,
+  "serial_min": 1,
+  "serial_max": 1941,
+  "missing_serials": [],
+  "duplicate_serials": 0,
+  "out_of_order_serials": 0,
+  "project_code_missing": 0,
+  "project_code_duplicates": 0,
+  "project_code_malformed": 0,
+  "project_code_whitespace": 0,
+  "legacy_ocms": {
+    "present": 1189,
+    "missing": 752
+  },
+  "pmgid": {
+    "present": 0,
+    "missing": 1941
+  },
+  "field_quality": {
+    "row_count": 1941,
+    "missing_token_definition": [
+      "",
+      "-",
+      "NA"
+    ],
+    "missing_counts": {
+      "project_name_raw": 0,
+      "agency_raw": 0,
+      "project_code_raw": 0,
+      "legacy_ocms_code_raw": 752,
+      "pmgid_raw": 1941,
+      "state_raw": 1,
+      "approval_date_raw": 17,
+      "start_date_raw": 0,
+      "original_target_doc_raw": 0,
+      "revised_doc_raw": 347,
+      "original_cost_raw": 0,
+      "revised_cost_raw": 0,
+      "cumulative_expenditure_raw": 0,
+      "physical_progress_raw": 0
+    },
+    "missing_percent": {
+      "project_name_raw": 0.0,
+      "agency_raw": 0.0,
+      "project_code_raw": 0.0,
+      "legacy_ocms_code_raw": 38.7429,
+      "pmgid_raw": 100.0,
+      "state_raw": 0.0515,
+      "approval_date_raw": 0.8758,
+      "start_date_raw": 0.0,
+      "original_target_doc_raw": 0.0,
+      "revised_doc_raw": 17.8774,
+      "original_cost_raw": 0.0,
+      "revised_cost_raw": 0.0,
+      "cumulative_expenditure_raw": 0.0,
+      "physical_progress_raw": 0.0
+    },
+    "invalid_numeric_counts_excluding_missing": {
+      "original_cost_raw": 0,
+      "revised_cost_raw": 0,
+      "cumulative_expenditure_raw": 0,
+      "physical_progress_raw": 0
+    },
+    "required_field_audit": {
+      "approval_date_raw": {
+        "parsed": 1924,
+        "missing": 17,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "start_date_raw": {
+        "parsed": 1941,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "original_target_doc_raw": {
+        "parsed": 1941,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "revised_doc_raw": {
+        "parsed": 1594,
+        "missing": 347,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "original_cost_raw": {
+        "parsed": 1941,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "revised_cost_raw": {
+        "parsed": 1941,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "cumulative_expenditure_raw": {
+        "parsed": 1941,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      },
+      "physical_progress_raw": {
+        "parsed": 1941,
+        "missing": 0,
+        "malformed": 0,
+        "unusual_raw_tokens": []
+      }
+    },
+    "imputation_applied": false
+  },
+  "provenance_failures": 0,
+  "duplicate_locators": 0,
+  "quality_gate": "PASS_AUTOMATED",
+  "page_diagnostics": [
+    {
+      "pdf_page_index": 55,
+      "REPEATED_HEADER": 1,
+      "SECTION_HEADING": 2,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 56,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 21,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 57,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 24
+    },
+    {
+      "pdf_page_index": 58,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 59,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 24
+    },
+    {
+      "pdf_page_index": 60,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 24
+    },
+    {
+      "pdf_page_index": 61,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20,
+      "TOTAL": 4,
+      "SECTION_HEADING": 5
+    },
+    {
+      "pdf_page_index": 62,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 63,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20,
+      "TOTAL": 1,
+      "SECTION_HEADING": 1
+    },
+    {
+      "pdf_page_index": 64,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 65,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 66,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16,
+      "TOTAL": 2,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 67,
+      "REPEATED_HEADER": 1,
+      "SECTION_HEADING": 2,
+      "PROJECT_ROW": 21,
+      "TOTAL": 1
+    },
+    {
+      "pdf_page_index": 68,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23,
+      "TOTAL": 1,
+      "SECTION_HEADING": 1
+    },
+    {
+      "pdf_page_index": 69,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19,
+      "TOTAL": 3,
+      "SECTION_HEADING": 5
+    },
+    {
+      "pdf_page_index": 70,
+      "BLANK": 1,
+      "OTHER_NON_PROJECT": 2,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 21
+    },
+    {
+      "pdf_page_index": 71,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19,
+      "TOTAL": 3,
+      "SECTION_HEADING": 4
+    },
+    {
+      "pdf_page_index": 72,
+      "REPEATED_HEADER": 1,
+      "SECTION_HEADING": 1,
+      "PROJECT_ROW": 22
+    },
+    {
+      "pdf_page_index": 73,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 22
+    },
+    {
+      "pdf_page_index": 74,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 22
+    },
+    {
+      "pdf_page_index": 75,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 76,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 22,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 77,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19,
+      "TOTAL": 3,
+      "SECTION_HEADING": 5
+    },
+    {
+      "pdf_page_index": 78,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17,
+      "TOTAL": 6,
+      "SECTION_HEADING": 8
+    },
+    {
+      "pdf_page_index": 79,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 22,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 80,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 81,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 82,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 83,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 84,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 85,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 86,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 87,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 88,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 89,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 23
+    },
+    {
+      "pdf_page_index": 90,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 91,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 92,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 93,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 94,
+      "BLANK": 1,
+      "OTHER_NON_PROJECT": 2,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 95,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16
+    },
+    {
+      "pdf_page_index": 96,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 15
+    },
+    {
+      "pdf_page_index": 97,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 15
+    },
+    {
+      "pdf_page_index": 98,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 99,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 100,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 101,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 102,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 103,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 104,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 105,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 106,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 107,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 108,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 14
+    },
+    {
+      "pdf_page_index": 109,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 15
+    },
+    {
+      "pdf_page_index": 110,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 111,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 112,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 15
+    },
+    {
+      "pdf_page_index": 113,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 114,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 21
+    },
+    {
+      "pdf_page_index": 115,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 21
+    },
+    {
+      "pdf_page_index": 116,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16
+    },
+    {
+      "pdf_page_index": 117,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 118,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 119,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 120,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 14
+    },
+    {
+      "pdf_page_index": 121,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16
+    },
+    {
+      "pdf_page_index": 122,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 123,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 124,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 125,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16
+    },
+    {
+      "pdf_page_index": 126,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16
+    },
+    {
+      "pdf_page_index": 127,
+      "BLANK": 1,
+      "OTHER_NON_PROJECT": 2,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 15
+    },
+    {
+      "pdf_page_index": 128,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 129,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 130,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 131,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20
+    },
+    {
+      "pdf_page_index": 132,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 133,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16
+    },
+    {
+      "pdf_page_index": 134,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 135,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 136,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 137,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 138,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 139,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 140,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 21
+    },
+    {
+      "pdf_page_index": 141,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 142,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 143,
+      "BLANK": 1,
+      "OTHER_NON_PROJECT": 2,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 144,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16
+    },
+    {
+      "pdf_page_index": 145,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 146,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 147,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17
+    },
+    {
+      "pdf_page_index": 148,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 149,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 19
+    },
+    {
+      "pdf_page_index": 150,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 18
+    },
+    {
+      "pdf_page_index": 151,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 14
+    },
+    {
+      "pdf_page_index": 152,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16
+    },
+    {
+      "pdf_page_index": 153,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 16,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 154,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 17,
+      "TOTAL": 1,
+      "SECTION_HEADING": 2
+    },
+    {
+      "pdf_page_index": 155,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 22,
+      "TOTAL": 1,
+      "SECTION_HEADING": 1
+    },
+    {
+      "pdf_page_index": 156,
+      "REPEATED_HEADER": 1,
+      "PROJECT_ROW": 20,
+      "TOTAL": 1
+    }
+  ],
+  "extraction_sha256": "386369769af2bc90dd720dc5edf6b481066b5abdb48972b24a9d75c6ab44f2a1"
+}

@@ -1,0 +1,115 @@
+observation_id,reporting_month,serial_number_raw,project_name_raw,agency_raw,project_code_raw,legacy_ocms_code_raw,pmgid_raw,state_raw,approval_date_raw,start_date_raw,original_target_doc_raw,revised_doc_raw,original_cost_raw,revised_cost_raw,cumulative_expenditure_raw,physical_progress_raw,project_identity_cell_raw,approval_start_cell_raw,doc_cell_raw,cost_cell_raw,source_id,source_sha256,pdf_page_index,printed_page_number,source_table,source_table_number,extraction_method,extractor_version,raw_row_locator,sample_category,manual_row_confirmed,manual_identity_confirmed,manual_fields_confirmed,manual_provenance_confirmed,reviewer,review_notes
+OBS-202507-00001,2025-07,1,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport",Airport Authority of India [AAI],612786,-,-,Andhra Pradesh,01/2024,,01/2026,03/2026,265.91,265.91,45.54,31,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport
+(Airport Authority of India [AAI])
+(612786)",01/2024,"01/2026
+03/2026","265.91
+(265.91)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,37,36,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=37,table_index=logical8,row_index=3",FIRST,,,,,,
+OBS-202507-00046,2025-07,46,HURA C OCP,ECL - CIL,400018,-,-,Jharkhand,08/2022,,03/2029,-,859.41,859.41,450.47,62,"HURA C OCP
+(ECL - CIL)
+(400018)",08/2022,"03/2029
+(-)","859.41
+(859.41)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,38,37,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=38,table_index=logical8,row_index=26",SEEDED_FILL,,,,,,
+OBS-202507-00061,2025-07,61,JHARKHAND-LAIYO OCP,Ministry of Coal,400352,-,-,Jharkhand,08/2020,,03/2031,-,764.57,764.57,145.81,25,"JHARKHAND-LAIYO OCP
+(Ministry of Coal)
+(400352)",08/2020,"03/2031
+(-)","764.57
+(764.57)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,39,38,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=39,table_index=logical8,row_index=9",EARLY_PAGE,,,,,,
+OBS-202507-00107,2025-07,107,WAGHODA UG MINE [1.02 MTY],Western Coalfields Limited [WCL],617233,-,-,Maharashtra,01/2025,,03/2030,-,379.3,379.3,0,0,"WAGHODA UG MINE [1.02 MTY]
+(Western Coalfields Limited [WCL])
+(617233)",01/2025,"03/2030
+(-)","379.3
+(379.3)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,40,39,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=40,table_index=logical8,row_index=24",SEEDED_FILL,,,,,,
+OBS-202507-00159,2025-07,159,Lara Super Thermal Power Project Stage-II [2 x 800 MW],National Thermal Power Corporation [NTPC],611930,-,-,Chhattisgarh,08/2023,,06/2028,-,15530,15530,2288,14,"Lara Super Thermal Power Project Stage-II [2 x 800 MW]
+(National Thermal Power Corporation [NTPC])
+(611930)",08/2023,"06/2028
+(-)","15530
+(15530)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,42,41,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=42,table_index=logical8,row_index=23",SEEDED_FILL,,,,,,
+OBS-202507-00208,2025-07,208,"Transmission System for Evacuation of Power from Rajasthan REZ Ph-IV [Part-2
+5.5GW] [Jaisalmer/Barmer Complex] Part H1 [POWERGRID KURAWAR
+TRANSMISSION LIMITED]",Power Grid Corporation of India Limited [POWERGRID],615344,-,-,Madhya Pradesh,10/2024,,10/2026,-,3674,3674,408.18,13,"Transmission System for Evacuation of Power from Rajasthan REZ Ph-IV [Part-2
+5.5GW] [Jaisalmer/Barmer Complex] Part H1 [POWERGRID KURAWAR
+TRANSMISSION LIMITED]
+(Power Grid Corporation of India Limited [POWERGRID])
+(615344)",10/2024,"10/2026
+(-)","3674
+(3674)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,44,43,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=44,table_index=logical8,row_index=11",MISSING_VALUE,,,,,,
+OBS-202507-00259,2025-07,259,Patna Metro Rail Project,Patna Metro Rail Corporation Ltd. [PMRCL],702627,-,-,Bihar,02/2019,,02/2024,06/2027,13365.77,13365.8,4039.77,40.07,"Patna Metro Rail Project
+(Patna Metro Rail Corporation Ltd. [PMRCL])
+(702627)",02/2019,"02/2024
+06/2027","13365.77
+(13365.8)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,46,45,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=46,table_index=logical8,row_index=27",SEEDED_FILL,,,,,,
+OBS-202507-00273,2025-07,273,Kalyan Station Precinct Imporvement Project,Ministry of Housing & Urban Affairs,701991,-,-,Maharashtra,07/2020,,07/2023,-,600,600,49.42,0,"Kalyan Station Precinct Imporvement Project
+(Ministry of Housing & Urban Affairs)
+(701991)",07/2020,"07/2023
+(-)","600
+(600)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,47,46,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=47,table_index=logical8,row_index=8",ZERO_PROGRESS,,,,,,
+OBS-202507-00324,2025-07,324,"Setting up of new rail fed POL facility at Kamardanga, Assam",Hindustan Petroleum Corporation Limited [HPCL],709755,-,-,Assam,03/2023,,07/2027,07/2027,384.04,384.04,110.44,48,"Setting up of new rail fed POL facility at Kamardanga, Assam
+(Hindustan Petroleum Corporation Limited [HPCL])
+(709755)",03/2023,"07/2027
+07/2027","384.04
+(384.04)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,49,48,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=49,table_index=logical8,row_index=11",MIDDLE_PAGE,,,,,,
+OBS-202507-00339,2025-07,339,KG-DWN-98/2 Cluster - II Development Project - NELP Block,Oil and Natural Gas Corporation Limited [ONGC],400120,-,-,Andhra Pradesh,03/2016,,06/2020,06/2026,34012,34012,35498.35,96,"KG-DWN-98/2 Cluster - II Development Project - NELP Block
+(Oil and Natural Gas Corporation Limited [ONGC])
+(400120)",03/2016,"06/2020
+06/2026","34012
+(34012)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,49,48,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=49,table_index=logical8,row_index=28",HIGH_PROGRESS,,,,,,
+OBS-202507-00345,2025-07,345,"Development of Surface Facilities for production and evacuation of Crude Oil and
+Natural Gas from Nadua and East Khagorija",Ministry of Petroleum & Natural Gas,604863,-,-,Assam,01/2018,,02/2020,12/2025,682.9,726.93,488.37,94,"Development of Surface Facilities for production and evacuation of Crude Oil and
+Natural Gas from Nadua and East Khagorija
+(Ministry of Petroleum & Natural Gas)
+(604863)",01/2018,"02/2020
+12/2025","682.9
+(726.93)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,50,49,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=50,table_index=logical8,row_index=3",SEEDED_FILL,,,,,,
+OBS-202507-00430,2025-07,430,"City Gas Distribution Project at East Mednipore, West Mednipore & Jhargram Districts",MinistryofPetroleumNaturalGas,709772,-,-,West Bengal,03/2022,,06/2031,06/2031,609,609,58.15,2,"City Gas Distribution Project at East Mednipore, West Mednipore & Jhargram Districts
+(MinistryofPetroleumNaturalGas)
+(709772)",03/2022,"06/2031
+06/2031","609
+(609)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,53,52,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=53,table_index=logical8,row_index=5",SEEDED_FILL,,,,,,
+OBS-202507-00537,2025-07,537,SHIMOGA - SHIKARIPURA - RANEBENNUR [96 Km],South Western Railway [SWR] - II,705761,-,-,Karnataka,02/2023,,12/2027,06/2028,1454,1454,69.58,11,"SHIMOGA - SHIKARIPURA - RANEBENNUR [96 Km]
+(South Western Railway [SWR] - II)
+(705761)",02/2023,"12/2027
+06/2028","1454
+(1454)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,56,55,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=56,table_index=logical8,row_index=29",SEEDED_FILL,,,,,,
+OBS-202507-00565,2025-07,565,4th Line Wardha - Nagpur [78.7 Kilometres],Central Railway [CR] - II,705505,-,-,Maharashtra,05/2018,,12/2025,02/2026,638,1137,969,80,"4th Line Wardha - Nagpur [78.7 Kilometres]
+(Central Railway [CR] - II)
+(705505)",05/2018,"12/2025
+02/2026","638
+(1137)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,57,56,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=57,table_index=logical8,row_index=27",SEEDED_FILL,,,,,,
+OBS-202507-00601,2025-07,601,Mumbai-Ahmedabad High Speed Rail Project- 508 km,National High Speed Rail Corporation [NHSRC],705728,-,-,"Multi-States
+(Dadra & Nagar
+Haveli and Daman
+& Diu, Gujarat,
+Maharashtra)",09/2017,,08/2027,12/2029,108000,108000,78690.89,53,"Mumbai-Ahmedabad High Speed Rail Project- 508 km
+(National High Speed Rail Corporation [NHSRC])
+(705728)",09/2017,"08/2027
+12/2029","108000
+(108000)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,59,58,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=59,table_index=logical8,row_index=4",SEEDED_FILL,,,,,,
+OBS-202507-00692,2025-07,692,"Kalinarayanpur-Krishnanagar Doubling Alongwith Krishnanagar - Chapra New Line
+And Naihati-Ranaghat 3rd Line.",Eastern Railway [ER] - I,400247,-,-,West Bengal,11/2005,,02/2027,02/2027,1000,1000,1029.97,67,"Kalinarayanpur-Krishnanagar Doubling Alongwith Krishnanagar - Chapra New Line
+And Naihati-Ranaghat 3rd Line.
+(Eastern Railway [ER] - I)
+(400247)",11/2005,"02/2027
+02/2027","1000
+(1000)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,62,61,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=62,table_index=logical8,row_index=7",SEEDED_FILL,,,,,,
+OBS-202507-00697,2025-07,697,Joka-BBD Bag new metro project,RVNL - II,705730,-,-,West Bengal,04/2010,,12/2026,12/2028,4835,10362,4361.23,59,"Joka-BBD Bag new metro project
+(RVNL - II)
+(705730)",04/2010,"12/2026
+12/2028","4835
+(10362)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,62,61,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=62,table_index=logical8,row_index=12",SEEDED_FILL,,,,,,
+OBS-202507-00708,2025-07,708,"New Sinter Plant at BSL, SAIL",Steel Authority of India Limited [SAIL],400174,-,-,Jharkhand,05/2015,,10/2017,06/2027,1034.01,1752.3,883.23,51,"New Sinter Plant at BSL, SAIL
+(Steel Authority of India Limited [SAIL])
+(400174)",05/2015,"10/2017
+06/2027","1034.01
+(1752.3)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,62,61,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=62,table_index=logical8,row_index=32",LATE_PAGE,,,,,,
+OBS-202507-00753,2025-07,753,Kelo Irrigation Project,Water Resources-CT,400111,-,-,Chhattisgarh,04/2008,,12/2019,06/2025,459.97,727.04,616.93,71,"Kelo Irrigation Project
+(Water Resources-CT)
+(400111)",04/2008,"12/2019
+06/2025","459.97
+(727.04)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,64,63,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=64,table_index=logical8,row_index=29",SEEDED_FILL,,,,,,
+OBS-202507-00791,2025-07,791,Jamrani Dam Multipurpose Project,Irrigation-UK,613787,-,-,Uttarakhand,04/2023,,06/2029,-,2584.1,2584.1,486.52,16,"Jamrani Dam Multipurpose Project
+(Irrigation-UK)
+(613787)",04/2023,"06/2029
+(-)","2584.1
+(2584.1)",SRC-2025-07-P01,1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508,66,65,All Ongoing Projects,4,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=66,table_index=logical8,row_index=3",LAST,,,,,,

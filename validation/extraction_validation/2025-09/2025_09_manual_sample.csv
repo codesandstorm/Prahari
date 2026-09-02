@@ -1,0 +1,129 @@
+observation_id,reporting_month,serial_number_raw,project_name_raw,agency_raw,project_code_raw,legacy_ocms_code_raw,pmgid_raw,state_raw,approval_date_raw,start_date_raw,original_target_doc_raw,revised_doc_raw,original_cost_raw,revised_cost_raw,cumulative_expenditure_raw,physical_progress_raw,project_identity_cell_raw,approval_start_cell_raw,doc_cell_raw,cost_cell_raw,source_id,source_sha256,pdf_page_index,printed_page_number,source_table,source_table_number,extraction_method,extractor_version,raw_row_locator,sample_category,manual_row_confirmed,manual_identity_confirmed,manual_fields_confirmed,manual_provenance_confirmed,reviewer,review_notes
+OBS-202509-00001,2025-09,1,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport",Airport Authority of India [AAI],612786,-,-,Andhra Pradesh,03/2023,01/2024,01/2026,03/2026,265.91,265.91,59.43,35,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport
+(Airport Authority of India [AAI])
+(612786)","03/2023
+(01/2024)","01/2026
+(03/2026)","265.91
+(265.91)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,42,41,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=42,table_index=logical8,row_index=3",FIRST,,,,,,
+OBS-202509-00046,2025-09,46,KONAR EXPANSION OCP,Ministry of Coal,400073,-,-,Jharkhand,01/2022,01/2022,03/2032,-,799.34,799.34,429.42,45,"KONAR EXPANSION OCP
+(Ministry of Coal)
+(400073)","01/2022
+(01/2022)","03/2032
+(-)","799.34
+(799.34)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,43,42,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=43,table_index=logical8,row_index=24",SEEDED_FILL,,,,,,
+OBS-202509-00061,2025-09,61,MOONIDIH XV SEAM UG,Ministry of Coal,400425,-,-,Jharkhand,08/2011,08/2011,03/2019,05/2026,1230.27,1230.27,629.58,81,"MOONIDIH XV SEAM UG
+(Ministry of Coal)
+(400425)","08/2011
+(08/2011)","03/2019
+(05/2026)","1230.27
+(1230.27)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,44,43,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=44,table_index=logical8,row_index=7",EARLY_PAGE,,,,,,
+OBS-202509-00107,2025-09,107,WAGHODA UG MINE [1.02 MTY],Western Coalfields Limited [WCL],617233,-,-,Maharashtra,01/2024,01/2025,03/2030,-,379.3,379.3,0,0,"WAGHODA UG MINE [1.02 MTY]
+(Western Coalfields Limited [WCL])
+(617233)","01/2024
+(01/2025)","03/2030
+(-)","379.3
+(379.3)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,45,44,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=45,table_index=logical8,row_index=22",SEEDED_FILL,,,,,,
+OBS-202509-00159,2025-09,159,"Sipat Super Thermal Power Project, Stage-III [1x800 MW]",National Thermal Power Corporation [NTPC],617188,-,-,Chhattisgarh,09/2024,09/2024,09/2029,-,9791,9791,865.06,8,"Sipat Super Thermal Power Project, Stage-III [1x800 MW]
+(National Thermal Power Corporation [NTPC])
+(617188)","09/2024
+(09/2024)","09/2029
+(-)","9791
+(9791)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,47,46,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=47,table_index=logical8,row_index=20",SEEDED_FILL,,,,,,
+OBS-202509-00208,2025-09,208,"System Strengthening at Koppal-II and GadagII for integration of RE generation
+projects [SPV Name POWERGRID Koppal Gadag Augmentation Transmission
+Limited]",Power Grid Corporation of India Limited [POWERGRID],616672,-,-,Karnataka,01/2025,01/2025,06/2027,-,1354,1354,18.14,0,"System Strengthening at Koppal-II and GadagII for integration of RE generation
+projects [SPV Name POWERGRID Koppal Gadag Augmentation Transmission
+Limited]
+(Power Grid Corporation of India Limited [POWERGRID])
+(616672)","01/2025
+(01/2025)","06/2027
+(-)","1354
+(1354)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,49,48,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=49,table_index=logical8,row_index=10",MISSING_VALUE,,,,,,
+OBS-202509-00249,2025-09,249,"C/o 184 MS Flats for Hon'ble MPs at BKS Marg, New Delhi",Central Public Works Department [CPWD],617282,-,-,Delhi,01/2022,05/2022,05/2025,09/2025,646.53,646.52,540.04,100,"C/o 184 MS Flats for Hon'ble MPs at BKS Marg, New Delhi
+(Central Public Works Department [CPWD])
+(617282)","01/2022
+(05/2022)","05/2025
+(09/2025)","646.53
+(646.52)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,51,50,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=51,table_index=logical8,row_index=12",HIGH_PROGRESS,,,,,,
+OBS-202509-00260,2025-09,260,"Ahmedabad Metro Rail Project, Phase-II",Gujarat Metro Rail Corporation Limited [GMRCL],702631,-,-,Gujarat,03/2019,03/2019,03/2024,12/2025,5384.17,5384.17,4220.88,89,"Ahmedabad Metro Rail Project, Phase-II
+(Gujarat Metro Rail Corporation Limited [GMRCL])
+(702631)","03/2019
+(03/2019)","03/2024
+(12/2025)","5384.17
+(5384.17)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,51,50,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=51,table_index=logical8,row_index=29",SEEDED_FILL,,,,,,
+OBS-202509-00327,2025-09,327,Hostel 4 -Earlier Known as Hostel 20,"Indian Institute of Technology, Bombay",612135,-,-,Maharashtra,09/2022,12/2023,09/2025,-,182.33,182.33,144.21,97,"Hostel 4 -Earlier Known as Hostel 20
+(Indian Institute of Technology, Bombay)
+(612135)","09/2022
+(12/2023)","09/2025
+(-)","182.33
+(182.33)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,54,53,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=54,table_index=logical8,row_index=9",MIDDLE_PAGE,,,,,,
+OBS-202509-00344,2025-09,344,"Setting up of new rail fed POL facility at Kamardanga, Assam",Hindustan Petroleum Corporation Limited [HPCL],709755,-,-,Assam,03/2023,03/2023,07/2027,07/2027,384.04,384.04,129.97,55,"Setting up of new rail fed POL facility at Kamardanga, Assam
+(Hindustan Petroleum Corporation Limited [HPCL])
+(709755)","03/2023
+(03/2023)","07/2027
+(07/2027)","384.04
+(384.04)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,55,54,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=55,table_index=logical8,row_index=1",SEEDED_FILL,,,,,,
+OBS-202509-00429,2025-09,429,PRP-VIII Group B [NH & BS Asset],Ministry of Petroleum & Natural Gas,709849,-,-,Offshore,06/2024,06/2024,02/2026,02/2026,2379.84,3165.53,1806.82,63,"PRP-VIII Group B [NH & BS Asset]
+(Ministry of Petroleum & Natural Gas)
+(709849)","06/2024
+(06/2024)","02/2026
+(02/2026)","2379.84
+(3165.53)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,58,57,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=58,table_index=logical8,row_index=4",SEEDED_FILL,,,,,,
+OBS-202509-00489,2025-09,489,Kurnool Coach Midlife Rehabilitation Project,WPO/Patna,705253,-,-,Andhra Pradesh,05/2016,07/2014,12/2020,-,563,563,120,0,"Kurnool Coach Midlife Rehabilitation Project
+(WPO/Patna)
+(705253)","05/2016
+(07/2014)","12/2020
+(-)","563
+(563)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,60,59,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=60,table_index=logical8,row_index=18",ZERO_PROGRESS,,,,,,
+OBS-202509-00537,2025-09,537,BRM Machine Procurement Project,EDTK[MC]/RB,705722,-,-,Delhi,09/2019,09/2019,06/2024,12/2027,210,210,0.02,0,"BRM Machine Procurement Project
+(EDTK[MC]/RB)
+(705722)","09/2019
+(09/2019)","06/2024
+(12/2027)","210
+(210)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,62,61,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=62,table_index=logical8,row_index=5",SEEDED_FILL,,,,,,
+OBS-202509-00565,2025-09,565,New Railway Line between Ginigera and Raichur [165.57 km],South Western Railway [SWR] - II,705434,-,-,Karnataka,03/2008,05/2009,03/2019,03/2027,2565,3034.98,2096.35,66,"New Railway Line between Ginigera and Raichur [165.57 km]
+(South Western Railway [SWR] - II)
+(705434)","03/2008
+(05/2009)","03/2019
+(03/2027)","2565
+(3034.98)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,63,62,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=63,table_index=logical8,row_index=3",SEEDED_FILL,,,,,,
+OBS-202509-00601,2025-09,601,Mumbai Urban Transport Project [MUTP] - PHASE II,Mumbai Rail Vikas Corporation Ltd.[MRVC],706779,-,-,Maharashtra,05/2008,04/2008,03/2014,12/2027,8087,8087,7364,87,"Mumbai Urban Transport Project [MUTP] - PHASE II
+(Mumbai Rail Vikas Corporation Ltd.[MRVC])
+(706779)","05/2008
+(04/2008)","03/2014
+(12/2027)","8087
+(8087)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,64,63,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=64,table_index=logical8,row_index=9",SEEDED_FILL,,,,,,
+OBS-202509-00692,2025-09,692,Dholpur - Sirmuttra Gauge Conversion,North Central Railway,705482,-,-,Rajasthan,03/2022,04/2020,02/2019,02/2027,747,747,355.13,43,"Dholpur - Sirmuttra Gauge Conversion
+(North Central Railway)
+(705482)","03/2022
+(04/2020)","02/2019
+(02/2027)","747
+(747)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,67,66,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=67,table_index=logical8,row_index=12",SEEDED_FILL,,,,,,
+OBS-202509-00697,2025-09,697,Ph II extension of MRTS from Velachery to St Thomas Mount,Southern Railways [SR] - construction,400280,-,-,Tamil Nadu,11/2007,11/2008,07/2024,08/2025,734,982,475.73,99,"Ph II extension of MRTS from Velachery to St Thomas Mount
+(Southern Railways [SR] - construction)
+(400280)","11/2007
+(11/2008)","07/2024
+(08/2025)","734
+(982)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,67,66,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=67,table_index=logical8,row_index=17",SEEDED_FILL,,,,,,
+OBS-202509-00702,2025-09,702,Manoharabad-Kothapalli New Rail Line [151 km],South Central Railway [SCR] - II,705437,-,-,Telangana,07/2016,01/2017,03/2027,12/2027,1160,2781,1902.91,71,"Manoharabad-Kothapalli New Rail Line [151 km]
+(South Central Railway [SCR] - II)
+(705437)","07/2016
+(01/2017)","03/2027
+(12/2027)","1160
+(2781)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,67,66,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=67,table_index=logical8,row_index=22",LATE_PAGE,,,,,,
+OBS-202509-00753,2025-09,753,"Interception & Diversion with Rehabilitation of sewerage scheme at Agra under Hybrid
+annuity based PPP model-Namami Gange Programme",National Mission for Clean Ganga,616594,-,-,Uttar Pradesh,05/2020,04/2023,04/2025,12/2025,842.25,842.25,208.64,73,"Interception & Diversion with Rehabilitation of sewerage scheme at Agra under Hybrid
+annuity based PPP model-Namami Gange Programme
+(National Mission for Clean Ganga)
+(616594)","05/2020
+(04/2023)","04/2025
+(12/2025)","842.25
+(842.25)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,69,68,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=69,table_index=logical8,row_index=22",SEEDED_FILL,,,,,,
+OBS-202509-00794,2025-09,794,Jamrani Dam Multipurpose Project,Irrigation-UK,613787,-,-,Uttarakhand,10/2023,11/2023,06/2029,-,2584.1,2584.1,968.52,16,"Jamrani Dam Multipurpose Project
+(Irrigation-UK)
+(613787)","10/2023
+(11/2023)","06/2029
+(-)","2584.1
+(2584.1)",SRC-2025-09,520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318,71,70,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=71,table_index=logical8,row_index=12",LAST,,,,,,

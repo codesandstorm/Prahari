@@ -1,0 +1,179 @@
+observation_id,reporting_month,serial_number_raw,project_name_raw,agency_raw,project_code_raw,legacy_ocms_code_raw,pmgid_raw,state_raw,approval_date_raw,start_date_raw,original_target_doc_raw,revised_doc_raw,original_cost_raw,revised_cost_raw,cumulative_expenditure_raw,physical_progress_raw,project_identity_cell_raw,approval_start_cell_raw,doc_cell_raw,cost_cell_raw,source_id,source_sha256,pdf_page_index,printed_page_number,source_table,source_table_number,extraction_method,extractor_version,raw_row_locator,sample_category,manual_row_confirmed,manual_identity_confirmed,manual_fields_confirmed,manual_provenance_confirmed,reviewer,review_notes
+OBS-202603-00001,2026-03,1,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport",Airport Authority of India [AAI],612786,N04000106,-,Andhra Pradesh,03/2023,01/2024,01/2026,05/2026,265.91,265.91,120.19,60,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport
+(Airport Authority of India [AAI])
+(612786)
+(N04000106)","03/2023
+(01/2024)","01/2026
+(05/2026)","265.91
+(265.91)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,55,54,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=55,table_index=logical8,row_index=3",FIRST,,,,,,
+OBS-202603-00091,2026-03,91,SINGHORI DEEP OC MIN 2.0 MTY,Western Coalfields Limited [WCL],615190,N06000252,-,Maharashtra,05/2022,05/2022,03/2029,-,335.75,335.75,45.04,9.56,"SINGHORI DEEP OC MIN 2.0 MTY
+(Western Coalfields Limited [WCL])
+(615190)
+(N06000252)","05/2022
+(05/2022)","03/2029
+(-)","335.75
+(335.75)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,59,58,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=59,table_index=logical8,row_index=3",SEEDED_FILL,,,,,,
+OBS-202603-00121,2026-03,121,BHUBANESWARI EXPN OCP 50 MTY,MCL - CIL,616231,N06000286,-,Odisha,03/2024,03/2024,03/2033,-,5366.27,5366.27,473.42,31.61,"BHUBANESWARI EXPN OCP 50 MTY
+(MCL - CIL)
+(616231)
+(N06000286)","03/2024
+(03/2024)","03/2033
+(-)","5366.27
+(5366.27)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,60,59,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=60,table_index=logical8,row_index=9",EARLY_PAGE,,,,,,
+OBS-202603-00211,2026-03,211,"Transmission System for Evacuation of Power from Rajasthan REZ Ph-IV [Part-2 5.5
+GW] [Jaisalmer/Barmer Complex] Part C [SPV Name POWERGRID Mandsaur
+Transmission Limited]",Power Grid Corporation of India Limited [POWERGRID],615346,N18000392,-,Madhya Pradesh,08/2024,08/2024,08/2026,02/2027,2708,2708,1462.32,55,"Transmission System for Evacuation of Power from Rajasthan REZ Ph-IV [Part-2 5.5
+GW] [Jaisalmer/Barmer Complex] Part C [SPV Name POWERGRID Mandsaur
+Transmission Limited]
+(Power Grid Corporation of India Limited [POWERGRID])
+(615346)
+(N18000392)","08/2024
+(08/2024)","08/2026
+(02/2027)","2708
+(2708)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,64,63,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=64,table_index=logical8,row_index=12",SEEDED_FILL,,,,,,
+OBS-202603-00316,2026-03,316,"Phase 1B - Construction of Academic Block, Hostel, Residential Tower, Directors
+Residence and External Development works at National Institute of Technology, Delhi
+Campus on Engineering, Procurement and Construction basis",National Institute of Technology Delhi,612851,-,-,Delhi,09/2009,11/2022,09/2025,01/2026,333.49,336.42,321.76,99.5,"Phase 1B - Construction of Academic Block, Hostel, Residential Tower, Directors
+Residence and External Development works at National Institute of Technology, Delhi
+Campus on Engineering, Procurement and Construction basis
+(National Institute of Technology Delhi)
+(612851)
+(-)","09/2009
+(11/2022)","09/2025
+(01/2026)","333.49
+(336.42)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,70,69,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=70,table_index=logical8,row_index=3",SEEDED_FILL,,,,,,
+OBS-202603-00413,2026-03,413,"Pipeline Rehabilitation Project, Phase-II",Ministry of Petroleum & Natural Gas,617827,-,-,"Multi-States
+(Assam, Bihar,
+West Bengal)",12/2024,12/2024,12/2029,12/2029,680,680,7.64,23,"Pipeline Rehabilitation Project, Phase-II
+(Ministry of Petroleum & Natural Gas)
+(617827)
+(-)","12/2024
+(12/2024)","12/2029
+(12/2029)","680
+(680)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,74,73,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=74,table_index=logical8,row_index=14",MISSING_VALUE,,,,,,
+OBS-202603-00514,2026-03,514,Third Ladle Furnace in Secondary Refinery Unit at IISCO Steel Plant,Steel Authority of India Limited [SAIL],617248,N12000141,-,West Bengal,11/2024,12/2024,07/2026,-,227.96,227.96,64.62,62.39,"Third Ladle Furnace in Secondary Refinery Unit at IISCO Steel Plant
+(Steel Authority of India Limited [SAIL])
+(617248)
+(N12000141)","11/2024
+(12/2024)","07/2026
+(-)","227.96
+(227.96)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,79,78,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=79,table_index=logical8,row_index=12",SEEDED_FILL,,,,,,
+OBS-202603-00620,2026-03,620,Pune - Miraj-Londa [467 Kilometres],Central Railway,705503,N22000359,-,Maharashtra,06/2016,06/2016,02/2025,08/2025,4027.53,4872.52,5248.72,100,"Pune - Miraj-Londa [467 Kilometres]
+(Central Railway)
+(705503)
+(N22000359)","06/2016
+(06/2016)","02/2025
+(08/2025)","4027.53
+(4872.52)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,84,83,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=84,table_index=logical8,row_index=4",HIGH_PROGRESS,,,,,,
+OBS-202603-00681,2026-03,681,Ramganjmandi-Bhopal New Line Project [276.50 km],West Central Railway [WCR] - II,705481,220100314,-,"Multi-States
+(Madhya Pradesh,
+Rajasthan)",03/2001,10/2004,12/2025,12/2027,3032,5073,4039.87,81,"Ramganjmandi-Bhopal New Line Project [276.50 km]
+(West Central Railway [WCR] - II)
+(705481)
+(220100314)","03/2001
+(10/2004)","12/2025
+(12/2027)","3032
+(5073)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,86,85,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=86,table_index=logical8,row_index=19",SEEDED_FILL,,,,,,
+OBS-202603-00729,2026-03,729,Redevelopment of Chennai Egmore Station,Ministry of Railways,613002,-,-,Tamil Nadu,05/2022,10/2022,03/2026,-,842,842,340,0,"Redevelopment of Chennai Egmore Station
+(Ministry of Railways)
+(613002)
+(-)","05/2022
+(10/2022)","03/2026
+(-)","842
+(842)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,88,87,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=88,table_index=logical8,row_index=21",ZERO_PROGRESS,,,,,,
+OBS-202603-00819,2026-03,819,"Khammam-Devarapalle Pkg V [4L Access Controlled Greenfield from Gurvaygudem
+village to Devarapalle village Design Chainage 132664 to 162126",National Highways Authority of India [NHAI],618749,N24001477,-,Andhra Pradesh,12/2020,09/2022,09/2024,04/2026,711.94,926.48,407.99,97.96,"Khammam-Devarapalle Pkg V [4L Access Controlled Greenfield from Gurvaygudem
+village to Devarapalle village Design Chainage 132664 to 162126
+(National Highways Authority of India [NHAI])
+(618749)
+(N24001477)","12/2020
+(09/2022)","09/2024
+(04/2026)","711.94
+(926.48)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,93,92,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=93,table_index=logical8,row_index=12",MIDDLE_PAGE,,,,,,
+OBS-202603-00854,2026-03,854,"Construction of 4 lane Gauripur Bypass Starting bfrom Km 852.56 of NH-
+31Dumardoha Pt-II and Terminating at Km 862.17 Baladmara via. Khudimari Pt.- II,
+Fulkumari, Charaldanga, Sajuakuti,Geramari Pt.-III and finally meeting at km 862.17 of
+NH-17New/ NH-31Old in the State of Assam under EPC Mode Job no. 31/AS/ 2023-
+24/265",MoRTH,617896,N24002237,-,Assam,03/2024,04/2025,10/2026,10/2026,421.15,421.15,0,17.1,"Construction of 4 lane Gauripur Bypass Starting bfrom Km 852.56 of NH-
+31Dumardoha Pt-II and Terminating at Km 862.17 Baladmara via. Khudimari Pt.- II,
+Fulkumari, Charaldanga, Sajuakuti,Geramari Pt.-III and finally meeting at km 862.17 of
+NH-17New/ NH-31Old in the State of Assam under EPC Mode Job no. 31/AS/ 2023-
+24/265
+(MoRTH)
+(617896)
+(N24002237)","03/2024
+(04/2025)","10/2026
+(10/2026)","421.15
+(421.15)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,95,94,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=95,table_index=logical8,row_index=9",SEEDED_FILL,,,,,,
+OBS-202603-01068,2026-03,1068,"Rehabilitation and Upgradation to 4L configuration & Strengthening of Sihuni to Rajol
+from Km 51.000 to Km 72.000 of NH-154 Package-IIA",National Highways Authority of India [NHAI],618878,N24002050,-,Himachal Pradesh,03/2022,09/2023,09/2025,06/2026,696.65,776.59,312.68,95,"Rehabilitation and Upgradation to 4L configuration & Strengthening of Sihuni to Rajol
+from Km 51.000 to Km 72.000 of NH-154 Package-IIA
+(National Highways Authority of India [NHAI])
+(618878)
+(N24002050)","03/2022
+(09/2023)","09/2025
+(06/2026)","696.65
+(776.59)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,107,106,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=107,table_index=logical8,row_index=9",SEEDED_FILL,,,,,,
+OBS-202603-01124,2026-03,1124,4L of Palma to Gumla from km. 26.00 to km. 89.170 of NH-23,National Highways Authority of India [NHAI],618642,N24001595,-,Jharkhand,03/2020,04/2022,03/2024,04/2026,1882.93,1895.75,836.02,98.96,"4L of Palma to Gumla from km. 26.00 to km. 89.170 of NH-23
+(National Highways Authority of India [NHAI])
+(618642)
+(N24001595)","03/2020
+(04/2022)","03/2024
+(04/2026)","1882.93
+(1895.75)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,110,109,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=110,table_index=logical8,row_index=18",SEEDED_FILL,,,,,,
+OBS-202603-01196,2026-03,1196,Belgaum-Khanapur Pkg I Km 0.000-Km 30.800 of NH-4A,National Highways Authority of India [NHAI],619164,-,-,Karnataka,03/2018,03/2019,09/2021,03/2027,1214.3,1195.74,479.2,71.41,"Belgaum-Khanapur Pkg I Km 0.000-Km 30.800 of NH-4A
+(National Highways Authority of India [NHAI])
+(619164)
+(-)","03/2018
+(03/2019)","09/2021
+(03/2027)","1214.3
+(1195.74)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,114,113,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=114,table_index=logical8,row_index=20",SEEDED_FILL,,,,,,
+OBS-202603-01378,2026-03,1378,"Widening/Improvement to 2 Lane with earthen shoulder of Jessami to Laynen bridge
+Nagaland border section of NH-29 of Imphal -Ukhrul - Jessami Economic Corridor
+from km 0.000 to km 11.009 in the State of Manipur on EPC mode under Bharatmala
+Pariyojana, under NHO-NE Package-7",NHIDCL,618304,N24002227,-,Manipur,03/2023,12/2024,06/2026,10/2026,164.89,164.89,125.76,23.56,"Widening/Improvement to 2 Lane with earthen shoulder of Jessami to Laynen bridge
+Nagaland border section of NH-29 of Imphal -Ukhrul - Jessami Economic Corridor
+from km 0.000 to km 11.009 in the State of Manipur on EPC mode under Bharatmala
+Pariyojana, under NHO-NE Package-7
+(NHIDCL)
+(618304)
+(N24002227)","03/2023
+(12/2024)","06/2026
+(10/2026)","164.89
+(164.89)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,125,124,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=125,table_index=logical8,row_index=2",SEEDED_FILL,,,,,,
+OBS-202603-01734,2026-03,1734,"Construction of Balrampur bypass with 2L flexible pavement configuration from
+km.223.000 of NH-330 to km.328.300 of NH-730 under EPC mode",MoRTH,618054,N24002150,-,Uttar Pradesh,12/2022,08/2024,02/2026,08/2026,515.69,515.69,104.56,44,"Construction of Balrampur bypass with 2L flexible pavement configuration from
+km.223.000 of NH-330 to km.328.300 of NH-730 under EPC mode
+(MoRTH)
+(618054)
+(N24002150)","12/2022
+(08/2024)","02/2026
+(08/2026)","515.69
+(515.69)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,145,144,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=145,table_index=logical8,row_index=6",SEEDED_FILL,,,,,,
+OBS-202603-01809,2026-03,1809,"4L from Devinagar Bypass End Existing Km. 208.000 of NH 530B/Design Km. 66.000
+to Kasganj Bypass End Existing Km.150.100 of NH 530B/ Design Km. 123.100 of NH
+530B",National Highways Authority of India [NHAI],618868,-,-,Uttar Pradesh,03/2023,06/2024,06/2026,06/2026,2289.52,2223.71,405.32,59.63,"4L from Devinagar Bypass End Existing Km. 208.000 of NH 530B/Design Km. 66.000
+to Kasganj Bypass End Existing Km.150.100 of NH 530B/ Design Km. 123.100 of NH
+530B
+(National Highways Authority of India [NHAI])
+(618868)
+(-)","03/2023
+(06/2024)","06/2026
+(06/2026)","2289.52
+(2223.71)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,149,148,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=149,table_index=logical8,row_index=10",SEEDED_FILL,,,,,,
+OBS-202603-01915,2026-03,1915,Gosikhurd CADWM Project,Department of water resources-MH - II,400095,-,-,Maharashtra,04/2017,04/2017,12/2019,06/2026,743.73,743.73,458.42,53.93,"Gosikhurd CADWM Project
+(Department of water resources-MH - II)
+(400095)
+(-)","04/2017
+(04/2017)","12/2019
+(06/2026)","743.73
+(743.73)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,155,154,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=155,table_index=logical8,row_index=18",LATE_PAGE,,,,,,
+OBS-202603-01941,2026-03,1941,Jamrani Dam Multipurpose Project,Irrigation-UK,613787,-,-,Uttarakhand,10/2023,11/2023,06/2029,-,2584.1,2584.1,1267.4,24.77,"Jamrani Dam Multipurpose Project
+(Irrigation-UK)
+(613787)
+(-)","10/2023
+(11/2023)","06/2029
+(-)","2584.1
+(2584.1)",SRC-2026-03,e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253,156,155,All Ongoing Projects,6,pdfplumber_table,twelve_month_gate2:0.1.0,"pdf_page_index=156,table_index=logical8,row_index=20",LAST,,,,,,

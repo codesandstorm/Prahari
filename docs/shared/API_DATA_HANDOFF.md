@@ -4,7 +4,7 @@
 **Area:** Shared / Integration
 **Document Type:** PROPOSAL
 **Status:** PROVISIONAL — Gate 2 not complete; schemas not final
-**Last Updated:** 2026-09-01
+**Last Updated:** 2026-09-02
 **Depends On:** DATA_CONTRACT.md, TEAM_DEPENDENCIES.md
 **Used By:** Backend, Frontend, ML
 **Canonical:** YES
@@ -13,6 +13,24 @@
 > This document describes INTENDED handoffs, not completed ones.
 > All schemas are provisional. No implementation should begin until Gate 2 datasets
 > are validated and DATA_CONTRACT.md is finalized.
+
+## Provisional Twelve-Month Engineering Handoff
+
+The controlled July 2025–June 2026 build is available at
+`data/processed/pilot_2025_07_2026_06/` with dataset version
+`gate2-12m-2025-07-2026-06-provisional-v0.1`.
+
+Automated source, extraction, identity, provenance, longitudinal, and uniqueness
+checks pass. Human PDF review remains pending for the nine newly extracted months,
+so the dataset status is **PROVISIONAL — ENGINEERING USE ONLY**.
+
+Pavitra may use this version for target-generation engineering, leakage research,
+feature-pipeline development, statistical/tree-model implementation, calibration
+and evaluation code, and SHAP integration testing. This permission does not make
+the data final. Until the human review and final Gate 2 freeze, it must not support
+final SIH accuracy claims, final model selection, final feature freeze, final
+decision thresholds, or final held-out metrics. No labels, features, targets,
+predictions, SHAP values, or risk scores are supplied by this Gate 2 build.
 
 ---
 
