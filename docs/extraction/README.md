@@ -1,7 +1,7 @@
 ﻿# Extraction Specifications
 
 **Area:** Extraction
-**Last Updated:** 2026-09-01
+**Last Updated:** 2026-09-02
 
 This directory contains frozen extraction specifications for each source report.
 
@@ -17,6 +17,8 @@ They are NOT modified when new extractions are done — a new spec is created in
 
 | Document | Source | Status |
 |---|---|---|
+| [APRIL_2026_EXTRACTION_SPEC.md](APRIL_2026_EXTRACTION_SPEC.md) | April 2026 (SRC-2026-04) | AUTOMATED VALIDATION COMPLETE — HUMAN PENDING |
+| [APRIL_2026_SCHEMA_COMPARISON.md](APRIL_2026_SCHEMA_COMPARISON.md) | April vs May/June | REVIEWED |
 | [PAIMANA_V2_EXTRACTION_SPEC.md](PAIMANA_V2_EXTRACTION_SPEC.md) | June 2026 (SRC-2026-06) | APPROVED |
 | [PAIMANA_V2_MAY_2026_EXTRACTION_SPEC.md](PAIMANA_V2_MAY_2026_EXTRACTION_SPEC.md) | May 2026 (SRC-2026-05) | APPROVED |
 | [MAY_2026_SCHEMA_COMPARISON.md](MAY_2026_SCHEMA_COMPARISON.md) | May vs June comparison | APPROVED |

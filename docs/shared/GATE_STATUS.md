@@ -4,7 +4,7 @@
 **Area:** Shared / Project Gates
 **Document Type:** REFERENCE
 **Status:** ACTIVE — updated as gates progress
-**Last Updated:** 2026-09-01
+**Last Updated:** 2026-09-02
 **Depends On:** DECISION_LOG.md
 **Used By:** Entire team
 **Canonical:** YES
@@ -62,6 +62,7 @@
 
 | Source ID | File | Year/Month | Schema | Status |
 |---|---|---|---|---|
+| SRC-2026-04 | FlashReport_2026_04.pdf | 2026-04 | PAIMANA_V2 HIGH | AUTOMATED VALIDATION COMPLETE — HUMAN PENDING |
 | SRC-2026-05 | FlashReport_2026_05.pdf | 2026-05 | PAIMANA_V2 HIGH | EXTRACTED |
 | SRC-2026-06 | FlashReport_2026_06.pdf | 2026-06 | PAIMANA_V2 HIGH | EXTRACTED + VALIDATED |
 | SRC-2026-06-DUP | FlashReport_2026_07.pdf | 2026-06 (DUPLICATE) | — | REJECTED_DUPLICATE |

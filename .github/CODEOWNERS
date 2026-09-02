@@ -1,0 +1,61 @@
+﻿# =============================================================================
+# PRAHARI CODEOWNERS
+# =============================================================================
+# This file defines code ownership for GitHub review requirements.
+#
+# IMPORTANT: All ownership lines are commented out below because GitHub
+# usernames have not yet been confirmed. Uncomment and fill in real
+# GitHub usernames (@username) before enabling this file.
+#
+# Format:
+#   <file_pattern>   @github-username-1   @github-username-2
+#
+# Documentation:
+#   https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# =============================================================================
+
+# --- Entire repository fallback (team lead) ---
+# *   @<sandarbh-github-username>
+
+# --- Data engineering and extraction ---
+# data/     @<sandarbh-github-username>
+# src/      @<sandarbh-github-username>
+# scripts/  @<sandarbh-github-username>
+
+# --- Data engineering docs ---
+# docs/team/sandarbh/       @<sandarbh-github-username>
+# docs/extraction/          @<sandarbh-github-username>
+# docs/reference/DATA_SOURCE_REGISTER.md  @<sandarbh-github-username>
+
+# --- Prediction research ---
+# docs/team/pavitra/   @<pavitra-github-username>  @<sandarbh-github-username>
+
+# --- Domain and product research ---
+# docs/team/akshita/   @<akshita-github-username>
+# docs/reference/CUF_RESEARCH_STATUS.md  @<akshita-github-username>
+
+# --- Backend ---
+# docs/team/jashan/   @<jashan-github-username>
+
+# --- Frontend / UX ---
+# docs/team/sanskaar/   @<sanskaar-github-username>
+
+# --- Shared canonical documents (require multiple reviewers) ---
+# docs/shared/DATA_CONTRACT.md          @<sandarbh-github-username>  @<jashan-github-username>
+# docs/shared/DECISION_LOG.md           @<sandarbh-github-username>
+# docs/shared/CURRENT_TECHNICAL_HYPOTHESIS.md  @<sandarbh-github-username>  @<pavitra-github-username>
+# docs/shared/API_DATA_HANDOFF.md       @<sandarbh-github-username>  @<jashan-github-username>
+# docs/shared/GATE_STATUS.md            @<sandarbh-github-username>
+
+# --- GitHub config itself ---
+# .github/   @<sandarbh-github-username>
+
+# =============================================================================
+# INSTRUCTIONS FOR THE TEAM
+# =============================================================================
+# 1. Each team member: go to https://github.com/<your-username> to confirm
+#    your exact GitHub username.
+# 2. Sandarbh: fill in the commented lines above with real usernames.
+# 3. Remove the leading # from the lines you want to activate.
+# 4. Push to main. GitHub will enforce review requirements on future PRs.
+# =============================================================================

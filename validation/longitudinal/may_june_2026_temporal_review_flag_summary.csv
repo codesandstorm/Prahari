@@ -1,0 +1,7 @@
+flag_reason,count,percentage_of_matched_projects,minimum_change,maximum_change,median_change,also_carries_another_primary_flag
+PROJECT_NAME_CHANGED,6,0.3288,,,,1
+APPROVAL_DATE_CHANGED,3,0.1644,,,,1
+START_DATE_CHANGED,21,1.1507,,,,0
+ORIGINAL_COST_CHANGED,6,0.3288,-290.04,-24.85,-127.10,2
+PHYSICAL_PROGRESS_DECREASED,19,1.0411,-13.1,-0.06,-1.5,2
+CUMULATIVE_EXPENDITURE_DECREASED,38,2.0822,-1238.7,-0.01,-5.655,4

@@ -4,7 +4,7 @@
 **Area:** Reference / Data Sources
 **Document Type:** REFERENCE
 **Status:** ACTIVE
-**Last Updated:** 2026-09-01
+**Last Updated:** 2026-09-02
 **Depends On:** NONE
 **Used By:** Data Engineering, Backend, ML
 **Canonical:** YES
@@ -31,6 +31,7 @@ The machine-readable source manifest is: `data/metadata/source_manifest.csv`.
 See `data/metadata/source_manifest.csv` for complete manifest with SHA-256 hashes.
 
 Key reports for Gate 2:
+- `FlashReport_2026_04.pdf` — April 2026 — AUTOMATED VALIDATION COMPLETE; HUMAN VALIDATION PENDING
 - `FlashReport_2026_06.pdf` — June 2026 — EXTRACTED AND VALIDATED
 - `FlashReport_2026_05.pdf` — May 2026 — EXTRACTED
 - `FlashReport_2026_07.pdf` — **REJECTED_DUPLICATE** (contains June 2026 data)

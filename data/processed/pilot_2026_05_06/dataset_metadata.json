@@ -1,0 +1,27 @@
+{
+  "dataset_version": "gate2-pilot-2026-05-06-v1",
+  "created_at": "2026-09-01T15:54:09.131733+00:00",
+  "months_included": [
+    "2026-05",
+    "2026-06"
+  ],
+  "input_file_hashes": {
+    "C:/Users/ASUS/Documents/Projects/PRAHARI/data/extracted/ongoing/ongoing_2026_05.csv": "f0bd72a4534c2403bedb9890e25dd3522c4b8280362834de7d84d8f57738c04e",
+    "C:/Users/ASUS/Documents/Projects/PRAHARI/data/extracted/ongoing/ongoing_2026_06.csv": "bf2b7d37c11096ddca9d365878b48725c8f81e7c39b9863979029ee2f78832d9"
+  },
+  "source_pdf_hashes": {
+    "SRC-2026-05": "480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005",
+    "SRC-2026-06": "d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15"
+  },
+  "row_counts": {
+    "project_master": 2009,
+    "project_month": 3834
+  },
+  "identity_method": "EXACT_PROJECT_CODE",
+  "known_limitations": [
+    "Identity rule validated only for May-June 2026.",
+    "Presence does not establish completion, removal, or addition.",
+    "Temporal movements are diagnostics, not corrected facts or ML features.",
+    "Human longitudinal sample review is pending."
+  ]
+}
