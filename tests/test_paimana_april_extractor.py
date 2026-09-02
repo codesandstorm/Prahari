@@ -34,6 +34,7 @@ def parse(row=None):
     return parse_april_project_row(row or fixture_row(), source_sha256=APRIL_SHA, pdf_page_index=55, printed_page_number=54, table_index=0, row_index=3)
 
 
+@pytest.mark.integration
 def test_april_source_recognition():
     source = resolve_source(SOURCE_ID, MANIFEST, ROOT)
     assert (source.report_year, source.report_month) == (2026, 4)

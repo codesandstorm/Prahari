@@ -32,6 +32,7 @@ def config():
     return yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
 
 
+@pytest.mark.integration
 def test_primary_target_resolves_canonical_june(config):
     source = resolve_primary_target(config, ROOT)
     assert source.source_id == "SRC-2026-06"
@@ -46,6 +47,7 @@ def test_ineligible_source_resolution_fails(source_id):
         resolve_source(source_id, MANIFEST, ROOT)
 
 
+@pytest.mark.integration
 def test_report_content_config_period_mismatch_rejected(config):
     broken = deepcopy(config)
     broken["extraction"]["primary_target"]["report_month"] = "2026-07"
@@ -146,10 +148,10 @@ def test_provenance_registry_matches_pipeline_lifecycle():
 
 
 def _valid_provenance():
-    source = resolve_source("SRC-2026-06", MANIFEST, ROOT)
+    source = next(row for row in load_manifest(MANIFEST) if row["source_id"] == "SRC-2026-06")
     return {
-        "source_id": source.source_id,
-        "source_sha256": source.sha256,
+        "source_id": source["source_id"],
+        "source_sha256": source["sha256"],
         "pdf_page_index": 59,
         "source_table": "Table 6: All Ongoing Projects",
         "extraction_method": "pdfplumber_table",
