@@ -1,0 +1,249 @@
+observation_id,reporting_month,serial_number_raw,project_name_raw,agency_raw,project_code_raw,legacy_ocms_code_raw,pmgid_raw,state_raw,approval_date_raw,start_date_raw,original_target_doc_raw,revised_doc_raw,original_cost_raw,revised_cost_raw,cumulative_expenditure_raw,physical_progress_raw,project_identity_cell_raw,approval_start_cell_raw,doc_cell_raw,cost_cell_raw,source_id,source_sha256,pdf_page_index,printed_page_number,source_table,source_table_number,extraction_method,extractor_version,raw_row_locator,sample_categories,manual_row_confirmed,manual_project_identity_confirmed,manual_fields_confirmed,manual_provenance_confirmed,reviewer,review_notes
+OBS-202604-00001,2026-04,1,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport",Airport Authority of India [AAI],612786,N04000106,-,Andhra Pradesh,03/2023,01/2024,01/2026,07/2026,265.91,265.91,129.07,65,"Construction of New Domestic Terminal Building Building and miscellaneous works
+including maintenance, operations and AICMC at Kadapa Airport
+(Airport Authority of India [AAI])
+(612786)
+(N04000106) (-)","03/2023
+(01/2024)","01/2026
+(07/2026)","265.91
+(265.91)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,55,54,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=55,table_index=0,row_index=3",first_row,,,,,,
+OBS-202604-00034,2026-04,34,AMGAON OC RCE [1.0 MTY],South Eastern Coalfields Limited [SECL],613799,N06000135,-,Chhattisgarh,07/2015,07/2015,03/2026,-,316.11,316.11,191.5,78.86,"AMGAON OC RCE [1.0 MTY]
+(South Eastern Coalfields Limited [SECL])
+(613799)
+(N06000135) (-)","07/2015
+(07/2015)","03/2026
+(-)","316.11
+(316.11)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,56,55,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=56,table_index=0,row_index=17",early_pages,,,,,,
+OBS-202604-00061,2026-04,61,AMALAGAMATED NTST KUJAMA OCP 8.5MTY,Bharat Coking Coal Limited (BCCL),611864,N06000273,5366,Jharkhand,01/2023,01/2023,03/2030,-,4011.85,4011.85,414.93,29.7,"AMALAGAMATED NTST KUJAMA OCP 8.5MTY
+(Bharat Coking Coal Limited (BCCL))
+(611864)
+(N06000273) (5366)","01/2023
+(01/2023)","03/2030
+(-)","4011.85
+(4011.85)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,57,56,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=57,table_index=0,row_index=20",early_pages,,,,,,
+OBS-202604-00068,2026-04,68,BLOCK E OCP,Ministry of Coal,616253,N06000287,7368,Jharkhand,03/2024,03/2024,03/2029,-,5850.83,5850.83,20.32,4.17,"BLOCK E OCP
+(Ministry of Coal)
+(616253)
+(N06000287) (7368)","03/2024
+(03/2024)","03/2029
+(-)","5850.83
+(5850.83)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,58,57,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=58,table_index=0,row_index=4",legacy_and_pmgid_present,,,,,,
+OBS-202604-00104,2026-04,104,AMALGAMATED INDER-KAMPTEE DEEP,Western Coalfields Limited [WCL],616050,N06000226,-,Maharashtra,09/2018,09/2018,03/2024,03/2026,235.9,235.9,127.42,98.97,"AMALGAMATED INDER-KAMPTEE DEEP
+(Western Coalfields Limited [WCL])
+(616050)
+(N06000226) (-)","09/2018
+(09/2018)","03/2024
+(03/2026)","235.9
+(235.9)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,59,58,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=59,table_index=0,row_index=18",early_pages,,,,,,
+OBS-202604-00280,2026-04,280,New Suburba Station Development Project,ministry of housing and urban affairs,701745,-,-,Maharashtra,04/2018,03/2019,07/2022,-,262.76,262.76,17.62,6,"New Suburba Station Development Project
+(ministry of housing and urban affairs)
+(701745)
+(-) (-)","04/2018
+(03/2019)","07/2022
+(-)","262.76
+(262.76)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,68,67,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=68,table_index=0,row_index=15",early_pages,,,,,,
+OBS-202604-00316,2026-04,316,Tezpur University Projects,Tezpur University,606112,-,-,Assam,05/2019,06/2021,11/2023,12/2025,153.71,153.71,137.84,97.7,"Tezpur University Projects
+(Tezpur University)
+(606112)
+(-) (-)","05/2019
+(06/2021)","11/2023
+(12/2025)","153.71
+(153.71)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,70,69,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=70,table_index=0,row_index=16",high_progress,,,,,,
+OBS-202604-00343,2026-04,343,"HEFA projects on development of student hostels, playgrounds, departmental
+buildings, class room complex and other campus facilities in IIT Kharagpur","Indian Institute of Technology, Kharagpur",609019,N28000146,4351,West Bengal,06/2018,04/2019,03/2023,03/2026,500,442,415.35,96,"HEFA projects on development of student hostels, playgrounds, departmental
+buildings, class room complex and other campus facilities in IIT Kharagpur
+(Indian Institute of Technology, Kharagpur)
+(609019)
+(N28000146) (4351)","06/2018
+(04/2019)","03/2023
+(03/2026)","500
+(442)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,71,70,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=71,table_index=0,row_index=18",high_progress,,,,,,
+OBS-202604-00419,2026-04,419,"Pipeline Rehabilitation Project, Phase-II",Ministry of Petroleum & Natural Gas,617827,-,10800,"Multi-States
+(Assam, Bihar,
+West Bengal)",12/2024,12/2024,12/2029,12/2029,680,680,8.19,24,"Pipeline Rehabilitation Project, Phase-II
+(Ministry of Petroleum & Natural Gas)
+(617827)
+(-) (10800)","12/2024
+(12/2024)","12/2029
+(12/2029)","680
+(680)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,75,74,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=75,table_index=0,row_index=13",legacy_or_pmgid_missing,,,,,,
+OBS-202604-00543,2026-04,543,Construction of Bulb line at Nabinagar Ankorah of East Central Railway,East Central Railway [ECR] - I,617231,-,9908,Bihar,06/2024,06/2024,06/2028,-,611.74,611.74,0,0,"Construction of Bulb line at Nabinagar Ankorah of East Central Railway
+(East Central Railway [ECR] - I)
+(617231)
+(-) (9908)","06/2024
+(06/2024)","06/2028
+(-)","611.74
+(611.74)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,81,80,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=81,table_index=0,row_index=16",zero_progress,,,,,,
+OBS-202604-00573,2026-04,573,Chandargaon - Cansaulium Rail Flyover Project [16 Km],South Western Railway [SWR] - II,706865,-,6111,Goa,NA,04/2026,03/2031,-,1892,1892,0,0,"Chandargaon - Cansaulium Rail Flyover Project [16 Km]
+(South Western Railway [SWR] - II)
+(706865)
+(-) (6111)","NA
+(04/2026)","03/2031
+(-)","1892
+(1892)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,83,82,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=83,table_index=0,row_index=2",missing_revised_doc,,,,,,
+OBS-202604-00755,2026-04,755,Doubling between Bhadrachalam Road and Dornakal,South Central Railway [SCR] - II,616856,-,7098,Telangana,08/2023,04/2025,04/2029,-,770.12,770.12,87.93,0.05,"Doubling between Bhadrachalam Road and Dornakal
+(South Central Railway [SCR] - II)
+(616856)
+(-) (7098)","08/2023
+(04/2025)","04/2029
+(-)","770.12
+(770.12)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,91,90,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=91,table_index=0,row_index=8",missing_revised_doc,,,,,,
+OBS-202604-00921,2026-04,921,"Construction of Balance Work of 4-Laning of the Section from Jhanji to Demow of NH-
+37 Old from Km 490.800 to Km 501.800 11.000 Km, under SARDP- NE under EPC
+Mode in the state of Assam Pkg-I Road Works",NHIDCL,618441,N24000320,-,Assam,01/2016,10/2024,09/2025,-,467.79,476.5,72.13,0,"Construction of Balance Work of 4-Laning of the Section from Jhanji to Demow of NH-
+37 Old from Km 490.800 to Km 501.800 11.000 Km, under SARDP- NE under EPC
+Mode in the state of Assam Pkg-I Road Works
+(NHIDCL)
+(618441)
+(N24000320) (-)","01/2016
+(10/2024)","09/2025
+(-)","467.79
+(476.5)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,101,100,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=101,table_index=0,row_index=1",missing_revised_doc,,,,,,
+OBS-202604-00928,2026-04,928,Guwahati Ring Road in the State of Assam,National Highways Authority of India [NHAI],618934,-,-,Assam,08/2024,01/2026,01/2030,01/2030,5729.47,5729.47,3.15,0,"Guwahati Ring Road in the State of Assam
+(National Highways Authority of India [NHAI])
+(618934)
+(-) (-)","08/2024
+(01/2026)","01/2030
+(01/2030)","5729.47
+(5729.47)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,101,100,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=101,table_index=0,row_index=8",middle_pages,,,,,,
+OBS-202604-00979,2026-04,979,Maheshkunt-Saharsa-Purnea Pkg I km 0.00 to km. 90.00 of NH-107,National Highways Authority of India [NHAI],618902,N24000723,10651,Bihar,02/2017,12/2019,12/2021,09/2026,662.44,1311.22,933.08,85.25,"Maheshkunt-Saharsa-Purnea Pkg I km 0.00 to km. 90.00 of NH-107
+(National Highways Authority of India [NHAI])
+(618902)
+(N24000723) (10651)","02/2017
+(12/2019)","12/2021
+(09/2026)","662.44
+(1311.22)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,104,103,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=104,table_index=0,row_index=8",middle_pages,,,,,,
+OBS-202604-01056,2026-04,1056,"Construction of Additional Structures including Approaches in Vadodara Surat Section
+of NH48 between existing Km. 108.000 to Km. 250.000",National Highways Authority of India [NHAI],618508,-,10364,Gujarat,03/2024,01/2025,01/2027,01/2027,907.39,907.39,345.87,46.39,"Construction of Additional Structures including Approaches in Vadodara Surat Section
+of NH48 between existing Km. 108.000 to Km. 250.000
+(National Highways Authority of India [NHAI])
+(618508)
+(-) (10364)","03/2024
+(01/2025)","01/2027
+(01/2027)","907.39
+(907.39)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,108,107,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=108,table_index=0,row_index=13",middle_pages,,,,,,
+OBS-202604-01075,2026-04,1075,4L of Bhavnagar - Talaja Package-I from Km. 6.945 to Km. 54.990 of Old NH-8E,National Highways Authority of India [NHAI],619148,-,-,Gujarat,03/2016,02/2017,08/2019,-,1185.66,1343.16,53.18,100,"4L of Bhavnagar - Talaja Package-I from Km. 6.945 to Km. 54.990 of Old NH-8E
+(National Highways Authority of India [NHAI])
+(619148)
+(-) (-)","03/2016
+(02/2017)","08/2019
+(-)","1185.66
+(1343.16)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,109,108,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=109,table_index=0,row_index=13",middle_pages,,,,,,
+OBS-202604-01523,2026-04,1523,"6L from Sankeshwar Bypass to MH-KNT Border from Km. 555.017 to Km. 592.853 of
+NH-48 Pkg-II",National Highways Authority of India [NHAI],618516,N24001598,10370,"Multi-States
+(Karnataka,
+Maharashtra)",01/2022,10/2022,04/2025,11/2026,1388.7,1066.86,1130.54,83.5,"6L from Sankeshwar Bypass to MH-KNT Border from Km. 555.017 to Km. 592.853 of
+NH-48 Pkg-II
+(National Highways Authority of India [NHAI])
+(618516)
+(N24001598) (10370)","01/2022
+(10/2022)","04/2025
+(11/2026)","1388.7
+(1066.86)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,136,135,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=136,table_index=0,row_index=2",legacy_and_pmgid_present,,,,,,
+OBS-202604-01681,2026-04,1681,"6L of Pondavakkam to Kannigaipair from km 96.040 to km 116.100 of NH 716B Pkg-
+IV",National Highways Authority of India [NHAI],618635,N24001818,10453,Tamil Nadu,02/2021,01/2023,01/2025,11/2026,1359.81,1359.81,335.27,37.44,"6L of Pondavakkam to Kannigaipair from km 96.040 to km 116.100 of NH 716B Pkg-
+IV
+(National Highways Authority of India [NHAI])
+(618635)
+(N24001818) (10453)","02/2021
+(01/2023)","01/2025
+(11/2026)","1359.81
+(1359.81)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,145,144,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=145,table_index=0,row_index=4",fill_seeded,,,,,,
+OBS-202604-01682,2026-04,1682,Trichy 135.800 to Karur 218.000 section of NH-67 - Trichy Bypass,National Highways Authority of India [NHAI],618743,-,-,Tamil Nadu,12/2006,07/2007,10/2024,-,876.88,360.88,66.59,100,"Trichy 135.800 to Karur 218.000 section of NH-67 - Trichy Bypass
+(National Highways Authority of India [NHAI])
+(618743)
+(-) (-)","12/2006
+(07/2007)","10/2024
+(-)","876.88
+(360.88)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,145,144,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=145,table_index=0,row_index=5",legacy_or_pmgid_missing,,,,,,
+OBS-202604-01783,2026-04,1783,"Improvement and upgradation to two lane with Paved Shoulder configuration from
+existing km 55.00 to km 90.00 Design length 34.76 of NH-227A near Chhapia Village
+to near Sikriganj in the State of UP on EPC Mode.",MoRTH,618110,N24001469,-,Uttar Pradesh,11/2021,11/2022,05/2024,07/2025,307.11,307.11,125.88,0,"Improvement and upgradation to two lane with Paved Shoulder configuration from
+existing km 55.00 to km 90.00 Design length 34.76 of NH-227A near Chhapia Village
+to near Sikriganj in the State of UP on EPC Mode.
+(MoRTH)
+(618110)
+(N24001469) (-)","11/2021
+(11/2022)","05/2024
+(07/2025)","307.11
+(307.11)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,151,150,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=151,table_index=0,row_index=2",zero_progress,,,,,,
+OBS-202604-01785,2026-04,1785,"Improvement and up-gradation of NH-227B 84 Kosi Parikrama Marg Package I, from
+km 228.920 Jagarnathpur to Km 235.960/0.000 MakhaudaDham to Km 29.000 Sarpur
+in the State of Uttar Pradesh on EPC basis",MoRTH,618112,N24002240,10186,Uttar Pradesh,03/2022,05/2025,11/2026,11/2026,912.5,912.5,0,3,"Improvement and up-gradation of NH-227B 84 Kosi Parikrama Marg Package I, from
+km 228.920 Jagarnathpur to Km 235.960/0.000 MakhaudaDham to Km 29.000 Sarpur
+in the State of Uttar Pradesh on EPC basis
+(MoRTH)
+(618112)
+(N24002240) (10186)","03/2022
+(05/2025)","11/2026
+(11/2026)","912.5
+(912.5)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,151,150,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=151,table_index=0,row_index=4",legacy_and_pmgid_present,,,,,,
+OBS-202604-01791,2026-04,1791,"Rehabilitation and Up-gradation from km. 0000 to km.40390 of NH-730S
+MaharajganjNichloulThuthibari to two lane with paved shoulders in the State of U.P.
+on Engineering, Procurement & Construction EPC Basis.",MoRTH,618163,N24001418,10195,Uttar Pradesh,03/2023,06/2024,12/2025,12/2026,809.25,603.19,0,58,"Rehabilitation and Up-gradation from km. 0000 to km.40390 of NH-730S
+MaharajganjNichloulThuthibari to two lane with paved shoulders in the State of U.P.
+on Engineering, Procurement & Construction EPC Basis.
+(MoRTH)
+(618163)
+(N24001418) (10195)","03/2023
+(06/2024)","12/2025
+(12/2026)","809.25
+(603.19)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,151,150,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=151,table_index=0,row_index=10",late_pages,,,,,,
+OBS-202604-01804,2026-04,1804,"Construction of 4 lane Mirzapur bypass including bridge over river Ganga from km
+0.000 to km 15.000 of NH 135A in the State of Uttar Pradesh on HAM Mode.",MoRTH,618247,-,-,Uttar Pradesh,03/2024,01/2026,01/2029,01/2029,1708.62,1708.62,0,2,"Construction of 4 lane Mirzapur bypass including bridge over river Ganga from km
+0.000 to km 15.000 of NH 135A in the State of Uttar Pradesh on HAM Mode.
+(MoRTH)
+(618247)
+(-) (-)","03/2024
+(01/2026)","01/2029
+(01/2029)","1708.62
+(1708.62)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,152,151,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=152,table_index=0,row_index=6",late_pages,,,,,,
+OBS-202604-01828,2026-04,1828,"4/6L Southern Ayodhya Bypass from Km 5.000 to Km 37.172 starting near Km.
+112.540 and ending at Km. 153.281 of NH-27",NHAI,618568,-,10411,Uttar Pradesh,08/2024,03/2025,09/2027,09/2027,2541.13,1983.05,265.58,35.14,"4/6L Southern Ayodhya Bypass from Km 5.000 to Km 37.172 starting near Km.
+112.540 and ending at Km. 153.281 of NH-27
+(NHAI)
+(618568)
+(-) (10411)","08/2024
+(03/2025)","09/2027
+(09/2027)","2541.13
+(1983.05)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,153,152,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=153,table_index=0,row_index=15",late_pages,,,,,,
+OBS-202604-01869,2026-04,1869,"6L access-controlled highway from Ganeshpur tonear Mohand of Ganeshpur
+Dehradun section from Km.0 to Km.8.3 of NH-72A Package-1",NHAI,619308,-,12098,Uttar Pradesh,11/2020,10/2021,10/2023,07/2026,836.24,835.74,808.7,98.92,"6L access-controlled highway from Ganeshpur tonear Mohand of Ganeshpur
+Dehradun section from Km.0 to Km.8.3 of NH-72A Package-1
+(NHAI)
+(619308)
+(-) (12098)","11/2020
+(10/2021)","10/2023
+(07/2026)","836.24
+(835.74)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,156,155,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=156,table_index=0,row_index=1",legacy_or_pmgid_missing,,,,,,
+OBS-202604-01936,2026-04,1936,"Sewage Treatment Plant 50MLD and Sewerage Network 150 km in Kankarbagh-
+Patna under Hybrid annuity based PPP mode-Namami Gange Programme",National Mission for Clean Ganga,616612,N30000050,3245,Bihar,08/2017,07/2019,12/2025,-,578.89,578.89,171.79,54,"Sewage Treatment Plant 50MLD and Sewerage Network 150 km in Kankarbagh-
+Patna under Hybrid annuity based PPP mode-Namami Gange Programme
+(National Mission for Clean Ganga)
+(616612)
+(N30000050) (3245)","08/2017
+(07/2019)","12/2025
+(-)","578.89
+(578.89)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,160,159,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=160,table_index=0,row_index=11",late_pages,,,,,,
+OBS-202604-01974,2026-04,1974,Sri Ram Sagar Project Stage - II,Irrigation and CAD-TG,400102,-,3344,Telangana,04/1996,04/2005,12/2019,12/2025,736.13,949.87,971.47,97,"Sri Ram Sagar Project Stage - II
+(Irrigation and CAD-TG)
+(400102)
+(-) (3344)","04/1996
+(04/2005)","12/2019
+(12/2025)","736.13
+(949.87)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,162,161,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=162,table_index=0,row_index=4",final_table_page,,,,,,
+OBS-202604-01979,2026-04,1979,Morna [Gureghar] Irrigation Project,"Department of Water Resources, River Development & GR",701395,-,-,Uttar Pradesh,04/2007,12/2007,12/2025,-,219.9,219.9,115.2,31.5,"Morna [Gureghar] Irrigation Project
+(Department of Water Resources, River Development & GR)
+(701395)
+(-) (-)","04/2007
+(12/2007)","12/2025
+(-)","219.9
+(219.9)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,162,161,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=162,table_index=0,row_index=9",final_table_page,,,,,,
+OBS-202604-01981,2026-04,1981,Jamrani Dam Multipurpose Project,Irrigation-UK,613787,-,6135,Uttarakhand,10/2023,11/2023,06/2029,-,2584.1,2584.1,1267.4,25.08,"Jamrani Dam Multipurpose Project
+(Irrigation-UK)
+(613787)
+(-) (6135)","10/2023
+(11/2023)","06/2029
+(-)","2584.1
+(2584.1)",SRC-2026-04,90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5,162,161,All Ongoing Projects,6,pdfplumber_table,extractor_paimana_april_table6:0.1.0,"pdf_page_index=162,table_index=0,row_index=11",last_row,,,,,,
