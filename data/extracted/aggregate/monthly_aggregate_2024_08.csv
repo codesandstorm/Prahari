@@ -1,0 +1,2 @@
+source_id,source_sha256,reporting_month,physical_page,printed_page,section_table,field_name,field_value_raw,raw_locator
+SRC-2024-08,215949de4d67ac0626c59b709387b1eb157680c8503a520d054d4b2ac86e0ea2,2024-08,3,2,report identity,reporting_month_evidence,2024-08,pdf_page_index=3;normalized_month_evidence

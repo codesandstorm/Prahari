@@ -1,0 +1,28 @@
+{
+  "reporting_month": "2023-07",
+  "source_id": "SRC-2023-07",
+  "source_sha256": "8594dbcc2dfaeb534a755365ca691e9d047d1ccde3a0b8b140f38f0c0afc68c2",
+  "schema_family": "OCMS",
+  "schema_classification": "NEW_COMPATIBLE_SCHEMA",
+  "first_page": 108,
+  "last_page": 218,
+  "table_number": "DETAIL",
+  "table_title": "Detail of ongoing Projects Costing Rs 150 Crore and above",
+  "identity_fields": "Legacy OCMS embedded project code",
+  "confidence": "HIGH",
+  "official_project_count": 1646,
+  "builder_version": "mixed_coverage_gate2:0.1.5",
+  "accepted_project_rows": 1646,
+  "serial_min": 1,
+  "serial_max": 1646,
+  "missing_serials": [],
+  "duplicate_serials": 0,
+  "total_raw_table_rows": 1743,
+  "structural_counts": {
+    "OTHER_NON_PROJECT": 56,
+    "SECTION_HEADING": 40,
+    "BLANK": 1
+  },
+  "unresolved_rows": [],
+  "row_accounting_valid": true
+}

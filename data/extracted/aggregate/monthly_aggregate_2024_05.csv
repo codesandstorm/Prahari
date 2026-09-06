@@ -1,0 +1,3 @@
+source_id,source_sha256,reporting_month,physical_page,printed_page,section_table,field_name,field_value_raw,raw_locator
+SRC-2024-05,3db1c6f6b822b9dc6d61f0a22439ad5fbb84f22323aeea759332a502e9eca19d,2024-05,2,1,report identity,reporting_month_evidence,2024-05,pdf_page_index=2;normalized_month_evidence
+SRC-2024-05,3db1c6f6b822b9dc6d61f0a22439ad5fbb84f22323aeea759332a502e9eca19d,2024-05,4,3,report-level aggregate,official_projects_in_scope,1817,pdf_page_index=4;regex=official_projects_in_scope

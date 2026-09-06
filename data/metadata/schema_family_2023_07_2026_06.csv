@@ -1,0 +1,37 @@
+reporting_month,coverage_class,table_number,table_title,schema_family,column_structure,identity_availability,project_code,legacy_ocms,pmgid,ministry,sector,status,anticipated_cost_date,milestones,adapter,confidence,notes
+2023-07,PROJECT_LEVEL,DETAIL,Detail of ongoing Projects Costing Rs 150 Crore and above,OCMS,7-cell compound OCMS,Legacy OCMS embedded project code,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,OCMS,HIGH,complete ongoing-project inventory candidate
+2023-08,PROJECT_LEVEL,DETAIL,Detail of ongoing Projects Costing Rs 150 Crore and above,OCMS,7-cell compound OCMS,Legacy OCMS embedded project code,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,OCMS,HIGH,complete ongoing-project inventory candidate
+2023-09,PROJECT_LEVEL,DETAIL,Detail of ongoing Projects Costing Rs 150 Crore and above,OCMS,7-cell compound OCMS,Legacy OCMS embedded project code,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,OCMS,HIGH,complete ongoing-project inventory candidate
+2023-10,PROJECT_LEVEL,DETAIL,Detail of ongoing Projects Costing Rs 150 Crore and above,OCMS,7-cell compound OCMS,Legacy OCMS embedded project code,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,OCMS,HIGH,complete ongoing-project inventory candidate
+2023-11,PROJECT_LEVEL,DETAIL,Detail of ongoing Projects Costing Rs 150 Crore and above,OCMS,7-cell compound OCMS,Legacy OCMS embedded project code,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,OCMS,HIGH,complete ongoing-project inventory candidate
+2023-12,AGGREGATE_ONLY,,,NO_PROJECT_LEVEL_SCHEMA,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,valid monthly report lacks complete project-level table
+2024-01,PROJECT_LEVEL,DETAIL,Detail of ongoing Projects Costing Rs 150 Crore and above,OCMS,7-cell compound OCMS,Legacy OCMS embedded project code,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,OCMS,HIGH,complete ongoing-project inventory candidate
+2024-02,PROJECT_LEVEL,DETAIL,Detail of ongoing Projects Costing Rs 150 Crore and above,OCMS,7-cell compound OCMS,Legacy OCMS embedded project code,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,OCMS,HIGH,complete ongoing-project inventory candidate
+2024-03,PROJECT_LEVEL,DETAIL,Detail of ongoing Projects Costing Rs 150 Crore and above,OCMS,7-cell compound OCMS,Legacy OCMS embedded project code,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,OCMS,HIGH,complete ongoing-project inventory candidate
+2024-04,AGGREGATE_ONLY,,,NO_PROJECT_LEVEL_SCHEMA,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,valid monthly report lacks complete project-level table
+2024-05,AGGREGATE_ONLY,,,NO_PROJECT_LEVEL_SCHEMA,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,valid monthly report lacks complete project-level table
+2024-06,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2024-07,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2024-08,AGGREGATE_ONLY,,,NO_PROJECT_LEVEL_SCHEMA,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,valid monthly report lacks complete project-level table
+2024-09,AGGREGATE_ONLY,,,NO_PROJECT_LEVEL_SCHEMA,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,valid monthly report lacks complete project-level table
+2024-10,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2024-11,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2024-12,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2025-01,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2025-02,MISSING_SOURCE,,,NO_PROJECT_LEVEL_SCHEMA,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,public source unavailable
+2025-03,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2025-04,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2025-05,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2025-06,PROJECT_LEVEL,7,Project List: Ongoing Projects,PAIMANA_V1,9-cell PAIMANA,Project Code,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,PAIMANA_V1,HIGH,complete ongoing-project inventory candidate
+2025-07,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2025-08,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2025-09,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2025-10,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2025-11,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2025-12,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2026-01,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2026-02,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2026-03,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2026-04,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2026-05,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
+2026-06,PROJECT_LEVEL,,,PAIMANA,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NONE,N/A,complete ongoing-project inventory candidate
