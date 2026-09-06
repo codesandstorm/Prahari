@@ -1,0 +1,2 @@
+target,horizon_months,lead_time_status,reason
+S1,3,NOT_ESTIMATED,first detection timing requires human-validated event adjudication
