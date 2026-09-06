@@ -1,0 +1,482 @@
+{
+  "dataset_version": "gate2-36m-window-30-project-months-mixed-v0.1",
+  "status": "PROVISIONAL - MIXED COVERAGE - HUMAN VALIDATION PENDING",
+  "created_at": "2026-09-06T00:00:00+05:30",
+  "calendar_window": [
+    "2023-07",
+    "2026-06"
+  ],
+  "intended_calendar_months": 36,
+  "project_level_months": [
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-06",
+    "2024-07",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06"
+  ],
+  "aggregate_only_months": [
+    "2023-12",
+    "2024-04",
+    "2024-05",
+    "2024-08",
+    "2024-09"
+  ],
+  "missing_source_months": [
+    "2025-02"
+  ],
+  "excluded_duplicate_months": [
+    "2026-07"
+  ],
+  "monthly_row_counts": {
+    "2023-07": 1646,
+    "2023-08": 1762,
+    "2023-09": 1763,
+    "2023-10": 1788,
+    "2023-11": 1831,
+    "2024-01": 1821,
+    "2024-02": 1902,
+    "2024-03": 1873,
+    "2024-06": 1810,
+    "2024-07": 1793,
+    "2024-10": 1747,
+    "2024-11": 1742,
+    "2024-12": 1724,
+    "2025-01": 1719,
+    "2025-03": 1677,
+    "2025-04": 1670,
+    "2025-05": 1637,
+    "2025-06": 1595,
+    "2025-07": 791,
+    "2025-08": 800,
+    "2025-09": 794,
+    "2025-10": 820,
+    "2025-11": 823,
+    "2025-12": 1392,
+    "2026-01": 1702,
+    "2026-02": 1948,
+    "2026-03": 1941,
+    "2026-04": 1981,
+    "2026-05": 1987,
+    "2026-06": 1847
+  },
+  "canonical_project_count": 3417,
+  "project_month_rows": 48326,
+  "identity_audit": {
+    "legacy_bridge_entries": 1122,
+    "ambiguous_legacy_codes": [
+      "N12000133",
+      "N12000134",
+      "N12000135",
+      "N22000602",
+      "N24000319",
+      "N24000320",
+      "N24000979",
+      "N24000983",
+      "N24000989",
+      "N24001263",
+      "N24001278",
+      "N24001281",
+      "N24001323",
+      "N24001390",
+      "N24001416",
+      "N24001418",
+      "N24001419",
+      "N24001450",
+      "N24001537",
+      "N24001545",
+      "N24001590",
+      "N24001647",
+      "N24001730",
+      "N24001792",
+      "N24001901",
+      "N24001925",
+      "N24002025",
+      "N24002030",
+      "N24002118",
+      "N24002132"
+    ],
+    "interval_counts": {
+      "1": 37381,
+      "2": 3472,
+      "3": 3439,
+      "6": 507,
+      "7": 98,
+      "10": 2,
+      "14": 1,
+      "5": 5,
+      "4": 2,
+      "8": 2
+    }
+  },
+  "aggregate_artifacts": {
+    "2023-12": "data/extracted/aggregate/monthly_aggregate_2023_12.csv",
+    "2024-04": "data/extracted/aggregate/monthly_aggregate_2024_04.csv",
+    "2024-05": "data/extracted/aggregate/monthly_aggregate_2024_05.csv",
+    "2024-08": "data/extracted/aggregate/monthly_aggregate_2024_08.csv",
+    "2024-09": "data/extracted/aggregate/monthly_aggregate_2024_09.csv"
+  },
+  "source_inspections": {
+    "2023-07": {
+      "source_present": true,
+      "sha256": "8594dbcc2dfaeb534a755365ca691e9d047d1ccde3a0b8b140f38f0c0afc68c2",
+      "file_size_bytes": 10203320,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 640,
+      "text_extractability": "YES"
+    },
+    "2023-08": {
+      "source_present": true,
+      "sha256": "3469e1924ae72c13bd2f3cb3c58ccf47a602d6562741bcd650120ebea5d28d3a",
+      "file_size_bytes": 22631595,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 832,
+      "text_extractability": "YES"
+    },
+    "2023-09": {
+      "source_present": true,
+      "sha256": "7e248a959bf494a7f66fa6aed1a2dd1b4010121bcf0f86f7381957541c63e021",
+      "file_size_bytes": 21637914,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 732,
+      "text_extractability": "YES"
+    },
+    "2023-10": {
+      "source_present": true,
+      "sha256": "ffc244cd1c7ae3f1c5c8ba9242ec6d2bfa2d8e9d84b027437e3d07d7289b31a9",
+      "file_size_bytes": 7005132,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 741,
+      "text_extractability": "YES"
+    },
+    "2023-11": {
+      "source_present": true,
+      "sha256": "35005041bff0101b7a54d1f49d098bbd2537f4fa8eee2c49e76b28a8229059e4",
+      "file_size_bytes": 40579535,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 758,
+      "text_extractability": "YES"
+    },
+    "2023-12": {
+      "source_present": true,
+      "sha256": "9ae19542a7f939dc1ea25b56d6c5eadf5dbd923b91e71d85e1d3d3f6b0fcee53",
+      "file_size_bytes": 553176,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 20,
+      "text_extractability": "YES"
+    },
+    "2024-01": {
+      "source_present": true,
+      "sha256": "ab3d3be95c7cd8c512568f9ad44f01d5d73fc95a8e8c4ec6191ebacf0b3f5dbb",
+      "file_size_bytes": 35516309,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 724,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-02": {
+      "source_present": true,
+      "sha256": "18fad0cefd725ae31d35dabebdd1e8eb7d2b8849ddef3ec3ee92b4481fd37d88",
+      "file_size_bytes": 30439948,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 779,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-03": {
+      "source_present": true,
+      "sha256": "6553637f3f79d78dba75a62cb19dbe393633c5200fe0df8eb262fe44578e7ee4",
+      "file_size_bytes": 40325728,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 772,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-04": {
+      "source_present": true,
+      "sha256": "23dc7c3408c54c687f74e3ef7d0fdcb31f44000ccadbe9315cef86351fb84081",
+      "file_size_bytes": 464203,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 5,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-05": {
+      "source_present": true,
+      "sha256": "3db1c6f6b822b9dc6d61f0a22439ad5fbb84f22323aeea759332a502e9eca19d",
+      "file_size_bytes": 606548,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 5,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-06": {
+      "source_present": true,
+      "sha256": "7823bd3479b62d31f024c6add12100d4a91855ce8e6b738029a47336567a94c9",
+      "file_size_bytes": 1096309,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 309,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-07": {
+      "source_present": true,
+      "sha256": "20eba591ed463174d35f72f10f3e66e435d4aeb2e4c48f26a15d6c565f607d4d",
+      "file_size_bytes": 1043382,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 267,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-08": {
+      "source_present": true,
+      "sha256": "215949de4d67ac0626c59b709387b1eb157680c8503a520d054d4b2ac86e0ea2",
+      "file_size_bytes": 433458,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 4,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-09": {
+      "source_present": true,
+      "sha256": "9dd3f9a4887c03c768a8d18fab673e1723e8234ca54a9f971033fe380e5fc0e1",
+      "file_size_bytes": 782330,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 4,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-10": {
+      "source_present": true,
+      "sha256": "2f4a0d3a695aa8af173137118dc54331907f174d1a949e39a3cb2a2c4d392a16",
+      "file_size_bytes": 2021952,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 278,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-11": {
+      "source_present": true,
+      "sha256": "7f27651b6b54da7c20069f5a26d67e145ee935e50a78fcfe5d6980c3cd700e31",
+      "file_size_bytes": 1985755,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 282,
+      "text_extractability": "PARTIAL"
+    },
+    "2024-12": {
+      "source_present": true,
+      "sha256": "b2be571bfe46f7d9bba8fd2281b481d2c3bf8b3672365182eb708f89c72a6e1d",
+      "file_size_bytes": 2313092,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 219,
+      "text_extractability": "PARTIAL"
+    },
+    "2025-01": {
+      "source_present": true,
+      "sha256": "3ba881decfb846c33c0378399a7d4f2a03c60ce58cb449c1f654851facf9bfce",
+      "file_size_bytes": 2804389,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 244,
+      "text_extractability": "PARTIAL"
+    },
+    "2025-02": {
+      "source_present": false,
+      "sha256": "",
+      "file_size_bytes": "",
+      "page_count": "",
+      "text_extractability": "NO",
+      "month_evidence": false,
+      "pdf_readable": false
+    },
+    "2025-03": {
+      "source_present": true,
+      "sha256": "2766338305d6f68969d1d371e99cca1290d3d39dd083c9b6788d91b4499de41b",
+      "file_size_bytes": 12129235,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 244,
+      "text_extractability": "PARTIAL"
+    },
+    "2025-04": {
+      "source_present": true,
+      "sha256": "58049244170b9d8c0588ccf660e79e7b56bfc7e60a333f784e6e08392cf81eef",
+      "file_size_bytes": 10264807,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 273,
+      "text_extractability": "PARTIAL"
+    },
+    "2025-05": {
+      "source_present": true,
+      "sha256": "1326fc47d272e8f2225db45645bd1dd4eacee1ab4a15bff8a1f6edfc70b45171",
+      "file_size_bytes": 9995553,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 212,
+      "text_extractability": "PARTIAL"
+    },
+    "2025-06": {
+      "source_present": true,
+      "sha256": "7f37c63abe9f92d8db6513ad68d91b5c172c9c27454f45691f53fff7ebb2a754",
+      "file_size_bytes": 14003041,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 234,
+      "text_extractability": "PARTIAL"
+    },
+    "2025-07": {
+      "source_present": true,
+      "sha256": "1064c963c8afacf903ad9cc876fa3615c4b4b28ccdae920a8ff392af37111508",
+      "file_size_bytes": 5823487,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 67,
+      "text_extractability": "YES"
+    },
+    "2025-08": {
+      "source_present": true,
+      "sha256": "7b28c68ca1fd697f2856fa4b5c79b5c26fa6e8f0be4d0897cc105958e01bf2c8",
+      "file_size_bytes": 5791675,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 67,
+      "text_extractability": "YES"
+    },
+    "2025-09": {
+      "source_present": true,
+      "sha256": "520f100f2752c07c7d8e1180cce2258a6966d21b6e37fcbecca0b098835ef318",
+      "file_size_bytes": 6007329,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 72,
+      "text_extractability": "YES"
+    },
+    "2025-10": {
+      "source_present": true,
+      "sha256": "4817bb54e983b63233e4538fb2e7adf80c6204a2a976021a71d126e9003edbc3",
+      "file_size_bytes": 5928547,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 73,
+      "text_extractability": "YES"
+    },
+    "2025-11": {
+      "source_present": true,
+      "sha256": "db9e2eff8a2ecc21285280fd85dfbb4df9ef99cbda74987ccd4a3edcbff28eb9",
+      "file_size_bytes": 5845019,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 73,
+      "text_extractability": "YES"
+    },
+    "2025-12": {
+      "source_present": true,
+      "sha256": "07f56e5457c63192ae7b5b4036f975f7eb058a3364a25a87cdc6ce2369082401",
+      "file_size_bytes": 6398361,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 108,
+      "text_extractability": "YES"
+    },
+    "2026-01": {
+      "source_present": true,
+      "sha256": "9c043ad4a0acb01dd6f00fe2dbca60f812ffa981daa5143b24f7c5ec37f64c83",
+      "file_size_bytes": 6544662,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 134,
+      "text_extractability": "YES"
+    },
+    "2026-02": {
+      "source_present": true,
+      "sha256": "f29010c2d69ca185c8f36e6d8539d460b4ebe81753994dd21fbe63e057817df9",
+      "file_size_bytes": 6738453,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 168,
+      "text_extractability": "YES"
+    },
+    "2026-03": {
+      "source_present": true,
+      "sha256": "e10411522bbc6caec5f3ef143c8399ad71221ac232e19410c1dfe87eb5c90253",
+      "file_size_bytes": 6827436,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 157,
+      "text_extractability": "YES"
+    },
+    "2026-04": {
+      "source_present": true,
+      "sha256": "90a6959e976da6928440efdea9c68847d1178356e4c0ebd078c51026ddb118d5",
+      "file_size_bytes": 3215216,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 163,
+      "text_extractability": "YES"
+    },
+    "2026-05": {
+      "source_present": true,
+      "sha256": "480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005",
+      "file_size_bytes": 3217996,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 163,
+      "text_extractability": "YES"
+    },
+    "2026-06": {
+      "source_present": true,
+      "sha256": "d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15",
+      "file_size_bytes": 6540236,
+      "pdf_readable": true,
+      "month_evidence": true,
+      "page_count": 161,
+      "text_extractability": "YES"
+    },
+    "excluded_2026-07": {
+      "sha256": "d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15",
+      "duplicate_of": "2026-06",
+      "status": "EXCLUDED_DUPLICATE"
+    }
+  },
+  "human_validation_status": "PENDING_FOR_18_NEW_PROJECT_LEVEL_MONTHS",
+  "forbidden_transformations_applied": [],
+  "known_limitations": [
+    "five aggregate-only months",
+    "February 2025 source missing",
+    "July 2026 duplicate excluded",
+    "no inferred lifecycle"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "reporting_month": "2025-04",
+  "source_id": "SRC-2025-04",
+  "source_sha256": "58049244170b9d8c0588ccf660e79e7b56bfc7e60a333f784e6e08392cf81eef",
+  "schema_family": "PAIMANA_V1",
+  "schema_classification": "COMPATIBLE_VARIATION",
+  "first_page": 43,
+  "last_page": 268,
+  "table_number": "7",
+  "table_title": "Project List: Ongoing Projects",
+  "identity_fields": "Project Code",
+  "confidence": "HIGH",
+  "official_project_count": 1670,
+  "builder_version": "mixed_coverage_gate2:0.1.5",
+  "accepted_project_rows": 1670,
+  "serial_min": 1,
+  "serial_max": 1670,
+  "missing_serials": [],
+  "duplicate_serials": 0,
+  "total_raw_table_rows": 1920,
+  "structural_counts": {
+    "OTHER_NON_PROJECT": 227,
+    "BLANK": 23
+  },
+  "unresolved_rows": [],
+  "row_accounting_valid": true
+}
