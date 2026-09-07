@@ -314,7 +314,7 @@ Gate 2 next requires broader canonical source coverage and historical/schema-era
 | **Sandarbh** | Data Engineering + ML Integration + technical integration ownership |
 | **Pavitra** | Prediction formulation + targets + statistical/ML evaluation + independent data audit |
 | **Akshita** | Domain research + PAIMANA gap analysis + product differentiation + adversarial/domain validation |
-| **Jashan** | Backend architecture + database + FastAPI + data serving |
+| **Jashndeep** | Backend architecture + database + FastAPI + data serving |
 | **Sanskaar** | UX/frontend + officer workflow + dashboard information architecture |
 
 ## Project maturity notice
