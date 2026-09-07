@@ -1,0 +1,23 @@
+{
+  "automatic_checks_passed": 7,
+  "automatic_checks_total": 11,
+  "cases": 3,
+  "category_scores": {
+    "HALLUCINATION_RESISTANCE": {
+      "passed": 1,
+      "total": 4
+    },
+    "PROBABILITY_INVENTION": {
+      "passed": 3,
+      "total": 4
+    },
+    "PROVENANCE": {
+      "passed": 3,
+      "total": 3
+    }
+  },
+  "json_parse_failures": 0,
+  "median_latency_seconds": 25.510976399993524,
+  "p90_latency_seconds": 36.720706399995834,
+  "response_failures": 0
+}
