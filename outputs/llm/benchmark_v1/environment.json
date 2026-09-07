@@ -1,0 +1,17 @@
+{
+  "captured_at_local": "2026-09-07T23:29:03+05:30",
+  "os": "Microsoft Windows 11 Home Single Language",
+  "os_version": "10.0.26200",
+  "os_build": "26200",
+  "python_version": "3.11.3",
+  "ollama_version": "0.33.2",
+  "cpu": "Intel(R) Core(TM) 5 210H",
+  "cpu_cores": 8,
+  "logical_processors": 12,
+  "system_ram_visible_kib": 33172728,
+  "gpu": "NVIDIA GeForce RTX 3050 A Laptop GPU",
+  "gpu_vram_mib": 4094,
+  "nvidia_driver": "572.40",
+  "cuda_version_reported_by_nvidia_smi": "12.8",
+  "scope_warning": "Latency and throughput describe this local machine and do not generalize to production hardware."
+}
