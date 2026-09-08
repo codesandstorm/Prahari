@@ -1,6 +1,6 @@
 # PRAHARI Candidate Benchmark V1 human-review guide
 
-Review [human_review_blinded.csv](C:/Users/ASUS/Documents/Projects/PRAHARI/outputs/llm/benchmark_v1/human_review_blinded.csv) without opening the separate model key. Model identity must not influence scoring. Do not rewrite responses.
+Review [human_review_blinded.csv](../../outputs/llm/benchmark_v1/human_review_blinded.csv) without opening the separate model key. Model identity must not influence scoring. Do not rewrite responses.
 
 ## Scores
 

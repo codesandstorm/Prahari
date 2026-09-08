@@ -2,8 +2,8 @@
 # PRAHARI — requirements.txt
 # Gate 2: Dataset Truth and Historical Dataset Reconstruction
 # ============================================================
-# DO NOT add ML libraries (scikit-learn, xgboost, etc.) until
-# Gate 2 is fully validated and Gate 3 is formally approved.
+# The repository now includes provisional ML research modules whose unit tests
+# import scikit-learn. Keep this direct dependency available in CI.
 # ============================================================
 
 # --- PDF extraction ---
@@ -13,6 +13,7 @@ pdfplumber>=0.10.0       # fallback / cross-validation for tables
 # --- Data manipulation ---
 pandas>=2.1.0
 numpy>=1.26.0
+scikit-learn>=1.6.0
 
 # --- Data validation / profiling ---
 great-expectations>=0.18.0   # optional: structured validation suites
