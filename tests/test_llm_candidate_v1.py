@@ -31,3 +31,10 @@ def test_model_key_is_not_a_column_in_blinded_sheet_if_outputs_exist():
     if sheet.exists():
         header=sheet.read_text(encoding="utf-8").splitlines()[0]
         assert "model_name" not in header and "anonymous_model" in header
+
+
+def test_completed_aggregate_is_immutable():
+    from llm.benchmark.candidate_v1 import aggregate
+    if (ROOT/"outputs/llm/benchmark_v1/run_metadata.json").exists():
+        with pytest.raises(FileExistsError, match="not overwritten"):
+            aggregate(ROOT)

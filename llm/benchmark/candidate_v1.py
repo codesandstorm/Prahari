@@ -80,6 +80,8 @@ def aggregate(root: Path) -> dict[str, Any]:
     cases = verify_frozen(root); case_by_id = {c.case_id: c for c in cases}
     records_by_model, manifests = _load_records(root)
     out = root / "outputs/llm/benchmark_v1"; out.mkdir(parents=True, exist_ok=True)
+    if (out / "run_metadata.json").exists():
+        raise FileExistsError("Candidate Benchmark V1 aggregate already exists; immutable results are not overwritten")
     all_records, score_rows, category_rows, failure_rows, performance_rows = [], [], [], [], []
     summaries = {}
     for model, records in records_by_model.items():
