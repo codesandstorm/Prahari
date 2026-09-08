@@ -1,0 +1,9 @@
+{
+  "model": "llama3:8b",
+  "cases": 5,
+  "fallbacks": 4,
+  "median_retrieval_seconds": 5.359994247555733e-05,
+  "median_generation_seconds": 31.661689400090836,
+  "median_total_seconds": 31.6620949000353,
+  "scope": "warmed local RAG smoke; prototype hardware only"
+}

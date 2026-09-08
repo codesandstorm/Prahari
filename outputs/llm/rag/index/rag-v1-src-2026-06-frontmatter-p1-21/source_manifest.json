@@ -1,0 +1,17 @@
+[
+  {
+    "document_id": "SRC-2026-06",
+    "title": "MoSPI Flash Report 2026 6",
+    "organization": "Ministry of Statistics and Programme Implementation",
+    "document_type": "Flash Report",
+    "publication_date": "2026-06",
+    "source_path": "data/raw/2026/FlashReport_2026_06.pdf",
+    "sha256": "d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15",
+    "page_count": 161,
+    "classification": "APPROVED_OFFICIAL",
+    "approved_for_rag": true,
+    "approval_reason": "June 2026 is the validated canonical report selected for bounded prototype RAG",
+    "language": "English",
+    "version": "1"
+  }
+]

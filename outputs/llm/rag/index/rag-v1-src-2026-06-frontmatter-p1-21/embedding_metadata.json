@@ -1,0 +1,4 @@
+{
+  "enabled": false,
+  "reason": "transparent lexical baseline avoids new model/dependency and is sufficient for the bounded official corpus"
+}

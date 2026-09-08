@@ -1,0 +1,6 @@
+case_id,route,fallback,fallback_reason,retrieval_seconds,generation_seconds,total_seconds,retrieved_citations
+document_definition,DOCUMENT_RAG,True,citation not supplied or not approved,8.919998072087765e-05,31.661689400090836,31.6620949000353,0
+document_threshold,DOCUMENT_RAG,True,citation not supplied or not approved,6.360001862049103e-05,69.22756670007948,69.2280894999858,0
+mixed,MIXED,False,,5.359994247555733e-05,55.965025300043635,55.96538969990797,3
+missing_cuf,DOCUMENT_RAG,True,no relevant approved chunks,3.3800024539232254e-05,0.0,5.479995161294937e-05,0
+unsupported,UNSUPPORTED,True,unsupported question,0.0,0.0,3.3100019209086895e-05,0
