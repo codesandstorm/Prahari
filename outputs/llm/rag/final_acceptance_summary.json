@@ -1,0 +1,8 @@
+{
+  "suite": "PRAHARI_LLM_FINAL_ACCEPTANCE_V1",
+  "cases": 24,
+  "passed": 24,
+  "pass_rate": 1.0,
+  "fallbacks": 11,
+  "execution": "deterministic mocked-generation contract suite; live generation measured separately"
+}
