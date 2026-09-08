@@ -1,0 +1,8 @@
+{
+  "model": "llama3:8b",
+  "cases": 5,
+  "median_latency_seconds": 9.109080499969423,
+  "max_latency_seconds": 13.12249730003532,
+  "fallbacks": 1,
+  "scope": "prototype integration smoke; not Candidate Benchmark V1"
+}
