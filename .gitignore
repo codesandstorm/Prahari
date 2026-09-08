@@ -87,3 +87,29 @@ data/raw/**/*.PDF
 # --- Temporary/manual OS lock files ---
 ~$*
 *.tmp
+
+# PRAHARI raw and intermediate datasets
+PRAHARI_FULL_EXTRACTED_DATA.xlsx
+data/processed/longitudinal_2023_07_2026_06_mixed/project_month.csv
+data/processed/longitudinal_2023_07_2026_06_mixed/project_month_features.csv
+data/processed/longitudinal_2023_07_2026_06_mixed/project_month_features_v2.csv
+data/processed/longitudinal_2023_07_2026_06_mixed/project_month_features_v3.csv
+data/processed/longitudinal_2023_07_2026_06_mixed/project_month_features_v4.csv
+data/processed/longitudinal_2023_07_2026_06_mixed/project_month_labels.csv
+data/processed/longitudinal_2023_07_2026_06_mixed/project_month_labels_v2.csv
+
+# Python environment / generated files
+.venv/
+__pycache__/
+*.pyc
+
+# Environment secrets
+.env
+
+# Development/debug scripts
+step11a_fix_features.py
+step11b_audit.py
+step11d_anomaly_audit.py
+step13c_positive_examples.py
+step22_target_proxy_ablation.python3*
+step9_labels.python3*

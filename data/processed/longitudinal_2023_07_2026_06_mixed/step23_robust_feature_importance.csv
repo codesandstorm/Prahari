@@ -1,0 +1,2315 @@
+horizon,importance_type,feature,importance_value
+risk_by_t_plus_1,random_forest,cost_ratio,0.08454866554749507
+risk_by_t_plus_1,random_forest,progress_current,0.07479989204940056
+risk_by_t_plus_1,random_forest,project_observation_count,0.07215047912259069
+risk_by_t_plus_1,random_forest,expenditure_current,0.07132006931625763
+risk_by_t_plus_1,random_forest,months_since_first_observation,0.06438963367354061
+risk_by_t_plus_1,random_forest,revised_cost_change,0.0584969464759685
+risk_by_t_plus_1,random_forest,expenditure_velocity,0.05798779763285707
+risk_by_t_plus_1,random_forest,revised_cost_ratio,0.04582234635365408
+risk_by_t_plus_1,random_forest,expenditure_3m_change,0.030677658274879043
+risk_by_t_plus_1,random_forest,progress_velocity,0.02763542837075029
+risk_by_t_plus_1,random_forest,progress_3m_change,0.021642892300232777
+risk_by_t_plus_1,random_forest,stall_count_to_date,0.021598511294474133
+risk_by_t_plus_1,random_forest,progress_acceleration,0.021202686911645775
+risk_by_t_plus_1,random_forest,agency_Power Grid Corporation of India Limited [POWERGRID],0.018948361183999875
+risk_by_t_plus_1,random_forest,progress_stalled,0.012126124086420139
+risk_by_t_plus_1,random_forest,agency_Employee's State Insurance Company [ESIC],0.011860435614078638
+risk_by_t_plus_1,random_forest,state_Gujarat,0.010478677511936495
+risk_by_t_plus_1,random_forest,"state_Jammu and
+Kashmir",0.008992444695449141
+risk_by_t_plus_1,random_forest,progress_first_observation,0.008715143904773867
+risk_by_t_plus_1,random_forest,state_Maharashtra,0.008260071501180518
+risk_by_t_plus_1,random_forest,agency_National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],0.007606242722260051
+risk_by_t_plus_1,random_forest,agency_Ministry of Petroleum & Natural Gas,0.007585935179962905
+risk_by_t_plus_1,random_forest,state_Uttar Pradesh,0.007472839093159519
+risk_by_t_plus_1,random_forest,agency_Oil and Natural Gas Corporation Limited [ONGC],0.007467360101890949
+risk_by_t_plus_1,random_forest,progress_decrease_flag,0.007006002783650849
+risk_by_t_plus_1,random_forest,state_Karnataka,0.006993303365809655
+risk_by_t_plus_1,random_forest,state_Bihar,0.006932023003128279
+risk_by_t_plus_1,random_forest,expenditure_decrease_flag,0.006881396808556314
+risk_by_t_plus_1,random_forest,agency_Department of Telecommunications,0.006243951895724636
+risk_by_t_plus_1,random_forest,state_Rajasthan,0.00583412349967802
+risk_by_t_plus_1,random_forest,agency_Department of Telecommunications [DoT],0.005706299128853486
+risk_by_t_plus_1,random_forest,agency_East Coast Railway [ECoR] - II,0.005618288852231288
+risk_by_t_plus_1,random_forest,agency_Water Resources-MP,0.005258823711172361
+risk_by_t_plus_1,random_forest,state_Assam,0.00511842362913585
+risk_by_t_plus_1,random_forest,agency_Western Railway,0.004817601582189108
+risk_by_t_plus_1,random_forest,agency_South Western Railway [SWR] - II,0.004785335529279434
+risk_by_t_plus_1,random_forest,state_West Bengal,0.0047381332148648475
+risk_by_t_plus_1,random_forest,agency_NLC India Limited [NLCIL],0.004727415696565187
+risk_by_t_plus_1,random_forest,agency_Airport Authority of India [AAI],0.004498459655441446
+risk_by_t_plus_1,random_forest,state_Chhattisgarh,0.0043014228198299176
+risk_by_t_plus_1,random_forest,state_Jharkhand,0.0041921771703195086
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Bihar,
+Chhattisgarh,
+Jharkhand,
+Madhya Pradesh,
+Maharashtra,
+Odisha,
+Telangana, Uttar
+Pradesh, West
+Bengal)",0.004085212706431542
+risk_by_t_plus_1,random_forest,"agency_Narmada and Water Resources, Water Supply and Kalpsar Department-GJ",0.0039299978386962
+risk_by_t_plus_1,random_forest,state_Madhya Pradesh,0.003897762269268741
+risk_by_t_plus_1,random_forest,state_Odisha,0.0038417627002146726
+risk_by_t_plus_1,random_forest,state_Tripura,0.0036352672333076147
+risk_by_t_plus_1,random_forest,agency_SECR,0.0036269828266023217
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Assam, Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Tripura)",0.0035462442058460677
+risk_by_t_plus_1,random_forest,agency_Ministry of Housing & Urban Affairs,0.003227767562794573
+risk_by_t_plus_1,random_forest,agency_RVNL - II,0.0031509908776820696
+risk_by_t_plus_1,random_forest,agency_MinistryofPetroleumNaturalGas,0.003112019271292867
+risk_by_t_plus_1,random_forest,state_Andhra Pradesh,0.003042509730526027
+risk_by_t_plus_1,random_forest,agency_PMSSY AND Institute of NATIONAL Importance,0.0028913461321194273
+risk_by_t_plus_1,random_forest,agency_Indian Oil Corporation Limited [IOCL],0.0027658905636056387
+risk_by_t_plus_1,random_forest,state_Delhi,0.002760321250353181
+risk_by_t_plus_1,random_forest,state_Offshore,0.0027374141831478177
+risk_by_t_plus_1,random_forest,agency_Bharat Petroleum Corporation Limited [BPCL],0.0027018469166159046
+risk_by_t_plus_1,random_forest,state_Haryana,0.0025760994896826123
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam)",0.002560460434246954
+risk_by_t_plus_1,random_forest,agency_Department of water resources-MH - II,0.002555636124950332
+risk_by_t_plus_1,random_forest,agency_EDTK[MC]/RB,0.002469181693793495
+risk_by_t_plus_1,random_forest,agency_South Central Railway [SCR] - II,0.0023265518319841943
+risk_by_t_plus_1,random_forest,agency_IISC Bangalore,0.0022674182621809087
+risk_by_t_plus_1,random_forest,state_Himachal Pradesh,0.002204206523119248
+risk_by_t_plus_1,random_forest,agency_East Central Railway [ECR] - I,0.002181653414604203
+risk_by_t_plus_1,random_forest,state_Tamil Nadu,0.0021561278163753413
+risk_by_t_plus_1,random_forest,state_Meghalaya,0.0021501908015221145
+risk_by_t_plus_1,random_forest,agency_Northeast Frontier Railway [NFR],0.002147664457505072
+risk_by_t_plus_1,random_forest,agency_Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,0.0019624259285232646
+risk_by_t_plus_1,random_forest,agency_Hindustan Petroleum Corporation Limited,0.0019532488510736116
+risk_by_t_plus_1,random_forest,agency_North Central Railway,0.0019233121954191754
+risk_by_t_plus_1,random_forest,agency_Western Railway [WR] - II,0.0018437361516591912
+risk_by_t_plus_1,random_forest,"agency_Department of Water Resources, River Development & GR",0.0017896439663833657
+risk_by_t_plus_1,random_forest,state_Telangana,0.0017892650537534598
+risk_by_t_plus_1,random_forest,agency_Eastern Coal Fields Limited [ECL],0.0017833226709926312
+risk_by_t_plus_1,random_forest,agency_Sikkim University,0.0017453084017906122
+risk_by_t_plus_1,random_forest,agency_North Western Railway [NWR],0.0017395541313280072
+risk_by_t_plus_1,random_forest,agency_Ministry of Coal,0.0017243642275969352
+risk_by_t_plus_1,random_forest,agency_Indian Railway Construction International Limited [IRCON],0.0016353607699489678
+risk_by_t_plus_1,random_forest,agency_Central Railway [CR] - II,0.0016047171460135158
+risk_by_t_plus_1,random_forest,state_Sikkim,0.0014705633559826425
+risk_by_t_plus_1,random_forest,state_Kerala,0.0013702437713153162
+risk_by_t_plus_1,random_forest,agency_Southern Railway [SR] - II,0.0012061968680113322
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Puducherry, Tamil
+Nadu)",0.0011670338953512936
+risk_by_t_plus_1,random_forest,state_PAN India,0.0011533252210964733
+risk_by_t_plus_1,random_forest,agency_National Mission for Clean Ganga,0.001084738053852699
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan)",0.0010836938228728002
+risk_by_t_plus_1,random_forest,agency_North Eastern Railway [NER],0.0010799023483137448
+risk_by_t_plus_1,random_forest,state_Punjab,0.0010714324005024116
+risk_by_t_plus_1,random_forest,large_expenditure_change,0.001064883825207273
+risk_by_t_plus_1,random_forest,agency_Water Resources-KA,0.0010527832610882065
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Gujarat,
+Maharashtra)",0.0009837864780265165
+risk_by_t_plus_1,random_forest,agency_Irrigation and CAD-TG,0.0009256915293083353
+risk_by_t_plus_1,random_forest,agency_Northen Railway [NR],0.00092290686741808
+risk_by_t_plus_1,random_forest,agency_NRL,0.0009025431363286989
+risk_by_t_plus_1,random_forest,"agency_Indian Institutes of Science Education and Research, Behrampur",0.000893330850407991
+risk_by_t_plus_1,random_forest,agency_Mangalore Refinary and Petrochemicals Limited,0.0008688873568429153
+risk_by_t_plus_1,random_forest,agency_National Thermal Power Corporation [NTPC],0.0008344634505700078
+risk_by_t_plus_1,random_forest,agency_Singareni Collieries Company Limited [SCCL],0.0008299427220317307
+risk_by_t_plus_1,random_forest,agency_PCE/WR,0.0008127499284077429
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Jharkhand,
+Maharashtra,
+Odisha)",0.0007539516746195969
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Karnataka, Tamil
+Nadu)",0.0007132694430899615
+risk_by_t_plus_1,random_forest,agency_Western Coalfields Limited [WCL],0.0006828883238063643
+risk_by_t_plus_1,random_forest,agency_THDC India Limited,0.0006412573701897436
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Bihar, Uttar
+Pradesh)",0.0006398872566899298
+risk_by_t_plus_1,random_forest,agency_South Eastern Coalfields Limited [SECL],0.0006309586157533133
+risk_by_t_plus_1,random_forest,"state_Multi-States (Delhi,
+Rajasthan)",0.0006178487452255304
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Assam, Bihar,
+Jharkhand,
+Odisha, West
+Bengal)",0.0006092819373937817
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Himachal
+Pradesh, Punjab)",0.0005838573441865553
+risk_by_t_plus_1,random_forest,agency_National Aluminium Company Limited [NALCO],0.00055381996958425
+risk_by_t_plus_1,random_forest,agency_Northeast Frontier Railway (NFR) - II,0.0005436588769335766
+risk_by_t_plus_1,random_forest,agency_Central Railway (CR) - II,0.0005307819623032575
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Bihar, Jharkhand)",0.0005141370611291032
+risk_by_t_plus_1,random_forest,agency_National Hydroelectric Power Corporation Limited [NHPC],0.0005075124094340615
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Chhattisgarh,
+Madhya Pradesh,
+Maharashtra,
+Odisha)",0.0005067667621533245
+risk_by_t_plus_1,random_forest,agency_Gujarat Metro Rail Corporation Limited [GMRCL],0.0005000022262074618
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Telangana)",0.0004487820568682233
+risk_by_t_plus_1,random_forest,state_Uttarakhand,0.000438126649879937
+risk_by_t_plus_1,random_forest,agency_Northern Coalfields Limited [NCL],0.00040987120375294417
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Rajasthan)",0.0003806329283138461
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Odisha)",0.00036808799284838674
+risk_by_t_plus_1,random_forest,state_Goa,0.0003679896402135861
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Chhattisgarh,
+Odisha)",0.00036750440996818207
+risk_by_t_plus_1,random_forest,agency_Mumbai Metro Rail Corporation Limited [MMRC],0.0003623590266297805
+risk_by_t_plus_1,random_forest,agency_Eastern Railway [ER] - I,0.00034935501005168695
+risk_by_t_plus_1,random_forest,agency_Karnataka Rail Infrastructure Development Company Limited [K-RIDE],0.00031610308957598783
+risk_by_t_plus_1,random_forest,agency_RVNL,0.0003156197599559837
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Uttar Pradesh)",0.00031393655755352235
+risk_by_t_plus_1,random_forest,agency_Steel Authority of India Limited [SAIL],0.0003128671864200495
+risk_by_t_plus_1,random_forest,agency_Hindustan Petroleum Corporation Limited [HPCL],0.00028660588631713573
+risk_by_t_plus_1,random_forest,state_Ladakh,0.0002801985919730758
+risk_by_t_plus_1,random_forest,state_Manipur,0.00027636281765684994
+risk_by_t_plus_1,random_forest,agency_Deendayal Port Trust [DPT],0.0002720882510084883
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Maharashtra)",0.0002539906363464491
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Karnataka)",0.0002299853254698257
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Rajasthan, Uttar
+Pradesh)",0.00022515448750317258
+risk_by_t_plus_1,random_forest,agency_Irrigation & Water Resources-UP,0.00022431990291749588
+risk_by_t_plus_1,random_forest,large_progress_jump,0.0002183549928501628
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Dadra & Nagar
+Haveli and Daman
+& Diu, Gujarat,
+Maharashtra)",0.0001795083294393468
+risk_by_t_plus_1,random_forest,agency_South Eastern Railway [SER] - I,0.00017851400388472824
+risk_by_t_plus_1,random_forest,agency_Damodar Valley Corporation,0.00017588799450659706
+risk_by_t_plus_1,random_forest,agency_BSNL,0.00017493870080257856
+risk_by_t_plus_1,random_forest,agency_Mumbai Port Trust [MPT],0.00017256560722221683
+risk_by_t_plus_1,random_forest,agency_Water Resources-AP,0.00016932527272963882
+risk_by_t_plus_1,random_forest,"agency_Indian Institute of Technology, Hyderabad",0.00016488573983820378
+risk_by_t_plus_1,random_forest,agency_National Mineral Development Corporation Limited [NMDC],0.0001640685111561222
+risk_by_t_plus_1,random_forest,agency_Ministry of Petroleum and Natural Gas,0.00016029899945845582
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Kerala, Tamil
+Nadu)",0.00014938014601579194
+risk_by_t_plus_1,random_forest,agency_DFCCIL,0.00014637598437408688
+risk_by_t_plus_1,random_forest,agency_Uttar Pradesh metro rail corporation [UPMRC],0.00014581125267506433
+risk_by_t_plus_1,random_forest,agency_Gas Authority of India Limited [GAIL],0.0001433116976903674
+risk_by_t_plus_1,random_forest,agency_Railway,0.00013882631393810315
+risk_by_t_plus_1,random_forest,agency_CAO/C/NR,0.00012918633992922964
+risk_by_t_plus_1,random_forest,agency_Department of Water Resources-JH,0.00011584072379992199
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Karnataka,
+Kerala, Tamil
+Nadu)",0.00011506096381259453
+risk_by_t_plus_1,random_forest,"state_Multi-States (Delhi,
+Haryana,
+Rajasthan)",0.00011489928375894359
+risk_by_t_plus_1,random_forest,agency_Bengaluru Metro Rail,0.0001063209062966778
+risk_by_t_plus_1,random_forest,agency_West Central Railway [WCR] - II,0.00010203772050202017
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh)",0.00010010113115830561
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Bihar, Madhya
+Pradesh,
+Rajasthan, Uttar
+Pradesh)",0.00010004328971982755
+risk_by_t_plus_1,random_forest,agency_CAO/C/NCR,9.907663530820429e-05
+risk_by_t_plus_1,random_forest,agency_Central Railway,9.616903780846752e-05
+risk_by_t_plus_1,random_forest,agency_Department of Water Resources-PB,9.464892710159893e-05
+risk_by_t_plus_1,random_forest,agency_Chennai Petroleum Corporation Limited [CPCL],9.311547856029512e-05
+risk_by_t_plus_1,random_forest,agency_National Buildings Construction Corporation [NBCC],9.28074474170426e-05
+risk_by_t_plus_1,random_forest,agency_CR,8.975059760863651e-05
+risk_by_t_plus_1,random_forest,agency_West Central Railway WCR I,8.93216305201531e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Maharashtra,
+Telangana)",8.905851085144879e-05
+risk_by_t_plus_1,random_forest,agency_Mumbai Rail Vikas Corporation Ltd.[MRVC],8.813994235006069e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States (Uttar
+Pradesh, West
+Bengal)",8.565428329515725e-05
+risk_by_t_plus_1,random_forest,agency_Madhya Pradesh Metro Rail Co Limited [MPMRCL],8.53136896354496e-05
+risk_by_t_plus_1,random_forest,agency_East Central Railway [ECR] - II,8.317858913795258e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Assam, West
+Bengal)",8.315740384722246e-05
+risk_by_t_plus_1,random_forest,agency_Inland Waterways Authority of India [IWAI],8.213495751460635e-05
+risk_by_t_plus_1,random_forest,agency_South East Central Railway [SECR] - II,7.925682067027954e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Haryana,
+Rajasthan)",7.619693893223359e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States (Goa,
+Karnataka)",7.337323760317051e-05
+risk_by_t_plus_1,random_forest,agency_South East Central Railway,6.85694945067175e-05
+risk_by_t_plus_1,random_forest,"agency_Indian Institute of Technology, Mandi",6.782871883644832e-05
+risk_by_t_plus_1,random_forest,agency_Southern Railways [SR] - construction,6.732138112325706e-05
+risk_by_t_plus_1,random_forest,"agency_Indian Institute of Management, Jammu",6.635329976553835e-05
+risk_by_t_plus_1,random_forest,"agency_Central University, Himachal Pradesh",6.617364868423105e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Bihar, Gujarat,
+Himachal Pradesh,
+Jammu and
+Kashmir, Ladakh,
+Rajasthan, Uttar
+Pradesh)",6.536554613322128e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Maharashtra,
+Rajasthan, Uttar
+Pradesh)",6.105209653870174e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra)",6.024570635107493e-05
+risk_by_t_plus_1,random_forest,agency_Central Public Works Department [CPWD],6.021536672133312e-05
+risk_by_t_plus_1,random_forest,"agency_Indian Institute of Technology, Kharagpur",5.875106276407726e-05
+risk_by_t_plus_1,random_forest,agency_Southern Railway (SR) - I,5.742522478489595e-05
+risk_by_t_plus_1,random_forest,agency_Water Resources Department-MN,5.6929098960283656e-05
+risk_by_t_plus_1,random_forest,agency_CAO/C/II/NR,5.685376759326977e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Jammu and
+Kashmir, Ladakh)",5.665025890570726e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Sikkim, West
+Bengal)",5.6633653379383744e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Sikkim)",5.6324306607825525e-05
+risk_by_t_plus_1,random_forest,agency_Delhi Metro Rail Corporation Limited [DMRC],5.419424235804211e-05
+risk_by_t_plus_1,random_forest,agency_National Communication Academy - Finance (Erstwhile NICF),5.0289047967760426e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Odisha, West
+Bengal)",4.734459647211966e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh, Uttar
+Pradesh)",4.614648228830734e-05
+risk_by_t_plus_1,random_forest,agency_Water Resources-OR,4.59270111252731e-05
+risk_by_t_plus_1,random_forest,agency_WR,4.483636147024368e-05
+risk_by_t_plus_1,random_forest,agency_INDIAN INSTITUTE OF TECHNOLOGY PALAKKAD,4.4279296024629926e-05
+risk_by_t_plus_1,random_forest,agency_Western Railway (WR) - II,4.427652969989148e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Tamil Nadu)",4.336558252225396e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Jharkhand, West
+Bengal)",4.275098973736953e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam,
+Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Sikkim,
+Tripura, West
+Bengal)",4.2714398192025e-05
+risk_by_t_plus_1,random_forest,"agency_Metro Railway, Kolkata",4.2710109637054565e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Karnataka,
+Telangana)",4.26403913582439e-05
+risk_by_t_plus_1,random_forest,agency_Water Resources-CT,4.2083138584935354e-05
+risk_by_t_plus_1,random_forest,agency_National High Speed Rail Corporation [NHSRC],4.171289964397717e-05
+risk_by_t_plus_1,random_forest,agency_South Central Railway [SCR] - I,4.150049536473414e-05
+risk_by_t_plus_1,random_forest,agency_Ministry of Education,3.625416596691447e-05
+risk_by_t_plus_1,random_forest,agency_Banaras Hindu University,3.58381720232061e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Odisha)",3.5704564191486596e-05
+risk_by_t_plus_1,random_forest,agency_CAO/C/ECoR,3.527919426602295e-05
+risk_by_t_plus_1,random_forest,agency_RVNL - I,3.3166935729298917e-05
+risk_by_t_plus_1,random_forest,agency_Tezpur University,3.0684808396055506e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Gujarat,
+Rajasthan)",3.0292334074114124e-05
+risk_by_t_plus_1,random_forest,agency_MRIDC,2.9878508263524666e-05
+risk_by_t_plus_1,random_forest,agency_Hindustan Copper Limited [HCL],2.8245618547534344e-05
+risk_by_t_plus_1,random_forest,agency_Central Organisation for Railway Electrification [CORE],2.768557228811195e-05
+risk_by_t_plus_1,random_forest,state_Puducherry,2.7525773989674237e-05
+risk_by_t_plus_1,random_forest,agency_Water resource-mp,2.7447533589609e-05
+risk_by_t_plus_1,random_forest,agency_NIT Patna,2.6433131092484357e-05
+risk_by_t_plus_1,random_forest,agency_Bharat Coking Coal Limited [BCCL],2.4703862768363846e-05
+risk_by_t_plus_1,random_forest,agency_Ministry of Health & Family Welfare,2.4187812992243666e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Bihar, Odisha,
+West Bengal)",2.400579016816591e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Bihar, West
+Bengal)",2.0764463713739173e-05
+risk_by_t_plus_1,random_forest,state_Arunachal Pradesh,2.063757002436451e-05
+risk_by_t_plus_1,random_forest,agency_Mahanadi Coalfields Limited [MCL],2.0241422000874903e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Gujarat,
+Rajasthan)",2.023686763738365e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Assam,
+Nagaland)",2.0088310926748732e-05
+risk_by_t_plus_1,random_forest,state_Mizoram,1.8617646557030766e-05
+risk_by_t_plus_1,random_forest,"agency_Indian intitue of Management, Amritsar",1.8285007404708352e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Jammu and
+Kashmir, Punjab)",1.7461928675016425e-05
+risk_by_t_plus_1,random_forest,agency_NIT Sikkim,1.6849889958336898e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Punjab,
+Rajasthan)",1.540375015055658e-05
+risk_by_t_plus_1,random_forest,"agency_Indian Institute of Technology, Bombay",1.4732449184208035e-05
+risk_by_t_plus_1,random_forest,agency_South Eastern Railway - JH,1.4586347120443275e-05
+risk_by_t_plus_1,random_forest,"agency_National Institute of Technology, Puducherry",1.3975807576546918e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Haryana,
+Himachal Pradesh)",1.3415415425173172e-05
+risk_by_t_plus_1,random_forest,agency_SR-ERS,1.2952782813356714e-05
+risk_by_t_plus_1,random_forest,state_Nagaland,1.2742569286322567e-05
+risk_by_t_plus_1,random_forest,"agency_National Institute of Technology, Meghalaya",1.2735509366827074e-05
+risk_by_t_plus_1,random_forest,agency_Indian Port Rail & Ropeway Corporation Ltd. [IPRCL],1.2247452325083054e-05
+risk_by_t_plus_1,random_forest,"agency_Indian Institute of Management, Sirmaur",1.0159125707102922e-05
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Jharkhand,
+Odisha)",9.752968404412147e-06
+risk_by_t_plus_1,random_forest,agency_National Capital Region Transport Corporation [NCRTC],9.344240953693896e-06
+risk_by_t_plus_1,random_forest,agency_PMSSY/Institute of National Importance (INI),7.880048430676916e-06
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Bihar, Jharkhand,
+Uttar Pradesh,
+West Bengal)",7.753674261421099e-06
+risk_by_t_plus_1,random_forest,agency_Water Resources-BR,6.345964731488535e-06
+risk_by_t_plus_1,random_forest,very_large_progress_jump,6.2243251566613015e-06
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra,
+Telangana, Uttar
+Pradesh)",5.79524397415899e-06
+risk_by_t_plus_1,random_forest,agency_CSPCC Projects,5.637706841660981e-06
+risk_by_t_plus_1,random_forest,agency_Patna Metro Rail Corporation Ltd. [PMRCL],4.3532517489955206e-06
+risk_by_t_plus_1,random_forest,"agency_Haldia Dock Complex, Syama Prasad Mookerjee Port Authority",4.116099505964057e-06
+risk_by_t_plus_1,random_forest,agency_Adani Airport Holdings Limited,2.9374833701514887e-06
+risk_by_t_plus_1,random_forest,agency_NIT Mizoram,2.6720549656256196e-06
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Chhattisgarh,
+Maharashtra)",2.5053190579764638e-06
+risk_by_t_plus_1,random_forest,agency_Central University of Gujarat,1.5886796653760498e-06
+risk_by_t_plus_1,random_forest,agency_MCL - CIL,1.5800401473234609e-06
+risk_by_t_plus_1,random_forest,agency_Paradip Port Trust [PPT],7.418592102556958e-07
+risk_by_t_plus_1,random_forest,agency_Mahanadi Coalfields Limited (MCL),2.472786876485017e-07
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Punjab,
+Rajasthan)",1.6101776120648223e-07
+risk_by_t_plus_1,random_forest,agency_GM/C/ NFR,0.0
+risk_by_t_plus_1,random_forest,very_large_expenditure_change,0.0
+risk_by_t_plus_1,random_forest,agency_BCCL - CIL,0.0
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan, Uttar
+Pradesh)",0.0
+risk_by_t_plus_1,random_forest,agency_Central Railways,0.0
+risk_by_t_plus_1,random_forest,agency_Cochin Shipyard,0.0
+risk_by_t_plus_1,random_forest,agency_Department of Sports & Youth Affairs,0.0
+risk_by_t_plus_1,random_forest,agency_ECL - CIL,0.0
+risk_by_t_plus_1,random_forest,long_observation_gap,0.0
+risk_by_t_plus_1,random_forest,agency_Gujarat,0.0
+risk_by_t_plus_1,random_forest,expenditure_available,0.0
+risk_by_t_plus_1,random_forest,"state_Multi-States
+(Haryana, Punjab,
+Rajasthan)",0.0
+risk_by_t_plus_1,random_forest,agency_North Central Railway (NCR) - II,0.0
+risk_by_t_plus_1,random_forest,"state_Multi-States (Delhi,
+Uttar Pradesh)",0.0
+risk_by_t_plus_1,random_forest,progress_available,0.0
+risk_by_t_plus_1,random_forest,agency_Rail Vikas Nigam Limited,0.0
+risk_by_t_plus_1,random_forest,agency_SECL - CIL,0.0
+risk_by_t_plus_1,random_forest,agency_Southern Railway [SR] - I,0.0
+risk_by_t_plus_1,random_forest,agency_Indian Railway,0.0
+risk_by_t_plus_1,permutation,months_since_first_observation,0.015088330381000586
+risk_by_t_plus_1,permutation,project_observation_count,0.008110579314170602
+risk_by_t_plus_1,permutation,progress_first_observation,0.00568282645455051
+risk_by_t_plus_1,permutation,progress_current,0.005371798944712625
+risk_by_t_plus_1,permutation,stall_count_to_date,0.004303692076858556
+risk_by_t_plus_1,permutation,expenditure_velocity,0.0030894610722770276
+risk_by_t_plus_1,permutation,agency,0.0020340732310656583
+risk_by_t_plus_1,permutation,cost_ratio,0.002006812369423899
+risk_by_t_plus_1,permutation,progress_acceleration,0.0018957600383090357
+risk_by_t_plus_1,permutation,progress_stalled,0.0006160631603055078
+risk_by_t_plus_1,permutation,revised_cost_change,0.0004798508190191397
+risk_by_t_plus_1,permutation,large_progress_jump,6.70397471099704e-05
+risk_by_t_plus_1,permutation,large_expenditure_change,3.0275268658469522e-05
+risk_by_t_plus_1,permutation,very_large_progress_jump,6.240116263683815e-06
+risk_by_t_plus_1,permutation,very_large_expenditure_change,0.0
+risk_by_t_plus_1,permutation,long_observation_gap,0.0
+risk_by_t_plus_1,permutation,progress_available,0.0
+risk_by_t_plus_1,permutation,expenditure_available,0.0
+risk_by_t_plus_1,permutation,expenditure_decrease_flag,-0.00014579725504008101
+risk_by_t_plus_1,permutation,state,-0.0006715003976426659
+risk_by_t_plus_1,permutation,revised_cost_ratio,-0.0012421942598576708
+risk_by_t_plus_1,permutation,progress_velocity,-0.0014866937137144986
+risk_by_t_plus_1,permutation,progress_decrease_flag,-0.0016158341453152258
+risk_by_t_plus_1,permutation,progress_3m_change,-0.002334549673476133
+risk_by_t_plus_1,permutation,expenditure_current,-0.0026927749456553906
+risk_by_t_plus_1,permutation,expenditure_3m_change,-0.007657334427761231
+risk_by_t_plus_2,random_forest,cost_ratio,0.0957741502531955
+risk_by_t_plus_2,random_forest,progress_current,0.08573306498264796
+risk_by_t_plus_2,random_forest,expenditure_current,0.07713598607220427
+risk_by_t_plus_2,random_forest,project_observation_count,0.056271247463383765
+risk_by_t_plus_2,random_forest,months_since_first_observation,0.05166330056275896
+risk_by_t_plus_2,random_forest,expenditure_velocity,0.04982200104139836
+risk_by_t_plus_2,random_forest,revised_cost_ratio,0.04469071596886034
+risk_by_t_plus_2,random_forest,revised_cost_change,0.04300145125190154
+risk_by_t_plus_2,random_forest,expenditure_3m_change,0.03008672956476073
+risk_by_t_plus_2,random_forest,stall_count_to_date,0.019515324267248398
+risk_by_t_plus_2,random_forest,agency_Power Grid Corporation of India Limited [POWERGRID],0.01943922284535599
+risk_by_t_plus_2,random_forest,progress_velocity,0.019213187419032537
+risk_by_t_plus_2,random_forest,progress_3m_change,0.01901383766026853
+risk_by_t_plus_2,random_forest,progress_acceleration,0.017771737338944573
+risk_by_t_plus_2,random_forest,agency_Ministry of Petroleum & Natural Gas,0.016131875793078062
+risk_by_t_plus_2,random_forest,state_Maharashtra,0.009103632900874974
+risk_by_t_plus_2,random_forest,state_Gujarat,0.009074198854290023
+risk_by_t_plus_2,random_forest,progress_stalled,0.008708852210200452
+risk_by_t_plus_2,random_forest,agency_Employee's State Insurance Company [ESIC],0.008682261501121537
+risk_by_t_plus_2,random_forest,agency_Oil and Natural Gas Corporation Limited [ONGC],0.008626957696937563
+risk_by_t_plus_2,random_forest,state_Bihar,0.008258134335452798
+risk_by_t_plus_2,random_forest,agency_Department of Telecommunications [DoT],0.008149261752431263
+risk_by_t_plus_2,random_forest,agency_East Coast Railway [ECoR] - II,0.008006367479578272
+risk_by_t_plus_2,random_forest,agency_South Western Railway [SWR] - II,0.007735369540378157
+risk_by_t_plus_2,random_forest,state_Karnataka,0.007439238131777821
+risk_by_t_plus_2,random_forest,agency_Ministry of Housing & Urban Affairs,0.007382873129264732
+risk_by_t_plus_2,random_forest,agency_Airport Authority of India [AAI],0.0073720897935777826
+risk_by_t_plus_2,random_forest,agency_NLC India Limited [NLCIL],0.0069435348429423525
+risk_by_t_plus_2,random_forest,progress_first_observation,0.00636640614714189
+risk_by_t_plus_2,random_forest,agency_Western Railway,0.006252782308197781
+risk_by_t_plus_2,random_forest,"state_Jammu and
+Kashmir",0.0062010890715678965
+risk_by_t_plus_2,random_forest,state_West Bengal,0.0060900877934448264
+risk_by_t_plus_2,random_forest,state_Rajasthan,0.005770235136110391
+risk_by_t_plus_2,random_forest,state_Odisha,0.005714762660036659
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Bihar,
+Chhattisgarh,
+Jharkhand,
+Madhya Pradesh,
+Maharashtra,
+Odisha,
+Telangana, Uttar
+Pradesh, West
+Bengal)",0.005358098610352165
+risk_by_t_plus_2,random_forest,agency_South Central Railway [SCR] - II,0.005287689458270989
+risk_by_t_plus_2,random_forest,state_Assam,0.005141392823776229
+risk_by_t_plus_2,random_forest,state_Uttar Pradesh,0.005081563377878597
+risk_by_t_plus_2,random_forest,state_Tamil Nadu,0.004486778667055825
+risk_by_t_plus_2,random_forest,state_Madhya Pradesh,0.004357916093996243
+risk_by_t_plus_2,random_forest,agency_Indian Railway Construction International Limited [IRCON],0.004338620609914441
+risk_by_t_plus_2,random_forest,state_Jharkhand,0.0043257176515521445
+risk_by_t_plus_2,random_forest,agency_RVNL - I,0.004229545241739084
+risk_by_t_plus_2,random_forest,agency_Water Resources-MP,0.0041956954602856015
+risk_by_t_plus_2,random_forest,state_Andhra Pradesh,0.004149538942620944
+risk_by_t_plus_2,random_forest,agency_East Central Railway [ECR] - I,0.003897082931796239
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam)",0.0038354458246279838
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Assam, Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Tripura)",0.00369034816388064
+risk_by_t_plus_2,random_forest,agency_National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],0.0036336768397720104
+risk_by_t_plus_2,random_forest,agency_RVNL - II,0.0035280780875013495
+risk_by_t_plus_2,random_forest,agency_Bharat Petroleum Corporation Limited [BPCL],0.0034974468292733223
+risk_by_t_plus_2,random_forest,agency_MinistryofPetroleumNaturalGas,0.0034902664566506644
+risk_by_t_plus_2,random_forest,agency_SECR,0.0034264979606956855
+risk_by_t_plus_2,random_forest,state_Haryana,0.0033874876607187885
+risk_by_t_plus_2,random_forest,agency_NRL,0.003344282726741243
+risk_by_t_plus_2,random_forest,agency_North Central Railway,0.0032812688467241656
+risk_by_t_plus_2,random_forest,state_Chhattisgarh,0.003214137891804634
+risk_by_t_plus_2,random_forest,"agency_Narmada and Water Resources, Water Supply and Kalpsar Department-GJ",0.0031952320897921977
+risk_by_t_plus_2,random_forest,agency_Ministry of Coal,0.00318755843023639
+risk_by_t_plus_2,random_forest,agency_Eastern Coal Fields Limited [ECL],0.0031644385049615967
+risk_by_t_plus_2,random_forest,state_Meghalaya,0.0030811907929185985
+risk_by_t_plus_2,random_forest,agency_Northeast Frontier Railway [NFR],0.0030492863311553575
+risk_by_t_plus_2,random_forest,agency_IISC Bangalore,0.0030438046269975487
+risk_by_t_plus_2,random_forest,agency_North Western Railway [NWR],0.0029293591438396345
+risk_by_t_plus_2,random_forest,agency_Sikkim University,0.002714962142645036
+risk_by_t_plus_2,random_forest,state_Delhi,0.0024606151142005424
+risk_by_t_plus_2,random_forest,state_Offshore,0.0022924045171949475
+risk_by_t_plus_2,random_forest,state_Telangana,0.0022766638931673217
+risk_by_t_plus_2,random_forest,state_Punjab,0.0022765039843065313
+risk_by_t_plus_2,random_forest,expenditure_decrease_flag,0.002260324836617465
+risk_by_t_plus_2,random_forest,state_Tripura,0.0022283461714057476
+risk_by_t_plus_2,random_forest,agency_Western Coalfields Limited [WCL],0.002130262912416452
+risk_by_t_plus_2,random_forest,agency_National Mission for Clean Ganga,0.002114769954997566
+risk_by_t_plus_2,random_forest,agency_Hindustan Petroleum Corporation Limited,0.0020917513377051774
+risk_by_t_plus_2,random_forest,agency_Western Railway [WR] - II,0.0020890955033322387
+risk_by_t_plus_2,random_forest,state_Sikkim,0.002030395070426753
+risk_by_t_plus_2,random_forest,agency_Department of water resources-MH - II,0.002004158088682542
+risk_by_t_plus_2,random_forest,agency_Indian Oil Corporation Limited [IOCL],0.001852829879644355
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Puducherry, Tamil
+Nadu)",0.0017753766003984854
+risk_by_t_plus_2,random_forest,state_PAN India,0.0017522553970002448
+risk_by_t_plus_2,random_forest,agency_PMSSY/Institute of National Importance (INI),0.001676838953875035
+risk_by_t_plus_2,random_forest,state_Himachal Pradesh,0.0015931320101518229
+risk_by_t_plus_2,random_forest,"agency_Indian Institutes of Science Education and Research, Behrampur",0.0015873634774863444
+risk_by_t_plus_2,random_forest,agency_EDTK[MC]/RB,0.00155866453554929
+risk_by_t_plus_2,random_forest,progress_decrease_flag,0.001493337920255269
+risk_by_t_plus_2,random_forest,agency_National Aluminium Company Limited [NALCO],0.0014335926871783097
+risk_by_t_plus_2,random_forest,"agency_Department of Water Resources, River Development & GR",0.001426061341649651
+risk_by_t_plus_2,random_forest,agency_North Eastern Railway [NER],0.0013928167984265864
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Chhattisgarh,
+Madhya Pradesh,
+Maharashtra,
+Odisha)",0.001361261143426856
+risk_by_t_plus_2,random_forest,agency_Central Railway [CR] - II,0.0013504302624642909
+risk_by_t_plus_2,random_forest,agency_Southern Railway [SR] - II,0.0013187196178165914
+risk_by_t_plus_2,random_forest,agency_Department of Telecommunications,0.001211031367941819
+risk_by_t_plus_2,random_forest,agency_National Hydroelectric Power Corporation Limited [NHPC],0.0011710617502103337
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Uttar Pradesh)",0.0011544194620887473
+risk_by_t_plus_2,random_forest,agency_PCE/WR,0.0010949636342542444
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Karnataka, Tamil
+Nadu)",0.00109432784350439
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Jharkhand,
+Maharashtra,
+Odisha)",0.0010860791289643674
+risk_by_t_plus_2,random_forest,agency_Irrigation and CAD-TG,0.0010770413887889255
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Himachal
+Pradesh, Punjab)",0.0010760944108513118
+risk_by_t_plus_2,random_forest,agency_Northern Coalfields Limited [NCL],0.0010637392795301284
+risk_by_t_plus_2,random_forest,"state_Multi-States (Delhi,
+Rajasthan)",0.0010030763146594303
+risk_by_t_plus_2,random_forest,agency_Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,0.001000201555683029
+risk_by_t_plus_2,random_forest,agency_Eastern Railway [ER] - I,0.0009967515977320949
+risk_by_t_plus_2,random_forest,agency_Singareni Collieries Company Limited [SCCL],0.0009338625684891116
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Assam, Bihar,
+Jharkhand,
+Odisha, West
+Bengal)",0.0009260187195233572
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Maharashtra)",0.0009234377010287612
+risk_by_t_plus_2,random_forest,large_expenditure_change,0.0009179531916537344
+risk_by_t_plus_2,random_forest,state_Kerala,0.0009139034268174643
+risk_by_t_plus_2,random_forest,agency_East Central Railway [ECR] - II,0.000886882589305482
+risk_by_t_plus_2,random_forest,agency_Northen Railway [NR],0.0008533310614912771
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Gujarat,
+Maharashtra)",0.0008312339679831256
+risk_by_t_plus_2,random_forest,agency_South Eastern Coalfields Limited [SECL],0.0008278344369686321
+risk_by_t_plus_2,random_forest,agency_Central Railway (CR) - II,0.0008248825059486445
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Telangana)",0.0008140732022351384
+risk_by_t_plus_2,random_forest,agency_National Thermal Power Corporation [NTPC],0.0008106558889497299
+risk_by_t_plus_2,random_forest,state_Uttarakhand,0.0007481244169085918
+risk_by_t_plus_2,random_forest,agency_THDC India Limited,0.0007046039446400315
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Bihar, Jharkhand)",0.0006669366032092511
+risk_by_t_plus_2,random_forest,agency_BSNL,0.0006655538798023634
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan)",0.0006488333432968014
+risk_by_t_plus_2,random_forest,state_Goa,0.0006397455551200468
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Rajasthan)",0.0006136252831074418
+risk_by_t_plus_2,random_forest,agency_Gujarat Metro Rail Corporation Limited [GMRCL],0.0005969482633969868
+risk_by_t_plus_2,random_forest,agency_Hindustan Petroleum Corporation Limited [HPCL],0.0005099961639569711
+risk_by_t_plus_2,random_forest,agency_Steel Authority of India Limited [SAIL],0.0004928876990479538
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Odisha)",0.00046981205515932693
+risk_by_t_plus_2,random_forest,"state_Multi-States (Goa,
+Karnataka)",0.0004473908853645573
+risk_by_t_plus_2,random_forest,agency_Water Resources-KA,0.000430873768791874
+risk_by_t_plus_2,random_forest,state_Ladakh,0.00042775211387821273
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Bihar, Uttar
+Pradesh)",0.0004200378181398695
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Chhattisgarh,
+Odisha)",0.0004148280532365455
+risk_by_t_plus_2,random_forest,agency_CAO/C/NCR,0.0004028020724601187
+risk_by_t_plus_2,random_forest,agency_RVNL,0.0003885762257633951
+risk_by_t_plus_2,random_forest,state_Manipur,0.0003778544869263978
+risk_by_t_plus_2,random_forest,agency_Central Railway,0.0003771332399763596
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Karnataka)",0.0003713151448175158
+risk_by_t_plus_2,random_forest,agency_Bengaluru Metro Rail,0.00035947806699264905
+risk_by_t_plus_2,random_forest,agency_West Central Railway [WCR] - II,0.0003521090729676075
+risk_by_t_plus_2,random_forest,agency_PMSSY AND Institute of NATIONAL Importance,0.0003261788799293644
+risk_by_t_plus_2,random_forest,agency_Mangalore Refinary and Petrochemicals Limited,0.00031371593456060414
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Rajasthan, Uttar
+Pradesh)",0.0003107563950379027
+risk_by_t_plus_2,random_forest,agency_South Eastern Railway [SER] - I,0.00030747367616899347
+risk_by_t_plus_2,random_forest,agency_Water Resources-AP,0.00030431276792929534
+risk_by_t_plus_2,random_forest,agency_Madhya Pradesh Metro Rail Co Limited [MPMRCL],0.0002870048672771875
+risk_by_t_plus_2,random_forest,agency_Uttar Pradesh metro rail corporation [UPMRC],0.0002840893637666481
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Bihar, Gujarat,
+Himachal Pradesh,
+Jammu and
+Kashmir, Ladakh,
+Rajasthan, Uttar
+Pradesh)",0.00027805860457793787
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Dadra & Nagar
+Haveli and Daman
+& Diu, Gujarat,
+Maharashtra)",0.00023167523551575014
+risk_by_t_plus_2,random_forest,agency_Department of Water Resources-PB,0.00021998584379805244
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh)",0.0002138846703767098
+risk_by_t_plus_2,random_forest,"agency_Central University, Himachal Pradesh",0.00020917335596998574
+risk_by_t_plus_2,random_forest,agency_Railway,0.0002016288266080115
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Odisha, West
+Bengal)",0.00020089467859333825
+risk_by_t_plus_2,random_forest,agency_Karnataka Rail Infrastructure Development Company Limited [K-RIDE],0.00020001979660516368
+risk_by_t_plus_2,random_forest,agency_Mumbai Rail Vikas Corporation Ltd.[MRVC],0.00019734724237076425
+risk_by_t_plus_2,random_forest,agency_Damodar Valley Corporation,0.0001910275355797268
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Punjab,
+Rajasthan)",0.00018012865291212751
+risk_by_t_plus_2,random_forest,agency_CAO/C/NR,0.00017806816392853435
+risk_by_t_plus_2,random_forest,agency_Southern Railways [SR] - construction,0.0001685853869793493
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Maharashtra,
+Telangana)",0.00016669315641347092
+risk_by_t_plus_2,random_forest,agency_Water Resources Department-MN,0.00016540797721999634
+risk_by_t_plus_2,random_forest,agency_Deendayal Port Trust [DPT],0.00016508284595666064
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam,
+Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Sikkim,
+Tripura, West
+Bengal)",0.00016464266447222887
+risk_by_t_plus_2,random_forest,agency_Gas Authority of India Limited [GAIL],0.00016426048787815024
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Bihar, Madhya
+Pradesh,
+Rajasthan, Uttar
+Pradesh)",0.00016335929482573706
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra)",0.00016175484017056854
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Sikkim)",0.0001549002164729703
+risk_by_t_plus_2,random_forest,agency_West Central Railway WCR I,0.00015196665970846197
+risk_by_t_plus_2,random_forest,agency_Chennai Petroleum Corporation Limited [CPCL],0.00014690427046886757
+risk_by_t_plus_2,random_forest,large_progress_jump,0.00014635061110598136
+risk_by_t_plus_2,random_forest,agency_Indian Port Rail & Ropeway Corporation Ltd. [IPRCL],0.00014542098748660486
+risk_by_t_plus_2,random_forest,agency_INDIAN INSTITUTE OF TECHNOLOGY PALAKKAD,0.0001376047441233315
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Sikkim, West
+Bengal)",0.00013672042864948606
+risk_by_t_plus_2,random_forest,agency_Mumbai Port Trust [MPT],0.0001339021020454088
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh, Uttar
+Pradesh)",0.00013120334648196618
+risk_by_t_plus_2,random_forest,agency_National Mineral Development Corporation Limited [NMDC],0.0001294302683672317
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Jharkhand, West
+Bengal)",0.00012897260388309458
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Karnataka,
+Kerala, Tamil
+Nadu)",0.00012796553629102647
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Kerala, Tamil
+Nadu)",0.00012588962006903698
+risk_by_t_plus_2,random_forest,agency_Western Railway (WR) - II,0.00010848843295236897
+risk_by_t_plus_2,random_forest,agency_South East Central Railway [SECR] - II,0.0001083414616698426
+risk_by_t_plus_2,random_forest,"state_Multi-States (Uttar
+Pradesh, West
+Bengal)",0.00010783888500194954
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Maharashtra,
+Rajasthan, Uttar
+Pradesh)",0.00010699556506100163
+risk_by_t_plus_2,random_forest,agency_South Eastern Railway - JH,0.00010593962058878884
+risk_by_t_plus_2,random_forest,"agency_Indian Institute of Technology, Mandi",0.00010413662014961654
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Assam,
+Nagaland)",9.887310715116476e-05
+risk_by_t_plus_2,random_forest,agency_CAO/C/II/NR,9.640002639354233e-05
+risk_by_t_plus_2,random_forest,state_Puducherry,9.575747804822514e-05
+risk_by_t_plus_2,random_forest,agency_Ministry of Petroleum and Natural Gas,9.539356386559698e-05
+risk_by_t_plus_2,random_forest,"agency_Indian Institute of Technology, Hyderabad",9.423707108042436e-05
+risk_by_t_plus_2,random_forest,agency_Mumbai Metro Rail Corporation Limited [MMRC],9.422818069527124e-05
+risk_by_t_plus_2,random_forest,agency_MRIDC,9.378842256027417e-05
+risk_by_t_plus_2,random_forest,"agency_Indian Institute of Management, Sirmaur",9.291630909780863e-05
+risk_by_t_plus_2,random_forest,agency_Delhi Metro Rail Corporation Limited [DMRC],9.19763155796221e-05
+risk_by_t_plus_2,random_forest,agency_Banaras Hindu University,9.157007267022073e-05
+risk_by_t_plus_2,random_forest,agency_Southern Railway (SR) - I,9.069564149635429e-05
+risk_by_t_plus_2,random_forest,agency_Hindustan Copper Limited [HCL],9.028630272990735e-05
+risk_by_t_plus_2,random_forest,agency_Irrigation & Water Resources-UP,9.023767052190849e-05
+risk_by_t_plus_2,random_forest,agency_Inland Waterways Authority of India [IWAI],8.759188646031406e-05
+risk_by_t_plus_2,random_forest,agency_Ministry of Education,8.599000350008117e-05
+risk_by_t_plus_2,random_forest,agency_Central Organisation for Railway Electrification [CORE],8.461367347686677e-05
+risk_by_t_plus_2,random_forest,agency_South Central Railway [SCR] - I,8.128793765662659e-05
+risk_by_t_plus_2,random_forest,agency_National Communication Academy - Finance (Erstwhile NICF),8.1264470014228e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Assam, West
+Bengal)",8.072502779138608e-05
+risk_by_t_plus_2,random_forest,agency_Mahanadi Coalfields Limited [MCL],8.056652560419001e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Jharkhand,
+Odisha)",7.779633237170302e-05
+risk_by_t_plus_2,random_forest,agency_Central Public Works Department [CPWD],7.675474604007462e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Jammu and
+Kashmir, Punjab)",7.565489533200763e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra,
+Telangana, Uttar
+Pradesh)",7.392268878120209e-05
+risk_by_t_plus_2,random_forest,agency_Ministry of Health & Family Welfare,7.268400495720242e-05
+risk_by_t_plus_2,random_forest,agency_SR-ERS,7.158358480030576e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Tamil Nadu)",7.1570366714114e-05
+risk_by_t_plus_2,random_forest,agency_Northeast Frontier Railway (NFR) - II,7.086910633277794e-05
+risk_by_t_plus_2,random_forest,agency_National High Speed Rail Corporation [NHSRC],6.987003370638251e-05
+risk_by_t_plus_2,random_forest,agency_DFCCIL,6.746305141575303e-05
+risk_by_t_plus_2,random_forest,"agency_Indian Institute of Technology, Kharagpur",6.71559476435214e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Bihar, Jharkhand,
+Uttar Pradesh,
+West Bengal)",6.666744619465657e-05
+risk_by_t_plus_2,random_forest,agency_Water Resources-CT,6.460028909950976e-05
+risk_by_t_plus_2,random_forest,agency_Department of Water Resources-JH,6.403430415470085e-05
+risk_by_t_plus_2,random_forest,agency_CR,6.153631686620577e-05
+risk_by_t_plus_2,random_forest,"agency_National Institute of Technology, Meghalaya",5.781938961028415e-05
+risk_by_t_plus_2,random_forest,agency_South East Central Railway,5.44818468077243e-05
+risk_by_t_plus_2,random_forest,agency_National Buildings Construction Corporation [NBCC],5.1082338357095634e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Haryana,
+Rajasthan)",5.0392418653109055e-05
+risk_by_t_plus_2,random_forest,"agency_Indian intitue of Management, Amritsar",4.8653486425826e-05
+risk_by_t_plus_2,random_forest,"agency_National Institute of Technology, Puducherry",4.82677672690065e-05
+risk_by_t_plus_2,random_forest,agency_Water Resources-OR,4.767086227220975e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan, Uttar
+Pradesh)",4.7191317536599936e-05
+risk_by_t_plus_2,random_forest,agency_CSPCC Projects,4.420442715930686e-05
+risk_by_t_plus_2,random_forest,agency_Tezpur University,4.277122992978423e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Jammu and
+Kashmir, Ladakh)",4.1790164598035625e-05
+risk_by_t_plus_2,random_forest,"agency_Haldia Dock Complex, Syama Prasad Mookerjee Port Authority",4.157020764428621e-05
+risk_by_t_plus_2,random_forest,agency_Adani Airport Holdings Limited,3.860091037024293e-05
+risk_by_t_plus_2,random_forest,agency_NIT Patna,3.420564441837097e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Karnataka,
+Telangana)",3.406921931608738e-05
+risk_by_t_plus_2,random_forest,state_Mizoram,3.3873115983280054e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States (Delhi,
+Uttar Pradesh)",3.270242980231912e-05
+risk_by_t_plus_2,random_forest,agency_Water Resources-BR,3.2317150454527386e-05
+risk_by_t_plus_2,random_forest,"agency_Metro Railway, Kolkata",3.150911330129428e-05
+risk_by_t_plus_2,random_forest,agency_Paradip Port Trust [PPT],3.008580375746152e-05
+risk_by_t_plus_2,random_forest,"agency_Indian Institute of Management, Jammu",2.9481742198085916e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Gujarat,
+Rajasthan)",2.877105696381658e-05
+risk_by_t_plus_2,random_forest,agency_Bharat Coking Coal Limited [BCCL],2.767616868732117e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Haryana,
+Himachal Pradesh)",2.6290130970762353e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Chhattisgarh,
+Maharashtra)",2.6024660796954305e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Gujarat,
+Rajasthan)",2.3054192836720126e-05
+risk_by_t_plus_2,random_forest,agency_Water resource-mp,2.2621530077320375e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States (Delhi,
+Haryana,
+Rajasthan)",2.1906777242118373e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Punjab,
+Rajasthan)",1.7476276910546342e-05
+risk_by_t_plus_2,random_forest,agency_WR,1.7350035179527082e-05
+risk_by_t_plus_2,random_forest,agency_MCL - CIL,1.6880826415512067e-05
+risk_by_t_plus_2,random_forest,agency_NIT Mizoram,1.67663027756813e-05
+risk_by_t_plus_2,random_forest,agency_Central University of Gujarat,1.6216409573094975e-05
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Bihar, West
+Bengal)",1.544128550937045e-05
+risk_by_t_plus_2,random_forest,state_Nagaland,1.1884178283335318e-05
+risk_by_t_plus_2,random_forest,agency_Patna Metro Rail Corporation Ltd. [PMRCL],1.1382196499901427e-05
+risk_by_t_plus_2,random_forest,state_Arunachal Pradesh,9.219719572476817e-06
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Odisha)",8.18226457251844e-06
+risk_by_t_plus_2,random_forest,agency_NIT Sikkim,6.018401779335027e-06
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Bihar, Odisha,
+West Bengal)",5.797843684077257e-06
+risk_by_t_plus_2,random_forest,agency_Gujarat,5.3467176885300925e-06
+risk_by_t_plus_2,random_forest,agency_National Capital Region Transport Corporation [NCRTC],4.597062743780231e-06
+risk_by_t_plus_2,random_forest,agency_Mahanadi Coalfields Limited (MCL),3.154687876456481e-06
+risk_by_t_plus_2,random_forest,"agency_Indian Institute of Technology, Bombay",3.029179714321912e-06
+risk_by_t_plus_2,random_forest,agency_GM/C/ NFR,2.353881493914934e-06
+risk_by_t_plus_2,random_forest,very_large_progress_jump,3.6212974857548865e-07
+risk_by_t_plus_2,random_forest,"state_Multi-States
+(Haryana, Punjab,
+Rajasthan)",1.4554337039141902e-07
+risk_by_t_plus_2,random_forest,agency_North Central Railway (NCR) - II,1.398744827106453e-07
+risk_by_t_plus_2,random_forest,agency_Rail Vikas Nigam Limited,0.0
+risk_by_t_plus_2,random_forest,agency_SECL - CIL,0.0
+risk_by_t_plus_2,random_forest,expenditure_available,0.0
+risk_by_t_plus_2,random_forest,long_observation_gap,0.0
+risk_by_t_plus_2,random_forest,agency_ECL - CIL,0.0
+risk_by_t_plus_2,random_forest,agency_Department of Sports & Youth Affairs,0.0
+risk_by_t_plus_2,random_forest,progress_available,0.0
+risk_by_t_plus_2,random_forest,agency_Central Railways,0.0
+risk_by_t_plus_2,random_forest,agency_BCCL - CIL,0.0
+risk_by_t_plus_2,random_forest,very_large_expenditure_change,0.0
+risk_by_t_plus_2,permutation,progress_current,0.01286528973779385
+risk_by_t_plus_2,permutation,agency,0.012761221864131634
+risk_by_t_plus_2,permutation,months_since_first_observation,0.006953398426723034
+risk_by_t_plus_2,permutation,state,0.006587777563275388
+risk_by_t_plus_2,permutation,expenditure_velocity,0.0054271442610792755
+risk_by_t_plus_2,permutation,revised_cost_ratio,0.002615888537822353
+risk_by_t_plus_2,permutation,revised_cost_change,0.001482397893618126
+risk_by_t_plus_2,permutation,progress_first_observation,0.0011619602997016477
+risk_by_t_plus_2,permutation,progress_3m_change,0.0006560221514361197
+risk_by_t_plus_2,permutation,progress_stalled,0.0005184627297124322
+risk_by_t_plus_2,permutation,expenditure_current,0.0004104636729210909
+risk_by_t_plus_2,permutation,expenditure_decrease_flag,0.0001185403821173825
+risk_by_t_plus_2,permutation,progress_available,0.0
+risk_by_t_plus_2,permutation,long_observation_gap,0.0
+risk_by_t_plus_2,permutation,very_large_expenditure_change,0.0
+risk_by_t_plus_2,permutation,expenditure_available,0.0
+risk_by_t_plus_2,permutation,very_large_progress_jump,-2.1735594919025656e-06
+risk_by_t_plus_2,permutation,large_expenditure_change,-3.604383196954552e-05
+risk_by_t_plus_2,permutation,progress_decrease_flag,-5.4942738544150326e-05
+risk_by_t_plus_2,permutation,large_progress_jump,-8.03134123927185e-05
+risk_by_t_plus_2,permutation,progress_velocity,-0.0004895508522737568
+risk_by_t_plus_2,permutation,progress_acceleration,-0.0011133436732991165
+risk_by_t_plus_2,permutation,stall_count_to_date,-0.0013864657733996145
+risk_by_t_plus_2,permutation,cost_ratio,-0.009034664822557681
+risk_by_t_plus_2,permutation,expenditure_3m_change,-0.011215286772302524
+risk_by_t_plus_2,permutation,project_observation_count,-0.014971714829849724
+risk_by_t_plus_3,random_forest,progress_current,0.1034251572319009
+risk_by_t_plus_3,random_forest,cost_ratio,0.10021680709977526
+risk_by_t_plus_3,random_forest,expenditure_current,0.07586516929086731
+risk_by_t_plus_3,random_forest,expenditure_velocity,0.05064001431846031
+risk_by_t_plus_3,random_forest,revised_cost_ratio,0.04427570181948103
+risk_by_t_plus_3,random_forest,project_observation_count,0.042927867377267795
+risk_by_t_plus_3,random_forest,months_since_first_observation,0.03998532631575345
+risk_by_t_plus_3,random_forest,revised_cost_change,0.039314319714657354
+risk_by_t_plus_3,random_forest,expenditure_3m_change,0.022573983671532197
+risk_by_t_plus_3,random_forest,agency_Ministry of Petroleum & Natural Gas,0.018989424804478943
+risk_by_t_plus_3,random_forest,progress_velocity,0.018618983494968096
+risk_by_t_plus_3,random_forest,agency_Power Grid Corporation of India Limited [POWERGRID],0.01679268364699113
+risk_by_t_plus_3,random_forest,progress_3m_change,0.01645892968006925
+risk_by_t_plus_3,random_forest,progress_acceleration,0.01620795830892252
+risk_by_t_plus_3,random_forest,stall_count_to_date,0.014614042399034553
+risk_by_t_plus_3,random_forest,agency_Ministry of Housing & Urban Affairs,0.012289411892056436
+risk_by_t_plus_3,random_forest,state_Maharashtra,0.011160155523194966
+risk_by_t_plus_3,random_forest,agency_Oil and Natural Gas Corporation Limited [ONGC],0.010925842118356224
+risk_by_t_plus_3,random_forest,agency_Airport Authority of India [AAI],0.01043680509906848
+risk_by_t_plus_3,random_forest,agency_South Western Railway [SWR] - II,0.010027381172765536
+risk_by_t_plus_3,random_forest,progress_stalled,0.009160755931420538
+risk_by_t_plus_3,random_forest,agency_East Coast Railway [ECoR] - II,0.009114967612303909
+risk_by_t_plus_3,random_forest,state_West Bengal,0.009015474690115172
+risk_by_t_plus_3,random_forest,progress_first_observation,0.008415788794124825
+risk_by_t_plus_3,random_forest,state_Bihar,0.007987542739975328
+risk_by_t_plus_3,random_forest,state_Madhya Pradesh,0.007983999636388295
+risk_by_t_plus_3,random_forest,state_Gujarat,0.007746169495613973
+risk_by_t_plus_3,random_forest,agency_South Central Railway [SCR] - II,0.007365902013732155
+risk_by_t_plus_3,random_forest,agency_East Central Railway [ECR] - I,0.006999302146921845
+risk_by_t_plus_3,random_forest,agency_Indian Railway Construction International Limited [IRCON],0.0069372271624334216
+risk_by_t_plus_3,random_forest,state_Odisha,0.006898678868891787
+risk_by_t_plus_3,random_forest,agency_Western Railway,0.006492121647366077
+risk_by_t_plus_3,random_forest,agency_Department of Telecommunications [DoT],0.006085336770587882
+risk_by_t_plus_3,random_forest,"state_Jammu and
+Kashmir",0.005965774538174625
+risk_by_t_plus_3,random_forest,state_Jharkhand,0.005819655704537799
+risk_by_t_plus_3,random_forest,state_Karnataka,0.005584215303341928
+risk_by_t_plus_3,random_forest,agency_MinistryofPetroleumNaturalGas,0.005313994813238603
+risk_by_t_plus_3,random_forest,agency_NLC India Limited [NLCIL],0.004525587371315912
+risk_by_t_plus_3,random_forest,agency_Western Coalfields Limited [WCL],0.004389661503043104
+risk_by_t_plus_3,random_forest,state_Rajasthan,0.004334612933362498
+risk_by_t_plus_3,random_forest,agency_Employee's State Insurance Company [ESIC],0.0042934781516323845
+risk_by_t_plus_3,random_forest,agency_NRL,0.004289840998433151
+risk_by_t_plus_3,random_forest,state_Assam,0.004288972679397697
+risk_by_t_plus_3,random_forest,agency_North Central Railway,0.004145723784258998
+risk_by_t_plus_3,random_forest,agency_Bharat Petroleum Corporation Limited [BPCL],0.0038441460350977265
+risk_by_t_plus_3,random_forest,state_Uttar Pradesh,0.003749766171723687
+risk_by_t_plus_3,random_forest,agency_Western Railway [WR] - II,0.0036258806231146924
+risk_by_t_plus_3,random_forest,state_Chhattisgarh,0.0036023052773484737
+risk_by_t_plus_3,random_forest,agency_Northeast Frontier Railway [NFR],0.0035890975533999676
+risk_by_t_plus_3,random_forest,agency_North Western Railway [NWR],0.003524971787707179
+risk_by_t_plus_3,random_forest,state_Offshore,0.003519765080176095
+risk_by_t_plus_3,random_forest,state_Tamil Nadu,0.0035127534024641267
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Bihar,
+Chhattisgarh,
+Jharkhand,
+Madhya Pradesh,
+Maharashtra,
+Odisha,
+Telangana, Uttar
+Pradesh, West
+Bengal)",0.003456986093373177
+risk_by_t_plus_3,random_forest,state_Uttarakhand,0.0034299132791895284
+risk_by_t_plus_3,random_forest,agency_SECR,0.0033790315195528138
+risk_by_t_plus_3,random_forest,agency_RVNL - II,0.0033733707886266454
+risk_by_t_plus_3,random_forest,state_Andhra Pradesh,0.0033384886261197053
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam)",0.0028629402647984254
+risk_by_t_plus_3,random_forest,state_Haryana,0.00266726305293559
+risk_by_t_plus_3,random_forest,expenditure_decrease_flag,0.0025307934745261657
+risk_by_t_plus_3,random_forest,agency_Sikkim University,0.002412514812503644
+risk_by_t_plus_3,random_forest,state_Telangana,0.0024102604856181846
+risk_by_t_plus_3,random_forest,agency_National Hydroelectric Power Corporation Limited [NHPC],0.0023500217712621087
+risk_by_t_plus_3,random_forest,agency_Indian Oil Corporation Limited [IOCL],0.0020158958482611113
+risk_by_t_plus_3,random_forest,state_Meghalaya,0.0019869623621521604
+risk_by_t_plus_3,random_forest,state_Himachal Pradesh,0.00197051045907565
+risk_by_t_plus_3,random_forest,state_Delhi,0.0019545864602541884
+risk_by_t_plus_3,random_forest,agency_Eastern Coal Fields Limited [ECL],0.001943185488774673
+risk_by_t_plus_3,random_forest,agency_Water Resources-MP,0.0019052534423681965
+risk_by_t_plus_3,random_forest,agency_National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],0.0018833321329008582
+risk_by_t_plus_3,random_forest,agency_Gas Authority of India Limited [GAIL],0.0018619887340150022
+risk_by_t_plus_3,random_forest,agency_Eastern Railway [ER] - I,0.0018592392551181958
+risk_by_t_plus_3,random_forest,progress_decrease_flag,0.0018518367636930887
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Maharashtra)",0.0017881835340003956
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Puducherry, Tamil
+Nadu)",0.0016976269037286959
+risk_by_t_plus_3,random_forest,agency_Ministry of Coal,0.0016906665706707192
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Uttar Pradesh)",0.0016621432020149846
+risk_by_t_plus_3,random_forest,agency_South Eastern Coalfields Limited [SECL],0.001642860426982349
+risk_by_t_plus_3,random_forest,state_PAN India,0.001583310875740216
+risk_by_t_plus_3,random_forest,agency_North Eastern Railway [NER],0.0015436379659469496
+risk_by_t_plus_3,random_forest,agency_Singareni Collieries Company Limited [SCCL],0.0015224322375732855
+risk_by_t_plus_3,random_forest,agency_Hindustan Petroleum Corporation Limited,0.0015188329899740844
+risk_by_t_plus_3,random_forest,agency_Department of water resources-MH - II,0.0015096317988126252
+risk_by_t_plus_3,random_forest,agency_RVNL - I,0.001475790739351549
+risk_by_t_plus_3,random_forest,agency_EDTK[MC]/RB,0.0014545868207793565
+risk_by_t_plus_3,random_forest,state_Kerala,0.0014065293809556632
+risk_by_t_plus_3,random_forest,agency_Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,0.0013820364423026144
+risk_by_t_plus_3,random_forest,state_Punjab,0.0013429357044187642
+risk_by_t_plus_3,random_forest,agency_Southern Railway [SR] - II,0.001338637290226805
+risk_by_t_plus_3,random_forest,agency_Northern Coalfields Limited [NCL],0.0013218932777296086
+risk_by_t_plus_3,random_forest,"agency_Narmada and Water Resources, Water Supply and Kalpsar Department-GJ",0.001307072685453352
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Jharkhand,
+Maharashtra,
+Odisha)",0.0013065784365922076
+risk_by_t_plus_3,random_forest,agency_PCE/WR,0.0013006524348663764
+risk_by_t_plus_3,random_forest,state_Sikkim,0.0012786719282725204
+risk_by_t_plus_3,random_forest,state_Tripura,0.0012726037007436421
+risk_by_t_plus_3,random_forest,"agency_Indian Institutes of Science Education and Research, Behrampur",0.0012061536742903546
+risk_by_t_plus_3,random_forest,agency_National Mission for Clean Ganga,0.0011872496333738315
+risk_by_t_plus_3,random_forest,agency_Northen Railway [NR],0.0011765855943724334
+risk_by_t_plus_3,random_forest,agency_THDC India Limited,0.001160470478986465
+risk_by_t_plus_3,random_forest,"state_Multi-States (Delhi,
+Rajasthan)",0.0010911242335165168
+risk_by_t_plus_3,random_forest,agency_Central Railway [CR] - II,0.0010884719281265953
+risk_by_t_plus_3,random_forest,state_Ladakh,0.001073583849445642
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Himachal
+Pradesh, Punjab)",0.0010635243844441312
+risk_by_t_plus_3,random_forest,agency_Hindustan Petroleum Corporation Limited [HPCL],0.0010541603924793508
+risk_by_t_plus_3,random_forest,agency_IISC Bangalore,0.0010371006912418903
+risk_by_t_plus_3,random_forest,agency_Central Railway (CR) - II,0.0010277803223211316
+risk_by_t_plus_3,random_forest,"agency_Department of Water Resources, River Development & GR",0.0009874071746346438
+risk_by_t_plus_3,random_forest,"state_Multi-States (Goa,
+Karnataka)",0.0009663634067380379
+risk_by_t_plus_3,random_forest,agency_National Thermal Power Corporation [NTPC],0.0009553572074524451
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Gujarat,
+Maharashtra)",0.0009269891332643772
+risk_by_t_plus_3,random_forest,agency_Chennai Petroleum Corporation Limited [CPCL],0.0009257930263319128
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Assam, Bihar,
+Jharkhand,
+Odisha, West
+Bengal)",0.0009223943470682294
+risk_by_t_plus_3,random_forest,agency_Indian Port Rail & Ropeway Corporation Ltd. [IPRCL],0.0008715698126966215
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Assam, Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Tripura)",0.0008609989997686909
+risk_by_t_plus_3,random_forest,agency_Gujarat Metro Rail Corporation Limited [GMRCL],0.0008592913268890088
+risk_by_t_plus_3,random_forest,agency_West Central Railway [WCR] - II,0.0008587368023892341
+risk_by_t_plus_3,random_forest,agency_RVNL,0.000844635883139374
+risk_by_t_plus_3,random_forest,agency_Irrigation and CAD-TG,0.0008224523756411393
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Karnataka, Tamil
+Nadu)",0.0008120458299444823
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Telangana)",0.0008027193797105283
+risk_by_t_plus_3,random_forest,agency_National Aluminium Company Limited [NALCO],0.0007642178127729258
+risk_by_t_plus_3,random_forest,state_Goa,0.0007547978572419801
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam,
+Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Sikkim,
+Tripura, West
+Bengal)",0.0007290402366543136
+risk_by_t_plus_3,random_forest,agency_CAO/C/NCR,0.0006895583227779864
+risk_by_t_plus_3,random_forest,state_Manipur,0.0006764629839935423
+risk_by_t_plus_3,random_forest,"agency_Central University, Himachal Pradesh",0.000666513713633689
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Rajasthan)",0.0006538954391259637
+risk_by_t_plus_3,random_forest,agency_Mumbai Rail Vikas Corporation Ltd.[MRVC],0.0006147311862857299
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Maharashtra,
+Telangana)",0.0005885845502715869
+risk_by_t_plus_3,random_forest,agency_BSNL,0.0005876683629392451
+risk_by_t_plus_3,random_forest,agency_Water Resources-AP,0.0005838952170767689
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan)",0.0005607435870995451
+risk_by_t_plus_3,random_forest,"state_Multi-States (Delhi,
+Uttar Pradesh)",0.0005424037378371908
+risk_by_t_plus_3,random_forest,agency_Steel Authority of India Limited [SAIL],0.0005335426420229386
+risk_by_t_plus_3,random_forest,agency_South Eastern Railway [SER] - I,0.0005317653898488841
+risk_by_t_plus_3,random_forest,agency_National Capital Region Transport Corporation [NCRTC],0.0005143105370517928
+risk_by_t_plus_3,random_forest,agency_Bengaluru Metro Rail,0.0004991807602149745
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Chhattisgarh,
+Madhya Pradesh,
+Maharashtra,
+Odisha)",0.000480805283021406
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Bihar, Jharkhand)",0.00047552786167682966
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Odisha)",0.00047418479300716194
+risk_by_t_plus_3,random_forest,agency_Uttar Pradesh metro rail corporation [UPMRC],0.0004544542549131202
+risk_by_t_plus_3,random_forest,agency_Adani Airport Holdings Limited,0.00045135623236214394
+risk_by_t_plus_3,random_forest,large_expenditure_change,0.00042117039030709633
+risk_by_t_plus_3,random_forest,agency_National Communication Academy - Finance (Erstwhile NICF),0.00040446062011246787
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Jharkhand, West
+Bengal)",0.0003965584554322147
+risk_by_t_plus_3,random_forest,agency_Damodar Valley Corporation,0.0003877555054769629
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Punjab,
+Rajasthan)",0.00038557554814530967
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan, Uttar
+Pradesh)",0.0003796216373885584
+risk_by_t_plus_3,random_forest,agency_South East Central Railway [SECR] - II,0.00037447125890310097
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Bihar, Gujarat,
+Himachal Pradesh,
+Jammu and
+Kashmir, Ladakh,
+Rajasthan, Uttar
+Pradesh)",0.0003662322652497411
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Rajasthan, Uttar
+Pradesh)",0.00035965436838280353
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra)",0.0003592561402233345
+risk_by_t_plus_3,random_forest,agency_Water Resources Department-MN,0.00035739338344043724
+risk_by_t_plus_3,random_forest,"agency_Indian Institute of Management, Sirmaur",0.0003568698923013295
+risk_by_t_plus_3,random_forest,agency_Department of Water Resources-PB,0.0003471132302800679
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Chhattisgarh,
+Odisha)",0.0003409282058613119
+risk_by_t_plus_3,random_forest,agency_Railway,0.0003330071850632272
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Dadra & Nagar
+Haveli and Daman
+& Diu, Gujarat,
+Maharashtra)",0.0003329934624932189
+risk_by_t_plus_3,random_forest,agency_Department of Telecommunications,0.00033184067070745525
+risk_by_t_plus_3,random_forest,agency_Deendayal Port Trust [DPT],0.00032800093880936814
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Assam, West
+Bengal)",0.00031391585982390593
+risk_by_t_plus_3,random_forest,agency_Southern Railways [SR] - construction,0.00030432122773560964
+risk_by_t_plus_3,random_forest,agency_Banaras Hindu University,0.0003038469246823971
+risk_by_t_plus_3,random_forest,"agency_Indian Institute of Technology, Kharagpur",0.00030130377264344553
+risk_by_t_plus_3,random_forest,agency_CAO/C/NR,0.0002922917918434635
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Odisha, West
+Bengal)",0.0002920940750252679
+risk_by_t_plus_3,random_forest,agency_Karnataka Rail Infrastructure Development Company Limited [K-RIDE],0.0002910333487465188
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Sikkim)",0.00028759681198187945
+risk_by_t_plus_3,random_forest,agency_East Central Railway [ECR] - II,0.0002873331694875684
+risk_by_t_plus_3,random_forest,agency_Mahanadi Coalfields Limited [MCL],0.0002766598296119203
+risk_by_t_plus_3,random_forest,agency_Central Railway,0.0002691518218497229
+risk_by_t_plus_3,random_forest,agency_Water Resources-KA,0.0002665592838844891
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh)",0.0002662194295009284
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Karnataka)",0.00026310608889645474
+risk_by_t_plus_3,random_forest,"agency_National Institute of Technology, Meghalaya",0.00026204052940991115
+risk_by_t_plus_3,random_forest,agency_National Mineral Development Corporation Limited [NMDC],0.0002548624508933197
+risk_by_t_plus_3,random_forest,large_progress_jump,0.0002519746662507001
+risk_by_t_plus_3,random_forest,agency_PMSSY AND Institute of NATIONAL Importance,0.0002511694998671326
+risk_by_t_plus_3,random_forest,agency_South Eastern Railway - JH,0.00025094127016116554
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Jharkhand,
+Odisha)",0.00025065103025379324
+risk_by_t_plus_3,random_forest,agency_Madhya Pradesh Metro Rail Co Limited [MPMRCL],0.0002484859942559304
+risk_by_t_plus_3,random_forest,agency_Mangalore Refinary and Petrochemicals Limited,0.0002477720487527301
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Chhattisgarh,
+Maharashtra)",0.00024640009818414606
+risk_by_t_plus_3,random_forest,"agency_Indian Institute of Management, Jammu",0.00023741771740144163
+risk_by_t_plus_3,random_forest,agency_Mumbai Port Trust [MPT],0.00023206969707031039
+risk_by_t_plus_3,random_forest,agency_PMSSY/Institute of National Importance (INI),0.00022680898441026988
+risk_by_t_plus_3,random_forest,"agency_Indian Institute of Technology, Mandi",0.00022597505596270987
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Assam,
+Nagaland)",0.00020780073897912925
+risk_by_t_plus_3,random_forest,state_Puducherry,0.00020670455446730607
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh, Uttar
+Pradesh)",0.00020544965537328048
+risk_by_t_plus_3,random_forest,agency_Inland Waterways Authority of India [IWAI],0.00019290880427663096
+risk_by_t_plus_3,random_forest,agency_DFCCIL,0.00019259232226173718
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra,
+Telangana, Uttar
+Pradesh)",0.00019151186492775887
+risk_by_t_plus_3,random_forest,"agency_Metro Railway, Kolkata",0.00018075983851064745
+risk_by_t_plus_3,random_forest,agency_MRIDC,0.0001722067655242157
+risk_by_t_plus_3,random_forest,agency_CAO/C/II/NR,0.00017033355264215247
+risk_by_t_plus_3,random_forest,agency_NIT Patna,0.00016755970857472473
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Gujarat,
+Rajasthan)",0.00016581228406851222
+risk_by_t_plus_3,random_forest,"agency_National Institute of Technology, Puducherry",0.000165341552661524
+risk_by_t_plus_3,random_forest,"agency_Haldia Dock Complex, Syama Prasad Mookerjee Port Authority",0.00016157487040133908
+risk_by_t_plus_3,random_forest,agency_Delhi Metro Rail Corporation Limited [DMRC],0.00015654222585775673
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Bihar, Uttar
+Pradesh)",0.0001544748894397217
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Karnataka,
+Kerala, Tamil
+Nadu)",0.00015444581060038279
+risk_by_t_plus_3,random_forest,agency_Hindustan Copper Limited [HCL],0.00015170467760911428
+risk_by_t_plus_3,random_forest,agency_Central Organisation for Railway Electrification [CORE],0.00015075447126168816
+risk_by_t_plus_3,random_forest,agency_National High Speed Rail Corporation [NHSRC],0.00014750332003074754
+risk_by_t_plus_3,random_forest,agency_INDIAN INSTITUTE OF TECHNOLOGY PALAKKAD,0.00014446846423733176
+risk_by_t_plus_3,random_forest,"state_Multi-States (Uttar
+Pradesh, West
+Bengal)",0.00013690055832447725
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Maharashtra,
+Rajasthan, Uttar
+Pradesh)",0.00013633461833434583
+risk_by_t_plus_3,random_forest,agency_Southern Railway (SR) - I,0.00013320513549269878
+risk_by_t_plus_3,random_forest,agency_Ministry of Education,0.00013151908338734122
+risk_by_t_plus_3,random_forest,agency_Central Public Works Department [CPWD],0.00013126985082371844
+risk_by_t_plus_3,random_forest,"agency_Indian Institute of Technology, Hyderabad",0.00012986733867971094
+risk_by_t_plus_3,random_forest,agency_South Central Railway [SCR] - I,0.00012323040528221718
+risk_by_t_plus_3,random_forest,agency_Western Railway (WR) - II,0.00011627202361317621
+risk_by_t_plus_3,random_forest,state_Mizoram,0.00011568150307045065
+risk_by_t_plus_3,random_forest,agency_SR-ERS,0.00011547942293566556
+risk_by_t_plus_3,random_forest,agency_West Central Railway WCR I,0.0001139940403794503
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Haryana,
+Rajasthan)",0.00010886325931844992
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Karnataka,
+Telangana)",0.00010757900782333914
+risk_by_t_plus_3,random_forest,agency_CR,0.00010174416209686324
+risk_by_t_plus_3,random_forest,agency_Northeast Frontier Railway (NFR) - II,9.723191403536067e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Bihar, Madhya
+Pradesh,
+Rajasthan, Uttar
+Pradesh)",9.597793565993413e-05
+risk_by_t_plus_3,random_forest,agency_Department of Water Resources-JH,9.405996555987194e-05
+risk_by_t_plus_3,random_forest,agency_CSPCC Projects,9.396226533151444e-05
+risk_by_t_plus_3,random_forest,agency_Mumbai Metro Rail Corporation Limited [MMRC],8.871397060800628e-05
+risk_by_t_plus_3,random_forest,"agency_Indian intitue of Management, Amritsar",8.70399641568204e-05
+risk_by_t_plus_3,random_forest,agency_National Buildings Construction Corporation [NBCC],8.417857925988232e-05
+risk_by_t_plus_3,random_forest,agency_Ministry of Petroleum and Natural Gas,8.346238889621765e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Kerala, Tamil
+Nadu)",8.183185712143457e-05
+risk_by_t_plus_3,random_forest,agency_South East Central Railway,7.564229543108494e-05
+risk_by_t_plus_3,random_forest,agency_Bharat Coking Coal Limited [BCCL],7.237322878508921e-05
+risk_by_t_plus_3,random_forest,agency_Tezpur University,7.198236749037299e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Punjab,
+Rajasthan)",7.136882353457445e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Sikkim, West
+Bengal)",6.576402297602628e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Gujarat,
+Rajasthan)",6.395757126718124e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Haryana,
+Himachal Pradesh)",6.382698929288083e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Jammu and
+Kashmir, Punjab)",6.26646749323668e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Bihar, Jharkhand,
+Uttar Pradesh,
+West Bengal)",6.264706665552582e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Bihar, Odisha,
+West Bengal)",5.8992984794483096e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Tamil Nadu)",5.878208097983176e-05
+risk_by_t_plus_3,random_forest,agency_Water resource-mp,5.619557568658487e-05
+risk_by_t_plus_3,random_forest,agency_Irrigation & Water Resources-UP,5.3729132996825094e-05
+risk_by_t_plus_3,random_forest,agency_Water Resources-BR,4.525634918119928e-05
+risk_by_t_plus_3,random_forest,agency_Paradip Port Trust [PPT],4.2474578250353145e-05
+risk_by_t_plus_3,random_forest,agency_Water Resources-CT,3.38708352288525e-05
+risk_by_t_plus_3,random_forest,agency_Patna Metro Rail Corporation Ltd. [PMRCL],2.7004848578921463e-05
+risk_by_t_plus_3,random_forest,agency_Ministry of Health & Family Welfare,2.5365556483562026e-05
+risk_by_t_plus_3,random_forest,state_Arunachal Pradesh,2.3288342837874438e-05
+risk_by_t_plus_3,random_forest,agency_Water Resources-OR,2.220429383146758e-05
+risk_by_t_plus_3,random_forest,agency_Central Railways,2.041555571379949e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Haryana, Punjab,
+Rajasthan)",2.0000542505470114e-05
+risk_by_t_plus_3,random_forest,agency_MCL - CIL,1.767167487322046e-05
+risk_by_t_plus_3,random_forest,state_Nagaland,1.7511455932090793e-05
+risk_by_t_plus_3,random_forest,agency_Central University of Gujarat,1.7380986243040936e-05
+risk_by_t_plus_3,random_forest,agency_North Central Railway (NCR) - II,1.720793404875199e-05
+risk_by_t_plus_3,random_forest,very_large_progress_jump,1.6519484223637013e-05
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Odisha)",1.578775280370148e-05
+risk_by_t_plus_3,random_forest,agency_NIT Sikkim,5.525758417329826e-06
+risk_by_t_plus_3,random_forest,agency_Gujarat,5.52405766906046e-06
+risk_by_t_plus_3,random_forest,agency_Mahanadi Coalfields Limited (MCL),2.972945445301949e-06
+risk_by_t_plus_3,random_forest,agency_NIT Mizoram,6.076602495425957e-07
+risk_by_t_plus_3,random_forest,progress_available,0.0
+risk_by_t_plus_3,random_forest,very_large_expenditure_change,0.0
+risk_by_t_plus_3,random_forest,agency_BCCL - CIL,0.0
+risk_by_t_plus_3,random_forest,expenditure_available,0.0
+risk_by_t_plus_3,random_forest,agency_SECL - CIL,0.0
+risk_by_t_plus_3,random_forest,agency_Rail Vikas Nigam Limited,0.0
+risk_by_t_plus_3,random_forest,long_observation_gap,0.0
+risk_by_t_plus_3,random_forest,"state_Multi-States (Delhi,
+Haryana,
+Rajasthan)",0.0
+risk_by_t_plus_3,random_forest,agency_Department of Sports & Youth Affairs,0.0
+risk_by_t_plus_3,random_forest,"agency_Indian Institute of Technology, Bombay",0.0
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Bihar, West
+Bengal)",0.0
+risk_by_t_plus_3,random_forest,agency_GM/C/ NFR,0.0
+risk_by_t_plus_3,random_forest,"state_Multi-States
+(Jammu and
+Kashmir, Ladakh)",0.0
+risk_by_t_plus_3,random_forest,agency_ECL - CIL,0.0
+risk_by_t_plus_3,random_forest,agency_WR,0.0
+risk_by_t_plus_3,permutation,progress_current,0.04630045640061873
+risk_by_t_plus_3,permutation,agency,0.01974145451748397
+risk_by_t_plus_3,permutation,expenditure_velocity,0.0034538999092939447
+risk_by_t_plus_3,permutation,state,0.002871068693160428
+risk_by_t_plus_3,permutation,expenditure_3m_change,0.0022091301631591564
+risk_by_t_plus_3,permutation,stall_count_to_date,0.0017174787604975928
+risk_by_t_plus_3,permutation,progress_3m_change,0.0016728629903524084
+risk_by_t_plus_3,permutation,months_since_first_observation,0.0015345162671862589
+risk_by_t_plus_3,permutation,progress_acceleration,0.0010063693462184276
+risk_by_t_plus_3,permutation,progress_first_observation,0.0005917207827253135
+risk_by_t_plus_3,permutation,expenditure_decrease_flag,0.0004771168282657667
+risk_by_t_plus_3,permutation,large_progress_jump,0.0003666344698103563
+risk_by_t_plus_3,permutation,progress_available,0.0
+risk_by_t_plus_3,permutation,long_observation_gap,0.0
+risk_by_t_plus_3,permutation,very_large_expenditure_change,0.0
+risk_by_t_plus_3,permutation,expenditure_available,0.0
+risk_by_t_plus_3,permutation,large_expenditure_change,-4.322287125895219e-05
+risk_by_t_plus_3,permutation,very_large_progress_jump,-5.2130530796845595e-05
+risk_by_t_plus_3,permutation,progress_decrease_flag,-0.00011778962737656329
+risk_by_t_plus_3,permutation,progress_stalled,-0.0011458883025793343
+risk_by_t_plus_3,permutation,progress_velocity,-0.002540102988657833
+risk_by_t_plus_3,permutation,revised_cost_ratio,-0.005766082304890996
+risk_by_t_plus_3,permutation,revised_cost_change,-0.006676452216401674
+risk_by_t_plus_3,permutation,expenditure_current,-0.00678870945997907
+risk_by_t_plus_3,permutation,project_observation_count,-0.007708820040421549
+risk_by_t_plus_3,permutation,cost_ratio,-0.01978763339334504
+risk_by_t_plus_4,random_forest,progress_current,0.11662250166173675
+risk_by_t_plus_4,random_forest,cost_ratio,0.10078788412063461
+risk_by_t_plus_4,random_forest,expenditure_current,0.08103523547047463
+risk_by_t_plus_4,random_forest,revised_cost_ratio,0.043214659870033756
+risk_by_t_plus_4,random_forest,expenditure_velocity,0.04273853678146952
+risk_by_t_plus_4,random_forest,revised_cost_change,0.037285051035159715
+risk_by_t_plus_4,random_forest,months_since_first_observation,0.03413699148842376
+risk_by_t_plus_4,random_forest,project_observation_count,0.033320679571319296
+risk_by_t_plus_4,random_forest,agency_Ministry of Petroleum & Natural Gas,0.023306104910248805
+risk_by_t_plus_4,random_forest,agency_Ministry of Housing & Urban Affairs,0.018211406787190368
+risk_by_t_plus_4,random_forest,expenditure_3m_change,0.018151446756001242
+risk_by_t_plus_4,random_forest,agency_Airport Authority of India [AAI],0.01585745542480826
+risk_by_t_plus_4,random_forest,progress_velocity,0.015428787272602646
+risk_by_t_plus_4,random_forest,stall_count_to_date,0.014704519413668642
+risk_by_t_plus_4,random_forest,progress_3m_change,0.013901724866804618
+risk_by_t_plus_4,random_forest,progress_acceleration,0.013244109146230618
+risk_by_t_plus_4,random_forest,agency_South Western Railway [SWR] - II,0.0129477846278829
+risk_by_t_plus_4,random_forest,agency_Power Grid Corporation of India Limited [POWERGRID],0.012858453383021391
+risk_by_t_plus_4,random_forest,agency_Oil and Natural Gas Corporation Limited [ONGC],0.010138550766566057
+risk_by_t_plus_4,random_forest,state_Bihar,0.009270449376933141
+risk_by_t_plus_4,random_forest,state_Maharashtra,0.009078674213846475
+risk_by_t_plus_4,random_forest,state_Madhya Pradesh,0.009016728906552208
+risk_by_t_plus_4,random_forest,agency_Indian Railway Construction International Limited [IRCON],0.008519559799829912
+risk_by_t_plus_4,random_forest,agency_South Central Railway [SCR] - II,0.008510964797239125
+risk_by_t_plus_4,random_forest,state_West Bengal,0.00840130630545432
+risk_by_t_plus_4,random_forest,agency_East Central Railway [ECR] - I,0.008387349725690869
+risk_by_t_plus_4,random_forest,progress_stalled,0.007434005997311383
+risk_by_t_plus_4,random_forest,progress_first_observation,0.007350691088424073
+risk_by_t_plus_4,random_forest,state_Odisha,0.007344454476957381
+risk_by_t_plus_4,random_forest,state_Jharkhand,0.007007450549656304
+risk_by_t_plus_4,random_forest,agency_Western Coalfields Limited [WCL],0.006893438076699193
+risk_by_t_plus_4,random_forest,agency_Western Railway,0.005833850511859656
+risk_by_t_plus_4,random_forest,state_Gujarat,0.005831527978906857
+risk_by_t_plus_4,random_forest,agency_MinistryofPetroleumNaturalGas,0.005582880007721327
+risk_by_t_plus_4,random_forest,agency_Department of Telecommunications [DoT],0.005525924675747923
+risk_by_t_plus_4,random_forest,agency_Northeast Frontier Railway [NFR],0.005135527204446867
+risk_by_t_plus_4,random_forest,agency_RVNL - II,0.0050521807718738685
+risk_by_t_plus_4,random_forest,state_Assam,0.005028047054872741
+risk_by_t_plus_4,random_forest,state_Tamil Nadu,0.004958605149147792
+risk_by_t_plus_4,random_forest,"state_Jammu and
+Kashmir",0.004810051374610877
+risk_by_t_plus_4,random_forest,state_Karnataka,0.004771045551971165
+risk_by_t_plus_4,random_forest,agency_North Central Railway,0.004769187939897491
+risk_by_t_plus_4,random_forest,state_Uttarakhand,0.004703508988686825
+risk_by_t_plus_4,random_forest,agency_East Coast Railway [ECoR] - II,0.004678380081099013
+risk_by_t_plus_4,random_forest,agency_Western Railway [WR] - II,0.0045910254564743855
+risk_by_t_plus_4,random_forest,agency_North Western Railway [NWR],0.004218773949239982
+risk_by_t_plus_4,random_forest,agency_Bharat Petroleum Corporation Limited [BPCL],0.004045556967999218
+risk_by_t_plus_4,random_forest,state_Uttar Pradesh,0.003958853312168085
+risk_by_t_plus_4,random_forest,state_Rajasthan,0.003855698275083045
+risk_by_t_plus_4,random_forest,state_Andhra Pradesh,0.0035938077287035915
+risk_by_t_plus_4,random_forest,state_Offshore,0.003417240352744008
+risk_by_t_plus_4,random_forest,state_Chhattisgarh,0.0033438581860343467
+risk_by_t_plus_4,random_forest,agency_Employee's State Insurance Company [ESIC],0.003210294275489654
+risk_by_t_plus_4,random_forest,agency_NRL,0.003201671135368739
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Maharashtra)",0.003191052437001027
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Bihar,
+Chhattisgarh,
+Jharkhand,
+Madhya Pradesh,
+Maharashtra,
+Odisha,
+Telangana, Uttar
+Pradesh, West
+Bengal)",0.003048996225333624
+risk_by_t_plus_4,random_forest,agency_NLC India Limited [NLCIL],0.0029753962419379926
+risk_by_t_plus_4,random_forest,state_Himachal Pradesh,0.0025061084057846138
+risk_by_t_plus_4,random_forest,state_Telangana,0.002329706167470041
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam)",0.0023057022979569575
+risk_by_t_plus_4,random_forest,agency_SECR,0.002299677906198312
+risk_by_t_plus_4,random_forest,agency_Eastern Railway [ER] - I,0.002224072467313648
+risk_by_t_plus_4,random_forest,agency_THDC India Limited,0.002147307986576574
+risk_by_t_plus_4,random_forest,expenditure_decrease_flag,0.0021327718104176994
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Uttar Pradesh)",0.0021156050520162364
+risk_by_t_plus_4,random_forest,state_PAN India,0.0020739310074387868
+risk_by_t_plus_4,random_forest,agency_Singareni Collieries Company Limited [SCCL],0.002069356327168645
+risk_by_t_plus_4,random_forest,agency_Northern Coalfields Limited [NCL],0.0020223230891275087
+risk_by_t_plus_4,random_forest,state_Kerala,0.001908962438342079
+risk_by_t_plus_4,random_forest,agency_Indian Oil Corporation Limited [IOCL],0.0019064230365896924
+risk_by_t_plus_4,random_forest,agency_South Eastern Coalfields Limited [SECL],0.0018044646196718613
+risk_by_t_plus_4,random_forest,agency_Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,0.0017756989893457824
+risk_by_t_plus_4,random_forest,agency_National Mission for Clean Ganga,0.001775304211194397
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Puducherry, Tamil
+Nadu)",0.0017680791834872144
+risk_by_t_plus_4,random_forest,agency_Department of water resources-MH - II,0.0017589393504954284
+risk_by_t_plus_4,random_forest,agency_National Hydroelectric Power Corporation Limited [NHPC],0.0017518411724327895
+risk_by_t_plus_4,random_forest,state_Haryana,0.0017100195967967617
+risk_by_t_plus_4,random_forest,state_Meghalaya,0.0016551982990137526
+risk_by_t_plus_4,random_forest,"agency_Indian Institutes of Science Education and Research, Behrampur",0.001652869037097656
+risk_by_t_plus_4,random_forest,progress_decrease_flag,0.0016411465375198726
+risk_by_t_plus_4,random_forest,agency_Hindustan Petroleum Corporation Limited [HPCL],0.0016395668113721254
+risk_by_t_plus_4,random_forest,agency_Central Railway [CR] - II,0.0015842587104451657
+risk_by_t_plus_4,random_forest,state_Tripura,0.0015840735321409564
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Gujarat,
+Maharashtra)",0.0014260918286027296
+risk_by_t_plus_4,random_forest,agency_Indian Port Rail & Ropeway Corporation Ltd. [IPRCL],0.0013816975005397794
+risk_by_t_plus_4,random_forest,agency_Eastern Coal Fields Limited [ECL],0.0013809288152766672
+risk_by_t_plus_4,random_forest,agency_PCE/WR,0.0013309491484556723
+risk_by_t_plus_4,random_forest,"state_Multi-States (Goa,
+Karnataka)",0.0013281442131956062
+risk_by_t_plus_4,random_forest,state_Delhi,0.0013036997300407485
+risk_by_t_plus_4,random_forest,state_Punjab,0.0012931272665493423
+risk_by_t_plus_4,random_forest,agency_Chennai Petroleum Corporation Limited [CPCL],0.0012642418918132115
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam,
+Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Sikkim,
+Tripura, West
+Bengal)",0.001231078049585167
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Maharashtra,
+Telangana)",0.0011930520922946136
+risk_by_t_plus_4,random_forest,agency_Ministry of Coal,0.0011738137299674922
+risk_by_t_plus_4,random_forest,agency_National Aluminium Company Limited [NALCO],0.0011660763100261057
+risk_by_t_plus_4,random_forest,agency_Southern Railway [SR] - II,0.0011601986813405728
+risk_by_t_plus_4,random_forest,state_Ladakh,0.0011584904350234895
+risk_by_t_plus_4,random_forest,agency_Hindustan Petroleum Corporation Limited,0.0011551514064220524
+risk_by_t_plus_4,random_forest,agency_Northen Railway [NR],0.0010980970841509897
+risk_by_t_plus_4,random_forest,agency_Gujarat Metro Rail Corporation Limited [GMRCL],0.0010659360295963355
+risk_by_t_plus_4,random_forest,agency_Central Public Works Department [CPWD],0.001063606385587665
+risk_by_t_plus_4,random_forest,agency_Irrigation and CAD-TG,0.0010501222688636068
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Jharkhand,
+Maharashtra,
+Odisha)",0.0010360091834245768
+risk_by_t_plus_4,random_forest,agency_National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],0.0010235895761717523
+risk_by_t_plus_4,random_forest,agency_Water Resources-MP,0.001003943227040973
+risk_by_t_plus_4,random_forest,state_Manipur,0.0009887542561071746
+risk_by_t_plus_4,random_forest,agency_Bengaluru Metro Rail,0.0009705635045174653
+risk_by_t_plus_4,random_forest,agency_RVNL,0.0009527149164434464
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Himachal
+Pradesh, Punjab)",0.0009024411026859417
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Chhattisgarh,
+Odisha)",0.0009020079979379671
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Karnataka, Tamil
+Nadu)",0.0008698591098971929
+risk_by_t_plus_4,random_forest,agency_West Central Railway [WCR] - II,0.0008551611418339736
+risk_by_t_plus_4,random_forest,agency_Mumbai Rail Vikas Corporation Ltd.[MRVC],0.0008477496012015769
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Odisha)",0.0008423036898770612
+risk_by_t_plus_4,random_forest,agency_Water Resources-AP,0.0008414600645104094
+risk_by_t_plus_4,random_forest,agency_CAO/C/NCR,0.0008340949267787395
+risk_by_t_plus_4,random_forest,agency_South Central Railway [SCR] - I,0.0008340779581945294
+risk_by_t_plus_4,random_forest,agency_Sikkim University,0.000815750837107718
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Bihar, Jharkhand)",0.0008109191985735616
+risk_by_t_plus_4,random_forest,agency_Steel Authority of India Limited [SAIL],0.0008054604725961711
+risk_by_t_plus_4,random_forest,agency_National Thermal Power Corporation [NTPC],0.0008021465428648448
+risk_by_t_plus_4,random_forest,"state_Multi-States (Delhi,
+Rajasthan)",0.0008018628318703366
+risk_by_t_plus_4,random_forest,agency_Uttar Pradesh metro rail corporation [UPMRC],0.0007972852804802303
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan, Uttar
+Pradesh)",0.0007964828923939799
+risk_by_t_plus_4,random_forest,"agency_Narmada and Water Resources, Water Supply and Kalpsar Department-GJ",0.0007773633455931497
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Dadra & Nagar
+Haveli and Daman
+& Diu, Gujarat,
+Maharashtra)",0.0007685392402089813
+risk_by_t_plus_4,random_forest,"agency_Indian Institute of Management, Sirmaur",0.0007670792110412747
+risk_by_t_plus_4,random_forest,agency_Adani Airport Holdings Limited,0.0007612256456798543
+risk_by_t_plus_4,random_forest,state_Sikkim,0.0007600588256727928
+risk_by_t_plus_4,random_forest,agency_RVNL - I,0.0007479314145762934
+risk_by_t_plus_4,random_forest,state_Goa,0.0007379194542747162
+risk_by_t_plus_4,random_forest,agency_Central Railway (CR) - II,0.0007173861612007712
+risk_by_t_plus_4,random_forest,"agency_Department of Water Resources, River Development & GR",0.0007154542775720135
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Jharkhand, West
+Bengal)",0.0007040923213905537
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Jharkhand,
+Odisha)",0.0006919671395628998
+risk_by_t_plus_4,random_forest,agency_CAO/C/NR,0.00069066649377531
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Rajasthan)",0.0006652506183558706
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Telangana)",0.0006579729501399213
+risk_by_t_plus_4,random_forest,agency_EDTK[MC]/RB,0.0006552297175372371
+risk_by_t_plus_4,random_forest,agency_Gas Authority of India Limited [GAIL],0.0006400456624052443
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Assam, Bihar,
+Jharkhand,
+Odisha, West
+Bengal)",0.0006362987410678479
+risk_by_t_plus_4,random_forest,"agency_National Institute of Technology, Meghalaya",0.0006359757291723637
+risk_by_t_plus_4,random_forest,agency_Water Resources Department-MN,0.0006213200353090106
+risk_by_t_plus_4,random_forest,"agency_Indian Institute of Technology, Kharagpur",0.0006092500192168311
+risk_by_t_plus_4,random_forest,agency_National Communication Academy - Finance (Erstwhile NICF),0.0005985773291599586
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan)",0.0005846530190405391
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh)",0.0005722391453838751
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Karnataka)",0.000562432201452889
+risk_by_t_plus_4,random_forest,agency_South Eastern Railway [SER] - I,0.0005604961956318683
+risk_by_t_plus_4,random_forest,agency_BSNL,0.0005585401709626905
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Sikkim)",0.000554263366833256
+risk_by_t_plus_4,random_forest,agency_North Eastern Railway [NER],0.000549412990659854
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Bihar, Gujarat,
+Himachal Pradesh,
+Jammu and
+Kashmir, Ladakh,
+Rajasthan, Uttar
+Pradesh)",0.000529327205611914
+risk_by_t_plus_4,random_forest,agency_Southern Railways [SR] - construction,0.0005157171159701568
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Assam, Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Tripura)",0.0005099956382037698
+risk_by_t_plus_4,random_forest,agency_Northeast Frontier Railway (NFR) - II,0.0004930741488188166
+risk_by_t_plus_4,random_forest,"agency_Central University, Himachal Pradesh",0.0004817827574318211
+risk_by_t_plus_4,random_forest,agency_South East Central Railway [SECR] - II,0.0004768414684199133
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Punjab,
+Rajasthan)",0.00045888841361677415
+risk_by_t_plus_4,random_forest,large_progress_jump,0.0004512555735849764
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Assam, West
+Bengal)",0.0004235342761184464
+risk_by_t_plus_4,random_forest,agency_National Capital Region Transport Corporation [NCRTC],0.00041573354507887407
+risk_by_t_plus_4,random_forest,agency_Hindustan Copper Limited [HCL],0.0003985147852856465
+risk_by_t_plus_4,random_forest,agency_South Eastern Railway - JH,0.0003971772696521396
+risk_by_t_plus_4,random_forest,agency_Banaras Hindu University,0.0003754335403698353
+risk_by_t_plus_4,random_forest,"state_Multi-States (Delhi,
+Uttar Pradesh)",0.0003754324221370866
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Karnataka,
+Kerala, Tamil
+Nadu)",0.00037478347799398956
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra)",0.0003698384437763101
+risk_by_t_plus_4,random_forest,"agency_Indian intitue of Management, Amritsar",0.00036564348447782995
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Rajasthan, Uttar
+Pradesh)",0.000337451577400112
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Chhattisgarh,
+Maharashtra)",0.00033411753699723605
+risk_by_t_plus_4,random_forest,large_expenditure_change,0.00033197766200312274
+risk_by_t_plus_4,random_forest,agency_West Central Railway WCR I,0.00032330706329819763
+risk_by_t_plus_4,random_forest,agency_Karnataka Rail Infrastructure Development Company Limited [K-RIDE],0.00032231904480691046
+risk_by_t_plus_4,random_forest,"agency_Haldia Dock Complex, Syama Prasad Mookerjee Port Authority",0.0003164738643838088
+risk_by_t_plus_4,random_forest,agency_National Mineral Development Corporation Limited [NMDC],0.0003158222071512203
+risk_by_t_plus_4,random_forest,agency_NIT Patna,0.0002991907944120916
+risk_by_t_plus_4,random_forest,agency_MRIDC,0.00029058868587699354
+risk_by_t_plus_4,random_forest,agency_Railway,0.0002900210751436469
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Odisha, West
+Bengal)",0.0002842827129652909
+risk_by_t_plus_4,random_forest,agency_Central Organisation for Railway Electrification [CORE],0.00028267252721036383
+risk_by_t_plus_4,random_forest,agency_Department of Water Resources-PB,0.00028181950636296544
+risk_by_t_plus_4,random_forest,"agency_Indian Institute of Technology, Mandi",0.0002582106433138048
+risk_by_t_plus_4,random_forest,agency_Damodar Valley Corporation,0.00025769493590918245
+risk_by_t_plus_4,random_forest,agency_Department of Telecommunications,0.00025444308786116423
+risk_by_t_plus_4,random_forest,"agency_Indian Institute of Management, Jammu",0.0002531947314677534
+risk_by_t_plus_4,random_forest,"agency_National Institute of Technology, Puducherry",0.0002504871930984731
+risk_by_t_plus_4,random_forest,agency_Madhya Pradesh Metro Rail Co Limited [MPMRCL],0.0002450005719292817
+risk_by_t_plus_4,random_forest,agency_Deendayal Port Trust [DPT],0.00024371122737250982
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Chhattisgarh,
+Madhya Pradesh,
+Maharashtra,
+Odisha)",0.0002422647985273404
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh, Uttar
+Pradesh)",0.00023358423643595133
+risk_by_t_plus_4,random_forest,agency_Mahanadi Coalfields Limited [MCL],0.00022460539121340684
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Sikkim, West
+Bengal)",0.00022146626059613175
+risk_by_t_plus_4,random_forest,agency_Water Resources-KA,0.00020741002598589998
+risk_by_t_plus_4,random_forest,agency_Inland Waterways Authority of India [IWAI],0.00020538931575523622
+risk_by_t_plus_4,random_forest,agency_Central Railway,0.00020176839303681743
+risk_by_t_plus_4,random_forest,agency_Tezpur University,0.00019990429337258527
+risk_by_t_plus_4,random_forest,agency_East Central Railway [ECR] - II,0.0001973888982916473
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra,
+Telangana, Uttar
+Pradesh)",0.00019396074197912362
+risk_by_t_plus_4,random_forest,state_Puducherry,0.00019347130165506656
+risk_by_t_plus_4,random_forest,agency_Mangalore Refinary and Petrochemicals Limited,0.0001932722039929711
+risk_by_t_plus_4,random_forest,agency_Ministry of Education,0.00017349242802573486
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Bihar, Madhya
+Pradesh,
+Rajasthan, Uttar
+Pradesh)",0.00016997840455463978
+risk_by_t_plus_4,random_forest,agency_Mumbai Port Trust [MPT],0.00016400735814989722
+risk_by_t_plus_4,random_forest,"agency_Metro Railway, Kolkata",0.00016274642181541584
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Bihar, Uttar
+Pradesh)",0.00016139689215421564
+risk_by_t_plus_4,random_forest,agency_INDIAN INSTITUTE OF TECHNOLOGY PALAKKAD,0.00015894095854278098
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Maharashtra,
+Rajasthan, Uttar
+Pradesh)",0.0001561725626125235
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Assam,
+Nagaland)",0.0001552154612815079
+risk_by_t_plus_4,random_forest,agency_National High Speed Rail Corporation [NHSRC],0.00014204934930187114
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Gujarat,
+Rajasthan)",0.00014154541843346848
+risk_by_t_plus_4,random_forest,"agency_Indian Institute of Technology, Hyderabad",0.00013942897934433898
+risk_by_t_plus_4,random_forest,agency_PMSSY/Institute of National Importance (INI),0.0001380610840862052
+risk_by_t_plus_4,random_forest,agency_PMSSY AND Institute of NATIONAL Importance,0.00012315028766493792
+risk_by_t_plus_4,random_forest,agency_CAO/C/II/NR,0.00012288111974039135
+risk_by_t_plus_4,random_forest,agency_Water Resources-BR,0.00011677607727423308
+risk_by_t_plus_4,random_forest,state_Mizoram,0.00011527339352873674
+risk_by_t_plus_4,random_forest,agency_Ministry of Health & Family Welfare,0.00011341540140976735
+risk_by_t_plus_4,random_forest,agency_Water Resources-CT,0.00011025593105410199
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Haryana,
+Rajasthan)",0.00011016182287799115
+risk_by_t_plus_4,random_forest,agency_Bharat Coking Coal Limited [BCCL],0.00010577597570649232
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Bihar, Jharkhand,
+Uttar Pradesh,
+West Bengal)",0.00010062651365707883
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Kerala, Tamil
+Nadu)",9.436984863292563e-05
+risk_by_t_plus_4,random_forest,agency_Delhi Metro Rail Corporation Limited [DMRC],9.106030198188729e-05
+risk_by_t_plus_4,random_forest,agency_Patna Metro Rail Corporation Ltd. [PMRCL],8.903071292817366e-05
+risk_by_t_plus_4,random_forest,agency_Western Railway (WR) - II,8.696628945257798e-05
+risk_by_t_plus_4,random_forest,agency_CSPCC Projects,8.580058319595873e-05
+risk_by_t_plus_4,random_forest,agency_South East Central Railway,8.462338827667454e-05
+risk_by_t_plus_4,random_forest,agency_DFCCIL,8.290364675630583e-05
+risk_by_t_plus_4,random_forest,agency_Ministry of Petroleum and Natural Gas,8.012805436584845e-05
+risk_by_t_plus_4,random_forest,agency_Mumbai Metro Rail Corporation Limited [MMRC],7.809490349801871e-05
+risk_by_t_plus_4,random_forest,agency_Water Resources-OR,7.758532398680978e-05
+risk_by_t_plus_4,random_forest,agency_Gujarat,7.015911096582896e-05
+risk_by_t_plus_4,random_forest,agency_Department of Water Resources-JH,6.230230070629525e-05
+risk_by_t_plus_4,random_forest,agency_Paradip Port Trust [PPT],6.009714463383545e-05
+risk_by_t_plus_4,random_forest,agency_National Buildings Construction Corporation [NBCC],5.637900343102529e-05
+risk_by_t_plus_4,random_forest,agency_Southern Railway (SR) - I,5.135434294498159e-05
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Haryana,
+Himachal Pradesh)",4.59488729472634e-05
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Karnataka,
+Telangana)",4.2957000336200586e-05
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Tamil Nadu)",4.231047860059867e-05
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Jammu and
+Kashmir, Punjab)",4.146272029932101e-05
+risk_by_t_plus_4,random_forest,agency_Irrigation & Water Resources-UP,4.0900612726187494e-05
+risk_by_t_plus_4,random_forest,agency_SR-ERS,4.033075912518086e-05
+risk_by_t_plus_4,random_forest,state_Arunachal Pradesh,3.960040213344701e-05
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Gujarat,
+Rajasthan)",3.8099061927355593e-05
+risk_by_t_plus_4,random_forest,agency_CR,3.787294941689482e-05
+risk_by_t_plus_4,random_forest,agency_Water resource-mp,3.6445138316400624e-05
+risk_by_t_plus_4,random_forest,agency_Central University of Gujarat,3.464133801564865e-05
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Punjab,
+Rajasthan)",2.8359367209703438e-05
+risk_by_t_plus_4,random_forest,agency_NIT Sikkim,2.3834495914560775e-05
+risk_by_t_plus_4,random_forest,"state_Multi-States (Uttar
+Pradesh, West
+Bengal)",2.0877523482350922e-05
+risk_by_t_plus_4,random_forest,very_large_progress_jump,1.9000488098635986e-05
+risk_by_t_plus_4,random_forest,state_Nagaland,1.6475125689649414e-05
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Odisha)",1.374950304012392e-05
+risk_by_t_plus_4,random_forest,agency_Central Railways,1.3167160313243554e-05
+risk_by_t_plus_4,random_forest,agency_MCL - CIL,1.1838772348256113e-05
+risk_by_t_plus_4,random_forest,agency_North Central Railway (NCR) - II,9.611527927949622e-06
+risk_by_t_plus_4,random_forest,agency_Mahanadi Coalfields Limited (MCL),7.63739110624623e-06
+risk_by_t_plus_4,random_forest,agency_NIT Mizoram,6.709637362308614e-06
+risk_by_t_plus_4,random_forest,agency_WR,5.327345880263888e-06
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Haryana, Punjab,
+Rajasthan)",3.284372405757248e-06
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Bihar, West
+Bengal)",2.2695816571641835e-06
+risk_by_t_plus_4,random_forest,"state_Multi-States
+(Bihar, Odisha,
+West Bengal)",7.463509653274179e-07
+risk_by_t_plus_4,random_forest,agency_Department of Sports & Youth Affairs,0.0
+risk_by_t_plus_4,random_forest,agency_IISC Bangalore,0.0
+risk_by_t_plus_4,random_forest,agency_ECL - CIL,0.0
+risk_by_t_plus_4,random_forest,progress_available,0.0
+risk_by_t_plus_4,random_forest,expenditure_available,0.0
+risk_by_t_plus_4,random_forest,long_observation_gap,0.0
+risk_by_t_plus_4,random_forest,agency_BCCL - CIL,0.0
+risk_by_t_plus_4,random_forest,very_large_expenditure_change,0.0
+risk_by_t_plus_4,random_forest,agency_Rail Vikas Nigam Limited,0.0
+risk_by_t_plus_4,permutation,progress_current,0.05334128024750442
+risk_by_t_plus_4,permutation,agency,0.023233524833127905
+risk_by_t_plus_4,permutation,progress_3m_change,0.0071799211279861995
+risk_by_t_plus_4,permutation,expenditure_3m_change,0.005396989197407764
+risk_by_t_plus_4,permutation,stall_count_to_date,0.004151879784277823
+risk_by_t_plus_4,permutation,months_since_first_observation,0.0011130596953009108
+risk_by_t_plus_4,permutation,progress_first_observation,0.0005994378844325742
+risk_by_t_plus_4,permutation,progress_acceleration,0.0004968972160652729
+risk_by_t_plus_4,permutation,large_progress_jump,0.00040933622197749655
+risk_by_t_plus_4,permutation,expenditure_decrease_flag,8.713733612908392e-05
+risk_by_t_plus_4,permutation,very_large_progress_jump,1.9546033575879028e-05
+risk_by_t_plus_4,permutation,progress_available,0.0
+risk_by_t_plus_4,permutation,long_observation_gap,0.0
+risk_by_t_plus_4,permutation,very_large_expenditure_change,0.0
+risk_by_t_plus_4,permutation,expenditure_available,0.0
+risk_by_t_plus_4,permutation,large_expenditure_change,-5.909772680534609e-06
+risk_by_t_plus_4,permutation,progress_decrease_flag,-0.00022328588566293827
+risk_by_t_plus_4,permutation,progress_stalled,-0.001362913480520822
+risk_by_t_plus_4,permutation,project_observation_count,-0.0013720887720807483
+risk_by_t_plus_4,permutation,expenditure_velocity,-0.0029185556721072594
+risk_by_t_plus_4,permutation,progress_velocity,-0.003611717488569033
+risk_by_t_plus_4,permutation,revised_cost_change,-0.004742403747946855
+risk_by_t_plus_4,permutation,state,-0.005027410819999023
+risk_by_t_plus_4,permutation,revised_cost_ratio,-0.007028145637151417
+risk_by_t_plus_4,permutation,expenditure_current,-0.013881298455077818
+risk_by_t_plus_4,permutation,cost_ratio,-0.0253664102203796
+risk_by_t_plus_5,random_forest,progress_current,0.12019304191055219
+risk_by_t_plus_5,random_forest,cost_ratio,0.10334563164039097
+risk_by_t_plus_5,random_forest,expenditure_current,0.07227299207718406
+risk_by_t_plus_5,random_forest,expenditure_velocity,0.04192157376852735
+risk_by_t_plus_5,random_forest,revised_cost_ratio,0.04184203321572366
+risk_by_t_plus_5,random_forest,revised_cost_change,0.03835365946543368
+risk_by_t_plus_5,random_forest,project_observation_count,0.03443685846288122
+risk_by_t_plus_5,random_forest,months_since_first_observation,0.03369465975323274
+risk_by_t_plus_5,random_forest,agency_Ministry of Petroleum & Natural Gas,0.02696927403688031
+risk_by_t_plus_5,random_forest,agency_Ministry of Housing & Urban Affairs,0.023341232381984017
+risk_by_t_plus_5,random_forest,agency_Power Grid Corporation of India Limited [POWERGRID],0.02328611243132347
+risk_by_t_plus_5,random_forest,expenditure_3m_change,0.016598377710705048
+risk_by_t_plus_5,random_forest,progress_velocity,0.015782652559954004
+risk_by_t_plus_5,random_forest,stall_count_to_date,0.013812956713765766
+risk_by_t_plus_5,random_forest,agency_Airport Authority of India [AAI],0.013105668890527934
+risk_by_t_plus_5,random_forest,progress_3m_change,0.0130776387981435
+risk_by_t_plus_5,random_forest,progress_acceleration,0.012486155467891847
+risk_by_t_plus_5,random_forest,agency_Oil and Natural Gas Corporation Limited [ONGC],0.011552973323756781
+risk_by_t_plus_5,random_forest,agency_South Western Railway [SWR] - II,0.011482169282508378
+risk_by_t_plus_5,random_forest,state_Maharashtra,0.010597865286315662
+risk_by_t_plus_5,random_forest,state_Bihar,0.010087672941914295
+risk_by_t_plus_5,random_forest,state_West Bengal,0.008713699040665822
+risk_by_t_plus_5,random_forest,agency_East Central Railway [ECR] - I,0.008114062014329017
+risk_by_t_plus_5,random_forest,progress_stalled,0.008013945103084808
+risk_by_t_plus_5,random_forest,agency_Indian Railway Construction International Limited [IRCON],0.007965400186612742
+risk_by_t_plus_5,random_forest,agency_South Central Railway [SCR] - II,0.007932623006505662
+risk_by_t_plus_5,random_forest,state_Jharkhand,0.006700727097239071
+risk_by_t_plus_5,random_forest,agency_Western Coalfields Limited [WCL],0.006657859985430008
+risk_by_t_plus_5,random_forest,state_Odisha,0.006396363450933617
+risk_by_t_plus_5,random_forest,state_Gujarat,0.006249104007977972
+risk_by_t_plus_5,random_forest,state_Madhya Pradesh,0.006186146437092802
+risk_by_t_plus_5,random_forest,state_Uttarakhand,0.006067578709946458
+risk_by_t_plus_5,random_forest,agency_RVNL - II,0.005720758601882924
+risk_by_t_plus_5,random_forest,progress_first_observation,0.005487194019652107
+risk_by_t_plus_5,random_forest,agency_North Central Railway,0.005474880715040204
+risk_by_t_plus_5,random_forest,agency_Western Railway [WR] - II,0.005409737917199843
+risk_by_t_plus_5,random_forest,agency_East Coast Railway [ECoR] - II,0.005109936033999492
+risk_by_t_plus_5,random_forest,agency_Northeast Frontier Railway [NFR],0.004884806813277019
+risk_by_t_plus_5,random_forest,state_Tamil Nadu,0.004833820665207193
+risk_by_t_plus_5,random_forest,agency_MinistryofPetroleumNaturalGas,0.004602887843470513
+risk_by_t_plus_5,random_forest,state_Karnataka,0.004501333111673293
+risk_by_t_plus_5,random_forest,state_Assam,0.0044642359012314805
+risk_by_t_plus_5,random_forest,agency_North Western Railway [NWR],0.0044064740622662335
+risk_by_t_plus_5,random_forest,state_Uttar Pradesh,0.004374497387487298
+risk_by_t_plus_5,random_forest,agency_NRL,0.004066197094279188
+risk_by_t_plus_5,random_forest,agency_Bharat Petroleum Corporation Limited [BPCL],0.004052726871846444
+risk_by_t_plus_5,random_forest,agency_Western Railway,0.003966195082349908
+risk_by_t_plus_5,random_forest,agency_Department of Telecommunications [DoT],0.003921897643518575
+risk_by_t_plus_5,random_forest,"state_Jammu and
+Kashmir",0.0038360647484470566
+risk_by_t_plus_5,random_forest,state_Chhattisgarh,0.003783093153142165
+risk_by_t_plus_5,random_forest,state_Rajasthan,0.0034951307278767584
+risk_by_t_plus_5,random_forest,state_Andhra Pradesh,0.0034668968942166934
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Uttar Pradesh)",0.002828869858926149
+risk_by_t_plus_5,random_forest,agency_THDC India Limited,0.002708505490341821
+risk_by_t_plus_5,random_forest,state_Telangana,0.0026434673029029766
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Maharashtra)",0.002477170477256189
+risk_by_t_plus_5,random_forest,agency_National Mission for Clean Ganga,0.0024266313642800318
+risk_by_t_plus_5,random_forest,state_Offshore,0.002410197760493829
+risk_by_t_plus_5,random_forest,state_Himachal Pradesh,0.002241854559924252
+risk_by_t_plus_5,random_forest,agency_Singareni Collieries Company Limited [SCCL],0.002098488026473648
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam)",0.002064007776715287
+risk_by_t_plus_5,random_forest,agency_National Hydroelectric Power Corporation Limited [NHPC],0.0020622959413155095
+risk_by_t_plus_5,random_forest,agency_Department of water resources-MH - II,0.00205638744681952
+risk_by_t_plus_5,random_forest,agency_Ministry of Coal,0.002007158443694387
+risk_by_t_plus_5,random_forest,agency_Northern Coalfields Limited [NCL],0.002005521356815227
+risk_by_t_plus_5,random_forest,agency_NLC India Limited [NLCIL],0.0019870971083854948
+risk_by_t_plus_5,random_forest,state_Meghalaya,0.0019786637438460254
+risk_by_t_plus_5,random_forest,agency_Indian Port Rail & Ropeway Corporation Ltd. [IPRCL],0.0019549364292546123
+risk_by_t_plus_5,random_forest,agency_SECR,0.001916992836178772
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Bihar,
+Chhattisgarh,
+Jharkhand,
+Madhya Pradesh,
+Maharashtra,
+Odisha,
+Telangana, Uttar
+Pradesh, West
+Bengal)",0.0018828722197343321
+risk_by_t_plus_5,random_forest,agency_Indian Oil Corporation Limited [IOCL],0.001882473864504073
+risk_by_t_plus_5,random_forest,state_PAN India,0.0018700343804480665
+risk_by_t_plus_5,random_forest,progress_decrease_flag,0.0017593084454214957
+risk_by_t_plus_5,random_forest,agency_Central Railway [CR] - II,0.0015425544546649355
+risk_by_t_plus_5,random_forest,agency_National Aluminium Company Limited [NALCO],0.001537262885764054
+risk_by_t_plus_5,random_forest,state_Punjab,0.0015302206232433895
+risk_by_t_plus_5,random_forest,agency_South Eastern Coalfields Limited [SECL],0.0015256166354820323
+risk_by_t_plus_5,random_forest,expenditure_decrease_flag,0.0015205664216327195
+risk_by_t_plus_5,random_forest,state_Kerala,0.0014260835497680847
+risk_by_t_plus_5,random_forest,agency_Employee's State Insurance Company [ESIC],0.001418071279386616
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Puducherry, Tamil
+Nadu)",0.0013811007734443363
+risk_by_t_plus_5,random_forest,agency_RVNL,0.0013763494531604378
+risk_by_t_plus_5,random_forest,state_Haryana,0.0013664156336597524
+risk_by_t_plus_5,random_forest,agency_South Central Railway [SCR] - I,0.0013400338544520482
+risk_by_t_plus_5,random_forest,agency_Chennai Petroleum Corporation Limited [CPCL],0.0013102833413658696
+risk_by_t_plus_5,random_forest,agency_National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],0.0013083649112515543
+risk_by_t_plus_5,random_forest,agency_Eastern Coal Fields Limited [ECL],0.001307726824017171
+risk_by_t_plus_5,random_forest,agency_Gujarat Metro Rail Corporation Limited [GMRCL],0.0012896295914773183
+risk_by_t_plus_5,random_forest,agency_Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,0.0012521062351769446
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Jharkhand, West
+Bengal)",0.0012419168986382693
+risk_by_t_plus_5,random_forest,agency_Irrigation and CAD-TG,0.0012384218118455608
+risk_by_t_plus_5,random_forest,"agency_Indian Institutes of Science Education and Research, Behrampur",0.0012362654051349467
+risk_by_t_plus_5,random_forest,agency_Eastern Railway [ER] - I,0.0012186486506646859
+risk_by_t_plus_5,random_forest,"agency_National Institute of Technology, Meghalaya",0.001213133261305126
+risk_by_t_plus_5,random_forest,agency_National Communication Academy - Finance (Erstwhile NICF),0.00119839144706326
+risk_by_t_plus_5,random_forest,agency_PCE/WR,0.0011692608386374005
+risk_by_t_plus_5,random_forest,agency_Hindustan Petroleum Corporation Limited,0.001164496282826524
+risk_by_t_plus_5,random_forest,"state_Multi-States (Delhi,
+Rajasthan)",0.0011586287488144016
+risk_by_t_plus_5,random_forest,agency_Hindustan Petroleum Corporation Limited [HPCL],0.0011303248882860743
+risk_by_t_plus_5,random_forest,"agency_Indian Institute of Management, Sirmaur",0.0011263274606896413
+risk_by_t_plus_5,random_forest,agency_Northeast Frontier Railway (NFR) - II,0.0011127374015042523
+risk_by_t_plus_5,random_forest,agency_Steel Authority of India Limited [SAIL],0.0011056221058301364
+risk_by_t_plus_5,random_forest,agency_National Thermal Power Corporation [NTPC],0.0010957957197158972
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Karnataka)",0.0010957133183673643
+risk_by_t_plus_5,random_forest,state_Delhi,0.0010712529617438377
+risk_by_t_plus_5,random_forest,agency_CAO/C/NR,0.0010684556110743643
+risk_by_t_plus_5,random_forest,"state_Multi-States (Goa,
+Karnataka)",0.0010552084674002454
+risk_by_t_plus_5,random_forest,agency_West Central Railway [WCR] - II,0.0010288802978697682
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Gujarat,
+Maharashtra)",0.0010109008465478539
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Maharashtra,
+Telangana)",0.0009869368575368936
+risk_by_t_plus_5,random_forest,agency_Water Resources-AP,0.0009836353018512945
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan)",0.0009564279444709012
+risk_by_t_plus_5,random_forest,agency_CAO/C/NCR,0.0009258273103708871
+risk_by_t_plus_5,random_forest,agency_Southern Railway [SR] - II,0.0009009541019762979
+risk_by_t_plus_5,random_forest,agency_Mumbai Rail Vikas Corporation Ltd.[MRVC],0.0008986869079824428
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Bihar, Jharkhand)",0.0008956250855116889
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Madhya Pradesh,
+Rajasthan, Uttar
+Pradesh)",0.0008897286250589483
+risk_by_t_plus_5,random_forest,agency_Uttar Pradesh metro rail corporation [UPMRC],0.0008649640047284901
+risk_by_t_plus_5,random_forest,"agency_Indian Institute of Technology, Kharagpur",0.000857944299369659
+risk_by_t_plus_5,random_forest,state_Ladakh,0.0008404574625003069
+risk_by_t_plus_5,random_forest,agency_BSNL,0.000833599463781024
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra)",0.0008198815951072509
+risk_by_t_plus_5,random_forest,"agency_Central University, Himachal Pradesh",0.000816242334248398
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Jharkhand,
+Maharashtra,
+Odisha)",0.0008118272772128412
+risk_by_t_plus_5,random_forest,agency_Banaras Hindu University,0.0007854271967033057
+risk_by_t_plus_5,random_forest,state_Manipur,0.000779962534415716
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Assam, Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Tripura)",0.0007583013259576441
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Telangana)",0.0007449453424036707
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Chhattisgarh,
+Maharashtra)",0.0007366583180851487
+risk_by_t_plus_5,random_forest,agency_Water Resources-MP,0.0007297258078828145
+risk_by_t_plus_5,random_forest,state_Tripura,0.0007266136328219391
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Odisha)",0.0007122931957457654
+risk_by_t_plus_5,random_forest,agency_Bengaluru Metro Rail,0.0007114988065190121
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Chhattisgarh,
+Odisha)",0.0007014132496640483
+risk_by_t_plus_5,random_forest,agency_Central Railway (CR) - II,0.0007002060729857148
+risk_by_t_plus_5,random_forest,agency_North Eastern Railway [NER],0.0006883053087414685
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Karnataka, Tamil
+Nadu)",0.0006834967547196379
+risk_by_t_plus_5,random_forest,agency_South East Central Railway [SECR] - II,0.0006680695029860101
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Dadra & Nagar
+Haveli and Daman
+& Diu, Gujarat,
+Maharashtra)",0.0006483784882067321
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh)",0.000642243714059189
+risk_by_t_plus_5,random_forest,agency_National Mineral Development Corporation Limited [NMDC],0.0006407764942081318
+risk_by_t_plus_5,random_forest,state_Sikkim,0.0006371342769905046
+risk_by_t_plus_5,random_forest,"agency_Narmada and Water Resources, Water Supply and Kalpsar Department-GJ",0.000627363512082773
+risk_by_t_plus_5,random_forest,"agency_Indian intitue of Management, Amritsar",0.0006183151349354158
+risk_by_t_plus_5,random_forest,agency_RVNL - I,0.0006168746503822601
+risk_by_t_plus_5,random_forest,agency_South Eastern Railway - JH,0.0005993117886052148
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Jharkhand,
+Odisha)",0.000592460872065275
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Sikkim)",0.0005865000464446968
+risk_by_t_plus_5,random_forest,agency_Central Public Works Department [CPWD],0.0005789205269106198
+risk_by_t_plus_5,random_forest,large_progress_jump,0.000565620244605905
+risk_by_t_plus_5,random_forest,agency_Southern Railways [SR] - construction,0.00055546497414239
+risk_by_t_plus_5,random_forest,agency_Karnataka Rail Infrastructure Development Company Limited [K-RIDE],0.0005356421750274124
+risk_by_t_plus_5,random_forest,agency_Hindustan Copper Limited [HCL],0.0005224714887210502
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Punjab,
+Rajasthan)",0.0004976419870836662
+risk_by_t_plus_5,random_forest,agency_Central Organisation for Railway Electrification [CORE],0.0004951960467604908
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Assam,
+Manipur,
+Meghalaya,
+Mizoram,
+Nagaland, Sikkim,
+Tripura, West
+Bengal)",0.00049441663492584
+risk_by_t_plus_5,random_forest,large_expenditure_change,0.00047827675152488575
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Bihar, Gujarat,
+Himachal Pradesh,
+Jammu and
+Kashmir, Ladakh,
+Rajasthan, Uttar
+Pradesh)",0.0004617324912906271
+risk_by_t_plus_5,random_forest,agency_Department of Water Resources-PB,0.0004562280598938296
+risk_by_t_plus_5,random_forest,agency_Sikkim University,0.0004331161892983803
+risk_by_t_plus_5,random_forest,agency_NIT Patna,0.00040411204307426847
+risk_by_t_plus_5,random_forest,agency_Central Railway,0.00039904664926347655
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Rajasthan)",0.0003862730406990371
+risk_by_t_plus_5,random_forest,state_Puducherry,0.0003828558269996142
+risk_by_t_plus_5,random_forest,state_Goa,0.0003717970460989303
+risk_by_t_plus_5,random_forest,agency_Adani Airport Holdings Limited,0.00035794591040262186
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Assam, West
+Bengal)",0.0003538357150884264
+risk_by_t_plus_5,random_forest,agency_Railway,0.0003402942687490467
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Gujarat, Madhya
+Pradesh, Uttar
+Pradesh)",0.0003371773557785582
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Odisha, West
+Bengal)",0.0003367426583840053
+risk_by_t_plus_5,random_forest,agency_MRIDC,0.0003301466251418397
+risk_by_t_plus_5,random_forest,agency_Water Resources Department-MN,0.0003287315072829594
+risk_by_t_plus_5,random_forest,agency_Inland Waterways Authority of India [IWAI],0.00032287034976364817
+risk_by_t_plus_5,random_forest,"agency_National Institute of Technology, Puducherry",0.00032276019750606484
+risk_by_t_plus_5,random_forest,"agency_Department of Water Resources, River Development & GR",0.00031677078204854264
+risk_by_t_plus_5,random_forest,agency_Madhya Pradesh Metro Rail Co Limited [MPMRCL],0.0003167611455725567
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Karnataka,
+Kerala, Tamil
+Nadu)",0.0003130897233960743
+risk_by_t_plus_5,random_forest,"agency_Indian Institute of Technology, Hyderabad",0.00031192365112081756
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Chhattisgarh,
+Madhya Pradesh,
+Maharashtra,
+Odisha)",0.00031081676920089417
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Himachal
+Pradesh, Punjab)",0.0003017138890516742
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Assam, Bihar,
+Jharkhand,
+Odisha, West
+Bengal)",0.0003016610388308
+risk_by_t_plus_5,random_forest,"agency_Haldia Dock Complex, Syama Prasad Mookerjee Port Authority",0.0002944513404296485
+risk_by_t_plus_5,random_forest,agency_Mumbai Port Trust [MPT],0.00028881550198088085
+risk_by_t_plus_5,random_forest,agency_South Eastern Railway [SER] - I,0.0002775616006173232
+risk_by_t_plus_5,random_forest,agency_West Central Railway WCR I,0.0002761490488413605
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Assam,
+Nagaland)",0.0002736601294594922
+risk_by_t_plus_5,random_forest,"agency_Metro Railway, Kolkata",0.00026750783027804987
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Rajasthan, Uttar
+Pradesh)",0.0002620443692621266
+risk_by_t_plus_5,random_forest,agency_CAO/C/II/NR,0.00025558263792882524
+risk_by_t_plus_5,random_forest,agency_Delhi Metro Rail Corporation Limited [DMRC],0.0002476897445164712
+risk_by_t_plus_5,random_forest,agency_Ministry of Petroleum and Natural Gas,0.0002460587138505121
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Bihar, Uttar
+Pradesh)",0.00024210710632971698
+risk_by_t_plus_5,random_forest,agency_Irrigation & Water Resources-UP,0.00023051437125723402
+risk_by_t_plus_5,random_forest,agency_Mahanadi Coalfields Limited [MCL],0.00021546007093137357
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Bihar, Madhya
+Pradesh,
+Rajasthan, Uttar
+Pradesh)",0.00020702818525664775
+risk_by_t_plus_5,random_forest,agency_East Central Railway [ECR] - II,0.00020606482620862875
+risk_by_t_plus_5,random_forest,agency_National High Speed Rail Corporation [NHSRC],0.00019744994170325784
+risk_by_t_plus_5,random_forest,agency_CSPCC Projects,0.00019578016166810121
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Karnataka,
+Telangana)",0.00019528132678626114
+risk_by_t_plus_5,random_forest,agency_INDIAN INSTITUTE OF TECHNOLOGY PALAKKAD,0.00018797734909405987
+risk_by_t_plus_5,random_forest,agency_Damodar Valley Corporation,0.0001868133149484376
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Bihar, West
+Bengal)",0.0001788694072178483
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Karnataka,
+Maharashtra,
+Telangana, Uttar
+Pradesh)",0.00017580840677803666
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Gujarat, Haryana,
+Maharashtra,
+Rajasthan, Uttar
+Pradesh)",0.00017211250094999067
+risk_by_t_plus_5,random_forest,agency_PMSSY AND Institute of NATIONAL Importance,0.00016106521100455747
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Bihar, Jharkhand,
+Uttar Pradesh,
+West Bengal)",0.00015982624351453746
+risk_by_t_plus_5,random_forest,agency_Department of Telecommunications,0.00015911120560465437
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Haryana,
+Rajasthan)",0.0001575142558966875
+risk_by_t_plus_5,random_forest,agency_Mangalore Refinary and Petrochemicals Limited,0.00015729047766500912
+risk_by_t_plus_5,random_forest,"agency_Indian Institute of Management, Jammu",0.00015286386059999986
+risk_by_t_plus_5,random_forest,agency_Gas Authority of India Limited [GAIL],0.00014787723762368574
+risk_by_t_plus_5,random_forest,agency_Water resource-mp,0.00014316043644360915
+risk_by_t_plus_5,random_forest,agency_Ministry of Education,0.0001426777136138906
+risk_by_t_plus_5,random_forest,agency_National Capital Region Transport Corporation [NCRTC],0.00013708290208706305
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Sikkim, West
+Bengal)",0.00013664543202274244
+risk_by_t_plus_5,random_forest,agency_Ministry of Health & Family Welfare,0.00013175177527352262
+risk_by_t_plus_5,random_forest,"agency_Indian Institute of Technology, Mandi",0.0001291318740711911
+risk_by_t_plus_5,random_forest,agency_Deendayal Port Trust [DPT],0.00012351440922992542
+risk_by_t_plus_5,random_forest,agency_Northen Railway [NR],0.0001228470769664852
+risk_by_t_plus_5,random_forest,"state_Multi-States (Uttar
+Pradesh, West
+Bengal)",0.00011756415026729268
+risk_by_t_plus_5,random_forest,agency_Department of Water Resources-JH,0.00011092086563927218
+risk_by_t_plus_5,random_forest,agency_Western Railway (WR) - II,0.00010684363089155514
+risk_by_t_plus_5,random_forest,state_Mizoram,0.00010634477892146266
+risk_by_t_plus_5,random_forest,agency_Water Resources-KA,0.0001041579247190771
+risk_by_t_plus_5,random_forest,agency_DFCCIL,0.00010306886542125905
+risk_by_t_plus_5,random_forest,agency_Water Resources-BR,0.00010211699637909617
+risk_by_t_plus_5,random_forest,"state_Multi-States (Delhi,
+Uttar Pradesh)",9.752013363269455e-05
+risk_by_t_plus_5,random_forest,agency_Tezpur University,8.951141813033238e-05
+risk_by_t_plus_5,random_forest,agency_Water Resources-CT,8.57417898791725e-05
+risk_by_t_plus_5,random_forest,agency_Central University of Gujarat,7.33174806775734e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Arunachal
+Pradesh, Gujarat,
+Rajasthan)",6.80483184172849e-05
+risk_by_t_plus_5,random_forest,agency_PMSSY/Institute of National Importance (INI),6.688122311574747e-05
+risk_by_t_plus_5,random_forest,agency_Water Resources-OR,6.562784407644294e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Jammu and
+Kashmir, Punjab)",6.360351957631804e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Gujarat,
+Rajasthan)",6.335506666559657e-05
+risk_by_t_plus_5,random_forest,agency_SR-ERS,6.0818744821490474e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Bihar, Odisha,
+West Bengal)",5.911159389978196e-05
+risk_by_t_plus_5,random_forest,agency_MCL - CIL,5.6157759468142934e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Haryana,
+Himachal Pradesh)",5.2425454730410546e-05
+risk_by_t_plus_5,random_forest,agency_Mumbai Metro Rail Corporation Limited [MMRC],4.596456564420556e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Chhattisgarh,
+Odisha)",4.521830970671892e-05
+risk_by_t_plus_5,random_forest,agency_Mahanadi Coalfields Limited (MCL),4.5095250857714336e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Kerala, Tamil
+Nadu)",4.1686232354688834e-05
+risk_by_t_plus_5,random_forest,agency_Gujarat,3.565441540103198e-05
+risk_by_t_plus_5,random_forest,agency_National Buildings Construction Corporation [NBCC],3.0537504607470096e-05
+risk_by_t_plus_5,random_forest,state_Nagaland,2.9300930472892712e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Andhra Pradesh,
+Tamil Nadu)",2.8650304098632907e-05
+risk_by_t_plus_5,random_forest,agency_Bharat Coking Coal Limited [BCCL],2.7184095263336684e-05
+risk_by_t_plus_5,random_forest,agency_South East Central Railway,2.6880781378212655e-05
+risk_by_t_plus_5,random_forest,agency_Paradip Port Trust [PPT],2.289227903323761e-05
+risk_by_t_plus_5,random_forest,agency_North Central Railway (NCR) - II,2.158138846798733e-05
+risk_by_t_plus_5,random_forest,agency_Southern Railway (SR) - I,2.1245187335324706e-05
+risk_by_t_plus_5,random_forest,agency_NIT Sikkim,2.05941951716789e-05
+risk_by_t_plus_5,random_forest,very_large_progress_jump,2.0385343359264617e-05
+risk_by_t_plus_5,random_forest,state_Arunachal Pradesh,1.6593222516008435e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Haryana, Punjab,
+Rajasthan)",1.3656916153368236e-05
+risk_by_t_plus_5,random_forest,"state_Multi-States
+(Punjab,
+Rajasthan)",1.1448045838229557e-05
+risk_by_t_plus_5,random_forest,agency_Central Railways,8.513948516163553e-06
+risk_by_t_plus_5,random_forest,agency_Patna Metro Rail Corporation Ltd. [PMRCL],7.442354895559234e-06
+risk_by_t_plus_5,random_forest,agency_NIT Mizoram,3.6413716054838072e-06
+risk_by_t_plus_5,random_forest,agency_WR,3.391235875500231e-06
+risk_by_t_plus_5,random_forest,agency_CR,1.9100281293640664e-06
+risk_by_t_plus_5,random_forest,agency_Rail Vikas Nigam Limited,0.0
+risk_by_t_plus_5,random_forest,expenditure_available,0.0
+risk_by_t_plus_5,random_forest,long_observation_gap,0.0
+risk_by_t_plus_5,random_forest,agency_ECL - CIL,0.0
+risk_by_t_plus_5,random_forest,agency_Department of Sports & Youth Affairs,0.0
+risk_by_t_plus_5,random_forest,progress_available,0.0
+risk_by_t_plus_5,random_forest,agency_BCCL - CIL,0.0
+risk_by_t_plus_5,random_forest,very_large_expenditure_change,0.0
+risk_by_t_plus_5,permutation,progress_current,0.08531640283838997
+risk_by_t_plus_5,permutation,agency,0.031985120844892
+risk_by_t_plus_5,permutation,stall_count_to_date,0.012028589423716674
+risk_by_t_plus_5,permutation,months_since_first_observation,0.0032611447987175523
+risk_by_t_plus_5,permutation,large_progress_jump,0.002131088549985427
+risk_by_t_plus_5,permutation,project_observation_count,0.0018929768747723008
+risk_by_t_plus_5,permutation,progress_acceleration,0.0016862881335414138
+risk_by_t_plus_5,permutation,progress_first_observation,0.0009126020039919913
+risk_by_t_plus_5,permutation,revised_cost_change,0.0004172285288649658
+risk_by_t_plus_5,permutation,very_large_progress_jump,7.738249911581896e-05
+risk_by_t_plus_5,permutation,expenditure_decrease_flag,3.7154675374906354e-05
+risk_by_t_plus_5,permutation,progress_available,0.0
+risk_by_t_plus_5,permutation,long_observation_gap,0.0
+risk_by_t_plus_5,permutation,very_large_expenditure_change,0.0
+risk_by_t_plus_5,permutation,expenditure_available,0.0
+risk_by_t_plus_5,permutation,revised_cost_ratio,-7.642023140808086e-06
+risk_by_t_plus_5,permutation,large_expenditure_change,-0.0001409261552558494
+risk_by_t_plus_5,permutation,progress_decrease_flag,-0.00035766189221646537
+risk_by_t_plus_5,permutation,progress_velocity,-0.0006307257493912033
+risk_by_t_plus_5,permutation,progress_stalled,-0.0026509343956101494
+risk_by_t_plus_5,permutation,state,-0.002826502632012606
+risk_by_t_plus_5,permutation,expenditure_3m_change,-0.0039252018715179695
+risk_by_t_plus_5,permutation,expenditure_velocity,-0.004426908677910601
+risk_by_t_plus_5,permutation,expenditure_current,-0.00718698738973087
+risk_by_t_plus_5,permutation,progress_3m_change,-0.008781801002033384
+risk_by_t_plus_5,permutation,cost_ratio,-0.0330461547229145
