@@ -1,0 +1,35 @@
+{
+  "case_id": "CAU-001",
+  "execution": {
+    "error": null,
+    "eval_duration_ns": 17214644000,
+    "latency_seconds": 27.94262569991406,
+    "load_duration_ns": 10021836400,
+    "model_name": "gemma3:4b",
+    "output_tokens": 224,
+    "parse_error": null,
+    "parsed_response": {
+      "evidence_points": [
+        "Six observed months of unchanged physical progress.",
+        "Schedule feasibility requires 12 progress points per month, while recent rate is 2."
+      ],
+      "limitations": "The cause of the delay is not explicitly stated. The 'cause' field is null.",
+      "recommended_review_areas": [
+        "Review the target date revision (revision_history).",
+        "Verify the required future progress rate (contributors)."
+      ],
+      "reliability_explanation": "The model reliability is 'MODERATE' based on 'six observed months' of data. This suggests a moderate level of confidence in the trajectory summary, but the lack of a stated cause introduces uncertainty.",
+      "source_references": [
+        "SRC-2026-06 (page 73, table 6)"
+      ],
+      "summary": "The Demonstration Corridor project is experiencing a delay due to a recent rate of 2 progress points per month, which is significantly lower than the required 12 progress points per month. Six months of unchanged physical progress contribute to this issue. The cause is not identified.",
+      "unsupported_question": false
+    },
+    "prompt_tokens": 604,
+    "raw_response": "{\"evidence_points\": [\"Six observed months of unchanged physical progress.\", \"Schedule feasibility requires 12 progress points per month, while recent rate is 2.\"], \"limitations\": \"The cause of the delay is not explicitly stated. The 'cause' field is null.\", \"recommended_review_areas\": [\"Review the target date revision (revision_history).\", \"Verify the required future progress rate (contributors).\"], \"reliability_explanation\": \"The model reliability is 'MODERATE' based on 'six observed months' of data. This suggests a moderate level of confidence in the trajectory summary, but the lack of a stated cause introduces uncertainty.\", \"source_references\": [\"SRC-2026-06 (page 73, table 6)\"], \"summary\": \"The Demonstration Corridor project is experiencing a delay due to a recent rate of 2 progress points per month, which is significantly lower than the required 12 progress points per month. Six months of unchanged physical progress contribute to this issue. The cause is not identified.\", \"unsupported_question\": false}",
+    "request_timestamp": "2026-09-07T19:04:10.920340+00:00",
+    "response_timestamp": "2026-09-07T19:04:38.863255+00:00",
+    "tokens_per_second": 13.012177306716305
+  },
+  "scored": false
+}

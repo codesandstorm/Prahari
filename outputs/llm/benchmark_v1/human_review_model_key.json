@@ -1,0 +1,9 @@
+{
+  "mapping": {
+    "Model A": "qwen3:8b",
+    "Model B": "gemma3:4b",
+    "Model C": "gemma3:12b",
+    "Model D": "llama3:8b"
+  },
+  "seed": 26103
+}

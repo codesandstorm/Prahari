@@ -1,0 +1,7 @@
+{
+  "completed_at_utc": "2026-09-07T18:31:11.149746+00:00",
+  "formal_cases": 65,
+  "formal_run_dir": "outputs/llm/benchmark/candidate_v1_llama3_8b_20260907T181020.316778Z",
+  "model": "llama3:8b",
+  "warmup_artifact": "outputs/llm/benchmark_v1/formal/llama3_8b_warmup.json"
+}

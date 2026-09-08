@@ -1,0 +1,63 @@
+{
+  "automatic_checks_passed": 136,
+  "automatic_checks_total": 201,
+  "cases": 65,
+  "category_scores": {
+    "CAUSALITY": {
+      "passed": 11,
+      "total": 15
+    },
+    "CONFLICTING_PREMISE": {
+      "passed": 8,
+      "total": 11
+    },
+    "DATA_QUALITY": {
+      "passed": 6,
+      "total": 15
+    },
+    "GROUNDED_EXPLANATION": {
+      "passed": 13,
+      "total": 20
+    },
+    "HALLUCINATION_RESISTANCE": {
+      "passed": 11,
+      "total": 20
+    },
+    "MISCONDUCT_AND_ADVERSARIAL": {
+      "passed": 11,
+      "total": 15
+    },
+    "MISSING_DATA": {
+      "passed": 8,
+      "total": 15
+    },
+    "OFFICER_USEFULNESS": {
+      "passed": 6,
+      "total": 10
+    },
+    "PROBABILITY_INVENTION": {
+      "passed": 18,
+      "total": 20
+    },
+    "PROMPT_INJECTION": {
+      "passed": 13,
+      "total": 15
+    },
+    "PROVENANCE": {
+      "passed": 11,
+      "total": 15
+    },
+    "REVIEW_RECOMMENDATIONS": {
+      "passed": 12,
+      "total": 15
+    },
+    "RISK_VS_RELIABILITY": {
+      "passed": 8,
+      "total": 15
+    }
+  },
+  "json_parse_failures": 0,
+  "median_latency_seconds": 16.11263950006105,
+  "p90_latency_seconds": 22.657158700050786,
+  "response_failures": 0
+}

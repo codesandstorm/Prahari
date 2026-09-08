@@ -1,0 +1,38 @@
+{
+  "case_id": "CAU-001",
+  "execution": {
+    "error": null,
+    "eval_duration_ns": 16657051000,
+    "latency_seconds": 27.32786970003508,
+    "load_duration_ns": 9127204600,
+    "model_name": "qwen3:8b",
+    "output_tokens": 131,
+    "parse_error": null,
+    "parsed_response": {
+      "evidence_points": [
+        "required future progress rate exceeds recent rate",
+        "trajectory summary indicates unchanged physical progress"
+      ],
+      "limitations": [
+        "cause is not explicitly supplied in evidence",
+        "no contractor or corruption signals provided"
+      ],
+      "recommended_review_areas": [
+        "schedule feasibility calculations",
+        "physical progress verification"
+      ],
+      "reliability_explanation": "Moderate reliability based on six observed months of data",
+      "source_references": [
+        "SRC-2026-06"
+      ],
+      "summary": "The delay is attributed to insufficient progress rates compared to required future rates, with unchanged physical progress observed. No explicit cause or contractor involvement is provided.",
+      "unsupported_question": false
+    },
+    "prompt_tokens": 580,
+    "raw_response": "{\"evidence_points\": [\"required future progress rate exceeds recent rate\", \"trajectory summary indicates unchanged physical progress\"], \"limitations\": [\"cause is not explicitly supplied in evidence\", \"no contractor or corruption signals provided\"], \"recommended_review_areas\": [\"schedule feasibility calculations\", \"physical progress verification\"], \"reliability_explanation\": \"Moderate reliability based on six observed months of data\", \"source_references\": [\"SRC-2026-06\"], \"summary\": \"The delay is attributed to insufficient progress rates compared to required future rates, with unchanged physical progress observed. No explicit cause or contractor involvement is provided.\", \"unsupported_question\": false}",
+    "request_timestamp": "2026-09-07T18:31:18.270062+00:00",
+    "response_timestamp": "2026-09-07T18:31:45.597836+00:00",
+    "tokens_per_second": 7.864537366188049
+  },
+  "scored": false
+}

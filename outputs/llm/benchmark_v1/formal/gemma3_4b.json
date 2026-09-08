@@ -1,0 +1,7 @@
+{
+  "completed_at_utc": "2026-09-07T19:20:54.132105+00:00",
+  "formal_cases": 65,
+  "formal_run_dir": "outputs/llm/benchmark/candidate_v1_gemma3_4b_20260907T190438.863810Z",
+  "model": "gemma3:4b",
+  "warmup_artifact": "outputs/llm/benchmark_v1/formal/gemma3_4b_warmup.json"
+}

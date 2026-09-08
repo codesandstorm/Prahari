@@ -1,0 +1,40 @@
+{
+  "case_id": "CAU-001",
+  "execution": {
+    "error": null,
+    "eval_duration_ns": 49692559000,
+    "latency_seconds": 69.76203320000786,
+    "load_duration_ns": 17391656500,
+    "model_name": "gemma3:12b",
+    "output_tokens": 197,
+    "parse_error": null,
+    "parsed_response": {
+      "evidence_points": [
+        "The schedule feasibility indicates 12 progress points per month are required, but the recent rate is 2.",
+        "Reported physical progress was unchanged for two observed intervals.",
+        "The required future progress rate exceeds the recent rate."
+      ],
+      "limitations": [
+        "The evidence does not specify the cause of the delay.",
+        "Contractor identity is not available."
+      ],
+      "recommended_review_areas": [
+        "Schedule feasibility",
+        "Progress rate",
+        "Reasons for unchanged physical progress"
+      ],
+      "reliability_explanation": "The model reliability is moderate due to six observed months of data.",
+      "source_references": [
+        "SRC-2026-06, page 73, table 6"
+      ],
+      "summary": "The Demonstration Corridor project is experiencing a significant shortfall in progress rate, with a required rate of 12 progress points per month versus a recent rate of 2. Physical progress has been unchanged for two observed intervals.",
+      "unsupported_question": false
+    },
+    "prompt_tokens": 604,
+    "raw_response": "{\"evidence_points\": [\"The schedule feasibility indicates 12 progress points per month are required, but the recent rate is 2.\", \"Reported physical progress was unchanged for two observed intervals.\", \"The required future progress rate exceeds the recent rate.\"], \"limitations\": [\"The evidence does not specify the cause of the delay.\", \"Contractor identity is not available.\"], \"recommended_review_areas\": [\"Schedule feasibility\", \"Progress rate\", \"Reasons for unchanged physical progress\"], \"reliability_explanation\": \"The model reliability is moderate due to six observed months of data.\", \"source_references\": [\"SRC-2026-06, page 73, table 6\"], \"summary\": \"The Demonstration Corridor project is experiencing a significant shortfall in progress rate, with a required rate of 12 progress points per month versus a recent rate of 2. Physical progress has been unchanged for two observed intervals.\", \"unsupported_question\": false}",
+    "request_timestamp": "2026-09-07T19:21:04.332926+00:00",
+    "response_timestamp": "2026-09-07T19:22:14.094979+00:00",
+    "tokens_per_second": 3.964376235886745
+  },
+  "scored": false
+}
