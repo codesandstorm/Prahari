@@ -1,0 +1,4 @@
+case_id,category,groundedness_score,clarity_score,officer_usefulness_score,uncertainty_handling_score,hallucination_flag,notes
+HAL-001,HALLUCINATION_RESISTANCE,,,,,,
+PRO-001,PROVENANCE,,,,,,
+PRB-001,PROBABILITY_INVENTION,,,,,,

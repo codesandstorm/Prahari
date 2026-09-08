@@ -1,0 +1,45 @@
+{
+  "captured_at_utc": "2026-09-07T17:17:55.106039+00:00",
+  "models": [
+    {
+      "context_length": 131072,
+      "digest": "c6eb396dbd5992bbe3f5cdb947e8bbc0ee413d7c17e2beaae69f5d569cf982eb",
+      "family": "gemma4",
+      "license_reference": "Apache License | Version 2.0, January 2004 | http://www.apache.org/licenses/",
+      "metadata_error": null,
+      "modified_at": "2026-04-07T22:58:34.5542025+05:30",
+      "name": "gemma4:latest",
+      "parameter_size": "8.0B",
+      "quantization": "Q4_K_M",
+      "size_bytes": 9608350718,
+      "template": "{{ .Prompt }}"
+    },
+    {
+      "context_length": 16384,
+      "digest": "ce298d984115b93bb1b191b47fee6b39e4e9fbd5f18e651c02f9fa74e0edcd13",
+      "family": "llama",
+      "license_reference": "DEEPSEEK LICENSE AGREEMENT | Version 1.0, 23 October 2023 | Copyright (c) 2023 DeepSeek",
+      "metadata_error": null,
+      "modified_at": "2026-02-25T22:52:00.3238113+05:30",
+      "name": "deepseek-coder:6.7b",
+      "parameter_size": "7B",
+      "quantization": "Q4_0",
+      "size_bytes": 3827834503,
+      "template": "{{ .System }}\n### Instruction:\n{{ .Prompt }}\n### Response:\n"
+    },
+    {
+      "context_length": 8192,
+      "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+      "family": "llama",
+      "license_reference": "META LLAMA 3 COMMUNITY LICENSE AGREEMENT | Meta Llama 3 Version Release Date: April 18, 2024 | \u201cAgreement\u201d means the terms and conditions for use, reproduction, distribution and modification of the Llama Materials set forth herein.",
+      "metadata_error": null,
+      "modified_at": "2026-02-25T22:27:45.9333051+05:30",
+      "name": "llama3:8b",
+      "parameter_size": "8.0B",
+      "quantization": "Q4_0",
+      "size_bytes": 4661224676,
+      "template": "{{ if .System }}<|start_header_id|>system<|end_header_id|>\n\n{{ .System }}<|eot_id|>{{ end }}{{ if .Prompt }}<|start_header_id|>user<|end_header_id|>\n\n{{ .Prompt }}<|eot_id|>{{ end }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ .Response }}<|eot_id|>"
+    }
+  ],
+  "source": "local Ollama API"
+}

@@ -1,0 +1,7 @@
+{
+  "completed_at_utc": "2026-09-07T19:04:03.673819+00:00",
+  "formal_cases": 65,
+  "formal_run_dir": "outputs/llm/benchmark/candidate_v1_qwen3_8b_20260907T183145.600123Z",
+  "model": "qwen3:8b",
+  "warmup_artifact": "outputs/llm/benchmark_v1/formal/qwen3_8b_warmup.json"
+}

@@ -1,0 +1,15 @@
+idea,feature_name,availability,final_verdict,known_at_t,minimum_history,leakage_status,semantic_limit,dashboard_status
+Changepoint timing,progress_months_since_changepoint,DERIVABLE_NOW,REJECT_UNSTABLE,YES,5 observations,SAFE,Mean-shift is exploratory and sparse,BACKEND_ONLY
+Changepoint direction,progress_changepoint_direction,DERIVABLE_NOW,REJECT_REDUNDANT,YES,5 observations,SAFE,Overlaps momentum and stagnation,BACKEND_ONLY
+Changepoint magnitude,progress_changepoint_magnitude,DERIVABLE_NOW,REJECT_UNSTABLE,YES,5 observations,SAFE,Sensitive to short trajectories,BACKEND_ONLY
+Expenditure changepoint,expenditure_months_since_changepoint,DERIVABLE_NOW,ADOPT_NOW_CONDITIONAL,YES,5 observations,SAFE,Expenditure is not fund release,BACKEND_ONLY
+Recovery history,bounce_back_rate,DERIVABLE_NOW,ADOPT_AS_RELIABILITY_FEATURE,YES,2 fully resolved stalls,SAFE,Describes observed resilience not causal capacity,CONDITIONAL_UI
+Peer velocity,peer_velocity_percentile,DERIVABLE_NOW,REJECT_UNSTABLE,YES,10 self-excluded same-month peers,SAFE,Cost and maturity bands are coarse,BACKEND_ONLY
+Expenditure-to-progress lag,historical_exp_progress_lag_corr,DERIVABLE_NOW,REJECT_UNSTABLE,YES,4 past lag pairs,SAFE,Association only and sparse,BACKEND_ONLY
+Contractor peer trend,contractor_peer_trend,UNAVAILABLE,FUTURE_CUF,UNKNOWN,N/A,UNKNOWN,Raw agency is not contractor,NO
+Implementing-agency peer trend,agency_peer_trend,SEMANTICALLY_UNSAFE,REJECT_SEMANTICALLY_UNSAFE,UNKNOWN,N/A,UNKNOWN,Agency identity and role changes are unresolved,NO
+True fund-to-progress lag,fund_to_progress_lag,UNAVAILABLE,FUTURE_CUF,UNKNOWN,N/A,UNKNOWN,Cumulative expenditure is not fund release,NO
+Archetype similarity,archetype_similarity,UNAVAILABLE,FUTURE_AFTER_COMPLETION_DATA,UNKNOWN,Completed outcome trajectories,UNKNOWN,Ongoing-only histories are survival biased,NO
+Archetype warning,archetype_explanation,UNAVAILABLE,FUTURE_AFTER_COMPLETION_DATA,UNKNOWN,Completed outcome trajectories,UNKNOWN,Explanation requires validated archetypes,NO
+Multi-horizon risk,multi_horizon_probability,CONDITIONALLY_DERIVABLE,REJECT_INSUFFICIENT_DATA,YES,Horizon-specific uncensored outcomes,SAFE,Five independent models would compound instability,NO
+Risk trend,risk_trend,CONDITIONALLY_DERIVABLE,ADOPT_NOW_CONDITIONAL,YES,Consecutive frozen-model predictions,SAFE,Must use a frozen calibrated model and deadband,CONDITIONAL_UI

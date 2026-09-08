@@ -1,0 +1,35 @@
+{
+  "case_id": "CAU-001",
+  "execution": {
+    "error": null,
+    "eval_duration_ns": 12324601000,
+    "latency_seconds": 21.13833609991707,
+    "load_duration_ns": 7813134100,
+    "model_name": "llama3:8b",
+    "output_tokens": 119,
+    "parse_error": null,
+    "parsed_response": {
+      "evidence_points": [
+        "required future progress rate exceeds recent rate"
+      ],
+      "limitations": [
+        "Insufficient information to determine the cause of the delay"
+      ],
+      "recommended_review_areas": [
+        "Schedule feasibility and future progress rate"
+      ],
+      "reliability_explanation": "The model reliability is MODERATE based on six observed months.",
+      "source_references": [
+        "SRC-2026-06, page 73, table 6"
+      ],
+      "summary": "The delay is attributed to the required future progress rate exceeding the recent rate, but the exact cause of the delay is unknown.",
+      "unsupported_question": false
+    },
+    "prompt_tokens": 566,
+    "raw_response": "{\"evidence_points\": [\"required future progress rate exceeds recent rate\"], \"limitations\": [\"Insufficient information to determine the cause of the delay\"], \"recommended_review_areas\": [\"Schedule feasibility and future progress rate\"], \"reliability_explanation\": \"The model reliability is MODERATE based on six observed months.\", \"source_references\": [\"SRC-2026-06, page 73, table 6\"], \"summary\": \"The delay is attributed to the required future progress rate exceeding the recent rate, but the exact cause of the delay is unknown.\", \"unsupported_question\": false}",
+    "request_timestamp": "2026-09-07T18:09:59.177339+00:00",
+    "response_timestamp": "2026-09-07T18:10:20.316249+00:00",
+    "tokens_per_second": 9.655484992982736
+  },
+  "scored": false
+}
