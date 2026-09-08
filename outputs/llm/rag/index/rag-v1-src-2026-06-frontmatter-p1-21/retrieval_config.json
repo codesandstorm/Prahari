@@ -1,0 +1,7 @@
+{
+  "method": "BM25 lexical",
+  "top_k": 5,
+  "minimum_score": 0.01,
+  "tokenizer": "lowercase alphanumeric; English stopword removal",
+  "query_expansion": "three explicit transparent PAIMANA/major/mega definition expansions"
+}

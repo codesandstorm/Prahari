@@ -1,0 +1,968 @@
+[
+  {
+    "document_id": "SRC-2026-06",
+    "page": 1,
+    "status": "EXTRACTED",
+    "characters": 203
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 2,
+    "status": "EXTRACTED",
+    "characters": 899
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 3,
+    "status": "EXTRACTED",
+    "characters": 158
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 4,
+    "status": "EXTRACTED",
+    "characters": 826
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 5,
+    "status": "EXTRACTED",
+    "characters": 466
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 6,
+    "status": "EXTRACTED",
+    "characters": 170
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 7,
+    "status": "EXTRACTED",
+    "characters": 785
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 8,
+    "status": "EXTRACTED",
+    "characters": 189
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 9,
+    "status": "EXTRACTED",
+    "characters": 1412
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 10,
+    "status": "EXTRACTED",
+    "characters": 1310
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 11,
+    "status": "EXTRACTED",
+    "characters": 1092
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 12,
+    "status": "EXTRACTED",
+    "characters": 1248
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 13,
+    "status": "EXTRACTED",
+    "characters": 1332
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 14,
+    "status": "EXTRACTED",
+    "characters": 1162
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 15,
+    "status": "EXTRACTED",
+    "characters": 204
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 16,
+    "status": "EXTRACTED",
+    "characters": 888
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 17,
+    "status": "EXTRACTED",
+    "characters": 1185
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 18,
+    "status": "EXTRACTED",
+    "characters": 1425
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 19,
+    "status": "EXTRACTED",
+    "characters": 1329
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 20,
+    "status": "EXTRACTED",
+    "characters": 1531
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 21,
+    "status": "EXTRACTED",
+    "characters": 1581
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 22,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 165
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 23,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 190
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 24,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 2686
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 25,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 187
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 26,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3437
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 27,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3258
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 28,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3413
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 29,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3411
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 30,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3412
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 31,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3258
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 32,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3409
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 33,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3496
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 34,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 1530
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 35,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 178
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 36,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4731
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 37,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5166
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 38,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5200
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 39,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5370
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 40,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5175
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 41,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5266
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 42,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 800
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 43,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 180
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 44,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4820
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 45,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 197
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 46,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4686
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 47,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5082
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 48,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5153
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 49,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 6250
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 50,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5785
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 51,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5926
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 52,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5913
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 53,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5794
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 54,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 6161
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 55,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5921
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 56,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5935
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 57,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3454
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 58,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 180
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 59,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4743
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 60,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4002
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 61,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3304
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 62,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3434
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 63,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3481
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 64,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3839
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 65,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3442
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 66,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4803
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 67,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4969
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 68,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4984
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 69,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5473
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 70,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5149
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 71,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4449
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 72,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4652
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 73,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4403
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 74,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4539
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 75,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4566
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 76,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4544
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 77,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4614
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 78,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4492
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 79,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4704
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 80,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4199
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 81,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4336
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 82,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4404
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 83,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4248
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 84,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4608
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 85,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4292
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 86,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4021
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 87,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4235
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 88,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4223
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 89,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4107
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 90,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4938
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 91,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4761
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 92,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4833
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 93,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3996
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 94,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 3927
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 95,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4255
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 96,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4751
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 97,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5161
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 98,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4377
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 99,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4437
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 100,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5395
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 101,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5210
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 102,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5097
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 103,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5166
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 104,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4806
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 105,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5115
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 106,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4335
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 107,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4680
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 108,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4501
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 109,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4589
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 110,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4450
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 111,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4615
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 112,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4697
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 113,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5859
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 114,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5453
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 115,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5066
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 116,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4631
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 117,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5167
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 118,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4811
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 119,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4305
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 120,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4109
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 121,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5006
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 122,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5201
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 123,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4526
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 124,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4977
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 125,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5509
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 126,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5008
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 127,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4809
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 128,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4908
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 129,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4783
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 130,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5107
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 131,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5062
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 132,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5240
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 133,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5219
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 134,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5346
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 135,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5452
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 136,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4870
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 137,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5200
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 138,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4800
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 139,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4822
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 140,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5201
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 141,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4898
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 142,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4769
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 143,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5190
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 144,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4533
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 145,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4807
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 146,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4694
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 147,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4920
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 148,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5041
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 149,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4946
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 150,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5262
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 151,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4628
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 152,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4849
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 153,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4448
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 154,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5210
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 155,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5149
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 156,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 5412
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 157,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4638
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 158,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4352
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 159,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 4122
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 160,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 549
+  },
+  {
+    "document_id": "SRC-2026-06",
+    "page": 161,
+    "status": "OUT_OF_APPROVED_SCOPE",
+    "characters": 151
+  }
+]

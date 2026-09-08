@@ -1,0 +1,11 @@
+{
+  "index_version": "rag-v1-src-2026-06-frontmatter-p1-21",
+  "chunking_version": "page-paragraph-v1-450w-40w-overlap",
+  "retriever_version": "bm25-local-v1",
+  "approved_page_scope": "physical pages 1-21: title, methodology note, overview and ministry summaries; project tables excluded because project facts belong to Domain A",
+  "documents": 1,
+  "chunks": 21,
+  "extracted_pages": 21,
+  "unreadable_pages": 0,
+  "out_of_scope_pages": 140
+}
