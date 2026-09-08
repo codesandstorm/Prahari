@@ -1,0 +1,11 @@
+{
+  "model": "llama3:8b",
+  "ollama_base_url": "http://127.0.0.1:11434",
+  "timeout_seconds": 90,
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 350,
+  "top_p": 0.9,
+  "structured_json": true,
+  "system_prompt": "llm/prompts/system_prompt_v1.txt"
+}

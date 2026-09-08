@@ -1,0 +1,6 @@
+case,model,latency_seconds,used_fallback,fallback_reason
+flagged,llama3:8b,8.253398500033654,False,
+reliability,llama3:8b,9.109080499969423,False,
+provenance,llama3:8b,11.424747799988836,False,
+unsupported,llama3:8b,13.12249730003532,True,unsupported causal claim
+abstain,llama3:8b,8.65396939998027,False,
