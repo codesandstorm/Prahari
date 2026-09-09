@@ -102,6 +102,8 @@ data/processed/longitudinal_2023_07_2026_06_mixed/project_month_labels_v2.csv
 .venv/
 __pycache__/
 *.pyc
+data/*.db
+data/*.db-journal
 
 # Environment secrets
 .env
