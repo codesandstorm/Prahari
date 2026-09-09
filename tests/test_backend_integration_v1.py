@@ -3,6 +3,7 @@ import csv
 from datetime import date
 from pathlib import Path
 import pytest
+from alembic.config import Config
 from fastapi.testclient import TestClient
 from sqlalchemy import func, select
 from sqlalchemy.orm import sessionmaker
@@ -83,4 +84,6 @@ def test_loader_excludes_ml_derived_fields(tmp_path):
     engine=make_engine(f"sqlite:///{(tmp_path/'s.db').as_posix()}");Base.metadata.create_all(engine);Session=sessionmaker(engine);folder=tmp_path/"source";_loader_files(folder)
     with Session() as db:
         load_canonical_dataset(db,folder);row=db.scalar(select(ProjectSnapshot));assert row.progress_current==10 and row.expenditure_current==1200.5 and row.progress_velocity is None and row.cost_ratio is None and row.raw_features=={}
+def test_alembic_accepts_percent_encoded_database_url():
+    url="postgresql+psycopg://app:example%40123@localhost/prahari";config=Config();config.set_main_option("sqlalchemy.url",url.replace("%","%%"));assert config.get_main_option("sqlalchemy.url")==url
 def test_prediction_and_alert_are_distinct_tables(): assert Prediction.__table__.name != Alert.__table__.name
