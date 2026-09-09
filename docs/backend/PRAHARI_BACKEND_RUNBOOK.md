@@ -22,3 +22,5 @@ python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000
 ```
 
 In a second CMD window, run `python -m pytest -m "not integration" -v`. Check `http://127.0.0.1:8000/api/v1/health`. A live assistant smoke requires Ollama and `LLM_ENABLED=true`; normal tests use a fake and never contact Ollama. Stop with Ctrl+C. Run `python -m alembic downgrade base` only on an expendable development database.
+
+The loader requires `project_master.csv`, source-backed `project_month.csv`, and `report_month.csv` in `PROCESSED_DATA_DIR`. It deliberately rejects substitution of the ML-ready research table.

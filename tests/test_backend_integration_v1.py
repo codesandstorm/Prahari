@@ -64,7 +64,7 @@ def test_disabled_assistant(db_setup):
 def _write(path,fields,rows):
     with path.open("w",newline="",encoding="utf-8") as f:w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(rows)
 def _loader_files(root:Path,bad=False):
-    root.mkdir();_write(root/"project_master.csv",["canonical_project_id","canonical_name","identity_method","identity_status"],[{"canonical_project_id":"P1","canonical_name":"One","identity_method":"EXACT","identity_status":"RESOLVED_EXACT"}]);_write(root/"report_month.csv",["reporting_month","coverage_class","source_id","source_present","project_level_usable","official_project_count","schema_family","source_quality_status"],[{"reporting_month":"2026-01","coverage_class":"PROJECT_LEVEL","source_id":"S1","source_present":"TRUE","project_level_usable":"TRUE","official_project_count":"1","schema_family":"X","source_quality_status":"PASS"}]);_write(root/"project_month_ml_ready.csv",["canonical_project_id","reporting_month","progress_current"],[{"canonical_project_id":"BAD" if bad else "P1","reporting_month":"2026-01-01","progress_current":"10"}])
+    root.mkdir();_write(root/"project_master.csv",["canonical_project_id","canonical_name","identity_method","identity_status"],[{"canonical_project_id":"P1","canonical_name":"One","identity_method":"EXACT","identity_status":"RESOLVED_EXACT"}]);_write(root/"report_month.csv",["reporting_month","coverage_class","source_id","source_present","project_level_usable","official_project_count","schema_family","source_quality_status"],[{"reporting_month":"2026-01","coverage_class":"PROJECT_LEVEL","source_id":"S1","source_present":"TRUE","project_level_usable":"TRUE","official_project_count":"1","schema_family":"X","source_quality_status":"PASS"}]);_write(root/"project_month.csv",["canonical_project_id","reporting_month","reported_physical_progress","reported_cumulative_expenditure","reported_agency","reported_state","sector_raw"],[{"canonical_project_id":"BAD" if bad else "P1","reporting_month":"2026-01","reported_physical_progress":"10","reported_cumulative_expenditure":"1,200.5","reported_agency":"Agency","reported_state":"State","sector_raw":"Road"}])
 def test_loader_idempotency(tmp_path):
     engine=make_engine(f"sqlite:///{(tmp_path/'l.db').as_posix()}");Base.metadata.create_all(engine);Session=sessionmaker(engine);folder=tmp_path/"data";_loader_files(folder)
     with Session() as db:
@@ -79,4 +79,8 @@ def test_abstention_constraint(db_setup):
     with Session() as db:
         db.add(Prediction(prediction_id="x",canonical_project_id="PRH-1",as_of_month=date(2026,1,1),target="S1",horizon_months=3,prediction_status="ABSTAIN",probability=.9,risk_band="HIGH",reliability_band="ABSTAIN",model_version="m",feature_version="f",target_version="t"))
         with pytest.raises(Exception):db.commit()
+def test_loader_excludes_ml_derived_fields(tmp_path):
+    engine=make_engine(f"sqlite:///{(tmp_path/'s.db').as_posix()}");Base.metadata.create_all(engine);Session=sessionmaker(engine);folder=tmp_path/"source";_loader_files(folder)
+    with Session() as db:
+        load_canonical_dataset(db,folder);row=db.scalar(select(ProjectSnapshot));assert row.progress_current==10 and row.expenditure_current==1200.5 and row.progress_velocity is None and row.cost_ratio is None and row.raw_features=={}
 def test_prediction_and_alert_are_distinct_tables(): assert Prediction.__table__.name != Alert.__table__.name

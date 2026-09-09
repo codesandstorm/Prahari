@@ -31,6 +31,13 @@ def _number(value, kind=float):
     return result
 
 
+def _reported_number(value):
+    """Parse a source-reported numeric cell without imputing missing values."""
+    value = _none(value)
+    if value is None: return None
+    return _number(value.replace(",", "").replace("%", "").strip(), float)
+
+
 def _month(value: str) -> date:
     try: return date.fromisoformat(value[:7] + "-01")
     except (TypeError, ValueError) as exc: raise DataValidationError(f"invalid reporting month: {value}") from exc
@@ -44,7 +51,7 @@ def dataset_hash(paths: list[Path]) -> str:
 
 
 def load_canonical_dataset(db: Session, data_dir: Path, manifest_path: Path | None = None) -> dict:
-    master, months, reports = data_dir / "project_master.csv", data_dir / "project_month_ml_ready.csv", data_dir / "report_month.csv"
+    master, months, reports = data_dir / "project_master.csv", data_dir / "project_month.csv", data_dir / "report_month.csv"
     paths = [master, months, reports]
     missing = [str(p) for p in paths if not p.is_file()]
     if missing: raise DataValidationError(f"missing approved input(s): {missing}")
@@ -66,7 +73,7 @@ def load_canonical_dataset(db: Session, data_dir: Path, manifest_path: Path | No
         if month not in report_keys: raise DataValidationError(f"snapshot month absent from report calendar: {month}")
         if coverage_by_month[month] != "PROJECT_LEVEL": raise DataValidationError(f"project snapshot exists for unavailable project-level month: {month}")
     for row in month_rows:
-        progress = _number(row.get("progress_current"), float)
+        progress = _reported_number(row.get("reported_physical_progress"))
         if progress is not None and not 0 <= progress <= 100: raise DataValidationError(f"progress_current outside [0,100]: {progress}")
     hashes = {}
     if manifest_path and manifest_path.is_file():
@@ -90,9 +97,11 @@ def load_canonical_dataset(db: Session, data_dir: Path, manifest_path: Path | No
         for row in month_rows:
             pid, month=row["canonical_project_id"].strip(),_month(row["reporting_month"])
             item=db.scalar(select(ProjectSnapshot).where(ProjectSnapshot.canonical_project_id==pid,ProjectSnapshot.reporting_month==month)) or ProjectSnapshot(canonical_project_id=pid,reporting_month=month)
-            for field, kind in (("project_observation_count",int),("months_since_first_observation",int),("progress_current",float),("progress_velocity",float),("expenditure_current",float),("expenditure_velocity",float),("cost_ratio",float)):
-                setattr(item,field,_number(row.get(field),kind))
-            item.agency=_none(row.get("agency"));item.state=_none(row.get("state"));item.sector=_none(row.get("sector"));item.raw_features={k:_none(v) for k,v in row.items() if k not in {"canonical_project_id","reporting_month"}}
+            # Only contemporaneous source-reported state enters operations.
+            item.project_observation_count=None;item.months_since_first_observation=None
+            item.progress_current=_reported_number(row.get("reported_physical_progress"));item.progress_velocity=None
+            item.expenditure_current=_reported_number(row.get("reported_cumulative_expenditure"));item.expenditure_velocity=None;item.cost_ratio=None
+            item.agency=_none(row.get("reported_agency"));item.state=_none(row.get("reported_state"));item.sector=_none(row.get("sector_raw"));item.raw_features={}
             db.add(item)
         run.status="COMPLETED";run.projects_loaded=len(project_rows);run.snapshots_loaded=len(month_rows);run.completed_at=datetime.now(timezone.utc)
     LOG.info("canonical_dataset_loaded run_id=%s projects=%d snapshots=%d",run_id,len(project_rows),len(month_rows))
