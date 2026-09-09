@@ -7,7 +7,10 @@ import backend.models
 
 config=context.config
 if config.config_file_name:fileConfig(config.config_file_name)
-config.set_main_option("sqlalchemy.url",get_settings().database_url)
+# ConfigParser reserves ``%`` for interpolation. Database URLs legitimately
+# contain percent-encoded password characters, so escape them at this boundary;
+# ConfigParser restores the original URL before SQLAlchemy receives it.
+config.set_main_option("sqlalchemy.url",get_settings().database_url.replace("%", "%%"))
 target_metadata=Base.metadata
 
 def run_migrations_offline():
