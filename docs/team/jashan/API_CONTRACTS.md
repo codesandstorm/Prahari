@@ -3,11 +3,13 @@
 **Owner:** Jashan
 **Area:** Backend
 **Document Type:** RESEARCH
-**Status:** NOT STARTED
+**Status:** SUPERSEDED
 **Last Updated:** 2026-09-01
 **Depends On:** DATA_CONTRACT.md (schema must be finalized first)
 **Used By:** Sanskaar (frontend), ML team (prediction storage)
-**Canonical:** YES
+**Canonical:** NO
+
+**Superseded by:** [`../../backend/PRAHARI_API_CONTRACT_V1.md`](../../backend/PRAHARI_API_CONTRACT_V1.md)
 
 ---
 
