@@ -24,7 +24,12 @@ def load_cases(case_dir: Path) -> tuple[list[BenchmarkCase], str]:
     digest = hashlib.sha256()
     cases, seen = [], set()
     for path in files:
-        content = path.read_bytes(); digest.update(path.name.encode()); digest.update(content)
+        content = path.read_bytes()
+        # Candidate V1 was frozen from a Windows checkout. Hash a canonical
+        # CRLF representation so Git's LF checkout on Linux has the same
+        # byte identity without changing any case content or expected hash.
+        canonical = content.replace(b"\r\n", b"\n").replace(b"\r", b"\n").replace(b"\n", b"\r\n")
+        digest.update(path.name.encode()); digest.update(canonical)
         for line_number, line in enumerate(content.decode("utf-8").splitlines(), 1):
             if not line.strip(): continue
             case = BenchmarkCase.from_dict(json.loads(line))

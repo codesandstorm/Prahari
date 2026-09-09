@@ -65,6 +65,8 @@ def test_safe_destination_allows_normal_and_similar_text(tmp_path):
     "data/raw/2026/result.json",
     "outputs/../data/raw/2026/result.json",
     "DATA/RAW/2026/result.json",
+    "Data/Raw/2026/result.json",
+    "./data/raw/2026/result.json",
 ])
 def test_raw_destinations_rejected(destination):
     with pytest.raises(UnsafeWritePathError):

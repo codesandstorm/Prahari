@@ -32,6 +32,7 @@ class RoutingClient:
     def generate(self,model,system,prompt,settings):
         return {"parsed_response":rag_payload() if "document_evidence_points" in prompt else project_payload(),"error":None,"parse_error":None,"latency_seconds":.02}
 
+@pytest.mark.integration
 def test_inventory_approves_only_validated_june_and_hash_matches():
     sources=discover_sources(ROOT);approved=[x for x in sources if x.approved_for_rag]
     assert [x.document_id for x in approved]==["SRC-2026-06"]

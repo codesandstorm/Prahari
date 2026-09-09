@@ -46,6 +46,7 @@ def extraction(month: str) -> Path:
     return EXTRACTED / f"ongoing_{month.replace('-', '_')}.csv"
 
 
+@pytest.mark.integration
 def test_source_inventory_has_twelve_distinct_hashes_and_resolves():
     hashes = []
     for month in MONTHS:

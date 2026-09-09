@@ -28,11 +28,10 @@ def _canonical(path: Path) -> Path:
 
 
 def _is_relative_to(path: Path, parent: Path) -> bool:
-    try:
-        path.relative_to(parent)
-        return True
-    except ValueError:
-        return False
+    """Case-insensitive containment for security semantics on every host."""
+    path_parts = tuple(part.casefold() for part in path.parts)
+    parent_parts = tuple(part.casefold() for part in parent.parts)
+    return path_parts[: len(parent_parts)] == parent_parts
 
 
 def safe_destination(destination: Path | str, repo_root: Path | None = None) -> Path:

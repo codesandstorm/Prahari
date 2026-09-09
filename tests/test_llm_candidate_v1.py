@@ -1,4 +1,5 @@
 import json
+from dataclasses import asdict
 from pathlib import Path
 
 import pytest
@@ -15,6 +16,19 @@ def test_candidate_set_is_exactly_preregistered():
 def test_frozen_case_completeness_and_hash():
     assert len(verify_frozen(ROOT))==65
     assert EXPECTED_CASE_HASH=="366493644a4a0004c5198e14f1bf7ef90c8e74827509a2ffa5cde3e93fb64ed5"
+
+
+def test_frozen_hash_is_stable_across_lf_and_crlf(tmp_path):
+    from llm.benchmark.runner import load_cases
+    source=ROOT/"llm/cases"
+    lf=tmp_path/"lf";crlf=tmp_path/"crlf";lf.mkdir();crlf.mkdir()
+    for path in source.glob("*.jsonl"):
+        content=path.read_bytes().replace(b"\r\n",b"\n")
+        (lf/path.name).write_bytes(content)
+        (crlf/path.name).write_bytes(content.replace(b"\n",b"\r\n"))
+    lf_cases,lf_hash=load_cases(lf);crlf_cases,crlf_hash=load_cases(crlf)
+    assert [asdict(x) for x in lf_cases]==[asdict(x) for x in crlf_cases]
+    assert lf_hash==crlf_hash==EXPECTED_CASE_HASH
 
 
 def test_safe_name_is_filesystem_safe():
