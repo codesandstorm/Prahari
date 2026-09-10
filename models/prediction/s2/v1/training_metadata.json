@@ -8,7 +8,7 @@
   "selection_basis": "predeclared conservative reproducible candidate; not selected by final test outcome",
   "dataset_sha256": "75cac968e7f62fffdb55b5fd7376ccbc402836a0ea139a87ddf93c4815e34c5d",
   "cohort_fingerprint": "5b1e843054e0fb51cf84667d1c0a24d77a72add4ac3d613a42776568ecad5652",
-  "code_commit_at_training": "9cbdeb7536286ec020b890e54d800092f28aa4d1",
+  "code_commit_at_training": "b5638cabda659b1ae3c9daa7b5ac2f5c668b9759",
   "cohort_rows": 4988,
   "events": 1976,
   "projects": 1465,
