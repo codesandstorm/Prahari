@@ -26,6 +26,9 @@ class ProjectRepository:
     def unavailable_months(self):
         return list(self.db.scalars(select(SourceReport).where(SourceReport.coverage_class != "PROJECT_LEVEL").order_by(SourceReport.reporting_month)))
 
+    def all_sources(self):
+        return list(self.db.scalars(select(SourceReport).order_by(SourceReport.reporting_month)))
+
     def list(self, page: int, page_size: int, search: str | None, sector: str | None, ministry: str | None, sort: str, order: str):
         q = select(Project)
         if search: q = q.where(Project.canonical_name.ilike(f"%{search}%"))

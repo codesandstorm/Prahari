@@ -1,0 +1,19 @@
+{
+  "as_of_month": "2026-06",
+  "total_projects": 3417,
+  "eligible": 0,
+  "withheld": 3417,
+  "technically_ready_except_scientific_release": 450,
+  "reason_counts": {
+    "SOURCE_UNKNOWN": 1570,
+    "SOURCE_INTERVAL_MISSING": 2118,
+    "INSUFFICIENT_HISTORY": 2961,
+    "FEATURES_INSUFFICIENT": 1592,
+    "SCHEMA_UNKNOWN": 1570,
+    "HUMAN_TARGET_VALIDATION_PENDING": 3417,
+    "CALIBRATION_NOT_CONFIRMED": 3417,
+    "PROJECT_COMPLETED": 70
+  },
+  "operational_probabilities_created": 0,
+  "trust_contract_version": "data-trust-v1"
+}

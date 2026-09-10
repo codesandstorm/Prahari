@@ -82,6 +82,7 @@ class ProjectDetail(ProjectSummary):
     identity_method: str
     identity_status: str
     latest_snapshot: SnapshotOut | None
+    data_trust: dict
 
 
 class HistoryOut(StrictModel):

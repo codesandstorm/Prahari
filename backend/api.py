@@ -6,6 +6,7 @@ from .database import get_db
 from .models import Alert, Prediction, Project, ProjectSnapshot, SourceReport
 from .repository import ProjectRepository, prediction_dict
 from .schemas import AssistantOut, AssistantRequest, HistoryOut, PageOut, PredictionOut, ProjectDetail
+from .data_trust import database_trust
 
 router=APIRouter()
 
@@ -43,7 +44,8 @@ def project_detail(project_id:str,db:Session=Depends(get_db)):
     repo=ProjectRepository(db);p=repo.get(project_id)
     if not p:raise HTTPException(404,detail={"code":"PROJECT_NOT_FOUND","message":"Project not found"})
     snap=repo.latest_snapshot(project_id);pred=repo.latest_prediction(project_id)
-    return {"canonical_project_id":p.canonical_project_id,"project_code":p.project_code,"canonical_name":p.canonical_name,"agency":p.agency,"ministry":p.ministry,"sector":p.sector,"state":p.state,"identity_method":p.identity_method,"identity_status":p.identity_status,"latest_reporting_month":snap.reporting_month if snap else None,"latest_snapshot":_snapshot(db,snap),"prediction":prediction_dict(repo,pred)}
+    trust,_=database_trust(db,repo,p)
+    return {"canonical_project_id":p.canonical_project_id,"project_code":p.project_code,"canonical_name":p.canonical_name,"agency":p.agency,"ministry":p.ministry,"sector":p.sector,"state":p.state,"identity_method":p.identity_method,"identity_status":p.identity_status,"latest_reporting_month":snap.reporting_month if snap else None,"latest_snapshot":_snapshot(db,snap),"prediction":prediction_dict(repo,pred),"data_trust":trust}
 
 
 @router.get("/projects/{project_id}/history",response_model=HistoryOut)
