@@ -1,5 +1,6 @@
 from src.trust.data_trust import DataTrustEvaluator,enforce_prediction_eligibility,frontend_view
 from src.trust.cuf_validation import StructuredInputValidator
+from src.decision.governance import ModelReleaseStatus,assess_prediction_eligibility
 
 def row(month,identity='RESOLVED_EXACT',progress='40',source='SRC'):
     return {'canonical_project_id':'P1','reporting_month':month,'identity_status':identity,'identity_method':'EXACT_SOURCE_IDENTIFIER','source_id':source,'source_sha256':'abc','pdf_page_index':'2','source_table':'All Ongoing Projects','schema_family':'PAIMANA','physical_progress_schema_available':'YES','original_target_doc_raw':'12/2027','approval_date_raw':'01/2024','original_cost_raw':'100','cumulative_expenditure_raw':'40','physical_progress_raw':progress,'project_status_raw':'ONGOING'}
@@ -8,9 +9,9 @@ def months(n):
 def evaluator(**kw):
     coverage={r['reporting_month']:'PROJECT_LEVEL' for r in months(18)};return DataTrustEvaluator(coverage,{'SRC':{'sha256':'abc'}},**kw)
 def test_complete_trust_still_withheld_for_scientific_release():
-    history=months(18);r=evaluator().evaluate(history,history[-1]['reporting_month']);assert r.identity.status=='PASS' and r.history.status=='PASS';assert not r.prediction_eligible and 'HUMAN_TARGET_VALIDATION_PENDING' in r.eligibility_reason_codes
+    history=months(18);r=evaluator().evaluate(history,history[-1]['reporting_month']);eligibility=assess_prediction_eligibility(r,ModelReleaseStatus());assert r.identity.status=='PASS' and r.history.status=='PASS' and r.data_usable and r.data_reason_codes==[];assert not eligibility.prediction_eligible and 'HUMAN_TARGET_VALIDATION_PENDING' in eligibility.reason_codes
 def test_complete_trust_is_eligible_only_after_governed_release_gates():
-    history=months(18);r=evaluator(human_validation_complete=True,calibration_confirmed=True).evaluate(history,history[-1]['reporting_month']);assert r.prediction_eligible and r.reliability_status=='HIGH'
+    history=months(18);r=evaluator().evaluate(history,history[-1]['reporting_month']);assert assess_prediction_eligibility(r,ModelReleaseStatus('RELEASED',())).prediction_eligible
 def test_exact_and_ambiguous_identity():
     history=months(13);history[-1]['identity_status']='AMBIGUOUS';assert evaluator().evaluate(history,history[-1]['reporting_month']).identity.code=='IDENTITY_UNCERTAIN'
 def test_short_history_gap_stale_missing_provenance_and_schema():
@@ -20,9 +21,9 @@ def test_short_history_gap_stale_missing_provenance_and_schema():
 def test_aggregate_and_missing_source_are_not_synthesized():
     history=months(13);e=evaluator();e.coverage[history[4]['reporting_month']]='AGGREGATE_ONLY';r=e.evaluate(history,history[-1]['reporting_month']);assert r.coverage.code=='SOURCE_INTERVAL_MISSING' and history[4]['reporting_month'] in r.aggregate_only_months
 def test_frontend_has_no_numeric_trust_score_and_risk_is_absent():
-    history=months(13);view=frontend_view(evaluator().evaluate(history,history[-1]['reporting_month']));assert 'score' not in view and 'risk' not in view and view['prediction']=='WITHHELD'
+    history=months(13);view=frontend_view(evaluator().evaluate(history,history[-1]['reporting_month']));assert 'score' not in view and 'risk' not in view and 'prediction' not in view
 def test_high_model_score_cannot_override_trust_or_become_low_risk():
-    history=months(3);trust=evaluator().evaluate(history,history[-1]['reporting_month']);guarded=enforce_prediction_eligibility({'prediction_status':'AVAILABLE','probability':0.99,'risk_band':'HIGH'},trust);assert guarded['prediction_status']=='WITHHELD' and guarded['probability'] is None and guarded['risk_band'] is None and 'INSUFFICIENT_HISTORY' in guarded['withholding_reason_codes']
+    history=months(3);trust=evaluator().evaluate(history,history[-1]['reporting_month']);eligibility=assess_prediction_eligibility(trust,ModelReleaseStatus());guarded=enforce_prediction_eligibility({'prediction_status':'AVAILABLE','probability':0.99,'risk_band':'HIGH'},trust,eligibility);assert guarded['prediction_status']=='WITHHELD' and guarded['probability'] is None and guarded['risk_band'] is None and 'INSUFFICIENT_HISTORY' in guarded['withholding_reason_codes']
 def test_governed_input_validation():
     v=StructuredInputValidator();bad=v.validate({'canonical_project_id':'P','reporting_month':'2026-06','physical_progress':120,'approval_date':'2026-01-01','original_completion_date':'2025-01-01'});codes={x['code'] for x in bad['issues']};assert {'FIELD_RANGE_FAIL','DATE_LOGIC_FAIL'}<=codes and bad['status']=='INVALID'
     warning=v.validate({'canonical_project_id':'P','reporting_month':'2026-06','physical_progress':25},{'physical_progress':80});assert warning['status']=='WARNING' and warning['issues'][0]['code']=='TEMPORAL_REVERSAL_WARN'

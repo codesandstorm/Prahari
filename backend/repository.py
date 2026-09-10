@@ -29,6 +29,9 @@ class ProjectRepository:
     def all_sources(self):
         return list(self.db.scalars(select(SourceReport).order_by(SourceReport.reporting_month)))
 
+    def all_projects(self):
+        return list(self.db.scalars(select(Project).order_by(Project.canonical_project_id)))
+
     def list(self, page: int, page_size: int, search: str | None, sector: str | None, ministry: str | None, sort: str, order: str):
         q = select(Project)
         if search: q = q.where(Project.canonical_name.ilike(f"%{search}%"))

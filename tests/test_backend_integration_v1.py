@@ -48,7 +48,8 @@ def test_history_exposes_unavailable_months(client):
 def test_prediction_unavailable_is_null(client): assert client.get("/api/v1/projects/PRH-1/prediction").json() is None
 def test_dashboard_separates_predictions_alerts(client):
     data=client.get("/api/v1/dashboard/summary").json();assert data["predictions"]==0 and data["alerts"]==0
-def test_review_queue_fail_closed(client): assert client.get("/api/v1/review-queue").json()["status"]=="UNAVAILABLE"
+def test_review_queue_fail_closed_without_fake_risk(client):
+    data=client.get("/api/v1/review-queue").json();assert data["status"]=="ACTIVE_WITH_PREDICTIONS_WITHHELD" and data["items"][0]["review_state"]=="DATA_VERIFICATION_REQUIRED" and data["items"][0]["priority"] is None
 def test_assistant_rejects_authoritative_fields(client): assert client.post("/api/v1/assistant/query",json={"request_id":"r1","question":"Explain this project","risk_band":"HIGH"}).status_code==422
 def test_assistant_evidence_built_server_side(client):
     data=client.post("/api/v1/assistant/query",json={"request_id":"r1","question":"Explain this project","canonical_project_id":"PRH-1"}).json();assert data["answer"]["evidence"]["prediction_status"]=="WITHHELD"
@@ -57,7 +58,11 @@ def test_assistant_cannot_expose_prediction_when_data_trust_withholds(client,db_
     with Session.begin() as db:
         db.add(Prediction(prediction_id="available",canonical_project_id="PRH-1",as_of_month=date(2026,1,1),target="S1",horizon_months=3,prediction_status="AVAILABLE",probability=.99,risk_band="HIGH",reliability_band="HIGH",model_version="test-only",feature_version="Compact-V2",target_version="S1-v1"))
     evidence=client.post("/api/v1/assistant/query",json={"request_id":"trust-guard","question":"Explain this project","canonical_project_id":"PRH-1"}).json()["answer"]["evidence"]
-    assert evidence["prediction_status"]=="WITHHELD" and evidence["calibrated_probability"] is None and evidence["risk_band"] is None and "HUMAN_TARGET_VALIDATION_PENDING" in evidence["data_trust_reason_codes"]
+    assert evidence["prediction_status"]=="WITHHELD" and evidence["calibrated_probability"] is None and evidence["risk_band"] is None and "HUMAN_TARGET_VALIDATION_PENDING" in evidence["prediction_eligibility"]["reason_codes"] and "HUMAN_TARGET_VALIDATION_PENDING" not in evidence["data_trust_reason_codes"] and evidence["review_decision"]["review_state"]!='REVIEW_RECOMMENDED'
+    api_prediction=client.get('/api/v1/projects/PRH-1/prediction').json();assert api_prediction['prediction_status']=='WITHHELD' and api_prediction['probability'] is None and api_prediction['risk_band'] is None
+def test_review_queue_does_not_create_alert_rows(client,db_setup):
+    _,Session=db_setup;client.get('/api/v1/review-queue')
+    with Session() as db:assert db.scalar(select(func.count()).select_from(Alert))==0
 def test_assistant_document_route(client): assert client.post("/api/v1/assistant/query",json={"request_id":"r2","question":"What is PAIMANA?"}).status_code==200
 def test_assistant_missing_project(client): assert client.post("/api/v1/assistant/query",json={"request_id":"r3","question":"Explain this project","canonical_project_id":"NOPE"}).status_code==404
 def test_invalid_assistant_question(client): assert client.post("/api/v1/assistant/query",json={"request_id":"bad space","question":" "}).status_code==422

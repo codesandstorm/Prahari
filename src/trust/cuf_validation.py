@@ -4,6 +4,13 @@ from dataclasses import asdict,dataclass
 from datetime import date,datetime
 from typing import Any
 
+VALIDATION_FIELD_CLASSIFICATION={
+    'canonical_project_id':'GENERIC_STRUCTURED_INPUT','reporting_month':'GENERIC_STRUCTURED_INPUT','submission_id':'GENERIC_STRUCTURED_INPUT',
+    'physical_progress':'GENERIC_STRUCTURED_INPUT','original_cost':'GENERIC_STRUCTURED_INPUT','revised_cost':'GENERIC_STRUCTURED_INPUT','cumulative_expenditure':'GENERIC_STRUCTURED_INPUT',
+    'approval_date':'PROPOSED_FUTURE_FIELD','original_completion_date':'PROPOSED_FUTURE_FIELD','revised_completion_date':'PROPOSED_FUTURE_FIELD',
+    'tender_publish_date':'PROPOSED_FUTURE_FIELD','tender_award_date':'PROPOSED_FUTURE_FIELD','update_date':'PROPOSED_FUTURE_FIELD','milestones':'PROPOSED_FUTURE_FIELD','status':'PROPOSED_FUTURE_FIELD',
+}
+
 @dataclass(frozen=True)
 class FieldIssue:
     status:str;code:str;field:str;message:str

@@ -4,7 +4,7 @@ import math
 from dataclasses import asdict,dataclass
 from typing import Any
 import numpy as np
-from src.ml.final_prediction import COMPACT_V2, EXACT_IDENTITY, _completed, add_month, build_compact_v2
+from src.ml.final_prediction import COMPACT_V2, EXACT_IDENTITY, add_month, build_compact_v2
 
 TRUST_CONTRACT_VERSION='data-trust-v1'
 MINIMUM_HISTORY_MONTHS=13
@@ -22,20 +22,19 @@ class DataTrustResult:
     minimum_required_history:int;observed_project_level_months:list[str]
     aggregate_only_months:list[str];missing_source_months:list[str];project_missing_months:list[str]
     available_features:list[str];missing_features:list[str]
-    prediction_eligible:bool;eligibility_reason_codes:list[str]
-    reliability_status:str;reliability_reason_codes:list[str]
+    data_usable:bool;data_reason_codes:list[str]
     trust_contract_version:str=TRUST_CONTRACT_VERSION
     def to_dict(self):return asdict(self)
 
 class DataTrustEvaluator:
-    def __init__(self,coverage:dict[str,str],manifest:dict[str,dict[str,str]],human_validation_complete:bool=False,calibration_confirmed:bool=False,artifact_available:bool=True,minimum_history:int=MINIMUM_HISTORY_MONTHS):
-        self.coverage=coverage;self.manifest=manifest;self.human_validation_complete=human_validation_complete;self.calibration_confirmed=calibration_confirmed;self.artifact_available=artifact_available;self.minimum_history=minimum_history
-    def evaluate(self,history:list[dict[str,str]],as_of_month:str,target_eligible:bool=True)->DataTrustResult:
+    def __init__(self,coverage:dict[str,str],manifest:dict[str,dict[str,str]],minimum_history:int=MINIMUM_HISTORY_MONTHS):
+        self.coverage=coverage;self.manifest=manifest;self.minimum_history=minimum_history
+    def evaluate(self,history:list[dict[str,str]],as_of_month:str)->DataTrustResult:
         rows=sorted((r for r in history if r.get('reporting_month','')<=as_of_month),key=lambda r:r['reporting_month']); anchor=next((r for r in reversed(rows) if r['reporting_month']==as_of_month),None);latest=rows[-1] if rows else None
         pid=(anchor or latest or {}).get('canonical_project_id','UNKNOWN')
         identity_row=anchor or latest
         identity=Dimension(PASS,'VERIFIED_IDENTITY','Exact canonical identity') if identity_row and identity_row.get('identity_status')==EXACT_IDENTITY else Dimension(FAIL,'IDENTITY_UNCERTAIN','Identity is not RESOLVED_EXACT')
-        source=Dimension(UNKNOWN,'SOURCE_UNKNOWN','No as-of source observation')
+        source=Dimension(FAIL,'SOURCE_AS_OF_OBSERVATION_UNAVAILABLE','Project has no observation at the requested as-of month')
         provenance=Dimension(UNKNOWN,'PROVENANCE_UNKNOWN','No as-of provenance')
         if anchor:
             sid=anchor.get('source_id','');m=self.manifest.get(sid);row_hash=anchor.get('source_sha256','')
@@ -62,37 +61,33 @@ class DataTrustEvaluator:
         temporal_required={'consecutive_stagnant','expenditure_velocity'}
         if temporal_required<=set(available):feature_dim=Dimension(PASS if not missing else WARN,'FEATURES_READY' if not missing else 'FEATURES_PARTIAL_SUPPORTED',f'{len(available)}/14 features available; training imputer supports remaining missing values')
         else:feature_dim=Dimension(FAIL,'FEATURES_INSUFFICIENT','Required temporal feature evidence is unavailable')
-        if not anchor:schema=Dimension(UNKNOWN,'SCHEMA_UNKNOWN','No as-of schema')
+        if not anchor:schema=Dimension(UNKNOWN,'SCHEMA_NOT_EVALUABLE_NO_OBSERVATION','Schema cannot be evaluated without an as-of project observation')
         elif not anchor.get('schema_family'):schema=Dimension(UNKNOWN,'SCHEMA_UNKNOWN','Schema family unavailable')
         elif anchor.get('physical_progress_schema_available','').upper() in {'NO','FALSE','0'}:schema=Dimension(FAIL,'SCHEMA_UNSUPPORTED','Physical progress is structurally unavailable')
         elif anchor.get('physical_progress_schema_available','').upper() not in {'YES','TRUE','1'}:schema=Dimension(UNKNOWN,'SCHEMA_UNKNOWN','Physical-progress schema support is not recorded')
         else:schema=Dimension(PASS,'SCHEMA_SUPPORTED',f"Schema {anchor.get('schema_family')} supports the governed input")
         reasons=[]
-        for d in (identity,source,coverage,history_dim,freshness,feature_dim,schema):
+        for d in (identity,source,coverage,history_dim,freshness,feature_dim,schema,provenance):
             if d.status in (FAIL,UNKNOWN):reasons.append(d.code)
-        if anchor and _completed(anchor):reasons.append('PROJECT_COMPLETED')
-        if not target_eligible:reasons.append('TARGET_NOT_ELIGIBLE')
-        if not self.artifact_available:reasons.append('ARTIFACT_UNAVAILABLE')
-        if not self.human_validation_complete:reasons.append('HUMAN_TARGET_VALIDATION_PENDING')
-        if not self.calibration_confirmed:reasons.append('CALIBRATION_NOT_CONFIRMED')
-        reasons=list(dict.fromkeys(reasons));eligible=not reasons
-        reliability='WITHHELD' if not eligible else ('LOW' if provenance.status==WARN or feature_dim.status==WARN else 'HIGH')
-        return DataTrustResult(pid,as_of_month,identity,source,coverage,history_dim,freshness,feature_dim,schema,provenance,len(rows),span,contiguous,self.minimum_history,[r['reporting_month'] for r in rows if self.coverage.get(r['reporting_month'])=='PROJECT_LEVEL'],aggregate,missing_source,project_missing,available,missing,eligible,reasons,reliability,reasons.copy())
+        reasons=list(dict.fromkeys(reasons));usable=not reasons
+        return DataTrustResult(pid,as_of_month,identity,source,coverage,history_dim,freshness,feature_dim,schema,provenance,len(rows),span,contiguous,self.minimum_history,[r['reporting_month'] for r in rows if self.coverage.get(r['reporting_month'])=='PROJECT_LEVEL'],aggregate,missing_source,project_missing,available,missing,usable,reasons)
 
 def frontend_view(result:DataTrustResult)->dict[str,Any]:
-    return {'trust_contract_version':result.trust_contract_version,'identity':result.identity.code,'source':result.source.code,'history':result.history.code,'latest_month':result.as_of_month,'source_gap_count':len(result.aggregate_only_months)+len(result.missing_source_months)+len(result.project_missing_months),'features':result.features.code,'prediction':'ELIGIBLE' if result.prediction_eligible else 'WITHHELD','reliability':result.reliability_status,'reasons':result.eligibility_reason_codes}
+    return {'trust_contract_version':result.trust_contract_version,'data_status':'USABLE' if result.data_usable else 'NOT_USABLE','identity':result.identity.code,'source':result.source.code,'history':result.history.code,'latest_month':result.as_of_month,'source_gap_count':len(result.aggregate_only_months)+len(result.missing_source_months)+len(result.project_missing_months),'features':result.features.code,'reasons':result.data_reason_codes}
 
-def enforce_prediction_eligibility(prediction:dict[str,Any],result:DataTrustResult)->dict[str,Any]:
+def enforce_prediction_eligibility(prediction:dict[str,Any],result:DataTrustResult,eligibility=None)->dict[str,Any]:
     """Apply the deterministic trust gate after inference without changing trust from model output."""
     guarded=dict(prediction)
     guarded['data_trust']=result.to_dict()
-    if result.prediction_eligible:
+    allowed=eligibility.prediction_eligible if eligibility is not None else result.data_usable
+    if allowed:
         return guarded
+    reasons=eligibility.reason_codes if eligibility is not None else result.data_reason_codes
     guarded.update({
         'prediction_status':'WITHHELD',
         'probability':None,
         'risk_band':None,
         'reliability_status':'WITHHELD',
-        'withholding_reason_codes':list(result.eligibility_reason_codes),
+        'withholding_reason_codes':list(reasons),
     })
     return guarded

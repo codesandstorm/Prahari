@@ -4,6 +4,8 @@ from collections import Counter,defaultdict
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from src.trust.data_trust import DataTrustEvaluator,frontend_view
+from src.decision.governance import ModelReleaseStatus,assess_prediction_eligibility
+from src.ml.final_prediction import _completed
 def read(path):
     with path.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def main():
@@ -11,10 +13,10 @@ def main():
     for r in rows:by[r['canonical_project_id']].append(r)
     evaluator=DataTrustEvaluator(coverage,manifest);results=[];reasons=Counter()
     for pid,history in sorted(by.items()):
-        result=evaluator.evaluate(history,'2026-06');d=result.to_dict();results.append({**frontend_view(result),'canonical_project_id':pid,'observed_history_months':d['observed_history_months'],'history_span_months':d['history_span_months'],'contiguous_recent_history':d['contiguous_recent_history'],'eligibility_reason_codes':'|'.join(d['eligibility_reason_codes'])});reasons.update(d['eligibility_reason_codes'])
+        result=evaluator.evaluate(history,'2026-06');d=result.to_dict();eligibility=assess_prediction_eligibility(result,ModelReleaseStatus(),project_completed=bool(history and _completed(sorted(history,key=lambda x:x['reporting_month'])[-1])));results.append({**frontend_view(result),'canonical_project_id':pid,'observed_history_months':d['observed_history_months'],'history_span_months':d['history_span_months'],'contiguous_recent_history':d['contiguous_recent_history'],'prediction':'ELIGIBLE' if eligibility.prediction_eligible else 'WITHHELD','eligibility_reason_codes':'|'.join(eligibility.reason_codes)});reasons.update(eligibility.reason_codes)
     out=ROOT/'outputs/trust';out.mkdir(parents=True,exist_ok=True)
     with (out/'data_trust_latest_population.csv').open('w',encoding='utf-8',newline='') as f:w=csv.DictWriter(f,fieldnames=list(results[0]));w.writeheader();w.writerows(results)
-    release_only={'HUMAN_TARGET_VALIDATION_PENDING','CALIBRATION_NOT_CONFIRMED'}
+    release_only={'HUMAN_TARGET_VALIDATION_PENDING','CALIBRATION_NOT_CONFIRMED','MODEL_NOT_RELEASED'}
     summary={'as_of_month':'2026-06','total_projects':len(results),'eligible':sum(r['prediction']=='ELIGIBLE' for r in results),'withheld':sum(r['prediction']=='WITHHELD' for r in results),'technically_ready_except_scientific_release':sum(set(filter(None,r['eligibility_reason_codes'].split('|')))<=release_only for r in results),'reason_counts':dict(reasons),'operational_probabilities_created':0,'trust_contract_version':'data-trust-v1'}
     (out/'data_trust_latest_summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')
     demos=[]

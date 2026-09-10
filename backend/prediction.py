@@ -20,9 +20,9 @@ class FrozenModelPredictionProvider:
         from src.ml.prediction_service import FrozenPredictionService
         self.service = FrozenPredictionService(repository_root)
 
-    def predict(self, history, as_of_month: str, target: str, data_trust=None):
+    def predict(self, history, as_of_month: str, target: str, data_trust=None, prediction_eligibility=None):
         prediction = self.service.predict_dict(history, as_of_month, target)
         if data_trust is None:
             return prediction
         from src.trust.data_trust import enforce_prediction_eligibility
-        return enforce_prediction_eligibility(prediction, data_trust)
+        return enforce_prediction_eligibility(prediction, data_trust, prediction_eligibility)
