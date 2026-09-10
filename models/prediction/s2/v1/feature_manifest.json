@@ -1,0 +1,19 @@
+{
+  "version": "compact-v2.1-calendar-safe",
+  "ordered_features": [
+    "log_original_cost",
+    "planned_duration_months",
+    "project_age_months",
+    "expenditure_to_cost",
+    "physical_progress",
+    "physical_progress_missing",
+    "history_span_months",
+    "remaining_schedule_months",
+    "required_future_velocity",
+    "progress_vs_elapsed_gap",
+    "low_progress_near_deadline",
+    "consecutive_stagnant",
+    "cumulative_cost_revision_pct",
+    "expenditure_velocity"
+  ]
+}

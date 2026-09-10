@@ -1,0 +1,9 @@
+{
+  "bands": [
+    "HIGH",
+    "MODERATE",
+    "LOW",
+    "WITHHELD"
+  ],
+  "probability_independent": true
+}

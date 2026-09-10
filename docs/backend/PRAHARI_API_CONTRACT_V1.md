@@ -15,7 +15,7 @@ All business routes use `/api/v1`.
 - `GET /projects/{canonical_project_id}/history`: genuine observations plus separately listed unavailable months; never interpolated.
 - `GET /projects/{canonical_project_id}/prediction`: latest auditable prediction or JSON `null`.
 - `GET /dashboard/summary`: independent counts for projects, observations, predictions, and alerts.
-- `GET /review-queue`: explicitly unavailable until an administrative policy is approved.
+- `GET /review-queue`: deterministic Officer Decision V1 results. Current live results contain data-verification, completed/excluded, or model-release-pending states; no provisional risk is fabricated.
 - `POST /assistant/query`: accepts only `request_id`, `question`, and optional `canonical_project_id`.
 
 Abstained/withheld predictions require null probability and risk band. Contributors are predictive evidence, not causes. Errors use `{"error":{"code","message"}}`; validation adds bounded details. OpenAPI at `/docs` is the machine-readable contract.

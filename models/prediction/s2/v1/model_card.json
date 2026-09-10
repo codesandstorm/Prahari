@@ -1,0 +1,10 @@
+{
+  "target": "S2",
+  "status": "RESEARCH_VALIDATED_MACHINE_LABELS_HUMAN_REVIEW_PENDING",
+  "intended_use": "SIH research prototype after explicit availability checks",
+  "prohibited_use": [
+    "causal attribution",
+    "automated sanctions",
+    "production probability claims"
+  ]
+}

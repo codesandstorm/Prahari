@@ -82,6 +82,16 @@ class ProjectDetail(ProjectSummary):
     identity_method: str
     identity_status: str
     latest_snapshot: SnapshotOut | None
+    data_trust: dict
+    model_release: dict
+    prediction_eligibility: dict
+
+
+class ReviewQueueOut(StrictModel):
+    items: list[dict]
+    status: str
+    policy_version: str
+    counts: dict[str, int]
 
 
 class HistoryOut(StrictModel):

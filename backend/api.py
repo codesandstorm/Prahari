@@ -5,7 +5,9 @@ from sqlalchemy.orm import Session
 from .database import get_db
 from .models import Alert, Prediction, Project, ProjectSnapshot, SourceReport
 from .repository import ProjectRepository, prediction_dict
-from .schemas import AssistantOut, AssistantRequest, HistoryOut, PageOut, PredictionOut, ProjectDetail
+from .schemas import AssistantOut, AssistantRequest, HistoryOut, PageOut, PredictionOut, ProjectDetail, ReviewQueueOut
+from .data_trust import database_trust,guard_prediction_output
+from .decision_service import review_queue as build_review_queue
 
 router=APIRouter()
 
@@ -34,7 +36,8 @@ def projects(page:int=Query(1,ge=1),page_size:int=Query(25,ge=1,le=100),search:s
     repo=ProjectRepository(db);items,total,pages=repo.list(page,page_size,search,sector,ministry,sort,order);out=[]
     for p in items:
         snap=repo.latest_snapshot(p.canonical_project_id); pred=repo.latest_prediction(p.canonical_project_id)
-        out.append({"canonical_project_id":p.canonical_project_id,"project_code":p.project_code,"canonical_name":p.canonical_name,"agency":p.agency,"ministry":p.ministry,"sector":p.sector,"state":p.state,"latest_reporting_month":snap.reporting_month if snap else None,"prediction":prediction_dict(repo,pred)})
+        _,_,_,_,eligibility=database_trust(db,repo,p)
+        out.append({"canonical_project_id":p.canonical_project_id,"project_code":p.project_code,"canonical_name":p.canonical_name,"agency":p.agency,"ministry":p.ministry,"sector":p.sector,"state":p.state,"latest_reporting_month":snap.reporting_month if snap else None,"prediction":guard_prediction_output(prediction_dict(repo,pred),eligibility)})
     return {"items":out,"page":page,"page_size":page_size,"total":total,"pages":pages}
 
 
@@ -43,7 +46,8 @@ def project_detail(project_id:str,db:Session=Depends(get_db)):
     repo=ProjectRepository(db);p=repo.get(project_id)
     if not p:raise HTTPException(404,detail={"code":"PROJECT_NOT_FOUND","message":"Project not found"})
     snap=repo.latest_snapshot(project_id);pred=repo.latest_prediction(project_id)
-    return {"canonical_project_id":p.canonical_project_id,"project_code":p.project_code,"canonical_name":p.canonical_name,"agency":p.agency,"ministry":p.ministry,"sector":p.sector,"state":p.state,"identity_method":p.identity_method,"identity_status":p.identity_status,"latest_reporting_month":snap.reporting_month if snap else None,"latest_snapshot":_snapshot(db,snap),"prediction":prediction_dict(repo,pred)}
+    _,trust,_,release,eligibility=database_trust(db,repo,p)
+    return {"canonical_project_id":p.canonical_project_id,"project_code":p.project_code,"canonical_name":p.canonical_name,"agency":p.agency,"ministry":p.ministry,"sector":p.sector,"state":p.state,"identity_method":p.identity_method,"identity_status":p.identity_status,"latest_reporting_month":snap.reporting_month if snap else None,"latest_snapshot":_snapshot(db,snap),"prediction":guard_prediction_output(prediction_dict(repo,pred),eligibility),"data_trust":trust,"model_release":release.to_dict(),"prediction_eligibility":eligibility.to_dict()}
 
 
 @router.get("/projects/{project_id}/history",response_model=HistoryOut)
@@ -57,7 +61,8 @@ def history(project_id:str,db:Session=Depends(get_db)):
 def prediction(project_id:str,db:Session=Depends(get_db)):
     repo=ProjectRepository(db)
     if not repo.get(project_id):raise HTTPException(404,detail={"code":"PROJECT_NOT_FOUND","message":"Project not found"})
-    return prediction_dict(repo,repo.latest_prediction(project_id))
+    project=repo.get(project_id);_,_,_,_,eligibility=database_trust(db,repo,project)
+    return guard_prediction_output(prediction_dict(repo,repo.latest_prediction(project_id)),eligibility)
 
 
 @router.get("/dashboard/summary")
@@ -65,9 +70,9 @@ def dashboard(db:Session=Depends(get_db)):
     return {"projects":db.scalar(select(func.count()).select_from(Project)) or 0,"observations":db.scalar(select(func.count()).select_from(ProjectSnapshot)) or 0,"predictions":db.scalar(select(func.count()).select_from(Prediction)) or 0,"alerts":db.scalar(select(func.count()).select_from(Alert)) or 0,"note":"Predictions and alerts are independently counted."}
 
 
-@router.get("/review-queue")
-def review_queue():
-    return {"items":[],"status":"UNAVAILABLE","reason":"No approved administrative review-priority policy is loaded"}
+@router.get("/review-queue",response_model=ReviewQueueOut)
+def review_queue(db:Session=Depends(get_db)):
+    return build_review_queue(db)
 
 
 @router.post("/assistant/query",response_model=AssistantOut)

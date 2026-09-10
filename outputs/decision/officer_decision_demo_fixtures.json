@@ -1,0 +1,11 @@
+{
+  "fixture_scope": "SYNTHETIC_CONTRACT_EXAMPLES_ONLY",
+  "production_data": false,
+  "cases": [
+    {"case": "A", "inputs": "usable intrinsic data; model release pending", "expected_state": "PREDICTION_WITHHELD"},
+    {"case": "B", "inputs": "three observed months", "expected_state": "DATA_VERIFICATION_REQUIRED", "expected_reason": "INSUFFICIENT_HISTORY"},
+    {"case": "C", "inputs": "required project-level interval absent", "expected_state": "DATA_VERIFICATION_REQUIRED", "expected_reason": "SOURCE_GAP"},
+    {"case": "D", "inputs": "no observation at requested as-of month", "expected_state": "DATA_VERIFICATION_REQUIRED", "expected_reason": "STALE_UPDATE"},
+    {"case": "E", "inputs": "released AVAILABLE HIGH signal; acceptable reliability; usable data", "expected_state": "REVIEW_RECOMMENDED", "note": "future synthetic fixture; not an operational prediction"}
+  ]
+}

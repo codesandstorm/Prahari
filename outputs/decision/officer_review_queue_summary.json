@@ -1,0 +1,16 @@
+{
+  "as_of_month": "2026-06",
+  "total_projects": 3417,
+  "risk_driven": 0,
+  "data_verification": 2532,
+  "model_release_pending": 450,
+  "completed_or_ineligible": 435,
+  "no_actionable_signal": 0,
+  "monitor": 0,
+  "alerts_created": 0,
+  "counts": {
+    "DATA_VERIFICATION_REQUIRED": 2532,
+    "NO_REVIEW_SIGNAL": 435,
+    "PREDICTION_WITHHELD": 450
+  }
+}
