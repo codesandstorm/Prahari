@@ -1,0 +1,13 @@
+feature,apr_jun_direction,jul_nov_direction,dec_mar_direction
+log_original_cost,NEGATIVE,POSITIVE,NEGATIVE
+planned_duration_months,NEGATIVE,NEGATIVE,NEGATIVE
+project_age_months,POSITIVE,NEGATIVE,POSITIVE
+expenditure_to_cost,POSITIVE,POSITIVE,POSITIVE
+physical_progress,POSITIVE,POSITIVE,POSITIVE
+physical_progress_missing,INSUFFICIENT,INSUFFICIENT,INSUFFICIENT
+progress_delta_1m,POSITIVE,POSITIVE,POSITIVE
+progress_delta_3m,POSITIVE,POSITIVE,POSITIVE
+expenditure_delta_1m,POSITIVE,POSITIVE,NEGATIVE
+stagnant_progress_2m,INSUFFICIENT,INSUFFICIENT,INSUFFICIENT
+history_months,POSITIVE,NEGATIVE,NEGATIVE
+correction_count,INSUFFICIENT,INSUFFICIENT,INSUFFICIENT

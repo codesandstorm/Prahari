@@ -1,0 +1,54 @@
+{
+  "status": "PROVISIONAL \u2014 NOT FINAL SIH CLAIM",
+  "seed": 26103,
+  "feature_set": "FEATURES_B_12",
+  "fold_definition": "rolling-origin: all earlier anchor months train, one later anchor month test",
+  "models": [
+    "LOGISTIC_B",
+    "HIST_GB_B",
+    "RANDOM_FOREST_B",
+    "XGBOOST_B"
+  ],
+  "summary": {
+    "LOGISTIC_B": {
+      "folds": 12,
+      "mean_pr_auc": 0.42018272838504744,
+      "std_pr_auc": 0.27234049961607,
+      "min_pr_auc": 0.13666350466999866,
+      "max_pr_auc": 0.7987169073970902,
+      "mean_roc_auc": 0.6983405670649377,
+      "std_roc_auc": 0.09089098026594349,
+      "mean_brier": 0.25337756650608695
+    },
+    "HIST_GB_B": {
+      "folds": 12,
+      "mean_pr_auc": 0.5272192792400453,
+      "std_pr_auc": 0.263999340201766,
+      "min_pr_auc": 0.13912867600424705,
+      "max_pr_auc": 0.9134286607709678,
+      "mean_roc_auc": 0.7954635539455247,
+      "std_roc_auc": 0.0843265681090381,
+      "mean_brier": 0.14608365809298954
+    },
+    "RANDOM_FOREST_B": {
+      "folds": 12,
+      "mean_pr_auc": 0.6466729800321324,
+      "std_pr_auc": 0.2198311150474141,
+      "min_pr_auc": 0.22729000814699318,
+      "max_pr_auc": 0.9478910371809287,
+      "mean_roc_auc": 0.833448207238478,
+      "std_roc_auc": 0.10941659285927971,
+      "mean_brier": 0.13611238276261595
+    },
+    "XGBOOST_B": {
+      "folds": 12,
+      "mean_pr_auc": 0.6137758134778398,
+      "std_pr_auc": 0.22758477499605811,
+      "min_pr_auc": 0.2615016369361357,
+      "max_pr_auc": 0.9493197160111694,
+      "mean_roc_auc": 0.8329078449077888,
+      "std_roc_auc": 0.09718618742650764,
+      "mean_brier": 0.12855393470575413
+    }
+  }
+}
