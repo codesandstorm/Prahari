@@ -1,0 +1,74 @@
+{
+  "status": "RESEARCH_VALIDATED_MACHINE_LABELS_HUMAN_REVIEW_PENDING",
+  "target": "S2",
+  "target_version": "S2-v1-machine-provisional",
+  "feature_version": "compact-v2.1-calendar-safe",
+  "horizon_months": 3,
+  "selected_candidate": "HIST_GB",
+  "selection_basis": "predeclared conservative reproducible candidate; not selected by final test outcome",
+  "dataset_sha256": "75cac968e7f62fffdb55b5fd7376ccbc402836a0ea139a87ddf93c4815e34c5d",
+  "cohort_fingerprint": "5b1e843054e0fb51cf84667d1c0a24d77a72add4ac3d613a42776568ecad5652",
+  "code_commit_at_training": "9cbdeb7536286ec020b890e54d800092f28aa4d1",
+  "cohort_rows": 4988,
+  "events": 1976,
+  "projects": 1465,
+  "splits": {
+    "TRAIN": {
+      "months": [
+        "2023-08",
+        "2025-04"
+      ],
+      "anchors": 554,
+      "events": 113,
+      "row_fingerprint": "3e26db5ae0f1e56ccb495c36683efda2919fa519160da79aaa40602468fdcdfc"
+    },
+    "VALIDATION": {
+      "months": [
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11"
+      ],
+      "anchors": 1723,
+      "events": 436,
+      "row_fingerprint": "09c65d284fa3014f8f48a23c74283711585c223efb4e687093af70c2582e01ad"
+    },
+    "TEST": {
+      "months": [
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03"
+      ],
+      "anchors": 2711,
+      "events": 1427,
+      "row_fingerprint": "c5f4c666824d243b30ee7c12d0c079d00ab43cc3fa2baf1c3644822ed0532def"
+    }
+  },
+  "ledger": {
+    "status": {
+      "EXCLUDED": 13245,
+      "ELIGIBLE": 4988,
+      "CENSORED": 30093
+    },
+    "primary_reason": {
+      "INSUFFICIENT_HISTORY": 677,
+      "FUTURE_SOURCE_COVERAGE_GAP": 6499,
+      "NOT_DETERIORATED_AT_T": 31948,
+      "APPROVED_DATE_UNAVAILABLE": 1288,
+      "COMPLETED_AT_T": 1879,
+      "FUTURE_PROJECT_OBSERVATION_MISSING": 756,
+      "PRIOR_MONTH_GAP": 291
+    }
+  },
+  "probability_display": "WITHHELD_PENDING_HUMAN_ADJUDICATION_AND_INDEPENDENT_CALIBRATION_CONFIRMATION",
+  "dependencies": {
+    "python": "3.11.3",
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.0.5",
+    "numpy": "2.4.4",
+    "pandas": "3.0.3",
+    "joblib": "1.5.3"
+  }
+}

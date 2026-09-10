@@ -1,0 +1,10 @@
+{
+  "as_of_month": "2026-06",
+  "records": 3694,
+  "by_target_status": {
+    "S1:WITHHELD": 1847,
+    "S2:WITHHELD": 1847
+  },
+  "database_rows_created": 0,
+  "reason": "probabilities are withheld; explicit database load was not authorized by scientific gates"
+}
