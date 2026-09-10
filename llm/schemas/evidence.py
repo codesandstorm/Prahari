@@ -27,6 +27,11 @@ class PrahariEvidence:
     peer_summary: str | None = None
     rule_result: str | None = None
     source_provenance: list[dict[str, Any]] = field(default_factory=list)
+    data_trust: dict[str, Any] = field(default_factory=dict)
+    data_trust_reason_codes: list[str] = field(default_factory=list)
+    model_release: dict[str, Any] = field(default_factory=dict)
+    prediction_eligibility: dict[str, Any] = field(default_factory=dict)
+    review_decision: dict[str, Any] = field(default_factory=dict)
     model_version: str = "UNKNOWN"
     feature_version: str = "UNKNOWN"
     target_version: str = "UNKNOWN"

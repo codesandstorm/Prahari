@@ -1,0 +1,12 @@
+{
+  "selection_basis": "current deterministic evidence; never prediction score",
+  "cases": [
+    {"type": "TECHNICALLY_READY_MODEL_RELEASE_PENDING", "project_id": "PRH-400010"},
+    {"type": "INSUFFICIENT_HISTORY", "project_id": "PRH-020100044"},
+    {"type": "SOURCE_GAP", "project_id": "PRH-180100210"},
+    {"type": "PROVENANCE_RICH", "project_id": "PRH-108841"},
+    {"type": "COMPLETED_INELIGIBLE", "project_id": "PRH-602792"},
+    {"type": "DOCUMENT_RAG", "question": "What is PAIMANA?"},
+    {"type": "SYNTHETIC_TEST_FIXTURE", "production_data": false, "prediction_status": "AVAILABLE", "reliability": "HIGH", "expected_review_state": "REVIEW_RECOMMENDED"}
+  ]
+}

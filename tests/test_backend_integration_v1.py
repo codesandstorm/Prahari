@@ -39,7 +39,8 @@ def test_project_list_pagination(client):
 def test_project_list_search(client): assert client.get("/api/v1/projects?search=Alpha").json()["total"]==1
 def test_project_list_filter(client): assert client.get("/api/v1/projects?sector=Rail").json()["total"]==0
 def test_project_list_rejects_bad_sort(client): assert client.get("/api/v1/projects?sort=drop_table").status_code==422
-def test_project_detail(client): assert client.get("/api/v1/projects/PRH-1").json()["latest_snapshot"]["source"]["source_id"]=="SRC-1"
+def test_project_detail(client):
+    data=client.get("/api/v1/projects/PRH-1").json();assert data["latest_snapshot"]["source"]["source_id"]=="SRC-1" and data['officer_decision']['review_state']=='DATA_VERIFICATION_REQUIRED'
 def test_missing_project(client): assert client.get("/api/v1/projects/NOPE").status_code==404
 def test_history_only_observed_rows(client):
     data=client.get("/api/v1/projects/PRH-1/history").json();assert len(data["observations"])==1 and data["interpolated"] is False
@@ -63,6 +64,9 @@ def test_assistant_cannot_expose_prediction_when_data_trust_withholds(client,db_
 def test_review_queue_does_not_create_alert_rows(client,db_setup):
     _,Session=db_setup;client.get('/api/v1/review-queue')
     with Session() as db:assert db.scalar(select(func.count()).select_from(Alert))==0
+def test_llm_evidence_schema_accepts_governance_extension(client):
+    from llm.schemas.evidence import PrahariEvidence
+    evidence=client.post('/api/v1/assistant/query',json={'request_id':'schema','question':'Why is prediction withheld?','canonical_project_id':'PRH-1'}).json()['answer']['evidence'];PrahariEvidence.from_dict(evidence)
 def test_assistant_document_route(client): assert client.post("/api/v1/assistant/query",json={"request_id":"r2","question":"What is PAIMANA?"}).status_code==200
 def test_assistant_missing_project(client): assert client.post("/api/v1/assistant/query",json={"request_id":"r3","question":"Explain this project","canonical_project_id":"NOPE"}).status_code==404
 def test_invalid_assistant_question(client): assert client.post("/api/v1/assistant/query",json={"request_id":"bad space","question":" "}).status_code==422
@@ -91,7 +95,7 @@ def test_abstention_constraint(db_setup):
     with Session() as db:
         db.add(Prediction(prediction_id="x",canonical_project_id="PRH-1",as_of_month=date(2026,1,1),target="S1",horizon_months=3,prediction_status="ABSTAIN",probability=.9,risk_band="HIGH",reliability_band="ABSTAIN",model_version="m",feature_version="f",target_version="t"))
         with pytest.raises(Exception):db.commit()
-def test_loader_excludes_ml_derived_fields(tmp_path):
+def test_loader_excludes_ml_derived_fields_but_preserves_governed_source_fields(tmp_path):
     engine=make_engine(f"sqlite:///{(tmp_path/'s.db').as_posix()}");Base.metadata.create_all(engine);Session=sessionmaker(engine);folder=tmp_path/"source";_loader_files(folder)
     with Session() as db:
         load_canonical_dataset(db,folder);row=db.scalar(select(ProjectSnapshot));assert row.progress_current==10 and row.expenditure_current==1200.5 and row.progress_velocity is None and row.cost_ratio is None and row.raw_features=={}

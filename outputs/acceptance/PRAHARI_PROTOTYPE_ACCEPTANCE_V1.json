@@ -1,0 +1,14 @@
+{
+  "acceptance_version": "prototype-integration-v1",
+  "database": {"status": "PASS", "engine": "PostgreSQL 18", "projects": 3417, "snapshots": 48326, "source_reports": 36, "predictions": 0, "contributors": 0, "alerts": 0, "ingestion_runs": 2},
+  "backend": {"status": "PASS"},
+  "data_trust": {"status": "PASS", "intrinsic_and_release_separated": true},
+  "model_release": {"status": "WITHHELD", "intentional": true},
+  "prediction_eligibility": {"status": "PASS", "operational_predictions_exposed": 0},
+  "officer_decision": {"status": "PASS", "risk_driven": 0},
+  "review_queue": {"status": "PASS_WITH_LATENCY_LIMITATION", "actionable_items": 2982, "data_verification": 2508, "model_release_pending": 474, "completed_excluded": 435, "alerts_created": 0},
+  "llm": {"status": "PASS_WITH_VALIDATED_FALLBACK", "model": "llama3:8b"},
+  "rag": {"status": "PASS", "route": "DOCUMENT_RAG", "citations": 3},
+  "current_prediction_release_state": "WITHHELD",
+  "latency_ms": {"health_median": 3.71, "project_detail_warm_median_before_source_field_reload": 7.27, "project_detail_post_reload_cold_sample": 186.42, "history_median": 15.32, "review_queue_post_reload_sample": 7233.96, "document_rag_sample": 66740.88, "project_assistant_fallback_sample": 21109.37, "data_verification_assistant_fallback_sample": 18022.18, "unsupported_fallback_sample": 11.58}
+}

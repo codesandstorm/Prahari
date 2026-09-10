@@ -8,6 +8,7 @@ from .repository import ProjectRepository, prediction_dict
 from .schemas import AssistantOut, AssistantRequest, HistoryOut, PageOut, PredictionOut, ProjectDetail, ReviewQueueOut
 from .data_trust import database_trust,guard_prediction_output
 from .decision_service import review_queue as build_review_queue
+from src.decision.governance import decide_review
 
 router=APIRouter()
 
@@ -46,8 +47,8 @@ def project_detail(project_id:str,db:Session=Depends(get_db)):
     repo=ProjectRepository(db);p=repo.get(project_id)
     if not p:raise HTTPException(404,detail={"code":"PROJECT_NOT_FOUND","message":"Project not found"})
     snap=repo.latest_snapshot(project_id);pred=repo.latest_prediction(project_id)
-    _,trust,_,release,eligibility=database_trust(db,repo,p)
-    return {"canonical_project_id":p.canonical_project_id,"project_code":p.project_code,"canonical_name":p.canonical_name,"agency":p.agency,"ministry":p.ministry,"sector":p.sector,"state":p.state,"identity_method":p.identity_method,"identity_status":p.identity_status,"latest_reporting_month":snap.reporting_month if snap else None,"latest_snapshot":_snapshot(db,snap),"prediction":guard_prediction_output(prediction_dict(repo,pred),eligibility),"data_trust":trust,"model_release":release.to_dict(),"prediction_eligibility":eligibility.to_dict()}
+    trust_result,trust,_,release,eligibility=database_trust(db,repo,p);governed_prediction=guard_prediction_output(prediction_dict(repo,pred),eligibility);decision=decide_review(trust=trust_result,eligibility=eligibility,prediction=governed_prediction)
+    return {"canonical_project_id":p.canonical_project_id,"project_code":p.project_code,"canonical_name":p.canonical_name,"agency":p.agency,"ministry":p.ministry,"sector":p.sector,"state":p.state,"identity_method":p.identity_method,"identity_status":p.identity_status,"latest_reporting_month":snap.reporting_month if snap else None,"latest_snapshot":_snapshot(db,snap),"prediction":governed_prediction,"data_trust":trust,"model_release":release.to_dict(),"prediction_eligibility":eligibility.to_dict(),"officer_decision":decision.to_dict()}
 
 
 @router.get("/projects/{project_id}/history",response_model=HistoryOut)
