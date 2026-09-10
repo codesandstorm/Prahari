@@ -50,7 +50,7 @@ def test_prediction_unavailable_is_null(client): assert client.get("/api/v1/proj
 def test_dashboard_separates_predictions_alerts(client):
     data=client.get("/api/v1/dashboard/summary").json();assert data["predictions"]==0 and data["alerts"]==0
 def test_review_queue_fail_closed_without_fake_risk(client):
-    data=client.get("/api/v1/review-queue").json();assert data["status"]=="ACTIVE_WITH_PREDICTIONS_WITHHELD" and data["items"][0]["review_state"]=="DATA_VERIFICATION_REQUIRED" and data["items"][0]["priority"] is None
+    data=client.get("/api/v1/review-queue?page=1&page_size=1&review_state=DATA_VERIFICATION_REQUIRED").json();assert data["status"]=="ACTIVE_WITH_PREDICTIONS_WITHHELD" and data["items"][0]["review_state"]=="DATA_VERIFICATION_REQUIRED" and data["items"][0]["priority"] is None and data['page_size']==1 and data['total']==1
 def test_assistant_rejects_authoritative_fields(client): assert client.post("/api/v1/assistant/query",json={"request_id":"r1","question":"Explain this project","risk_band":"HIGH"}).status_code==422
 def test_assistant_evidence_built_server_side(client):
     data=client.post("/api/v1/assistant/query",json={"request_id":"r1","question":"Explain this project","canonical_project_id":"PRH-1"}).json();assert data["answer"]["evidence"]["prediction_status"]=="WITHHELD"

@@ -21,3 +21,5 @@ State matrix:
 | `ERROR` | Show bounded API error and request ID; do not reuse prior values. |
 
 `NO_REVIEW_SIGNAL` records are excluded from the actionable queue API. Nullable priority means no approved ranking—not low priority.
+
+Use `page_size=25` for project and review lists and lazy-load history and assistant content. Review queue supports `review_state`, `reason_code`, and `model_release_state` filters. Show “Retrieving verified source evidence…” during retrieval, “Generating grounded explanation…” during generation, and “Prediction withheld — evidence shown below” immediately when applicable. Timeouts must enter `ERROR` without reusing stale scientific values.

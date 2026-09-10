@@ -93,6 +93,10 @@ class ReviewQueueOut(StrictModel):
     status: str
     policy_version: str
     counts: dict[str, int]
+    page: int
+    page_size: int
+    total: int
+    pages: int
 
 
 class HistoryOut(StrictModel):

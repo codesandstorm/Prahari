@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 from llm.schemas.evidence import PrahariEvidence
 from llm.service.assistant import PrahariAssistant
+from llm.service.fallback import deterministic_fallback
 from llm.service.ollama_client import GenerationSettings,OllamaClient
 from .contracts import RagResponse
 from .fallback import rag_fallback
@@ -29,6 +30,9 @@ class UnifiedPrahariAssistant:
         start=time.perf_counter(); project=PrahariEvidence.from_dict(project_evidence) if project_evidence else None
         route=route_question(question,project is not None);retrieval_s=0.;generation_s=0.
         if route==QuestionRoute.PROJECT_EVIDENCE:
+            if project.prediction_status in {'WITHHELD','ABSTAIN'}:
+                response=deterministic_fallback(project,'prediction withheld; deterministic fast path',question)
+                return UnifiedResult(request_id,route.value,response.to_dict(),[project.canonical_project_id],[],response.reliability_explanation,response.limitations,True,'prediction withheld; deterministic fast path',self.config['model'],None,{"retrieval_seconds":0.,"generation_seconds":0.,"total_seconds":time.perf_counter()-start})
             result=self.project_assistant.explain(project_evidence,question)
             return UnifiedResult(request_id,route.value,result.response.to_dict(),[project.canonical_project_id],[],result.response.reliability_explanation,result.response.limitations,result.used_fallback,result.fallback_reason,result.model,None,{"retrieval_seconds":0.,"generation_seconds":result.latency_seconds or 0.,"total_seconds":time.perf_counter()-start})
         chunks=[]

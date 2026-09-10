@@ -72,8 +72,8 @@ def dashboard(db:Session=Depends(get_db)):
 
 
 @router.get("/review-queue",response_model=ReviewQueueOut)
-def review_queue(db:Session=Depends(get_db)):
-    return build_review_queue(db)
+def review_queue(page:int=Query(1,ge=1),page_size:int=Query(25,ge=1,le=100),review_state:str|None=Query(None,pattern="^(REVIEW_RECOMMENDED|DATA_VERIFICATION_REQUIRED|MONITOR|PREDICTION_WITHHELD)$"),reason_code:str|None=Query(None,max_length=80),model_release_state:str|None=Query(None,pattern="^(RELEASED|WITHHELD)$"),db:Session=Depends(get_db)):
+    return build_review_queue(db,page,page_size,review_state,reason_code,model_release_state)
 
 
 @router.post("/assistant/query",response_model=AssistantOut)
