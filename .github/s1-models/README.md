@@ -1,5 +1,7 @@
 # PRAHARI S1 — Schedule Deterioration Prediction
 
+> **LEGACY / PROVISIONAL:** Preserved as historical Pavitra experiment evidence. It uses `FEATURES_B_12` and is superseded for canonical training and inference by `src/ml/final_prediction.py`. Its results must not be represented as Compact V2 final-model evidence.
+
 ## Objective
 
 S1 predicts whether a project that has not yet experienced an approved
