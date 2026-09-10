@@ -14,6 +14,7 @@ pdfplumber>=0.10.0       # fallback / cross-validation for tables
 pandas>=2.1.0
 numpy>=1.26.0
 scikit-learn>=1.6.0
+xgboost==3.0.5
 
 # --- Backend integration ---
 fastapi>=0.115.0
