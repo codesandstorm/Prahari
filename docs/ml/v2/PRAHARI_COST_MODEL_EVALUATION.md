@@ -1,6 +1,6 @@
 # PRAHARI Cost Model Evaluation
 
-**Status:** NO RESEARCH CANDIDATE ADMITTED  
+**Status:** NO RESEARCH CANDIDATE ADMITTED
 **Primary horizon:** 3 reporting months
 
 The primary design is expanding-origin pseudo-future evaluation. For every fold, target outcomes mature before the test period; inner training precedes validation; validation precedes test. Imputation, scaling, calibration and thresholds are fit without test data. Minimum ranking support is 1,000 test anchors, 300 projects, 30 events, 500 training anchors, 20 training events and both classes in inner training/validation.

@@ -1,6 +1,6 @@
 # PRAHARI Cost Target Contracts
 
-**Status:** MACHINE_PROVISIONAL  
+**Status:** MACHINE_PROVISIONAL
 **Versions:** `C1-v1-machine-provisional`, `C2-v1-machine-provisional`
 
 ## C1 — first approved upward deterioration

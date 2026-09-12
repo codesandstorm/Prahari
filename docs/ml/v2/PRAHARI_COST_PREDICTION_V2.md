@@ -1,7 +1,7 @@
 # PRAHARI Cost Prediction V2
 
-**Status:** MACHINE_PROVISIONAL / PARTIAL  
-**Research mode:** `PROTOTYPE_RESEARCH_OVERRIDE`  
+**Status:** MACHINE_PROVISIONAL / PARTIAL
+**Research mode:** `PROTOTYPE_RESEARCH_OVERRIDE`
 **Production release:** WITHHELD
 
 Cost Prediction V2 extends the existing Prediction Research V2 dataset, identity, coverage, temporal-fold, model, calibration, ensemble and governance infrastructure. It does not create a parallel production pipeline and does not modify the canonical V1 dataset or raw reports.

@@ -1,7 +1,7 @@
 # PRAHARI Cost Prototype Research Override
 
-**Governed mode:** `PROTOTYPE_RESEARCH_OVERRIDE`  
-**Target validation:** `MACHINE_PROVISIONAL`  
+**Governed mode:** `PROTOTYPE_RESEARCH_OVERRIDE`
+**Target validation:** `MACHINE_PROVISIONAL`
 **Production ModelRelease:** `WITHHELD`
 
 The override permits machine-provisional target construction, temporal backtesting, statistical/ML comparison, research calibration, ensembles and clearly marked prototype payloads. It does not remove normal Data Trust, Model Release, Prediction Eligibility, provenance, abstention or Officer Decision gates.
