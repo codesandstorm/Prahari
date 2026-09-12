@@ -114,7 +114,8 @@ def main(raw_root: Path):
             for raw,reported in (("project_name_raw","reported_project_name"),("agency_raw","reported_agency"),("state_raw","reported_state"),("approval_date_raw","reported_approval_date"),("original_target_doc_raw","reported_original_target_doc"),("revised_doc_raw","reported_revised_doc"),("original_cost_raw","reported_original_cost"),("revised_cost_raw","reported_revised_cost"),("cumulative_expenditure_raw","reported_cumulative_expenditure"),("physical_progress_raw","reported_physical_progress"),("start_date_raw","reported_start_date")): row[reported]=row.get(raw,"")
         extracted.extend(rows); summaries[month]=summary
         document=fitz.open(path); page_count=document.page_count; sample="".join(document[i].get_text() for i in range(min(3,page_count))); document.close()
-        ledger.append({"source_id":f"SRC-{month}","reporting_month":month,"source_path":str(path),"sha256":sha256(path),"page_count":page_count,
+        portable_path=(Path("data/raw")/path.relative_to(raw_root)).as_posix()
+        ledger.append({"source_id":f"SRC-{month}","reporting_month":month,"source_path":portable_path,"sha256":sha256(path),"page_count":page_count,
                        "text_extractable":"YES" if sample.strip() else "NO","schema_family":discovery["schema_family"],"schema_confidence":discovery["confidence"],
                        "project_rows":len(rows),"table_first_page":discovery["first_page"],"table_last_page":discovery["last_page"],
                        "official_project_count":discovery.get("official_project_count",len(rows)),"row_accounting_status":"PASS",
