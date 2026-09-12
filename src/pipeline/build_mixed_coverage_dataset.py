@@ -303,6 +303,19 @@ def _identity_ocms(value: Any) -> tuple[str, str, str, str]:
     return raw[:match.start()].strip(), _clean(match.group(2)), _clean(match.group(3)), _clean(match.group(1)).replace(" ", "")
 
 
+def _recover_ocms_footer_serial(value: Any) -> str:
+    """Recover a serial only from the observed ``FLASH REPORT`` footer collision.
+
+    In the October 2022 PDF, the footer's leading ``F`` is occasionally merged
+    into the serial-number cell (for example, ``F 5`` or ``166 F``).  Restrict
+    recovery to exactly those two shapes so arbitrary mixed-content cells remain
+    structural/non-project rows and the extractor continues to fail closed.
+    """
+    raw = _clean(value)
+    match = re.fullmatch(r"(?:F\s+(\d+)|(\d+)\s+F)", raw)
+    return next((group for group in match.groups() if group), "") if match else raw
+
+
 def _base(month: str, serial: str, source_hash: str, page: int, row_index: int, discovery: dict[str, Any]) -> dict[str, Any]:
     return {
         "observation_id": f"OBS-{month.replace('-', '')}-{int(serial):05d}", "reporting_month": month,
@@ -319,6 +332,7 @@ def _base(month: str, serial: str, source_hash: str, page: int, row_index: int, 
 
 def extract_project_month(path: Path, month: str, discovery: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     digest = sha256(path); accepted: list[dict[str, Any]] = []; unresolved = []; structural = Counter(); raw_rows = 0
+    ocms_footer_serials_recovered = 0
     text_document = fitz.open(path)
     with pdfplumber.open(path) as pdf:
         for page_number in range(discovery["first_page"], discovery["last_page"] + 1):
@@ -328,7 +342,11 @@ def extract_project_month(path: Path, month: str, discovery: dict[str, Any]) -> 
             for row_index, row in enumerate(table):
                 raw_rows += 1; cells = list(row); serial = ""
                 if discovery["schema_family"] == "PAIMANA_V1" and len(cells) >= 7: serial = _clean(cells[-7])
-                elif discovery["schema_family"] == "OCMS": serial = _clean(cells[0])
+                elif discovery["schema_family"] == "OCMS":
+                    serial = _recover_ocms_footer_serial(cells[0])
+                    if serial.isdigit() and serial != _clean(cells[0]):
+                        cells[0] = serial
+                        ocms_footer_serials_recovered += 1
                 if not serial.isdigit():
                     structural[classify_non_project_row(cells)] += 1
                     continue
@@ -418,6 +436,7 @@ def extract_project_month(path: Path, month: str, discovery: dict[str, Any]) -> 
                "builder_version": BUILDER_VERSION,
                "accepted_project_rows": len(accepted), "serial_min": min(serials, default=None), "serial_max": max(serials, default=None),
                "missing_serials": missing, "duplicate_serials": duplicates, "total_raw_table_rows": raw_rows,
+               "ocms_footer_serials_recovered": ocms_footer_serials_recovered,
                "structural_counts": dict(structural), "unresolved_rows": unresolved,
                "row_accounting_valid": raw_rows == len(accepted) + sum(structural.values()) + len(unresolved)}
     official = discovery.get("official_project_count")
