@@ -1,0 +1,5 @@
+field,source_semantics,model_role,guardrail,normalized_unit,raw_preserved
+original_cost_raw,Original approved/sanctioned cost,C1 frozen baseline; C2 reference,Never replaced by revised/anticipated/expenditure,INR_CRORE,YES
+revised_cost_raw,Approved revised cost as reported,C1/C2 event state,Only approved upward state changes can label events,INR_CRORE,YES
+anticipated_cost_raw,Anticipated/estimated cost,Evidence flag only,Never an approved-revision label,INR_CRORE,YES
+cumulative_expenditure_raw,Cumulative expenditure to reporting date,Known-at-T feature only,Not final cost and never a label,INR_CRORE,YES

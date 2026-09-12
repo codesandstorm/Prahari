@@ -1,0 +1,5 @@
+field,total_rows,semantic_missing,non_missing_raw,finite_normalized,invalid_or_ambiguous,assumed_table_unit,normalization_method,raw_preserved
+original_cost_raw,68641,16826,51815,51721,94,INR_CRORE,TABLE_HEADER_CRORE_NO_SCALING,YES
+revised_cost_raw,68641,56821,11820,11820,0,INR_CRORE,TABLE_HEADER_CRORE_NO_SCALING,YES
+anticipated_cost_raw,68641,16932,51709,51709,0,INR_CRORE,TABLE_HEADER_CRORE_NO_SCALING,YES
+cumulative_expenditure_raw,68641,16826,51815,51721,94,INR_CRORE,TABLE_HEADER_CRORE_NO_SCALING,YES

@@ -1,0 +1,8 @@
+feature,source_field,officially_verified_cuf_field,available_historically,used_c1,used_c2,derived,structurally_missing_older_era,proposed_future_augmentation
+log_original_cost,Original Cost,NO_VERIFIED_CUF_EVIDENCE_IN_REPOSITORY,YES,YES,YES,YES,NO,NO
+expenditure_to_original_cost,Cumulative Expenditure + Original Cost,NO_VERIFIED_CUF_EVIDENCE_IN_REPOSITORY,YES,YES,YES,YES,NO,NO
+expenditure_to_current_approved_cost,Cumulative Expenditure + Revised Cost,NO_VERIFIED_CUF_EVIDENCE_IN_REPOSITORY,YES,YES,YES,YES,NO,NO
+current_approved_cost_revision_pct,Original + Revised Cost,NO_VERIFIED_CUF_EVIDENCE_IN_REPOSITORY,YES,NO,YES,YES,NO,NO
+physical_progress,Physical Progress,VERIFIED_PUBLIC_PAIMANA_FIELD,PARTIAL,YES,YES,YES,YES,NO
+recent_expenditure_velocity,Monthly expenditure observations,DERIVED_FROM_CURRENT_FLASH_REPORT_FIELDS,YES,YES,YES,YES,NO,NO
+contractor_performance,Unverified contractor history,NO,NO,NO,NO,NO,NO,YES

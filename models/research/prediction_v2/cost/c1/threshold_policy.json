@@ -1,0 +1,5 @@
+{
+  "status": "NOT_ADMITTED",
+  "method": "PAST_VALIDATION_F1_IN_BACKTESTS_ONLY",
+  "not_production_policy": true
+}

@@ -1,0 +1,17 @@
+feature,source_field,derivation,availability_era,known_at_t,future_value_used,missingness_semantics,used_c1,used_c2,basic_compatible,compact_compatible
+log_original_cost,original_cost_raw,log1p(original approved cost),all compatible eras,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+planned_duration_months,approval_date_raw + original_target_doc_raw,calendar month difference,where both dates exist,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+project_age_months,approval_date_raw + reporting_month,calendar month difference at T,where approval date exists,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+expenditure_to_original_cost,cumulative_expenditure_raw + original_cost_raw,ratio at T,all compatible eras,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+expenditure_to_current_approved_cost,cumulative_expenditure_raw + revised/original cost,ratio at T,all compatible eras,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+history_span_months,project-month observations,inclusive observed span through T,all eras,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+remaining_schedule_months,approved completion date + reporting_month,nonnegative months remaining at T,where approved date exists,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+recent_expenditure_velocity,current and T-1 cumulative expenditure,first difference,requires contiguous T-1,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+schedule_deteriorated_at_t,original/revised completion dates,known approved schedule shift at T,where dates exist,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+prior_schedule_revision_months,original/revised completion dates,known shift magnitude at T,where dates exist,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,YES,YES
+current_approved_cost_revision_pct,original/revised cost,known C2 escalation at T,C2 only,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,NO,YES,YES,YES
+prior_approved_cost_revision_count,project approved-cost history,count of observed upward state changes through T,C2 only,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,NO,YES,YES,YES
+physical_progress,physical_progress_raw,normalized current value at T,richer compatible era only,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,NO,YES
+physical_progress_missing,physical_progress_raw,explicit missingness indicator at T,richer compatible era only,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,NO,YES
+progress_vs_elapsed_gap,physical progress + schedule dates,as-of-T derived gap,richer compatible era only,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,NO,YES
+consecutive_stagnant,physical progress history,trailing as-of-T stagnation count,richer compatible era only,YES,NO,PRESERVED_FOR_FOLD_LOCAL_IMPUTATION,YES,YES,NO,YES
