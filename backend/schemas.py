@@ -58,6 +58,25 @@ class PredictionOut(StrictModel):
     created_at: datetime
 
 
+class CostIntelligenceOut(StrictModel):
+    cost_prediction_status: Literal["AVAILABLE_RESEARCH", "WITHHELD"]
+    cost_target_family: Literal["C1", "C2"]
+    cost_horizon_months: int
+    cost_probability: float | None
+    cost_risk_band: Literal["LOW", "MEDIUM", "HIGH"] | None
+    cost_reliability: Literal["LOW", "MODERATE", "HIGH", "ABSTAIN"]
+    cost_trend: str
+    top_cost_contributors: list[dict]
+    cost_model_version: str
+    cost_feature_version: str
+    cost_prediction_as_of: str
+    cost_withheld_reasons: list[str]
+    cost_research_override: bool
+    cost_machine_provisional: bool
+    canonical_project_id: str
+    production_release_status: Literal["WITHHELD"]
+
+
 class ProjectSummary(StrictModel):
     canonical_project_id: str
     project_code: str | None
@@ -86,6 +105,7 @@ class ProjectDetail(ProjectSummary):
     model_release: dict
     prediction_eligibility: dict
     officer_decision: dict
+    cost_intelligence: CostIntelligenceOut | None = None
 
 
 class ReviewQueueOut(StrictModel):
