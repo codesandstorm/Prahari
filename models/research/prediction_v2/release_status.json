@@ -1,0 +1,7 @@
+{
+  "version": "prediction-research-v2.0",
+  "status": "BLOCKED_PENDING_HUMAN_TARGET_TRANSFER",
+  "fitted_artifacts": [],
+  "operational_release": false,
+  "prospective_holdout_used": false
+}

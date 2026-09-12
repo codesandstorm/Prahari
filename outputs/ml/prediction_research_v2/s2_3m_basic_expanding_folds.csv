@@ -1,0 +1,5 @@
+fold_id,test_start,test_end,horizon_months,train_rows,test_rows,test_projects,test_events,admission_status,admission_reason,latest_train_anchor
+F1,2023-04,2023-08,3,1233,2092,504,437,ADMITTED,,2022-12
+F2,2024-06,2024-10,3,4420,0,0,0,DESCRIPTIVE_ONLY,PREDECLARED_MINIMUM_NOT_MET,2023-08
+F3,2025-03,2025-09,3,4420,1049,403,282,ADMITTED,,2023-08
+F4,2025-10,2026-03,3,4518,3483,1103,1626,ADMITTED,,2025-04

@@ -1,0 +1,25 @@
+{
+  "rows": 120,
+  "periods": {
+    "2022_H2": 61,
+    "2023_H1": 59
+  },
+  "cost_bands": {
+    "500_TO_2000": 42,
+    "LT_500": 66,
+    "GE_2000": 12
+  },
+  "date_semantics": {
+    "REVISED_AND_ANTICIPATED": 119,
+    "REVISED": 1
+  },
+  "reversions": {
+    "FALSE": 117,
+    "TRUE": 3
+  },
+  "limitations": {
+    "sector": "STRUCTURALLY_UNAVAILABLE in the admitted OCMS-era sample; no sector value fabricated",
+    "first_appearance": "not eligible because target construction requires prior-month history",
+    "long_running": "not observable within August 2022\u2013June 2023 anchors; no history fabricated"
+  }
+}

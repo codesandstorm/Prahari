@@ -1,0 +1,24 @@
+{
+  "version": "prediction-research-v2.0",
+  "source_status": "13 new project-level sources accepted; 3 aggregate-only months; February 2025 missing",
+  "dataset_counts": {
+    "project_month_rows": 68641,
+    "projects": 3777,
+    "report_months": 47,
+    "project_level_months": 43,
+    "aggregate_only_months": 3,
+    "missing_months": ["2025-02"]
+  },
+  "feature_contracts": {
+    "basic-long-history-v1": "implemented",
+    "compact-v2.1-calendar-safe": "unchanged; rich-schema months only"
+  },
+  "target_status": "S1/S2 3M primary, 6M research and 12M support cohorts are machine-provisional",
+  "adjudication_status": "120-case package generated; 0/120 human-reviewed",
+  "folds": "expanding and rolling-sensitivity infrastructure generated; admissions recalculated per cohort",
+  "models": "harness implemented; execution blocked pending human target transfer",
+  "ensembles": "equal soft vote implemented; weighted vote and stacking conditional; not evaluated",
+  "horizons": {"3m": "PRIMARY", "6m": "RESEARCH_ONLY_PENDING_VALIDATION", "12m": "TWELVE_MONTH_HORIZON_INSUFFICIENT_SUPPORT"},
+  "holdout_state": "JULY_2026_UNTOUCHED",
+  "blockers": ["HISTORICAL_TARGET_TRANSFER_PENDING", "V1_TARGET_ADJUDICATION_PENDING"]
+}
