@@ -1,0 +1,16 @@
+{
+  "version": "prediction-research-v2.0",
+  "model_execution_status": "BLOCKED_PENDING_HUMAN_TARGET_TRANSFER",
+  "primary_horizon_months": 3,
+  "research_horizon_6m": "COHORT_BUILT_NOT_OPERATIONAL",
+  "research_horizon_12m": "TWELVE_MONTH_HORIZON_INSUFFICIENT_SUPPORT",
+  "models_planned": [
+    "logistic_regression",
+    "random_forest",
+    "hist_gradient_boosting",
+    "xgboost",
+    "equal_soft_vote"
+  ],
+  "fitting_contract": "all preprocessing, calibration, thresholds and optional weights fit on temporally prior mature outcomes only",
+  "july_2026": "UNTOUCHED_PROSPECTIVE_EVIDENCE"
+}

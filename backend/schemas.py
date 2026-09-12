@@ -85,6 +85,7 @@ class ProjectDetail(ProjectSummary):
     data_trust: dict
     model_release: dict
     prediction_eligibility: dict
+    officer_decision: dict
 
 
 class ReviewQueueOut(StrictModel):
@@ -92,6 +93,10 @@ class ReviewQueueOut(StrictModel):
     status: str
     policy_version: str
     counts: dict[str, int]
+    page: int
+    page_size: int
+    total: int
+    pages: int
 
 
 class HistoryOut(StrictModel):

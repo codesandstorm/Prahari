@@ -1,0 +1,10 @@
+{
+  "version": "demo-performance-v1",
+  "scientific_behavior_changed": false,
+  "review_queue_ms": {"before_sample": 7233.96, "after_cold": 2406.72, "after_warm_median": 6.67, "after_warm_max": 8.70},
+  "withheld_project_assistant_ms": {"before_sample": 21109.37, "after_median": 8.53, "after_cold_max": 195.91},
+  "unsupported_ms": {"before_sample": 11.58, "after_median": 8.14, "after_max": 8.45},
+  "ollama_warmup_seconds": 6.712,
+  "document_rag": {"validated_before_sample_ms": 66740.88, "accepted_configuration": "unchanged 600-token validated contract", "rejected_experiment": "300-token budget reduced latency but failed validation/citations"},
+  "remaining_primary_risk": "llama3:8b document generation latency on local hardware"
+}

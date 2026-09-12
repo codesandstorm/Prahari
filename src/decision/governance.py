@@ -49,6 +49,7 @@ def alert_deduplication_key(project_id:str,target:str,model_version:str,alert_ty
     return sha256(material.encode()).hexdigest()[:24]
 
 def decide_review(*,trust:DataTrustResult,eligibility:PredictionEligibilityResult,prediction:dict[str,Any]|None=None,project_completed=False,existing_unresolved_alert_keys=frozenset(),alert_rule_satisfied=False)->ReviewDecision:
+    project_completed=project_completed or 'PROJECT_COMPLETED' in eligibility.reason_codes
     prediction=prediction or {};status=prediction.get('prediction_status','WITHHELD');target=prediction.get('target');reliability=prediction.get('reliability_band')
     reasons=[];state='NO_REVIEW_SIGNAL';action=None;priority=None;alert_status='NOT_ELIGIBLE';dedup=None
     data_map={'IDENTITY_UNCERTAIN':'IDENTITY_VERIFICATION','SOURCE_INTERVAL_MISSING':'SOURCE_GAP','SOURCE_AS_OF_OBSERVATION_UNAVAILABLE':'STALE_UPDATE','STALE_ONE_OR_MORE_REPORTING_PERIODS':'STALE_UPDATE','INSUFFICIENT_HISTORY':'INSUFFICIENT_HISTORY','FEATURES_INSUFFICIENT':'FEATURES_INSUFFICIENT','SCHEMA_UNKNOWN':'SCHEMA_VERIFICATION','SCHEMA_NOT_EVALUABLE_NO_OBSERVATION':'SCHEMA_VERIFICATION','PROVENANCE_UNKNOWN':'SOURCE_PROVENANCE_VERIFICATION'}

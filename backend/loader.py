@@ -8,6 +8,11 @@ from .models import IngestionRun, Project, ProjectSnapshot, SourceReport
 
 LOG = logging.getLogger("prahari.loader")
 VALID_COVERAGE = {"PROJECT_LEVEL", "AGGREGATE_ONLY", "MISSING_SOURCE"}
+LOADER_CONTRACT_VERSION = "canonical-operational-v2-source-trust"
+TRUST_SOURCE_FIELDS = (
+    "approval_date_raw","original_cost_raw","original_target_doc_raw","cumulative_expenditure_raw","physical_progress_raw",
+    "revised_cost_raw","revised_doc_raw","project_status_raw","physical_progress_schema_available","pdf_page_index","source_table",
+)
 
 
 class DataValidationError(ValueError): pass
@@ -55,7 +60,7 @@ def load_canonical_dataset(db: Session, data_dir: Path, manifest_path: Path | No
     paths = [master, months, reports]
     missing = [str(p) for p in paths if not p.is_file()]
     if missing: raise DataValidationError(f"missing approved input(s): {missing}")
-    fingerprint = dataset_hash(paths)
+    fingerprint = hashlib.sha256((dataset_hash(paths)+LOADER_CONTRACT_VERSION).encode()).hexdigest()
     prior = db.scalar(select(IngestionRun).where(IngestionRun.dataset_hash == fingerprint, IngestionRun.status == "COMPLETED"))
     if prior: return {"status": "ALREADY_LOADED", "run_id": prior.run_id, "projects": prior.projects_loaded, "snapshots": prior.snapshots_loaded, "dataset_hash": fingerprint}
     run_id = f"ING-{uuid.uuid4().hex[:16]}"
@@ -101,7 +106,7 @@ def load_canonical_dataset(db: Session, data_dir: Path, manifest_path: Path | No
             item.project_observation_count=None;item.months_since_first_observation=None
             item.progress_current=_reported_number(row.get("reported_physical_progress"));item.progress_velocity=None
             item.expenditure_current=_reported_number(row.get("reported_cumulative_expenditure"));item.expenditure_velocity=None;item.cost_ratio=None
-            item.agency=_none(row.get("reported_agency"));item.state=_none(row.get("reported_state"));item.sector=_none(row.get("sector_raw"));item.raw_features={}
+            item.agency=_none(row.get("reported_agency"));item.state=_none(row.get("reported_state"));item.sector=_none(row.get("sector_raw"));item.raw_features={key:row[key] for key in TRUST_SOURCE_FIELDS if _none(row.get(key)) is not None}
             db.add(item)
         run.status="COMPLETED";run.projects_loaded=len(project_rows);run.snapshots_loaded=len(month_rows);run.completed_at=datetime.now(timezone.utc)
     LOG.info("canonical_dataset_loaded run_id=%s projects=%d snapshots=%d",run_id,len(project_rows),len(month_rows))

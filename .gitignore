@@ -98,6 +98,12 @@ data/processed/longitudinal_2023_07_2026_06_mixed/project_month_features_v4.csv
 data/processed/longitudinal_2023_07_2026_06_mixed/project_month_labels.csv
 data/processed/longitudinal_2023_07_2026_06_mixed/project_month_labels_v2.csv
 
+# Prediction Research V2 bulk artifacts are deterministic local build outputs.
+data/processed/longitudinal_2022_08_2026_06_research_v2/project_month.csv
+outputs/ml/prediction_research_v2/*_cohort.csv
+outputs/ml/prediction_research_v2/*_candidate_ledger.csv
+outputs/ml/prediction_research_v2/*_events.csv
+
 # Python environment / generated files
 .venv/
 __pycache__/

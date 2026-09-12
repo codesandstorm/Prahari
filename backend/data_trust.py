@@ -2,10 +2,12 @@
 from __future__ import annotations
 from src.trust.data_trust import DataTrustEvaluator,frontend_view
 from src.decision.governance import ModelReleaseStatus,assess_prediction_eligibility
+from src.ml.final_prediction import _completed
 
-def database_trust(db,repo,project,as_of_month=None):
-    history=repo.history(project.canonical_project_id)
-    sources={s.source_id:s for s in repo.all_sources()}
+def database_trust(db,repo,project,as_of_month=None,history_override=None,sources_override=None):
+    history=history_override if history_override is not None else repo.history(project.canonical_project_id)
+    source_rows=sources_override if sources_override is not None else repo.all_sources()
+    sources={s.source_id:s for s in source_rows}
     coverage={s.reporting_month.strftime('%Y-%m'):s.coverage_class for s in sources.values()}
     manifest={sid:{'sha256':s.sha256} for sid,s in sources.items()}
     rows=[]
@@ -16,7 +18,7 @@ def database_trust(db,repo,project,as_of_month=None):
     requested=as_of_month or (rows[-1]['reporting_month'] if rows else '')
     result=DataTrustEvaluator(coverage,manifest).evaluate(rows,requested)
     release=ModelReleaseStatus()
-    eligibility=assess_prediction_eligibility(result,release)
+    eligibility=assess_prediction_eligibility(result,release,project_completed=bool(rows and _completed(rows[-1])))
     return result,result.to_dict(),frontend_view(result),release,eligibility
 
 def guard_prediction_output(prediction,eligibility):

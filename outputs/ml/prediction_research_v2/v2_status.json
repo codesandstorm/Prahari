@@ -1,0 +1,48 @@
+{
+  "version": "prediction-research-v2.0",
+  "source_status": "13 NEW PROJECT-LEVEL SOURCES ACCEPTED; 3 AGGREGATE-ONLY; FEBRUARY 2025 MISSING",
+  "dataset_counts": {
+    "version": "prediction-research-v2.0",
+    "status": "PROVISIONAL_RESEARCH; HUMAN TARGET TRANSFER PENDING",
+    "row_count": 68641,
+    "project_count": 3777,
+    "report_months": 47,
+    "project_level_months": 43,
+    "aggregate_only_months": 3,
+    "missing_months": [
+      "2025-02"
+    ],
+    "dataset_fingerprint": "fe118512e959e4ef897d505685ea98036f60c55157366991a49f477fd6829d7a",
+    "v1_source_unchanged": true,
+    "raw_sources_read_only": true,
+    "july_2026_included": false
+  },
+  "feature_contracts": {
+    "basic_long_history_v1": [
+      "log_original_cost",
+      "planned_duration_months",
+      "project_age_months",
+      "expenditure_to_cost",
+      "history_span_months",
+      "remaining_schedule_months",
+      "cumulative_cost_revision_pct",
+      "expenditure_velocity"
+    ],
+    "compact_v2": "UNCHANGED; RICH-SCHEMA MONTHS ONLY"
+  },
+  "target_status": "S1/S2 3M, 6M AND SUPPORT-ONLY 12M MACHINE-PROVISIONAL",
+  "adjudication_status": "120-CASE PACKAGE GENERATED; HUMAN REVIEW PENDING",
+  "folds": "PREDECLARED EXPANDING AND ROLLING SENSITIVITY INFRASTRUCTURE; ADMISSION RECALCULATED PER COHORT",
+  "models": "HARNESS IMPLEMENTED; NOT EXECUTED BEFORE HUMAN TARGET TRANSFER",
+  "ensembles": "EQUAL SOFT VOTE IMPLEMENTED BUT NOT EVALUATED",
+  "horizons": {
+    "3m": "PRIMARY",
+    "6m": "RESEARCH_ONLY_PENDING_VALIDATION",
+    "12m": "TWELVE_MONTH_HORIZON_INSUFFICIENT_SUPPORT"
+  },
+  "holdout_state": "JULY 2026 UNTOUCHED",
+  "blockers": [
+    "HISTORICAL_TARGET_TRANSFER_PENDING",
+    "V1_TARGET_ADJUDICATION_PENDING"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "prediction-research-v2.0",
+  "status": "PROVISIONAL_RESEARCH; HUMAN TARGET TRANSFER PENDING",
+  "row_count": 68641,
+  "project_count": 3777,
+  "report_months": 47,
+  "project_level_months": 43,
+  "aggregate_only_months": 3,
+  "missing_months": [
+    "2025-02"
+  ],
+  "dataset_fingerprint": "fe118512e959e4ef897d505685ea98036f60c55157366991a49f477fd6829d7a",
+  "v1_source_unchanged": true,
+  "raw_sources_read_only": true,
+  "july_2026_included": false
+}
