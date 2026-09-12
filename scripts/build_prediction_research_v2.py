@@ -20,7 +20,7 @@ from src.ml.provisional_research import approved_doc,month_index,number
 from src.ml.prediction_research_v2 import (
     BASIC_LONG_HISTORY_V1, EXPECTED_COUNTS, HISTORICAL_MONTHS, RECOVERY, V2_VERSION,
     build_basic_long_history, build_research_target, dataset_fingerprint, expanding_folds,
-    read_csv, rolling_folds, source_path, validate_transfer_rows, write_csv,
+    read_csv, restrict_feature_anchors, rolling_folds, source_path, validate_transfer_rows, write_csv,
 )
 from src.pipeline.build_mixed_coverage_dataset import discover_table, extract_project_month, sha256
 
@@ -203,8 +203,13 @@ def main(raw_root: Path):
                                  "event_prevalence":sum(int(r["event"]) for r in cohort)/len(cohort) if cohort else 0,
                                  "status":"TWELVE_MONTH_HORIZON_INSUFFICIENT_SUPPORT" if horizon==12 else "MACHINE_PROVISIONAL_HUMAN_TRANSFER_PENDING"})
             all_target_data[(target,horizon)]=(cohort,candidates,events)
-        compact_rows=[r for r in rows if r.get("physical_progress_schema_available")=="TRUE"]
-        cohort,candidates,events=build_research_target(compact_rows,coverage,target,3,build_compact_v2,"compact-v2.1-calendar-safe")
+        # Target truth always sees the complete longitudinal history.  Filtering
+        # OCMS rows before S1 construction would erase prior deteriorations and
+        # manufacture false "first" events.  Restrict only the resulting feature
+        # anchors to months where the richer schema supports physical progress.
+        cohort,candidates,events=build_research_target(rows,coverage,target,3,build_compact_v2,"compact-v2.1-calendar-safe")
+        compatible={(r["canonical_project_id"],r["reporting_month"]) for r in rows if r.get("physical_progress_schema_available")=="TRUE"}
+        cohort,candidates,events=restrict_feature_anchors(cohort,candidates,events,compatible)
         write_csv(OUT/f"{target.lower()}_3m_compact_v2_cohort.csv",cohort); write_csv(OUT/f"{target.lower()}_3m_compact_v2_candidate_ledger.csv",candidates)
         summary_rows.append({"target":target,"horizon_months":3,"feature_contract":"compact-v2.1-calendar-safe","eligible_rows":len(cohort),"events":sum(int(r["event"]) for r in cohort),
                              "event_prevalence":sum(int(r["event"]) for r in cohort)/len(cohort) if cohort else 0,"status":"MACHINE_PROVISIONAL_HUMAN_TRANSFER_PENDING"})

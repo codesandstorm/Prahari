@@ -7,7 +7,7 @@ import pytest
 
 from src.ml.prediction_research_v2 import (
     BASIC_LONG_HISTORY_V1, build_basic_long_history, cluster_bootstrap_indices,
-    equal_soft_vote, expanding_folds, population_stability_index, rolling_folds, validate_transfer_rows,
+    equal_soft_vote, expanding_folds, population_stability_index, restrict_feature_anchors, rolling_folds, validate_transfer_rows,
 )
 from src.pipeline.build_mixed_coverage_dataset import _recover_ocms_footer_serial,discover_table,extract_project_month
 from src.ml.temporal_experiment_v2 import equal_vote,probability_metrics,require_human_gate,validate_temporal_oof,weighted_vote
@@ -71,6 +71,13 @@ def test_drift_and_rolling_helpers_are_deterministic():
     assert population_stability_index([1,2,3,4],[1,2,3,4])==pytest.approx(0)
     cohort=[{"canonical_project_id":"P","anchor_month":"2022-12","event":0}]
     assert rolling_folds(cohort,3)[0]["analysis_role"]=="SECONDARY_SENSITIVITY_ONLY"
+
+
+def test_feature_compatibility_filter_is_applied_after_target_truth():
+    cohort=[{"canonical_project_id":"P","anchor_month":"2023-01"},{"canonical_project_id":"P","anchor_month":"2023-02"}]
+    ledger=[dict(row) for row in cohort]; events=[dict(cohort[0])]
+    kept=restrict_feature_anchors(cohort,ledger,events,{("P","2023-02")})
+    assert [rows[0]["anchor_month"] if rows else None for rows in kept]==["2023-02","2023-02",None]
 
 
 def test_transfer_validator_detects_tampering_and_partial_review():

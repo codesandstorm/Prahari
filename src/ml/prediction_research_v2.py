@@ -125,6 +125,12 @@ def build_research_target(rows: list[dict[str, str]], coverage: dict[str, str], 
     return cohort,ledger,events
 
 
+def restrict_feature_anchors(cohort,ledger,events,compatible: set[tuple[str,str]]):
+    """Restrict feature anchors after, never before, longitudinal target truth."""
+    keep=lambda row:(row["canonical_project_id"],row["anchor_month"]) in compatible
+    return [r for r in cohort if keep(r)],[r for r in ledger if keep(r)],[r for r in events if keep(r)]
+
+
 def expanding_folds(cohort: list[dict[str, Any]], horizon: int, minimums=(1000,300,30)) -> list[dict[str, Any]]:
     folds=[]
     for fold,(start,end) in PLANNED_FOLDS.items():
