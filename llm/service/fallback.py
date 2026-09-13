@@ -20,12 +20,14 @@ def deterministic_fallback(evidence: PrahariEvidence, reason: str = "", officer_
     else:
         pct=f" ({evidence.calibrated_probability:.1%})" if evidence.calibrated_probability is not None else ""
         risk=f"Supplied project risk is {evidence.risk_band or 'unavailable'}{pct}."
-    points=list(evidence.contributors) or ["No validated contributors are available."]
+    watch_points=[str(item.get("explanation")) for item in evidence.implementation_watch.get("signals",[]) if item.get("status","DETECTED")=="DETECTED" and item.get("explanation")]
+    points=list(evidence.contributors) or watch_points or ["No validated contributors or implementation signals are available."]
     reliability=f"Reliability is {evidence.reliability_band}."
     if evidence.reliability_reasons:
         reliability += " " + " ".join(evidence.reliability_reasons)
     limitations=[]; question=officer_question.lower()
-    unsupported=any(term in question for term in ("contractor","caused","cause","land acquisition","ministry","blame","corrupt","fraud","neglig"))
+    land_supported=any(item.get("family")=="LAND" and item.get("status")=="DETECTED" for item in evidence.implementation_watch.get("signals",[]))
+    unsupported=any(term in question for term in ("contractor","caused","cause","ministry","blame","corrupt","fraud","neglig")) or ("land acquisition" in question and not land_supported)
     if unsupported:
         limitations.append("The requested contractor, cause, blame or misconduct evidence is unavailable in the supplied evidence object.")
     if evidence.abstention_reason: limitations.append(evidence.abstention_reason)

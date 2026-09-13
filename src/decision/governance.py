@@ -48,16 +48,22 @@ def alert_deduplication_key(project_id:str,target:str,model_version:str,alert_ty
     material='|'.join((project_id,target,model_version,alert_type,window))
     return sha256(material.encode()).hexdigest()[:24]
 
-def decide_review(*,trust:DataTrustResult,eligibility:PredictionEligibilityResult,prediction:dict[str,Any]|None=None,project_completed=False,existing_unresolved_alert_keys=frozenset(),alert_rule_satisfied=False)->ReviewDecision:
+def decide_review(*,trust:DataTrustResult,eligibility:PredictionEligibilityResult,prediction:dict[str,Any]|None=None,project_completed=False,existing_unresolved_alert_keys=frozenset(),alert_rule_satisfied=False,implementation_watch:dict[str,Any]|None=None)->ReviewDecision:
     project_completed=project_completed or 'PROJECT_COMPLETED' in eligibility.reason_codes
     prediction=prediction or {};status=prediction.get('prediction_status','WITHHELD');target=prediction.get('target');reliability=prediction.get('reliability_band')
     reasons=[];state='NO_REVIEW_SIGNAL';action=None;priority=None;alert_status='NOT_ELIGIBLE';dedup=None
     data_map={'IDENTITY_UNCERTAIN':'IDENTITY_VERIFICATION','SOURCE_INTERVAL_MISSING':'SOURCE_GAP','SOURCE_AS_OF_OBSERVATION_UNAVAILABLE':'STALE_UPDATE','STALE_ONE_OR_MORE_REPORTING_PERIODS':'STALE_UPDATE','INSUFFICIENT_HISTORY':'INSUFFICIENT_HISTORY','FEATURES_INSUFFICIENT':'FEATURES_INSUFFICIENT','SCHEMA_UNKNOWN':'SCHEMA_VERIFICATION','SCHEMA_NOT_EVALUABLE_NO_OBSERVATION':'SCHEMA_VERIFICATION','PROVENANCE_UNKNOWN':'SOURCE_PROVENANCE_VERIFICATION'}
     actionable=list(dict.fromkeys(data_map[x] for x in trust.data_reason_codes if x in data_map))
+    watch=implementation_watch or {};watch_status=watch.get('status');watch_reasons=set(watch.get('reason_codes',[]))
+    watch_data_issue=bool(watch_reasons & {'REPORT_STALE','REPORT_MONTH_MISSING','SOURCE_GAP','FEATURE_DATA_INCOMPLETE','STRUCTURAL_SCHEMA_LIMITATION','PROVENANCE_INCOMPLETE'})
     if project_completed:
         reasons=['COMPLETED_PROJECT'];action=None
     elif actionable:
         state='DATA_VERIFICATION_REQUIRED';reasons=actionable;action='Review latest project update and verify missing or inconsistent reporting evidence'
+    elif watch_data_issue and watch_status=='DATA_INSUFFICIENT':
+        state='DATA_VERIFICATION_REQUIRED';reasons=['DATA_VERIFICATION_REQUIRED'];action='Verify the reporting, provenance, or structured field evidence required by Implementation Watch'
+    elif watch_status in {'WATCH','ELEVATED'} and trust.data_usable:
+        state='REVIEW_RECOMMENDED';priority='HIGH' if watch_status=='ELEVATED' else 'MEDIUM';reasons=['IMPLEMENTATION_PRESSURE_SIGNAL'];action='Review the observable implementation-pressure signals and their source evidence';alert_status='NOT_ELIGIBLE'
     elif status!='AVAILABLE' or not eligibility.prediction_eligible:
         state='PREDICTION_WITHHELD';reasons=['MODEL_RELEASE_PENDING'] if any(x in eligibility.reason_codes for x in ('HUMAN_TARGET_VALIDATION_PENDING','CALIBRATION_NOT_CONFIRMED','MODEL_NOT_RELEASED')) else list(eligibility.reason_codes) or ['NO_ACTIONABLE_SIGNAL'];action='Monitor until the governed prediction release requirements are satisfied'
     elif prediction.get('risk_band')=='HIGH' and reliability in {'HIGH','MODERATE'} and trust.data_usable:

@@ -86,6 +86,7 @@ class ProjectDetail(ProjectSummary):
     model_release: dict
     prediction_eligibility: dict
     officer_decision: dict
+    implementation_watch: dict
 
 
 class ReviewQueueOut(StrictModel):

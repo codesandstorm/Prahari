@@ -32,6 +32,7 @@ class PrahariEvidence:
     model_release: dict[str, Any] = field(default_factory=dict)
     prediction_eligibility: dict[str, Any] = field(default_factory=dict)
     review_decision: dict[str, Any] = field(default_factory=dict)
+    implementation_watch: dict[str, Any] = field(default_factory=dict)
     model_version: str = "UNKNOWN"
     feature_version: str = "UNKNOWN"
     target_version: str = "UNKNOWN"
