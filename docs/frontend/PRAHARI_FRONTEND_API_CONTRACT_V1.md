@@ -8,6 +8,10 @@ All routes are under `/api/v1`. Portfolio Dashboard uses `/dashboard/summary`; P
 
 The frontend may display returned identity, observation, source, trust dimension, release, eligibility, decision, reason, reliability and status fields. It must never calculate risk, trust, eligibility, priority, review state or alert state.
 
+## Cost intelligence extension
+
+Project detail/evidence may include `cost_intelligence` with status, C1/C2 family, horizon, nullable probability/band, reliability, trend, contributors, model/feature versions, as-of month, withheld reasons and explicit research/machine-provisional flags. The frontend must not infer LOW risk from a null value, combine schedule and cost probabilities, calculate a composite score, or create its own alert. In the current accepted state the object is `WITHHELD` because no cost model passed research admission.
+
 State matrix:
 
 | State | Required presentation |

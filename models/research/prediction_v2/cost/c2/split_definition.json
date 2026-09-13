@@ -1,0 +1,38 @@
+[
+  {
+    "target": "C2",
+    "horizon_months": 3,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F2",
+    "train_rows": 1035,
+    "validation_rows": 636,
+    "test_rows": 834,
+    "validation_months": "2023-06|2023-07|2023-08",
+    "latest_training_outcome": "2023-05",
+    "test_start": "2024-06"
+  },
+  {
+    "target": "C2",
+    "horizon_months": 3,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F3",
+    "train_rows": 2242,
+    "validation_rows": 834,
+    "test_rows": 261,
+    "validation_months": "2024-07|2024-08|2024-09|2024-10",
+    "latest_training_outcome": "2023-11",
+    "test_start": "2025-03"
+  },
+  {
+    "target": "C2",
+    "horizon_months": 3,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F4",
+    "train_rows": 2242,
+    "validation_rows": 260,
+    "test_rows": 913,
+    "validation_months": "2024-10|2025-04|2025-05|2025-06",
+    "latest_training_outcome": "2023-11",
+    "test_start": "2025-10"
+  }
+]

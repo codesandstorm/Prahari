@@ -1,0 +1,74 @@
+[
+  {
+    "target": "C1",
+    "horizon_months": 3,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F2",
+    "train_rows": 6695,
+    "validation_rows": 3745,
+    "test_rows": 4844,
+    "validation_months": "2023-06|2023-07|2023-08",
+    "latest_training_outcome": "2023-05",
+    "test_start": "2024-06"
+  },
+  {
+    "target": "C1",
+    "horizon_months": 3,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F3",
+    "train_rows": 13863,
+    "validation_rows": 4844,
+    "test_rows": 1655,
+    "validation_months": "2024-07|2024-08|2024-09|2024-10",
+    "latest_training_outcome": "2023-11",
+    "test_start": "2025-03"
+  },
+  {
+    "target": "C1",
+    "horizon_months": 3,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F4",
+    "train_rows": 13863,
+    "validation_rows": 1876,
+    "test_rows": 3518,
+    "validation_months": "2024-10|2025-04|2025-05|2025-06",
+    "latest_training_outcome": "2023-11",
+    "test_start": "2025-10"
+  },
+  {
+    "target": "C1",
+    "horizon_months": 6,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F2",
+    "train_rows": 1088,
+    "validation_rows": 2193,
+    "test_rows": 1169,
+    "validation_months": "2023-04|2023-05",
+    "latest_training_outcome": "2023-03",
+    "test_start": "2024-06"
+  },
+  {
+    "target": "C1",
+    "horizon_months": 6,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F3",
+    "train_rows": 2097,
+    "validation_rows": 2335,
+    "test_rows": 1606,
+    "validation_months": "2023-05|2024-07",
+    "latest_training_outcome": "2023-04",
+    "test_start": "2025-03"
+  },
+  {
+    "target": "C1",
+    "horizon_months": 6,
+    "feature_contract": "cost-basic-long-history-v1",
+    "fold_id": "F4",
+    "train_rows": 2097,
+    "validation_rows": 2335,
+    "test_rows": 1088,
+    "validation_months": "2023-05|2024-07",
+    "latest_training_outcome": "2023-04",
+    "test_start": "2025-10"
+  }
+]

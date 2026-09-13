@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "version": "cost-prediction-v3-history.1",
+    "status": "MACHINE_PROVISIONAL_RESEARCH",
+    "calendar_months": 102,
+    "row_count": 149786,
+    "project_count": 4831,
+    "project_level_months": 94,
+    "quarantined_months": [
+      "2019-03",
+      "2022-04",
+      "2022-06"
+    ],
+    "missing_months": [
+      "2022-07",
+      "2025-02"
+    ],
+    "dataset_fingerprint": "1697437dab4682751fb2d0e9a909d2c97febd141d8cba9e0e3dbb5c9309bbbc1",
+    "v2_source_unchanged": true,
+    "raw_sources_read_only": true,
+    "july_2026_included": false,
+    "target_validation_status": "MACHINE_PROVISIONAL",
+    "research_mode": "PROTOTYPE_RESEARCH_OVERRIDE"
+  },
+  "admission_counts": {
+    "ADMIT_COST_TARGET": 51,
+    "QUARANTINE_SEMANTICS": 3
+  }
+}

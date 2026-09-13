@@ -1,0 +1,5 @@
+target,horizon_months,v2_eligible,v3_eligible,v2_events,v3_events,v2_projects,v3_projects,v2_admitted_folds,v3_admitted_folds
+C1,3,23880,68777,509,1151,2815,3915,3,9
+C1,6,13302,50524,625,1453,2174,3325,2,7
+C2,3,4250,6464,131,159,666,837,0,0
+C2,6,2097,3827,131,154,390,511,0,0

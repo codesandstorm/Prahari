@@ -221,14 +221,28 @@ def discover_table(path: Path) -> dict[str, Any]:
     pages = [_text(page) for page in document]
     ocms_starts = [i + 1 for i, text in enumerate(pages) if re.search(r"(?i)detail of ongoing projects costing", text)]
     if ocms_starts:
-        first = ocms_starts[0]
-        stops = [
-            i + 1 for i, text in enumerate(pages[first:], start=first)
-            if "Project Status with respect to Original Schedule" in text
-            or text.strip().upper().startswith("ANNEXURE")
-            or text.startswith("List of Projects in which Expenditure is More than Approved Cost")
-        ]
-        last = (stops[0] - 1) if stops else document.page_count
+        # The complete OCMS project table repeats its title on every physical
+        # page.  Using that evidenced contiguous run is safer than scanning to a
+        # later annexure heading: some historical editions omit the old stop
+        # phrase and would otherwise absorb hundreds of unrelated annexure pages.
+        # A few editions insert a one-page continuation sheet without repeating
+        # the title.  Join title runs across only a single missing page.
+        ocms_runs: list[list[int]] = []
+        for value in ocms_starts:
+            if not ocms_runs or value > ocms_runs[-1][-1] + 2:
+                ocms_runs.append([value])
+            else:
+                ocms_runs[-1].append(value)
+        run = max(ocms_runs, key=len)
+        first, last = run[0], run[-1]
+        if len(run) < 5:
+            stops = [
+                i + 1 for i, text in enumerate(pages[first:], start=first)
+                if "Project Status with respect to Original Schedule" in text
+                or text.strip().upper().startswith("ANNEXURE")
+                or text.startswith("List of Projects in which Expenditure is More than Approved Cost")
+            ]
+            last = (stops[0] - 1) if stops else document.page_count
         opening = " ".join(pages[:8])
         official = re.search(r"(?i)status of the\s*([\d,]+)\s*(?:Central Sector Infrastructure )?Projects", opening)
         document.close()
@@ -298,7 +312,11 @@ def _identity_modern(value: Any) -> tuple[str, str, str]:
 
 def _identity_ocms(value: Any) -> tuple[str, str, str, str]:
     raw = _clean(value)
-    match = re.search(r"\s*-\s*\[([^\]]+)\]\s*,\s*([^,]+)\s*,\s*(.+)$", raw)
+    # Older OCMS reports do not consistently print a comma immediately after
+    # the closing project-code bracket.  The agency/state comma remains the
+    # authoritative delimiter, so tolerate only that observed punctuation
+    # variation and retain the strict bracketed-code requirement.
+    match = re.search(r"\s*-\s*\[([^\]]+)\]\s*,?\s*([^,]+)\s*,\s*(.+?)\s*,?$", raw)
     if not match: raise ValueError("OCMS identity tail missing")
     return raw[:match.start()].strip(), _clean(match.group(2)), _clean(match.group(3)), _clean(match.group(1)).replace(" ", "")
 
@@ -314,6 +332,79 @@ def _recover_ocms_footer_serial(value: Any) -> str:
     raw = _clean(value)
     match = re.fullmatch(r"(?:F\s+(\d+)|(\d+)\s+F)", raw)
     return next((group for group in match.groups() if group), "") if match else raw
+
+
+def _remove_ocms_flash_report_overlay(cells: list[Any]) -> tuple[list[Any], bool]:
+    """Remove one evidenced diagonal ``FLASH REPORT`` watermark collision.
+
+    A December 2020 vector page distributes the watermark across a single
+    otherwise valid 10-column row.  Match the complete observed signature
+    before removing any fragments; partial matches remain unresolved.
+    """
+    if len(cells) == 7:
+        serial = str(cells[0] or "")
+        signature = (
+            re.fullmatch(r"\d+F\d+", serial) is not None
+            and str(cells[2] or "").startswith("H")
+            and str(cells[3] or "").startswith("R")
+            and str(cells[4] or "").startswith("E")
+            and str(cells[5] or "").startswith("O")
+            and str(cells[6] or "").startswith("T")
+        )
+        second_signature = (
+            " F L - A\n[" in str(cells[1] or "")
+            and str(cells[2] or "").endswith("\nS")
+            and "\nH R[" in str(cells[3] or "") and str(cells[3] or "").endswith(" E")
+            and "\nP[" in str(cells[4] or "") and "O1]" in str(cells[4] or "")
+            and "RT[" in str(cells[5] or "")
+        )
+        if second_signature:
+            cleaned = list(cells)
+            cleaned[1] = str(cells[1]).replace(" F L - A\n[", " -\n[")
+            cleaned[2] = re.sub(r"\nS$", "", str(cells[2]))
+            cleaned[3] = str(cells[3]).replace("\nH R[", "\n[")[:-2]
+            cleaned[4] = str(cells[4]).replace("\nP[", "\n[").replace("O1]", "1]")
+            cleaned[5] = str(cells[5]).replace("RT[", "[")
+            return cleaned, True
+        if not signature:
+            return cells, False
+        cleaned = list(cells)
+        cleaned[0] = serial.replace("F", "")
+        # The diagonal overlay contributes L/A/S inside the project-name text.
+        # Remove only the three exact observed corruptions; the bracketed code,
+        # agency and state remain the authoritative identity evidence.
+        identity = str(cells[1] or "").replace("WIDELNING", "WIDENING")
+        identity = identity.replace("ANDA UP-GRADATISON", "AND UP-GRADATION")
+        cleaned[1] = identity
+        cleaned[2] = str(cells[2])[1:]
+        cleaned[3] = str(cells[3])[1:]
+        cleaned[4] = str(cells[4])[1:].replace("P.", ".", 1)
+        cleaned[5] = str(cells[5])[1:].replace(" R\n", "\n", 1)
+        cleaned[6] = str(cells[6])[1:]
+        return cleaned, True
+    if len(cells) != 10:
+        return cells, False
+    identity = str(cells[1] or "")
+    signature = (
+        "Central Sector\nProjects" in identity
+        and str(cells[2] or "").endswith("\nSH")
+        and str(cells[4] or "").endswith("\nRE")
+        and str(cells[5] or "").endswith("\nP")
+        and "\nO-" in str(cells[6] or "")
+        and str(cells[7] or "").endswith("\nRT")
+    )
+    if not signature:
+        return cells, False
+    cleaned = list(cells)
+    cleaned[1] = re.sub(r"F(?=NH-\d)", "", identity)
+    cleaned[1] = re.sub(r"\s+-\s+LA\s*\n(?=\[)", " -\n", str(cleaned[1]))
+    cleaned[1] = re.sub(r"\s*,\s*Central Sector\s*\nProjects\s*$", "", str(cleaned[1]))
+    cleaned[2] = re.sub(r"\nSH$", "", str(cells[2]))
+    cleaned[4] = re.sub(r"\nRE$", "", str(cells[4]))
+    cleaned[5] = re.sub(r"\nP$", "", str(cells[5]))
+    cleaned[6] = str(cells[6]).replace("\nO-", "\n-")
+    cleaned[7] = re.sub(r"\nRT$", "", str(cells[7]))
+    return cleaned, True
 
 
 def _base(month: str, serial: str, source_hash: str, page: int, row_index: int, discovery: dict[str, Any]) -> dict[str, Any]:
@@ -332,15 +423,32 @@ def _base(month: str, serial: str, source_hash: str, page: int, row_index: int, 
 
 def extract_project_month(path: Path, month: str, discovery: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     digest = sha256(path); accepted: list[dict[str, Any]] = []; unresolved = []; structural = Counter(); raw_rows = 0
-    ocms_footer_serials_recovered = 0
+    ocms_footer_serials_recovered = 0; ocms_overlay_rows_recovered = 0; blank_continuation_pages = 0
     text_document = fitz.open(path)
     with pdfplumber.open(path) as pdf:
         for page_number in range(discovery["first_page"], discovery["last_page"] + 1):
             tables = pdf.pages[page_number - 1].extract_tables() or []
-            if not tables: raise RuntimeError(f"{month} page {page_number}: no table")
+            if not tables:
+                page_text = _text(text_document[page_number - 1]).strip()
+                if re.fullmatch(r"(?is)FLASH\s+REPORT\s+\d+", page_text):
+                    blank_continuation_pages += 1
+                    continue
+                raise RuntimeError(f"{month} page {page_number}: no table")
             table = max(tables, key=len)
             for row_index, row in enumerate(table):
-                raw_rows += 1; cells = list(row); serial = ""
+                raw_rows += 1; cells = list(row); serial = ""; overlay_source_cells = ""
+                non_null = [_clean(cell) for cell in cells if cell is not None]
+                if non_null and non_null == [str(i) for i in range(1, len(non_null) + 1)]:
+                    structural["COLUMN_ORDINAL_HEADER"] += 1
+                    continue
+                if len(cells) == 10 and _clean(cells[0]) == "1" and _clean(cells[1]).startswith("FLAS") and _clean(cells[-1]).endswith("T 10"):
+                    structural["FLASH_REPORT_FOOTER_COLLISION"] += 1
+                    continue
+                original_cells = list(cells)
+                cells, overlay_recovered = _remove_ocms_flash_report_overlay(cells)
+                if overlay_recovered:
+                    ocms_overlay_rows_recovered += 1
+                    overlay_source_cells = json.dumps(original_cells, ensure_ascii=False)
                 if discovery["schema_family"] == "PAIMANA_V1" and len(cells) >= 7: serial = _clean(cells[-7])
                 elif discovery["schema_family"] == "OCMS":
                     serial = _recover_ocms_footer_serial(cells[0])
@@ -352,6 +460,9 @@ def extract_project_month(path: Path, month: str, discovery: dict[str, Any]) -> 
                     continue
                 try:
                     rec = _base(month, serial, digest, page_number, row_index, discovery)
+                    if overlay_source_cells:
+                        rec["overlay_source_cells_raw"] = overlay_source_cells
+                        rec["overlay_recovery_method"] = "EXACT_FLASH_REPORT_VECTOR_OVERLAY_SIGNATURE"
                     if discovery["schema_family"] == "PAIMANA_V1":
                         if len(cells) < 7: raise ValueError(f"expected at least 7 cells, found {len(cells)}")
                         prefix, cells = cells[:-7], cells[-7:]
@@ -399,7 +510,7 @@ def extract_project_month(path: Path, month: str, discovery: dict[str, Any]) -> 
                         # physically split, with its continuation as the first row
                         # of the next page. Reconstruct only that directly adjacent
                         # continuation; never search or fuzzy-match rows.
-                        if len(cells) > 7:
+                        if any(cell is None for cell in cells):
                             cells = [cell for cell in cells if cell is not None]
                         identity_probe = _clean(cells[1]) if len(cells) > 1 else ""
                         identity_complete = re.search(r"\[[^\]]+\]\s*,\s*[^,]+\s*,\s*.+$", identity_probe) is not None
@@ -407,29 +518,59 @@ def extract_project_month(path: Path, month: str, discovery: dict[str, Any]) -> 
                             following_tables = pdf.pages[page_number].extract_tables() or []
                             if following_tables:
                                 continuation = list(max(following_tables, key=len)[0])
-                                if len(continuation) > 7:
+                                if any(cell is None for cell in continuation):
                                     continuation = [cell for cell in continuation if cell is not None]
-                                if len(continuation) == 7 and not _clean(continuation[0]):
+                                if len(continuation) == len(cells) and len(cells) in {7, 10} and not _clean(continuation[0]):
                                     cells = [cells[0]] + [
                                         "\n".join(part for part in (_clean(cells[i]), _clean(continuation[i])) if part)
-                                        for i in range(1, 7)
+                                        for i in range(1, len(cells))
                                     ]
-                        if len(cells) != 7: raise ValueError(f"expected 7 cells, found {len(cells)}")
-                        name, agency, state, code = _identity_ocms(cells[1]); doc0, doc1, doc2 = _triplet(cells[3], False); cost0, cost1, cost2 = _triplet(cells[4], False)
-                        expenditure = _clean(cells[5]).split("(", 1)[0].strip()
+                        if len(cells) == 7:
+                            name, agency, state, code = _identity_ocms(cells[1]); doc0, doc1, doc2 = _triplet(cells[3], False); cost0, cost1, cost2 = _triplet(cells[4], False)
+                            expenditure = _clean(cells[5]).split("(", 1)[0].strip(); milestones = _clean(cells[6])
+                            schema_layout = "OCMS_7_COMPOUND"
+                        elif len(cells) == 10:
+                            name, agency, state, code = _identity_ocms(cells[1])
+                            cost_parts = [_clean(part) for part in str(cells[3] or "").splitlines() if _clean(part)]
+                            doc_parts = [_clean(part) for part in str(cells[6] or "").splitlines() if _clean(part)]
+                            cost0 = cost_parts[0] if cost_parts else ""
+                            cost1 = cost_parts[1] if len(cost_parts) > 1 and cost_parts[1] != "-" else ""
+                            cost2 = _clean(cells[4])
+                            doc0 = doc_parts[0] if doc_parts else ""
+                            doc1 = doc_parts[1] if len(doc_parts) > 1 and doc_parts[1] != "-" else ""
+                            doc2 = _clean(cells[7])
+                            expenditure = _clean(cells[5]); milestones = _clean(cells[9])
+                            schema_layout = "OCMS_10_COLUMN"
+                        else:
+                            raise ValueError(f"expected 7 or 10 cells, found {len(cells)}")
                         rec.update(project_name_raw=name, agency_raw=agency, project_code_raw=code, legacy_ocms_code_raw=code,
                                    state_raw=state, sector_raw="", approval_date_raw=_clean(cells[2]), original_target_doc_raw=doc0,
                                    revised_doc_raw=doc1, anticipated_doc_raw=doc2, original_cost_raw=cost0, revised_cost_raw=cost1,
                                    anticipated_cost_raw=cost2, cumulative_expenditure_raw=expenditure, physical_progress_raw="",
-                                   milestones_raw=_clean(cells[6]), project_identity_cell_raw=str(cells[1] or ""), approval_start_cell_raw=str(cells[2] or ""),
-                                   doc_cell_raw=str(cells[3] or ""), cost_cell_raw=str(cells[4] or ""), physical_progress_schema_available="FALSE",
+                                   milestones_raw=milestones, project_identity_cell_raw=str(cells[1] or ""), approval_start_cell_raw=str(cells[2] or ""),
+                                   doc_cell_raw=str(cells[3] if len(cells)==7 else cells[6] or ""), cost_cell_raw=str(cells[4] if len(cells)==7 else cells[3] or ""), physical_progress_schema_available="FALSE",
                                    anticipated_doc_schema_available="TRUE", anticipated_cost_schema_available="TRUE",
-                                   legacy_ocms_code_schema_available="TRUE")
+                                   legacy_ocms_code_schema_available="TRUE", schema_layout=schema_layout)
                     accepted.append(rec)
                 except ValueError as exc:
                     unresolved.append({"page": page_number, "row_index": row_index, "serial": serial, "reason": str(exc), "cells": cells})
     text_document.close()
     serials = [int(row["serial_number_raw"]) for row in accepted]
+    official = discovery.get("official_project_count")
+    serial_repairs = []
+    if official is not None and len(accepted) == official and not unresolved:
+        deviations = [(index, row) for index, row in enumerate(accepted, 1) if int(row["serial_number_raw"]) != index]
+        codes = [row.get("project_code_raw") for row in accepted]
+        if deviations and len(deviations) <= 3 and len(codes) == len(set(codes)):
+            for expected, row in deviations:
+                source_serial = row["serial_number_raw"]
+                row["source_serial_number_raw"] = source_serial
+                row["serial_number_raw"] = str(expected)
+                row["observation_id"] = f"OBS-{month.replace('-', '')}-{expected:05d}"
+                row["serial_recovery_method"] = "SEQUENTIAL_ROW_ORDER_WITH_OFFICIAL_COUNT_AND_UNIQUE_CODES"
+                serial_repairs.append({"source_serial": source_serial, "recovered_serial": expected,
+                                       "project_code": row.get("project_code_raw"), "page": row.get("pdf_page_index")})
+            serials = [int(row["serial_number_raw"]) for row in accepted]
     duplicates = len(serials) - len(set(serials))
     missing = sorted(set(range(1, max(serials, default=0) + 1)) - set(serials))
     summary = {"reporting_month": month, "source_id": source_id(month), "source_sha256": digest, **discovery,
@@ -437,9 +578,11 @@ def extract_project_month(path: Path, month: str, discovery: dict[str, Any]) -> 
                "accepted_project_rows": len(accepted), "serial_min": min(serials, default=None), "serial_max": max(serials, default=None),
                "missing_serials": missing, "duplicate_serials": duplicates, "total_raw_table_rows": raw_rows,
                "ocms_footer_serials_recovered": ocms_footer_serials_recovered,
+               "ocms_overlay_rows_recovered": ocms_overlay_rows_recovered,
+               "blank_continuation_pages": blank_continuation_pages,
+               "serial_repairs": serial_repairs,
                "structural_counts": dict(structural), "unresolved_rows": unresolved,
                "row_accounting_valid": raw_rows == len(accepted) + sum(structural.values()) + len(unresolved)}
-    official = discovery.get("official_project_count")
     count_mismatch = official is None or max(serials, default=0) != official or len(accepted) != official
     if not accepted or unresolved or duplicates or missing or count_mismatch or not summary["row_accounting_valid"]:
         reasons = Counter(item["reason"] for item in unresolved)

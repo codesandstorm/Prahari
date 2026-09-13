@@ -1,0 +1,16 @@
+{
+  "version": "cost-basic-long-history-v1",
+  "features": [
+    "log_original_cost",
+    "planned_duration_months",
+    "project_age_months",
+    "expenditure_to_original_cost",
+    "expenditure_to_current_approved_cost",
+    "history_span_months",
+    "remaining_schedule_months",
+    "recent_expenditure_velocity",
+    "schedule_deteriorated_at_t",
+    "prior_schedule_revision_months"
+  ],
+  "known_at_t": true
+}

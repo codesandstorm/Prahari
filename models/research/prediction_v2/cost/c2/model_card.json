@@ -1,0 +1,11 @@
+{
+  "status": "NO_RESEARCH_CANDIDATE_ADMITTED",
+  "model": null,
+  "production_release": "WITHHELD",
+  "pipeline_artifact": "NOT_CREATED",
+  "limitations": [
+    "machine-provisional targets",
+    "temporal stability/admission criteria not met",
+    "predicts approved cost deterioration, not exact final cost"
+  ]
+}

@@ -32,6 +32,7 @@ class PrahariEvidence:
     model_release: dict[str, Any] = field(default_factory=dict)
     prediction_eligibility: dict[str, Any] = field(default_factory=dict)
     review_decision: dict[str, Any] = field(default_factory=dict)
+    cost_intelligence: dict[str, Any] = field(default_factory=dict)
     model_version: str = "UNKNOWN"
     feature_version: str = "UNKNOWN"
     target_version: str = "UNKNOWN"
@@ -65,6 +66,17 @@ class PrahariEvidence:
             raise ValueError("withheld/abstained prediction requires null probability and risk")
         if obj.horizon_months < 1 or len(obj.as_of_month) != 7:
             raise ValueError("invalid horizon or as_of_month")
+        if obj.cost_intelligence:
+            cost_status=obj.cost_intelligence.get("cost_prediction_status")
+            cost_probability=obj.cost_intelligence.get("cost_probability")
+            if cost_status not in {"AVAILABLE_RESEARCH","WITHHELD"}:
+                raise ValueError("invalid cost_prediction_status")
+            if cost_probability is not None and not (0 <= float(cost_probability) <= 1):
+                raise ValueError("cost_probability must be null or in [0,1]")
+            if cost_status=="WITHHELD" and cost_probability is not None:
+                raise ValueError("withheld cost prediction requires null probability")
+            if obj.cost_intelligence.get("production_release_status")!="WITHHELD":
+                raise ValueError("prototype cost evidence cannot claim production release")
         return obj
 
     def to_dict(self) -> dict[str, Any]:

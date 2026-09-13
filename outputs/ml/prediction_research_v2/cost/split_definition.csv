@@ -1,0 +1,11 @@
+target,horizon_months,feature_contract,fold_id,train_rows,validation_rows,test_rows,validation_months,latest_training_outcome,test_start
+C1,3,cost-basic-long-history-v1,F2,6695,3745,4844,2023-06|2023-07|2023-08,2023-05,2024-06
+C1,3,cost-basic-long-history-v1,F3,13863,4844,1655,2024-07|2024-08|2024-09|2024-10,2023-11,2025-03
+C1,3,cost-basic-long-history-v1,F4,13863,1876,3518,2024-10|2025-04|2025-05|2025-06,2023-11,2025-10
+C1,6,cost-basic-long-history-v1,F2,1088,2193,1169,2023-04|2023-05,2023-03,2024-06
+C1,6,cost-basic-long-history-v1,F3,2097,2335,1606,2023-05|2024-07,2023-04,2025-03
+C1,6,cost-basic-long-history-v1,F4,2097,2335,1088,2023-05|2024-07,2023-04,2025-10
+C1,3,cost-compact-v2,F4,4844,474,3518,2025-05|2025-06,2025-01,2025-10
+C2,3,cost-basic-long-history-v1,F2,1035,636,834,2023-06|2023-07|2023-08,2023-05,2024-06
+C2,3,cost-basic-long-history-v1,F3,2242,834,261,2024-07|2024-08|2024-09|2024-10,2023-11,2025-03
+C2,3,cost-basic-long-history-v1,F4,2242,260,913,2024-10|2025-04|2025-05|2025-06,2023-11,2025-10

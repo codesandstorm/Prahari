@@ -68,3 +68,18 @@ def decide_review(*,trust:DataTrustResult,eligibility:PredictionEligibilityResul
     else:
         state='MONITOR';reasons=['LOW_RELIABILITY'] if reliability not in {'HIGH','MODERATE'} else ['NO_ACTIONABLE_SIGNAL'];action='Continue routine monitoring'
     return ReviewDecision(trust.canonical_project_id,trust.as_of_month,target,state,priority,status,reliability,reasons,action,trust.observed_project_level_months[-1] if trust.observed_project_level_months else None,alert_status,dedup)
+
+
+def decide_multi_risk_review(schedule_prediction:dict[str,Any]|None,cost_prediction:dict[str,Any]|None,*,data_usable:bool)->dict[str,Any]:
+    """Combine review reasons, never probabilities; research outputs cannot create production alerts."""
+    schedule_prediction=schedule_prediction or {};cost_prediction=cost_prediction or {}
+    schedule_signal=schedule_prediction.get('prediction_status')=='AVAILABLE' and schedule_prediction.get('risk_band')=='HIGH'
+    cost_signal=cost_prediction.get('cost_prediction_status')=='AVAILABLE_RESEARCH' and cost_prediction.get('cost_risk_band')=='HIGH'
+    reasons=[]
+    if schedule_signal:reasons.append('SCHEDULE_RISK_SIGNAL')
+    if cost_signal:reasons.append('COST_RISK_SIGNAL')
+    if schedule_signal and cost_signal:reasons.insert(0,'MULTI_RISK_SIGNAL')
+    if not data_usable:return {'review_state':'DATA_VERIFICATION_REQUIRED','reason_codes':['DATA_VERIFICATION'],'alert_status':'NOT_ELIGIBLE','composite_probability':None}
+    if reasons:return {'review_state':'REVIEW_RECOMMENDED','reason_codes':reasons,'alert_status':'NOT_ELIGIBLE' if cost_prediction.get('cost_research_override') else 'ELIGIBLE_NOT_CREATED','composite_probability':None}
+    if cost_prediction.get('cost_prediction_status')=='WITHHELD' and schedule_prediction.get('prediction_status')!='AVAILABLE':return {'review_state':'PREDICTION_WITHHELD','reason_codes':['MODEL_RELEASE_PENDING'],'alert_status':'NOT_ELIGIBLE','composite_probability':None}
+    return {'review_state':'MONITOR','reason_codes':['NO_ACTIONABLE_SIGNAL'],'alert_status':'NOT_ELIGIBLE','composite_probability':None}
