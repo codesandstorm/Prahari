@@ -6,7 +6,7 @@ from llm.rag.assistant import UnifiedPrahariAssistant
 from llm.rag.contracts import Citation,DocumentChunk,RagResponse
 from llm.rag.fallback import INSUFFICIENT
 from llm.rag.ingest import make_chunk_id
-from llm.rag.inventory import discover_sources,sha256
+from llm.rag.inventory import discover_sources,resolve_inventory_source_path,sha256
 from llm.rag.prompt import build_rag_prompt
 from llm.rag.retriever import LexicalRetriever
 from llm.rag.router import QuestionRoute,route_question
@@ -35,7 +35,7 @@ class RoutingClient:
 def test_inventory_approves_only_validated_june_and_hash_matches():
     sources=discover_sources(ROOT);approved=[x for x in sources if x.approved_for_rag]
     assert [x.document_id for x in approved]==["SRC-2026-06"]
-    assert approved[0].sha256==sha256(ROOT/approved[0].source_path)
+    assert approved[0].sha256==sha256(resolve_inventory_source_path(ROOT,approved[0].source_path))
     assert all(x.classification=="PROJECT_INTERNAL" for x in sources if x.document_id.startswith("INTERNAL-"))
 
 def test_chunk_ids_are_reproducible_and_content_sensitive():

@@ -87,6 +87,7 @@ data/raw/**/*.PDF
 # --- Temporary/manual OS lock files ---
 ~$*
 *.tmp
+tmp/
 
 # PRAHARI raw and intermediate datasets
 PRAHARI_FULL_EXTRACTED_DATA.xlsx
@@ -109,6 +110,13 @@ outputs/ml/prediction_research_v2/cost/*_cohort.csv
 outputs/ml/prediction_research_v2/cost/*_target_ledger.csv
 outputs/ml/prediction_research_v2/cost/*_events.csv
 outputs/ml/prediction_research_v2/cost/project_cost_predictions.csv
+
+# Cost Prediction V3 bulk artifacts are reproducible local build outputs.
+data/processed/longitudinal_2018_01_2026_06_cost_research_v3/project_month.csv
+outputs/ml/cost_prediction_v3/*_cohort.csv
+outputs/ml/cost_prediction_v3/*_target_ledger.csv
+outputs/ml/cost_prediction_v3/*_events.csv
+outputs/ml/cost_prediction_v3/project_cost_predictions.csv
 
 # Python environment / generated files
 .venv/
