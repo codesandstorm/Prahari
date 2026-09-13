@@ -49,11 +49,11 @@ def model_factory(name: str, feature_names: list[str], seed: int=26103):
                          ("model",HistGradientBoostingClassifier(random_state=seed))])
     if name=="random_forest":
         return Pipeline([("impute",SimpleImputer(strategy="median",add_indicator=True)),
-                         ("model",RandomForestClassifier(n_estimators=400,min_samples_leaf=5,class_weight="balanced",random_state=seed,n_jobs=-1))])
+                         ("model",RandomForestClassifier(n_estimators=400,min_samples_leaf=5,class_weight="balanced",random_state=seed,n_jobs=1))])
     from xgboost import XGBClassifier
     return Pipeline([("impute",SimpleImputer(strategy="median",add_indicator=True)),
                      ("model",XGBClassifier(n_estimators=400,max_depth=4,learning_rate=.04,subsample=.8,colsample_bytree=.8,
-                                            eval_metric="logloss",random_state=seed,n_jobs=-1))])
+                                            eval_metric="logloss",random_state=seed,n_jobs=1))])
 
 
 def expected_calibration_error(y: Iterable[int], probability: Iterable[float], bins: int=10) -> float:
