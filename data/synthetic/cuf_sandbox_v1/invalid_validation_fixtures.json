@@ -1,0 +1,58 @@
+{
+  "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+  "fixture_purpose": "VALIDATOR_TEST_ONLY",
+  "excluded_from_portfolio": true,
+  "cases": [
+    {
+      "case": "NEGATIVE_PROGRESS",
+      "actual_physical_progress": -1
+    },
+    {
+      "case": "PROGRESS_ABOVE_100",
+      "actual_physical_progress": 101
+    },
+    {
+      "case": "LAND_REMAINING_ABOVE_100",
+      "remaining_pct": 110
+    },
+    {
+      "case": "FUTURE_ACTUAL_MILESTONE_AT_PAST_ANCHOR",
+      "actual_date": "2027-01-01",
+      "as_of": "2026-06-01"
+    },
+    {
+      "case": "TENDER_AWARD_BEFORE_PUBLICATION",
+      "publish_date": "2026-05-01",
+      "award_date": "2026-04-01"
+    },
+    {
+      "case": "MISSING_APPLICABILITY",
+      "applicable": null
+    },
+    {
+      "case": "INVALID_DATE_CHRONOLOGY",
+      "approval_date": "2026-07-01",
+      "completion_date": "2026-06-01"
+    },
+    {
+      "case": "DECREASING_CUMULATIVE_EXPENDITURE",
+      "prior": 100,
+      "current": 90
+    },
+    {
+      "case": "DUPLICATE_MILESTONE_IDS",
+      "milestone_ids": [
+        "M1",
+        "M1"
+      ]
+    },
+    {
+      "case": "UNKNOWN_CLEARANCE_CATEGORY",
+      "category": "UNMAPPED_TEST_CATEGORY"
+    },
+    {
+      "case": "SOURCE_GAP",
+      "source_availability": "SOURCE_GAP"
+    }
+  ]
+}

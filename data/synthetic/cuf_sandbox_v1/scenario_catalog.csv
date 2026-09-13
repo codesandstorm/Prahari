@@ -1,0 +1,121 @@
+canonical_project_id,scenario_id,description,expected_watch_status,data_origin
+SYN-CUF-0001,HEALTHY_ON_TRACK,Progress and operational inputs remain close to plan.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0002,PHYSICAL_PROGRESS_LAG,Actual physical progress remains materially behind plan.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0003,PHYSICAL_STAGNATION,Physical progress is unchanged across recent valid months.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0004,HIGH_REQUIRED_FUTURE_VELOCITY,Remaining work implies an unusually high monthly pace.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0005,FINANCIAL_BEHIND_PLAN,Compatible actual financial progress remains behind plan.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0006,FINANCIAL_PHYSICAL_DIVERGENCE,Financial and physical progress diverge materially.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0007,MILESTONE_DELAY,One applicable milestone is overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0008,MULTIPLE_MILESTONE_DELAYS,Multiple applicable milestones are overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0009,WORSENING_MILESTONE_SLIPPAGE,Milestone slippage increases over compatible observations.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0010,LAND_ACQUISITION_PENDING,Structured land evidence reports acquisition incomplete.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0011,LAND_DEADLINE_CONFLICT,Expected land completion falls after a relevant milestone.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0012,ROW_PENDING,Structured right-of-way evidence reports pending work.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0013,CLEARANCE_PENDING,One applicable clearance remains pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0014,MULTIPLE_CLEARANCES_PENDING,Multiple applicable clearances remain pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0015,TENDER_AWARD_PENDING,A published applicable tender has no reported award.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0016,PROLONGED_TENDER_CYCLE,The tender cycle exceeds the governed threshold.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0017,REPORTING_GAP,A deliberate source gap interrupts the observation sequence.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0018,STALE_REPORTING,The latest structured update is explicitly stale.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0019,POOR_PROVENANCE,Required synthetic evidence provenance is deliberately incomplete.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0020,RECOVERY_AFTER_STAGNATION,Progress resumes after a controlled stagnant interval.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0021,IMPROVING_PROJECT,Observable implementation pressure declines over time.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0022,MULTI_PRESSURE_PROJECT,Several independent observable pressure signals coexist.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0023,DATA_INSUFFICIENT_PROJECT,Structured evidence is deliberately insufficient for Watch evaluation.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0024,HEALTHY_ON_TRACK,Progress and operational inputs remain close to plan.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0025,PHYSICAL_PROGRESS_LAG,Actual physical progress remains materially behind plan.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0026,PHYSICAL_STAGNATION,Physical progress is unchanged across recent valid months.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0027,HIGH_REQUIRED_FUTURE_VELOCITY,Remaining work implies an unusually high monthly pace.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0028,FINANCIAL_BEHIND_PLAN,Compatible actual financial progress remains behind plan.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0029,FINANCIAL_PHYSICAL_DIVERGENCE,Financial and physical progress diverge materially.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0030,MILESTONE_DELAY,One applicable milestone is overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0031,MULTIPLE_MILESTONE_DELAYS,Multiple applicable milestones are overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0032,WORSENING_MILESTONE_SLIPPAGE,Milestone slippage increases over compatible observations.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0033,LAND_ACQUISITION_PENDING,Structured land evidence reports acquisition incomplete.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0034,LAND_DEADLINE_CONFLICT,Expected land completion falls after a relevant milestone.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0035,ROW_PENDING,Structured right-of-way evidence reports pending work.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0036,CLEARANCE_PENDING,One applicable clearance remains pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0037,MULTIPLE_CLEARANCES_PENDING,Multiple applicable clearances remain pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0038,TENDER_AWARD_PENDING,A published applicable tender has no reported award.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0039,PROLONGED_TENDER_CYCLE,The tender cycle exceeds the governed threshold.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0040,REPORTING_GAP,A deliberate source gap interrupts the observation sequence.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0041,STALE_REPORTING,The latest structured update is explicitly stale.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0042,POOR_PROVENANCE,Required synthetic evidence provenance is deliberately incomplete.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0043,RECOVERY_AFTER_STAGNATION,Progress resumes after a controlled stagnant interval.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0044,IMPROVING_PROJECT,Observable implementation pressure declines over time.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0045,MULTI_PRESSURE_PROJECT,Several independent observable pressure signals coexist.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0046,DATA_INSUFFICIENT_PROJECT,Structured evidence is deliberately insufficient for Watch evaluation.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0047,HEALTHY_ON_TRACK,Progress and operational inputs remain close to plan.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0048,PHYSICAL_PROGRESS_LAG,Actual physical progress remains materially behind plan.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0049,PHYSICAL_STAGNATION,Physical progress is unchanged across recent valid months.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0050,HIGH_REQUIRED_FUTURE_VELOCITY,Remaining work implies an unusually high monthly pace.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0051,FINANCIAL_BEHIND_PLAN,Compatible actual financial progress remains behind plan.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0052,FINANCIAL_PHYSICAL_DIVERGENCE,Financial and physical progress diverge materially.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0053,MILESTONE_DELAY,One applicable milestone is overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0054,MULTIPLE_MILESTONE_DELAYS,Multiple applicable milestones are overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0055,WORSENING_MILESTONE_SLIPPAGE,Milestone slippage increases over compatible observations.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0056,LAND_ACQUISITION_PENDING,Structured land evidence reports acquisition incomplete.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0057,LAND_DEADLINE_CONFLICT,Expected land completion falls after a relevant milestone.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0058,ROW_PENDING,Structured right-of-way evidence reports pending work.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0059,CLEARANCE_PENDING,One applicable clearance remains pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0060,MULTIPLE_CLEARANCES_PENDING,Multiple applicable clearances remain pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0061,TENDER_AWARD_PENDING,A published applicable tender has no reported award.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0062,PROLONGED_TENDER_CYCLE,The tender cycle exceeds the governed threshold.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0063,REPORTING_GAP,A deliberate source gap interrupts the observation sequence.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0064,STALE_REPORTING,The latest structured update is explicitly stale.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0065,POOR_PROVENANCE,Required synthetic evidence provenance is deliberately incomplete.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0066,RECOVERY_AFTER_STAGNATION,Progress resumes after a controlled stagnant interval.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0067,IMPROVING_PROJECT,Observable implementation pressure declines over time.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0068,MULTI_PRESSURE_PROJECT,Several independent observable pressure signals coexist.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0069,DATA_INSUFFICIENT_PROJECT,Structured evidence is deliberately insufficient for Watch evaluation.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0070,HEALTHY_ON_TRACK,Progress and operational inputs remain close to plan.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0071,PHYSICAL_PROGRESS_LAG,Actual physical progress remains materially behind plan.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0072,PHYSICAL_STAGNATION,Physical progress is unchanged across recent valid months.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0073,HIGH_REQUIRED_FUTURE_VELOCITY,Remaining work implies an unusually high monthly pace.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0074,FINANCIAL_BEHIND_PLAN,Compatible actual financial progress remains behind plan.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0075,FINANCIAL_PHYSICAL_DIVERGENCE,Financial and physical progress diverge materially.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0076,MILESTONE_DELAY,One applicable milestone is overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0077,MULTIPLE_MILESTONE_DELAYS,Multiple applicable milestones are overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0078,WORSENING_MILESTONE_SLIPPAGE,Milestone slippage increases over compatible observations.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0079,LAND_ACQUISITION_PENDING,Structured land evidence reports acquisition incomplete.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0080,LAND_DEADLINE_CONFLICT,Expected land completion falls after a relevant milestone.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0081,ROW_PENDING,Structured right-of-way evidence reports pending work.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0082,CLEARANCE_PENDING,One applicable clearance remains pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0083,MULTIPLE_CLEARANCES_PENDING,Multiple applicable clearances remain pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0084,TENDER_AWARD_PENDING,A published applicable tender has no reported award.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0085,PROLONGED_TENDER_CYCLE,The tender cycle exceeds the governed threshold.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0086,REPORTING_GAP,A deliberate source gap interrupts the observation sequence.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0087,STALE_REPORTING,The latest structured update is explicitly stale.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0088,POOR_PROVENANCE,Required synthetic evidence provenance is deliberately incomplete.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0089,RECOVERY_AFTER_STAGNATION,Progress resumes after a controlled stagnant interval.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0090,IMPROVING_PROJECT,Observable implementation pressure declines over time.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0091,MULTI_PRESSURE_PROJECT,Several independent observable pressure signals coexist.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0092,DATA_INSUFFICIENT_PROJECT,Structured evidence is deliberately insufficient for Watch evaluation.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0093,HEALTHY_ON_TRACK,Progress and operational inputs remain close to plan.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0094,PHYSICAL_PROGRESS_LAG,Actual physical progress remains materially behind plan.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0095,PHYSICAL_STAGNATION,Physical progress is unchanged across recent valid months.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0096,HIGH_REQUIRED_FUTURE_VELOCITY,Remaining work implies an unusually high monthly pace.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0097,FINANCIAL_BEHIND_PLAN,Compatible actual financial progress remains behind plan.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0098,FINANCIAL_PHYSICAL_DIVERGENCE,Financial and physical progress diverge materially.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0099,MILESTONE_DELAY,One applicable milestone is overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0100,MULTIPLE_MILESTONE_DELAYS,Multiple applicable milestones are overdue.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0101,WORSENING_MILESTONE_SLIPPAGE,Milestone slippage increases over compatible observations.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0102,LAND_ACQUISITION_PENDING,Structured land evidence reports acquisition incomplete.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0103,LAND_DEADLINE_CONFLICT,Expected land completion falls after a relevant milestone.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0104,ROW_PENDING,Structured right-of-way evidence reports pending work.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0105,CLEARANCE_PENDING,One applicable clearance remains pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0106,MULTIPLE_CLEARANCES_PENDING,Multiple applicable clearances remain pending.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0107,TENDER_AWARD_PENDING,A published applicable tender has no reported award.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0108,PROLONGED_TENDER_CYCLE,The tender cycle exceeds the governed threshold.,WATCH,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0109,REPORTING_GAP,A deliberate source gap interrupts the observation sequence.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0110,STALE_REPORTING,The latest structured update is explicitly stale.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0111,POOR_PROVENANCE,Required synthetic evidence provenance is deliberately incomplete.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0112,RECOVERY_AFTER_STAGNATION,Progress resumes after a controlled stagnant interval.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0113,IMPROVING_PROJECT,Observable implementation pressure declines over time.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0114,MULTI_PRESSURE_PROJECT,Several independent observable pressure signals coexist.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0115,DATA_INSUFFICIENT_PROJECT,Structured evidence is deliberately insufficient for Watch evaluation.,DATA_INSUFFICIENT,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0116,HEALTHY_ON_TRACK,Progress and operational inputs remain close to plan.,CLEAR,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0117,PHYSICAL_PROGRESS_LAG,Actual physical progress remains materially behind plan.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0118,PHYSICAL_STAGNATION,Physical progress is unchanged across recent valid months.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0119,HIGH_REQUIRED_FUTURE_VELOCITY,Remaining work implies an unusually high monthly pace.,ELEVATED,SYNTHETIC_CUF_PROTOTYPE
+SYN-CUF-0120,FINANCIAL_BEHIND_PLAN,Compatible actual financial progress remains behind plan.,WATCH,SYNTHETIC_CUF_PROTOTYPE
