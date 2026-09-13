@@ -1,0 +1,17 @@
+{
+  "policy_version":"implementation-watch-v1.0",
+  "physical_behind_plan_threshold_pp":-10.0,
+  "financial_behind_plan_threshold_pp":-10.0,
+  "financial_physical_divergence_absolute_threshold_pp":15.0,
+  "stagnation_transitions":2,
+  "high_required_future_pace_pp_per_month":5.0,
+  "low_progress_threshold_pct":80.0,
+  "near_deadline_months":6.0,
+  "severe_milestone_delay_days":90,
+  "high_land_remaining_pct":20.0,
+  "prolonged_tender_cycle_days":120,
+  "critical_clearance_categories":["CRZ","DEFENCE","ENVIRONMENTAL","FOREST"],
+  "elevated_policy":"at least one detected HIGH operational signal or at least three detected operational signals",
+  "reporting_data_signals_create_risk":false,
+  "raw_signals_create_alerts":false
+}
