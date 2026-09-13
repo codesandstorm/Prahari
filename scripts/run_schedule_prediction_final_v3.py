@@ -27,6 +27,10 @@ def fingerprint(rows):
     return hashlib.sha256(payload.encode()).hexdigest()
 
 
+def object_fingerprint(value):
+    return hashlib.sha256(json.dumps(value,sort_keys=True,separators=(",",":"),default=str).encode()).hexdigest()
+
+
 def json_write(path,obj):
     def safe(x):
         if isinstance(x,float) and not math.isfinite(x):return None
@@ -59,7 +63,7 @@ def write_model_contract(target,cohort,features,winner,predictions,models,splits
         for name,payload in {
             "feature_manifest.json":{"version":"basic-long-history-v1","features":features,"known_at_t":True},
             "target_contract.json":{**common,"version":f"{target}-3m-v3-explicit-revised-machine-provisional"},
-            "training_metadata.json":{"dataset_fingerprint":dataset_fp,"cohort_fingerprint":cohort_fp,"fit_status":"NOT_FIT_AS_DEPLOYABLE_ARTIFACT"},
+            "training_metadata.json":{"dataset_fingerprint":dataset_fp,"cohort_fingerprint":cohort_fp,"split_fingerprint":object_fingerprint(splits),"fit_status":"NOT_FIT_AS_DEPLOYABLE_ARTIFACT"},
             "split_definition.json":splits,"calibration.json":{"status":"NOT_ADMITTED"},
             "threshold_policy.json":{"status":"NOT_ADMITTED","probability_is_not_review_policy":True},
             "dependency_metadata.json":{"python":sys.version.split()[0],"joblib":joblib.__version__},
@@ -75,7 +79,7 @@ def write_model_contract(target,cohort,features,winner,predictions,models,splits
     reloaded=np.mean([apply_member(m,x) for m in loaded["members"].values()],axis=0) if loaded.get("ensemble") else apply_member(loaded["member"],x)
     expected=np.asarray([r["probability"] for r in latest_predictions]);parity=bool(np.allclose(reloaded,expected,rtol=0,atol=1e-12))
     if not parity:raise RuntimeError("SCHEDULE_SERIALIZATION_RELOAD_PARITY_FAIL")
-    metadata={**common,"dataset_fingerprint":dataset_fp,"cohort_fingerprint":cohort_fp,"code_commit":code_commit,"fold_artifact":latest,"reload_parity":"PASS_AT_1E-12"}
+    metadata={**common,"dataset_fingerprint":dataset_fp,"cohort_fingerprint":cohort_fp,"split_fingerprint":object_fingerprint(splits),"code_commit":code_commit,"fold_artifact":latest,"reload_parity":"PASS_AT_1E-12"}
     json_write(directory/"feature_manifest.json",{"version":winner["feature_contract"],"features":features,"known_at_t":True})
     json_write(directory/"target_contract.json",{**common,"version":f"{target}-3m-v3-explicit-revised-machine-provisional","approved_schedule_deterioration_only":True})
     json_write(directory/"model_card.json",{**common,"status":"RESEARCH_CANDIDATE_SELECTED","algorithm":winner["model"],"metrics":winner,"limitations":["machine-provisional labels","not MoSPI validated","not a causal model"]})
@@ -91,7 +95,7 @@ def main(mode):
     require_research_authorization(mode)
     metadata=json.loads((DATA/"dataset_metadata.json").read_text(encoding="utf-8"));dataset_fp=metadata["dataset_fingerprint"]
     code_commit=subprocess.run(["git","rev-parse","HEAD"],cwd=ROOT,text=True,capture_output=True,check=True).stdout.strip()
-    support=[];folds=[];metrics=[];predictions=[];calibrations=[];diversity=[];cache={};cohorts={}
+    support=[];folds=[];metrics=[];predictions=[];calibrations=[];diversity=[];cache={};cohorts={};censoring=[]
     source_rows=read_csv(DATA/"project_month.csv");coverage={r["reporting_month"]:r["coverage_class"] for r in read_csv(DATA/"report_month.csv")}
     compatible={(r["canonical_project_id"],r["reporting_month"]) for r in source_rows if r.get("physical_progress_schema_available")=="TRUE"}
     specs=[]
@@ -105,6 +109,8 @@ def main(mode):
         cohorts[(target,horizon,contract)]=cohort
         stem=f"{target.lower()}_{horizon}m_"+("basic" if contract.startswith("basic") else "compact_v2")
         write_csv(OUT/f"{stem}_candidate_ledger.csv",ledger);write_csv(OUT/f"{stem}_events.csv",events)
+        reason_counts=Counter(reason for row in ledger for reason in row.get("reasons","").split("|") if reason)
+        censoring.extend({"target":target,"horizon_months":horizon,"feature_contract":contract,"reason":reason,"count":count} for reason,count in sorted(reason_counts.items()))
         fold=__import__('src.ml.schedule_experiment_v3',fromlist=['fold_support']).fold_support(cohort,horizon)
         counts=Counter(r["status"] for r in ledger)
         support.append({"target":target,"horizon_months":horizon,"feature_contract":contract,"eligible_anchors":len(cohort),"events":sum(int(r["event"]) for r in cohort),"non_events":sum(1-int(r["event"]) for r in cohort),"projects":len({r["canonical_project_id"] for r in cohort}),"prevalence":sum(int(r["event"]) for r in cohort)/len(cohort),"censored":counts["CENSORED"],"excluded":counts["EXCLUDED"],"admitted_folds":sum(r["status"]=="ADMITTED" for r in fold),"target_validation_status":TARGET_VALIDATION_STATUS,"research_mode":RESEARCH_MODE})
@@ -112,7 +118,8 @@ def main(mode):
         result=run_models(cohort,features,target,horizon,contract);m,p,c,d,models,_=result
         metrics.extend(m);predictions.extend(p);calibrations.extend(c);diversity.extend(d);cache[(target,horizon,contract)]=models
     summary=aggregate_metrics(metrics)
-    write_csv(OUT/"target_support.csv",support);write_csv(OUT/"fold_summary.csv",folds);write_csv(OUT/"model_metrics.csv",metrics);write_csv(OUT/"temporal_metrics.csv",summary);write_csv(OUT/"calibration_summary.csv",calibrations);write_csv(OUT/"ensemble_diversity.csv",diversity)
+    write_csv(OUT/"target_support.csv",support);write_csv(OUT/"target_censoring_audit.csv",censoring);write_csv(OUT/"fold_summary.csv",folds);write_csv(OUT/"model_metrics.csv",metrics);write_csv(OUT/"temporal_metrics.csv",summary);write_csv(OUT/"calibration_summary.csv",calibrations);write_csv(OUT/"ensemble_diversity.csv",diversity)
+    write_csv(OUT/"basic_vs_compact.csv",[{"target":target,"basic_eligible":len(cohorts[(target,3,"basic-long-history-v1")]),"compact_eligible":len(cohorts[(target,3,"compact-v2.1-calendar-safe")]),"common_anchor_count":len({(r['canonical_project_id'],r['anchor_month']) for r in cohorts[(target,3,"basic-long-history-v1")]} & {(r['canonical_project_id'],r['anchor_month']) for r in cohorts[(target,3,"compact-v2.1-calendar-safe")]}),"compact_admitted_folds":next(r['admitted_folds'] for r in support if r['target']==target and r['feature_contract']=="compact-v2.1-calendar-safe"),"decision":"NO_SUPERIORITY_CLAIM"} for target in ("S1","S2")])
     write_csv(OUT/"threshold_summary.csv",[{k:r[k] for k in ("target","horizon_months","feature_contract","fold_id","model","threshold","capacity_threshold","fold_claim_status")} for r in metrics])
     write_csv(OUT/"historical_oos_predictions.csv",predictions)
     selections={};bootstrap=[];leads=[];paired=[]
@@ -132,6 +139,7 @@ def main(mode):
     write_csv(OUT/"weighted_vote_summary.csv",[{"status":"WEIGHTED_VOTING_NOT_JUSTIFIED","reason":"equal voting evaluated first; no independent evidence requiring validation-selected weights"}])
     write_csv(OUT/"stacking_summary.csv",[{"status":"STACKING_NOT_JUSTIFIED","reason":"insufficient independent temporal OOF layers for leakage-safe meta-model selection"}])
     write_csv(OUT/"contributors_status.csv",[{"status":"WITHHELD","reason":"contributors require an admitted candidate and remain predictive, never causal"}])
+    write_csv(OUT/"trajectory_status.csv",[{"status":"WITHHELD","reason":"historical out-of-sample trajectories retained locally; no candidate admitted for a frozen trajectory product"}])
     write_csv(OUT/"backend_integration_status.csv",[{"provider":"FrozenPredictionService","integration":"UNCHANGED_FAIL_CLOSED_NO_ADMITTED_SCHEDULE_CANDIDATE","production_release":"WITHHELD","probability_when_withheld":"NULL","risk_band_when_withheld":"NULL"}])
     status={"status":"COMPLETE_RESEARCH_EVALUATION" if any(d["status"]=="SELECTED" for d in selections.values()) else "PARTIAL","research_mode":RESEARCH_MODE,"target_validation_status":TARGET_VALIDATION_STATUS,"production_release":"WITHHELD","dataset_fingerprint":dataset_fp,"code_commit":code_commit,"selection":selections,"weighted_voting":"WEIGHTED_VOTING_NOT_JUSTIFIED","stacking":"STACKING_NOT_JUSTIFIED","july_2026":"UNTOUCHED_PROSPECTIVE_HOLDOUT"}
     json_write(OUT/"schedule_final_status.json",status);print(json.dumps(status,indent=2))
