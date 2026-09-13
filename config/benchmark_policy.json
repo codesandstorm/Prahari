@@ -1,0 +1,32 @@
+{
+  "policy_version": "peer-benchmark-v1.0",
+  "preferred_peer_count": 30,
+  "minimum_peer_count": 15,
+  "exclude_subject_from_peers": true,
+  "cost_bands_crore": [0, 150, 500, 1000, 5000],
+  "cost_band_labels": ["BELOW_150_CR", "150_TO_500_CR", "500_TO_1000_CR", "1000_TO_5000_CR", "5000_CR_AND_ABOVE"],
+  "lifecycle_rules": {"EARLY_MAX": 0.25, "MID_MAX": 0.75, "LATE_MAX": 1.0, "OVERDUE_ABOVE": 1.0},
+  "fallback_hierarchy": [
+    ["sector", "cost_band", "lifecycle_band"],
+    ["sector", "cost_band"],
+    ["sector"],
+    []
+  ],
+  "metrics": {
+    "original_cost": "NEUTRAL",
+    "current_cost": "NEUTRAL",
+    "cost_revision_pct": "HIGHER_WORSE",
+    "cumulative_expenditure_ratio": "NEUTRAL",
+    "physical_progress": "CONTEXT_DEPENDENT",
+    "project_age_months": "NEUTRAL",
+    "remaining_schedule_months": "CONTEXT_DEPENDENT",
+    "required_future_velocity": "HIGHER_WORSE",
+    "progress_vs_elapsed_gap": "LOWER_WORSE",
+    "expenditure_velocity": "CONTEXT_DEPENDENT",
+    "watch_signal_count": "HIGHER_WORSE",
+    "milestone_slippage_days": "HIGHER_WORSE",
+    "land_remaining_pct": "HIGHER_WORSE",
+    "pending_clearances": "HIGHER_WORSE",
+    "tender_cycle_days": "HIGHER_WORSE"
+  }
+}
