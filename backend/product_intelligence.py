@@ -21,7 +21,7 @@ from src.trust.data_trust import DataTrustResult, Dimension
 
 from .data_trust import database_trust
 from .implementation_watch import database_implementation_watch
-from .models import Project, ProjectSnapshot, SourceReport
+from .models import Alert, OfficerReview, Project, ProjectSnapshot, SourceReport
 from .repository import ProjectRepository, prediction_dict
 
 
@@ -85,7 +85,8 @@ def real_project_intelligence(db, project_id: str):
     evidence=[]
     if source: evidence=[{"data_origin":"HISTORICAL_FLASH_REPORT","source_id":source.source_id,"reporting_month":source.reporting_month.strftime("%Y-%m"),"sha256":source.sha256,"page":raw.get("pdf_page_index"),"table":raw.get("source_table"),"signal_codes":watch.get("reason_codes",[])}]
     identity={"canonical_project_id":project_id,"project_name":project.canonical_name,"sector":project.sector or (latest.sector if latest else None) or "UNKNOWN","ministry":project.ministry,"agency":project.agency,"location":project.state,"project_status":state["project_status"],"as_of_month":state["as_of_month"],"agency_is_contractor":False}
-    return build_project_intelligence(mode=IntelligenceMode.REAL_HISTORICAL,identity=identity,current_state=state,watch=watch,trust=trust_view|{"dimensions":trust},benchmark=benchmark,officer_decision=decision,evidence=evidence,provenance={"canonical_source":"project_month.csv","source_report":source.source_id if source else None,"source_sha256":source.sha256 if source else None,"interpolated":False})
+    result=build_project_intelligence(mode=IntelligenceMode.REAL_HISTORICAL,identity=identity,current_state=state,watch=watch,trust=trust_view|{"dimensions":trust},benchmark=benchmark,officer_decision=decision,evidence=evidence,provenance={"canonical_source":"project_month.csv","source_report":source.source_id if source else None,"source_sha256":source.sha256 if source else None,"interpolated":False})
+    return _attach_workflow(db,result)
 
 
 def _synthetic_trust(pid: str, month: str, usable: bool) -> DataTrustResult:
@@ -105,7 +106,7 @@ def _sandbox_bundle():
     return repo,watches,records
 
 
-def synthetic_project_intelligence(project_id: str):
+def synthetic_project_intelligence(project_id: str,db=None):
     repo,watches,records=_sandbox_bundle(); project=repo.project(project_id)
     if project is None: raise LookupError(project_id)
     history=repo.history(project_id); latest=history[-1]; watch,previous=watches[project_id]; usable=latest["source_availability"]=="AVAILABLE" and latest["provenance_complete"]=="TRUE"; trust=_synthetic_trust(project_id,latest["reporting_month"],usable); eligibility=assess_prediction_eligibility(trust,ModelReleaseStatus()); decision=decide_review(trust=trust,eligibility=eligibility,implementation_watch=watch).to_dict()
@@ -114,7 +115,18 @@ def synthetic_project_intelligence(project_id: str):
     evidence=[{"data_origin":"SYNTHETIC_CUF_PROTOTYPE","source_id":latest["source_ref"] or None,"reporting_month":latest["reporting_month"],"sha256":None,"page":None,"table":"SYNTHETIC_CUF_FIXTURE","signal_codes":watch["reason_codes"]}]
     identity={"canonical_project_id":project_id,"project_name":project["project_name"],"sector":project["sector"],"ministry":project["ministry"],"agency":project["agency"],"location":project["location"],"project_status":"SYNTHETIC_ACTIVE","as_of_month":latest["reporting_month"],"scenario_id":project["scenario_id"],"agency_is_contractor":False}
     trust_view={"data_status":"USABLE" if usable else "NOT_USABLE","source":trust.source.code,"history":trust.history.code,"summary_state":"PASS" if usable else "FAIL","reasons":trust.data_reason_codes,"synthetic_evidence_only":True}
-    return build_project_intelligence(mode=IntelligenceMode.SYNTHETIC_SANDBOX,identity=identity,current_state=state,watch=watch,trust=trust_view,benchmark=benchmark,officer_decision=decision,evidence=evidence,provenance={"data_origin":"SYNTHETIC_CUF_PROTOTYPE","scenario_id":project["scenario_id"],"dataset_version":latest["synthetic_dataset_version"],"official_evidence":False},previous_watch=previous)
+    result=build_project_intelligence(mode=IntelligenceMode.SYNTHETIC_SANDBOX,identity=identity,current_state=state,watch=watch,trust=trust_view,benchmark=benchmark,officer_decision=decision,evidence=evidence,provenance={"data_origin":"SYNTHETIC_CUF_PROTOTYPE","scenario_id":project["scenario_id"],"dataset_version":latest["synthetic_dataset_version"],"official_evidence":False},previous_watch=previous)
+    return _attach_workflow(db,result) if db is not None else result
+
+
+def _attach_workflow(db,result):
+    active_states={'NEW','ACKNOWLEDGED','IN_REVIEW','MONITORING','PERSISTENT','ESCALATED','REOPENED'};pid=result.identity['canonical_project_id'];origin=result.data_origin
+    alerts=list(db.scalars(select(Alert).where(Alert.canonical_project_id==pid,Alert.data_origin==origin).order_by(Alert.last_updated_at.desc())))
+    active=[x for x in alerts if x.status in active_states];latest=alerts[0] if alerts else None;review=db.scalar(select(OfficerReview).where(OfficerReview.alert_id==latest.alert_id)) if latest else None
+    requested_mode='SYNTHETIC_SANDBOX' if origin=='SYNTHETIC_CUF_PROTOTYPE' else 'REAL_HISTORICAL'
+    summary={'active_alert_count':len(active),'active_alert_ids':[x.alert_id for x in active],'latest_alert_state':latest.status if latest else None,'latest_alert_type':latest.alert_type if latest else None,'review_status':review.review_status if review else None,'review_priority':review.priority if review else None,'last_reviewed_at':review.review_completed_at.isoformat() if review and review.review_completed_at else None,'next_review_date':review.next_review_date.isoformat() if review and review.next_review_date else None,'complete_history_endpoint':f'/api/v1/alerts/{latest.alert_id}/history?mode={requested_mode}' if latest else None,'prediction_alerts_withheld':True}
+    assistant=dict(result.assistant_context);assistant['alert_review_workflow']=summary;assistant['constraints']=assistant.get('constraints',[])+['Alert and review facts are read-only; never invent or mutate workflow state.']
+    return result.model_copy(update={'alerts_summary':summary,'assistant_context':assistant})
 
 
 def list_sandbox_projects(page=1,page_size=25,status=None):
@@ -131,9 +143,8 @@ def intelligence_dashboard_summary(db, mode: str):
     from collections import Counter
     if mode=="SYNTHETIC_SANDBOX":
         repo,watches,_=_sandbox_bundle();projects=repo.list_projects();watch_counts=Counter(watches[x["canonical_project_id"]][0]["status"] for x in projects)
-        return {"mode":mode,"data_origin":"SYNTHETIC_CUF_PROTOTYPE","total_projects":len(projects),"projects_reviewed":0,"officer_decisions":{"REVIEW_RECOMMENDED":sum(v for k,v in watch_counts.items() if k in {"WATCH","ELEVATED"}),"DATA_VERIFICATION_REQUIRED":watch_counts.get("DATA_INSUFFICIENT",0)},"implementation_watch":dict(watch_counts),"predictions_withheld":len(projects),"data_trust":{"FAIL_OR_WARNING":watch_counts.get("DATA_INSUFFICIENT",0)},"recent_alerts":0,"synthetic_portfolio":True}
+        return {"mode":mode,"data_origin":"SYNTHETIC_CUF_PROTOTYPE","total_projects":len(projects),"projects_reviewed":db.scalar(select(func.count()).select_from(OfficerReview).where(OfficerReview.data_origin=="SYNTHETIC_CUF_PROTOTYPE")) or 0,"officer_decisions":{"REVIEW_RECOMMENDED":sum(v for k,v in watch_counts.items() if k in {"WATCH","ELEVATED"}),"DATA_VERIFICATION_REQUIRED":watch_counts.get("DATA_INSUFFICIENT",0)},"implementation_watch":dict(watch_counts),"predictions_withheld":len(projects),"data_trust":{"FAIL_OR_WARNING":watch_counts.get("DATA_INSUFFICIENT",0)},"recent_alerts":db.scalar(select(func.count()).select_from(Alert).where(Alert.data_origin=="SYNTHETIC_CUF_PROTOTYPE")) or 0,"synthetic_portfolio":True}
     if mode!="REAL_HISTORICAL":raise ValueError("unsupported intelligence mode")
     from .decision_service import review_queue
-    from .models import Alert
     queue=review_queue(db,page=1,page_size=100000);items=queue["items"]
-    return {"mode":mode,"data_origin":"HISTORICAL_FLASH_REPORT","total_projects":db.scalar(select(func.count()).select_from(Project)) or 0,"projects_reviewed":0,"officer_decisions":dict(Counter(x["review_state"] for x in items)),"implementation_watch":dict(Counter(x["implementation_watch"]["status"] for x in items)),"predictions_withheld":sum(x["prediction_status"]=="WITHHELD" for x in items),"data_trust":dict(Counter(x["data_trust"]["data_status"] for x in items)),"recent_alerts":db.scalar(select(func.count()).select_from(Alert)) or 0,"synthetic_portfolio":False}
+    return {"mode":mode,"data_origin":"HISTORICAL_FLASH_REPORT","total_projects":db.scalar(select(func.count()).select_from(Project).where(Project.data_origin=="HISTORICAL_FLASH_REPORT")) or 0,"projects_reviewed":db.scalar(select(func.count()).select_from(OfficerReview).where(OfficerReview.data_origin=="HISTORICAL_FLASH_REPORT")) or 0,"officer_decisions":dict(Counter(x["review_state"] for x in items)),"implementation_watch":dict(Counter(x["implementation_watch"]["status"] for x in items)),"predictions_withheld":sum(x["prediction_status"]=="WITHHELD" for x in items),"data_trust":dict(Counter(x["data_trust"]["data_status"] for x in items)),"recent_alerts":db.scalar(select(func.count()).select_from(Alert).where(Alert.data_origin=="HISTORICAL_FLASH_REPORT")) or 0,"synthetic_portfolio":False}

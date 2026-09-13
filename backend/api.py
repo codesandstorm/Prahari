@@ -79,8 +79,8 @@ def sandbox_projects(page:int=Query(1,ge=1),page_size:int=Query(25,ge=1,le=100),
 
 
 @router.get("/sandbox/projects/{project_id}/intelligence",response_model=ProjectIntelligence)
-def sandbox_project_intelligence(project_id:str):
-    try:return synthetic_project_intelligence(project_id)
+def sandbox_project_intelligence(project_id:str,db:Session=Depends(get_db)):
+    try:return synthetic_project_intelligence(project_id,db)
     except LookupError:raise HTTPException(404,detail={"code":"SYNTHETIC_PROJECT_NOT_FOUND","message":"Synthetic sandbox project not found"})
 
 

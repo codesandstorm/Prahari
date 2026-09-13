@@ -133,3 +133,57 @@ class AssistantOut(StrictModel):
     model_version: str
     rag_index_version: str | None
     latency_metadata: dict[str, float]
+
+
+class ActorRequest(StrictModel):
+    actor_type: Literal["SYSTEM","OFFICER","REVIEWER"] = "OFFICER"
+    actor_id: str | None = Field(default=None,min_length=1,max_length=80,pattern=r"^[A-Za-z0-9_.:@-]+$")
+    reason: str = Field(min_length=2,max_length=1000)
+
+    @field_validator("reason")
+    @classmethod
+    def reason_nonblank(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("reason must not be blank")
+        return value.strip()
+
+
+class DismissRequest(ActorRequest):
+    reason: str = Field(min_length=2,max_length=1000)
+
+
+class AssignmentRequest(StrictModel):
+    assigned_to: str | None = Field(default=None,max_length=80,pattern=r"^[A-Za-z0-9_.:@-]+$")
+    actor_type: Literal["SYSTEM","OFFICER","REVIEWER"] = "OFFICER"
+    actor_id: str | None = Field(default=None,max_length=80,pattern=r"^[A-Za-z0-9_.:@-]+$")
+
+
+class ReviewUpdateRequest(StrictModel):
+    review_status: Literal["IN_PROGRESS","MONITORING","ACTION_REQUIRED","COMPLETE","CLOSED_NO_ACTION"]
+    outcome: Literal["MONITOR_CONTINUED","DATA_VERIFIED","NO_ACTION_REQUIRED","FOLLOW_UP_REQUIRED","ISSUE_RESOLVED"] | None = None
+    next_review_date: date | None = None
+    recommended_follow_up: str | None = Field(default=None,max_length=1000)
+    verification_status: Literal["VERIFIED","CORRECTED","SOURCE_PENDING","UNRESOLVED"] | None = None
+    actor_type: Literal["SYSTEM","OFFICER","REVIEWER"] = "OFFICER"
+    actor_id: str | None = Field(default=None,max_length=80,pattern=r"^[A-Za-z0-9_.:@-]+$")
+
+
+class ReviewNoteRequest(StrictModel):
+    text: str = Field(min_length=1,max_length=4000)
+    note_type: Literal["OBSERVATION","VERIFICATION","FOLLOW_UP","RESOLUTION"]
+    actor_type: Literal["SYSTEM","OFFICER","REVIEWER"] = "OFFICER"
+    actor_id: str | None = Field(default=None,max_length=80,pattern=r"^[A-Za-z0-9_.:@-]+$")
+
+    @field_validator("text")
+    @classmethod
+    def text_nonblank(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("note text must not be blank")
+        return value.strip()
+
+
+class ReviewActionRequest(StrictModel):
+    action_type: Literal["VERIFY_SOURCE","REVIEW_PROGRESS","REVIEW_MILESTONE","REVIEW_CLEARANCE","REVIEW_LAND_STATUS","REVIEW_TENDER_STATUS","MONITOR_NEXT_CYCLE","REQUEST_DATA_VERIFICATION","NO_ACTION_REQUIRED"]
+    detail: str | None = Field(default=None,max_length=2000)
+    actor_type: Literal["SYSTEM","OFFICER","REVIEWER"] = "OFFICER"
+    actor_id: str | None = Field(default=None,max_length=80,pattern=r"^[A-Za-z0-9_.:@-]+$")

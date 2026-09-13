@@ -10,6 +10,7 @@ from fastapi.responses import JSONResponse
 from llm.rag.assistant import UnifiedPrahariAssistant
 from llm.rag.retriever import LexicalRetriever
 from .api import router
+from .workflow_api import router as workflow_router
 from .assistant_service import AssistantAdapter
 from .config import get_settings
 
@@ -60,6 +61,7 @@ def create_app(assistant=_DEFAULT) -> FastAPI:
         LOG.info("request request_id=%s route=%s status=%d duration_ms=%.2f",rid,request.url.path,response.status_code,(time.perf_counter()-started)*1000)
         return response
     app.include_router(router,prefix=settings.api_prefix)
+    app.include_router(workflow_router,prefix=settings.api_prefix)
     return app
 
 
