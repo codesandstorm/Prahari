@@ -1,0 +1,7 @@
+{
+  "target": "C2",
+  "horizon_months": 3,
+  "version": "C2-v1-machine-provisional",
+  "anticipated_cost_is_label": false,
+  "expenditure_is_label": false
+}

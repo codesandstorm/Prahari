@@ -1,0 +1,3 @@
+target,basic_eligible,compact_eligible,compact_admitted_folds,decision,reason
+C1,68777,9594,1,NO_SUPERIORITY_CLAIM,Compact V2 lacks multiple admitted identical-anchor temporal folds
+C2,6464,1684,0,NO_SUPERIORITY_CLAIM,Compact V2 lacks multiple admitted identical-anchor temporal folds

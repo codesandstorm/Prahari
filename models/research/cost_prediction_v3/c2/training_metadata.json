@@ -1,0 +1,7 @@
+{
+  "dataset_fingerprint": "1697437dab4682751fb2d0e9a909d2c97febd141d8cba9e0e3dbb5c9309bbbc1",
+  "cohort_fingerprint": "d46394114db8f0e70bb3e330d6fb77f461e82254a1d196ebb36def7b185d2cb2",
+  "research_mode": "PROTOTYPE_RESEARCH_OVERRIDE",
+  "target_validation_status": "MACHINE_PROVISIONAL",
+  "fit_status": "NOT_FIT_AS_DEPLOYABLE_ARTIFACT"
+}

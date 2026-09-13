@@ -272,6 +272,14 @@ def main(override: str):
             history_metrics.extend(metrics);all_metrics.extend(metrics);all_predictions.extend(predictions);all_calibration.extend(calibration)
             split_rows.extend({"target":target,"horizon_months":3,"feature_contract":contract,"history_window_months":window,**r} for r in splits)
     write_csv(OUT/"history_window_metrics.csv",aggregate_metrics(history_metrics))
+    compact_status=[]
+    for target in ("C1","C2"):
+        basic=next(r for r in support if r["target"]==target and r["horizon_months"]==3 and r["feature_contract"]=="cost-basic-long-history-v1")
+        compact=next(r for r in support if r["target"]==target and r["horizon_months"]==3 and r["feature_contract"]=="cost-compact-v2")
+        compact_status.append({"target":target,"basic_eligible":basic["eligible_anchors"],"compact_eligible":compact["eligible_anchors"],
+                               "compact_admitted_folds":compact["admitted_folds"],"decision":"NO_SUPERIORITY_CLAIM",
+                               "reason":"Compact V2 lacks multiple admitted identical-anchor temporal folds"})
+    write_csv(OUT/"basic_vs_compact.csv",compact_status)
     write_csv(OUT/"model_metrics.csv",all_metrics);write_csv(OUT/"project_cost_predictions.csv",all_predictions);write_csv(OUT/"calibration_summary.csv",all_calibration);write_csv(OUT/"split_definition.csv",split_rows)
     summary=aggregate_metrics(all_metrics);write_csv(OUT/"temporal_metrics.csv",summary)
     selected={};bootstrap=[];leads=[];paired=[];contributors=[];peer_rows=[]
@@ -341,7 +349,9 @@ def main(override: str):
             json_write(artifact_dir/"threshold_policy.json",{"method":"PAST_VALIDATION_F1","not_production_policy":True})
             json_write(artifact_dir/"dependency_metadata.json",{"python":sys.version.split()[0],"joblib":joblib.__version__})
             json_write(artifact_dir/"evaluation_summary.json",winner)
-    write_csv(OUT/"bootstrap_uncertainty.csv",bootstrap);write_csv(OUT/"bootstrap_summary.csv",bootstrap);write_csv(OUT/"lead_time_summary.csv",leads);write_csv(OUT/"paired_comparisons.csv",paired)
+    no_candidate=[{"status":"NOT_EXECUTED","reason":"NO_COST_MODEL_PASSED_RESEARCH_ADMISSION"}]
+    write_csv(OUT/"bootstrap_uncertainty.csv",bootstrap or no_candidate);write_csv(OUT/"bootstrap_summary.csv",bootstrap or no_candidate)
+    write_csv(OUT/"lead_time_summary.csv",leads or no_candidate);write_csv(OUT/"paired_comparisons.csv",paired or no_candidate)
     diversity=[]
     for target in ("C1","C2"):
       for horizon in (3,6):
@@ -356,6 +366,8 @@ def main(override: str):
     write_csv(OUT/"cost_contributors.csv",contributors if contributors else [{"status":"NOT_AVAILABLE","reason":"NO_COST_MODEL_PASSED_RESEARCH_ADMISSION; contributors must not be fabricated"}])
     write_csv(OUT/"feature_importance.csv",contributors if contributors else [{"status":"NOT_AVAILABLE","reason":"NO_COST_MODEL_PASSED_RESEARCH_ADMISSION; contributors must not be fabricated"}])
     write_csv(OUT/"peer_benchmark_status.csv",peer_rows if peer_rows else [{"status":"WITHHELD","reason":"NO_COST_MODEL_PASSED_RESEARCH_ADMISSION"}])
+    write_csv(OUT/"driver_analysis_status.csv",[{"status":"WITHHELD","reason":"NO_COST_MODEL_PASSED_RESEARCH_ADMISSION; predictive contributors must not be presented as causes"}])
+    write_csv(OUT/"backend_integration_status.csv",[{"cost_intelligence":"WITHHELD","prediction_provider":"UNCHANGED_FAIL_CLOSED","officer_decision":"NO_COST_RISK_SIGNAL_WITHOUT_AVAILABLE_RESEARCH_PREDICTION","production_release":"WITHHELD"}])
     write_csv(OUT/"weighted_vote_summary.csv",[{"status":"NOT_ADMITTED","reason":"Equal ensemble evaluated first; no independent past-validation evidence of material weighted-vote gain"}])
     write_csv(OUT/"stacking_summary.csv",[{"status":"COST_STACKING_NOT_JUSTIFIED","reason":"insufficient independent temporal OOF layers for leakage-safe meta-model selection"}])
     write_csv(OUT/"cost_cuf_matrix.csv",cost_cuf_matrix())
