@@ -1,0 +1,313 @@
+{
+  "as_of": "2026-06-01",
+  "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+  "data_quality_notes": [],
+  "families": [
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 2.0
+        }
+      ],
+      "family": "EXECUTION",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "Physical progress is not behind the scheduled plan by the v1 threshold.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_physical_progress - scheduled_physical_progress",
+            "normalized_value": 2.0,
+            "note": "",
+            "raw_values": {
+              "actual": 72.0,
+              "scheduled": 70.0,
+              "threshold_pp": -10.0
+            },
+            "threshold_or_policy": -10.0
+          },
+          "unit": "percentage_points",
+          "value": 2.0
+        }
+      ],
+      "status": "NOT_DETECTED"
+    },
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 1.0
+        },
+        {
+          "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": -6.0
+        }
+      ],
+      "family": "FINANCIAL",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+          "data_quality_state": "SUPPORTED",
+          "family": "FINANCIAL",
+          "plain_language_explanation": "Financial progress is not behind the compatible scheduled plan by the v1 threshold.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_financial_progress - scheduled_financial_progress",
+            "normalized_value": 1.0,
+            "note": "",
+            "raw_values": {
+              "actual": 66.0,
+              "scheduled": 65.0,
+              "threshold_pp": -10.0
+            },
+            "threshold_or_policy": -10.0
+          },
+          "unit": "percentage_points",
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+          "data_quality_state": "SUPPORTED",
+          "family": "FINANCIAL",
+          "plain_language_explanation": "Financial and physical progress do not diverge by the v1 attention threshold.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_financial_progress - actual_physical_progress",
+            "normalized_value": -6.0,
+            "note": "",
+            "raw_values": {
+              "absolute_threshold_pp": 15.0,
+              "financial": 66.0,
+              "physical": 72.0
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": "percentage_points",
+          "value": -6.0
+        }
+      ],
+      "status": "NOT_DETECTED"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "MILESTONE",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "LAND",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "ROW",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "CLEARANCE",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "PROCUREMENT",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "REPORTING",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "DATA_QUALITY",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    }
+  ],
+  "policy_version": "implementation-watch-v1.0",
+  "reason_codes": [],
+  "signals": [
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+      "data_quality_state": "SUPPORTED",
+      "family": "EXECUTION",
+      "plain_language_explanation": "Physical progress is not behind the scheduled plan by the v1 threshold.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "NOT_DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "actual_physical_progress - scheduled_physical_progress",
+        "normalized_value": 2.0,
+        "note": "",
+        "raw_values": {
+          "actual": 72.0,
+          "scheduled": 70.0,
+          "threshold_pp": -10.0
+        },
+        "threshold_or_policy": -10.0
+      },
+      "unit": "percentage_points",
+      "value": 2.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+      "data_quality_state": "SUPPORTED",
+      "family": "FINANCIAL",
+      "plain_language_explanation": "Financial progress is not behind the compatible scheduled plan by the v1 threshold.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "NOT_DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "actual_financial_progress - scheduled_financial_progress",
+        "normalized_value": 1.0,
+        "note": "",
+        "raw_values": {
+          "actual": 66.0,
+          "scheduled": 65.0,
+          "threshold_pp": -10.0
+        },
+        "threshold_or_policy": -10.0
+      },
+      "unit": "percentage_points",
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+      "data_quality_state": "SUPPORTED",
+      "family": "FINANCIAL",
+      "plain_language_explanation": "Financial and physical progress do not diverge by the v1 attention threshold.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "NOT_DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "actual_financial_progress - actual_physical_progress",
+        "normalized_value": -6.0,
+        "note": "",
+        "raw_values": {
+          "absolute_threshold_pp": 15.0,
+          "financial": 66.0,
+          "physical": 72.0
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": "percentage_points",
+      "value": -6.0
+    }
+  ],
+  "status": "CLEAR",
+  "trend": "NOT_AVAILABLE",
+  "unavailable_families": [
+    "MILESTONE",
+    "LAND",
+    "ROW",
+    "CLEARANCE",
+    "PROCUREMENT",
+    "REPORTING",
+    "DATA_QUALITY"
+  ]
+}

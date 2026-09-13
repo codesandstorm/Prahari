@@ -1,0 +1,182 @@
+{
+  "as_of": "2026-06-01",
+  "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+  "data_quality_notes": [],
+  "families": [
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": -15.0
+        }
+      ],
+      "family": "EXECUTION",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "Physical progress is 15.0 percentage points behind the scheduled plan.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_physical_progress - scheduled_physical_progress",
+            "normalized_value": -15.0,
+            "note": "",
+            "raw_values": {
+              "actual": 55.0,
+              "scheduled": 70.0,
+              "threshold_pp": -10.0
+            },
+            "threshold_or_policy": -10.0
+          },
+          "unit": "percentage_points",
+          "value": -15.0
+        }
+      ],
+      "status": "DETECTED"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "FINANCIAL",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "MILESTONE",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "LAND",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "ROW",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "CLEARANCE",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "PROCUREMENT",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "REPORTING",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "DATA_QUALITY",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    }
+  ],
+  "policy_version": "implementation-watch-v1.0",
+  "reason_codes": [
+    "PHYSICAL_PROGRESS_BEHIND_PLAN"
+  ],
+  "signals": [
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+      "data_quality_state": "SUPPORTED",
+      "family": "EXECUTION",
+      "plain_language_explanation": "Physical progress is 15.0 percentage points behind the scheduled plan.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "actual_physical_progress - scheduled_physical_progress",
+        "normalized_value": -15.0,
+        "note": "",
+        "raw_values": {
+          "actual": 55.0,
+          "scheduled": 70.0,
+          "threshold_pp": -10.0
+        },
+        "threshold_or_policy": -10.0
+      },
+      "unit": "percentage_points",
+      "value": -15.0
+    }
+  ],
+  "status": "WATCH",
+  "trend": "NEW",
+  "unavailable_families": [
+    "FINANCIAL",
+    "MILESTONE",
+    "LAND",
+    "ROW",
+    "CLEARANCE",
+    "PROCUREMENT",
+    "REPORTING",
+    "DATA_QUALITY"
+  ]
+}

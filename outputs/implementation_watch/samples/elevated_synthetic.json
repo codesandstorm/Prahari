@@ -1,0 +1,1001 @@
+{
+  "as_of": "2026-06-01",
+  "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+  "data_quality_notes": [],
+  "families": [
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": -25.0
+        },
+        {
+          "code": "HIGH_REQUIRED_FUTURE_PACE",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 13.75
+        },
+        {
+          "code": "LOW_PROGRESS_NEAR_DEADLINE",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 1.0
+        }
+      ],
+      "family": "EXECUTION",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "Physical progress is 25.0 percentage points behind the scheduled plan.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_physical_progress - scheduled_physical_progress",
+            "normalized_value": -25.0,
+            "note": "",
+            "raw_values": {
+              "actual": 45.0,
+              "scheduled": 70.0,
+              "threshold_pp": -10.0
+            },
+            "threshold_or_policy": -10.0
+          },
+          "unit": "percentage_points",
+          "value": -25.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "HIGH_REQUIRED_FUTURE_PACE",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "The project requires 13.75 percentage points of physical progress per remaining month.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "existing compact-v2.1-calendar-safe required_future_velocity; threshold from policy",
+            "normalized_value": 13.75,
+            "note": "",
+            "raw_values": {
+              "required_future_velocity": 13.75,
+              "threshold": 5.0
+            },
+            "threshold_or_policy": 5.0
+          },
+          "unit": null,
+          "value": 13.75
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "LOW_PROGRESS_NEAR_DEADLINE",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "Reported physical progress is below 80% with no more than six scheduled months remaining.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "physical_progress < 80 and remaining_schedule_months <= 6",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "physical_progress": 45.0,
+              "remaining_schedule_months": 4.0
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        }
+      ],
+      "status": "DETECTED"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "FINANCIAL",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "MILESTONE_OVERDUE",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 1
+        },
+        {
+          "code": "SEVERE_MILESTONE_SLIPPAGE",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 182
+        }
+      ],
+      "family": "MILESTONE",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "MILESTONE_OVERDUE",
+          "data_quality_state": "SUPPORTED",
+          "family": "MILESTONE",
+          "plain_language_explanation": "1 applicable milestone is overdue or was completed late.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "count(applicable overdue or completed-late milestones)",
+            "normalized_value": 1,
+            "note": "",
+            "raw_values": {
+              "applicable": 1,
+              "delays": [
+                182
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "SEVERE_MILESTONE_SLIPPAGE",
+          "data_quality_state": "SUPPORTED",
+          "family": "MILESTONE",
+          "plain_language_explanation": "The largest observed milestone delay is 182 days.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "max(milestone delay days)",
+            "normalized_value": 182,
+            "note": "",
+            "raw_values": {
+              "applicable": 1,
+              "delays": [
+                182
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": "days",
+          "value": 182
+        }
+      ],
+      "status": "DETECTED"
+    },
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "LAND_ACQUISITION_PENDING",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 1.0
+        },
+        {
+          "code": "HIGH_LAND_REMAINING",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 30.0
+        },
+        {
+          "code": "LAND_DEADLINE_CONFLICT",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 1.0
+        }
+      ],
+      "family": "LAND",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "LAND_ACQUISITION_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "LAND",
+          "plain_language_explanation": "The structured source reports that land acquisition remains incomplete.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "acquisition_complete": false,
+              "remaining_pct": 30.0
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "HIGH_LAND_REMAINING",
+          "data_quality_state": "SUPPORTED",
+          "family": "LAND",
+          "plain_language_explanation": "30.0% of the required land remains to be acquired.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "100 * (required - acquired) / required, or source-confirmed remaining_pct",
+            "normalized_value": 30.0,
+            "note": "",
+            "raw_values": {
+              "acquired": null,
+              "reported_remaining_pct": 30.0,
+              "required": null
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 30.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "LAND_DEADLINE_CONFLICT",
+          "data_quality_state": "SUPPORTED",
+          "family": "LAND",
+          "plain_language_explanation": "The reported expected land-completion date is later than the relevant scheduled milestone date.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "pending and expected land completion > relevant due date",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "expected_completion_date": "2026-12-01",
+              "relevant_due": "2025-12-01"
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        }
+      ],
+      "status": "DETECTED"
+    },
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "ROW_PENDING",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 1.0
+        }
+      ],
+      "family": "ROW",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "ROW_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "ROW",
+          "plain_language_explanation": "The structured source reports right-of-way work as pending.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "explicit pending status, or confirmed ROW availability below 100%",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "availability_pct": null,
+              "pending": true
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        }
+      ],
+      "status": "DETECTED"
+    },
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "MULTIPLE_CLEARANCES_PENDING",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 2
+        },
+        {
+          "code": "CRITICAL_CLEARANCE_PENDING",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 1.0
+        }
+      ],
+      "family": "CLEARANCE",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "MULTIPLE_CLEARANCES_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "CLEARANCE",
+          "plain_language_explanation": "2 required clearances remain pending.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "count(status=PENDING and applicable)",
+            "normalized_value": 2,
+            "note": "",
+            "raw_values": {
+              "categories": [
+                "Forest",
+                "Other X"
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 2
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "CRITICAL_CLEARANCE_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "CLEARANCE",
+          "plain_language_explanation": "A pending clearance belongs to a category listed in the versioned critical-clearance policy.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "pending category in versioned critical-category policy",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "critical_categories": [
+                "CRZ",
+                "DEFENCE",
+                "ENVIRONMENTAL",
+                "FOREST"
+              ],
+              "pending_categories": [
+                "Forest",
+                "Other X"
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        }
+      ],
+      "status": "DETECTED"
+    },
+    {
+      "availability": "AVAILABLE",
+      "evidence": [
+        {
+          "code": "TENDER_AWARD_PENDING",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 1.0
+        },
+        {
+          "code": "TENDER_CYCLE_PROLONGED",
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "value": 243
+        }
+      ],
+      "family": "PROCUREMENT",
+      "limitations": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "TENDER_AWARD_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "PROCUREMENT",
+          "plain_language_explanation": "A published tender has no reported award date.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "published and not awarded",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "active_count": 1
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "TENDER_CYCLE_PROLONGED",
+          "data_quality_state": "SUPPORTED",
+          "family": "PROCUREMENT",
+          "plain_language_explanation": "The longest observed tender cycle is 243 days.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYNTHETIC_FIXTURE"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "days from publication to award, or as_of for active tender",
+            "normalized_value": 243,
+            "note": "",
+            "raw_values": {
+              "cycles": [
+                243
+              ],
+              "threshold_days": 120
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": "days",
+          "value": 243
+        }
+      ],
+      "status": "DETECTED"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "REPORTING",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "DATA_QUALITY",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    }
+  ],
+  "policy_version": "implementation-watch-v1.0",
+  "reason_codes": [
+    "PHYSICAL_PROGRESS_BEHIND_PLAN",
+    "HIGH_REQUIRED_FUTURE_PACE",
+    "LOW_PROGRESS_NEAR_DEADLINE",
+    "MILESTONE_OVERDUE",
+    "SEVERE_MILESTONE_SLIPPAGE",
+    "LAND_ACQUISITION_PENDING",
+    "HIGH_LAND_REMAINING",
+    "LAND_DEADLINE_CONFLICT",
+    "ROW_PENDING",
+    "MULTIPLE_CLEARANCES_PENDING",
+    "CRITICAL_CLEARANCE_PENDING",
+    "TENDER_AWARD_PENDING",
+    "TENDER_CYCLE_PROLONGED"
+  ],
+  "signals": [
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+      "data_quality_state": "SUPPORTED",
+      "family": "EXECUTION",
+      "plain_language_explanation": "Physical progress is 25.0 percentage points behind the scheduled plan.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "actual_physical_progress - scheduled_physical_progress",
+        "normalized_value": -25.0,
+        "note": "",
+        "raw_values": {
+          "actual": 45.0,
+          "scheduled": 70.0,
+          "threshold_pp": -10.0
+        },
+        "threshold_or_policy": -10.0
+      },
+      "unit": "percentage_points",
+      "value": -25.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "HIGH_REQUIRED_FUTURE_PACE",
+      "data_quality_state": "SUPPORTED",
+      "family": "EXECUTION",
+      "plain_language_explanation": "The project requires 13.75 percentage points of physical progress per remaining month.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "existing compact-v2.1-calendar-safe required_future_velocity; threshold from policy",
+        "normalized_value": 13.75,
+        "note": "",
+        "raw_values": {
+          "required_future_velocity": 13.75,
+          "threshold": 5.0
+        },
+        "threshold_or_policy": 5.0
+      },
+      "unit": null,
+      "value": 13.75
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "LOW_PROGRESS_NEAR_DEADLINE",
+      "data_quality_state": "SUPPORTED",
+      "family": "EXECUTION",
+      "plain_language_explanation": "Reported physical progress is below 80% with no more than six scheduled months remaining.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "physical_progress < 80 and remaining_schedule_months <= 6",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {
+          "physical_progress": 45.0,
+          "remaining_schedule_months": 4.0
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "MILESTONE_OVERDUE",
+      "data_quality_state": "SUPPORTED",
+      "family": "MILESTONE",
+      "plain_language_explanation": "1 applicable milestone is overdue or was completed late.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "count(applicable overdue or completed-late milestones)",
+        "normalized_value": 1,
+        "note": "",
+        "raw_values": {
+          "applicable": 1,
+          "delays": [
+            182
+          ]
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "SEVERE_MILESTONE_SLIPPAGE",
+      "data_quality_state": "SUPPORTED",
+      "family": "MILESTONE",
+      "plain_language_explanation": "The largest observed milestone delay is 182 days.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "max(milestone delay days)",
+        "normalized_value": 182,
+        "note": "",
+        "raw_values": {
+          "applicable": 1,
+          "delays": [
+            182
+          ]
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": "days",
+      "value": 182
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "LAND_ACQUISITION_PENDING",
+      "data_quality_state": "SUPPORTED",
+      "family": "LAND",
+      "plain_language_explanation": "The structured source reports that land acquisition remains incomplete.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {
+          "acquisition_complete": false,
+          "remaining_pct": 30.0
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "HIGH_LAND_REMAINING",
+      "data_quality_state": "SUPPORTED",
+      "family": "LAND",
+      "plain_language_explanation": "30.0% of the required land remains to be acquired.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "100 * (required - acquired) / required, or source-confirmed remaining_pct",
+        "normalized_value": 30.0,
+        "note": "",
+        "raw_values": {
+          "acquired": null,
+          "reported_remaining_pct": 30.0,
+          "required": null
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 30.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "LAND_DEADLINE_CONFLICT",
+      "data_quality_state": "SUPPORTED",
+      "family": "LAND",
+      "plain_language_explanation": "The reported expected land-completion date is later than the relevant scheduled milestone date.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "pending and expected land completion > relevant due date",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {
+          "expected_completion_date": "2026-12-01",
+          "relevant_due": "2025-12-01"
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "ROW_PENDING",
+      "data_quality_state": "SUPPORTED",
+      "family": "ROW",
+      "plain_language_explanation": "The structured source reports right-of-way work as pending.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "explicit pending status, or confirmed ROW availability below 100%",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {
+          "availability_pct": null,
+          "pending": true
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "MULTIPLE_CLEARANCES_PENDING",
+      "data_quality_state": "SUPPORTED",
+      "family": "CLEARANCE",
+      "plain_language_explanation": "2 required clearances remain pending.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "count(status=PENDING and applicable)",
+        "normalized_value": 2,
+        "note": "",
+        "raw_values": {
+          "categories": [
+            "Forest",
+            "Other X"
+          ]
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 2
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "CRITICAL_CLEARANCE_PENDING",
+      "data_quality_state": "SUPPORTED",
+      "family": "CLEARANCE",
+      "plain_language_explanation": "A pending clearance belongs to a category listed in the versioned critical-clearance policy.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "pending category in versioned critical-category policy",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {
+          "critical_categories": [
+            "CRZ",
+            "DEFENCE",
+            "ENVIRONMENTAL",
+            "FOREST"
+          ],
+          "pending_categories": [
+            "Forest",
+            "Other X"
+          ]
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "TENDER_AWARD_PENDING",
+      "data_quality_state": "SUPPORTED",
+      "family": "PROCUREMENT",
+      "plain_language_explanation": "A published tender has no reported award date.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "published and not awarded",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {
+          "active_count": 1
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "AVAILABLE",
+      "causal_claim": false,
+      "code": "TENDER_CYCLE_PROLONGED",
+      "data_quality_state": "SUPPORTED",
+      "family": "PROCUREMENT",
+      "plain_language_explanation": "The longest observed tender cycle is 243 days.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": true,
+      "source_refs": [
+        "SYNTHETIC_FIXTURE"
+      ],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "AVAILABLE",
+        "formula": "days from publication to award, or as_of for active tender",
+        "normalized_value": 243,
+        "note": "",
+        "raw_values": {
+          "cycles": [
+            243
+          ],
+          "threshold_days": 120
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": "days",
+      "value": 243
+    }
+  ],
+  "status": "ELEVATED",
+  "trend": "NEW",
+  "unavailable_families": [
+    "FINANCIAL",
+    "REPORTING",
+    "DATA_QUALITY"
+  ]
+}

@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import os
 from collections import Counter
 from pathlib import Path
 
@@ -18,6 +19,7 @@ from src.pipeline.build_longitudinal_pilot import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
+RAW = Path(os.environ.get("PRAHARI_RAW_ROOT", ROOT / "data/raw"))
 PROCESSED = ROOT / "data/processed/pilot_2026_05_06"
 MAY_PDF_SHA = "480d98632cd1b1d4fe70b58a5a753924b2735b0135e7c8507c1ec05ff2ddf005"
 JUNE_PDF_SHA = "d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15"
@@ -108,8 +110,8 @@ def test_input_hashes_are_unchanged():
 
 @pytest.mark.integration
 def test_source_pdf_hashes_are_unchanged():
-    assert sha(ROOT / "data/raw/2026/FlashReport_2026_05.pdf") == MAY_PDF_SHA
-    assert sha(ROOT / "data/raw/2026/FlashReport_2026_06.pdf") == JUNE_PDF_SHA
+    assert sha(RAW / "2026/FlashReport_2026_05.pdf") == MAY_PDF_SHA
+    assert sha(RAW / "2026/FlashReport_2026_06.pdf") == JUNE_PDF_SHA
 
 
 def test_dataset_metadata_and_manual_sample_contract():

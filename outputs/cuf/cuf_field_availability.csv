@@ -1,0 +1,39 @@
+official_field_name,official_section,prahari_canonical_name,historical_dataset_column,current_coverage,missingness_rate,project_coverage,month_coverage,structured_status,historical_availability_state,future_paimana_support
+Do you Have Active Tenders?,Annexure II,has_active_tenders,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Tender Award Date,Annexure II,tender_award_date,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Date of Approval/Sanction Date,Annexure II,approval_date,approval_date_raw|reported_approval_date,0.987605,0.012395,0.994147,1.0,AVAILABLE_CURRENTLY,AVAILABLE,True
+Project Start Date,Annexure II,project_start_date,start_date_raw|reported_start_date,0.331374,0.668626,0.637694,0.366667,AVAILABLE_CURRENTLY,UNREPORTED,True
+Original Project Completion Date,Annexure II,original_project_completion_date,original_target_doc_raw|reported_original_target_doc,0.99522,0.00478,1.0,1.0,AVAILABLE_CURRENTLY,AVAILABLE,True
+Revised Project Completion Date,Annexure II,revised_project_completion_date,revised_doc_raw|reported_revised_doc,0.702189,0.297811,0.868598,1.0,AVAILABLE_CURRENTLY,UNREPORTED,True
+Actual Completion Date,Annexure II,actual_completion_date,,0.0,1.0,0.0,0.0,UNSAFE_FOR_PREDICTION,STRUCTURALLY_UNAVAILABLE,True
+Estimated Project IRR,Annexure II,estimated_project_irr,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Estimated Economic IRR,Annexure II,estimated_economic_irr,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Total Project Cost,Annexure II,original_project_cost,original_cost_raw|reported_original_cost,1.0,0.0,1.0,1.0,AVAILABLE_CURRENTLY,AVAILABLE,True
+Revised Project Cost,Annexure II,revised_project_cost,revised_cost_raw|reported_revised_cost,0.771924,0.228076,0.932689,1.0,AVAILABLE_CURRENTLY,UNREPORTED,True
+Project Completion Cost,Annexure II,project_completion_cost,,0.0,1.0,0.0,0.0,UNSAFE_FOR_PREDICTION,STRUCTURALLY_UNAVAILABLE,True
+Is Total Project Cost inclusive of Land Cost?,Annexure II,land_cost_included,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Other Cost Indicator and Details,Annexure II,other_project_cost,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Project Cost Incurred,Annexure II,pre_nip_project_cost_incurred,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Total Capital Outlay,Annexure II,total_capital_outlay,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Project Cost Beyond FY 2025,Annexure II,project_cost_beyond_fy2025,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Central Support,Annexure II,central_support,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+State Support,Annexure II,state_support,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Is this an Externally Aided Project?,Annexure II,externally_aided_project,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Debt Support,Annexure II,debt_support,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Internal Accruals,Annexure II,internal_accruals,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+External Aid,Annexure II,external_aid,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+PPP/Equity,Annexure II,ppp_equity,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+VGF for PPP Projects / Grant,Annexure II,vgf_grant,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Other Sources of Funding,Annexure II,other_funding_sources,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Year Wise Phasing of Total Capital Outlay,Annexure II,capital_outlay_phasing,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Scheduled Financial Progress,Annexure II,scheduled_financial_progress,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Actual Financial Progress,Annexure II,actual_financial_progress,cumulative_expenditure_raw|reported_cumulative_expenditure,1.0,0.0,1.0,1.0,AVAILABLE_CURRENTLY,AVAILABLE,True
+Scheduled Physical Progress,Annexure I Progress Details,scheduled_physical_progress,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Monthly Actual Physical Progress,Annexure I Progress Details,actual_physical_progress,physical_progress_raw|reported_physical_progress,0.689256,0.310744,0.901083,0.733333,AVAILABLE_CURRENTLY,UNREPORTED,True
+Land Acquisition Details,Annexure I Detailed Information,land,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Right of Way Details,Annexure I Detailed Information,right_of_way,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Approvals and Clearances Details,Annexure I Detailed Information,clearances,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Tender Details,Annexure I Tender Details,tenders,,0.0,1.0,0.0,0.0,CUF_AVAILABLE_NOT_IN_HISTORICAL_DATA,STRUCTURALLY_UNAVAILABLE,True
+Milestone Module,Annexure III,milestones,milestones_raw (unstructured only),0.297687,0.702313,0.612233,0.266667,STRUCTURALLY_UNAVAILABLE,STRUCTURALLY_UNAVAILABLE,True
+Project Profile and Classification,Annexure I Basic Information,project_profile,reported_project_name|sector_raw|project_status_raw|reported_state,,,,,DERIVABLE_CURRENTLY,UNREPORTED,True
+Promoter and Implementing Context,Annexure I Contact Details,promoter_context,agency_raw|reported_agency|ministry_raw,,,,,DERIVABLE_CURRENTLY,UNREPORTED,True

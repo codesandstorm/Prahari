@@ -1,0 +1,14 @@
+{
+  "historical_dataset_sha256": "75cac968e7f62fffdb55b5fd7376ccbc402836a0ea139a87ddf93c4815e34c5d",
+  "official_cuf_sha256": "c058929cc4f19dab8df2e1527419a865036080996f60cf976da9e55a547d4412",
+  "policy_version": "implementation-watch-v1.0",
+  "predictions_created": 0,
+  "registry_hashes": {
+    "config/cuf_experiment_registry.json": "f5748b50e4fc40e2536a2aab1682037327b62381be7ed76a20fe03e646164ae7",
+    "config/cuf_field_registry.json": "9efc174eb1f9120073ac530ff14c66ab4ab9977bfc0e6bbff436e9d4a035cf06",
+    "config/implementation_watch_policy.json": "b9df5fdf10d423db08fd4e94e7212d3b438b3e0c1026e1ba93f32df238e5d9bc",
+    "config/implementation_watch_reason_codes.json": "e5927329bb7a39298fef780b5cefbcde56e27edb4d55c8a305f09d00cdf74839"
+  },
+  "sample_origin": "SYNTHETIC_CUF_PROTOTYPE",
+  "status": "COMPLETE"
+}

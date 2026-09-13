@@ -1,0 +1,10 @@
+family,current_compute_state,current_inputs,unavailable_inputs,historical_schema
+EXECUTION,PARTIAL,actual physical progress; approved schedule dates,scheduled physical plan,MIXED
+FINANCIAL,PARTIAL,cumulative expenditure,compatible scheduled/actual financial percentages,MIXED
+MILESTONE,STRUCTURALLY_UNAVAILABLE,unstructured milestones_raw retained,typed milestone dates/status/cost,UNSTRUCTURED
+LAND,STRUCTURALLY_UNAVAILABLE,,structured land details,ABSENT
+ROW,STRUCTURALLY_UNAVAILABLE,,structured ROW applicability/availability,ABSENT
+CLEARANCE,STRUCTURALLY_UNAVAILABLE,,structured clearance records,ABSENT
+PROCUREMENT,STRUCTURALLY_UNAVAILABLE,,structured tender records,ABSENT
+REPORTING,AVAILABLE,report calendar/source coverage/provenance,,AVAILABLE
+DATA_QUALITY,AVAILABLE,Data Trust/source/provenance/feature availability,,AVAILABLE

@@ -1,0 +1,355 @@
+{
+  "as_of": "2026-06-01",
+  "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+  "data_quality_notes": [
+    "The project-level report for the requested month is unavailable.",
+    "A source gap prevents a continuous project-level observation sequence.",
+    "The project observation does not have complete source provenance.",
+    "The historical source schema does not contain this structured field family."
+  ],
+  "families": [
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "EXECUTION",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "FINANCIAL",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "MILESTONE",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "LAND",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "ROW",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "CLEARANCE",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "UNKNOWN",
+      "evidence": [],
+      "family": "PROCUREMENT",
+      "limitations": [
+        "No governed inputs were evaluated for this family."
+      ],
+      "signals": [],
+      "status": "NOT_AVAILABLE"
+    },
+    {
+      "availability": "SOURCE_GAP",
+      "evidence": [
+        {
+          "code": "REPORT_MONTH_MISSING",
+          "source_refs": [],
+          "value": 1.0
+        },
+        {
+          "code": "SOURCE_GAP",
+          "source_refs": [],
+          "value": 1.0
+        }
+      ],
+      "family": "REPORTING",
+      "limitations": [
+        "Required structured evidence is unavailable; absence is not interpreted as safety."
+      ],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "SOURCE_GAP",
+          "causal_claim": false,
+          "code": "REPORT_MONTH_MISSING",
+          "data_quality_state": "SOURCE_GAP",
+          "family": "REPORTING",
+          "plain_language_explanation": "The project-level report for the requested month is unavailable.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": false,
+          "source_refs": [],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "SOURCE_GAP",
+            "formula": "report_month_missing = true",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {},
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "SOURCE_GAP",
+          "causal_claim": false,
+          "code": "SOURCE_GAP",
+          "data_quality_state": "SOURCE_GAP",
+          "family": "REPORTING",
+          "plain_language_explanation": "A source gap prevents a continuous project-level observation sequence.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": false,
+          "source_refs": [],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "SOURCE_GAP",
+            "formula": "source_availability = SOURCE_GAP",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {},
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        }
+      ],
+      "status": "DETECTED"
+    },
+    {
+      "availability": "UNREPORTED",
+      "evidence": [
+        {
+          "code": "PROVENANCE_INCOMPLETE",
+          "source_refs": [],
+          "value": 1.0
+        },
+        {
+          "code": "STRUCTURAL_SCHEMA_LIMITATION",
+          "source_refs": [],
+          "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+        }
+      ],
+      "family": "DATA_QUALITY",
+      "limitations": [
+        "Required structured evidence is unavailable; absence is not interpreted as safety."
+      ],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "UNREPORTED",
+          "causal_claim": false,
+          "code": "PROVENANCE_INCOMPLETE",
+          "data_quality_state": "UNREPORTED",
+          "family": "DATA_QUALITY",
+          "plain_language_explanation": "The project observation does not have complete source provenance.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": false,
+          "source_refs": [],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "UNREPORTED",
+            "formula": "provenance_complete = false",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {},
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "STRUCTURALLY_UNAVAILABLE",
+          "causal_claim": false,
+          "code": "STRUCTURAL_SCHEMA_LIMITATION",
+          "data_quality_state": "STRUCTURALLY_UNAVAILABLE",
+          "family": "DATA_QUALITY",
+          "plain_language_explanation": "The historical source schema does not contain this structured field family.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "INFO",
+          "source_available": false,
+          "source_refs": [],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "STRUCTURALLY_UNAVAILABLE",
+            "formula": "structured families absent from source schema",
+            "normalized_value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT",
+            "note": "",
+            "raw_values": {
+              "families": [
+                "MILESTONE",
+                "LAND",
+                "ROW",
+                "CLEARANCE",
+                "PROCUREMENT"
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+        }
+      ],
+      "status": "DETECTED"
+    }
+  ],
+  "policy_version": "implementation-watch-v1.0",
+  "reason_codes": [
+    "REPORT_MONTH_MISSING",
+    "SOURCE_GAP",
+    "PROVENANCE_INCOMPLETE",
+    "STRUCTURAL_SCHEMA_LIMITATION"
+  ],
+  "signals": [
+    {
+      "as_of": "2026-06-01",
+      "availability": "SOURCE_GAP",
+      "causal_claim": false,
+      "code": "REPORT_MONTH_MISSING",
+      "data_quality_state": "SOURCE_GAP",
+      "family": "REPORTING",
+      "plain_language_explanation": "The project-level report for the requested month is unavailable.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": false,
+      "source_refs": [],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "SOURCE_GAP",
+        "formula": "report_month_missing = true",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {},
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "SOURCE_GAP",
+      "causal_claim": false,
+      "code": "SOURCE_GAP",
+      "data_quality_state": "SOURCE_GAP",
+      "family": "REPORTING",
+      "plain_language_explanation": "A source gap prevents a continuous project-level observation sequence.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "HIGH",
+      "source_available": false,
+      "source_refs": [],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "SOURCE_GAP",
+        "formula": "source_availability = SOURCE_GAP",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {},
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "UNREPORTED",
+      "causal_claim": false,
+      "code": "PROVENANCE_INCOMPLETE",
+      "data_quality_state": "UNREPORTED",
+      "family": "DATA_QUALITY",
+      "plain_language_explanation": "The project observation does not have complete source provenance.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "MEDIUM",
+      "source_available": false,
+      "source_refs": [],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "UNREPORTED",
+        "formula": "provenance_complete = false",
+        "normalized_value": true,
+        "note": "",
+        "raw_values": {},
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": 1.0
+    },
+    {
+      "as_of": "2026-06-01",
+      "availability": "STRUCTURALLY_UNAVAILABLE",
+      "causal_claim": false,
+      "code": "STRUCTURAL_SCHEMA_LIMITATION",
+      "data_quality_state": "STRUCTURALLY_UNAVAILABLE",
+      "family": "DATA_QUALITY",
+      "plain_language_explanation": "The historical source schema does not contain this structured field family.",
+      "policy_version": "implementation-watch-v1.0",
+      "severity": "INFO",
+      "source_available": false,
+      "source_refs": [],
+      "status": "DETECTED",
+      "technical_explanation": {
+        "availability": "STRUCTURALLY_UNAVAILABLE",
+        "formula": "structured families absent from source schema",
+        "normalized_value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT",
+        "note": "",
+        "raw_values": {
+          "families": [
+            "MILESTONE",
+            "LAND",
+            "ROW",
+            "CLEARANCE",
+            "PROCUREMENT"
+          ]
+        },
+        "threshold_or_policy": "see formula"
+      },
+      "unit": null,
+      "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+    }
+  ],
+  "status": "DATA_INSUFFICIENT",
+  "trend": "NOT_AVAILABLE",
+  "unavailable_families": [
+    "EXECUTION",
+    "FINANCIAL",
+    "MILESTONE",
+    "LAND",
+    "ROW",
+    "CLEARANCE",
+    "PROCUREMENT",
+    "DATA_QUALITY"
+  ]
+}
