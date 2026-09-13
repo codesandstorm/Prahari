@@ -3,8 +3,8 @@
 **Owner:** Akshita (domain lead) + Sandarbh
 **Area:** Reference / CUF / Data Sources
 **Document Type:** RESEARCH
-**Status:** NOT STARTED
-**Last Updated:** 2026-09-01
+**Status:** COMPLETE
+**Last Updated:** 2026-09-13
 **Depends On:** NONE
 **Used By:** Entire team
 **Canonical:** YES
@@ -16,7 +16,7 @@
 
 **Document Purpose:** Track research into MoSPI Common Upload Form (CUF) fields
 and their relationship to PRAHARI's data model.  
-**Status:** NOT STARTED
+**Status:** COMPLETE - official CUF obtained and reconciled
 
 ---
 
@@ -47,17 +47,19 @@ detailed fields that are aggregated or omitted in published Flash Reports.
 
 ## CUF Field Inventory
 
-> **Status: UNKNOWN â€” CUF documentation not yet obtained.**
+> **Status: VERIFIED.** The official 17-page MoSPI/IPMD memorandum and annexures were reviewed. The controlling record is [`../cuf/PRAHARI_CUF_FIELD_CONTRACT_V1.md`](../cuf/PRAHARI_CUF_FIELD_CONTRACT_V1.md), with machine-readable mappings in `config/cuf_field_registry.json`.
 
 | CUF Field | Present in Flash Reports? | Notes |
 |---|---|---|
-| *(To be populated after CUF documentation is obtained)* | â€” | â€” |
+| Annexure II 29 major parameters | Mixed | Dates and cost/expenditure overlap; funding and plan-phasing fields are absent historically. |
+| Annexure I land, ROW, clearances and tenders | No structured counterpart | Future PAIMANA/CUF input only. |
+| Annexure III milestones | Raw text exists in a minority of rows but is not structured | Not currently computable. |
 
 ---
 
 ## Flash Report Fields Without CUF Counterpart (Candidate List)
 
-> To be filled after CUF documentation is obtained.
+Historical Flash Reports additionally contain agency labels and anticipated completion/cost fields. Agency is not assumed to be contractor; anticipated values retain their distinct historical semantics.
 
 ---
 
@@ -82,13 +84,13 @@ the Gate 2 dataset is validated.**
 
 ## Open Questions
 
-- [ ] Can the official CUF schema documentation be obtained?
-- [ ] Are CUF fields richer than Flash Report fields?
-- [ ] Are there CUF fields that predate the first cost/schedule revision?
-- [ ] Do CUF fields include contractor or tender information?
-- [ ] Do CUF fields include physical milestone details?
+- [x] Official CUF schema obtained and fingerprinted.
+- [x] CUF is richer than current Flash Report project-month data.
+- [x] CUF contains plan, funding, land, ROW, clearance, tender and milestone fields that can precede final revisions.
+- [x] CUF contains tender and implementing-agency information; it does not establish a contractor-performance field.
+- [x] CUF Annexure III defines broad physical milestone categories and dates/costs.
 
 ---
 
-*This document will be updated when CUF documentation is obtained.*
+*The detailed current contract and availability matrix are maintained under `docs/cuf/`.*
 

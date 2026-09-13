@@ -1,0 +1,20 @@
+{
+  "registry_version": "cuf-feature-experiments-v1.0",
+  "execution_status": "DEFINITIONS_ONLY_NOT_EXECUTED",
+  "baseline_feature_version": "compact-v2.1-calendar-safe",
+  "experiments": [
+    {"id":"E0","add":[],"purpose":"Frozen 14-feature baseline"},
+    {"id":"E1","add":["physical_progress_gap"],"purpose":"Physical plan-vs-actual family"},
+    {"id":"E2","add":["financial_progress_gap"],"purpose":"Financial plan-vs-actual family"},
+    {"id":"E3","add":["milestone_slippage_days","delayed_milestone_count","milestone_slippage_rate","max_milestone_delay_days","milestone_slippage_trend"],"purpose":"Milestone family"},
+    {"id":"E4","add":["land_remaining_pct","land_acquisition_pending_flag","land_deadline_conflict"],"purpose":"Land family"},
+    {"id":"E5","add":["pending_clearance_count","critical_clearance_pending"],"purpose":"Clearance family"},
+    {"id":"E6","add":["active_tender_flag","tender_cycle_days","tender_delay_count"],"purpose":"Tender family"},
+    {"id":"E7","add":["row_pending"],"purpose":"Right-of-way family"},
+    {"id":"E8","add":["debt_ratio","external_aid_ratio","ppp_equity_ratio","funding_source_count"],"purpose":"Funding context family"},
+    {"id":"E9","add":"ALL_AS_OF_SAFE_VALIDATED_CUF_FAMILIES","purpose":"Combined safe CUF block"},
+    {"id":"E10","remove":"ONE_FAMILY_AT_A_TIME_FROM_BEST_VALIDATED_CUF_MODEL","purpose":"Leave-one-family-out"}
+  ],
+  "promotion_protocol":"docs/cuf/PRAHARI_CUF_FEATURE_ADMISSION_PROTOCOL.md",
+  "results": null
+}

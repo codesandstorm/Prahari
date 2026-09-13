@@ -2,19 +2,17 @@
 
 **Registry:** `data/metadata/prahari_feature_registry.csv`
 
-**Version:** `features-v0.1`
+**Version:** `compact-v2.1-calendar-safe`
 
 **Status:** frozen for provisional research; validation pending
 
-Every feature must be computable using information known at prediction month t. Model A uses six current CUF-equivalent fields. Model B adds six temporal/data-quality features. Model C has no measured result because the required additional fields are unavailable.
+Every feature must be computable using information known at prediction month t. The exact frozen implementation is the 14-member `COMPACT_V2` tuple in `src/ml/feature_discovery_v2.py`, built by `src/ml/final_prediction.py`. CUF candidates are not part of this baseline and have no measured result.
 
-## Model A
+## Frozen 14-feature baseline
 
-`log_original_cost`, `planned_duration_months`, `project_age_months`, `expenditure_to_cost`, `physical_progress`, and `physical_progress_missing`.
+`log_original_cost`, `planned_duration_months`, `project_age_months`, `expenditure_to_cost`, `physical_progress`, `physical_progress_missing`, `history_span_months`, `remaining_schedule_months`, `required_future_velocity`, `progress_vs_elapsed_gap`, `low_progress_near_deadline`, `consecutive_stagnant`, `cumulative_cost_revision_pct`, and `expenditure_velocity`.
 
-## Model B additions
-
-`progress_delta_1m`, `progress_delta_3m`, `expenditure_delta_1m`, `stagnant_progress_2m`, `history_months`, and `correction_count`.
+An exact-tuple regression test prevents documentation or inference drift. The former 12-feature `features-v0.1` text was historical and is superseded by this contract; model behavior was not changed during reconciliation.
 
 The current revised date defines S1 eligibility and cannot be a predictor. Future revised dates, actual completion, future cost, future progress, full-dataset peer statistics, and post-event information are blacklisted.
 

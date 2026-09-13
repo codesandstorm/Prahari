@@ -1,5 +1,11 @@
 # CUF / PAIMANA Field Blueprint
 
+**Status:** SUPERSEDED
+
+**Superseded by:** [`../cuf/PRAHARI_CUF_FIELD_CONTRACT_V1.md`](../cuf/PRAHARI_CUF_FIELD_CONTRACT_V1.md)
+
+This file preserves the pre-retrieval research state. The official 17-page CUF document was subsequently obtained and verified; do not use the older `INFERRED_BUT_NOT_VERIFIED` classifications below as the current contract.
+
 **Research date:** 2026-09-06
 
 **Evidence rule:** only MoSPI/IPMD material is authoritative for existing PAIMANA/CUF claims.
