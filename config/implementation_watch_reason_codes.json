@@ -1,0 +1,32 @@
+{
+  "registry_version": "implementation-watch-reasons-v1.0",
+  "causal_claims_allowed": false,
+  "codes": {
+    "PHYSICAL_PROGRESS_BEHIND_PLAN": {"family": "EXECUTION", "default_severity": "MEDIUM"},
+    "PHYSICAL_PROGRESS_STAGNANT": {"family": "EXECUTION", "default_severity": "MEDIUM"},
+    "HIGH_REQUIRED_FUTURE_PACE": {"family": "EXECUTION", "default_severity": "HIGH"},
+    "LOW_PROGRESS_NEAR_DEADLINE": {"family": "EXECUTION", "default_severity": "HIGH"},
+    "FINANCIAL_PROGRESS_BEHIND_PLAN": {"family": "FINANCIAL", "default_severity": "MEDIUM"},
+    "FINANCIAL_PHYSICAL_DIVERGENCE": {"family": "FINANCIAL", "default_severity": "MEDIUM"},
+    "MILESTONE_OVERDUE": {"family": "MILESTONE", "default_severity": "MEDIUM"},
+    "MULTIPLE_MILESTONES_OVERDUE": {"family": "MILESTONE", "default_severity": "HIGH"},
+    "SEVERE_MILESTONE_SLIPPAGE": {"family": "MILESTONE", "default_severity": "HIGH"},
+    "MILESTONE_SLIPPAGE_WORSENING": {"family": "MILESTONE", "default_severity": "MEDIUM"},
+    "LAND_ACQUISITION_PENDING": {"family": "LAND", "default_severity": "MEDIUM"},
+    "HIGH_LAND_REMAINING": {"family": "LAND", "default_severity": "HIGH"},
+    "LAND_DEADLINE_CONFLICT": {"family": "LAND", "default_severity": "HIGH"},
+    "ROW_PENDING": {"family": "ROW", "default_severity": "MEDIUM"},
+    "CLEARANCE_PENDING": {"family": "CLEARANCE", "default_severity": "MEDIUM"},
+    "MULTIPLE_CLEARANCES_PENDING": {"family": "CLEARANCE", "default_severity": "HIGH"},
+    "CRITICAL_CLEARANCE_PENDING": {"family": "CLEARANCE", "default_severity": "HIGH", "policy_note": "Critical categories are CRZ, ENVIRONMENTAL, FOREST, and DEFENCE in v1; domain validation is required before predictive use."},
+    "TENDER_AWARD_PENDING": {"family": "PROCUREMENT", "default_severity": "MEDIUM"},
+    "TENDER_CYCLE_PROLONGED": {"family": "PROCUREMENT", "default_severity": "MEDIUM"},
+    "MULTIPLE_TENDER_DELAYS": {"family": "PROCUREMENT", "default_severity": "HIGH"},
+    "REPORT_STALE": {"family": "REPORTING", "default_severity": "MEDIUM"},
+    "REPORT_MONTH_MISSING": {"family": "REPORTING", "default_severity": "HIGH"},
+    "SOURCE_GAP": {"family": "REPORTING", "default_severity": "HIGH"},
+    "FEATURE_DATA_INCOMPLETE": {"family": "DATA_QUALITY", "default_severity": "MEDIUM"},
+    "STRUCTURAL_SCHEMA_LIMITATION": {"family": "DATA_QUALITY", "default_severity": "INFO"},
+    "PROVENANCE_INCOMPLETE": {"family": "DATA_QUALITY", "default_severity": "MEDIUM"}
+  }
+}
