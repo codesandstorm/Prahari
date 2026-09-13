@@ -1,0 +1,9 @@
+{
+  "target": "S1",
+  "horizon_months": 3,
+  "research_mode": "PROTOTYPE_RESEARCH_OVERRIDE",
+  "target_validation_status": "MACHINE_PROVISIONAL",
+  "production_release": "WITHHELD",
+  "status": "WITHHELD_NO_ADMITTED_CANDIDATE",
+  "pipeline_artifact": "NOT_CREATED"
+}

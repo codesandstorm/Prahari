@@ -1,0 +1,19 @@
+{
+  "status": "PARTIAL",
+  "research_mode": "PROTOTYPE_RESEARCH_OVERRIDE",
+  "target_validation_status": "MACHINE_PROVISIONAL",
+  "production_release": "WITHHELD",
+  "dataset_fingerprint": "fe118512e959e4ef897d505685ea98036f60c55157366991a49f477fd6829d7a",
+  "code_commit": "75e6361946acdf880393973f8955d4387f984b6e",
+  "selection": {
+    "S1": {
+      "status": "WITHHELD_NO_ADMITTED_CANDIDATE"
+    },
+    "S2": {
+      "status": "WITHHELD_NO_ADMITTED_CANDIDATE"
+    }
+  },
+  "weighted_voting": "WEIGHTED_VOTING_NOT_JUSTIFIED",
+  "stacking": "STACKING_NOT_JUSTIFIED",
+  "july_2026": "UNTOUCHED_PROSPECTIVE_HOLDOUT"
+}

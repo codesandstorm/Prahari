@@ -1,0 +1,2 @@
+provider,integration,production_release,probability_when_withheld,risk_band_when_withheld
+FrozenPredictionService,UNCHANGED_FAIL_CLOSED_NO_ADMITTED_SCHEDULE_CANDIDATE,WITHHELD,NULL,NULL

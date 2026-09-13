@@ -1,0 +1,8 @@
+{
+  "target": "S1",
+  "horizon_months": 3,
+  "research_mode": "PROTOTYPE_RESEARCH_OVERRIDE",
+  "target_validation_status": "MACHINE_PROVISIONAL",
+  "production_release": "WITHHELD",
+  "version": "S1-3m-v3-explicit-revised-machine-provisional"
+}
