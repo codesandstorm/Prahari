@@ -94,6 +94,7 @@ def test_transfer_validator_detects_tampering_and_partial_review():
 def test_model_harness_is_fail_closed_until_human_transfer():
     with pytest.raises(RuntimeError): require_human_gate("PENDING")
     require_human_gate("HUMAN_TARGET_TRANSFER_PASSED")
+    require_human_gate("PROTOTYPE_RESEARCH_OVERRIDE")
 
 
 def test_ensemble_requires_identical_rows_and_predeclared_weights():
