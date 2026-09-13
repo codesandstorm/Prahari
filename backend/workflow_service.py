@@ -35,7 +35,8 @@ def evidence_difference(opening:dict,current:dict)->dict:
 
 
 def _history(db,alert,event_type,reason,actor_type=SYSTEM_ACTOR,actor_id=None,old_state=None,new_state=None,metadata=None,evidence_reference=None):
-    event=AlertHistory(event_id=_id('EVT'),alert_id=alert.alert_id,canonical_project_id=alert.canonical_project_id,event_type=event_type,timestamp=_now(),actor_type=actor_type,actor_id=actor_id,old_state=old_state,new_state=new_state,reason=reason,event_metadata=metadata or {},evidence_reference=evidence_reference);db.add(event);return event
+    last=db.scalar(select(func.max(AlertHistory.sequence_number)).where(AlertHistory.alert_id==alert.alert_id)) or 0
+    event=AlertHistory(event_id=_id('EVT'),alert_id=alert.alert_id,canonical_project_id=alert.canonical_project_id,sequence_number=last+1,event_type=event_type,timestamp=_now(),actor_type=actor_type,actor_id=actor_id,old_state=old_state,new_state=new_state,reason=reason,event_metadata=metadata or {},evidence_reference=evidence_reference);db.add(event);return event
 
 
 def _ensure_project(db,intelligence):
@@ -150,7 +151,7 @@ class AlertWorkflowService:
 def alert_dict(alert):
     return {c.name:getattr(alert,c.name) for c in alert.__table__.columns}|{'evidence_difference':evidence_difference(alert.initial_evidence_snapshot or {},alert.latest_evidence_snapshot or {})}
 def event_dict(event):
-    return {'event_id':event.event_id,'alert_id':event.alert_id,'canonical_project_id':event.canonical_project_id,'event_type':event.event_type,'timestamp':event.timestamp,'actor_type':event.actor_type,'actor_id':event.actor_id,'old_state':event.old_state,'new_state':event.new_state,'reason':event.reason,'metadata':event.event_metadata,'evidence_reference':event.evidence_reference}
+    return {'event_id':event.event_id,'alert_id':event.alert_id,'canonical_project_id':event.canonical_project_id,'sequence_number':event.sequence_number,'event_type':event.event_type,'timestamp':event.timestamp,'actor_type':event.actor_type,'actor_id':event.actor_id,'old_state':event.old_state,'new_state':event.new_state,'reason':event.reason,'metadata':event.event_metadata,'evidence_reference':event.evidence_reference}
 def review_dict(db,review,include_children=True):
     result={c.name:getattr(review,c.name) for c in review.__table__.columns}
     if include_children:result|={'notes':[ {c.name:getattr(x,c.name) for c in x.__table__.columns} for x in db.scalars(select(ReviewNote).where(ReviewNote.review_id==review.review_id).order_by(ReviewNote.created_at))], 'actions':[ {c.name:getattr(x,c.name) for c in x.__table__.columns} for x in db.scalars(select(ReviewAction).where(ReviewAction.review_id==review.review_id).order_by(ReviewAction.created_at))]}

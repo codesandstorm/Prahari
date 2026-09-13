@@ -145,6 +145,7 @@ class AlertHistory(Base):
     event_id: Mapped[str] = mapped_column(String(80),primary_key=True)
     alert_id: Mapped[str] = mapped_column(ForeignKey("alerts.alert_id",ondelete="CASCADE"),index=True)
     canonical_project_id: Mapped[str] = mapped_column(String(64),index=True)
+    sequence_number: Mapped[int] = mapped_column(Integer)
     event_type: Mapped[str] = mapped_column(String(40))
     timestamp: Mapped[datetime] = mapped_column(DateTime(timezone=True),default=lambda:datetime.now(timezone.utc))
     actor_type: Mapped[str] = mapped_column(String(20))
@@ -154,7 +155,7 @@ class AlertHistory(Base):
     reason: Mapped[str] = mapped_column(Text)
     event_metadata: Mapped[dict] = mapped_column("metadata",JSON,default=dict)
     evidence_reference: Mapped[str | None] = mapped_column(String(120))
-    __table_args__=(Index("ix_alert_history_timeline","alert_id","timestamp"),)
+    __table_args__=(UniqueConstraint("alert_id","sequence_number",name="uq_alert_history_sequence"),Index("ix_alert_history_timeline","alert_id","sequence_number"),)
 
 
 class OfficerReview(Base):

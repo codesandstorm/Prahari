@@ -10,6 +10,6 @@ Schedule and cost predictions remain `WITHHELD`. In the current system, a valid 
 
 Each alert preserves immutable opening evidence and refreshable current evidence. A deterministic deduplication key identifies one episode per project, data origin, alert type, reason family and policy version. Re-evaluating unchanged evidence is idempotent.
 
-Alert states are `NEW`, `ACKNOWLEDGED`, `IN_REVIEW`, `MONITORING`, `PERSISTENT`, `ESCALATED`, `RESOLVED`, `DISMISSED`, and `REOPENED`. Every mutation produces append-only history containing the actor, time, reason, transition, evidence reference and safe metadata.
+Alert states are `NEW`, `ACKNOWLEDGED`, `IN_REVIEW`, `MONITORING`, `PERSISTENT`, `ESCALATED`, `RESOLVED`, `DISMISSED`, and `REOPENED`. Every mutation produces append-only history containing a per-alert sequence, actor, time, reason, transition, evidence reference and safe metadata.
 
 Real and synthetic alerts are persisted and queried in separate data-origin partitions. Synthetic results are demonstrations, not government evidence.

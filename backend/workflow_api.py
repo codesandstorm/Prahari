@@ -104,7 +104,7 @@ def reopen(alert_id:str,payload:ActorRequest,db:Session=Depends(get_db)):
 def alert_history(alert_id:str,mode:str=Query('REAL_HISTORICAL',pattern='^(REAL_HISTORICAL|SYNTHETIC_SANDBOX)$'),db:Session=Depends(get_db)):
     alert=db.get(Alert,alert_id)
     if alert is None or alert.data_origin!=_mode(mode):raise HTTPException(404,detail={'code':'ALERT_NOT_FOUND','message':'Alert not found in requested mode'})
-    events=list(db.scalars(select(AlertHistory).where(AlertHistory.alert_id==alert_id).order_by(AlertHistory.timestamp,AlertHistory.event_id)))
+    events=list(db.scalars(select(AlertHistory).where(AlertHistory.alert_id==alert_id).order_by(AlertHistory.sequence_number)))
     return {'alert_id':alert_id,'events':[event_dict(x) for x in events],'append_only':True}
 
 @router.get('/reviews')

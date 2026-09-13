@@ -26,6 +26,14 @@ WHY IT MATTERS: Mixed operational counts would breach the real/synthetic evidenc
 MINIMAL FIX: Apply explicit `data_origin` filters to project, alert and review counts and test both modes together.  
 ARCHITECTURAL CHANGE REQUIRED? No
 
+SEVERITY: Medium
+FILE: `backend/models.py`, `backend/workflow_service.py`
+FUNCTION / LINE: alert history ordering
+PROBLEM: Timestamp plus random event ID did not guarantee a repeatable order when a database stored multiple events at the same timestamp precision.
+WHY IT MATTERS: Two correct events could swap order in an audit display or generated demo artifact.
+MINIMAL FIX: Add a unique, monotonic sequence number per alert and order all timelines by it.
+ARCHITECTURAL CHANGE REQUIRED? No
+
 ## Accepted residual findings
 
 SEVERITY: Medium  

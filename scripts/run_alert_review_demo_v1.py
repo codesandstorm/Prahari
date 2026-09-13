@@ -13,7 +13,7 @@ from backend.workflow_service import AlertWorkflowService
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'outputs'/'alert_review_workflow_v1'
 def intel(pid,origin,month,decision,watch,trust,reasons):
     return {'contract_version':'unified-project-intelligence-v1.0','mode':'REAL_HISTORICAL' if origin=='HISTORICAL_FLASH_REPORT' else 'SYNTHETIC_SANDBOX','data_origin':origin,'identity':{'canonical_project_id':pid,'project_name':'Workflow demonstration fixture','agency':'DEMO_AGENCY'},'current_state':{'as_of_month':month,'physical_progress':50},'schedule_intelligence':{'prediction_status':'WITHHELD','probability':None,'risk_band':None},'cost_intelligence':{'prediction_status':'WITHHELD','probability':None,'risk_band':None},'implementation_watch':{'status':watch,'reason_codes':reasons,'signals':[],'policy_version':'implementation-watch-v1.0'},'data_trust':{'data_status':trust},'peer_benchmark':{'benchmark_status':'BENCHMARK_AVAILABLE','peer_count':30,'peer_group':{},'policy_version':'peer-benchmark-v1.0'},'officer_decision':{'review_state':decision,'reason_codes':reasons,'decision_policy_version':'officer-decision-v1'},'evidence_summary':[{'data_origin':origin,'source_id':'DEMO_FIXTURE'}]}
-def timeline(db,aid):return [x.event_type for x in db.scalars(select(AlertHistory).where(AlertHistory.alert_id==aid).order_by(AlertHistory.timestamp,AlertHistory.event_id))]
+def timeline(db,aid):return [x.event_type for x in db.scalars(select(AlertHistory).where(AlertHistory.alert_id==aid).order_by(AlertHistory.sequence_number))]
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='prahari-workflow-demo-') as folder:

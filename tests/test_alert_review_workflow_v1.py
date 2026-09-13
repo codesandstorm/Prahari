@@ -124,6 +124,8 @@ def test_assignment_notes_actions_outcome_next_review_and_audit(Session):
         assert review.assigned_to=='officer-17' and review.next_review_date>date.today()
         assert db.scalar(select(func.count()).select_from(ReviewNote))==1 and db.scalar(select(func.count()).select_from(ReviewAction))==1
         assert db.scalar(select(func.count()).select_from(AlertHistory))>=6
+        sequences=list(db.scalars(select(AlertHistory.sequence_number).where(AlertHistory.alert_id==aid).order_by(AlertHistory.sequence_number)))
+        assert sequences==list(range(1,len(sequences)+1))
         with pytest.raises(ValueError):service.add_action(review.review_id,'APPROVE_EXTENSION',None,'OFFICER','officer-17')
 
 
