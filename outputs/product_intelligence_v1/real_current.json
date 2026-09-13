@@ -1,0 +1,1474 @@
+{
+  "alerts_summary": {
+    "operational_alert_created": false,
+    "prediction_alerts_withheld": true,
+    "status": "NOT_ELIGIBLE"
+  },
+  "assistant_context": {
+    "constraints": [
+      "Do not invent predictions or causes.",
+      "Do not override deterministic decision state.",
+      "Preserve synthetic provenance visibly."
+    ],
+    "cost_intelligence": {
+      "factual_cost_state": {
+        "cost_escalation_pct": null,
+        "cumulative_expenditure": 112.17,
+        "current_cost": null,
+        "original_cost": null
+      },
+      "prediction_status": "WITHHELD",
+      "probability": null,
+      "reason_code": "NO_COST_MODEL_ADMITTED",
+      "research_status": "COST_PREDICTION_V3_PARTIAL",
+      "risk_band": null
+    },
+    "current_state": {
+      "approval_date": null,
+      "as_of_month": "2026-06",
+      "availability": {
+        "source_backed": true
+      },
+      "cost_escalation_pct": null,
+      "cumulative_expenditure": 112.17,
+      "current_approved_completion_date": null,
+      "current_cost": null,
+      "original_completion_date": null,
+      "original_cost": null,
+      "physical_progress": 33.91,
+      "project_status": null
+    },
+    "data_origin": "HISTORICAL_FLASH_REPORT",
+    "data_trust": {
+      "data_status": "USABLE",
+      "dimensions": {
+        "aggregate_only_months": [
+          "2023-12",
+          "2024-04",
+          "2024-05",
+          "2024-08",
+          "2024-09"
+        ],
+        "as_of_month": "2026-06",
+        "available_features": [
+          "physical_progress",
+          "physical_progress_missing",
+          "history_span_months",
+          "low_progress_near_deadline",
+          "consecutive_stagnant",
+          "expenditure_velocity"
+        ],
+        "canonical_project_id": "PRH-400033",
+        "contiguous_recent_history": 16,
+        "coverage": {
+          "code": "HISTORICAL_SOURCE_GAPS",
+          "reason": "Historical gaps exist outside the sufficient contiguous recent window",
+          "status": "WARN"
+        },
+        "data_reason_codes": [],
+        "data_usable": true,
+        "features": {
+          "code": "FEATURES_PARTIAL_SUPPORTED",
+          "reason": "6/14 features available; training imputer supports remaining missing values",
+          "status": "WARN"
+        },
+        "freshness": {
+          "code": "LATEST_AS_OF",
+          "reason": "Observation exists at requested as-of month",
+          "status": "PASS"
+        },
+        "history": {
+          "code": "HISTORY_SUFFICIENT",
+          "reason": "At least 13 contiguous recent months",
+          "status": "PASS"
+        },
+        "history_span_months": 36,
+        "identity": {
+          "code": "VERIFIED_IDENTITY",
+          "reason": "Exact canonical identity",
+          "status": "PASS"
+        },
+        "minimum_required_history": 13,
+        "missing_features": [
+          "log_original_cost",
+          "planned_duration_months",
+          "project_age_months",
+          "expenditure_to_cost",
+          "remaining_schedule_months",
+          "required_future_velocity",
+          "progress_vs_elapsed_gap",
+          "cumulative_cost_revision_pct"
+        ],
+        "missing_source_months": [
+          "2025-02"
+        ],
+        "observed_history_months": 30,
+        "observed_project_level_months": [
+          "2023-07",
+          "2023-08",
+          "2023-09",
+          "2023-10",
+          "2023-11",
+          "2024-01",
+          "2024-02",
+          "2024-03",
+          "2024-06",
+          "2024-07",
+          "2024-10",
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ],
+        "project_missing_months": [],
+        "provenance": {
+          "code": "PROVENANCE_COMPLETE",
+          "reason": "Source, hash, physical page and table are present",
+          "status": "PASS"
+        },
+        "schema": {
+          "code": "SCHEMA_SUPPORTED",
+          "reason": "Schema PAIMANA supports the governed input",
+          "status": "PASS"
+        },
+        "source": {
+          "code": "VERIFIED_SOURCE",
+          "reason": "Registered source and SHA-256 agree",
+          "status": "PASS"
+        },
+        "trust_contract_version": "data-trust-v1"
+      },
+      "features": "FEATURES_PARTIAL_SUPPORTED",
+      "history": "HISTORY_SUFFICIENT",
+      "identity": "VERIFIED_IDENTITY",
+      "latest_month": "2026-06",
+      "reasons": [],
+      "source": "VERIFIED_SOURCE",
+      "source_gap_count": 6,
+      "trust_contract_version": "data-trust-v1"
+    },
+    "evidence": [
+      {
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "page": "62",
+        "reporting_month": "2026-06",
+        "sha256": "d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15",
+        "signal_codes": [
+          "PHYSICAL_PROGRESS_STAGNANT",
+          "STRUCTURAL_SCHEMA_LIMITATION"
+        ],
+        "source_id": "SRC-2026-06",
+        "table": "All Ongoing Projects"
+      }
+    ],
+    "identity": {
+      "agency": "WCL - CIL",
+      "agency_is_contractor": false,
+      "as_of_month": "2026-06",
+      "canonical_project_id": "PRH-400033",
+      "location": "Maharashtra",
+      "ministry": null,
+      "project_name": "BHATADI EXPANSION OC",
+      "project_status": null,
+      "sector": "UNKNOWN"
+    },
+    "implementation_watch": {
+      "as_of": "2026-06-01",
+      "data_origin": "HISTORICAL_FLASH_REPORT",
+      "data_quality_notes": [
+        "The historical source schema does not contain this structured field family."
+      ],
+      "families": [
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "PHYSICAL_PROGRESS_STAGNANT",
+              "source_refs": [
+                "SRC-2026-06"
+              ],
+              "value": 2
+            }
+          ],
+          "family": "EXECUTION",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "PHYSICAL_PROGRESS_STAGNANT",
+              "data_quality_state": "SUPPORTED",
+              "family": "EXECUTION",
+              "plain_language_explanation": "Reported physical progress has not increased across 2 valid consecutive monthly transitions.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SRC-2026-06"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "trailing consecutive calendar-month deltas <= 0; threshold=2",
+                "normalized_value": 2,
+                "note": "",
+                "raw_values": {
+                  "observations": 30,
+                  "threshold": 2
+                },
+                "threshold_or_policy": 2
+              },
+              "unit": null,
+              "value": 2
+            }
+          ],
+          "status": "DETECTED"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "FINANCIAL",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "MILESTONE",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "LAND",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "ROW",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "CLEARANCE",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "PROCUREMENT",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "REPORTING",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "STRUCTURALLY_UNAVAILABLE",
+          "evidence": [
+            {
+              "code": "STRUCTURAL_SCHEMA_LIMITATION",
+              "source_refs": [
+                "SRC-2026-06"
+              ],
+              "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+            }
+          ],
+          "family": "DATA_QUALITY",
+          "limitations": [
+            "Required structured evidence is unavailable; absence is not interpreted as safety."
+          ],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "STRUCTURALLY_UNAVAILABLE",
+              "causal_claim": false,
+              "code": "STRUCTURAL_SCHEMA_LIMITATION",
+              "data_quality_state": "STRUCTURALLY_UNAVAILABLE",
+              "family": "DATA_QUALITY",
+              "plain_language_explanation": "The historical source schema does not contain this structured field family.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "INFO",
+              "source_available": true,
+              "source_refs": [
+                "SRC-2026-06"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "STRUCTURALLY_UNAVAILABLE",
+                "formula": "structured families absent from source schema",
+                "normalized_value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT",
+                "note": "",
+                "raw_values": {
+                  "families": [
+                    "MILESTONE",
+                    "LAND",
+                    "ROW",
+                    "CLEARANCE",
+                    "PROCUREMENT"
+                  ]
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+            }
+          ],
+          "status": "DETECTED"
+        }
+      ],
+      "policy_version": "implementation-watch-v1.0",
+      "reason_codes": [
+        "PHYSICAL_PROGRESS_STAGNANT",
+        "STRUCTURAL_SCHEMA_LIMITATION"
+      ],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "PHYSICAL_PROGRESS_STAGNANT",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "Reported physical progress has not increased across 2 valid consecutive monthly transitions.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SRC-2026-06"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "trailing consecutive calendar-month deltas <= 0; threshold=2",
+            "normalized_value": 2,
+            "note": "",
+            "raw_values": {
+              "observations": 30,
+              "threshold": 2
+            },
+            "threshold_or_policy": 2
+          },
+          "unit": null,
+          "value": 2
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "STRUCTURALLY_UNAVAILABLE",
+          "causal_claim": false,
+          "code": "STRUCTURAL_SCHEMA_LIMITATION",
+          "data_quality_state": "STRUCTURALLY_UNAVAILABLE",
+          "family": "DATA_QUALITY",
+          "plain_language_explanation": "The historical source schema does not contain this structured field family.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "INFO",
+          "source_available": true,
+          "source_refs": [
+            "SRC-2026-06"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "STRUCTURALLY_UNAVAILABLE",
+            "formula": "structured families absent from source schema",
+            "normalized_value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT",
+            "note": "",
+            "raw_values": {
+              "families": [
+                "MILESTONE",
+                "LAND",
+                "ROW",
+                "CLEARANCE",
+                "PROCUREMENT"
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+        }
+      ],
+      "status": "WATCH",
+      "trend": "NEW",
+      "unavailable_families": [
+        "FINANCIAL",
+        "MILESTONE",
+        "LAND",
+        "ROW",
+        "CLEARANCE",
+        "PROCUREMENT",
+        "REPORTING",
+        "DATA_QUALITY"
+      ]
+    },
+    "mode": "REAL_HISTORICAL",
+    "officer_decision": {
+      "alert_deduplication_key": null,
+      "alert_policy_version": "alert-policy-v1",
+      "alert_status": "NOT_ELIGIBLE",
+      "as_of_month": "2026-06",
+      "canonical_project_id": "PRH-400033",
+      "decision_policy_version": "officer-decision-v1",
+      "last_valid_update": "2026-06",
+      "prediction_status": "WITHHELD",
+      "priority": "MEDIUM",
+      "reason_codes": [
+        "IMPLEMENTATION_PRESSURE_SIGNAL"
+      ],
+      "recommended_action": "Review the observable implementation-pressure signals and their source evidence",
+      "reliability": null,
+      "review_state": "REVIEW_RECOMMENDED",
+      "target_family": null
+    },
+    "peer_benchmark": {
+      "as_of_month": "2026-06",
+      "benchmark_status": "BENCHMARK_AVAILABLE",
+      "canonical_project_id": "PRH-400033",
+      "data_origin": "HISTORICAL_FLASH_REPORT",
+      "limitations": [
+        "BENCHMARK_SECTOR_UNKNOWN: sector was not inferred; a supported fallback group was used when possible.",
+        "Portfolio-wide fallback used because no more specific group met minimum support."
+      ],
+      "metrics": [
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "original_cost",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "current_cost",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "cost_revision_pct",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "cumulative_expenditure_ratio",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_AVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "physical_progress",
+          "peer_count": 1755,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": 61.9122,
+          "peer_median": 70.12,
+          "peer_p25": 34.005,
+          "peer_p75": 92.025,
+          "percentile": 24.9,
+          "project_value": 33.91
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "project_age_months",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "remaining_schedule_months",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "required_future_velocity",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "LOWER_WORSE",
+          "interpretation": null,
+          "metric": "progress_vs_elapsed_gap",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_AVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "expenditure_velocity",
+          "peer_count": 1547,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": 95.9841,
+          "peer_median": 10.84,
+          "peer_p25": 0.01,
+          "peer_p75": 72.055,
+          "percentile": 13.09,
+          "project_value": 0.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_AVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": "MORE_ADVERSE_THAN_MOST_PEERS",
+          "metric": "watch_signal_count",
+          "peer_count": 1846,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": 0.3364,
+          "peer_median": 0.0,
+          "peer_p25": 0.0,
+          "peer_p75": 1.0,
+          "percentile": 83.18,
+          "project_value": 1.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "milestone_slippage_days",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "land_remaining_pct",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "pending_clearances",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "HISTORICAL_FLASH_REPORT",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "tender_cycle_days",
+          "peer_count": 0,
+          "peer_group_definition": "PORTFOLIO_WIDE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        }
+      ],
+      "mode": "REAL_CURRENT",
+      "peer_count": 1846,
+      "peer_group": {},
+      "peer_group_level": 4,
+      "policy_version": "peer-benchmark-v1.0"
+    },
+    "recommended_actions": [
+      {
+        "action": "Review recent physical-progress stagnation.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "PHYSICAL_PROGRESS_STAGNANT"
+        ]
+      }
+    ],
+    "schedule_intelligence": {
+      "deterministic_schedule_pressure": {
+        "reason_codes": [
+          "PHYSICAL_PROGRESS_STAGNANT"
+        ],
+        "status": "WATCH"
+      },
+      "prediction_status": "WITHHELD",
+      "probability": null,
+      "reason_code": "INSUFFICIENT_TEMPORAL_VALIDATION",
+      "research_status": "SCHEDULE_PREDICTION_FINAL_V3_PARTIAL",
+      "risk_band": null
+    }
+  },
+  "contract_version": "unified-project-intelligence-v1.0",
+  "cost_intelligence": {
+    "factual_cost_state": {
+      "cost_escalation_pct": null,
+      "cumulative_expenditure": 112.17,
+      "current_cost": null,
+      "original_cost": null
+    },
+    "prediction_status": "WITHHELD",
+    "probability": null,
+    "reason_code": "NO_COST_MODEL_ADMITTED",
+    "research_status": "COST_PREDICTION_V3_PARTIAL",
+    "risk_band": null
+  },
+  "current_state": {
+    "approval_date": null,
+    "as_of_month": "2026-06",
+    "availability": {
+      "source_backed": true
+    },
+    "cost_escalation_pct": null,
+    "cumulative_expenditure": 112.17,
+    "current_approved_completion_date": null,
+    "current_cost": null,
+    "original_completion_date": null,
+    "original_cost": null,
+    "physical_progress": 33.91,
+    "project_status": null
+  },
+  "data_origin": "HISTORICAL_FLASH_REPORT",
+  "data_trust": {
+    "data_status": "USABLE",
+    "dimensions": {
+      "aggregate_only_months": [
+        "2023-12",
+        "2024-04",
+        "2024-05",
+        "2024-08",
+        "2024-09"
+      ],
+      "as_of_month": "2026-06",
+      "available_features": [
+        "physical_progress",
+        "physical_progress_missing",
+        "history_span_months",
+        "low_progress_near_deadline",
+        "consecutive_stagnant",
+        "expenditure_velocity"
+      ],
+      "canonical_project_id": "PRH-400033",
+      "contiguous_recent_history": 16,
+      "coverage": {
+        "code": "HISTORICAL_SOURCE_GAPS",
+        "reason": "Historical gaps exist outside the sufficient contiguous recent window",
+        "status": "WARN"
+      },
+      "data_reason_codes": [],
+      "data_usable": true,
+      "features": {
+        "code": "FEATURES_PARTIAL_SUPPORTED",
+        "reason": "6/14 features available; training imputer supports remaining missing values",
+        "status": "WARN"
+      },
+      "freshness": {
+        "code": "LATEST_AS_OF",
+        "reason": "Observation exists at requested as-of month",
+        "status": "PASS"
+      },
+      "history": {
+        "code": "HISTORY_SUFFICIENT",
+        "reason": "At least 13 contiguous recent months",
+        "status": "PASS"
+      },
+      "history_span_months": 36,
+      "identity": {
+        "code": "VERIFIED_IDENTITY",
+        "reason": "Exact canonical identity",
+        "status": "PASS"
+      },
+      "minimum_required_history": 13,
+      "missing_features": [
+        "log_original_cost",
+        "planned_duration_months",
+        "project_age_months",
+        "expenditure_to_cost",
+        "remaining_schedule_months",
+        "required_future_velocity",
+        "progress_vs_elapsed_gap",
+        "cumulative_cost_revision_pct"
+      ],
+      "missing_source_months": [
+        "2025-02"
+      ],
+      "observed_history_months": 30,
+      "observed_project_level_months": [
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-06",
+        "2024-07",
+        "2024-10",
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-03",
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06"
+      ],
+      "project_missing_months": [],
+      "provenance": {
+        "code": "PROVENANCE_COMPLETE",
+        "reason": "Source, hash, physical page and table are present",
+        "status": "PASS"
+      },
+      "schema": {
+        "code": "SCHEMA_SUPPORTED",
+        "reason": "Schema PAIMANA supports the governed input",
+        "status": "PASS"
+      },
+      "source": {
+        "code": "VERIFIED_SOURCE",
+        "reason": "Registered source and SHA-256 agree",
+        "status": "PASS"
+      },
+      "trust_contract_version": "data-trust-v1"
+    },
+    "features": "FEATURES_PARTIAL_SUPPORTED",
+    "history": "HISTORY_SUFFICIENT",
+    "identity": "VERIFIED_IDENTITY",
+    "latest_month": "2026-06",
+    "reasons": [],
+    "source": "VERIFIED_SOURCE",
+    "source_gap_count": 6,
+    "trust_contract_version": "data-trust-v1"
+  },
+  "evidence_summary": [
+    {
+      "data_origin": "HISTORICAL_FLASH_REPORT",
+      "page": "62",
+      "reporting_month": "2026-06",
+      "sha256": "d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15",
+      "signal_codes": [
+        "PHYSICAL_PROGRESS_STAGNANT",
+        "STRUCTURAL_SCHEMA_LIMITATION"
+      ],
+      "source_id": "SRC-2026-06",
+      "table": "All Ongoing Projects"
+    }
+  ],
+  "identity": {
+    "agency": "WCL - CIL",
+    "agency_is_contractor": false,
+    "as_of_month": "2026-06",
+    "canonical_project_id": "PRH-400033",
+    "location": "Maharashtra",
+    "ministry": null,
+    "project_name": "BHATADI EXPANSION OC",
+    "project_status": null,
+    "sector": "UNKNOWN"
+  },
+  "implementation_watch": {
+    "as_of": "2026-06-01",
+    "data_origin": "HISTORICAL_FLASH_REPORT",
+    "data_quality_notes": [
+      "The historical source schema does not contain this structured field family."
+    ],
+    "families": [
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "PHYSICAL_PROGRESS_STAGNANT",
+            "source_refs": [
+              "SRC-2026-06"
+            ],
+            "value": 2
+          }
+        ],
+        "family": "EXECUTION",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "PHYSICAL_PROGRESS_STAGNANT",
+            "data_quality_state": "SUPPORTED",
+            "family": "EXECUTION",
+            "plain_language_explanation": "Reported physical progress has not increased across 2 valid consecutive monthly transitions.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SRC-2026-06"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "trailing consecutive calendar-month deltas <= 0; threshold=2",
+              "normalized_value": 2,
+              "note": "",
+              "raw_values": {
+                "observations": 30,
+                "threshold": 2
+              },
+              "threshold_or_policy": 2
+            },
+            "unit": null,
+            "value": 2
+          }
+        ],
+        "status": "DETECTED"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "FINANCIAL",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "MILESTONE",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "LAND",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "ROW",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "CLEARANCE",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "PROCUREMENT",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "REPORTING",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "STRUCTURALLY_UNAVAILABLE",
+        "evidence": [
+          {
+            "code": "STRUCTURAL_SCHEMA_LIMITATION",
+            "source_refs": [
+              "SRC-2026-06"
+            ],
+            "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+          }
+        ],
+        "family": "DATA_QUALITY",
+        "limitations": [
+          "Required structured evidence is unavailable; absence is not interpreted as safety."
+        ],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "STRUCTURALLY_UNAVAILABLE",
+            "causal_claim": false,
+            "code": "STRUCTURAL_SCHEMA_LIMITATION",
+            "data_quality_state": "STRUCTURALLY_UNAVAILABLE",
+            "family": "DATA_QUALITY",
+            "plain_language_explanation": "The historical source schema does not contain this structured field family.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "INFO",
+            "source_available": true,
+            "source_refs": [
+              "SRC-2026-06"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "STRUCTURALLY_UNAVAILABLE",
+              "formula": "structured families absent from source schema",
+              "normalized_value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT",
+              "note": "",
+              "raw_values": {
+                "families": [
+                  "MILESTONE",
+                  "LAND",
+                  "ROW",
+                  "CLEARANCE",
+                  "PROCUREMENT"
+                ]
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+          }
+        ],
+        "status": "DETECTED"
+      }
+    ],
+    "policy_version": "implementation-watch-v1.0",
+    "reason_codes": [
+      "PHYSICAL_PROGRESS_STAGNANT",
+      "STRUCTURAL_SCHEMA_LIMITATION"
+    ],
+    "signals": [
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "PHYSICAL_PROGRESS_STAGNANT",
+        "data_quality_state": "SUPPORTED",
+        "family": "EXECUTION",
+        "plain_language_explanation": "Reported physical progress has not increased across 2 valid consecutive monthly transitions.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SRC-2026-06"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "trailing consecutive calendar-month deltas <= 0; threshold=2",
+          "normalized_value": 2,
+          "note": "",
+          "raw_values": {
+            "observations": 30,
+            "threshold": 2
+          },
+          "threshold_or_policy": 2
+        },
+        "unit": null,
+        "value": 2
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "STRUCTURALLY_UNAVAILABLE",
+        "causal_claim": false,
+        "code": "STRUCTURAL_SCHEMA_LIMITATION",
+        "data_quality_state": "STRUCTURALLY_UNAVAILABLE",
+        "family": "DATA_QUALITY",
+        "plain_language_explanation": "The historical source schema does not contain this structured field family.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "INFO",
+        "source_available": true,
+        "source_refs": [
+          "SRC-2026-06"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "STRUCTURALLY_UNAVAILABLE",
+          "formula": "structured families absent from source schema",
+          "normalized_value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT",
+          "note": "",
+          "raw_values": {
+            "families": [
+              "MILESTONE",
+              "LAND",
+              "ROW",
+              "CLEARANCE",
+              "PROCUREMENT"
+            ]
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": "MILESTONE,LAND,ROW,CLEARANCE,PROCUREMENT"
+      }
+    ],
+    "status": "WATCH",
+    "trend": "NEW",
+    "unavailable_families": [
+      "FINANCIAL",
+      "MILESTONE",
+      "LAND",
+      "ROW",
+      "CLEARANCE",
+      "PROCUREMENT",
+      "REPORTING",
+      "DATA_QUALITY"
+    ]
+  },
+  "mode": "REAL_HISTORICAL",
+  "officer_decision": {
+    "alert_deduplication_key": null,
+    "alert_policy_version": "alert-policy-v1",
+    "alert_status": "NOT_ELIGIBLE",
+    "as_of_month": "2026-06",
+    "canonical_project_id": "PRH-400033",
+    "decision_policy_version": "officer-decision-v1",
+    "last_valid_update": "2026-06",
+    "prediction_status": "WITHHELD",
+    "priority": "MEDIUM",
+    "reason_codes": [
+      "IMPLEMENTATION_PRESSURE_SIGNAL"
+    ],
+    "recommended_action": "Review the observable implementation-pressure signals and their source evidence",
+    "recommended_actions": [
+      {
+        "action": "Review recent physical-progress stagnation.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "PHYSICAL_PROGRESS_STAGNANT"
+        ]
+      }
+    ],
+    "reliability": null,
+    "review_state": "REVIEW_RECOMMENDED",
+    "target_family": null
+  },
+  "peer_benchmark": {
+    "as_of_month": "2026-06",
+    "benchmark_status": "BENCHMARK_AVAILABLE",
+    "canonical_project_id": "PRH-400033",
+    "data_origin": "HISTORICAL_FLASH_REPORT",
+    "limitations": [
+      "BENCHMARK_SECTOR_UNKNOWN: sector was not inferred; a supported fallback group was used when possible.",
+      "Portfolio-wide fallback used because no more specific group met minimum support."
+    ],
+    "metrics": [
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "original_cost",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "current_cost",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "cost_revision_pct",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "cumulative_expenditure_ratio",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_AVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "physical_progress",
+        "peer_count": 1755,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": 61.9122,
+        "peer_median": 70.12,
+        "peer_p25": 34.005,
+        "peer_p75": 92.025,
+        "percentile": 24.9,
+        "project_value": 33.91
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "project_age_months",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "remaining_schedule_months",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "required_future_velocity",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "LOWER_WORSE",
+        "interpretation": null,
+        "metric": "progress_vs_elapsed_gap",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_AVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "expenditure_velocity",
+        "peer_count": 1547,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": 95.9841,
+        "peer_median": 10.84,
+        "peer_p25": 0.01,
+        "peer_p75": 72.055,
+        "percentile": 13.09,
+        "project_value": 0.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_AVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": "MORE_ADVERSE_THAN_MOST_PEERS",
+        "metric": "watch_signal_count",
+        "peer_count": 1846,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": 0.3364,
+        "peer_median": 0.0,
+        "peer_p25": 0.0,
+        "peer_p75": 1.0,
+        "percentile": 83.18,
+        "project_value": 1.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "milestone_slippage_days",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "land_remaining_pct",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "pending_clearances",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "HISTORICAL_FLASH_REPORT",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "tender_cycle_days",
+        "peer_count": 0,
+        "peer_group_definition": "PORTFOLIO_WIDE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      }
+    ],
+    "mode": "REAL_CURRENT",
+    "peer_count": 1846,
+    "peer_group": {},
+    "peer_group_level": 4,
+    "policy_version": "peer-benchmark-v1.0"
+  },
+  "provenance": {
+    "canonical_source": "project_month.csv",
+    "interpolated": false,
+    "source_report": "SRC-2026-06",
+    "source_sha256": "d26872ac9336b451d311e823646560d29d8a6c2fbc9fdca9fd78fc22fd08ca15"
+  },
+  "reliability": {
+    "data_quality": "USABLE",
+    "history_sufficiency": "HISTORY_SUFFICIENT",
+    "prediction_reliability": "NOT_APPLICABLE",
+    "source_reliability": "VERIFIED_SOURCE"
+  },
+  "risk_trend": {
+    "basis": [
+      "IMPLEMENTATION_WATCH_HISTORY"
+    ],
+    "prediction_trajectory_used": false,
+    "state": "INSUFFICIENT_HISTORY"
+  },
+  "schedule_intelligence": {
+    "deterministic_schedule_pressure": {
+      "reason_codes": [
+        "PHYSICAL_PROGRESS_STAGNANT"
+      ],
+      "status": "WATCH"
+    },
+    "prediction_status": "WITHHELD",
+    "probability": null,
+    "reason_code": "INSUFFICIENT_TEMPORAL_VALIDATION",
+    "research_status": "SCHEDULE_PREDICTION_FINAL_V3_PARTIAL",
+    "risk_band": null
+  }
+}

@@ -1,0 +1,2112 @@
+{
+  "alerts_summary": {
+    "operational_alert_created": false,
+    "prediction_alerts_withheld": true,
+    "status": "NOT_ELIGIBLE"
+  },
+  "assistant_context": {
+    "constraints": [
+      "Do not invent predictions or causes.",
+      "Do not override deterministic decision state.",
+      "Preserve synthetic provenance visibly."
+    ],
+    "cost_intelligence": {
+      "factual_cost_state": {
+        "cost_escalation_pct": 4.345,
+        "cumulative_expenditure": 941.64,
+        "current_cost": 941.64,
+        "original_cost": 902.43
+      },
+      "prediction_status": "WITHHELD",
+      "probability": null,
+      "reason_code": "NO_COST_MODEL_ADMITTED",
+      "research_status": "COST_PREDICTION_V3_PARTIAL",
+      "risk_band": null
+    },
+    "current_state": {
+      "approval_date": "2023-04-06",
+      "as_of_month": "2026-06",
+      "availability": {
+        "source_backed": false,
+        "synthetic_fixture": true
+      },
+      "cost_escalation_pct": 4.345,
+      "cumulative_expenditure": 941.64,
+      "current_approved_completion_date": "2026-07-01",
+      "current_cost": 941.64,
+      "original_completion_date": "2026-06-01",
+      "original_cost": 902.43,
+      "physical_progress": 100.0,
+      "project_status": "SYNTHETIC_ACTIVE"
+    },
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "data_trust": {
+      "data_status": "USABLE",
+      "history": "SYNTHETIC_EVIDENCE_COMPLETE",
+      "reasons": [],
+      "source": "SYNTHETIC_EVIDENCE_COMPLETE",
+      "summary_state": "PASS",
+      "synthetic_evidence_only": true
+    },
+    "evidence": [
+      {
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "page": null,
+        "reporting_month": "2026-06",
+        "sha256": null,
+        "signal_codes": [],
+        "source_id": "SYN-SRC-SYN-CUF-0001",
+        "table": "SYNTHETIC_CUF_FIXTURE"
+      }
+    ],
+    "identity": {
+      "agency": "SYNTHETIC_IMPLEMENTING_AGENCY_A",
+      "agency_is_contractor": false,
+      "as_of_month": "2026-06",
+      "canonical_project_id": "SYN-CUF-0001",
+      "location": "SYNTHETIC_STATE_01",
+      "ministry": "SYNTHETIC_MINISTRY",
+      "project_name": "Synthetic CUF Demonstration Project 0001",
+      "project_status": "SYNTHETIC_ACTIVE",
+      "scenario_id": "HEALTHY_ON_TRACK",
+      "sector": "ROADS"
+    },
+    "implementation_watch": {
+      "as_of": "2026-06-01",
+      "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+      "data_quality_notes": [],
+      "families": [
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0.0
+            }
+          ],
+          "family": "EXECUTION",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+              "data_quality_state": "SUPPORTED",
+              "family": "EXECUTION",
+              "plain_language_explanation": "Physical progress is not behind the scheduled plan by the v1 threshold.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "actual_physical_progress - scheduled_physical_progress",
+                "normalized_value": 0.0,
+                "note": "",
+                "raw_values": {
+                  "actual": 100.0,
+                  "scheduled": 100.0,
+                  "threshold_pp": -10.0
+                },
+                "threshold_or_policy": -10.0
+              },
+              "unit": "percentage_points",
+              "value": 0.0
+            }
+          ],
+          "status": "NOT_DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0.0
+            },
+            {
+              "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0.0
+            }
+          ],
+          "family": "FINANCIAL",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+              "data_quality_state": "SUPPORTED",
+              "family": "FINANCIAL",
+              "plain_language_explanation": "Financial progress is not behind the compatible scheduled plan by the v1 threshold.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "actual_financial_progress - scheduled_financial_progress",
+                "normalized_value": 0.0,
+                "note": "",
+                "raw_values": {
+                  "actual": 100.0,
+                  "scheduled": 100.0,
+                  "threshold_pp": -10.0
+                },
+                "threshold_or_policy": -10.0
+              },
+              "unit": "percentage_points",
+              "value": 0.0
+            },
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+              "data_quality_state": "SUPPORTED",
+              "family": "FINANCIAL",
+              "plain_language_explanation": "Financial and physical progress do not diverge by the v1 attention threshold.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "actual_financial_progress - actual_physical_progress",
+                "normalized_value": 0.0,
+                "note": "",
+                "raw_values": {
+                  "absolute_threshold_pp": 15.0,
+                  "financial": 100.0,
+                  "physical": 100.0
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": "percentage_points",
+              "value": 0.0
+            }
+          ],
+          "status": "NOT_DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "MILESTONE_OVERDUE",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0
+            },
+            {
+              "code": "SEVERE_MILESTONE_SLIPPAGE",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0
+            }
+          ],
+          "family": "MILESTONE",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "MILESTONE_OVERDUE",
+              "data_quality_state": "SUPPORTED",
+              "family": "MILESTONE",
+              "plain_language_explanation": "No applicable milestone is overdue in the supplied as-of evidence.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "count(applicable overdue or completed-late milestones)",
+                "normalized_value": 0,
+                "note": "",
+                "raw_values": {
+                  "applicable": 1,
+                  "delays": []
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 0
+            },
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "SEVERE_MILESTONE_SLIPPAGE",
+              "data_quality_state": "SUPPORTED",
+              "family": "MILESTONE",
+              "plain_language_explanation": "The largest observed milestone delay is 0 days.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "HIGH",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "max(milestone delay days)",
+                "normalized_value": 0,
+                "note": "",
+                "raw_values": {
+                  "applicable": 1,
+                  "delays": []
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": "days",
+              "value": 0
+            }
+          ],
+          "status": "NOT_DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "LAND_ACQUISITION_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0.0
+            }
+          ],
+          "family": "LAND",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "LAND_ACQUISITION_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "LAND",
+              "plain_language_explanation": "The structured source does not report land acquisition as pending.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+                "normalized_value": false,
+                "note": "",
+                "raw_values": {
+                  "acquisition_complete": true,
+                  "remaining_pct": 0.0
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 0.0
+            }
+          ],
+          "status": "NOT_DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "ROW_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0.0
+            }
+          ],
+          "family": "ROW",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "ROW_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "ROW",
+              "plain_language_explanation": "The structured source does not report right-of-way work as pending.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "explicit pending status, or confirmed ROW availability below 100%",
+                "normalized_value": false,
+                "note": "",
+                "raw_values": {
+                  "availability_pct": 100.0,
+                  "pending": false
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 0.0
+            }
+          ],
+          "status": "NOT_DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "CLEARANCE_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0
+            }
+          ],
+          "family": "CLEARANCE",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "CLEARANCE_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "CLEARANCE",
+              "plain_language_explanation": "No applicable clearance is reported pending.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "count(status=PENDING and applicable)",
+                "normalized_value": 0,
+                "note": "",
+                "raw_values": {
+                  "categories": []
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 0
+            }
+          ],
+          "status": "NOT_DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "TENDER_AWARD_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "value": 0.0
+            }
+          ],
+          "family": "PROCUREMENT",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "TENDER_AWARD_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "PROCUREMENT",
+              "plain_language_explanation": "No published applicable tender is awaiting an award in the supplied as-of evidence.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0001"
+              ],
+              "status": "NOT_DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "official CUF has_active_tenders flag",
+                "normalized_value": false,
+                "note": "",
+                "raw_values": {
+                  "has_active_tenders": false
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 0.0
+            }
+          ],
+          "status": "NOT_DETECTED"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "REPORTING",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "DATA_QUALITY",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        }
+      ],
+      "policy_version": "implementation-watch-v1.0",
+      "reason_codes": [],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "Physical progress is not behind the scheduled plan by the v1 threshold.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_physical_progress - scheduled_physical_progress",
+            "normalized_value": 0.0,
+            "note": "",
+            "raw_values": {
+              "actual": 100.0,
+              "scheduled": 100.0,
+              "threshold_pp": -10.0
+            },
+            "threshold_or_policy": -10.0
+          },
+          "unit": "percentage_points",
+          "value": 0.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+          "data_quality_state": "SUPPORTED",
+          "family": "FINANCIAL",
+          "plain_language_explanation": "Financial progress is not behind the compatible scheduled plan by the v1 threshold.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_financial_progress - scheduled_financial_progress",
+            "normalized_value": 0.0,
+            "note": "",
+            "raw_values": {
+              "actual": 100.0,
+              "scheduled": 100.0,
+              "threshold_pp": -10.0
+            },
+            "threshold_or_policy": -10.0
+          },
+          "unit": "percentage_points",
+          "value": 0.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+          "data_quality_state": "SUPPORTED",
+          "family": "FINANCIAL",
+          "plain_language_explanation": "Financial and physical progress do not diverge by the v1 attention threshold.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_financial_progress - actual_physical_progress",
+            "normalized_value": 0.0,
+            "note": "",
+            "raw_values": {
+              "absolute_threshold_pp": 15.0,
+              "financial": 100.0,
+              "physical": 100.0
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": "percentage_points",
+          "value": 0.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "MILESTONE_OVERDUE",
+          "data_quality_state": "SUPPORTED",
+          "family": "MILESTONE",
+          "plain_language_explanation": "No applicable milestone is overdue in the supplied as-of evidence.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "count(applicable overdue or completed-late milestones)",
+            "normalized_value": 0,
+            "note": "",
+            "raw_values": {
+              "applicable": 1,
+              "delays": []
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "SEVERE_MILESTONE_SLIPPAGE",
+          "data_quality_state": "SUPPORTED",
+          "family": "MILESTONE",
+          "plain_language_explanation": "The largest observed milestone delay is 0 days.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "max(milestone delay days)",
+            "normalized_value": 0,
+            "note": "",
+            "raw_values": {
+              "applicable": 1,
+              "delays": []
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": "days",
+          "value": 0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "LAND_ACQUISITION_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "LAND",
+          "plain_language_explanation": "The structured source does not report land acquisition as pending.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+            "normalized_value": false,
+            "note": "",
+            "raw_values": {
+              "acquisition_complete": true,
+              "remaining_pct": 0.0
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 0.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "ROW_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "ROW",
+          "plain_language_explanation": "The structured source does not report right-of-way work as pending.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "explicit pending status, or confirmed ROW availability below 100%",
+            "normalized_value": false,
+            "note": "",
+            "raw_values": {
+              "availability_pct": 100.0,
+              "pending": false
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 0.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "CLEARANCE_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "CLEARANCE",
+          "plain_language_explanation": "No applicable clearance is reported pending.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "count(status=PENDING and applicable)",
+            "normalized_value": 0,
+            "note": "",
+            "raw_values": {
+              "categories": []
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "TENDER_AWARD_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "PROCUREMENT",
+          "plain_language_explanation": "No published applicable tender is awaiting an award in the supplied as-of evidence.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0001"
+          ],
+          "status": "NOT_DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "official CUF has_active_tenders flag",
+            "normalized_value": false,
+            "note": "",
+            "raw_values": {
+              "has_active_tenders": false
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 0.0
+        }
+      ],
+      "status": "CLEAR",
+      "trend": "PERSISTENT",
+      "unavailable_families": [
+        "REPORTING",
+        "DATA_QUALITY"
+      ]
+    },
+    "mode": "SYNTHETIC_SANDBOX",
+    "officer_decision": {
+      "alert_deduplication_key": null,
+      "alert_policy_version": "alert-policy-v1",
+      "alert_status": "NOT_ELIGIBLE",
+      "as_of_month": "2026-06",
+      "canonical_project_id": "SYN-CUF-0001",
+      "decision_policy_version": "officer-decision-v1",
+      "last_valid_update": "2026-06",
+      "prediction_status": "WITHHELD",
+      "priority": null,
+      "reason_codes": [
+        "MODEL_RELEASE_PENDING"
+      ],
+      "recommended_action": "Monitor until the governed prediction release requirements are satisfied",
+      "reliability": null,
+      "review_state": "PREDICTION_WITHHELD",
+      "target_family": null
+    },
+    "peer_benchmark": {
+      "as_of_month": "2026-06",
+      "benchmark_status": "BENCHMARK_SYNTHETIC",
+      "canonical_project_id": "SYN-CUF-0001",
+      "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+      "limitations": [
+        "Peer group has 15 records; preferred support is 30."
+      ],
+      "metrics": [
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "original_cost",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 661.3207,
+          "peer_median": 639.36,
+          "peer_p25": 581.175,
+          "peer_p75": 714.86,
+          "percentile": 93.33,
+          "project_value": 902.43
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "current_cost",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 700.4033,
+          "peer_median": 702.99,
+          "peer_p25": 610.605,
+          "peer_p75": 743.065,
+          "percentile": 93.33,
+          "project_value": 941.64
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": "WITHIN_PEER_INTERQUARTILE_CONTEXT",
+          "metric": "cost_revision_pct",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 6.2089,
+          "peer_median": 4.6781,
+          "peer_p25": 3.0368,
+          "peer_p75": 6.8042,
+          "percentile": 46.67,
+          "project_value": 4.344935341245309
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "cumulative_expenditure_ratio",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 0.9287,
+          "peer_median": 1.0,
+          "peer_p25": 0.975,
+          "peer_p75": 1.0,
+          "percentile": 73.33,
+          "project_value": 1.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "physical_progress",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 87.6933,
+          "peer_median": 99.3,
+          "peer_p25": 83.55,
+          "peer_p75": 100.0,
+          "percentile": 76.67,
+          "project_value": 100.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "project_age_months",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 42.8667,
+          "peer_median": 42.0,
+          "peer_p25": 40.0,
+          "peer_p75": 47.5,
+          "percentile": 13.33,
+          "project_value": 38.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "remaining_schedule_months",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 0.8,
+          "peer_median": 0.0,
+          "peer_p25": 0.0,
+          "peer_p75": 0.0,
+          "percentile": 40.0,
+          "project_value": 0.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": "LESS_ADVERSE_THAN_MOST_PEERS",
+          "metric": "required_future_velocity",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 4.9067,
+          "peer_median": 0.7,
+          "peer_p25": 0.0,
+          "peer_p75": 7.075,
+          "percentile": 23.33,
+          "project_value": 0.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "LOWER_WORSE",
+          "interpretation": null,
+          "metric": "progress_vs_elapsed_gap",
+          "peer_count": 0,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "expenditure_velocity",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": -12.8353,
+          "peer_median": 24.6,
+          "peer_p25": 3.92,
+          "peer_p75": 33.78,
+          "percentile": 93.33,
+          "project_value": 64.02999999999997
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": "LESS_ADVERSE_THAN_MOST_PEERS",
+          "metric": "watch_signal_count",
+          "peer_count": 15,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": 2.2667,
+          "peer_median": 2.0,
+          "peer_p25": 1.0,
+          "peer_p75": 2.5,
+          "percentile": 10.0,
+          "project_value": 0.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "milestone_slippage_days",
+          "peer_count": 3,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "land_remaining_pct",
+          "peer_count": 2,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "pending_clearances",
+          "peer_count": 1,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "tender_cycle_days",
+          "peer_count": 0,
+          "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        }
+      ],
+      "mode": "SYNTHETIC_SANDBOX",
+      "peer_count": 15,
+      "peer_group": {
+        "cost_band": "500_TO_1000_CR",
+        "lifecycle_band": "LATE",
+        "sector": "ROADS"
+      },
+      "peer_group_level": 1,
+      "policy_version": "peer-benchmark-v1.0"
+    },
+    "recommended_actions": [
+      {
+        "action": "Monitor until the governed prediction release requirements are satisfied",
+        "action_type": "MONITOR_OR_REVIEW",
+        "basis_codes": [
+          "MODEL_RELEASE_PENDING"
+        ]
+      }
+    ],
+    "schedule_intelligence": {
+      "deterministic_schedule_pressure": {
+        "reason_codes": [],
+        "status": "CLEAR"
+      },
+      "prediction_status": "WITHHELD",
+      "probability": null,
+      "reason_code": "INSUFFICIENT_TEMPORAL_VALIDATION",
+      "research_status": "SCHEDULE_PREDICTION_FINAL_V3_PARTIAL",
+      "risk_band": null
+    }
+  },
+  "contract_version": "unified-project-intelligence-v1.0",
+  "cost_intelligence": {
+    "factual_cost_state": {
+      "cost_escalation_pct": 4.345,
+      "cumulative_expenditure": 941.64,
+      "current_cost": 941.64,
+      "original_cost": 902.43
+    },
+    "prediction_status": "WITHHELD",
+    "probability": null,
+    "reason_code": "NO_COST_MODEL_ADMITTED",
+    "research_status": "COST_PREDICTION_V3_PARTIAL",
+    "risk_band": null
+  },
+  "current_state": {
+    "approval_date": "2023-04-06",
+    "as_of_month": "2026-06",
+    "availability": {
+      "source_backed": false,
+      "synthetic_fixture": true
+    },
+    "cost_escalation_pct": 4.345,
+    "cumulative_expenditure": 941.64,
+    "current_approved_completion_date": "2026-07-01",
+    "current_cost": 941.64,
+    "original_completion_date": "2026-06-01",
+    "original_cost": 902.43,
+    "physical_progress": 100.0,
+    "project_status": "SYNTHETIC_ACTIVE"
+  },
+  "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+  "data_trust": {
+    "data_status": "USABLE",
+    "history": "SYNTHETIC_EVIDENCE_COMPLETE",
+    "reasons": [],
+    "source": "SYNTHETIC_EVIDENCE_COMPLETE",
+    "summary_state": "PASS",
+    "synthetic_evidence_only": true
+  },
+  "evidence_summary": [
+    {
+      "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+      "page": null,
+      "reporting_month": "2026-06",
+      "sha256": null,
+      "signal_codes": [],
+      "source_id": "SYN-SRC-SYN-CUF-0001",
+      "table": "SYNTHETIC_CUF_FIXTURE"
+    }
+  ],
+  "identity": {
+    "agency": "SYNTHETIC_IMPLEMENTING_AGENCY_A",
+    "agency_is_contractor": false,
+    "as_of_month": "2026-06",
+    "canonical_project_id": "SYN-CUF-0001",
+    "location": "SYNTHETIC_STATE_01",
+    "ministry": "SYNTHETIC_MINISTRY",
+    "project_name": "Synthetic CUF Demonstration Project 0001",
+    "project_status": "SYNTHETIC_ACTIVE",
+    "scenario_id": "HEALTHY_ON_TRACK",
+    "sector": "ROADS"
+  },
+  "implementation_watch": {
+    "as_of": "2026-06-01",
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "data_quality_notes": [],
+    "families": [
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0.0
+          }
+        ],
+        "family": "EXECUTION",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+            "data_quality_state": "SUPPORTED",
+            "family": "EXECUTION",
+            "plain_language_explanation": "Physical progress is not behind the scheduled plan by the v1 threshold.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "actual_physical_progress - scheduled_physical_progress",
+              "normalized_value": 0.0,
+              "note": "",
+              "raw_values": {
+                "actual": 100.0,
+                "scheduled": 100.0,
+                "threshold_pp": -10.0
+              },
+              "threshold_or_policy": -10.0
+            },
+            "unit": "percentage_points",
+            "value": 0.0
+          }
+        ],
+        "status": "NOT_DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0.0
+          },
+          {
+            "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0.0
+          }
+        ],
+        "family": "FINANCIAL",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+            "data_quality_state": "SUPPORTED",
+            "family": "FINANCIAL",
+            "plain_language_explanation": "Financial progress is not behind the compatible scheduled plan by the v1 threshold.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "actual_financial_progress - scheduled_financial_progress",
+              "normalized_value": 0.0,
+              "note": "",
+              "raw_values": {
+                "actual": 100.0,
+                "scheduled": 100.0,
+                "threshold_pp": -10.0
+              },
+              "threshold_or_policy": -10.0
+            },
+            "unit": "percentage_points",
+            "value": 0.0
+          },
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+            "data_quality_state": "SUPPORTED",
+            "family": "FINANCIAL",
+            "plain_language_explanation": "Financial and physical progress do not diverge by the v1 attention threshold.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "actual_financial_progress - actual_physical_progress",
+              "normalized_value": 0.0,
+              "note": "",
+              "raw_values": {
+                "absolute_threshold_pp": 15.0,
+                "financial": 100.0,
+                "physical": 100.0
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": "percentage_points",
+            "value": 0.0
+          }
+        ],
+        "status": "NOT_DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "MILESTONE_OVERDUE",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0
+          },
+          {
+            "code": "SEVERE_MILESTONE_SLIPPAGE",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0
+          }
+        ],
+        "family": "MILESTONE",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "MILESTONE_OVERDUE",
+            "data_quality_state": "SUPPORTED",
+            "family": "MILESTONE",
+            "plain_language_explanation": "No applicable milestone is overdue in the supplied as-of evidence.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "count(applicable overdue or completed-late milestones)",
+              "normalized_value": 0,
+              "note": "",
+              "raw_values": {
+                "applicable": 1,
+                "delays": []
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 0
+          },
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "SEVERE_MILESTONE_SLIPPAGE",
+            "data_quality_state": "SUPPORTED",
+            "family": "MILESTONE",
+            "plain_language_explanation": "The largest observed milestone delay is 0 days.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "HIGH",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "max(milestone delay days)",
+              "normalized_value": 0,
+              "note": "",
+              "raw_values": {
+                "applicable": 1,
+                "delays": []
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": "days",
+            "value": 0
+          }
+        ],
+        "status": "NOT_DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "LAND_ACQUISITION_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0.0
+          }
+        ],
+        "family": "LAND",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "LAND_ACQUISITION_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "LAND",
+            "plain_language_explanation": "The structured source does not report land acquisition as pending.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+              "normalized_value": false,
+              "note": "",
+              "raw_values": {
+                "acquisition_complete": true,
+                "remaining_pct": 0.0
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 0.0
+          }
+        ],
+        "status": "NOT_DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "ROW_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0.0
+          }
+        ],
+        "family": "ROW",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "ROW_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "ROW",
+            "plain_language_explanation": "The structured source does not report right-of-way work as pending.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "explicit pending status, or confirmed ROW availability below 100%",
+              "normalized_value": false,
+              "note": "",
+              "raw_values": {
+                "availability_pct": 100.0,
+                "pending": false
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 0.0
+          }
+        ],
+        "status": "NOT_DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "CLEARANCE_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0
+          }
+        ],
+        "family": "CLEARANCE",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "CLEARANCE_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "CLEARANCE",
+            "plain_language_explanation": "No applicable clearance is reported pending.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "count(status=PENDING and applicable)",
+              "normalized_value": 0,
+              "note": "",
+              "raw_values": {
+                "categories": []
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 0
+          }
+        ],
+        "status": "NOT_DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "TENDER_AWARD_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "value": 0.0
+          }
+        ],
+        "family": "PROCUREMENT",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "TENDER_AWARD_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "PROCUREMENT",
+            "plain_language_explanation": "No published applicable tender is awaiting an award in the supplied as-of evidence.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0001"
+            ],
+            "status": "NOT_DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "official CUF has_active_tenders flag",
+              "normalized_value": false,
+              "note": "",
+              "raw_values": {
+                "has_active_tenders": false
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 0.0
+          }
+        ],
+        "status": "NOT_DETECTED"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "REPORTING",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "DATA_QUALITY",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      }
+    ],
+    "policy_version": "implementation-watch-v1.0",
+    "reason_codes": [],
+    "signals": [
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+        "data_quality_state": "SUPPORTED",
+        "family": "EXECUTION",
+        "plain_language_explanation": "Physical progress is not behind the scheduled plan by the v1 threshold.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "actual_physical_progress - scheduled_physical_progress",
+          "normalized_value": 0.0,
+          "note": "",
+          "raw_values": {
+            "actual": 100.0,
+            "scheduled": 100.0,
+            "threshold_pp": -10.0
+          },
+          "threshold_or_policy": -10.0
+        },
+        "unit": "percentage_points",
+        "value": 0.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+        "data_quality_state": "SUPPORTED",
+        "family": "FINANCIAL",
+        "plain_language_explanation": "Financial progress is not behind the compatible scheduled plan by the v1 threshold.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "actual_financial_progress - scheduled_financial_progress",
+          "normalized_value": 0.0,
+          "note": "",
+          "raw_values": {
+            "actual": 100.0,
+            "scheduled": 100.0,
+            "threshold_pp": -10.0
+          },
+          "threshold_or_policy": -10.0
+        },
+        "unit": "percentage_points",
+        "value": 0.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+        "data_quality_state": "SUPPORTED",
+        "family": "FINANCIAL",
+        "plain_language_explanation": "Financial and physical progress do not diverge by the v1 attention threshold.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "actual_financial_progress - actual_physical_progress",
+          "normalized_value": 0.0,
+          "note": "",
+          "raw_values": {
+            "absolute_threshold_pp": 15.0,
+            "financial": 100.0,
+            "physical": 100.0
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": "percentage_points",
+        "value": 0.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "MILESTONE_OVERDUE",
+        "data_quality_state": "SUPPORTED",
+        "family": "MILESTONE",
+        "plain_language_explanation": "No applicable milestone is overdue in the supplied as-of evidence.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "count(applicable overdue or completed-late milestones)",
+          "normalized_value": 0,
+          "note": "",
+          "raw_values": {
+            "applicable": 1,
+            "delays": []
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "SEVERE_MILESTONE_SLIPPAGE",
+        "data_quality_state": "SUPPORTED",
+        "family": "MILESTONE",
+        "plain_language_explanation": "The largest observed milestone delay is 0 days.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "HIGH",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "max(milestone delay days)",
+          "normalized_value": 0,
+          "note": "",
+          "raw_values": {
+            "applicable": 1,
+            "delays": []
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": "days",
+        "value": 0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "LAND_ACQUISITION_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "LAND",
+        "plain_language_explanation": "The structured source does not report land acquisition as pending.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+          "normalized_value": false,
+          "note": "",
+          "raw_values": {
+            "acquisition_complete": true,
+            "remaining_pct": 0.0
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 0.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "ROW_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "ROW",
+        "plain_language_explanation": "The structured source does not report right-of-way work as pending.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "explicit pending status, or confirmed ROW availability below 100%",
+          "normalized_value": false,
+          "note": "",
+          "raw_values": {
+            "availability_pct": 100.0,
+            "pending": false
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 0.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "CLEARANCE_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "CLEARANCE",
+        "plain_language_explanation": "No applicable clearance is reported pending.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "count(status=PENDING and applicable)",
+          "normalized_value": 0,
+          "note": "",
+          "raw_values": {
+            "categories": []
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "TENDER_AWARD_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "PROCUREMENT",
+        "plain_language_explanation": "No published applicable tender is awaiting an award in the supplied as-of evidence.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0001"
+        ],
+        "status": "NOT_DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "official CUF has_active_tenders flag",
+          "normalized_value": false,
+          "note": "",
+          "raw_values": {
+            "has_active_tenders": false
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 0.0
+      }
+    ],
+    "status": "CLEAR",
+    "trend": "PERSISTENT",
+    "unavailable_families": [
+      "REPORTING",
+      "DATA_QUALITY"
+    ]
+  },
+  "mode": "SYNTHETIC_SANDBOX",
+  "officer_decision": {
+    "alert_deduplication_key": null,
+    "alert_policy_version": "alert-policy-v1",
+    "alert_status": "NOT_ELIGIBLE",
+    "as_of_month": "2026-06",
+    "canonical_project_id": "SYN-CUF-0001",
+    "decision_policy_version": "officer-decision-v1",
+    "last_valid_update": "2026-06",
+    "prediction_status": "WITHHELD",
+    "priority": null,
+    "reason_codes": [
+      "MODEL_RELEASE_PENDING"
+    ],
+    "recommended_action": "Monitor until the governed prediction release requirements are satisfied",
+    "recommended_actions": [
+      {
+        "action": "Monitor until the governed prediction release requirements are satisfied",
+        "action_type": "MONITOR_OR_REVIEW",
+        "basis_codes": [
+          "MODEL_RELEASE_PENDING"
+        ]
+      }
+    ],
+    "reliability": null,
+    "review_state": "PREDICTION_WITHHELD",
+    "target_family": null
+  },
+  "peer_benchmark": {
+    "as_of_month": "2026-06",
+    "benchmark_status": "BENCHMARK_SYNTHETIC",
+    "canonical_project_id": "SYN-CUF-0001",
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "limitations": [
+      "Peer group has 15 records; preferred support is 30."
+    ],
+    "metrics": [
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "original_cost",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 661.3207,
+        "peer_median": 639.36,
+        "peer_p25": 581.175,
+        "peer_p75": 714.86,
+        "percentile": 93.33,
+        "project_value": 902.43
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "current_cost",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 700.4033,
+        "peer_median": 702.99,
+        "peer_p25": 610.605,
+        "peer_p75": 743.065,
+        "percentile": 93.33,
+        "project_value": 941.64
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": "WITHIN_PEER_INTERQUARTILE_CONTEXT",
+        "metric": "cost_revision_pct",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 6.2089,
+        "peer_median": 4.6781,
+        "peer_p25": 3.0368,
+        "peer_p75": 6.8042,
+        "percentile": 46.67,
+        "project_value": 4.344935341245309
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "cumulative_expenditure_ratio",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 0.9287,
+        "peer_median": 1.0,
+        "peer_p25": 0.975,
+        "peer_p75": 1.0,
+        "percentile": 73.33,
+        "project_value": 1.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "physical_progress",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 87.6933,
+        "peer_median": 99.3,
+        "peer_p25": 83.55,
+        "peer_p75": 100.0,
+        "percentile": 76.67,
+        "project_value": 100.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "project_age_months",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 42.8667,
+        "peer_median": 42.0,
+        "peer_p25": 40.0,
+        "peer_p75": 47.5,
+        "percentile": 13.33,
+        "project_value": 38.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "remaining_schedule_months",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 0.8,
+        "peer_median": 0.0,
+        "peer_p25": 0.0,
+        "peer_p75": 0.0,
+        "percentile": 40.0,
+        "project_value": 0.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": "LESS_ADVERSE_THAN_MOST_PEERS",
+        "metric": "required_future_velocity",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 4.9067,
+        "peer_median": 0.7,
+        "peer_p25": 0.0,
+        "peer_p75": 7.075,
+        "percentile": 23.33,
+        "project_value": 0.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "LOWER_WORSE",
+        "interpretation": null,
+        "metric": "progress_vs_elapsed_gap",
+        "peer_count": 0,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "expenditure_velocity",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": -12.8353,
+        "peer_median": 24.6,
+        "peer_p25": 3.92,
+        "peer_p75": 33.78,
+        "percentile": 93.33,
+        "project_value": 64.02999999999997
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": "LESS_ADVERSE_THAN_MOST_PEERS",
+        "metric": "watch_signal_count",
+        "peer_count": 15,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": 2.2667,
+        "peer_median": 2.0,
+        "peer_p25": 1.0,
+        "peer_p75": 2.5,
+        "percentile": 10.0,
+        "project_value": 0.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "milestone_slippage_days",
+        "peer_count": 3,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "land_remaining_pct",
+        "peer_count": 2,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "pending_clearances",
+        "peer_count": 1,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "tender_cycle_days",
+        "peer_count": 0,
+        "peer_group_definition": "sector=ROADS + cost_band=500_TO_1000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      }
+    ],
+    "mode": "SYNTHETIC_SANDBOX",
+    "peer_count": 15,
+    "peer_group": {
+      "cost_band": "500_TO_1000_CR",
+      "lifecycle_band": "LATE",
+      "sector": "ROADS"
+    },
+    "peer_group_level": 1,
+    "policy_version": "peer-benchmark-v1.0"
+  },
+  "provenance": {
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "dataset_version": "synthetic-cuf-sandbox-v1.0",
+    "official_evidence": false,
+    "scenario_id": "HEALTHY_ON_TRACK"
+  },
+  "reliability": {
+    "data_quality": "USABLE",
+    "history_sufficiency": "SYNTHETIC_EVIDENCE_COMPLETE",
+    "prediction_reliability": "NOT_APPLICABLE",
+    "source_reliability": "SYNTHETIC_EVIDENCE_COMPLETE"
+  },
+  "risk_trend": {
+    "basis": [
+      "IMPLEMENTATION_WATCH_HISTORY"
+    ],
+    "prediction_trajectory_used": false,
+    "state": "STABLE"
+  },
+  "schedule_intelligence": {
+    "deterministic_schedule_pressure": {
+      "reason_codes": [],
+      "status": "CLEAR"
+    },
+    "prediction_status": "WITHHELD",
+    "probability": null,
+    "reason_code": "INSUFFICIENT_TEMPORAL_VALIDATION",
+    "research_status": "SCHEDULE_PREDICTION_FINAL_V3_PARTIAL",
+    "risk_band": null
+  }
+}

@@ -41,6 +41,16 @@ def test_project_list_filter(client): assert client.get("/api/v1/projects?sector
 def test_project_list_rejects_bad_sort(client): assert client.get("/api/v1/projects?sort=drop_table").status_code==422
 def test_project_detail(client):
     data=client.get("/api/v1/projects/PRH-1").json();assert data["latest_snapshot"]["source"]["source_id"]=="SRC-1" and data['officer_decision']['review_state']=='DATA_VERIFICATION_REQUIRED'
+def test_unified_intelligence_and_benchmark_endpoints(client):
+    intelligence=client.get('/api/v1/projects/PRH-1/intelligence');assert intelligence.status_code==200
+    data=intelligence.json();assert data['mode']=='REAL_HISTORICAL' and data['schedule_intelligence']['probability'] is None and data['cost_intelligence']['probability'] is None
+    benchmark=client.get('/api/v1/projects/PRH-1/benchmark');assert benchmark.status_code==200 and benchmark.json()['data_origin']=='HISTORICAL_FLASH_REPORT'
+def test_sandbox_routes_are_explicitly_separate(client):
+    listing=client.get('/api/v1/sandbox/projects?page_size=2').json();assert listing['mode']=='SYNTHETIC_SANDBOX' and all(x['data_origin']=='SYNTHETIC_CUF_PROTOTYPE' for x in listing['items'])
+    item=client.get('/api/v1/sandbox/projects/SYN-CUF-0001/intelligence').json();assert item['mode']=='SYNTHETIC_SANDBOX' and item['provenance']['official_evidence'] is False
+def test_intelligence_dashboard_modes_are_explicit(client):
+    real=client.get('/api/v1/dashboard/intelligence-summary').json();assert real['mode']=='REAL_HISTORICAL' and real['synthetic_portfolio'] is False
+    synthetic=client.get('/api/v1/dashboard/intelligence-summary?mode=SYNTHETIC_SANDBOX').json();assert synthetic['mode']=='SYNTHETIC_SANDBOX' and synthetic['total_projects']==1000 and synthetic['predictions_withheld']==1000
 def test_missing_project(client): assert client.get("/api/v1/projects/NOPE").status_code==404
 def test_history_only_observed_rows(client):
     data=client.get("/api/v1/projects/PRH-1/history").json();assert len(data["observations"])==1 and data["interpolated"] is False

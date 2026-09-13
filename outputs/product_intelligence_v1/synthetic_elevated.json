@@ -1,0 +1,2846 @@
+{
+  "alerts_summary": {
+    "operational_alert_created": false,
+    "prediction_alerts_withheld": true,
+    "status": "NOT_ELIGIBLE"
+  },
+  "assistant_context": {
+    "constraints": [
+      "Do not invent predictions or causes.",
+      "Do not override deterministic decision state.",
+      "Preserve synthetic provenance visibly."
+    ],
+    "cost_intelligence": {
+      "factual_cost_state": {
+        "cost_escalation_pct": 18.0,
+        "cumulative_expenditure": 1300.96,
+        "current_cost": 5203.86,
+        "original_cost": 4410.05
+      },
+      "prediction_status": "WITHHELD",
+      "probability": null,
+      "reason_code": "NO_COST_MODEL_ADMITTED",
+      "research_status": "COST_PREDICTION_V3_PARTIAL",
+      "risk_band": null
+    },
+    "current_state": {
+      "approval_date": "2023-05-06",
+      "as_of_month": "2026-06",
+      "availability": {
+        "source_backed": false,
+        "synthetic_fixture": true
+      },
+      "cost_escalation_pct": 18.0,
+      "cumulative_expenditure": 1300.96,
+      "current_approved_completion_date": "2027-06-26",
+      "current_cost": 5203.86,
+      "original_completion_date": "2026-06-01",
+      "original_cost": 4410.05,
+      "physical_progress": 42.0,
+      "project_status": "SYNTHETIC_ACTIVE"
+    },
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "data_trust": {
+      "data_status": "USABLE",
+      "history": "SYNTHETIC_EVIDENCE_COMPLETE",
+      "reasons": [],
+      "source": "SYNTHETIC_EVIDENCE_COMPLETE",
+      "summary_state": "PASS",
+      "synthetic_evidence_only": true
+    },
+    "evidence": [
+      {
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "page": null,
+        "reporting_month": "2026-06",
+        "sha256": null,
+        "signal_codes": [
+          "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "HIGH_REQUIRED_FUTURE_PACE",
+          "FINANCIAL_PROGRESS_BEHIND_PLAN",
+          "FINANCIAL_PHYSICAL_DIVERGENCE",
+          "MULTIPLE_MILESTONES_OVERDUE",
+          "SEVERE_MILESTONE_SLIPPAGE",
+          "LAND_ACQUISITION_PENDING",
+          "HIGH_LAND_REMAINING",
+          "LAND_DEADLINE_CONFLICT",
+          "ROW_PENDING",
+          "MULTIPLE_CLEARANCES_PENDING",
+          "CRITICAL_CLEARANCE_PENDING",
+          "TENDER_AWARD_PENDING"
+        ],
+        "source_id": "SYN-SRC-SYN-CUF-0022",
+        "table": "SYNTHETIC_CUF_FIXTURE"
+      }
+    ],
+    "identity": {
+      "agency": "SYNTHETIC_IMPLEMENTING_AGENCY_A",
+      "agency_is_contractor": false,
+      "as_of_month": "2026-06",
+      "canonical_project_id": "SYN-CUF-0022",
+      "location": "SYNTHETIC_STATE_10",
+      "ministry": "SYNTHETIC_MINISTRY",
+      "project_name": "Synthetic CUF Demonstration Project 0022",
+      "project_status": "SYNTHETIC_ACTIVE",
+      "scenario_id": "MULTI_PRESSURE_PROJECT",
+      "sector": "RAILWAYS"
+    },
+    "implementation_watch": {
+      "as_of": "2026-06-01",
+      "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+      "data_quality_notes": [],
+      "families": [
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": -58.0
+            },
+            {
+              "code": "HIGH_REQUIRED_FUTURE_PACE",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 14.5
+            }
+          ],
+          "family": "EXECUTION",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+              "data_quality_state": "SUPPORTED",
+              "family": "EXECUTION",
+              "plain_language_explanation": "Physical progress is 58.0 percentage points behind the scheduled plan.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "actual_physical_progress - scheduled_physical_progress",
+                "normalized_value": -58.0,
+                "note": "",
+                "raw_values": {
+                  "actual": 42.0,
+                  "scheduled": 100.0,
+                  "threshold_pp": -10.0
+                },
+                "threshold_or_policy": -10.0
+              },
+              "unit": "percentage_points",
+              "value": -58.0
+            },
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "HIGH_REQUIRED_FUTURE_PACE",
+              "data_quality_state": "SUPPORTED",
+              "family": "EXECUTION",
+              "plain_language_explanation": "The project requires 14.50 percentage points of physical progress per remaining month.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "HIGH",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "existing compact-v2.1-calendar-safe required_future_velocity; threshold from policy",
+                "normalized_value": 14.5,
+                "note": "",
+                "raw_values": {
+                  "required_future_velocity": 14.5,
+                  "threshold": 5.0
+                },
+                "threshold_or_policy": 5.0
+              },
+              "unit": null,
+              "value": 14.5
+            }
+          ],
+          "status": "DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": -75.0
+            },
+            {
+              "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": -17.0
+            }
+          ],
+          "family": "FINANCIAL",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+              "data_quality_state": "SUPPORTED",
+              "family": "FINANCIAL",
+              "plain_language_explanation": "Financial progress is 75.0 percentage points behind the compatible scheduled financial plan.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "actual_financial_progress - scheduled_financial_progress",
+                "normalized_value": -75.0,
+                "note": "",
+                "raw_values": {
+                  "actual": 25.0,
+                  "scheduled": 100.0,
+                  "threshold_pp": -10.0
+                },
+                "threshold_or_policy": -10.0
+              },
+              "unit": "percentage_points",
+              "value": -75.0
+            },
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+              "data_quality_state": "SUPPORTED",
+              "family": "FINANCIAL",
+              "plain_language_explanation": "Financial and physical progress differ by 17.0 percentage points; this is an attention signal, not a finding of cause or wrongdoing.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "actual_financial_progress - actual_physical_progress",
+                "normalized_value": -17.0,
+                "note": "",
+                "raw_values": {
+                  "absolute_threshold_pp": 15.0,
+                  "financial": 25.0,
+                  "physical": 42.0
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": "percentage_points",
+              "value": -17.0
+            }
+          ],
+          "status": "DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "MULTIPLE_MILESTONES_OVERDUE",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 2
+            },
+            {
+              "code": "SEVERE_MILESTONE_SLIPPAGE",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 182
+            }
+          ],
+          "family": "MILESTONE",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "MULTIPLE_MILESTONES_OVERDUE",
+              "data_quality_state": "SUPPORTED",
+              "family": "MILESTONE",
+              "plain_language_explanation": "2 applicable milestones are overdue or were completed late.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "HIGH",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "count(applicable overdue or completed-late milestones)",
+                "normalized_value": 2,
+                "note": "",
+                "raw_values": {
+                  "applicable": 2,
+                  "delays": [
+                    182,
+                    182
+                  ]
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 2
+            },
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "SEVERE_MILESTONE_SLIPPAGE",
+              "data_quality_state": "SUPPORTED",
+              "family": "MILESTONE",
+              "plain_language_explanation": "The largest observed milestone delay is 182 days.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "HIGH",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "max(milestone delay days)",
+                "normalized_value": 182,
+                "note": "",
+                "raw_values": {
+                  "applicable": 2,
+                  "delays": [
+                    182,
+                    182
+                  ]
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": "days",
+              "value": 182
+            }
+          ],
+          "status": "DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "LAND_ACQUISITION_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 1.0
+            },
+            {
+              "code": "HIGH_LAND_REMAINING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 35.0
+            },
+            {
+              "code": "LAND_DEADLINE_CONFLICT",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 1.0
+            }
+          ],
+          "family": "LAND",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "LAND_ACQUISITION_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "LAND",
+              "plain_language_explanation": "The structured source reports that land acquisition remains incomplete.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+                "normalized_value": true,
+                "note": "",
+                "raw_values": {
+                  "acquisition_complete": false,
+                  "remaining_pct": 35.0
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 1.0
+            },
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "HIGH_LAND_REMAINING",
+              "data_quality_state": "SUPPORTED",
+              "family": "LAND",
+              "plain_language_explanation": "35.0% of the required land remains to be acquired.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "HIGH",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "100 * (required - acquired) / required, or source-confirmed remaining_pct",
+                "normalized_value": 35.0,
+                "note": "",
+                "raw_values": {
+                  "acquired": 65.0,
+                  "reported_remaining_pct": 35.0,
+                  "required": 100.0
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 35.0
+            },
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "LAND_DEADLINE_CONFLICT",
+              "data_quality_state": "SUPPORTED",
+              "family": "LAND",
+              "plain_language_explanation": "The reported expected land-completion date is later than the relevant scheduled milestone date.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "HIGH",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "pending and expected land completion > relevant due date",
+                "normalized_value": true,
+                "note": "",
+                "raw_values": {
+                  "expected_completion_date": "2026-05-01",
+                  "relevant_due": "2025-12-01"
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 1.0
+            }
+          ],
+          "status": "DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "ROW_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 1.0
+            }
+          ],
+          "family": "ROW",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "ROW_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "ROW",
+              "plain_language_explanation": "The structured source reports right-of-way work as pending.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "explicit pending status, or confirmed ROW availability below 100%",
+                "normalized_value": true,
+                "note": "",
+                "raw_values": {
+                  "availability_pct": 70.0,
+                  "pending": true
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 1.0
+            }
+          ],
+          "status": "DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "MULTIPLE_CLEARANCES_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 2
+            },
+            {
+              "code": "CRITICAL_CLEARANCE_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 1.0
+            }
+          ],
+          "family": "CLEARANCE",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "MULTIPLE_CLEARANCES_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "CLEARANCE",
+              "plain_language_explanation": "2 required clearances remain pending.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "HIGH",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "count(status=PENDING and applicable)",
+                "normalized_value": 2,
+                "note": "",
+                "raw_values": {
+                  "categories": [
+                    "FOREST",
+                    "ENVIRONMENTAL"
+                  ]
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 2
+            },
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "CRITICAL_CLEARANCE_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "CLEARANCE",
+              "plain_language_explanation": "A pending clearance belongs to a category listed in the versioned critical-clearance policy.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "HIGH",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "pending category in versioned critical-category policy",
+                "normalized_value": true,
+                "note": "",
+                "raw_values": {
+                  "critical_categories": [
+                    "CRZ",
+                    "DEFENCE",
+                    "ENVIRONMENTAL",
+                    "FOREST"
+                  ],
+                  "pending_categories": [
+                    "FOREST",
+                    "ENVIRONMENTAL"
+                  ]
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 1.0
+            }
+          ],
+          "status": "DETECTED"
+        },
+        {
+          "availability": "AVAILABLE",
+          "evidence": [
+            {
+              "code": "TENDER_AWARD_PENDING",
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "value": 1.0
+            }
+          ],
+          "family": "PROCUREMENT",
+          "limitations": [],
+          "signals": [
+            {
+              "as_of": "2026-06-01",
+              "availability": "AVAILABLE",
+              "causal_claim": false,
+              "code": "TENDER_AWARD_PENDING",
+              "data_quality_state": "SUPPORTED",
+              "family": "PROCUREMENT",
+              "plain_language_explanation": "A published tender has no reported award date.",
+              "policy_version": "implementation-watch-v1.0",
+              "severity": "MEDIUM",
+              "source_available": true,
+              "source_refs": [
+                "SYN-SRC-SYN-CUF-0022"
+              ],
+              "status": "DETECTED",
+              "technical_explanation": {
+                "availability": "AVAILABLE",
+                "formula": "official CUF has_active_tenders flag",
+                "normalized_value": true,
+                "note": "",
+                "raw_values": {
+                  "has_active_tenders": true
+                },
+                "threshold_or_policy": "see formula"
+              },
+              "unit": null,
+              "value": 1.0
+            }
+          ],
+          "status": "DETECTED"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "REPORTING",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        },
+        {
+          "availability": "UNKNOWN",
+          "evidence": [],
+          "family": "DATA_QUALITY",
+          "limitations": [
+            "No governed inputs were evaluated for this family."
+          ],
+          "signals": [],
+          "status": "NOT_AVAILABLE"
+        }
+      ],
+      "policy_version": "implementation-watch-v1.0",
+      "reason_codes": [
+        "PHYSICAL_PROGRESS_BEHIND_PLAN",
+        "HIGH_REQUIRED_FUTURE_PACE",
+        "FINANCIAL_PROGRESS_BEHIND_PLAN",
+        "FINANCIAL_PHYSICAL_DIVERGENCE",
+        "MULTIPLE_MILESTONES_OVERDUE",
+        "SEVERE_MILESTONE_SLIPPAGE",
+        "LAND_ACQUISITION_PENDING",
+        "HIGH_LAND_REMAINING",
+        "LAND_DEADLINE_CONFLICT",
+        "ROW_PENDING",
+        "MULTIPLE_CLEARANCES_PENDING",
+        "CRITICAL_CLEARANCE_PENDING",
+        "TENDER_AWARD_PENDING"
+      ],
+      "signals": [
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "Physical progress is 58.0 percentage points behind the scheduled plan.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_physical_progress - scheduled_physical_progress",
+            "normalized_value": -58.0,
+            "note": "",
+            "raw_values": {
+              "actual": 42.0,
+              "scheduled": 100.0,
+              "threshold_pp": -10.0
+            },
+            "threshold_or_policy": -10.0
+          },
+          "unit": "percentage_points",
+          "value": -58.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "HIGH_REQUIRED_FUTURE_PACE",
+          "data_quality_state": "SUPPORTED",
+          "family": "EXECUTION",
+          "plain_language_explanation": "The project requires 14.50 percentage points of physical progress per remaining month.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "existing compact-v2.1-calendar-safe required_future_velocity; threshold from policy",
+            "normalized_value": 14.5,
+            "note": "",
+            "raw_values": {
+              "required_future_velocity": 14.5,
+              "threshold": 5.0
+            },
+            "threshold_or_policy": 5.0
+          },
+          "unit": null,
+          "value": 14.5
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+          "data_quality_state": "SUPPORTED",
+          "family": "FINANCIAL",
+          "plain_language_explanation": "Financial progress is 75.0 percentage points behind the compatible scheduled financial plan.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_financial_progress - scheduled_financial_progress",
+            "normalized_value": -75.0,
+            "note": "",
+            "raw_values": {
+              "actual": 25.0,
+              "scheduled": 100.0,
+              "threshold_pp": -10.0
+            },
+            "threshold_or_policy": -10.0
+          },
+          "unit": "percentage_points",
+          "value": -75.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+          "data_quality_state": "SUPPORTED",
+          "family": "FINANCIAL",
+          "plain_language_explanation": "Financial and physical progress differ by 17.0 percentage points; this is an attention signal, not a finding of cause or wrongdoing.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "actual_financial_progress - actual_physical_progress",
+            "normalized_value": -17.0,
+            "note": "",
+            "raw_values": {
+              "absolute_threshold_pp": 15.0,
+              "financial": 25.0,
+              "physical": 42.0
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": "percentage_points",
+          "value": -17.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "MULTIPLE_MILESTONES_OVERDUE",
+          "data_quality_state": "SUPPORTED",
+          "family": "MILESTONE",
+          "plain_language_explanation": "2 applicable milestones are overdue or were completed late.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "count(applicable overdue or completed-late milestones)",
+            "normalized_value": 2,
+            "note": "",
+            "raw_values": {
+              "applicable": 2,
+              "delays": [
+                182,
+                182
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 2
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "SEVERE_MILESTONE_SLIPPAGE",
+          "data_quality_state": "SUPPORTED",
+          "family": "MILESTONE",
+          "plain_language_explanation": "The largest observed milestone delay is 182 days.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "max(milestone delay days)",
+            "normalized_value": 182,
+            "note": "",
+            "raw_values": {
+              "applicable": 2,
+              "delays": [
+                182,
+                182
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": "days",
+          "value": 182
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "LAND_ACQUISITION_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "LAND",
+          "plain_language_explanation": "The structured source reports that land acquisition remains incomplete.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "acquisition_complete": false,
+              "remaining_pct": 35.0
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "HIGH_LAND_REMAINING",
+          "data_quality_state": "SUPPORTED",
+          "family": "LAND",
+          "plain_language_explanation": "35.0% of the required land remains to be acquired.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "100 * (required - acquired) / required, or source-confirmed remaining_pct",
+            "normalized_value": 35.0,
+            "note": "",
+            "raw_values": {
+              "acquired": 65.0,
+              "reported_remaining_pct": 35.0,
+              "required": 100.0
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 35.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "LAND_DEADLINE_CONFLICT",
+          "data_quality_state": "SUPPORTED",
+          "family": "LAND",
+          "plain_language_explanation": "The reported expected land-completion date is later than the relevant scheduled milestone date.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "pending and expected land completion > relevant due date",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "expected_completion_date": "2026-05-01",
+              "relevant_due": "2025-12-01"
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "ROW_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "ROW",
+          "plain_language_explanation": "The structured source reports right-of-way work as pending.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "explicit pending status, or confirmed ROW availability below 100%",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "availability_pct": 70.0,
+              "pending": true
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "MULTIPLE_CLEARANCES_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "CLEARANCE",
+          "plain_language_explanation": "2 required clearances remain pending.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "count(status=PENDING and applicable)",
+            "normalized_value": 2,
+            "note": "",
+            "raw_values": {
+              "categories": [
+                "FOREST",
+                "ENVIRONMENTAL"
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 2
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "CRITICAL_CLEARANCE_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "CLEARANCE",
+          "plain_language_explanation": "A pending clearance belongs to a category listed in the versioned critical-clearance policy.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "HIGH",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "pending category in versioned critical-category policy",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "critical_categories": [
+                "CRZ",
+                "DEFENCE",
+                "ENVIRONMENTAL",
+                "FOREST"
+              ],
+              "pending_categories": [
+                "FOREST",
+                "ENVIRONMENTAL"
+              ]
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        },
+        {
+          "as_of": "2026-06-01",
+          "availability": "AVAILABLE",
+          "causal_claim": false,
+          "code": "TENDER_AWARD_PENDING",
+          "data_quality_state": "SUPPORTED",
+          "family": "PROCUREMENT",
+          "plain_language_explanation": "A published tender has no reported award date.",
+          "policy_version": "implementation-watch-v1.0",
+          "severity": "MEDIUM",
+          "source_available": true,
+          "source_refs": [
+            "SYN-SRC-SYN-CUF-0022"
+          ],
+          "status": "DETECTED",
+          "technical_explanation": {
+            "availability": "AVAILABLE",
+            "formula": "official CUF has_active_tenders flag",
+            "normalized_value": true,
+            "note": "",
+            "raw_values": {
+              "has_active_tenders": true
+            },
+            "threshold_or_policy": "see formula"
+          },
+          "unit": null,
+          "value": 1.0
+        }
+      ],
+      "status": "ELEVATED",
+      "trend": "PERSISTENT",
+      "unavailable_families": [
+        "REPORTING",
+        "DATA_QUALITY"
+      ]
+    },
+    "mode": "SYNTHETIC_SANDBOX",
+    "officer_decision": {
+      "alert_deduplication_key": null,
+      "alert_policy_version": "alert-policy-v1",
+      "alert_status": "NOT_ELIGIBLE",
+      "as_of_month": "2026-06",
+      "canonical_project_id": "SYN-CUF-0022",
+      "decision_policy_version": "officer-decision-v1",
+      "last_valid_update": "2026-06",
+      "prediction_status": "WITHHELD",
+      "priority": "HIGH",
+      "reason_codes": [
+        "IMPLEMENTATION_PRESSURE_SIGNAL"
+      ],
+      "recommended_action": "Review the observable implementation-pressure signals and their source evidence",
+      "reliability": null,
+      "review_state": "REVIEW_RECOMMENDED",
+      "target_family": null
+    },
+    "peer_benchmark": {
+      "as_of_month": "2026-06",
+      "benchmark_status": "BENCHMARK_SYNTHETIC",
+      "canonical_project_id": "SYN-CUF-0022",
+      "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+      "limitations": [],
+      "metrics": [
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "original_cost",
+          "peer_count": 82,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 3001.4666,
+          "peer_median": 2945.74,
+          "peer_p25": 2068.46,
+          "peer_p75": 3940.7625,
+          "percentile": 82.93,
+          "project_value": 4410.05
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "current_cost",
+          "peer_count": 82,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 3158.4151,
+          "peer_median": 3031.585,
+          "peer_p25": 2227.94,
+          "peer_p75": 4136.6725,
+          "percentile": 95.12,
+          "project_value": 5203.86
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": "MORE_ADVERSE_THAN_MOST_PEERS",
+          "metric": "cost_revision_pct",
+          "peer_count": 82,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 5.3652,
+          "peer_median": 4.5015,
+          "peer_p25": 2.0741,
+          "peer_p75": 6.6958,
+          "percentile": 93.9,
+          "project_value": 18.000022675479855
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "cumulative_expenditure_ratio",
+          "peer_count": 82,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 0.9218,
+          "peer_median": 0.9845,
+          "peer_p25": 0.966,
+          "peer_p75": 1.0,
+          "percentile": 3.66,
+          "project_value": 0.24999903917476646
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "physical_progress",
+          "peer_count": 80,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 89.4013,
+          "peer_median": 98.8,
+          "peer_p25": 82.0,
+          "peer_p75": 100.0,
+          "percentile": 1.88,
+          "project_value": 42.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "NEUTRAL",
+          "interpretation": null,
+          "metric": "project_age_months",
+          "peer_count": 82,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 41.4756,
+          "peer_median": 42.0,
+          "peer_p25": 34.25,
+          "peer_p75": 48.0,
+          "percentile": 33.54,
+          "project_value": 37.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "remaining_schedule_months",
+          "peer_count": 82,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 0.3902,
+          "peer_median": 0.0,
+          "peer_p25": 0.0,
+          "peer_p75": 0.0,
+          "percentile": 95.12,
+          "project_value": 4.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": "MORE_ADVERSE_THAN_MOST_PEERS",
+          "metric": "required_future_velocity",
+          "peer_count": 80,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 6.8581,
+          "peer_median": 1.2,
+          "peer_p25": 0.0,
+          "peer_p75": 11.25,
+          "percentile": 81.88,
+          "project_value": 14.5
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "LOWER_WORSE",
+          "interpretation": null,
+          "metric": "progress_vs_elapsed_gap",
+          "peer_count": 0,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "CONTEXT_DEPENDENT",
+          "interpretation": null,
+          "metric": "expenditure_velocity",
+          "peer_count": 82,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": -125.178,
+          "peer_median": 50.275,
+          "peer_p25": 5.2575,
+          "peer_p75": 110.4175,
+          "percentile": 2.44,
+          "project_value": -3621.8900000000003
+        },
+        {
+          "benchmark_status": "BENCHMARK_SYNTHETIC",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": "MORE_ADVERSE_THAN_MOST_PEERS",
+          "metric": "watch_signal_count",
+          "peer_count": 82,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": 2.122,
+          "peer_median": 2.0,
+          "peer_p25": 1.0,
+          "peer_p75": 3.0,
+          "percentile": 98.17,
+          "project_value": 13.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_INSUFFICIENT_PEERS",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "milestone_slippage_days",
+          "peer_count": 13,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": 182.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_INSUFFICIENT_PEERS",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "land_remaining_pct",
+          "peer_count": 11,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": 35.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_INSUFFICIENT_PEERS",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "pending_clearances",
+          "peer_count": 7,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": 2.0
+        },
+        {
+          "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+          "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+          "directionality": "HIGHER_WORSE",
+          "interpretation": null,
+          "metric": "tender_cycle_days",
+          "peer_count": 3,
+          "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+          "peer_mean": null,
+          "peer_median": null,
+          "peer_p25": null,
+          "peer_p75": null,
+          "percentile": null,
+          "project_value": null
+        }
+      ],
+      "mode": "SYNTHETIC_SANDBOX",
+      "peer_count": 82,
+      "peer_group": {
+        "cost_band": "1000_TO_5000_CR",
+        "lifecycle_band": "LATE",
+        "sector": "RAILWAYS"
+      },
+      "peer_group_level": 1,
+      "policy_version": "peer-benchmark-v1.0"
+    },
+    "recommended_actions": [
+      {
+        "action": "Review the current deterministic schedule-pressure evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "HIGH_REQUIRED_FUTURE_PACE",
+          "PHYSICAL_PROGRESS_BEHIND_PLAN"
+        ]
+      },
+      {
+        "action": "Review overdue milestone evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "MULTIPLE_MILESTONES_OVERDUE",
+          "SEVERE_MILESTONE_SLIPPAGE"
+        ]
+      },
+      {
+        "action": "Check the structured land-acquisition evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "HIGH_LAND_REMAINING",
+          "LAND_ACQUISITION_PENDING",
+          "LAND_DEADLINE_CONFLICT"
+        ]
+      },
+      {
+        "action": "Check pending clearance status and evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "CRITICAL_CLEARANCE_PENDING",
+          "MULTIPLE_CLEARANCES_PENDING"
+        ]
+      },
+      {
+        "action": "Check the structured right-of-way evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "ROW_PENDING"
+        ]
+      },
+      {
+        "action": "Review the structured tender-cycle evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "TENDER_AWARD_PENDING"
+        ]
+      }
+    ],
+    "schedule_intelligence": {
+      "deterministic_schedule_pressure": {
+        "reason_codes": [
+          "PHYSICAL_PROGRESS_BEHIND_PLAN",
+          "HIGH_REQUIRED_FUTURE_PACE",
+          "MULTIPLE_MILESTONES_OVERDUE",
+          "SEVERE_MILESTONE_SLIPPAGE"
+        ],
+        "status": "ELEVATED"
+      },
+      "prediction_status": "WITHHELD",
+      "probability": null,
+      "reason_code": "INSUFFICIENT_TEMPORAL_VALIDATION",
+      "research_status": "SCHEDULE_PREDICTION_FINAL_V3_PARTIAL",
+      "risk_band": null
+    }
+  },
+  "contract_version": "unified-project-intelligence-v1.0",
+  "cost_intelligence": {
+    "factual_cost_state": {
+      "cost_escalation_pct": 18.0,
+      "cumulative_expenditure": 1300.96,
+      "current_cost": 5203.86,
+      "original_cost": 4410.05
+    },
+    "prediction_status": "WITHHELD",
+    "probability": null,
+    "reason_code": "NO_COST_MODEL_ADMITTED",
+    "research_status": "COST_PREDICTION_V3_PARTIAL",
+    "risk_band": null
+  },
+  "current_state": {
+    "approval_date": "2023-05-06",
+    "as_of_month": "2026-06",
+    "availability": {
+      "source_backed": false,
+      "synthetic_fixture": true
+    },
+    "cost_escalation_pct": 18.0,
+    "cumulative_expenditure": 1300.96,
+    "current_approved_completion_date": "2027-06-26",
+    "current_cost": 5203.86,
+    "original_completion_date": "2026-06-01",
+    "original_cost": 4410.05,
+    "physical_progress": 42.0,
+    "project_status": "SYNTHETIC_ACTIVE"
+  },
+  "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+  "data_trust": {
+    "data_status": "USABLE",
+    "history": "SYNTHETIC_EVIDENCE_COMPLETE",
+    "reasons": [],
+    "source": "SYNTHETIC_EVIDENCE_COMPLETE",
+    "summary_state": "PASS",
+    "synthetic_evidence_only": true
+  },
+  "evidence_summary": [
+    {
+      "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+      "page": null,
+      "reporting_month": "2026-06",
+      "sha256": null,
+      "signal_codes": [
+        "PHYSICAL_PROGRESS_BEHIND_PLAN",
+        "HIGH_REQUIRED_FUTURE_PACE",
+        "FINANCIAL_PROGRESS_BEHIND_PLAN",
+        "FINANCIAL_PHYSICAL_DIVERGENCE",
+        "MULTIPLE_MILESTONES_OVERDUE",
+        "SEVERE_MILESTONE_SLIPPAGE",
+        "LAND_ACQUISITION_PENDING",
+        "HIGH_LAND_REMAINING",
+        "LAND_DEADLINE_CONFLICT",
+        "ROW_PENDING",
+        "MULTIPLE_CLEARANCES_PENDING",
+        "CRITICAL_CLEARANCE_PENDING",
+        "TENDER_AWARD_PENDING"
+      ],
+      "source_id": "SYN-SRC-SYN-CUF-0022",
+      "table": "SYNTHETIC_CUF_FIXTURE"
+    }
+  ],
+  "identity": {
+    "agency": "SYNTHETIC_IMPLEMENTING_AGENCY_A",
+    "agency_is_contractor": false,
+    "as_of_month": "2026-06",
+    "canonical_project_id": "SYN-CUF-0022",
+    "location": "SYNTHETIC_STATE_10",
+    "ministry": "SYNTHETIC_MINISTRY",
+    "project_name": "Synthetic CUF Demonstration Project 0022",
+    "project_status": "SYNTHETIC_ACTIVE",
+    "scenario_id": "MULTI_PRESSURE_PROJECT",
+    "sector": "RAILWAYS"
+  },
+  "implementation_watch": {
+    "as_of": "2026-06-01",
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "data_quality_notes": [],
+    "families": [
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": -58.0
+          },
+          {
+            "code": "HIGH_REQUIRED_FUTURE_PACE",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 14.5
+          }
+        ],
+        "family": "EXECUTION",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+            "data_quality_state": "SUPPORTED",
+            "family": "EXECUTION",
+            "plain_language_explanation": "Physical progress is 58.0 percentage points behind the scheduled plan.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "actual_physical_progress - scheduled_physical_progress",
+              "normalized_value": -58.0,
+              "note": "",
+              "raw_values": {
+                "actual": 42.0,
+                "scheduled": 100.0,
+                "threshold_pp": -10.0
+              },
+              "threshold_or_policy": -10.0
+            },
+            "unit": "percentage_points",
+            "value": -58.0
+          },
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "HIGH_REQUIRED_FUTURE_PACE",
+            "data_quality_state": "SUPPORTED",
+            "family": "EXECUTION",
+            "plain_language_explanation": "The project requires 14.50 percentage points of physical progress per remaining month.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "HIGH",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "existing compact-v2.1-calendar-safe required_future_velocity; threshold from policy",
+              "normalized_value": 14.5,
+              "note": "",
+              "raw_values": {
+                "required_future_velocity": 14.5,
+                "threshold": 5.0
+              },
+              "threshold_or_policy": 5.0
+            },
+            "unit": null,
+            "value": 14.5
+          }
+        ],
+        "status": "DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": -75.0
+          },
+          {
+            "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": -17.0
+          }
+        ],
+        "family": "FINANCIAL",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+            "data_quality_state": "SUPPORTED",
+            "family": "FINANCIAL",
+            "plain_language_explanation": "Financial progress is 75.0 percentage points behind the compatible scheduled financial plan.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "actual_financial_progress - scheduled_financial_progress",
+              "normalized_value": -75.0,
+              "note": "",
+              "raw_values": {
+                "actual": 25.0,
+                "scheduled": 100.0,
+                "threshold_pp": -10.0
+              },
+              "threshold_or_policy": -10.0
+            },
+            "unit": "percentage_points",
+            "value": -75.0
+          },
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+            "data_quality_state": "SUPPORTED",
+            "family": "FINANCIAL",
+            "plain_language_explanation": "Financial and physical progress differ by 17.0 percentage points; this is an attention signal, not a finding of cause or wrongdoing.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "actual_financial_progress - actual_physical_progress",
+              "normalized_value": -17.0,
+              "note": "",
+              "raw_values": {
+                "absolute_threshold_pp": 15.0,
+                "financial": 25.0,
+                "physical": 42.0
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": "percentage_points",
+            "value": -17.0
+          }
+        ],
+        "status": "DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "MULTIPLE_MILESTONES_OVERDUE",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 2
+          },
+          {
+            "code": "SEVERE_MILESTONE_SLIPPAGE",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 182
+          }
+        ],
+        "family": "MILESTONE",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "MULTIPLE_MILESTONES_OVERDUE",
+            "data_quality_state": "SUPPORTED",
+            "family": "MILESTONE",
+            "plain_language_explanation": "2 applicable milestones are overdue or were completed late.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "HIGH",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "count(applicable overdue or completed-late milestones)",
+              "normalized_value": 2,
+              "note": "",
+              "raw_values": {
+                "applicable": 2,
+                "delays": [
+                  182,
+                  182
+                ]
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 2
+          },
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "SEVERE_MILESTONE_SLIPPAGE",
+            "data_quality_state": "SUPPORTED",
+            "family": "MILESTONE",
+            "plain_language_explanation": "The largest observed milestone delay is 182 days.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "HIGH",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "max(milestone delay days)",
+              "normalized_value": 182,
+              "note": "",
+              "raw_values": {
+                "applicable": 2,
+                "delays": [
+                  182,
+                  182
+                ]
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": "days",
+            "value": 182
+          }
+        ],
+        "status": "DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "LAND_ACQUISITION_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 1.0
+          },
+          {
+            "code": "HIGH_LAND_REMAINING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 35.0
+          },
+          {
+            "code": "LAND_DEADLINE_CONFLICT",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 1.0
+          }
+        ],
+        "family": "LAND",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "LAND_ACQUISITION_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "LAND",
+            "plain_language_explanation": "The structured source reports that land acquisition remains incomplete.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+              "normalized_value": true,
+              "note": "",
+              "raw_values": {
+                "acquisition_complete": false,
+                "remaining_pct": 35.0
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 1.0
+          },
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "HIGH_LAND_REMAINING",
+            "data_quality_state": "SUPPORTED",
+            "family": "LAND",
+            "plain_language_explanation": "35.0% of the required land remains to be acquired.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "HIGH",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "100 * (required - acquired) / required, or source-confirmed remaining_pct",
+              "normalized_value": 35.0,
+              "note": "",
+              "raw_values": {
+                "acquired": 65.0,
+                "reported_remaining_pct": 35.0,
+                "required": 100.0
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 35.0
+          },
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "LAND_DEADLINE_CONFLICT",
+            "data_quality_state": "SUPPORTED",
+            "family": "LAND",
+            "plain_language_explanation": "The reported expected land-completion date is later than the relevant scheduled milestone date.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "HIGH",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "pending and expected land completion > relevant due date",
+              "normalized_value": true,
+              "note": "",
+              "raw_values": {
+                "expected_completion_date": "2026-05-01",
+                "relevant_due": "2025-12-01"
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 1.0
+          }
+        ],
+        "status": "DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "ROW_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 1.0
+          }
+        ],
+        "family": "ROW",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "ROW_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "ROW",
+            "plain_language_explanation": "The structured source reports right-of-way work as pending.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "explicit pending status, or confirmed ROW availability below 100%",
+              "normalized_value": true,
+              "note": "",
+              "raw_values": {
+                "availability_pct": 70.0,
+                "pending": true
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 1.0
+          }
+        ],
+        "status": "DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "MULTIPLE_CLEARANCES_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 2
+          },
+          {
+            "code": "CRITICAL_CLEARANCE_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 1.0
+          }
+        ],
+        "family": "CLEARANCE",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "MULTIPLE_CLEARANCES_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "CLEARANCE",
+            "plain_language_explanation": "2 required clearances remain pending.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "HIGH",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "count(status=PENDING and applicable)",
+              "normalized_value": 2,
+              "note": "",
+              "raw_values": {
+                "categories": [
+                  "FOREST",
+                  "ENVIRONMENTAL"
+                ]
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 2
+          },
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "CRITICAL_CLEARANCE_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "CLEARANCE",
+            "plain_language_explanation": "A pending clearance belongs to a category listed in the versioned critical-clearance policy.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "HIGH",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "pending category in versioned critical-category policy",
+              "normalized_value": true,
+              "note": "",
+              "raw_values": {
+                "critical_categories": [
+                  "CRZ",
+                  "DEFENCE",
+                  "ENVIRONMENTAL",
+                  "FOREST"
+                ],
+                "pending_categories": [
+                  "FOREST",
+                  "ENVIRONMENTAL"
+                ]
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 1.0
+          }
+        ],
+        "status": "DETECTED"
+      },
+      {
+        "availability": "AVAILABLE",
+        "evidence": [
+          {
+            "code": "TENDER_AWARD_PENDING",
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "value": 1.0
+          }
+        ],
+        "family": "PROCUREMENT",
+        "limitations": [],
+        "signals": [
+          {
+            "as_of": "2026-06-01",
+            "availability": "AVAILABLE",
+            "causal_claim": false,
+            "code": "TENDER_AWARD_PENDING",
+            "data_quality_state": "SUPPORTED",
+            "family": "PROCUREMENT",
+            "plain_language_explanation": "A published tender has no reported award date.",
+            "policy_version": "implementation-watch-v1.0",
+            "severity": "MEDIUM",
+            "source_available": true,
+            "source_refs": [
+              "SYN-SRC-SYN-CUF-0022"
+            ],
+            "status": "DETECTED",
+            "technical_explanation": {
+              "availability": "AVAILABLE",
+              "formula": "official CUF has_active_tenders flag",
+              "normalized_value": true,
+              "note": "",
+              "raw_values": {
+                "has_active_tenders": true
+              },
+              "threshold_or_policy": "see formula"
+            },
+            "unit": null,
+            "value": 1.0
+          }
+        ],
+        "status": "DETECTED"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "REPORTING",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      },
+      {
+        "availability": "UNKNOWN",
+        "evidence": [],
+        "family": "DATA_QUALITY",
+        "limitations": [
+          "No governed inputs were evaluated for this family."
+        ],
+        "signals": [],
+        "status": "NOT_AVAILABLE"
+      }
+    ],
+    "policy_version": "implementation-watch-v1.0",
+    "reason_codes": [
+      "PHYSICAL_PROGRESS_BEHIND_PLAN",
+      "HIGH_REQUIRED_FUTURE_PACE",
+      "FINANCIAL_PROGRESS_BEHIND_PLAN",
+      "FINANCIAL_PHYSICAL_DIVERGENCE",
+      "MULTIPLE_MILESTONES_OVERDUE",
+      "SEVERE_MILESTONE_SLIPPAGE",
+      "LAND_ACQUISITION_PENDING",
+      "HIGH_LAND_REMAINING",
+      "LAND_DEADLINE_CONFLICT",
+      "ROW_PENDING",
+      "MULTIPLE_CLEARANCES_PENDING",
+      "CRITICAL_CLEARANCE_PENDING",
+      "TENDER_AWARD_PENDING"
+    ],
+    "signals": [
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "PHYSICAL_PROGRESS_BEHIND_PLAN",
+        "data_quality_state": "SUPPORTED",
+        "family": "EXECUTION",
+        "plain_language_explanation": "Physical progress is 58.0 percentage points behind the scheduled plan.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "actual_physical_progress - scheduled_physical_progress",
+          "normalized_value": -58.0,
+          "note": "",
+          "raw_values": {
+            "actual": 42.0,
+            "scheduled": 100.0,
+            "threshold_pp": -10.0
+          },
+          "threshold_or_policy": -10.0
+        },
+        "unit": "percentage_points",
+        "value": -58.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "HIGH_REQUIRED_FUTURE_PACE",
+        "data_quality_state": "SUPPORTED",
+        "family": "EXECUTION",
+        "plain_language_explanation": "The project requires 14.50 percentage points of physical progress per remaining month.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "HIGH",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "existing compact-v2.1-calendar-safe required_future_velocity; threshold from policy",
+          "normalized_value": 14.5,
+          "note": "",
+          "raw_values": {
+            "required_future_velocity": 14.5,
+            "threshold": 5.0
+          },
+          "threshold_or_policy": 5.0
+        },
+        "unit": null,
+        "value": 14.5
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "FINANCIAL_PROGRESS_BEHIND_PLAN",
+        "data_quality_state": "SUPPORTED",
+        "family": "FINANCIAL",
+        "plain_language_explanation": "Financial progress is 75.0 percentage points behind the compatible scheduled financial plan.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "actual_financial_progress - scheduled_financial_progress",
+          "normalized_value": -75.0,
+          "note": "",
+          "raw_values": {
+            "actual": 25.0,
+            "scheduled": 100.0,
+            "threshold_pp": -10.0
+          },
+          "threshold_or_policy": -10.0
+        },
+        "unit": "percentage_points",
+        "value": -75.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "FINANCIAL_PHYSICAL_DIVERGENCE",
+        "data_quality_state": "SUPPORTED",
+        "family": "FINANCIAL",
+        "plain_language_explanation": "Financial and physical progress differ by 17.0 percentage points; this is an attention signal, not a finding of cause or wrongdoing.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "actual_financial_progress - actual_physical_progress",
+          "normalized_value": -17.0,
+          "note": "",
+          "raw_values": {
+            "absolute_threshold_pp": 15.0,
+            "financial": 25.0,
+            "physical": 42.0
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": "percentage_points",
+        "value": -17.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "MULTIPLE_MILESTONES_OVERDUE",
+        "data_quality_state": "SUPPORTED",
+        "family": "MILESTONE",
+        "plain_language_explanation": "2 applicable milestones are overdue or were completed late.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "HIGH",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "count(applicable overdue or completed-late milestones)",
+          "normalized_value": 2,
+          "note": "",
+          "raw_values": {
+            "applicable": 2,
+            "delays": [
+              182,
+              182
+            ]
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 2
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "SEVERE_MILESTONE_SLIPPAGE",
+        "data_quality_state": "SUPPORTED",
+        "family": "MILESTONE",
+        "plain_language_explanation": "The largest observed milestone delay is 182 days.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "HIGH",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "max(milestone delay days)",
+          "normalized_value": 182,
+          "note": "",
+          "raw_values": {
+            "applicable": 2,
+            "delays": [
+              182,
+              182
+            ]
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": "days",
+        "value": 182
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "LAND_ACQUISITION_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "LAND",
+        "plain_language_explanation": "The structured source reports that land acquisition remains incomplete.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "explicit incomplete status or confirmed remaining_pct > 0",
+          "normalized_value": true,
+          "note": "",
+          "raw_values": {
+            "acquisition_complete": false,
+            "remaining_pct": 35.0
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 1.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "HIGH_LAND_REMAINING",
+        "data_quality_state": "SUPPORTED",
+        "family": "LAND",
+        "plain_language_explanation": "35.0% of the required land remains to be acquired.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "HIGH",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "100 * (required - acquired) / required, or source-confirmed remaining_pct",
+          "normalized_value": 35.0,
+          "note": "",
+          "raw_values": {
+            "acquired": 65.0,
+            "reported_remaining_pct": 35.0,
+            "required": 100.0
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 35.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "LAND_DEADLINE_CONFLICT",
+        "data_quality_state": "SUPPORTED",
+        "family": "LAND",
+        "plain_language_explanation": "The reported expected land-completion date is later than the relevant scheduled milestone date.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "HIGH",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "pending and expected land completion > relevant due date",
+          "normalized_value": true,
+          "note": "",
+          "raw_values": {
+            "expected_completion_date": "2026-05-01",
+            "relevant_due": "2025-12-01"
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 1.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "ROW_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "ROW",
+        "plain_language_explanation": "The structured source reports right-of-way work as pending.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "explicit pending status, or confirmed ROW availability below 100%",
+          "normalized_value": true,
+          "note": "",
+          "raw_values": {
+            "availability_pct": 70.0,
+            "pending": true
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 1.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "MULTIPLE_CLEARANCES_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "CLEARANCE",
+        "plain_language_explanation": "2 required clearances remain pending.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "HIGH",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "count(status=PENDING and applicable)",
+          "normalized_value": 2,
+          "note": "",
+          "raw_values": {
+            "categories": [
+              "FOREST",
+              "ENVIRONMENTAL"
+            ]
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 2
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "CRITICAL_CLEARANCE_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "CLEARANCE",
+        "plain_language_explanation": "A pending clearance belongs to a category listed in the versioned critical-clearance policy.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "HIGH",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "pending category in versioned critical-category policy",
+          "normalized_value": true,
+          "note": "",
+          "raw_values": {
+            "critical_categories": [
+              "CRZ",
+              "DEFENCE",
+              "ENVIRONMENTAL",
+              "FOREST"
+            ],
+            "pending_categories": [
+              "FOREST",
+              "ENVIRONMENTAL"
+            ]
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 1.0
+      },
+      {
+        "as_of": "2026-06-01",
+        "availability": "AVAILABLE",
+        "causal_claim": false,
+        "code": "TENDER_AWARD_PENDING",
+        "data_quality_state": "SUPPORTED",
+        "family": "PROCUREMENT",
+        "plain_language_explanation": "A published tender has no reported award date.",
+        "policy_version": "implementation-watch-v1.0",
+        "severity": "MEDIUM",
+        "source_available": true,
+        "source_refs": [
+          "SYN-SRC-SYN-CUF-0022"
+        ],
+        "status": "DETECTED",
+        "technical_explanation": {
+          "availability": "AVAILABLE",
+          "formula": "official CUF has_active_tenders flag",
+          "normalized_value": true,
+          "note": "",
+          "raw_values": {
+            "has_active_tenders": true
+          },
+          "threshold_or_policy": "see formula"
+        },
+        "unit": null,
+        "value": 1.0
+      }
+    ],
+    "status": "ELEVATED",
+    "trend": "PERSISTENT",
+    "unavailable_families": [
+      "REPORTING",
+      "DATA_QUALITY"
+    ]
+  },
+  "mode": "SYNTHETIC_SANDBOX",
+  "officer_decision": {
+    "alert_deduplication_key": null,
+    "alert_policy_version": "alert-policy-v1",
+    "alert_status": "NOT_ELIGIBLE",
+    "as_of_month": "2026-06",
+    "canonical_project_id": "SYN-CUF-0022",
+    "decision_policy_version": "officer-decision-v1",
+    "last_valid_update": "2026-06",
+    "prediction_status": "WITHHELD",
+    "priority": "HIGH",
+    "reason_codes": [
+      "IMPLEMENTATION_PRESSURE_SIGNAL"
+    ],
+    "recommended_action": "Review the observable implementation-pressure signals and their source evidence",
+    "recommended_actions": [
+      {
+        "action": "Review the current deterministic schedule-pressure evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "HIGH_REQUIRED_FUTURE_PACE",
+          "PHYSICAL_PROGRESS_BEHIND_PLAN"
+        ]
+      },
+      {
+        "action": "Review overdue milestone evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "MULTIPLE_MILESTONES_OVERDUE",
+          "SEVERE_MILESTONE_SLIPPAGE"
+        ]
+      },
+      {
+        "action": "Check the structured land-acquisition evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "HIGH_LAND_REMAINING",
+          "LAND_ACQUISITION_PENDING",
+          "LAND_DEADLINE_CONFLICT"
+        ]
+      },
+      {
+        "action": "Check pending clearance status and evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "CRITICAL_CLEARANCE_PENDING",
+          "MULTIPLE_CLEARANCES_PENDING"
+        ]
+      },
+      {
+        "action": "Check the structured right-of-way evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "ROW_PENDING"
+        ]
+      },
+      {
+        "action": "Review the structured tender-cycle evidence.",
+        "action_type": "REVIEW_OR_VERIFY",
+        "basis_codes": [
+          "TENDER_AWARD_PENDING"
+        ]
+      }
+    ],
+    "reliability": null,
+    "review_state": "REVIEW_RECOMMENDED",
+    "target_family": null
+  },
+  "peer_benchmark": {
+    "as_of_month": "2026-06",
+    "benchmark_status": "BENCHMARK_SYNTHETIC",
+    "canonical_project_id": "SYN-CUF-0022",
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "limitations": [],
+    "metrics": [
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "original_cost",
+        "peer_count": 82,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 3001.4666,
+        "peer_median": 2945.74,
+        "peer_p25": 2068.46,
+        "peer_p75": 3940.7625,
+        "percentile": 82.93,
+        "project_value": 4410.05
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "current_cost",
+        "peer_count": 82,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 3158.4151,
+        "peer_median": 3031.585,
+        "peer_p25": 2227.94,
+        "peer_p75": 4136.6725,
+        "percentile": 95.12,
+        "project_value": 5203.86
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": "MORE_ADVERSE_THAN_MOST_PEERS",
+        "metric": "cost_revision_pct",
+        "peer_count": 82,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 5.3652,
+        "peer_median": 4.5015,
+        "peer_p25": 2.0741,
+        "peer_p75": 6.6958,
+        "percentile": 93.9,
+        "project_value": 18.000022675479855
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "cumulative_expenditure_ratio",
+        "peer_count": 82,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 0.9218,
+        "peer_median": 0.9845,
+        "peer_p25": 0.966,
+        "peer_p75": 1.0,
+        "percentile": 3.66,
+        "project_value": 0.24999903917476646
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "physical_progress",
+        "peer_count": 80,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 89.4013,
+        "peer_median": 98.8,
+        "peer_p25": 82.0,
+        "peer_p75": 100.0,
+        "percentile": 1.88,
+        "project_value": 42.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "NEUTRAL",
+        "interpretation": null,
+        "metric": "project_age_months",
+        "peer_count": 82,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 41.4756,
+        "peer_median": 42.0,
+        "peer_p25": 34.25,
+        "peer_p75": 48.0,
+        "percentile": 33.54,
+        "project_value": 37.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "remaining_schedule_months",
+        "peer_count": 82,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 0.3902,
+        "peer_median": 0.0,
+        "peer_p25": 0.0,
+        "peer_p75": 0.0,
+        "percentile": 95.12,
+        "project_value": 4.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": "MORE_ADVERSE_THAN_MOST_PEERS",
+        "metric": "required_future_velocity",
+        "peer_count": 80,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 6.8581,
+        "peer_median": 1.2,
+        "peer_p25": 0.0,
+        "peer_p75": 11.25,
+        "percentile": 81.88,
+        "project_value": 14.5
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "LOWER_WORSE",
+        "interpretation": null,
+        "metric": "progress_vs_elapsed_gap",
+        "peer_count": 0,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "CONTEXT_DEPENDENT",
+        "interpretation": null,
+        "metric": "expenditure_velocity",
+        "peer_count": 82,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": -125.178,
+        "peer_median": 50.275,
+        "peer_p25": 5.2575,
+        "peer_p75": 110.4175,
+        "percentile": 2.44,
+        "project_value": -3621.8900000000003
+      },
+      {
+        "benchmark_status": "BENCHMARK_SYNTHETIC",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": "MORE_ADVERSE_THAN_MOST_PEERS",
+        "metric": "watch_signal_count",
+        "peer_count": 82,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": 2.122,
+        "peer_median": 2.0,
+        "peer_p25": 1.0,
+        "peer_p75": 3.0,
+        "percentile": 98.17,
+        "project_value": 13.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_INSUFFICIENT_PEERS",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "milestone_slippage_days",
+        "peer_count": 13,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": 182.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_INSUFFICIENT_PEERS",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "land_remaining_pct",
+        "peer_count": 11,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": 35.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_INSUFFICIENT_PEERS",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "pending_clearances",
+        "peer_count": 7,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": 2.0
+      },
+      {
+        "benchmark_status": "BENCHMARK_FIELD_UNAVAILABLE",
+        "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+        "directionality": "HIGHER_WORSE",
+        "interpretation": null,
+        "metric": "tender_cycle_days",
+        "peer_count": 3,
+        "peer_group_definition": "sector=RAILWAYS + cost_band=1000_TO_5000_CR + lifecycle_band=LATE",
+        "peer_mean": null,
+        "peer_median": null,
+        "peer_p25": null,
+        "peer_p75": null,
+        "percentile": null,
+        "project_value": null
+      }
+    ],
+    "mode": "SYNTHETIC_SANDBOX",
+    "peer_count": 82,
+    "peer_group": {
+      "cost_band": "1000_TO_5000_CR",
+      "lifecycle_band": "LATE",
+      "sector": "RAILWAYS"
+    },
+    "peer_group_level": 1,
+    "policy_version": "peer-benchmark-v1.0"
+  },
+  "provenance": {
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "dataset_version": "synthetic-cuf-sandbox-v1.0",
+    "official_evidence": false,
+    "scenario_id": "MULTI_PRESSURE_PROJECT"
+  },
+  "reliability": {
+    "data_quality": "USABLE",
+    "history_sufficiency": "SYNTHETIC_EVIDENCE_COMPLETE",
+    "prediction_reliability": "NOT_APPLICABLE",
+    "source_reliability": "SYNTHETIC_EVIDENCE_COMPLETE"
+  },
+  "risk_trend": {
+    "basis": [
+      "IMPLEMENTATION_WATCH_HISTORY"
+    ],
+    "prediction_trajectory_used": false,
+    "state": "STABLE"
+  },
+  "schedule_intelligence": {
+    "deterministic_schedule_pressure": {
+      "reason_codes": [
+        "PHYSICAL_PROGRESS_BEHIND_PLAN",
+        "HIGH_REQUIRED_FUTURE_PACE",
+        "MULTIPLE_MILESTONES_OVERDUE",
+        "SEVERE_MILESTONE_SLIPPAGE"
+      ],
+      "status": "ELEVATED"
+    },
+    "prediction_status": "WITHHELD",
+    "probability": null,
+    "reason_code": "INSUFFICIENT_TEMPORAL_VALIDATION",
+    "research_status": "SCHEDULE_PREDICTION_FINAL_V3_PARTIAL",
+    "risk_band": null
+  }
+}

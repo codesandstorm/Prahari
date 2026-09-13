@@ -1,0 +1,41 @@
+{
+  "canonical_real_hashes_unchanged": {
+    "project_master.csv": "04fd140a4a6c047781b351297e62f576c0bee9dc0024fcef36116c10c829e6b3",
+    "project_month.csv": "75cac968e7f62fffdb55b5fd7376ccbc402836a0ea139a87ddf93c4815e34c5d",
+    "report_month.csv": "d4aa35a62290b57ebf4628e7489f08d0b016becbb08d27d885e701870a963d9b"
+  },
+  "samples": {
+    "real_current.json": "043fc1d60c06f83a544b08acd84ef1858d3b9f47ba0a5740c7b00636f3239a4d",
+    "real_data_verification_required.json": "a0de35136d4805c1427a11c48945634627e605b67b300aafbabe504c0c31b724",
+    "synthetic_clear.json": "4f4eeadf50f3f236a9dda832f4d01045b56b442306058607fd260eca38e9bdf6",
+    "synthetic_data_insufficient.json": "8a579be2b18f87dcb9fb7dd9478338a725864c22544ee34368c96d343f8035f9",
+    "synthetic_elevated.json": "8f14d319e0ff4f5f609bfc73c38730a1ed6a2f09fecedc9f21c1bb7d7e037bdb",
+    "synthetic_watch.json": "9c27905a5300e3f778ea351b9c9a29267271949b2fbb6b1a9e4400d643e1abbd"
+  },
+  "status": "PASS",
+  "synthetic_metadata": {
+    "curated_project_count": 120,
+    "data_origin": "SYNTHETIC_CUF_PROTOTYPE",
+    "dataset_fingerprint_sha256": "3cfa9cf2058bebfee0daf12348840ca1fb9c7fc8d756f3224a3b7a1c693bf3d6",
+    "files": {
+      "clearances.csv": "bee3d0cb06563fdfb8ce9211bf8604c0d8186de2822d0aa351c2805cb84a9efd",
+      "funding.csv": "57d35553faa7d45fb83ae821b8ccae3ebe2d5425d041276105ec738fec3310fe",
+      "invalid_validation_fixtures.json": "79f1433e0970863b65bd4cf64e58dc5a4c5c59accdabf0ef09b1553d570b7a9b",
+      "land.csv": "465c5cb13f25a1e5f73f833d5e14efe4b56f62cd1e96af72727ff0aac0a76c19",
+      "milestones.csv": "e9845d3ff5df63d2cbf736f5faf58fb0ded23110dd685cf59cbca920d3fd43ed",
+      "project_master.csv": "4e3e75a5dc8eed79f5fc514ad07cfd0add7b86e4f4010350e88288003dc9332d",
+      "project_month.csv": "59bee29b76eaa633466f31605a813c2dc8ed4fe028d2482251e5c74e14972100",
+      "row.csv": "b44a81fcfa201412844207111493094593d800788cf50602d32e1b73d058aeef",
+      "scenario_catalog.csv": "1359a318221bf87543836eac734d047ca398a0e95e5b61d2d2fedc13b8ff2a21",
+      "tenders.csv": "95fb2219dbfd263d012ae3f1e31be7dbe9929046e71c5871847e5607545d5434"
+    },
+    "generated_at": "2026-09-13T00:00:00Z",
+    "generator_version": "synthetic-cuf-generator-v1.0",
+    "project_count": 1000,
+    "project_month_count": 24000,
+    "seed": 26103,
+    "synthetic_dataset_version": "synthetic-cuf-sandbox-v1.0"
+  },
+  "synthetic_ml_disclaimer": "No synthetic ML metrics or production artifacts were created.",
+  "synthetic_ml_experiment": "NOT_IMPLEMENTED"
+}
