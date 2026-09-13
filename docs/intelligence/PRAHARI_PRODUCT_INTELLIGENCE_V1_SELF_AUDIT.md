@@ -6,6 +6,8 @@
 
 Critical findings: none. High findings: none. During implementation, mode/origin mismatch checks, subject exclusion, historical as-of filtering, minimum peer support, null withheld outputs, canonical hash checks, and invalid-fixture isolation were added and tested.
 
+Resolved before acceptance: the initial attention-trend rank treated `DATA_INSUFFICIENT` as worse than `ELEVATED`. That was removed because loss of evidence is not project deterioration; the governed output is now `INSUFFICIENT_HISTORY` and has a regression test.
+
 SEVERITY: Medium  
 FILE: `data/processed/longitudinal_2023_07_2026_06_mixed/project_master.csv`  
 FUNCTION / LINE: sector field coverage  

@@ -2185,7 +2185,7 @@
       "IMPLEMENTATION_WATCH_HISTORY"
     ],
     "prediction_trajectory_used": false,
-    "state": "WORSENING"
+    "state": "INSUFFICIENT_HISTORY"
   },
   "schedule_intelligence": {
     "deterministic_schedule_pressure": {

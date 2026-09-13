@@ -108,6 +108,7 @@ def test_synthetic_intelligence_is_frontend_ready_and_never_official():
     assert data['cost_intelligence']['prediction_status']=='WITHHELD' and data['cost_intelligence']['probability'] is None
     assert all(x['data_origin']==DATA_ORIGIN and x['table']=='SYNTHETIC_CUF_FIXTURE' for x in data['evidence_summary'])
     assert data['assistant_context']['constraints'] and data['peer_benchmark']['mode']=='SYNTHETIC_SANDBOX'
+    assert synthetic_project_intelligence('SYN-CUF-0023').risk_trend['state']=='INSUFFICIENT_HISTORY'
 
 
 def test_no_synthetic_ids_enter_canonical_real_artifacts():

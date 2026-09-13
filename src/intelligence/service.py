@@ -12,10 +12,11 @@ from .contracts import IntelligenceMode, ProjectIntelligence
 def attention_trend(current_watch: dict, previous_watch: dict | None = None, trust_changed: bool | None = None) -> dict:
     declared=current_watch.get("trend")
     mapping={"WORSENING":"WORSENING","IMPROVING":"IMPROVING","RESOLVED":"IMPROVING","PERSISTENT":"STABLE"}
-    if declared in mapping: state=mapping[declared]
+    if current_watch.get("status")=="DATA_INSUFFICIENT" or (previous_watch and previous_watch.get("status")=="DATA_INSUFFICIENT"): state="INSUFFICIENT_HISTORY"
+    elif declared in mapping: state=mapping[declared]
     elif previous_watch is None: state="INSUFFICIENT_HISTORY"
     else:
-        rank={"CLEAR":0,"WATCH":1,"ELEVATED":2,"DATA_INSUFFICIENT":3}
+        rank={"CLEAR":0,"WATCH":1,"ELEVATED":2}
         before,after=rank.get(previous_watch.get("status")),rank.get(current_watch.get("status"))
         state="INSUFFICIENT_HISTORY" if before is None or after is None else "WORSENING" if after>before else "IMPROVING" if after<before else "STABLE"
     if trust_changed and state=="STABLE": state="MIXED"
