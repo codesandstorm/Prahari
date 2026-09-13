@@ -1,0 +1,53 @@
+{
+  "cost_prediction_status": "WITHHELD",
+  "evaluation_context": "BACKEND_WORKFLOW_DEMO_FIXTURE",
+  "official_project_evidence": false,
+  "predictions_used": false,
+  "real_mode_workflow": {
+    "alert_id": "ALT-1d23f89407054a15e0f34eac",
+    "states": [
+      "NEW",
+      "ACKNOWLEDGED",
+      "IN_REVIEW",
+      "MONITORING",
+      "RESOLVED"
+    ],
+    "timeline": [
+      "ALERT_CREATED",
+      "ALERT_ACKNOWLEDGED",
+      "REVIEW_STARTED",
+      "STATUS_CHANGED",
+      "ALERT_RESOLVED"
+    ]
+  },
+  "recovery_state": "RESOLVED",
+  "reopen_state": "REOPENED",
+  "schedule_prediction_status": "WITHHELD",
+  "synthetic_data_insufficient": {
+    "alert_ids": [
+      "ALT-fa9deac61db31e86742b6f54"
+    ],
+    "changed": true,
+    "created": true,
+    "eligible": true,
+    "explanation": "This alert was opened because the governed Officer Decision requires verification of project data or source evidence."
+  },
+  "synthetic_elevated": {
+    "alert_ids": [
+      "ALT-283b1ac5e9902e904fcd55ed"
+    ],
+    "changed": true,
+    "created": true,
+    "eligible": true,
+    "explanation": "This alert was opened because Implementation Watch is ELEVATED and Officer Decision is REVIEW_RECOMMENDED."
+  },
+  "synthetic_watch": {
+    "alert_ids": [
+      "ALT-2d01071a9cd4178be5e46b1f"
+    ],
+    "changed": true,
+    "created": true,
+    "eligible": true,
+    "explanation": "This alert was opened because Implementation Watch is WATCH and Officer Decision is REVIEW_RECOMMENDED."
+  }
+}
