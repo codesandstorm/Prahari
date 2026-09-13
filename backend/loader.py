@@ -95,6 +95,7 @@ def load_canonical_dataset(db: Session, data_dir: Path, manifest_path: Path | No
             db.add(item)
         for row in project_rows:
             pid=row["canonical_project_id"].strip(); item=db.get(Project,pid) or Project(canonical_project_id=pid)
+            item.data_origin="HISTORICAL_FLASH_REPORT"
             for target, source in (("project_code","project_code"),("canonical_name","canonical_name"),("agency","agency"),("ministry","ministry"),("sector","sector"),("state","state"),("identity_method","identity_method"),("identity_status","identity_status")):
                 setattr(item,target,_none(row.get(source)) or ("UNKNOWN" if target in {"canonical_name","identity_method","identity_status"} else None))
             db.add(item)

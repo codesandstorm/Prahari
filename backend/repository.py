@@ -29,11 +29,13 @@ class ProjectRepository:
     def all_sources(self):
         return list(self.db.scalars(select(SourceReport).order_by(SourceReport.reporting_month)))
 
-    def all_projects(self):
-        return list(self.db.scalars(select(Project).order_by(Project.canonical_project_id)))
+    def all_projects(self, data_origin="HISTORICAL_FLASH_REPORT"):
+        q=select(Project)
+        if data_origin:q=q.where(Project.data_origin==data_origin)
+        return list(self.db.scalars(q.order_by(Project.canonical_project_id)))
 
     def list(self, page: int, page_size: int, search: str | None, sector: str | None, ministry: str | None, sort: str, order: str):
-        q = select(Project)
+        q = select(Project).where(Project.data_origin=="HISTORICAL_FLASH_REPORT")
         if search: q = q.where(Project.canonical_name.ilike(f"%{search}%"))
         if sector: q = q.where(Project.sector == sector)
         if ministry: q = q.where(Project.ministry == ministry)
