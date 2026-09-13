@@ -26,7 +26,7 @@ def _build_items(db):
     source_by_month={source.reporting_month:source for source in sources}
     for project in projects:
         project_history=histories[project.canonical_project_id];trust,_,view,release,eligibility=database_trust(db,repo,project,history_override=project_history,sources_override=sources);stored=predictions.get(project.canonical_project_id);prediction=prediction_dict(repo,stored) if stored else None;latest=project_history[-1] if project_history else None;watch=database_implementation_watch(repo,project,trust,history_override=project_history,source_override=source_by_month.get(latest.reporting_month) if latest else None);decision=decide_review(trust=trust,eligibility=eligibility,prediction=prediction,implementation_watch=watch.model_dump(mode='json'))
-        if decision.review_state!='NO_REVIEW_SIGNAL':items.append(decision.to_dict()|{'project_name':project.canonical_name,'data_trust':view,'model_release':release.to_dict(),'prediction_eligibility':eligibility.to_dict(),'implementation_watch':watch.model_dump(mode='json'),'source_provenance_link':None})
+        if decision.review_state!='NO_REVIEW_SIGNAL':items.append(decision.to_dict()|{'project_name':project.canonical_name,'data_trust':view,'model_release':release.to_dict(),'prediction_eligibility':eligibility.to_dict(),'implementation_watch':watch.model_dump(mode='json'),'source_provenance_link':None,'project_intelligence_endpoint':f'/api/v1/projects/{project.canonical_project_id}/intelligence','prioritization_basis':['OFFICER_DECISION','IMPLEMENTATION_WATCH','DATA_VERIFICATION','DETERMINISTIC_SCHEDULE_PRESSURE']})
     return items
 
 def review_queue(db,page=1,page_size=25,review_state=None,reason_code=None,model_release_state=None):

@@ -10,6 +10,8 @@ from .data_trust import database_trust,guard_prediction_output
 from .decision_service import review_queue as build_review_queue
 from src.decision.governance import decide_review
 from .implementation_watch import database_implementation_watch
+from .product_intelligence import intelligence_dashboard_summary, list_sandbox_projects, real_project_intelligence, synthetic_project_intelligence
+from src.intelligence.contracts import ProjectIntelligence
 
 router=APIRouter()
 
@@ -59,6 +61,29 @@ def history(project_id:str,db:Session=Depends(get_db)):
     return {"canonical_project_id":project_id,"observations":[_snapshot(db,x) for x in repo.history(project_id)],"unavailable_months":[{"reporting_month":x.reporting_month,"source_id":x.source_id,"coverage_class":x.coverage_class,"sha256":x.sha256,"schema_family":x.schema_family} for x in repo.unavailable_months()],"interpolated":False}
 
 
+@router.get("/projects/{project_id}/intelligence",response_model=ProjectIntelligence)
+def project_intelligence(project_id:str,db:Session=Depends(get_db)):
+    try:return real_project_intelligence(db,project_id)
+    except LookupError:raise HTTPException(404,detail={"code":"PROJECT_NOT_FOUND","message":"Project not found"})
+
+
+@router.get("/projects/{project_id}/benchmark")
+def project_benchmark(project_id:str,db:Session=Depends(get_db)):
+    try:return real_project_intelligence(db,project_id).peer_benchmark
+    except LookupError:raise HTTPException(404,detail={"code":"PROJECT_NOT_FOUND","message":"Project not found"})
+
+
+@router.get("/sandbox/projects")
+def sandbox_projects(page:int=Query(1,ge=1),page_size:int=Query(25,ge=1,le=100),watch_status:str|None=Query(None,pattern="^(CLEAR|WATCH|ELEVATED|DATA_INSUFFICIENT)$")):
+    return list_sandbox_projects(page,page_size,watch_status)
+
+
+@router.get("/sandbox/projects/{project_id}/intelligence",response_model=ProjectIntelligence)
+def sandbox_project_intelligence(project_id:str):
+    try:return synthetic_project_intelligence(project_id)
+    except LookupError:raise HTTPException(404,detail={"code":"SYNTHETIC_PROJECT_NOT_FOUND","message":"Synthetic sandbox project not found"})
+
+
 @router.get("/projects/{project_id}/prediction",response_model=PredictionOut|None)
 def prediction(project_id:str,db:Session=Depends(get_db)):
     repo=ProjectRepository(db)
@@ -70,6 +95,11 @@ def prediction(project_id:str,db:Session=Depends(get_db)):
 @router.get("/dashboard/summary")
 def dashboard(db:Session=Depends(get_db)):
     return {"projects":db.scalar(select(func.count()).select_from(Project)) or 0,"observations":db.scalar(select(func.count()).select_from(ProjectSnapshot)) or 0,"predictions":db.scalar(select(func.count()).select_from(Prediction)) or 0,"alerts":db.scalar(select(func.count()).select_from(Alert)) or 0,"note":"Predictions and alerts are independently counted."}
+
+
+@router.get("/dashboard/intelligence-summary")
+def dashboard_intelligence_summary(mode:str=Query("REAL_HISTORICAL",pattern="^(REAL_HISTORICAL|SYNTHETIC_SANDBOX)$"),db:Session=Depends(get_db)):
+    return intelligence_dashboard_summary(db,mode)
 
 
 @router.get("/review-queue",response_model=ReviewQueueOut)
