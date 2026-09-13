@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -116,10 +117,19 @@ def resolve_source(
         raise SourceRegistryError(f"Source {source_id} has no relative_path")
     root = repo_root.resolve()
     path = (root / relative).resolve()
-    try:
-        path.relative_to(root)
-    except ValueError as exc:
-        raise SourceRegistryError(f"Source path escapes repository: {relative}") from exc
+    raw_root = os.environ.get("PRAHARI_RAW_ROOT")
+    if not path.is_file() and raw_root and relative.parts[:2] == ("data", "raw"):
+        archive = Path(raw_root).resolve()
+        path = (archive / Path(*relative.parts[2:])).resolve()
+        try:
+            path.relative_to(archive)
+        except ValueError as exc:
+            raise SourceRegistryError(f"Source path escapes configured raw archive: {relative}") from exc
+    else:
+        try:
+            path.relative_to(root)
+        except ValueError as exc:
+            raise SourceRegistryError(f"Source path escapes repository: {relative}") from exc
     if not path.is_file():
         raise SourceRegistryError(f"Source file not found: {path}")
     expected = row.get("sha256", "").strip().lower()

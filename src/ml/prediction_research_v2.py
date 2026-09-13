@@ -105,17 +105,26 @@ def build_research_target(rows: list[dict[str, str]], coverage: dict[str, str], 
             if any(month not in lookup for month in future): reasons.append("FUTURE_PROJECT_OBSERVATION_MISSING")
             if len(history) < 2: reasons.append("INSUFFICIENT_HISTORY")
             elif add_month(history[-2]["reporting_month"], 1) != anchor["reporting_month"]: reasons.append("PRIOR_MONTH_GAP")
-            baseline=month_date(value(anchor,"original_target_doc_raw","reported_original_target_doc")) if target=="S1" else approved_doc(anchor)
+            original_baseline=month_date(value(anchor,"original_target_doc_raw","reported_original_target_doc"))
+            baseline=original_baseline if target=="S1" else approved_doc(anchor)
             event_month=event_date=None
             if not reasons and baseline:
+                future_rows=[lookup[month] for month in future]
+                future_originals=[month_date(value(row,"original_target_doc_raw","reported_original_target_doc")) for row in future_rows]
+                if any(item != original_baseline for item in future_originals):
+                    reasons.append("ORIGINAL_COMPLETION_BASELINE_CHANGED")
+                approved_sequence=[approved_doc(anchor),*(approved_doc(row) for row in future_rows)]
+                if any(left and right and right < left for left,right in zip(approved_sequence,approved_sequence[1:])):
+                    reasons.append("APPROVED_DATE_REVERSAL_WITHIN_HORIZON")
+            if not reasons and baseline:
                 for month in future:
-                    candidate=approved_doc(lookup[month])
+                    candidate=month_date(value(lookup[month],"revised_doc_raw","reported_revised_doc"))
                     if candidate and candidate > baseline: event_month,event_date=month,candidate; break
             event=int(event_month is not None) if not reasons else None
             change=((event_date.year-baseline.year)*12+event_date.month-baseline.month) if event_date and baseline else None
             status="ELIGIBLE" if not reasons else ("CENSORED" if any(reason.startswith("FUTURE_") for reason in reasons) else "EXCLUDED")
             item=asdict(Candidate(pid,anchor["reporting_month"],target,status,reasons[0] if reasons else "","|".join(reasons),baseline.isoformat() if baseline else None,event,event_month,event_date.isoformat() if event_date else None,change))
-            item.update(horizon_months=horizon,target_version=f"{target}-{horizon}m-v2-machine-provisional",feature_version=feature_version)
+            item.update(horizon_months=horizon,target_version=f"{target}-{horizon}m-v3-explicit-revised-machine-provisional",feature_version=feature_version)
             ledger.append(item)
             if not reasons:
                 cohort.append({"canonical_project_id":pid,"anchor_month":anchor["reporting_month"],"target":target,"horizon_months":horizon,"event":event,"event_month":event_month,**feature_builder(history)})

@@ -104,6 +104,8 @@ outputs/ml/prediction_research_v2/*_cohort.csv
 outputs/ml/prediction_research_v2/*_candidate_ledger.csv
 outputs/ml/prediction_research_v2/*_events.csv
 outputs/ml/schedule_prediction_final_v3/historical_oos_predictions.csv
+outputs/ml/schedule_prediction_final_v3/*_candidate_ledger.csv
+outputs/ml/schedule_prediction_final_v3/*_events.csv
 
 # Python environment / generated files
 .venv/

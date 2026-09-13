@@ -11,8 +11,8 @@ import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:sys.path.insert(0,str(ROOT))
 
-from src.ml.prediction_research_v2 import BASIC_LONG_HISTORY_V1, read_csv, write_csv
-from src.ml.final_prediction import COMPACT_V2
+from src.ml.prediction_research_v2 import BASIC_LONG_HISTORY_V1, build_basic_long_history, build_research_target, read_csv, restrict_feature_anchors, write_csv
+from src.ml.final_prediction import COMPACT_V2, build_compact_v2
 from src.ml.schedule_experiment_v3 import aggregate_metrics, bootstrap_metrics, lead_time, matrix, run_models
 from src.ml.temporal_experiment_v2 import RESEARCH_MODE, TARGET_VALIDATION_STATUS, require_research_authorization
 
@@ -58,7 +58,7 @@ def write_model_contract(target,cohort,features,winner,predictions,models,splits
         json_write(directory/"evaluation_summary.json",{"status":f"{target}_WITHHELD_NO_ADMITTED_CANDIDATE"})
         for name,payload in {
             "feature_manifest.json":{"version":"basic-long-history-v1","features":features,"known_at_t":True},
-            "target_contract.json":{**common,"version":f"{target}-3m-v2-machine-provisional"},
+            "target_contract.json":{**common,"version":f"{target}-3m-v3-explicit-revised-machine-provisional"},
             "training_metadata.json":{"dataset_fingerprint":dataset_fp,"cohort_fingerprint":cohort_fp,"fit_status":"NOT_FIT_AS_DEPLOYABLE_ARTIFACT"},
             "split_definition.json":splits,"calibration.json":{"status":"NOT_ADMITTED"},
             "threshold_policy.json":{"status":"NOT_ADMITTED","probability_is_not_review_policy":True},
@@ -77,7 +77,7 @@ def write_model_contract(target,cohort,features,winner,predictions,models,splits
     if not parity:raise RuntimeError("SCHEDULE_SERIALIZATION_RELOAD_PARITY_FAIL")
     metadata={**common,"dataset_fingerprint":dataset_fp,"cohort_fingerprint":cohort_fp,"code_commit":code_commit,"fold_artifact":latest,"reload_parity":"PASS_AT_1E-12"}
     json_write(directory/"feature_manifest.json",{"version":winner["feature_contract"],"features":features,"known_at_t":True})
-    json_write(directory/"target_contract.json",{**common,"version":f"{target}-3m-v2-machine-provisional","approved_schedule_deterioration_only":True})
+    json_write(directory/"target_contract.json",{**common,"version":f"{target}-3m-v3-explicit-revised-machine-provisional","approved_schedule_deterioration_only":True})
     json_write(directory/"model_card.json",{**common,"status":"RESEARCH_CANDIDATE_SELECTED","algorithm":winner["model"],"metrics":winner,"limitations":["machine-provisional labels","not MoSPI validated","not a causal model"]})
     json_write(directory/"training_metadata.json",metadata);json_write(directory/"split_definition.json",splits)
     json_write(directory/"calibration.json",{"method":"PLATT_ON_PAST_VALIDATION","fit_scope":"PAST_ONLY"})
@@ -92,13 +92,19 @@ def main(mode):
     metadata=json.loads((DATA/"dataset_metadata.json").read_text(encoding="utf-8"));dataset_fp=metadata["dataset_fingerprint"]
     code_commit=subprocess.run(["git","rev-parse","HEAD"],cwd=ROOT,text=True,capture_output=True,check=True).stdout.strip()
     support=[];folds=[];metrics=[];predictions=[];calibrations=[];diversity=[];cache={};cohorts={}
+    source_rows=read_csv(DATA/"project_month.csv");coverage={r["reporting_month"]:r["coverage_class"] for r in read_csv(DATA/"report_month.csv")}
+    compatible={(r["canonical_project_id"],r["reporting_month"]) for r in source_rows if r.get("physical_progress_schema_available")=="TRUE"}
     specs=[]
     for target in ("S1","S2"):
         specs.extend([(target,3,"basic-long-history-v1",tuple(BASIC_LONG_HISTORY_V1)),(target,3,"compact-v2.1-calendar-safe",tuple(COMPACT_V2)),(target,6,"basic-long-history-v1",tuple(BASIC_LONG_HISTORY_V1))])
     for target,horizon,contract,features in specs:
+        builder=build_basic_long_history if contract.startswith("basic") else build_compact_v2
+        cohort,ledger,events=build_research_target(source_rows,coverage,target,horizon,builder,contract)
+        if contract.startswith("compact"):
+            cohort,ledger,events=restrict_feature_anchors(cohort,ledger,events,compatible)
+        cohorts[(target,horizon,contract)]=cohort
         stem=f"{target.lower()}_{horizon}m_"+("basic" if contract.startswith("basic") else "compact_v2")
-        cohort=read_csv(SOURCE/f"{stem}_cohort.csv");cohorts[(target,horizon,contract)]=cohort
-        ledger=read_csv(SOURCE/f"{stem}_candidate_ledger.csv")
+        write_csv(OUT/f"{stem}_candidate_ledger.csv",ledger);write_csv(OUT/f"{stem}_events.csv",events)
         fold=__import__('src.ml.schedule_experiment_v3',fromlist=['fold_support']).fold_support(cohort,horizon)
         counts=Counter(r["status"] for r in ledger)
         support.append({"target":target,"horizon_months":horizon,"feature_contract":contract,"eligible_anchors":len(cohort),"events":sum(int(r["event"]) for r in cohort),"non_events":sum(1-int(r["event"]) for r in cohort),"projects":len({r["canonical_project_id"] for r in cohort}),"prevalence":sum(int(r["event"]) for r in cohort)/len(cohort),"censored":counts["CENSORED"],"excluded":counts["EXCLUDED"],"admitted_folds":sum(r["status"]=="ADMITTED" for r in fold),"target_validation_status":TARGET_VALIDATION_STATUS,"research_mode":RESEARCH_MODE})
