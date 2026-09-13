@@ -1,0 +1,11 @@
+{
+  "contract_version": "unified-project-intelligence-v1.0",
+  "modes": ["REAL_HISTORICAL", "SYNTHETIC_SANDBOX"],
+  "schedule_research_status": "SCHEDULE_PREDICTION_FINAL_V3_PARTIAL",
+  "schedule_withholding_reason": "INSUFFICIENT_TEMPORAL_VALIDATION",
+  "cost_research_status": "COST_PREDICTION_V3_PARTIAL",
+  "cost_withholding_reason": "NO_COST_MODEL_ADMITTED",
+  "prediction_reliability_when_withheld": "NOT_APPLICABLE",
+  "prohibits_overall_risk_score": true,
+  "prohibits_synthetic_real_mixing": true
+}
