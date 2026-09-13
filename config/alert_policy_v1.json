@@ -1,0 +1,21 @@
+{
+  "policy_version": "alert-policy-v1.0",
+  "eligible_officer_decisions": ["REVIEW_RECOMMENDED", "DATA_VERIFICATION_REQUIRED"],
+  "implementation_watch_states": ["WATCH", "ELEVATED"],
+  "alert_types": ["IMPLEMENTATION_PRESSURE", "DATA_VERIFICATION", "REPORTING_GAP", "SOURCE_QUALITY", "MODEL_SCHEDULE_WARNING", "MODEL_COST_WARNING"],
+  "inactive_future_model_types": ["MODEL_SCHEDULE_WARNING", "MODEL_COST_WARNING"],
+  "severity": {
+    "REVIEW_RECOMMENDED:WATCH": "ATTENTION",
+    "REVIEW_RECOMMENDED:ELEVATED": "HIGH",
+    "DATA_VERIFICATION_REQUIRED:DATA_INSUFFICIENT": "ATTENTION"
+  },
+  "persistence_valid_cycles": 3,
+  "escalate_on_severity_increase": true,
+  "resolution_requires_evaluable_clear_evidence": true,
+  "missing_data_never_means_resolved": true,
+  "reopen_requires_newer_equivalent_evidence": true,
+  "deduplication_components": ["project_id", "data_origin", "alert_type", "reason_family", "policy_version"],
+  "benchmark_can_trigger": false,
+  "raw_probability_can_trigger": false,
+  "raw_watch_signal_can_trigger": false
+}
