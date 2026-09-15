@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0034)https://paimana-proj.mospi.gov.in/ -->
+<html lang="en-US" class="dj_webkit dj_chrome dj_android dj_contentbox"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" charset="utf-8" src="\./Paimana_Files/jsapi_en-us.js.download"></script><script type="text/javascript" charset="utf-8" src="\./Paimana_Files/svg.js.download"></script><script type="text/javascript" charset="utf-8" src="\./Paimana_Files/filters.js.download"></script><script type="text/javascript" charset="utf-8" src="\./Paimana_Files/svgext.js.download"></script><script src="chrome-extension://lgblnfidahcdcjddiepkckcfdhpknnjh/content/popups-script.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PAIMANA â€“ Infrastructure &amp; Project Monitoring | MoSPI, Government of India </title>
+    <meta name="description" content="PAIMANA (Project Assessment Infrastructure Monitoring and Analytics for Nation Building) is MoSPI&#39;s unified platform for Project Appraisal, Monitoring of Central Sector infrastructure projects worth â‚¹150 crore &amp; above and Performance Monitoring.">
+    <meta name="keyword" content="PAIMANA, Project Assessment Infrastructure Monitoring, IPMD, MoSPI, OCMS, infrastructure analytics, project monitoring India, central sector projects, â‚¹150 crore above projects, new OCMS, Infrastructure Projects, Project Monitoring, Infrastructure Project Monitoring, IIG-PMG-OCMS, IIG PMG OCMS">
+
+    <link href="\./Paimana_Files/font-awesome.min.css" rel="stylesheet">
+    <link href="\./Paimana_Files/bootstrap.min.css" rel="stylesheet">
+    <link href="\./Paimana_Files/family=Montserrat.css" rel="stylesheet">
+    <link href="\./Paimana_Files/esri.css" rel="stylesheet">
+    <link href="\./Paimana_Files/Style.css" rel="stylesheet">
+    <link href="\./Paimana_Files/about.css" rel="stylesheet">
+    <link rel="stylesheet" href="\./Paimana_Files/swiper-bundle.min.css">
+    <link href="\./Paimana_Files/responsive.css" rel="stylesheet">
+
+    <script src="\./Paimana_Files/jquery-3.7.0.min.js.download"></script>
+    
+    <script src="\./Paimana_Files/propper.js.download"></script>
+
+    <script src="\./Paimana_Files/bootstrap.min.js.download"></script>
+    <script src="\./Paimana_Files/slick.js.download"></script>
+
+    <script src="\./Paimana_Files/swiper-bundle.min.js.download"></script>
+
+
+    <!--------temp map start-->
+    <!---->
+    <script src="\./Paimana_Files/crypto-js.js.download"></script>
+
+
+
+    <!--nihi-->
+    <!--nihi-->
+
+
+

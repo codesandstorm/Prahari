@@ -1,0 +1,29 @@
+[
+  {
+    "SectorName": "Telecommunication",
+    "LineMinistry": "Department of Telecommunications",
+    "ProjectID": "TLC-001",
+    "ProjectName": "BharatNet Implementation Phase II",
+    "ProjectCost": "42,068.00",
+    "RevisedCost": "42,068.00",
+    "TExpend": "28,500.25"
+  },
+  {
+    "SectorName": "Telecommunication",
+    "LineMinistry": "Department of Telecommunications",
+    "ProjectID": "TLC-002",
+    "ProjectName": "Network for Spectrum (NFS) project",
+    "ProjectCost": "13,334.00",
+    "RevisedCost": "24,664.00",
+    "TExpend": "19,250.00"
+  },
+  {
+    "SectorName": "Roads & Highways",
+    "LineMinistry": "Ministry of Road Transport and Highways",
+    "ProjectID": "RTH-105",
+    "ProjectName": "Delhi-Mumbai Expressway",
+    "ProjectCost": "98,000.00",
+    "RevisedCost": "105,000.00",
+    "TExpend": "65,340.50"
+  }
+]

@@ -1,0 +1,2813 @@
+<!--slider end -->
+    <!---weel menu start-->
+    
+    <section class="atomiconmob position-relative wheelalternative" id="WheelSection">
+        <div class="text-center" id="loaderWheel" style="display: none;">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div id="WhellView" style="">
+
+
+<style type="text/css">
+
+    /* Tab wheel css start */
+    .wheelalternative {
+        background: url(../Content/img/wheel-alternative-bg.svg) left bottom no-repeat;
+        background-size: cover;
+        padding: 43px 0px;
+    }
+
+    .container-fluid {
+        max-width: 1800px !important;
+        width: 100%;
+    }
+
+    .tablistwheel {
+        text-align: center;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        margin-top: -222px;
+        width: 350px;
+    }
+
+        .tablistwheel button {
+        }
+
+            .tablistwheel button#prev01, .tablistwheel button#next01 {
+                border: 0;
+                background: transparent;
+                border-radius: 4px;
+                width: 100%;
+            }
+
+                .tablistwheel button#prev01 img, .tablistwheel button#next01 img {
+                    width: 30px;
+                    height: 16px;
+                }
+
+    .ministriesdetails {
+        height: 343px;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+        margin-left: 10px;
+    }
+
+        .ministriesdetails .ministrieslist {
+            padding-right: 24px;
+        }
+
+    .ministrieslist .ministries-inner {
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+
+    .ministriesdetails::-webkit-scrollbar {
+        display: none;
+    }
+
+    .ministriesdetails {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+        .ministriesdetails .ministrieslist a.active {
+            position: relative;
+        }
+
+            .ministriesdetails .ministrieslist a.active:after {
+                content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><circle cx='256' cy='256' r='256' fill='%23eeac1b'/><path d='M201 384c-6.1 0-12.2-2.3-16.9-7-9.4-9.4-9.4-24.6 0-33.9L271.1 256l-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l104 104c9.4 9.4 9.4 24.6 0 33.9l-104 104c-4.7 4.7-10.9 7-17 7z' fill='%23ffffff'/></svg>");
+                display: inline-block;
+                width: 50px;
+                height: 48px;
+                display: inline-block;
+                position: absolute;
+                top: -0.5px;
+                right: -14px;
+            }
+
+        .ministriesdetails .ministrieslist a {
+            display: block;
+            width: 320px;
+            max-width: 100%;
+            margin: 20px 0px;
+            color: #000;
+            text-decoration: none;
+            border-radius: 0px 10px 10px 0px;
+            padding: 13px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+            background: #fff;
+        }
+
+            .ministriesdetails .ministrieslist a:hover {
+                background: #eeac1b;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .ministriesdetails .ministrieslist a.active {
+                background: #eeac1b;
+                color: #fff;
+                font-weight: 600;
+                width: 350px;
+                border-radius: 0px 16px 16px 0px; /*box-shadow: inset 0px 4px 4px rgb(255 255 255 / 40%);*/
+            }
+
+    .wheelproject {
+    }
+
+    /* Up/Down scroll arrows as CSS chevrons (png fallback hidden) */
+    .tablistwheel button#prev01,
+    .tablistwheel button#next01,
+    .tablistwheelsector button#prev001,
+    .tablistwheelsector button#next001 {
+        border: 0;
+        background: transparent;
+        width: 100%;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+        .tablistwheel button#prev01 img,
+        .tablistwheel button#next01 img,
+        .tablistwheelsector button#prev001 img,
+        .tablistwheelsector button#next001 img {
+            display: none !important;
+        }
+
+        .tablistwheel button#prev01::before,
+        .tablistwheel button#next01::before,
+        .tablistwheelsector button#prev001::before,
+        .tablistwheelsector button#next001::before {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-right: 3px solid #0a154d;
+            border-bottom: 3px solid #0a154d;
+        }
+
+        /* up chevron */
+        .tablistwheel button#prev01::before,
+        .tablistwheelsector button#prev001::before {
+            transform: rotate(-135deg);
+            margin-top: 6px;
+        }
+
+        /* down chevron */
+        .tablistwheel button#next01::before,
+        .tablistwheelsector button#next001::before {
+            transform: rotate(45deg);
+            margin-bottom: 6px;
+        }
+
+    /* Content area inset past the absolute ministry buttons on the left */
+    .wheel-content-col {
+        padding-left: 340px;
+        padding-right: 10px;
+    }
+
+    /* Card sits in the gap (buttons -> right edge), centered, not stretched */
+    .wheel-center-card {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1500px) {
+        .wheel-content-col {
+            padding-left: 290px;
+        }
+
+        .wheel-center-card {
+            max-width: 920px;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .wheel-content-col {
+            padding-left: 12px;
+        }
+
+        .wheel-center-card {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<style type="text/css">
+
+    /*Tab wheel css start */
+    /*.wheelalternative {
+            background: url(Content/img/wheel-alternative-bg.svg) left bottom no-repeat;
+            background-size: cover; padding:80px 0px;
+        }*/
+
+
+    .tablistwheelsector {
+        text-align: center;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        margin-top: -222px;
+        width: 350px;
+    }
+
+        .tablistwheelsector button {
+        }
+
+            .tablistwheelsector button#prev001, .tablistwheelsector button#next001 {
+                border: 0;
+                background: transparent;
+                border-radius: 4px;
+                width: 100%;
+            }
+
+                .tablistwheelsector button#prev001 img, .tablistwheelsector button#next001 img {
+                    width: 30px;
+                    height: 16px;
+                }
+
+    .sectordetails {
+        height: 343px;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+        margin-left: 10px;
+    }
+
+        .sectordetails .sectorlist {
+            padding-right: 24px;
+        }
+
+    .sectorlist .sector-inner {
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+
+    .sectordetails::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sectordetails {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+        .sectordetails .sectorlist a.active {
+            position: relative;
+        }
+
+            .sectordetails .sectorlist a.active:after {
+                content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><circle cx='256' cy='256' r='256' fill='%23eeac1b'/><path d='M201 384c-6.1 0-12.2-2.3-16.9-7-9.4-9.4-9.4-24.6 0-33.9L271.1 256l-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l104 104c9.4 9.4 9.4 24.6 0 33.9l-104 104c-4.7 4.7-10.9 7-17 7z' fill='%23ffffff'/></svg>");
+                display: inline-block;
+                width: 50px;
+                height: 48px;
+                display: inline-block;
+                position: absolute;
+                top: -0.5px;
+                right: -14px;
+            }
+
+        .sectordetails .sectorlist a {
+            display: block;
+            width: 320px;
+            max-width: 100%;
+            margin: 20px 0px;
+            color: #000;
+            text-decoration: none;
+            border-radius: 0px 10px 10px 0px;
+            padding: 13px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+            background: #fff;
+        }
+
+            .sectordetails .sectorlist a:hover {
+                background: #eeac1b;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .sectordetails .sectorlist a.active {
+                background: #eeac1b;
+                color: #fff;
+                font-weight: 600;
+                width: 350px;
+                border-radius: 0px 16px 16px 0px; /*box-shadow: inset 0px 4px 4px rgb(255 255 255 / 40%);*/
+            }
+
+    .wheelproject {
+    }
+
+    .download-icons img.download-icon {
+        width: 37px;
+        height: 37px;
+        cursor: pointer;
+        /*filter: brightness(0) invert(1);*/ /* Makes dark icons white on blue background */
+        transition: transform 0.2s;
+    }
+
+        .download-icons img.download-icon:hover {
+            transform: scale(1.1);
+        }
+
+    /*.tabcontent01 {
+        display: none;*/ /* Hide all content initially */
+    /*}
+
+    .tabcontent01.active {
+        display: block;*/ /* Show only active content */
+    /*}*/
+
+    /* Tab wheel css end */
+
+    /*--------------------------------------------------------------
+
+    Responsive
+    -----------------------------------------------------------*/
+
+
+    Responsive
+    -----------------------------------------------------------*/
+
+
+    @media only screen and (min-width:1400px) and (max-width:1699px) {
+        .sectordetails .sectorlist a, .sectordetails .sectorlist a.active {
+            width: 230px;
+        }
+
+        .wheelproject .extrapad {
+            padding: 20px 10px;
+        }
+
+            .wheelproject .extrapad h5 {
+                font-size: 22px;
+            }
+    }
+
+    @media only screen and (min-width:1200px) and (max-width:1399px) {
+        .sectordetails .sectorlist a, .sectordetails .sectorlist a.active {
+            width: 180px;
+        }
+
+        .wheelproject .extrapad {
+            padding: 15px 5px;
+        }
+
+            .wheelproject .extrapad h5 {
+                font-size: 19px;
+            }
+
+            .wheelproject .extrapad img {
+                width: 40px;
+            }
+
+            .wheelproject .extrapad p {
+                font-size: 12px;
+            }
+
+        .wheelproject .tooglelist img {
+            width: 12px !important;
+        }
+    }
+
+    @media only screen and (min-width:1024px) and (max-width:1199px) {
+        .sectordetails .sectorlist a, .sectordetails .sectorlist a.active {
+            width: 200px;
+        }
+
+        .wheelproject .extrapad {
+            padding: 15px 5px;
+        }
+
+            .wheelproject .extrapad h5 {
+                font-size: 17px;
+            }
+
+            .wheelproject .extrapad img {
+                width: 30px;
+            }
+
+            .wheelproject .extrapad p {
+                font-size: 10px;
+            }
+
+        .wheelproject .tooglelist img {
+            width: 10px !important;
+        }
+
+        .wheelalternative .slides_txt {
+            margin: 0;
+        }
+
+        .wheelalternative .extrahgtimg {
+            margin-left: 0;
+        }
+
+        .wheelalternative .heading {
+            font-size: 17px;
+        }
+
+        .whatsnewlist {
+            display: block;
+        }
+
+            .whatsnewlist .whatsnewdate {
+                border-radius: 0;
+            }
+    }
+
+    @media only screen and (min-width:900px) and (max-width:1023px) {
+        .sectordetails .sectorlist a, .sectordetails .sectorlist a.active {
+            width: 200px;
+        }
+
+        .wheelproject .extrapad {
+            padding: 15px 10px;
+        }
+
+            .wheelproject .extrapad h5 {
+                font-size: 17px;
+            }
+
+            .wheelproject .extrapad img {
+                width: 30px;
+            }
+
+            .wheelproject .extrapad p {
+                font-size: 10px;
+            }
+
+        .wheelproject .tooglelist img {
+            width: 10px !important;
+        }
+
+        .wheelalternative .slides_txt {
+            margin: 0;
+        }
+
+        .wheelalternative .extrahgtimg {
+            margin-left: 0;
+        }
+
+        .wheelalternative .heading {
+            font-size: 15px;
+        }
+
+        .wheelproject .extrapad {
+            display: block !important;
+            text-align: left !important;
+        }
+    }
+
+    @media only screen and (min-width:768px) and (max-width:899px) {
+        .sectordetails .sectorlist a, .sectordetails .sectorlist a.active {
+            width: 100%;
+        }
+
+        .sectordetails {
+            height: 245px;
+        }
+    }
+
+    /*------------for ministries ----*/
+    @media only screen and (min-width: 1400px) and (max-width: 1699px) {
+        .ministriesdetails .ministrieslist a,
+        .ministriesdetails .ministrieslist a.active {
+            width: 230px;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        .ministriesdetails .ministrieslist a,
+        .ministriesdetails .ministrieslist a.active {
+            width: 180px;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+        .ministriesdetails .ministrieslist a,
+        .ministriesdetails .ministrieslist a.active {
+            width: 200px;
+        }
+
+        .ministriesdetails .heading {
+            font-size: 17px;
+        }
+    }
+
+    @media only screen and (min-width: 900px) and (max-width: 1023px) {
+        .ministriesdetails .ministrieslist a,
+        .ministriesdetails .ministrieslist a.active {
+            width: 200px;
+        }
+
+        .ministriesdetails .heading {
+            font-size: 15px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 899px) {
+        .ministriesdetails .ministrieslist a,
+        .ministriesdetails .ministrieslist a.active {
+            width: 100%;
+        }
+
+        .ministriesdetails {
+            height: 245px;
+        }
+    }
+</style>
+<style>
+    /* Base tab style */
+    .nav-tabs .nav-link.custom-tab {
+        font-weight: 500;
+        border: 1px solid #ccc; /* Add border */
+        border-radius: 4px; /* Rounded corners all sides */
+        padding: 6px 12px; /* Compact padding */
+        font-size: 14px; /* Slightly smaller text */
+        min-width: 170px; /* Smaller width */
+        transition: all 0.3s ease; /* Smooth transition */
+        background-color: #fff; /* White background */
+        color: #333;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+        /* Active tab style */
+        .nav-tabs .nav-link.custom-tab.active {
+            background-color: #eeac1b !important;
+            color: #ffffff !important;
+            font-weight: bold;
+            border-color: #eeac1b; /* Match border to background */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on active */
+        }
+
+        /* Non-active tabs */
+        .nav-tabs .nav-link.custom-tab:not(.active):hover {
+            background-color: #f8f9fa; /* Light hover effect */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Hover shadow */
+        }
+</style>
+
+
+<div class="container-fluid">
+
+    <!-- Tabs Navigation -->
+    <div style="text-align: center; margin-bottom: 0rem;">
+        <ul class="nav nav-tabs d-inline-flex justify-content-center" id="ministryStateTabs" role="tablist" style="
+            background-color: #f8f9fa;
+            border-radius: 6px 6px 0 0;
+            padding-left: 0px;
+            display: inline-flex;
+        ">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link custom-tab active" id="ministry-tab" data-bs-toggle="tab" data-bs-target="#ministry" type="button" role="tab" aria-controls="ministry" aria-selected="true">
+                    Ministry-Wise
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link custom-tab" id="state-tab" data-bs-toggle="tab" data-bs-target="#state" type="button" role="tab" aria-controls="state" aria-selected="false">
+                    Sector-Wise
+                </button>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="ministryStateTabsContent">
+
+        <!-- Ministry-wise Tab -->
+        <div class="tab-pane fade show active" id="ministry" role="tabpanel" aria-labelledby="ministry-tab">
+            <div class="row pt-2 mx-5 align-items-center">
+
+                <!-- List Section (absolute, out of grid flow) -->
+                <div class="tablistwheel text-center">
+                    <button id="prev01"><img src="\./Paimana_Files/prev-icon-1.png" alt=""></button>
+
+                    <div class="ministriesdetails">
+                        <div class="ministrieslist" id="ministriesList"><a href="javascript:void(0)" data-id="38" data-img="Ministry-of-Mines-India.png" class="">MoM</a><a href="javascript:void(0)" data-id="29" data-img="dpiit.png" class="">DPIIT</a><a href="javascript:void(0)" data-id="33" data-img="Ministry-of-Health-and-Family-Welfare.png" class="">MoHFW</a><a href="javascript:void(0)" data-id="30" data-img="Department-of-Water-Resources-River-Development-and-GR.png" class="">DWR, RD &amp; GR</a><a href="javascript:void(0)" data-id="22" data-img="Ministry-of-Housing-and-Urban-Affairs.png" class="">MoHUA</a><a href="javascript:void(0)" data-id="2" data-img="Ministry-of-Road-Transport-and-Highways.png" class="">MoRTH</a><a href="javascript:void(0)" data-id="5" data-img="Department-of-Higher-Education.png" class="active">DHE</a><a href="javascript:void(0)" data-id="1" data-img="Ministry-of-Railways.png" class="">MoR</a><a href="javascript:void(0)" data-id="12" data-img="Ministry-of-Ports-Shipping-and-Waterways.png" class="">MoPSW</a><a href="javascript:void(0)" data-id="49" data-img="Ministry-of-Labour-and-Employment.png" class="">MoLE</a><a href="javascript:void(0)" data-id="35" data-img="Coal-India.png" class="">MoC</a><a href="javascript:void(0)" data-id="32" data-img="Department-of-Telecommunications.png" class="">DoT</a><a href="javascript:void(0)" data-id="10" data-img="Ministry-of-Petroleum-and-Natural-Gas.png" class="">MoPNG</a><a href="javascript:void(0)" data-id="20" data-img="Department-of-Sports.png" class="">DoS</a><a href="javascript:void(0)" data-id="14" data-img="Ministry-of-Steel.png" class="">MoS</a><a href="javascript:void(0)" data-id="3" data-img="Ministry-of-Civil-Aviation-India.png" class="">MoCA</a><a href="javascript:void(0)" data-id="15" data-img="Ministry-of-Power.png" class="">MoP</a><a href="javascript:void(0)" data-id="0" data-img="new_image.png" class="">All Ministries &amp; Departments</a></div>
+                    </div>
+
+                    <button id="next01"><img src="\./Paimana_Files/next-icon-1.png" alt=""></button>
+                    <input type="hidden" id="ActiveMinistryId" value="5">
+                </div>
+
+                <!-- Text Section -->
+                <div class="col-12 text-center wheel-content-col">
+                    <div class="slides_txt wheel-center-card" id="ministriesContent">
+                    <div class="tabcontent01">
+                        <div class="row shadow-lg p-3 bg-body rounded wheelbox wheelproject" data-ministries-id="5">
+                            <h4 class="text-center py-3 heading brd-btm crd-bg-clr text-white">Department of Higher Education <small style="font-weight: normal;font-size: 0.7em;">(as of July, 2026)</small></h4>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count">
+                                <img src="\./Paimana_Files/project-count.png" alt="">
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Project Count <span>(No.)</span>
+                                        </p><div class="tooglelist">
+                                            <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Number of central sector projects worth Rs. 150 Cr. and above under MoSPI's monitoring.</h6></div>
+                                        </div>
+                                    <p></p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelPC">30</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count">
+                                <img src="\./Paimana_Files/orginal-cost.png" alt="">
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Original Cost <span>(in Cr)</span>
+                                        </p><div class="tooglelist">
+                                            <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Total project cost approved by the sanction authority at the time of approval.</h6></div>
+                                        </div>
+                                    <p></p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelPC">â‚¹ 15,165.68</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count">
+                                <img src="\./Paimana_Files/revised-cost.png" alt="">
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Latest Revised Cost <span>(in Cr)</span>
+                                        </p><div class="tooglelist">
+                                            <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Latest of all reported revised project cost/(s).</h6></div>
+                                        </div>
+                                    <p></p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelPC">â‚¹ 14,973.27</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count">
+                                <img src="\./Paimana_Files/expenditure.png" alt="">
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Expenditure(Cumm.) <span>(in Cr)</span>
+                                        </p><div class="tooglelist">
+                                            <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Total expenditure incurred from the project sanction date.</h6></div>
+                                        </div>
+                                    <p></p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelPC">â‚¹ 8,632.49</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad Completed_Project">
+                                <img src="\./Paimana_Files/compliance-year.png" alt="">
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Completed During Month <span>(No.)</span>
+                                        </p><div class="tooglelist"><a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Number of projects reported as completed during last month.</h6></div>
+                                        </div>
+                                    <p></p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelCompNo">0</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad New_Added">
+                                <img src="\./Paimana_Files/new-project.png" alt="">
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Newly Added <span>(No.)</span>
+                                        </p><div class="tooglelist"><a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Number of projects newly onboarded under MoSPI's monitoring during last month.</h6></div>
+                                        </div>
+                                    <p></p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelNewAddNo">0</label>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- State-wise Tab -->
+        <div class="tab-pane fade" id="state" role="tabpanel" aria-labelledby="state-tab">
+            <div class="row pt-2 mx-5 align-items-center">
+
+                <!-- List Section -->
+                <div class="col-sm-12 col-md-4 col-xl-3 pt-2 ">
+
+                    <div class="tablistwheelsector text-center">
+                        <button id="prev001"><img src="\./Paimana_Files/prev-icon-1.png" alt=""></button>
+
+                        
+
+                        <div class="sectordetails">
+                            <div class="sectorlist" id="sectorList"><a href="javascript:void(0)" data-id="107" data-img="RoadsHighways.png" class="">Roads &amp; Highways</a><a href="javascript:void(0)" data-id="108" data-img="Railways.png" class="">Railways</a><a href="javascript:void(0)" data-id="123" data-img="Coal.svg" class="">Coal</a><a href="javascript:void(0)" data-id="12" data-img="OilGas.png" class="">Oil &amp; Gas</a><a href="javascript:void(0)" data-id="2" data-img="All.svg" class="">ALL</a><a href="javascript:void(0)" data-id="102" data-img="TransmissionDistribution.svg" class="">Transmission &amp; Distribution</a><a href="javascript:void(0)" data-id="113" data-img="Healthcare.png" class="">Healthcare</a><a href="javascript:void(0)" data-id="3" data-img="ElectricityGeneration.png" class="">Electricity Generation</a><a href="javascript:void(0)" data-id="30" data-img="Telecommunication.png" class="active">Telecommunication</a><a href="javascript:void(0)" data-id="31" data-img="Education.png" class="">Education</a><a href="javascript:void(0)" data-id="111" data-img="UrbanPublicTransport.svg" class="">Urban Public Transport</a></div>
+                        </div>
+
+
+                        <button id="next001"><img src="\./Paimana_Files/next-icon-1.png" alt=""></button>
+                        <input type="hidden" id="ActiveSectorId" value="30">
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-8 col-xl-6 text-center">
+                    <div class="slides_txt" id="sectorContent">
+  <div class="tabcontent01">
+    <div class="row shadow-lg p-3 bg-body rounded wheelbox wheelproject" data-sector-id="30">
+      <h3 class="text-center py-3 heading brd-btm crd-bg-clr text-white">Telecommunication
+          <small style="font-weight: normal;font-size: 0.7em;">(As of July, 2026)</small>
+      </h3>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+        <img src="\./Paimana_Files/project-count.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Project Count <span>(No.)</span>
+            </p><div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Total project cost approved by the sanction authority at the time of approval.</h6></div>
+            </div>
+          <p></p>
+          <h5 class="project-count11"><label id="WheelPC1_ProjectCount">31</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+        <img src="\./Paimana_Files/orginal-cost.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Original Cost <span>(in Cr)</span>
+            </p><div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Total project cost approved by the sanction authority at the time of approval.</h6></div>
+            </div>
+          <p></p>
+          <h5 class="project-count11"><label id="WheelPC1_ProjectCost">â‚¹ 207,194.71</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+        <img src="\./Paimana_Files/revised-cost.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Latest Revised Cost <span>(in Cr)</span>
+            </p><div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Latest of all reported revised project cost/(s).</h6></div>
+            </div>
+          <p></p>
+          <h5 class="project-count11"><label id="WheelPC1_RevisedCost">â‚¹ 133,825.11</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+        <img src="\./Paimana_Files/expenditure.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Expenditure(Cumm.) <span>(in Cr)</span>
+            </p><div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Total expenditure incurred from the project sanction date.</h6></div>
+            </div>
+          <p></p>
+          <h5 class="project-count11"><label id="WheelPC1_Expend">â‚¹ 102,879.15</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad Completed_Project1">
+        <img src="\./Paimana_Files/compliance-year.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Completed During Month <span>(No.)</span>
+            </p><div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Number of projects reported as completed during last month.</h6></div>
+            </div>
+          <p></p>
+          <h5 class="project-count111"><label id="WheelCompNo1">0</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad New_Added1">
+        <img src="\./Paimana_Files/new-project.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Newly Added <span>(No.)</span>
+            </p><div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="\./Paimana_Files/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Number of projects newly onboarded under MoSPI's monitoring during last month.</h6></div>
+            </div>
+          <p></p>
+          <h5 class="project-count111"><label id="WheelNewAddNo1">0</label></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-xl-3 text-center m-0">
+                    
+                    <div class="text-center m-0">
+                        <img id="sectorImage" src="https://paimana-proj.mospi.gov.in/Content/img/wheelsector/Telecommunication.png" class="extrahgtimg" alt="Sector Image">
+                    </div>
+
+                </div>
+                <!--<div class="col-sm-12 col-md-1 col-xl-2 pt-2">
+                <div class="tablistwheel text-center">
+                    <button id="prevState"><img src="~/Content/img/prev-icon-1.png" alt=""></button>
+
+                    <div class="ministriesdetails">
+                        <div class="ministrieslist" id="statesList">-->
+                <!-- Populate dynamically -->
+                <!--</div>
+                        </div>
+
+                        <button id="nextState"><img src="~/Content/img/next-icon-1.png" alt=""></button>
+                        <input type="hidden" id="ActiveSectorId" />
+                    </div>
+                </div>-->
+                <!-- Text Section -->
+                <!--<div class="col-sm-12 col-md-5 col-xl-7 text-center slides_txt">
+                <div class="slides_txt" id="statesContent">-->
+                <!-- Populate dynamically -->
+                <!--</div>
+                </div>-->
+                <!-- Image Section -->
+                <!--<div class="col-sm-12 col-md-4 col-xl-3 text-center m-0">
+                    <div class="text-center m-0">
+                        <img id="statesImage" src="" class="extrahgtimg" alt="State Image" />
+                    </div>
+                </div>-->
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Project Monitoring Icon -->
+    <div class="projectmointering rgt">
+        <img src="\./Paimana_Files/project-mointering-1.svg" data-dark="../Content/img/project-mointering-1-dark.svg" data-light="../Content/img/project-mointering-1.svg" alt="Project Monitoring" width="60">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade chartmodal" id="projectcount1" tabindex="-1" aria-labelledby="projectcount1Label" aria-hidden="true" style="width:100%">
+    <div class="modal-dialog  modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header bg-primary border rounded text-center popup-header">
+                <h1 class="modal-title fs-5 text-white m-0 " id="projectcount1Label">Project Details</h1>
+                <div class="download-icons" style="margin-right:20px;">
+                    <img src="\./Paimana_Files/csv-icon.png" id="downloadCSV" alt="Download CSV" title="Download CSV" class="download-icon me-2">
+                    <img src="\./Paimana_Files/excel-icon.png" id="downloadXLS" alt="Download XLSX" title="Download XLSX" class="download-icon">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin:initial;"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto; width: 100%;">
+                <div style="max-height: 400px; overflow-y: auto">
+                    <table class="charttable1 table table-striped  display nowrap" style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th style="white-space: nowrap; vertical-align: top;">Sr.No.</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Line Ministry</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Sector</th>
+                                <th style="white-space: nowrap; vertical-align: top;">ProjectID</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Project Name</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Original Cost<br> (in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Latest Revised Cost <br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Expenditure (Cumm.)<br>(in Cr)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade chartmodal" id="projectNewlyAdded" tabindex="-1" aria-labelledby="projectNewlyAddedLabel" aria-hidden="true" style="width:100%">
+    <div class="modal-dialog  modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header bg-primary border rounded text-center popup-header">
+                <h1 class="modal-title fs-5 text-white m-0 " id="projectNewlyAddedLabel">Newly Added Project Details</h1>
+                <div class="download-icons" style="margin-right:20px;">
+                    <img src="\./Paimana_Files/csv-icon.png" id="downloadCSV1" alt="Download CSV" title="Download CSV" class="download-icon me-2">
+                    <img src="\./Paimana_Files/excel-icon.png" id="downloadXLS1" alt="Download XLSX" title="Download XLSX" class="download-icon">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin:initial;"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto; width: 100%;">
+                <div style="max-height: 400px; overflow-y: auto">
+                    <table class="charttable1 table table-striped  display nowrap" style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th style="white-space: nowrap; vertical-align: top;">Sr.No.</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Line Ministry</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Sector</th>
+                                <th style="white-space: nowrap; vertical-align: top;">ProjectID</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Project Name</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Start Date</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Original Cost<br> (in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Latest Revised Cost <br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Expenditure (Cumm.)<br>(in Cr)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade chartmodal" id="projectCompleted" tabindex="-1" aria-labelledby="projectCompletedLabel" aria-hidden="true" style="width:100%">
+    <div class="modal-dialog  modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header bg-primary border rounded text-center popup-header">
+                <h1 class="modal-title fs-5 text-white m-0 " id="projectCompletedLabel">Completed Project Details</h1>
+                <div class="download-icons" style="margin-right:20px;">
+                    <img src="\./Paimana_Files/csv-icon.png" id="downloadCSV2" alt="Download CSV" title="Download CSV" class="download-icon me-2">
+                    <img src="\./Paimana_Files/excel-icon.png" id="downloadXLS2" alt="Download XLSX" title="Download XLSX" class="download-icon">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin:initial;"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto; width: 100%;">
+                <div style="max-height: 400px; overflow-y: auto">
+                    <table class="charttable1 table table-striped  display nowrap" style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th style="white-space: nowrap; vertical-align: top;">Sr.No.</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Line Ministry</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Sector</th>
+                                <th style="white-space: nowrap; vertical-align: top;">ProjectID</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Project Name</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Completed Date</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Original Cost<br> (in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Latest Revised Cost <br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Expenditure (Cumm.)<br>(in Cr)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Project Count Modal -->
+<div class="modal fade chartmodal" id="projectcount11" tabindex="-1" aria-labelledby="projectcount11Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-header bg-primary border rounded text-center popup-header">
+                <h1 class="modal-title fs-5 text-white m-0" id="projectcount11Label">Project Details</h1>
+                <div class="download-icons" style="margin-right:20px;">
+                    <img src="\./Paimana_Files/csv-icon.png" id="downloadCSV3" alt="Download CSV" title="Download CSV" class="download-icon me-2">
+                    <img src="\./Paimana_Files/excel-icon.png" id="downloadXLS3" alt="Download XLSX" title="Download XLSX" class="download-icon">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin:initial;"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto; width: 100%;">
+                <div style="max-height: 400px; overflow-y: auto;">
+                    <table class="charttable11 table table-striped display nowrap" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th style="white-space: nowrap; vertical-align: top;">Sr.No.</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Sector</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Line Ministry</th>
+                                <th style="white-space: nowrap; vertical-align: top;">ProjectID</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Project Name</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Original Cost<br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Latest Revised Cost<br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Expenditure (Cumm.)<br>(in Cr)</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Newly Added Project Modal -->
+<div class="modal fade chartmodal" id="projectNewlyAdded1" tabindex="-1" aria-labelledby="projectNewlyAddedLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-header bg-primary border rounded text-center popup-header">
+                <h1 class="modal-title fs-5 text-white m-0" id="projectNewlyAddedLabel1">Newly Added Project Details</h1>
+                <div class="download-icons" style="margin-right:20px;">
+                    <img src="\./Paimana_Files/csv-icon.png" id="downloadCSV4" alt="Download CSV" title="Download CSV" class="download-icon me-2">
+                    <img src="\./Paimana_Files/excel-icon.png" id="downloadXLS4" alt="Download XLSX" title="Download XLSX" class="download-icon">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin:initial;"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto; width: 100%;">
+                <div style="max-height: 400px; overflow-y: auto;">
+                    <table class="charttable11 table table-striped display nowrap" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th style="white-space: nowrap; vertical-align: top;">Sr.No.</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Sector</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Line Ministry</th>
+                                <th style="white-space: nowrap; vertical-align: top;">ProjectID</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Project Name</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Start Date</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Original Cost<br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Latest Revised Cost<br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Expenditure (Cumm.)<br>(in Cr)</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Completed Project Modal -->
+<div class="modal fade chartmodal" id="projectCompleted1" tabindex="-1" aria-labelledby="projectCompletedLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-header bg-primary border rounded text-center popup-header">
+                <h1 class="modal-title fs-5 text-white m-0" id="projectCompletedLabel1">Completed Project Details</h1>
+                <div class="download-icons" style="margin-right:20px;">
+                    <img src="\./Paimana_Files/csv-icon.png" id="downloadCSV5" alt="Download CSV" title="Download CSV" class="download-icon me-2">
+                    <img src="\./Paimana_Files/excel-icon.png" id="downloadXLS5" alt="Download XLSX" title="Download XLSX" class="download-icon">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin:initial;"></button>
+            </div>
+            <div class="modal-body" style="overflow-y: auto; width: 100%;">
+                <div style="max-height: 400px; overflow-y: auto;">
+                    <table class="charttable11 table table-striped display nowrap" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th style="white-space: nowrap; vertical-align: top;">Sr.No.</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Sector</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Line Ministry</th>
+                                <th style="white-space: nowrap; vertical-align: top;">ProjectID</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Project Name</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Completed Date</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Original Cost<br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Latest Revised Cost<br>(in Cr)</th>
+                                <th style="white-space: nowrap; vertical-align: top;">Expenditure (Cumm.)<br>(in Cr)</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="\./Paimana_Files/xlsx.full.min.js.download"></script>
+<script>
+    $(document).ready(function () {
+        /*$(".project-count").on("click", function () {*/
+        $(document).on("click", ".project-count11", function () {
+            console.log("project-count11 clicked");
+
+            var sectorId = $("#ActiveSectorId").val();
+            var projectCount = document.getElementById("WheelPC1_ProjectCount").innerHTML;
+            //console.log("SectorID: " + sectorId + " ProjectCount: " + projectCount);
+            if (projectCount != 0) {
+                $.ajax({
+                    url: '/Home/GetProjectDetails',  // MVC Controller Action
+                    type: 'GET',
+                    data: { sectorId: sectorId },  // Pass ID to Controller
+                    success: function (response) {
+                        // Clear existing rows
+                        $("#projectcount11 .modal-body table tbody").empty();
+                        //console.log(response);
+                        // Loop through each project detail
+                        $.each(response, function (index, project) {
+                            // For example, log each project's details
+                            //console.log("Project " + (index + 1) + ":", project);
+
+                            // Append the project data to a table row if desired
+                            var row = "<tr>" +
+                                "<td>" + (index + 1) + "</td>" +
+                                "<td>" + project.SectorName + "</td>" +
+                                "<td>" + project.LineMinistry + "</td>" +
+                                "<td>" + project.ProjectID + "</td>" +
+                                "<td>" + project.ProjectName + "</td>" +
+                                "<td>" + project.ProjectCost + "</td>" +
+                                "<td>" + project.RevisedCost + "</td>" +
+                                "<td>" + project.TExpend + "</td>" +
+                                "</tr>";
+                            $("#projectcount11 .modal-body table tbody").append(row);
+                        });
+                        $(document).off("click", "#downloadCSV3").on("click", "#downloadCSV3", function () {
+                            const table = document.querySelector("#projectcount11 .modal-body table");
+
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            let csv = [];
+
+                            // Prepare filters text
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            // Build the title line with filters (if any)
+                            let titleLine = "Sector Wise Projects";
+                            if (filtersTextArr.length > 0) {
+                                titleLine += " - " + filtersTextArr.join(', ');
+                            }
+
+                            // Add the title + filters line as first row in CSV (quoted)
+                            csv.push(`"${titleLine}"`);
+
+                            // Empty row after title line
+                            csv.push("");
+
+                            // Now add the table header and rows
+                            for (let row of table.rows) {
+                                let rowData = [];
+                                for (let cell of row.cells) {
+                                    let text = cell.innerText.replace(/"/g, '""').trim();
+                                    rowData.push(`"${text}"`);
+                                }
+                                csv.push(rowData.join(","));
+                            }
+
+                            const csvContent = csv.join("\n");
+                            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                            const url = URL.createObjectURL(blob);
+
+                            const link = document.createElement('a');
+                            link.setAttribute('href', url);
+                            link.setAttribute('download', 'SectorWiseProjects_Report.csv');
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+
+
+                        $(document).off("click", "#downloadXLS3").on("click", "#downloadXLS3", function () {
+                            const table = document.querySelector("#projectcount11 .modal-body table");
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            const wb = XLSX.utils.book_new();
+                            const ws = XLSX.utils.aoa_to_sheet([]); // empty sheet
+
+                            const columnCount = table.rows[0].cells.length;
+
+                            // Prepare filters text for the header
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            const filtersText = filtersTextArr.length > 0 ? ` - ${filtersTextArr.join(', ')}` : "";
+                            const fullTitle = `Sector Wise Projects ${filtersText}`;
+
+                            // Add the combined title + filters as first row (A1)
+                            XLSX.utils.sheet_add_aoa(ws, [[fullTitle]], { origin: "A1" });
+
+                            // Merge title cell across all columns
+                            ws['!merges'] = ws['!merges'] || [];
+                            ws['!merges'].push({
+                                s: { r: 0, c: 0 },
+                                e: { r: 0, c: columnCount - 1 }
+                            });
+
+                            // Style the title cell (bold, white text, blue background, centered)
+                            const titleCell = XLSX.utils.encode_cell({ r: 0, c: 0 });
+                            if (!ws[titleCell]) ws[titleCell] = { t: 's', v: fullTitle };
+                            ws[titleCell].s = {
+                                font: { bold: true, sz: 14, color: { rgb: "FFFFFF" } },
+                                alignment: { horizontal: "center", vertical: "center", wrapText: true },
+                                fill: { fgColor: { rgb: "4F81BD" } }
+                            };
+
+                            // Add an empty row after title (row 2 / index 1)
+                            XLSX.utils.sheet_add_aoa(ws, [[]], { origin: "A2" });
+
+                            // Prepare table data (headers + rows)
+                            let tableData = [];
+                            for (let r = 0; r < table.rows.length; r++) {
+                                let rowData = [];
+                                for (let c = 0; c < table.rows[r].cells.length; c++) {
+                                    rowData.push(table.rows[r].cells[c].innerText.trim());
+                                }
+                                tableData.push(rowData);
+                            }
+
+                            // Add table data starting at row 3 (index 2)
+                            XLSX.utils.sheet_add_aoa(ws, tableData, { origin: "A3" });
+
+                            XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+                            XLSX.writeFile(wb, "SectorWiseProjects_Report.xlsx");
+                        });
+
+                        $("#projectcount11").modal("show");
+                        //$("#projectcount1").modal("hide");
+                    },
+                    //error: function (xhr, status, error) {
+                    //    console.error("Error fetching data:", xhr.responseText);
+                    //    alert("Error fetching data: " + error);
+                    //}
+                    error: function () {
+                        alert("Error fetching data.");
+                    }
+                });
+            }
+            //else {
+            //    var row = "<tr>" +
+            //        "<td colspan='8' style='text-align: center;'>No data available</td>" +
+            //        "</tr>";
+            //    $("#projectcount1 .modal-body table tbody").append(row);
+            //    $("#projectcount1").modal("show");
+            //}
+        });
+
+        /*  $(".Completed_Project").on("click", function () {*/
+        $(document).on("click", ".Completed_Project1", function () {
+            var sectorId = $("#ActiveSectorId").val();
+            var projectCount = document.getElementById("WheelCompNo1").innerHTML;
+            //console.log("SectorID: " + sectorId + " ProjectCount: " + projectCount);
+            if (projectCount != 0) {
+                $.ajax({
+                    url: '/Home/GetCompletedProjectDetails',  // MVC Controller Action
+                    type: 'GET',
+                    data: { sectorId: sectorId },  // Pass ID to Controller
+                    success: function (response) {
+                        // Clear existing rows
+                        $("#projectCompleted1 .modal-body table tbody").empty();
+                        //console.log(response);
+                        // Loop through each project detail
+                        $.each(response, function (index, project) {
+                            // For example, log each project's details
+                            //console.log("Project " + (index + 1) + ":", project);
+
+                            // Append the project data to a table row if desired
+                            var row = "<tr>" +
+                                "<td>" + (index + 1) + "</td>" +
+                                "<td>" + project.SectorName + "</td>" +
+                                "<td>" + project.LineMinistry + "</td>" +
+                                "<td>" + project.ProjectID + "</td>" +
+                                "<td>" + project.ProjectName + "</td>" +
+                                "<td>" + project.CompletedDate + "</td>" +
+                                "<td>" + project.ProjectCost + "</td>" +
+                                "<td>" + project.RevisedCost + "</td>" +
+                                "<td>" + project.TExpend + "</td>" +
+                                "</tr>";
+                            $("#projectCompleted1 .modal-body table tbody").append(row);
+                        });
+
+                        $(document).off("click", "#downloadCSV4").on("click", "#downloadCSV4", function () {
+                            const table = document.querySelector("#projectCompleted1 .modal-body table");
+
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            let csv = [];
+
+                            // Prepare filters text
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            // Build the title line with filters (if any)
+                            let titleLine = "Sector Wise Completed Projects";
+                            if (filtersTextArr.length > 0) {
+                                titleLine += " - " + filtersTextArr.join(', ');
+                            }
+
+                            // Add the title + filters line as first row in CSV (quoted)
+                            csv.push(`"${titleLine}"`);
+
+                            // Empty row after title line
+                            csv.push("");
+
+                            // Now add the table header and rows
+                            for (let row of table.rows) {
+                                let rowData = [];
+                                for (let cell of row.cells) {
+                                    let text = cell.innerText.replace(/"/g, '""').trim();
+                                    rowData.push(`"${text}"`);
+                                }
+                                csv.push(rowData.join(","));
+                            }
+
+                            const csvContent = csv.join("\n");
+                            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                            const url = URL.createObjectURL(blob);
+
+                            const link = document.createElement('a');
+                            link.setAttribute('href', url);
+                            link.setAttribute('download', 'SectorWiseCompletedProjects_Report.csv');
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+
+
+                        $(document).off("click", "#downloadXLS4").on("click", "#downloadXLS4", function () {
+                            const table = document.querySelector("#projectCompleted1 .modal-body table");
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            const wb = XLSX.utils.book_new();
+                            const ws = XLSX.utils.aoa_to_sheet([]); // empty sheet
+
+                            const columnCount = table.rows[0].cells.length;
+
+                            // Prepare filters text for the header
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            const filtersText = filtersTextArr.length > 0 ? ` - ${filtersTextArr.join(', ')}` : "";
+                            const fullTitle = `Sector Wise Completed Projects ${filtersText}`;
+
+                            // Add the combined title + filters as first row (A1)
+                            XLSX.utils.sheet_add_aoa(ws, [[fullTitle]], { origin: "A1" });
+
+                            // Merge title cell across all columns
+                            ws['!merges'] = ws['!merges'] || [];
+                            ws['!merges'].push({
+                                s: { r: 0, c: 0 },
+                                e: { r: 0, c: columnCount - 1 }
+                            });
+
+                            // Style the title cell (bold, white text, blue background, centered)
+                            const titleCell = XLSX.utils.encode_cell({ r: 0, c: 0 });
+                            if (!ws[titleCell]) ws[titleCell] = { t: 's', v: fullTitle };
+                            ws[titleCell].s = {
+                                font: { bold: true, sz: 14, color: { rgb: "FFFFFF" } },
+                                alignment: { horizontal: "center", vertical: "center", wrapText: true },
+                                fill: { fgColor: { rgb: "4F81BD" } }
+                            };
+
+                            // Add an empty row after title (row 2 / index 1)
+                            XLSX.utils.sheet_add_aoa(ws, [[]], { origin: "A2" });
+
+                            // Prepare table data (headers + rows)
+                            let tableData = [];
+                            for (let r = 0; r < table.rows.length; r++) {
+                                let rowData = [];
+                                for (let c = 0; c < table.rows[r].cells.length; c++) {
+                                    rowData.push(table.rows[r].cells[c].innerText.trim());
+                                }
+                                tableData.push(rowData);
+                            }
+
+                            // Add table data starting at row 3 (index 2)
+                            XLSX.utils.sheet_add_aoa(ws, tableData, { origin: "A3" });
+
+                            XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+                            XLSX.writeFile(wb, "SectorWiseCompletedProjects_Report.xlsx");
+                        });
+                        $("#projectCompleted1").modal("show");
+                        //$("#projectCompleted11").modal("hide");
+                    },
+                    //error: function (xhr, status, error) {
+                    //    console.error("Error fetching data:", xhr.responseText);
+                    //    alert("Error fetching data: " + error);
+                    //}
+                    error: function () {
+                        alert("Error fetching data.");
+                    }
+                });
+            }
+            //else {
+            //    $("#projectCompleted .modal-body table tbody").empty();
+            //    var row = "<tr>" +
+            //        "<td colspan='9' style='text-align: center;'>No data available</td>" +
+            //        "</tr>";
+            //    $("#projectCompleted .modal-body table tbody").append(row);
+            //    $("#projectCompleted").modal("show");
+            //}
+        });
+
+        /*$(".New_Added").on("click", function () {*/
+        $(document).on("click", ".New_Added1", function () {
+            var sectorId = $("#ActiveSectorId").val();
+            var projectCount = document.getElementById("WheelNewAddNo1").innerHTML;
+            //console.log("SectorID: " + sectorId + " ProjectCount: " + projectCount);
+            if (projectCount != 0) {
+                $.ajax({
+                    url: '/Home/GetNewlyAddedProjectDetails',  // MVC Controller Action
+                    type: 'GET',
+                    data: { sectorId: sectorId },  // Pass ID to Controller
+                    success: function (response) {
+                        // Clear existing rows
+                        $("#projectNewlyAdded1 .modal-body table tbody").empty();
+                        //console.log(response);
+                        // Loop through each project detail
+                        $.each(response, function (index, project) {
+                            // For example, log each project's details
+                            //console.log("Project " + (index + 1) + ":", project);
+
+                            // Append the project data to a table row if desired
+                            var row = "<tr>" +
+                                "<td>" + (index + 1) + "</td>" +
+                                "<td>" + project.SectorName + "</td>" +
+                                "<td>" + project.LineMinistry + "</td>" +
+                                "<td>" + project.ProjectID + "</td>" +
+                                "<td>" + project.ProjectName + "</td>" +
+                                "<td>" + project.ProjectStartDt + "</td>" +
+                                "<td>" + project.ProjectCost + "</td>" +
+                                "<td>" + project.RevisedCost + "</td>" +
+                                "<td>" + project.TExpend + "</td>" +
+                                "</tr>";
+                            $("#projectNewlyAdded1 .modal-body table tbody").append(row);
+                        });
+                        $(document).off("click", "#downloadCSV5").on("click", "#downloadCSV5", function () {
+                            const table = document.querySelector("#projectNewlyAdded1 .modal-body table");
+
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            let csv = [];
+
+                            // Prepare filters text
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            // Build the title line with filters (if any)
+                            let titleLine = "Sector Wise Newly Added Projects";
+                            if (filtersTextArr.length > 0) {
+                                titleLine += " - " + filtersTextArr.join(', ');
+                            }
+
+                            // Add the title + filters line as first row in CSV (quoted)
+                            csv.push(`"${titleLine}"`);
+
+                            // Empty row after title line
+                            csv.push("");
+
+                            // Now add the table header and rows
+                            for (let row of table.rows) {
+                                let rowData = [];
+                                for (let cell of row.cells) {
+                                    let text = cell.innerText.replace(/"/g, '""').trim();
+                                    rowData.push(`"${text}"`);
+                                }
+                                csv.push(rowData.join(","));
+                            }
+
+                            const csvContent = csv.join("\n");
+                            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                            const url = URL.createObjectURL(blob);
+
+                            const link = document.createElement('a');
+                            link.setAttribute('href', url);
+                            link.setAttribute('download', 'SectorWiseNewlyAddedProjects_Report.csv');
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+
+
+                        $(document).off("click", "#downloadXLS5").on("click", "#downloadXLS5", function () {
+                            const table = document.querySelector("#projectNewlyAdded1 .modal-body table");
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            const wb = XLSX.utils.book_new();
+                            const ws = XLSX.utils.aoa_to_sheet([]); // empty sheet
+
+                            const columnCount = table.rows[0].cells.length;
+
+                            // Prepare filters text for the header
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            const filtersText = filtersTextArr.length > 0 ? ` - ${filtersTextArr.join(', ')}` : "";
+                            const fullTitle = `Sector Wise Newly Added Projects ${filtersText}`;
+
+                            // Add the combined title + filters as first row (A1)
+                            XLSX.utils.sheet_add_aoa(ws, [[fullTitle]], { origin: "A1" });
+
+                            // Merge title cell across all columns
+                            ws['!merges'] = ws['!merges'] || [];
+                            ws['!merges'].push({
+                                s: { r: 0, c: 0 },
+                                e: { r: 0, c: columnCount - 1 }
+                            });
+
+                            // Style the title cell (bold, white text, blue background, centered)
+                            const titleCell = XLSX.utils.encode_cell({ r: 0, c: 0 });
+                            if (!ws[titleCell]) ws[titleCell] = { t: 's', v: fullTitle };
+                            ws[titleCell].s = {
+                                font: { bold: true, sz: 14, color: { rgb: "FFFFFF" } },
+                                alignment: { horizontal: "center", vertical: "center", wrapText: true },
+                                fill: { fgColor: { rgb: "4F81BD" } }
+                            };
+
+                            // Add an empty row after title (row 2 / index 1)
+                            XLSX.utils.sheet_add_aoa(ws, [[]], { origin: "A2" });
+
+                            // Prepare table data (headers + rows)
+                            let tableData = [];
+                            for (let r = 0; r < table.rows.length; r++) {
+                                let rowData = [];
+                                for (let c = 0; c < table.rows[r].cells.length; c++) {
+                                    rowData.push(table.rows[r].cells[c].innerText.trim());
+                                }
+                                tableData.push(rowData);
+                            }
+
+                            // Add table data starting at row 3 (index 2)
+                            XLSX.utils.sheet_add_aoa(ws, tableData, { origin: "A3" });
+
+                            XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+                            XLSX.writeFile(wb, "SectorWiseNewlyAddedProjects_Report.xlsx");
+                        });
+                        $("#projectNewlyAdded1").modal("show");
+                        //$("#projectNewlyAdded11").modal("hide");
+                    },
+                    //error: function (xhr, status, error) {
+                    //    console.error("Error fetching data:", xhr.responseText);
+                    //    alert("Error fetching data: " + error);
+                    //}
+                    error: function () {
+                        alert("Error fetching data.");
+                    }
+                });
+            }
+            //else {
+            //    $("#projectNewlyAdded .modal-body table tbody").empty();
+            //    var row = "<tr>" +
+            //        "<td colspan='9' style='text-align: center;'>No data available</td>" +
+            //        "</tr>";
+            //    $("#projectNewlyAdded .modal-body table tbody").append(row);
+            //    $("#projectNewlyAdded").modal("show");
+            //}
+        });
+    });
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        /*$(".project-count").on("click", function () {*/
+        $(document).on("click", ".project-count", function () {
+            console.log("project-count clicked");
+
+            var ministryId = $("#ActiveMinistryId").val();
+            var projectCount = document.getElementById("WheelPC").innerHTML;
+            //console.log("SectorID: " + sectorId + " ProjectCount: " + projectCount);
+            if (projectCount != 0) {
+                $.ajax({
+                    url: '/Home/GetMinistryWiseProjectDetails',  // MVC Controller Action
+                    type: 'GET',
+                    data: { ministryId: ministryId },  // Pass ID to Controller
+                    success: function (response) {
+
+                        // Clear existing rows
+                        $("#projectcount1 .modal-body table tbody").empty();
+                        //console.log(response);
+                        // Loop through each project detail
+                        $.each(response, function (index, project) {
+                            // For example, log each project's details
+                            //console.log("Project " + (index + 1) + ":", project);
+
+                            // Append the project data to a table row if desired
+                            var row = "<tr>" +
+                                "<td>" + (index + 1) + "</td>" +
+                                "<td>" + project.LineMinistry + "</td>" +
+                                "<td>" + project.SectorName + "</td>" +
+                                "<td>" + project.ProjectID + "</td>" +
+                                "<td>" + project.ProjectName + "</td>" +
+                                "<td>" + project.ProjectCost + "</td>" +
+                                "<td>" + project.RevisedCost + "</td>" +
+                                "<td>" + project.TExpend + "</td>" +
+                                "</tr>";
+                            $("#projectcount1 .modal-body table tbody").append(row);
+                        });
+
+                        $(document).off("click", "#downloadCSV").on("click", "#downloadCSV", function () {
+                            const table = document.querySelector("#projectcount1 .modal-body table");
+
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            let csv = [];
+
+                            // Prepare filters text
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            // Build the title line with filters (if any)
+                            let titleLine = "Ministry Wise Projects";
+                            if (filtersTextArr.length > 0) {
+                                titleLine += " - " + filtersTextArr.join(', ');
+                            }
+
+                            // Add the title + filters line as first row in CSV (quoted)
+                            csv.push(`"${titleLine}"`);
+
+                            // Empty row after title line
+                            csv.push("");
+
+                            // Now add the table header and rows
+                            for (let row of table.rows) {
+                                let rowData = [];
+                                for (let cell of row.cells) {
+                                    let text = cell.innerText.replace(/"/g, '""').trim();
+                                    rowData.push(`"${text}"`);
+                                }
+                                csv.push(rowData.join(","));
+                            }
+
+                            const csvContent = csv.join("\n");
+                            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                            const url = URL.createObjectURL(blob);
+
+                            const link = document.createElement('a');
+                            link.setAttribute('href', url);
+                            link.setAttribute('download', 'MinistryWiseProjects_Report.csv');
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+
+
+                        $(document).off("click", "#downloadXLS").on("click", "#downloadXLS", function () {
+                            const table = document.querySelector("#projectcount1 .modal-body table");
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            const wb = XLSX.utils.book_new();
+                            const ws = XLSX.utils.aoa_to_sheet([]); // empty sheet
+
+                            const columnCount = table.rows[0].cells.length;
+
+                            // Prepare filters text for the header
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            const filtersText = filtersTextArr.length > 0 ? ` - ${filtersTextArr.join(', ')}` : "";
+                            const fullTitle = `Ministry Wise Projects ${filtersText}`;
+
+                            // Add the combined title + filters as first row (A1)
+                            XLSX.utils.sheet_add_aoa(ws, [[fullTitle]], { origin: "A1" });
+
+                            // Merge title cell across all columns
+                            ws['!merges'] = ws['!merges'] || [];
+                            ws['!merges'].push({
+                                s: { r: 0, c: 0 },
+                                e: { r: 0, c: columnCount - 1 }
+                            });
+
+                            // Style the title cell (bold, white text, blue background, centered)
+                            const titleCell = XLSX.utils.encode_cell({ r: 0, c: 0 });
+                            if (!ws[titleCell]) ws[titleCell] = { t: 's', v: fullTitle };
+                            ws[titleCell].s = {
+                                font: { bold: true, sz: 14, color: { rgb: "FFFFFF" } },
+                                alignment: { horizontal: "center", vertical: "center", wrapText: true },
+                                fill: { fgColor: { rgb: "4F81BD" } }
+                            };
+
+                            // Add an empty row after title (row 2 / index 1)
+                            XLSX.utils.sheet_add_aoa(ws, [[]], { origin: "A2" });
+
+                            // Prepare table data (headers + rows)
+                            let tableData = [];
+                            for (let r = 0; r < table.rows.length; r++) {
+                                let rowData = [];
+                                for (let c = 0; c < table.rows[r].cells.length; c++) {
+                                    rowData.push(table.rows[r].cells[c].innerText.trim());
+                                }
+                                tableData.push(rowData);
+                            }
+
+                            // Add table data starting at row 3 (index 2)
+                            XLSX.utils.sheet_add_aoa(ws, tableData, { origin: "A3" });
+
+                            XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+                            XLSX.writeFile(wb, "MinistryWiseProjects_Report.xlsx");
+                        });
+
+                        $("#projectcount1").modal("show");
+                        $("#projectcount11").modal('hide');
+                    },
+                    //error: function (xhr, status, error) {
+                    //    console.error("Error fetching data:", xhr.responseText);
+                    //    alert("Error fetching data: " + error);
+                    //}
+
+                    error: function () {
+                        alert("Error fetching data.");
+                    }
+                });
+            }
+            //else {
+            //    var row = "<tr>" +
+            //        "<td colspan='8' style='text-align: center;'>No data available</td>" +
+            //        "</tr>";
+            //    $("#projectcount1 .modal-body table tbody").append(row);
+            //    $("#projectcount1").modal("show");
+            //}
+        });
+
+        /*  $(".Completed_Project").on("click", function () {*/
+        $(document).on("click", ".Completed_Project", function () {
+            var ministryId = $("#ActiveMinistryId").val();
+            var projectCount = document.getElementById("WheelCompNo").innerHTML;
+            //console.log("SectorID: " + sectorId + " ProjectCount: " + projectCount);
+            if (projectCount != 0) {
+                $.ajax({
+                    url: '/Home/GetMinistryWiseCompletedProjectDetails',  // MVC Controller Action
+                    type: 'GET',
+                    data: { ministryId: ministryId },  // Pass ID to Controller
+                    success: function (response) {
+                        // Clear existing rows
+                        $("#projectCompleted .modal-body table tbody").empty();
+                        //console.log(response);
+                        // Loop through each project detail
+                        $.each(response, function (index, project) {
+                            // For example, log each project's details
+                            //console.log("Project " + (index + 1) + ":", project);
+
+                            // Append the project data to a table row if desired
+                            var row = "<tr>" +
+                                "<td>" + (index + 1) + "</td>" +
+                                "<td>" + project.LineMinistry + "</td>" +
+                                "<td>" + project.SectorName + "</td>" +
+                                "<td>" + project.ProjectID + "</td>" +
+                                "<td>" + project.ProjectName + "</td>" +
+                                "<td>" + project.CompletedDate + "</td>" +
+                                "<td>" + project.ProjectCost + "</td>" +
+                                "<td>" + project.RevisedCost + "</td>" +
+                                "<td>" + project.TExpend + "</td>" +
+                                "</tr>";
+                            $("#projectCompleted .modal-body table tbody").append(row);
+                        });
+
+                        $(document).off("click", "#downloadCSV1").on("click", "#downloadCSV1", function () {
+                            const table = document.querySelector("#projectCompleted .modal-body table");
+
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            let csv = [];
+
+                            // Prepare filters text
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            // Build the title line with filters (if any)
+                            let titleLine = "Ministry Wise Completed Projects";
+                            if (filtersTextArr.length > 0) {
+                                titleLine += " - " + filtersTextArr.join(', ');
+                            }
+
+                            // Add the title + filters line as first row in CSV (quoted)
+                            csv.push(`"${titleLine}"`);
+
+                            // Empty row after title line
+                            csv.push("");
+
+                            // Now add the table header and rows
+                            for (let row of table.rows) {
+                                let rowData = [];
+                                for (let cell of row.cells) {
+                                    let text = cell.innerText.replace(/"/g, '""').trim();
+                                    rowData.push(`"${text}"`);
+                                }
+                                csv.push(rowData.join(","));
+                            }
+
+                            const csvContent = csv.join("\n");
+                            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                            const url = URL.createObjectURL(blob);
+
+                            const link = document.createElement('a');
+                            link.setAttribute('href', url);
+                            link.setAttribute('download', 'MinistryWiseCompleted_Report.csv');
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+
+
+                        $(document).off("click", "#downloadXLS1").on("click", "#downloadXLS1", function () {
+                            const table = document.querySelector("#projectCompleted .modal-body table");
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            const wb = XLSX.utils.book_new();
+                            const ws = XLSX.utils.aoa_to_sheet([]); // empty sheet
+
+                            const columnCount = table.rows[0].cells.length;
+
+                            // Prepare filters text for the header
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            const filtersText = filtersTextArr.length > 0 ? ` - ${filtersTextArr.join(', ')}` : "";
+                            const fullTitle = `Ministry Wise Completed Projects ${filtersText}`;
+
+                            // Add the combined title + filters as first row (A1)
+                            XLSX.utils.sheet_add_aoa(ws, [[fullTitle]], { origin: "A1" });
+
+                            // Merge title cell across all columns
+                            ws['!merges'] = ws['!merges'] || [];
+                            ws['!merges'].push({
+                                s: { r: 0, c: 0 },
+                                e: { r: 0, c: columnCount - 1 }
+                            });
+
+                            // Style the title cell (bold, white text, blue background, centered)
+                            const titleCell = XLSX.utils.encode_cell({ r: 0, c: 0 });
+                            if (!ws[titleCell]) ws[titleCell] = { t: 's', v: fullTitle };
+                            ws[titleCell].s = {
+                                font: { bold: true, sz: 14, color: { rgb: "FFFFFF" } },
+                                alignment: { horizontal: "center", vertical: "center", wrapText: true },
+                                fill: { fgColor: { rgb: "4F81BD" } }
+                            };
+
+                            // Add an empty row after title (row 2 / index 1)
+                            XLSX.utils.sheet_add_aoa(ws, [[]], { origin: "A2" });
+
+                            // Prepare table data (headers + rows)
+                            let tableData = [];
+                            for (let r = 0; r < table.rows.length; r++) {
+                                let rowData = [];
+                                for (let c = 0; c < table.rows[r].cells.length; c++) {
+                                    rowData.push(table.rows[r].cells[c].innerText.trim());
+                                }
+                                tableData.push(rowData);
+                            }
+
+                            // Add table data starting at row 3 (index 2)
+                            XLSX.utils.sheet_add_aoa(ws, tableData, { origin: "A3" });
+
+                            XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+                            XLSX.writeFile(wb, "MinistryWiseCompletedProjects_Report.xlsx");
+                        });
+
+                        $("#projectCompleted").modal("show");
+                        $("#projectCompleted1").modal('hide');
+                    },
+                    //error: function (xhr, status, error) {
+                    //    console.error("Error fetching data:", xhr.responseText);
+                    //    alert("Error fetching data: " + error);
+                    //}
+                    error: function () {
+                        alert("Error fetching data.");
+                    }
+                });
+            }
+            //else {
+            //    $("#projectCompleted .modal-body table tbody").empty();
+            //    var row = "<tr>" +
+            //        "<td colspan='9' style='text-align: center;'>No data available</td>" +
+            //        "</tr>";
+            //    $("#projectCompleted .modal-body table tbody").append(row);
+            //    $("#projectCompleted").modal("show");
+            //}
+        });
+
+        /*$(".New_Added").on("click", function () {*/
+        $(document).on("click", ".New_Added", function () {
+            var ministryId = $("#ActiveMinistryId").val();
+            var projectCount = document.getElementById("WheelNewAddNo").innerHTML;
+            //console.log("SectorID: " + sectorId + " ProjectCount: " + projectCount);
+            if (projectCount != 0) {
+                $.ajax({
+                    url: '/Home/GetMinistryWiseNewlyAddedProjectDetails',  // MVC Controller Action
+                    type: 'GET',
+                    data: { ministryId: ministryId },  // Pass ID to Controller
+                    success: function (response) {
+                        // Clear existing rows
+                        $("#projectNewlyAdded .modal-body table tbody").empty();
+                        //console.log(response);
+                        // Loop through each project detail
+                        $.each(response, function (index, project) {
+                            // For example, log each project's details
+                            //console.log("Project " + (index + 1) + ":", project);
+
+                            // Append the project data to a table row if desired
+                            var row = "<tr>" +
+                                "<td>" + (index + 1) + "</td>" +
+                                "<td>" + project.LineMinistry + "</td>" +
+                                "<td>" + project.SectorName + "</td>" +
+                                "<td>" + project.ProjectID + "</td>" +
+                                "<td>" + project.ProjectName + "</td>" +
+                                "<td>" + project.ProjectStartDt + "</td>" +
+                                "<td>" + project.ProjectCost + "</td>" +
+                                "<td>" + project.RevisedCost + "</td>" +
+                                "<td>" + project.TExpend + "</td>" +
+                                "</tr>";
+                            $("#projectNewlyAdded .modal-body table tbody").append(row);
+                        });
+
+                        $(document).off("click", "#downloadCSV2").on("click", "#downloadCSV2", function () {
+                            const table = document.querySelector("#projectNewlyAdded .modal-body table");
+
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            let csv = [];
+
+                            // Prepare filters text
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            // Build the title line with filters (if any)
+                            let titleLine = "Ministry Wise NewlyAdded Projects";
+                            if (filtersTextArr.length > 0) {
+                                titleLine += " - " + filtersTextArr.join(', ');
+                            }
+
+                            // Add the title + filters line as first row in CSV (quoted)
+                            csv.push(`"${titleLine}"`);
+
+                            // Empty row after title line
+                            csv.push("");
+
+                            // Now add the table header and rows
+                            for (let row of table.rows) {
+                                let rowData = [];
+                                for (let cell of row.cells) {
+                                    let text = cell.innerText.replace(/"/g, '""').trim();
+                                    rowData.push(`"${text}"`);
+                                }
+                                csv.push(rowData.join(","));
+                            }
+
+                            const csvContent = csv.join("\n");
+                            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                            const url = URL.createObjectURL(blob);
+
+                            const link = document.createElement('a');
+                            link.setAttribute('href', url);
+                            link.setAttribute('download', 'MinistryWiseNewlyAddedProjects_Report.csv');
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+
+
+                        $(document).off("click", "#downloadXLS2").on("click", "#downloadXLS2", function () {
+                            const table = document.querySelector("#projectNewlyAdded .modal-body table");
+                            if (!table || table.rows.length === 0) {
+                                alert('No data to download.');
+                                return;
+                            }
+
+                            const wb = XLSX.utils.book_new();
+                            const ws = XLSX.utils.aoa_to_sheet([]); // empty sheet
+
+                            const columnCount = table.rows[0].cells.length;
+
+                            // Prepare filters text for the header
+                            let filtersTextArr = [];
+                            $('#filters .filter-row').each(function () {
+                                let field = $(this).find('.field').val();
+                                let op = $(this).find('.operator').val();
+                                let val = $(this).find('.value').val();
+
+                                if (field && op && val) {
+                                    let displayName = fieldDisplayNames[field] || field;
+                                    filtersTextArr.push(`${displayName} ${op} ${val}`);
+                                }
+                            });
+
+                            const filtersText = filtersTextArr.length > 0 ? ` - ${filtersTextArr.join(', ')}` : "";
+                            const fullTitle = `Ministry Wise NewlyAdded Projects ${filtersText}`;
+
+                            // Add the combined title + filters as first row (A1)
+                            XLSX.utils.sheet_add_aoa(ws, [[fullTitle]], { origin: "A1" });
+
+                            // Merge title cell across all columns
+                            ws['!merges'] = ws['!merges'] || [];
+                            ws['!merges'].push({
+                                s: { r: 0, c: 0 },
+                                e: { r: 0, c: columnCount - 1 }
+                            });
+
+                            // Style the title cell (bold, white text, blue background, centered)
+                            const titleCell = XLSX.utils.encode_cell({ r: 0, c: 0 });
+                            if (!ws[titleCell]) ws[titleCell] = { t: 's', v: fullTitle };
+                            ws[titleCell].s = {
+                                font: { bold: true, sz: 14, color: { rgb: "FFFFFF" } },
+                                alignment: { horizontal: "center", vertical: "center", wrapText: true },
+                                fill: { fgColor: { rgb: "4F81BD" } }
+                            };
+
+                            // Add an empty row after title (row 2 / index 1)
+                            XLSX.utils.sheet_add_aoa(ws, [[]], { origin: "A2" });
+
+                            // Prepare table data (headers + rows)
+                            let tableData = [];
+                            for (let r = 0; r < table.rows.length; r++) {
+                                let rowData = [];
+                                for (let c = 0; c < table.rows[r].cells.length; c++) {
+                                    rowData.push(table.rows[r].cells[c].innerText.trim());
+                                }
+                                tableData.push(rowData);
+                            }
+
+                            // Add table data starting at row 3 (index 2)
+                            XLSX.utils.sheet_add_aoa(ws, tableData, { origin: "A3" });
+
+                            XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+                            XLSX.writeFile(wb, "MinistryWiseNewlyAddedProjects_Report.xlsx");
+                        });
+                        $("#projectNewlyAdded").modal("show");
+                        $("#projectNewlyAdded1").modal('hide');
+                    },
+                    //error: function (xhr, status, error) {
+                    //    console.error("Error fetching data:", xhr.responseText);
+                    //    alert("Error fetching data: " + error);
+                    //}
+                    error: function () {
+                        alert("Error fetching data.");
+                    }
+                });
+            }
+            //else {
+            //    $("#projectNewlyAdded .modal-body table tbody").empty();
+            //    var row = "<tr>" +
+            //        "<td colspan='9' style='text-align: center;'>No data available</td>" +
+            //        "</tr>";
+            //    $("#projectNewlyAdded .modal-body table tbody").append(row);
+            //    $("#projectNewlyAdded").modal("show");
+            //}
+        });
+
+
+
+    });
+
+</script>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    loadMinistries();
+    function loadMinistries() {
+    $.ajax({
+        url: '/Home/GetMinistries',
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+            var $ministriesList = $('#ministriesList');
+            $ministriesList.empty();
+
+            // Don't add 'active' class here, just create all links
+            data.forEach(function (ministries) {
+                $('<a>', {
+                    href: 'javascript:void(0)',
+                    text: ministries.PROJ_MINISTRY_NAME,
+                    // NO class assigned here
+                    'data-id': ministries.PROJ_MINISTRY_ID,
+                    'data-img': ministries.MMImage
+                }).appendTo($ministriesList);
+            });
+
+            initSlider();
+
+            // Now, find the first ministry with ACTIVE_FLAG true
+            var firstActiveMinistryId = null;
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].ACTIVE_FLAG) {
+                    firstActiveMinistryId = data[i].PROJ_MINISTRY_ID;
+                    break;
+                }
+            }
+
+            // If none marked active, fallback to first ministry
+            if (!firstActiveMinistryId && data.length > 0) {
+                firstActiveMinistryId = data[0].PROJ_MINISTRY_ID;
+            }
+
+            // Remove active from all links just in case
+            $ministriesList.find('a').removeClass('active');
+
+            // Add active class only to the ministry link that matches firstActiveMinistryId
+            var $activeLink = $ministriesList.find('a').filter(function() {
+                return $(this).data('id') === firstActiveMinistryId;
+            });
+
+            if ($activeLink.length) {
+                $activeLink.addClass('active');
+                loadministriesDetail($activeLink.data('id'), $activeLink.data('img'));
+            }
+        }
+    });
+}
+
+    
+
+    function initSlider() {
+        var $links = $('#ministriesList a');
+        var currentIndex = $links.index($('#ministriesList a.active'));
+        var totalItems = $links.length;
+        var timer;
+
+        function updateActive(index) {
+            currentIndex = (index + totalItems) % totalItems;
+            $links.removeClass('active');
+            var $current = $links.eq(currentIndex).addClass('active');
+            loadministriesDetail($current.data('id'), $current.data('img'));
+
+
+            console.log($current.data('id'));
+            scrollToView($current);
+            resetTimer();
+        }
+
+        function scrollToView($el) {
+            var $container = $('.ministriesdetails');
+            $container.animate({
+                scrollTop: $el.position().top + $container.scrollTop() - $container.height() / 2 + $el.outerHeight() / 2
+            }, 1000);
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                updateActive(currentIndex + 1);
+            }, 8000);
+        }
+
+        $('#prev01').off('click').on('click', function () {
+            updateActive(currentIndex - 1);
+        });
+
+        $('#next01').off('click').on('click', function () {
+            updateActive(currentIndex + 1);
+        });
+
+        $('#ministriesList').off('click', 'a').on('click', 'a', function () {
+            updateActive($links.index(this));
+        });
+
+        resetTimer();
+    }
+
+        function loadministriesDetail(id, imgSrc) {
+            document.getElementById("ActiveMinistryId").value = id;
+        $.ajax({
+            url: '/Home/GetWheelData',
+            type: 'GET',
+            dataType: 'json',
+            data: { ministriesId: id },  // **Important**: sending parameter here
+            success: function (resp) {
+
+                if (!resp.success || !resp.ministrieswisedata.MinistryWiseDetailList) {
+                    $('#ministriesContent').html(`<div class="alert alert-warning">${resp.message || 'No data available.'}</div>`);
+                    return;
+                }
+
+                var data = resp.ministrieswisedata.MinistryWiseDetailList[0]; // We get filtered single item
+                if (!data) {
+                    // $('#ministriesContent').html(`<div class="alert alert-danger">Ministry ID ${id} not found.</div>`);
+                    $('#ministriesContent').html(`<div class="alert alert-danger">No Ongoing Project found.</div>`);
+                    return;
+                }
+
+                /*$('#ministriesImage').attr('src', '/Content/img/wheelministry/' + imgSrc);*/
+                $('#ministriesContent').html(`
+                    <div class="tabcontent01">
+                        <div class="row shadow-lg p-3 bg-body rounded wheelbox wheelproject" data-ministries-id="${id}">
+                            <h4 class="text-center py-3 heading brd-btm crd-bg-clr text-white">${data.PROJ_MINISTRY_NAME} <small style="font-weight: normal;font-size: 0.7em;">(as of ${resp.ministrieswisedata.Freezmonth})</small></h4>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count">
+                                <img src="../Content/img/project-count.png" alt="" >
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Project Count <span>(No.)</span>
+                                        <div class="tooglelist">
+                                            <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Number of central sector projects worth Rs. 150 Cr. and above under MoSPI's monitoring.</h6></div>
+                                        </div>
+                                    </p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelPC">${data.ProjectCount}</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count">
+                                <img src="../Content/img/orginal-cost.png" alt="" >
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Original Cost <span>(in Cr)</span>
+                                        <div class="tooglelist">
+                                            <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Total project cost approved by the sanction authority at the time of approval.</h6></div>
+                                        </div>
+                                    </p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelPC">â‚¹ ${numberWithCommas(data.ProjectCost)}</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count">
+                                <img src="../Content/img/revised-cost.png" alt="" >
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Latest Revised Cost <span>(in Cr)</span>
+                                        <div class="tooglelist">
+                                            <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Latest of all reported revised project cost/(s).</h6></div>
+                                        </div>
+                                    </p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelPC">â‚¹ ${numberWithCommas(data.RevisedCost)}</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count">
+                                <img src="../Content/img/expenditure.png" alt="" >
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Expenditure(Cumm.) <span>(in Cr)</span>
+                                        <div class="tooglelist">
+                                            <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Total expenditure incurred from the project sanction date.</h6></div>
+                                        </div>
+                                    </p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelPC">â‚¹ ${numberWithCommas(data.Expend)}</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad Completed_Project">
+                                <img src="../Content/img/compliance-year.png" alt="" >
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Completed During Month <span>(No.)</span>
+                                        <div class="tooglelist"><a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Number of projects reported as completed during last month.</h6></div>
+                                        </div>
+                                    </p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelCompNo">${data.CompletedProject}</label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad New_Added">
+                                <img src="../Content/img/new-project.png" alt="" >
+                                <div class="text-center m-0" style="position:relative">
+                                    <p class="count-head py-2 d-inline-block">
+                                        Newly Added <span>(No.)</span>
+                                        <div class="tooglelist"><a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+                                            <div class="listhover listbottom"><h6>Number of projects newly onboarded under MoSPI's monitoring during last month.</h6></div>
+                                        </div>
+                                    </p>
+                                    <h5 class="project-count1">
+                                        <label id="WheelNewAddNo">${data.NewAddedProject}</label>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            },
+            error: function () {
+                $('#ministriesContent').html('<div class="alert alert-danger">Error loading data. Please try again later.</div>');
+            }
+        });
+    }
+});
+
+// Utility function to format numbers with commas
+// function numberWithCommas(x) {
+//     if (x == null) return '0';
+//     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    // }
+
+    function numberWithCommas(x) {
+    if (x == null || x === '') return '0';
+
+    // Strip commas in case the value was already formatted
+    let cleaned = typeof x === 'string' ? x.replace(/,/g, '') : x;
+
+    let num = Number(cleaned);
+    if (isNaN(num)) return '0';
+
+    num = num.toFixed(2);
+    let parts = num.split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return parts.join('.');
+}
+
+
+  // 
+</script>
+
+
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+    loadSectors();
+
+    
+    function loadSectors() {
+  $.ajax({
+    url: '/Home/GetSectors',
+    type: 'GET',
+    dataType: 'json',
+    success: function (data) {
+      var $sectorList = $('#sectorList');
+      $sectorList.empty();
+
+      // Create all links WITHOUT 'active' class
+      data.forEach(function (sector) {
+        $('<a>', {
+          href: 'javascript:void(0)',
+          text: sector.SECTOR_NAME,
+          // No active class here
+          'data-id': sector.SECTOR_ID,
+          'data-img': sector.SMIImage
+        }).appendTo($sectorList);
+      });
+
+      initSlider(); // initialize slider AFTER data is loaded
+
+      // Find the first sector with ACTIVE_FLAG true
+      var firstActiveSectorId = null;
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].ACTIVE_FLAG) {
+          firstActiveSectorId = data[i].SECTOR_ID;
+          break;
+        }
+      }
+
+      // If no active sector found, fallback to first sector
+      if (!firstActiveSectorId && data.length > 0) {
+        firstActiveSectorId = data[0].SECTOR_ID;
+      }
+
+      // Remove any active class just in case
+      $sectorList.find('a').removeClass('active');
+
+      // Add active class only to the correct sector link
+      var $activeLink = $sectorList.find('a').filter(function () {
+        return $(this).data('id') === firstActiveSectorId;
+      });
+
+      if ($activeLink.length) {
+        $activeLink.addClass('active');
+        $activeLink.trigger('click');
+      }
+    }
+  });
+}
+
+      function initSlider() {
+          var $links = $('#sectorList a');
+          var currentIndex = $links.index($('#sectorList a.active'));
+          var totalItems = $links.length;
+          var timer;
+
+          function updateActive(index) {
+              currentIndex = (index + totalItems) % totalItems;
+              $links.removeClass('active');
+              var $current = $links.eq(currentIndex).addClass('active');
+              loadSectorDetail($current.data('id'), $current.data('img'));
+              scrollToView($current);
+              resetTimer();
+          }
+
+          function scrollToView($el) {
+              var $container = $('.sectordetails');
+              $container.animate({
+                  scrollTop: $el.position().top + $container.scrollTop() - $container.height() / 2 + $el.outerHeight() / 2
+              }, 1000);
+          }
+
+          function resetTimer() {
+              clearInterval(timer);
+              timer = setInterval(function () {
+                  updateActive(currentIndex + 1);
+              }, 8000);
+          }
+
+          $('#prev001').off('click').on('click', function () {
+              updateActive(currentIndex - 1);
+          });
+
+          $('#next001').off('click').on('click', function () {
+              updateActive(currentIndex + 1);
+          });
+
+          $('#sectorList').off('click', 'a').on('click', 'a', function () {
+              updateActive($links.index(this));
+          });
+
+          resetTimer();
+      }
+
+      function loadSectorDetail(id, imgSrc) {
+
+          document.getElementById("ActiveSectorId").value = id;
+          //alert(id);
+  $.ajax({
+    url: '/Home/GetWheelDataSectorWise',
+    type: 'GET',
+    dataType: 'json',
+      data: { sectorId: id },
+    success: function (resp) {
+      console.log(resp);
+
+      // Check for success and proper data structure
+      if (!resp.success || !resp.StateWisedata?.StateWiseDetailList) {
+        $('#sectorContent').html(`<div class="alert alert-warning">${resp.message || 'No data available.'}</div>`);
+        return;
+      }
+
+      // Find the matching sector data by SectorId
+      var data = resp.StateWisedata.StateWiseDetailList.find(x => Number(x.SectorId) === Number(id));
+
+      if (!data) {
+        $('#sectorContent').html(`<div class="alert alert-danger">Sector ID ${id} not found.</div>`);
+        return;
+      }
+
+      // Update image
+      $('#sectorImage').attr('src', '/Content/img/wheelsector/' + imgSrc);
+
+      // Render content with data fields, assuming these fields exist in your data object
+      //$('#sectorContent').html(`
+      //  <div class="tabcontent01">
+      //    <div class="row shadow-lg p-3 bg-body rounded wheelbox wheelproject" data-sector-id="${id}">
+      //      <h3 class="text-center py-3 heading brd-btm crd-bg-clr text-white">${data.SECTOR_NAME} <small style="font-weight: normal;font-size: 0.7em;">(As of ${resp.StateWisedata.Freezmonth})</small></h3>
+
+      //      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+      //        <img src="../Content/img/project-count.png" alt="">
+      //        <div class="text-center m-0" style="position:relative">
+      //          <p class="count-head py-2 d-inline-block">
+      //            Project Count <span>(No.)</span>
+      //            <div class="tooglelist">
+      //              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+      //              <div class="listhover listbottom"><h6>Total project cost approved by the sanction authority at the time of approval.</h6></div>
+      //            </div>
+      //          </p>
+      //          <h5 class="project-count11"><label id="WheelPC1">${data.ProjectCount}</label></h5>
+      //        </div>
+      //      </div>
+
+      //      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+      //        <img src="../Content/img/orginal-cost.png" alt="">
+      //        <div class="text-center m-0" style="position:relative">
+      //          <p class="count-head py-2 d-inline-block">
+      //            Original Cost <span>(in Cr)</span>
+      //            <div class="tooglelist">
+      //              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+      //              <div class="listhover listbottom"><h6>Total project cost approved by the sanction authority at the time of approval.</h6></div>
+      //            </div>
+      //          </p>
+      //          <h5 class="project-count11"><label id="WheelPC1">â‚¹ ${numberWithCommas(data.ProjectCost)}</label></h5>
+      //        </div>
+      //      </div>
+
+      //      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+      //        <img src="../Content/img/revised-cost.png" alt="">
+      //        <div class="text-center m-0" style="position:relative">
+      //          <p class="count-head py-2 d-inline-block">
+      //            Latest Revised Cost <span>(in Cr)</span>
+      //            <div class="tooglelist">
+      //              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+      //              <div class="listhover listbottom"><h6>Latest of all reported revised project cost/(s).</h6></div>
+      //            </div>
+      //          </p>
+      //          <h5 class="project-count11"><label id="WheelPC1">â‚¹ ${numberWithCommas(data.RevisedCost)}</label></h5>
+      //        </div>
+      //      </div>
+
+      //      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+      //        <img src="../Content/img/expenditure.png" alt="">
+      //        <div class="text-center m-0" style="position:relative">
+      //          <p class="count-head py-2 d-inline-block">
+      //            Expenditure(Cumm.) <span>(in Cr)</span>
+      //            <div class="tooglelist">
+      //              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+      //              <div class="listhover listbottom"><h6>Total expenditure incurred from the project sanction date.</h6></div>
+      //            </div>
+      //          </p>
+      //          <h5 class="project-count11"><label id="WheelPC1">â‚¹ ${numberWithCommas(data.Expend)}</label></h5>
+      //        </div>
+      //      </div>
+
+      //      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad Completed_Project1">
+      //        <img src="../Content/img/compliance-year.png" alt="">
+      //        <div class="text-center m-0" style="position:relative">
+      //          <p class="count-head py-2 d-inline-block">
+      //            Completed During Month <span>(No.)</span>
+      //            <div class="tooglelist">
+      //              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+      //              <div class="listhover listbottom"><h6>Number of projects reported as completed during last month.</h6></div>
+      //            </div>
+      //          </p>
+      //          <h5 class="project-count111"><label id="WheelCompNo1">${data.CompletedProject}</label></h5>
+      //        </div>
+      //      </div>
+
+      //      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad New_Added1">
+      //        <img src="../Content/img/new-project.png" alt="">
+      //        <div class="text-center m-0" style="position:relative">
+      //          <p class="count-head py-2 d-inline-block">
+      //            Newly Added <span>(No.)</span>
+      //            <div class="tooglelist">
+      //              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+      //              <div class="listhover listbottom"><h6>Number of projects newly onboarded under MoSPI's monitoring during last month.</h6></div>
+      //            </div>
+      //          </p>
+      //          <h5 class="project-count111"><label id="WheelNewAddNo1">${data.NewAddedProject}</label></h5>
+      //        </div>
+      //      </div>
+
+      //    </div>
+      //  </div>
+        //`);
+
+        $('#sectorContent').html(`
+  <div class="tabcontent01">
+    <div class="row shadow-lg p-3 bg-body rounded wheelbox wheelproject" data-sector-id="${id}">
+      <h3 class="text-center py-3 heading brd-btm crd-bg-clr text-white">${data.SECTOR_NAME}
+          <small style="font-weight: normal;font-size: 0.7em;">(As of ${resp.StateWisedata.Freezmonth})</small>
+      </h3>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+        <img src="../Content/img/project-count.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Project Count <span>(No.)</span>
+            <div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Total project cost approved by the sanction authority at the time of approval.</h6></div>
+            </div>
+          </p>
+          <h5 class="project-count11"><label id="WheelPC1_ProjectCount">${data.ProjectCount}</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+        <img src="../Content/img/orginal-cost.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Original Cost <span>(in Cr)</span>
+            <div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Total project cost approved by the sanction authority at the time of approval.</h6></div>
+            </div>
+          </p>
+          <h5 class="project-count11"><label id="WheelPC1_ProjectCost">â‚¹ ${numberWithCommas(data.ProjectCost)}</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+        <img src="../Content/img/revised-cost.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Latest Revised Cost <span>(in Cr)</span>
+            <div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Latest of all reported revised project cost/(s).</h6></div>
+            </div>
+          </p>
+          <h5 class="project-count11"><label id="WheelPC1_RevisedCost">â‚¹ ${numberWithCommas(data.RevisedCost)}</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad project-count11">
+        <img src="../Content/img/expenditure.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Expenditure(Cumm.) <span>(in Cr)</span>
+            <div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Total expenditure incurred from the project sanction date.</h6></div>
+            </div>
+          </p>
+          <h5 class="project-count11"><label id="WheelPC1_Expend">â‚¹ ${numberWithCommas(data.Expend)}</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad Completed_Project1">
+        <img src="../Content/img/compliance-year.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Completed During Month <span>(No.)</span>
+            <div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Number of projects reported as completed during last month.</h6></div>
+            </div>
+          </p>
+          <h5 class="project-count111"><label id="WheelCompNo1">${data.CompletedProject}</label></h5>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-12 col-sm-12 d-flex text-center extrapad New_Added1">
+        <img src="../Content/img/new-project.png" alt="">
+        <div class="text-center m-0" style="position:relative">
+          <p class="count-head py-2 d-inline-block">
+            Newly Added <span>(No.)</span>
+            <div class="tooglelist">
+              <a href="javascript:void(0);" class="listicon"><img src="../Content/img/info-icon-blue.svg" alt=""></a>
+              <div class="listhover listbottom"><h6>Number of projects newly onboarded under MoSPI's monitoring during last month.</h6></div>
+            </div>
+          </p>
+          <h5 class="project-count111"><label id="WheelNewAddNo1">${data.NewAddedProject}</label></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+`);
+
+    }
+  });
+}
+
+  });
+
+    // function numberWithCommas(x) {
+    //     if (x == null) return '0';
+    //     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    // }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const ministryTab = document.getElementById('ministry-tab');
+        const stateTab = document.getElementById('state-tab');
+
+        // Listen for when a tab becomes active
+        const tabTriggers = document.querySelectorAll('button[data-bs-toggle="tab"]');
+        tabTriggers.forEach(tab => {
+            tab.addEventListener('shown.bs.tab', function (event) {
+                const activeTabId = event.target.id;
+
+                if (activeTabId === 'ministry-tab') {
+                    ministryTab.classList.add('active');
+                    stateTab.classList.remove('active');
+                } else if (activeTabId === 'state-tab') {
+                    stateTab.classList.add('active');
+                    ministryTab.classList.remove('active');
+                }
+            });
+        });
+    });
+</script>
+</div>
+    </section>
+
+    <!---weel menu start-->
+    <!---weel menu End-->
+   

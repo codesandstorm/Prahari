@@ -1,0 +1,12 @@
+[
+  {
+    "SectorName": "Education",
+    "LineMinistry": "Department of Higher Education",
+    "ProjectID": "EDU-NEW-01",
+    "ProjectName": "National Supercomputing Mission Phase 3",
+    "ProjectStartDt": "2026-07-01",
+    "ProjectCost": "4,500.00",
+    "RevisedCost": "4,500.00",
+    "TExpend": "250.00"
+  }
+]

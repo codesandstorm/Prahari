@@ -1,0 +1,2084 @@
+/*@media only screen and (min-width:3840px) {
+    .homsection .bannerone {
+        left: 38.5%;
+    }
+}
+
+@media only screen and (min-width:1921px) {
+    .homsection .bannerone {
+        left: 38.5%;
+        margin-left: -250px;
+    }
+}
+
+
+@media only screen and (min-width:3840px) {
+    .homsection .bannerone {
+        left: 38.5%;
+    }
+
+    .containerwheel {
+        left: 38%;
+        margin-left: -200px;
+    }
+
+    .wheelbtn {
+        left: 10px;
+    }
+}
+
+
+
+@media only screen and (min-width:3840px) {
+    .homsection .bannerone {
+        left: 38.5%;
+    }
+
+    .containerwheel {
+        left: 38%;
+        margin-left: -200px;
+    }
+
+    .wheelbtn {
+        left: 10px;
+    }
+}
+
+@media only screen and (min-width:1921px) {
+    .homsection .bannerone {
+        left: 38.5%;
+        margin-left: -250px;
+    }
+}*/
+@media only screen and (min-width:1401px) and (max-width:1625px){
+.containerwheel{
+top: -47.5%;
+}
+}
+@media only screen and (min-width:1400px) and (max-width:1699px) {
+    #mapDiv {
+        transform: scale(0.8);
+        width: 747px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+    .slides_txt {
+        width:100%;
+    }
+    .extrapad p {
+        font-size: 12px;
+    }
+    .extrapad h5 {
+        font-size: 20px;
+    }
+
+   
+
+
+    /* #mapDiv #mapDiv_root{width: 750px !important;} */
+}
+
+
+
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+
+
+
+    #state-projects-container img{
+        width: 55px;
+    }
+    .extrapad img {
+        width: 38px;
+    }
+
+    #state-projects-container h5, .extrapad h5 {
+        font-size: 18px;
+    }
+
+    #state-projects-container p, .extrapad p {
+        font-size: 9px;
+    }
+
+    /*.containerwheel {
+        margin-top: -33px;
+    }*/
+
+    #mapDiv {
+        transform: scale(0.7);
+        width: 715px;
+        margin-left: -70px;
+        scrollbar-width: none;
+    }
+
+    .wheelbtn {
+        left: 59px;
+    }
+
+    #state-projects-container p, .extrapad p {
+        font-size: 13px;
+    }
+
+    .ministrymessage h1, .ministrybox h2 {
+        font-size: 20px;
+    }
+
+    .ministrybox h5 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .slides_txt {
+        width: 100%;
+        margin:0;
+    }
+    .state-bg .tabcontent {
+        justify-content: space-around;
+    }
+    
+
+    .extrapad p {
+        font-size: 12px;
+    }
+
+    .extrapad h5 {
+        font-size: 19px !important;
+    }
+    .extrapad {
+        padding: 16px 10px !important;
+    }
+    .atomiconmob {
+        padding: 80px 0px 53px;
+    }
+    .containerwheel {
+        top: -50% !important;
+        left: -40px !important;
+    }
+
+
+   
+
+    .fmiddlecnt {
+        flex: 0 0 78%;
+    }
+
+    .fvistiorcounter {
+        flex: 0 0 22%;
+    }
+
+    .appicondownload a img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+   
+}
+
+@media only screen and (min-width:1140px) and (max-width:1399px) {
+    .visionlist p {
+        font-size: 15px;
+    }
+
+    .visionbottom {
+        margin-top: 20px;
+        padding: 18px 20px;
+    }
+
+        .visionbottom p {
+            font-size: 14px;
+        }
+
+    .leaderlist .leadername h3 {
+        font-size: 18px;
+    }
+
+        .leaderlist .leadername h3 span {
+            font-size: 15px;
+        }
+
+
+
+
+    .extrapad {
+        padding: 12px 10px;
+    }
+
+        #state-projects-container h5, .extrapad h5 {
+            font-size: 24px;
+        }
+
+    .containerwheel {
+        top: -43%;
+        left: -34px;
+    }
+
+    .wheelbtn {
+        left: 42px;
+    }
+
+    .ministrymessage h1, .ministrybox h2 {
+        font-size: 20px;
+    }
+
+    .ministrybox h5 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .photosbox img {
+        height:167px;
+
+    }
+    .photosbox h4 {
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1199px) {
+.state-bg:before{display:none;}
+   
+
+    .appicondownload a img {
+        width: 100%;
+    }
+
+    .appmiddlecontent h3 {
+        font-size: 20px;
+    }
+
+    .appmiddlecontent p {
+        font-size: 16px;
+    }
+
+    .footerbottom p {
+        font-size: 13px;
+    }
+    .footertop .contactbox h3, .contactbox ul.contactlist li a {
+        font-size: 15px;
+    }
+
+    .footertop .niclogo img {
+        width: 80%;
+    }
+
+    .fmiddlecnt ul li a {
+        font-size: 14px;
+    }
+
+    .fmiddlecnt ul li {
+        padding-left: 30px;
+    }
+
+    .fmiddlecnt {
+        flex: 0 0 76%;
+    }
+
+    .fvistiorcounter {
+        flex: 0 0 24%;
+    }
+}
+@media only screen and (min-width:1140px) and (max-width:1199px) {
+    .containerwheel {
+        top: -130px;
+    }
+}
+
+
+@media only screen and (min-width:1024px) and (max-width:1139px) {
+    .whats-new-rss {
+        font-size: 12px;
+    }
+
+    .whatsnew {
+        font-size: 22px;
+    }
+
+    .whats-new-cont1 {
+        font-size: 13px;
+    }
+    .containerwheel {
+        margin-top: 0;
+        top: -100px;
+    }
+
+    .navMenu > ul > li > a {
+        font-size: 11px;
+    }
+
+    .navMenu > ul > li > a {
+        font-size: 11px;
+    }
+
+    header .headerlist li {
+        margin-right: 9px;
+    }
+
+    .infra {
+        width: 35px;
+        height: 35px;
+    }
+
+    .infrastructurebox h4 {
+        font-size: 16px;
+    }
+
+    .extrapad {
+        padding: 8px 10px;
+    }
+
+
+
+    .mediabox {
+        width: 768px;
+    }
+
+    .leaderbox .leaderinner {
+        width: 427px;
+    }
+
+    .visionlist h4 {
+        font-size: 24px;
+    }
+
+    .visionlist p {
+        font-size: 14px;
+    }
+
+    .visionbottom {
+        margin-top: 20px;
+        padding: 18px 20px;
+    }
+
+        .visionbottom p {
+            font-size: 13px;
+        }
+
+    .leaderlist .leadername h3 {
+        font-size: 18px;
+    }
+
+        .leaderlist .leadername h3 span {
+            font-size: 15px;
+        }
+
+    #mapDiv {
+        transform: scale(0.7);
+        width: 715px;
+        margin-left: -70px;
+        scrollbar-width: none;
+    }
+    .slides_txt {
+        margin:0;
+    }
+    .containerwheel {
+        margin-top: 25px;
+        left: -30px;
+        top: -19.5%;
+    }
+
+    .wheelbtn {
+        left: 34px;
+    }
+
+    #state-projects-container img, .extrapad img {
+        width: 60px;
+    }
+
+    #state-projects-container p, .extrapad p {
+        font-size: 14px;
+    }
+
+    #state-projects-container h5, .extrapad h5 {
+        font-size: 21px;
+    }
+    .photosbox img {
+        height: 167px;
+        object-fit: fill;
+    }
+    .photosbox h4 {
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:1023px){
+.state-bg:before{top:-52px;}
+    .state-bg:before {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width:1023px) {
+    .whats-new-rss {
+        font-size: 12px;
+    }
+
+    .whatsnew {
+        font-size: 22px;
+    }
+
+    .whats-new-cont1 {
+        font-size: 13px;
+    }
+    .slides_txt {
+        margin:0;
+    }
+    .heading {
+        font-size:16px;
+    }
+    .extrapad {
+        padding: 18px 20px;
+    }
+    .containerwheel {
+        top: -100px;
+    }
+
+    .pm-txt_p {
+        font-size: 7pt;
+    }
+
+    .pm-img_img {
+        width: 300px;
+    }
+
+    .pm-img {
+        width: 20%;
+        margin-top: -31%;
+        margin-left: 64%;
+        position: relative;
+    }
+
+    .pm-txt {
+        background-color: #181d41;
+        width: 119%;
+        color: #fff;
+        padding: 4px;
+        border-radius: 10px;
+        margin-left: -17px;
+    }
+
+    .start {
+        position: absolute;
+        top: 48%;
+        left: 240px;
+    }
+
+    header .headerlist li a.hplay {
+        width: 48px;
+    }
+
+    .headerlist li .hscreen {
+        width: 146px;
+    }
+
+    .headerlist li .hlogin {
+        width: 120px;
+    }
+
+        .headerlist li .hlogin img {
+            margin-right: -5px;
+        }
+
+    header .headerlist li {
+        margin-right: 6px;
+    }
+
+    .hsearch img, .hsetting img {
+        width: 28px;
+    }
+
+    .boxinfra .infano {
+        font-size: 22px;
+    }
+
+    .boxinfrabelow h5 {
+        font-size: 14px;
+    }
+
+    .boxinfrabelow .infan {
+        font-size: 26px;
+    }
+
+    .infra_main li button {
+        padding: 8px;
+    }
+
+    .mediabox {
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .navigationmenu {
+        display: none;
+    }
+
+    .homsection .bannerone img {
+        width: 70%;
+    }
+
+    .leaderbox .leaderinner {
+        width: 402px;
+    }
+
+    .visionlist h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .visionbox {
+        padding: 20px 0 20px;
+    }
+
+    .visionlist p {
+        font-size: 12px;
+    }
+
+    .visionbottom {
+        margin-top: 20px;
+        padding: 18px 20px;
+        position: static;
+        width: 100%;
+    }
+
+        .visionbottom p {
+            font-size: 12px;
+        }
+
+    .leaderlist .leadername h3 span {
+        font-size: 15px;
+    }
+
+    #mapDiv {
+        transform: scale(0.8);
+        width: 715px;
+        scrollbar-width: none;
+    }
+
+    .containerwheel {
+        top: -18%;
+        left: -50px;
+    }
+    .atomiconmob {
+        padding: 20px 0px;
+    }
+
+    .wheelbtn {
+        left: 50px;
+    }
+
+    .extrapad img {
+        width: 50px;
+    }
+
+    .extrapad p {
+        font-size: 12px;
+    }
+
+    .extrapad h5 {
+        font-size: 23px;
+    }
+
+    .photosbox h3 {
+        font-size: 16px;
+    }
+
+    .messageminster {
+        padding-right: 0;
+    }
+
+    .ministrymessage h1, .ministrybox h2 {
+        font-size: 18px;
+    }
+
+    .ministrybox h5 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .aboutipmd img{
+        height:250px
+    }
+    .sitemapbox h4 {
+        font-size: 16px;
+    }
+
+    .sitemapbox ul li a {
+        font-size: 13px;
+    }
+
+    .sitemapbox {
+        margin: 10px 0px;
+    }
+
+   
+    .appicondownload a img {
+        width: 100%;
+    }
+
+    .appmiddlecontent h3 {
+        font-size: 20px;
+    }
+
+    .appmiddlecontent p {
+        font-size: 14px;
+    }
+
+    .appicondownload a {
+        margin-bottom: 20px;
+    }
+
+
+    .footertop .contactbox h3, .contactbox ul.contactlist li a {
+        font-size: 14px;
+    }
+
+    .footertop .niclogo img {
+        width: 80%;
+    }
+
+    .fmiddlecnt ul li a {
+        font-size: 14px;
+    }
+
+    .fmiddlecnt ul li {
+        padding-left: 15px;
+    }
+
+
+    .fmiddlecnt {
+        flex: 0 0 76%;
+    }
+
+    .fvistiorcounter {
+        flex: 0 0 24%;
+    }
+
+        .fvistiorcounter .visitcount img {
+            width: 27px;
+        }
+        .fvistiorcounter .visitcount p {
+            font-size: 14px;
+        }
+
+        .fvistiorcounter .visitcount {
+            padding: 9px 13px;
+        }
+
+    .footerbottom p {
+        font-size: 14px;
+    }
+    .footer {
+        padding: 20px 0px 20px;
+    }
+    .footertop .contactbox h4, .footermiddle h4 {
+        font-size: 14px;
+    } 
+
+}
+
+@media only screen and (min-width:768px) and (max-width:899px) {
+    .faq-title {
+        font-size:1.2rem
+    }
+    .whats-new-rss {
+        font-size: 12px;
+    }
+
+    .whatsnew {
+        font-size: 22px;
+    }
+
+    .whats-new-cont1 {
+        font-size: 13px;
+    }
+    .slides_txt {
+        margin:0;
+    }
+    .extrapad {
+        padding: 20px 10px;
+    }
+    .pm-img {
+        width: 28%;
+        margin-top: -38%;
+        margin-left: 63%;
+        position: relative;
+    }
+
+    header .headerlist li a.hplay {
+        width: 48px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .headerlist li a.mplay {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .headerlist li .hscreen {
+        width: auto;
+        padding: 0px 10px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+
+    .headerlist li .hlogin {
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        padding: 0px 6px 0px 10px
+    }
+
+        .headerlist li .hlogin img {
+            margin-right: -5px;
+        }
+
+    header .headerlist li {
+        margin-right: 1px;
+    }
+
+    .hsearch img, .hsetting img {
+        width: 22px;
+    }
+
+    .infrastructurebox h4 {
+        font-size: 13px;
+    }
+
+    .boxinfra h6, .boxinfra .infadate, .boxinfrabelow h5 {
+        font-size: 11px;
+    }
+
+    .boxinfra .infano {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    .boxinfrabelow .infan {
+        font-size: 21px;
+    }
+
+    .appmobile {
+        margin-top: -10px;
+    }
+
+    .infra {
+        width: 30px;
+        height: 30px;
+    }
+
+    .infra_main li button {
+        padding: 6px;
+        border-width: 3px !important;
+    }
+
+    .mediabox {
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .mapinner {
+        width: 618px;
+    }
+
+    #mapDiv {
+        width: 618px;
+        scrollbar-width: inherit;
+    }
+
+    .homsection {
+        height: 500px;
+    }
+
+        .homsection .bannerone img {
+            width: 60%;
+        }
+
+    .leaderbox .leaderinner {
+        width: 322px;
+    }
+
+        .leaderbox .leaderinner > img {
+            width: 313px;
+            height: 393px;
+        }
+
+    .leaderlist .leadername h3 {
+        font-size: 18px;
+    }
+
+        .leaderlist .leadername h3 span {
+            font-size: 14px;
+        }
+
+    .visionlist h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .visionbox {
+        padding: 20px 0 20px;
+    }
+
+    .visionlist p {
+        font-size: 11px;
+    }
+
+    .visionbottom {
+        margin-top: 20px;
+        padding: 18px 20px;
+        position: static;
+        width: 100%;
+    }
+
+        .visionbottom p {
+            font-size: 10px;
+        }
+
+    .navigationmenu {
+        display: none;
+    }
+
+    #state-projects-container p, .extrapad p {
+        font-size: 10px;
+    }
+
+    #state-projects-container img, .extrapad img {
+        width: 50px;
+    }
+
+    #state-projects-container h5, .extrapad h5 {
+        font-size: 22px;
+    }
+
+    .wheelbtn img {
+        width: 25px;
+    }
+
+    #mapDiv {
+        transform: scale(0.8);
+        width: 715px;
+        scrollbar-width: none;
+        margin-left: -50px;
+    }
+
+    .homsection {
+        height: 500px;
+    }
+
+        .homsection .bannerone img {
+            width: 60%;
+        }
+
+    .leaderbox .leaderinner > img {
+        width: 313px;
+        height: 393px;
+    }
+
+    .leaderlist .leadername h3 {
+        font-size: 18px;
+    }
+
+        .leaderlist .leadername h3 span {
+            font-size: 14px;
+        }
+
+    .containerwheel {
+        left: -34px;
+        top: -16%;
+    }
+
+    .wheelbtn {
+        left: 46px;
+    }
+
+    .photosbox h3 {
+        font-size: 16px;
+    }
+
+    .mediatopbar a, .mediatopbar select {
+        max-width: 244px;
+    }
+
+    .messageminster {
+        padding-right: 0;
+        height: 500px;
+    }
+
+    .ministrymessage h1 {
+        font-size: 15px;
+    }
+
+    .ministrybox img {
+        width: 75px;
+    }
+
+    .ministrymessage h5 {
+        font-size: 13px;
+    }
+
+    .ministrymessage h6 {
+        font-size: 12px;
+    }
+
+    .ministrybox h2 {
+        font-size: 16px;
+    }
+
+    .ministrybox h5 {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+    .sitemapbox h4 {
+        font-size: 16px;
+    }
+
+    .sitemapbox ul li a {
+        font-size: 13px;
+    }
+
+    .sitemapbox {
+        margin: 10px 0px;
+    }
+
+
+    .appdownbox {
+        padding: 30px 40px;
+    }
+
+   
+
+    .apppaimana {
+        flex: 0 0 24%;
+    }
+
+    .appmiddlecontent {
+        flex: 0 0 44%;
+    }
+
+    .appicondownload a img {
+        width: 100%;
+    }
+
+    .appmiddlecontent h3 {
+        font-size: 20px;
+    }
+
+    .appmiddlecontent p {
+        font-size: 13px;
+    }
+
+    .appicondownload a {
+        margin-bottom: 20px;
+    }
+
+    
+    .footertop .contactbox h3, .contactbox ul.contactlist li a {
+        font-size: 14px;
+    }
+
+    .footertop .niclogo img {
+        width: 90%;
+    }
+
+    .fmiddlecnt ul li a {
+        font-size: 13px;
+    }
+
+    .fmiddlecnt ul li {
+        padding-left: 10px;
+    }
+
+    .fmiddlecnt {
+        flex: 0 0 76%;
+    }
+
+    .fvistiorcounter {
+        flex: 0 0 24%;
+    }
+
+        .fvistiorcounter .visitcount p {
+            font-size: 14px;
+        }
+
+        .fvistiorcounter .visitcount {
+            padding: 8px 13px;
+        }
+
+            .fvistiorcounter .visitcount p span {
+                font-size: 19px;
+            }
+
+            .fvistiorcounter .visitcount img {
+                width: 30px;
+            }
+
+    .footerbottom p {
+        font-size: 14px;
+    }
+    .footerbottom {
+        padding-top: 15px;
+    } 
+
+    .contactbox ul.contactlist {
+        column-gap: 44px;
+    }
+
+    .footertop .contactbox h4, .footermiddle h4 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+.state-bg:before{display:none}
+    .faq-title {
+        font-size: 1rem
+    }
+    .whats-new-rss {
+        font-size: 12px;
+    }
+
+    .whatsnew {
+        font-size: 22px;
+    }
+
+    .whats-new-cont1 {
+        font-size: 13px;
+    }
+    .aboutipmd img {
+        height: 250px
+    }
+    .aocms p {
+        font-size: 14px;
+        margin-bottom:5px
+    }
+        .pm-img {
+        width: 20%;
+        margin-top: -38%;
+        margin-left: 63%;
+        position: relative;
+    }
+
+    .start {
+        position: absolute;
+        top: 47%;
+        left: 100%;
+    }
+    /*.containerwheel {
+position: relative;
+max-width: 500px;*/
+    /* margin-right: 112%; */
+    /*margin-top: -47%;
+margin-left: -49%;
+}
+.wheelbtn {
+  position: absolute;
+  z-index: 3;
+  padding-top: 454px;
+  padding-left: 50%;
+}*/
+    header {
+        display: none;
+    }
+
+    .mobileheader {
+        display: block;
+        padding: 14px 0px;
+        position: relative;
+    }
+
+        .mobileheader a {
+            display: block;
+        }
+
+    .mospiheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menulink a img {
+        width: 32px;
+    }
+
+    .mospiname {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .mobileheader .boxone {
+        margin: 0;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .mobileheader .moblogin a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: #060e37;
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 6px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+        .mobileheader .moblogin a img {
+            background: #fff;
+            padding: 5px;
+            width: 30px;
+            border-radius: 5px;
+        }
+
+    .searchicon img {
+        width: 28px;
+        margin-left: 5px;
+    }
+
+    .mobiles {
+        position: absolute;
+        bottom: -38px;
+        width: 100%;
+        padding: 0px 3%;
+        z-index: 999;
+    }
+
+        .mobiles input {
+        }
+
+    .ocmd-img {
+        margin-top: 100px;
+        width: 48%;
+    }
+
+    .infrastructurebox {
+        margin-bottom: 30px;
+    }
+
+    .infra {
+        width: 30px;
+        height: 30px;
+    }
+
+    .infra_main {
+        white-space: nowrap;
+        display: inline-block;
+        overflow-x: scroll;
+        width: 100%;
+        padding: 20px 20px !important;
+    }
+
+        .infra_main li {
+            display: inline-block;
+            margin-right: 16px;
+        }
+
+            .infra_main li button {
+                padding: 8px;
+                border-width: 4px !important;
+            }
+
+        .infra_main::before {
+            margin-top: -14px;
+        }
+
+    .projectmointering, .inframointer {
+        display: none;
+    }
+
+    .extrahgtimg {
+        margin-left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mediabox {
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .media-single {
+        padding: 70px 0px 10px;
+    }
+
+    .arrowboxleft {
+        background: #fff;
+        margin-top: -25px;
+        left: 7px;
+    }
+
+    .arrowboxright {
+        right: 0px;
+        margin-top: -25px;
+        background: #fff;
+    }
+
+    .media-main .mediaslide h4 {
+        font-size: 14px;
+    }
+
+    .mediabox .media-thumb .thumbmedia img {
+        border-width: 3px;
+    }
+
+    .mediabox .media-thumb {
+        margin-top: 20px;
+    }
+
+        .mediabox .media-thumb .thumbmedia {
+            margin: 0px 5px;
+        }
+
+    #state-projects-container img {
+        width: 50px;
+    }
+
+    #state-projects-container p {
+        font-size: 11px;
+    }
+
+    #state-projects-container h5 {
+        font-size: 23px;
+    }
+
+    .mapinner {
+        width: 478px;
+        margin: 0px;
+        scrollbar-width: inherit;
+    }
+
+    #mapDiv {
+        width: 650px;
+        scrollbar-width: inherit;
+        margin: 0px;
+    }
+
+    .homsection {
+        height: 100%;
+        background: inherit;
+    }
+
+        .homsection .bannerone {
+            position: static;
+        }
+
+            .homsection .bannerone img {
+                width: 80%;
+            }
+
+    .bgocms {
+        background: url(../img/banner_bg.png) center center no-repeat;
+        background-size: cover;
+        padding-top: 180px;
+    }
+
+    .bgmobhome {
+        background: url(../img/bgcoms-01.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    .leaderbox .leaderinner {
+        width: 80%;
+        margin: 0;
+    }
+
+    .page p {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .page ul li {
+        font-size: 13px;
+    }
+
+    .visionlist h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .visionbox {
+        padding: 20px 0 20px;
+    }
+
+    .visionlist p {
+        font-size: 12px;
+    }
+
+    .visionbottom {
+        margin-top: 20px;
+        padding: 18px 20px;
+        position: static;
+        width: 100%;
+    }
+
+        .visionbottom p {
+            font-size: 12px;
+        }
+
+    .navigationmenu {
+        display: none;
+    }
+
+    .homsection .leaderbox {
+        width: 80%;
+        margin: 0;
+    }
+
+    .extrahgtimg {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .atomiconmob {
+        display: none;
+    }
+
+    #mapDiv {
+        transform: scale(0.7);
+        width: 706px;
+        scrollbar-width: none;
+        margin-left: -140px;
+    }
+
+    #state-projects-container h5, .extrapad h5 {
+        font-size: 28px;
+    }
+
+    .photosbox h3 {
+        font-size: 16px;
+    }
+
+    .mediatopbar a, .mediatopbar select {
+        max-width: 204px;
+        height: 50px;
+    }
+
+    .heading {
+        font-size: 17px;
+    }
+
+    .messageminster {
+        width: 100%;
+        padding: 20px 15px;
+        background: #f7f7f7;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    .ministrymessage h1 {
+        font-size: 19px;
+    }
+
+    .ministrymessage h5 {
+        font-size: 15px;
+    }
+
+    .ministrymessage h6 {
+        font-size: 13px;
+    }
+
+    .ministrybox h2 {
+        font-size: 20px;
+        color: #060e37;
+    }
+
+    .ministrybox h5 {
+        color: #232323;
+        font-size: 15px;
+    }
+
+    .Cost > p, .Cost > h5 {
+        font-size: 11px;
+    }
+    .photosbox img {
+        height:auto;
+    }
+    .photosbox h4 {
+        font-size: 15px;
+    }
+    .sitemapbox h4 {
+        font-size: 16px;
+    }
+
+    .sitemapbox ul li a {
+        font-size: 13px;
+    }
+
+    .sitemapbox {
+        margin: 10px 0px;
+    }
+
+    .sitemap {
+        padding-top: 40px;
+    }
+
+
+
+    .appdownbox {
+        display: block;
+        text-align: center;
+    }
+
+  
+
+    .appdownbox {
+        padding: 30px 30px;
+    }
+
+    .appmiddlecontent {
+        padding-left: 0;
+    }
+
+        .appmiddlecontent h3 {
+            font-size: 20px;
+        }
+
+        .appmiddlecontent p {
+            font-size: 15px;
+        }
+
+    .appicondownload a img {
+        width: 200px;
+    }
+
+    .appicondownload a {
+        margin-bottom: 10px;
+    }
+
+    .appicondownload {
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 40px 0px 40px;
+    }
+
+    .footertop {
+        display: block;
+    }
+
+        .footertop .contactbox h4, .footermiddle h4 {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .footertop .contactbox h3 {
+            font-size: 14px;
+        }
+
+    .contactbox ul.contactlist {
+        padding-top: 20px;
+        column-gap: 30px;
+    }
+
+        .contactbox ul.contactlist li a {
+            font-size: 15px;
+        }
+
+            .contactbox ul.contactlist li a img {
+                width: 20px;
+            }
+
+    .footertop .niclogo {
+        text-align: left;
+        padding-top: 15px;
+    }
+
+    .footermiddle {
+        padding: 15px 0 25px;
+        display: block;
+    }
+
+    .fmiddlecnt ul li a {
+        font-size: 14px;
+    }
+
+    .fmiddlecnt ul li {
+        display: block;
+        padding-left: 0;
+    }
+
+    .fvistiorcounter {
+        margin-top: 10px;
+    }
+    .apppaimana img {
+        width: 70%;
+    }
+    .clientlist {
+        padding: 30px 0px 30px;
+    } 
+
+        .fvistiorcounter .visitcount {
+            padding: 11px 16px;
+            width: 300px;
+            margin: 0;
+            width:200px;   
+        }
+    footer {
+        padding: 20px 0px 20px;
+    } 
+
+            .fvistiorcounter .visitcount img {
+                width: 33px;
+            }
+
+            .fvistiorcounter .visitcount p {
+                font-size: 14px;
+            }
+
+                .fvistiorcounter .visitcount p span {
+                    font-size: 20px;
+                }
+
+    .footerbottom p {
+        font-size: 13px;
+    }
+    .footerbottom {
+        padding-top: 15px;
+    } 
+   
+}
+
+@media only screen and (max-width:575px) {
+    .visionbox img {
+        height: 270px;
+    }
+    .btnclrt {
+        margin-bottom:30px;
+    }
+    header {
+        display: none;
+    }
+
+    .desktopshow {
+        display: none;
+    }
+
+    .mobileheader {
+        display: block;
+        padding: 14px 0px;
+    }
+
+        .mobileheader a {
+            display: block;
+        }
+
+    .mospiheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menulink a img {
+        width: 32px;
+    }
+
+    .mospiname {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .mobileheader .boxone {
+        margin: 0;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .mobileheader .moblogin a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: #060e37;
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 6px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+        .mobileheader .moblogin a img {
+            background: #fff;
+            padding: 5px;
+            width: 30px;
+            border-radius: 5px;
+        }
+
+    .searchicon img {
+        width: 28px;
+        margin-left: 5px;
+    }
+
+    .mobpadshow {
+    }
+
+    .banner-content {
+        margin-top: 0px;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .ocmd-img {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .pm-img {
+        width: 100%;
+        margin-top: 3%;
+        margin-left: 0;
+    }
+
+    .pm-img_img {
+        height: 50%;
+    }
+
+    .pm-txt img {
+        height: 50px !important;
+    }
+
+    .banner-img {
+        display: none;
+    }
+
+    .atomiconmob {
+        display: none;
+    }
+
+    .infrastructurebox h4 {
+        padding: 13px 0px;
+        font-size: 17px;
+    }
+
+    .boxinfra h6 {
+        margin-bottom: 7px;
+    }
+
+    .boxinfra .infadate {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .boxinfra .infano {
+        font-size: 20px;
+    }
+
+    .boxinfrabelow h5 {
+        font-size: 14px;
+    }
+
+    .boxinfrabelow .infan {
+        font-size: 25px;
+    }
+
+    .infrastructurebox {
+        margin-bottom: 35px;
+    }
+
+    .clientlist {
+        padding: 20px 0px 20px;
+    }
+
+        .clientlist img {
+            height: 80px;
+        }
+
+    .appmobile {
+        margin-top: -40px;
+    }
+
+    .mobile-text {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .footer-bg h5 {
+        font-weight: 600;
+        text-align: left !important;
+    }
+
+    .footer-bg p {
+        font-size: 13px;
+    }
+
+        .footer-bg p img {
+            width: 13px;
+        }
+
+    .infrastructure ul.nav-tabs li {
+        padding: 0px 20px 10px;
+    }
+
+        .infrastructure ul.nav-tabs li a {
+            color: #000;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+    .medialist h2 {
+        font-size: 20px;
+    }
+
+    .innertitle a {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+
+    .medialist {
+        padding: 30px 0px 20px;
+    }
+
+    .footer-bg .nav {
+        justify-content: flex-start;
+    }
+
+        .footer-bg .nav li {
+            margin: 0;
+        }
+
+    .pm-img .pm-img_img {
+        width: 70% !important;
+    }
+
+    .pm-txt img {
+        width: 100% !important;
+    }
+
+    .infra {
+        width: 30px;
+        height: 30px;
+    }
+
+    .infrastructure {
+        position: relative;
+        padding-top: 140px;
+    }
+
+    .mobrelativechnage {
+        position: absolute !important;
+        top: -60px;
+    }
+
+    .highbg {
+        margin-bottom: 60px;
+    }
+
+    .infra_main {
+        padding: 40px 20px 20px !important;
+    }
+
+        .infra_main::before {
+            margin-top: 16px;
+        }
+
+        .infra_main li .activename {
+            font-size: 16px;
+            left: 0;
+        }
+
+    .settingbox .settingbtn button {
+        font-size: 14px;
+    }
+
+    .extrapad {
+        padding: 10px 0px;
+    }
+
+    .faqlist .accordion-body {
+        font-size: 12px;
+    }
+
+    .faqlist h2.accordion-header button {
+        font-size: 14px;
+    }
+
+    .brd-curm {
+        font-size: 15px;
+    }
+
+    .dashboardtop .topbox {
+        display: block;
+    }
+
+    .dashboardtop .lftoption select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .leaderbox .leaderinner > img {
+        width: 273px;
+        height: 353px;
+    }
+
+    .leaderlist .leadername h3 {
+        font-size: 17px;
+    }
+
+        .leaderlist .leadername h3 span {
+            font-size: 11px;
+        }
+
+    .infra_main::before {
+        width: 90%;
+    }
+
+    .mt-top1 {
+        margin-top: 30px;
+    }
+
+    .page-header__title {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .page p {
+        font-size: 12px;
+    }
+
+    .visionbottom, .visionbottom.visrgt {
+        border-radius: 0;
+    }
+
+    .visionlist {
+        padding-top: 0;
+    }
+
+    .brd-curm {
+        padding: 50px 20px !important;
+        height: 120px;
+    }
+
+    .defaultbox p {
+        font-size: 14px;
+        margin: 10px 0px;
+    }
+
+    .bottom-pd {
+        padding-bottom: 70px !important;
+    }
+
+    .contact-title {
+        font-size: 12px;
+    }
+
+    .table-pd {
+        padding: 13px 12px !important;
+    }
+
+    .table td {
+        font-size: 12px;
+    }
+
+    #mapDiv {
+        transform: scale(0.6);
+        width: 695px;
+        margin-left: -190px;
+    }
+
+    .state-wise-project > h2 {
+        font-size: 19px;
+    }
+
+    .mediaphoto {
+        padding: 30px 0px 30px;
+    }
+
+        .mediaphoto .mediatopbar {
+            display: block;
+        }
+
+    .mediatopbar a, .mediatopbar select {
+        max-width: 100%;
+        height: auto;
+        margin: 5px 0px;
+        font-size: 16px;
+    }
+
+    .media-main .mediaslide video, .media-main .mediaslide img {
+        height: 330px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .ministrymessage h1 {
+        font-size: 15px;
+    }
+
+    .ministrybox h2 {
+        font-size: 16px;
+    }
+
+    .ministrybox h5 {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .ministrymessage h5 {
+        font-size: 14px;
+    }
+
+    .ministrymessage h6 {
+        font-size: 12px;
+    }
+
+    .state-wise-project > h5 {
+        font-size: 20px;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+
+    .goback {
+        width: 130px;
+        padding: 5px 0px;
+        font-size: 14px;
+    }
+
+        .goback img {
+            width: 8px;
+            margin-right: 2px;
+        }
+    .footerbottom p {
+        font-size: 11px;
+    } 
+
+}
+
+@media only screen and (max-width:467px) {
+
+    .slick-slide img {
+        width: 100% 1 !important;
+        margin-bottom: 35px;
+    }
+
+    .circular-mr {
+        margin-top: 27px !IMPORTANT;
+    }
+
+    .faq-title {
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-weight: 900;
+        color: #0c1544;
+    }
+
+    #mapDiv {
+        transform: scale(0.5);
+        width: 690px;
+        margin-left: -230px;
+        height: 770px;
+    }
+
+
+    .apppaimana img {
+        width: 100%;
+    }
+}
+
+/* Viewports between 320px and 480px wide */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    .slick-slide img {
+        width: 100%  !important;
+        margin-bottom: 35px;
+    }
+
+    .circular-mr {
+        margin-top: 27px !IMPORTANT;
+    }
+
+    .faq-title {
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-weight: 900;
+        color: #0c1544;
+    }
+
+
+    .slick-slide img {
+        width: 100% !important;
+        margin-bottom: 35px;
+    }
+
+    .circular-mr {
+        margin-top: 27px !IMPORTANT;
+    }
+
+    .faq-title {
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-weight: 900;
+        color: #0c1544;
+    }
+
+    .faq-title {
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-weight: 900;
+        color: #0c1544;
+    }
+
+    .toplogo {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        /* width: 40%; */
+        /* height: auto;*/
+        text-align: start !important;
+    }
+
+
+
+
+
+
+    /* Medium-only */
+    @media screen and (min-width: 481px) and (max-width: 960px) {
+
+        .circular-mr {
+            margin-top: 27px !IMPORTANT;
+        }
+
+        .slick-slide img {
+            width: 100% !important;
+            height: 100px !important;
+            margin-bottom: 35px;
+        }
+
+        .zoomimg {
+            display: none;
+        }
+    }
+
+
+    @media only screen and (max-width:567px) {
+        .clientlist {
+            padding: 20px 0px 220px;
+        }
+
+        .footertop .contactbox h3 {
+            font-size: 13px;
+        }
+
+        .contactbox ul.contactlist li a {
+            font-size: 13px;
+        }
+    }
+}

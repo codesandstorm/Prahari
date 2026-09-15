@@ -1,0 +1,13 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+const nav = [['Home', '/'], ['Publications', '/'], ['Dashboard', '/'], ['PRAHARI INTELLIGENCE', '/prahari'], ['Projects', '/'], ['Reports', '/'], ['Documentation', '/']];
+const prahariPages = [['Officer Overview', '/prahari'], ['Review Queue', '/prahari/review-queue'], ['Progress & Monitoring Analytics', '/prahari/analytics'], ['Data Trust / Verification', '/prahari/data-trust'], ['Model Validation', '/prahari/model-validation'], ['CUF Sandbox', '/prahari/cuf-sandbox'], ['Ask PRAHARI', '/prahari/assistant']];
+
+export default function PortalHeader() {
+  const [prahariOpen, setPrahariOpen] = useState(false);
+  return <>
+    <header className="position-relative"><div className="topbar"><div className="container"><div className="topbarbox"><div className="topbar-actions"><button className="topbar-icon-btn" aria-label="Language">अ</button><button className="topbar-icon-btn" aria-label="Accessibility">⚝</button></div></div></div></div><div className="container"><div className="header-flex-row"><div className="header-left-group"><a className="ministry-block" href="https://www.mospi.gov.in/"><img className="ministry-text-img" src="/Paimana_Files/logo-mospi.png" alt="Ministry of Statistics and Programme Implementation" /></a><div className="partner-logos"><img src="/Paimana_Files/data-for-dev.png" alt="Data for Development" /></div></div><a className="paimana-brand" href="#/"><img src="/Paimana_Files/logo-paimana.png" alt="PAIMANA" /></a><div className="header-right-group"><ul className="headerlist"><li><a className="haddProject" href="#/">Add Project / Update</a></li><li><a className="hlogin" href="#/">Reports</a></li></ul></div></div></div></header>
+    <section className="desktopshow navigationmenu"><div className="row bg-secondry"><nav className="navbar navbar-expand-lg bg-body-tertiary bg-secondry"><div className="container-fluid"><div className="collapse navbar-collapse navMenu"><ul className="navbar-nav">{nav.map(([label, to], index) => index === 3 ? <li className={`nav-item prahari-nav-item${prahariOpen ? ' is-open' : ''}`} key={label}><button className="nav-link dropdown-toggle" type="button" aria-expanded={prahariOpen} onClick={() => setPrahariOpen((open) => !open)}>{label}</button><ul className="dropdown-menu">{prahariPages.map(([page, path]) => <li key={page}><Link className="dropdown-item" to={path} onClick={() => setPrahariOpen(false)}>{page}</Link></li>)}</ul></li> : <li className="nav-item" key={label}><Link className="nav-link" to={to}>{label}</Link></li>)}</ul></div></div></nav></div></section>
+  </>;
+}
