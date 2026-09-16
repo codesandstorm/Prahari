@@ -1,0 +1,4 @@
+import React from 'react';
+import { CalendarDays } from 'lucide-react';
+
+export default function OfficerHeader(){return <header className="officer-header"><a className="brand-mospi" href="https://www.mospi.gov.in/"><img src="/assets/branding/mospi.png" alt="Ministry of Statistics and Programme Implementation, Government of India"/></a><a className="brand-paimana" href="/"><img src="/assets/branding/paimana.png" alt="PAIMANA"/></a><div className="officer-tools"><div className="report-period"><CalendarDays size={20}/><div><span>Reporting Period</span><strong>June 2026</strong></div></div><div className="officer-profile"><span className="avatar">S</span><div><strong>sih-demo-officer</strong><small>Monitoring Officer</small></div></div><button className="logout" type="button">Logout</button></div></header>}

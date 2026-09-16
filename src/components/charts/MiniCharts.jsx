@@ -1,0 +1,4 @@
+import React from 'react';
+export function LineChart({variant='blue'}){const points=variant==='green'?'8,82 55,80 100,73 150,68 205,58 260,52 315,42 370,34':'8,76 55,68 100,71 150,61 205,51 260,43 315,32 370,24';return <svg className="line-chart" viewBox="0 0 380 100" role="img" aria-label="Trend chart"><path d="M8 88H372M8 60H372M8 32H372" stroke="#dfebf3"/><polyline points={points} fill="none" stroke={variant==='green'?'#159e63':'#087bd0'} strokeWidth="4"/><circle cx="370" cy={variant==='green'?34:24} r="5" fill={variant==='green'?'#159e63':'#087bd0'}/></svg>}
+export function Donut({value=68,label='Coverage'}){return <div className="donut" style={{'--value':`${value*3.6}deg`}}><div><strong>{value}%</strong><span>{label}</span></div></div>}
+export function Bars({items}){return <div className="chart-bars">{items.map(i=><div key={i.label}><span style={{height:`${i.value}%`}}/><b>{i.value}%</b><small>{i.label}</small></div>)}</div>}

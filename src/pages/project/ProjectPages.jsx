@@ -1,0 +1,59 @@
+import React from 'react';
+import { AlertTriangle, ArrowRight, BarChart3, CalendarDays, CheckCircle2, Clock3, Coins, Database, FileCheck2, Gauge, IndianRupee, Landmark, ShieldCheck, TrendingUp, UsersRound } from 'lucide-react';
+import ProjectHeader from '../../components/project/ProjectHeader';
+import MilestoneJourney from '../../components/project/MilestoneJourney';
+import { Donut, LineChart } from '../../components/charts/MiniCharts';
+import { Section, StatusPill } from '../../components/common/Primitives';
+import { costSignals, executionSignals, milestones, projectDetail as p, scheduleForecast, scheduleReasons } from '../../data/mock/projectDetail';
+
+const IconCard=({icon:Icon,title,value,detail,tone='blue'})=><article className={`project-metric tone-${tone}`}><span><Icon/></span><div><small>{title}</small><strong>{value}</strong><p>{detail}</p></div></article>;
+const EvidenceNote=()=> <aside className="evidence-note"><ShieldCheck/><div><strong>Evidence boundary</strong><p>Mock officer-workspace content demonstrates the interface contract. Research previews are clearly separated from operational government decisions.</p></div></aside>;
+const ProjectFrame=({children})=><><ProjectHeader/><div className="project-page">{children}</div></>;
+
+export function ProjectOverviewPage(){return <ProjectFrame>
+  <div className="intelligence-grid">
+    <article className="intelligence-card schedule"><div className="card-title"><CalendarDays/><b>Schedule Outlook</b><StatusPill tone="red">Research preview</StatusPill></div><strong className="signal-value">{p.schedule.value}</strong><span>{p.schedule.level}</span><p>{p.schedule.meaning}</p><a href={`/officer/projects/${p.id}/schedule`}>View schedule evidence <ArrowRight/></a></article>
+    <article className="intelligence-card cost"><div className="card-title"><Coins/><b>Cost Outlook</b><StatusPill tone="amber">Research preview</StatusPill></div><strong className="signal-value">{p.cost.value}</strong><span>{p.cost.level}</span><p>{p.cost.meaning}</p><a href={`/officer/projects/${p.id}/cost`}>View cost evidence <ArrowRight/></a></article>
+    <article className="intelligence-card execution"><div className="card-title"><Gauge/><b>Execution Health</b><StatusPill tone="amber">Watch</StatusPill></div><strong className="signal-word">WATCH</strong><span>{p.execution.level}</span><p>{p.execution.meaning}</p><a href={`/officer/projects/${p.id}/execution-health`}>Review delivery signals <ArrowRight/></a></article>
+    <article className="intelligence-card action"><div className="card-title"><UsersRound/><b>Officer Action</b><StatusPill tone="blue">Review recommended</StatusPill></div><strong className="action-copy">{p.action}</strong><p>Validate the latest submission and record the next follow-up action.</p><button className="inline-action">Open review workflow <ArrowRight/></button></article>
+  </div>
+  <Section title="Milestone Journey" subtitle="Track approved milestones from project sanction to operational readiness" action="View complete journey"><MilestoneJourney/></Section>
+  <Section title="Project snapshot" subtitle="Latest structured reporting values"><div className="project-metric-grid">
+    <IconCard icon={IndianRupee} title="Original cost" value={p.originalCost} detail="Approved baseline"/>
+    <IconCard icon={Coins} title="Latest revised cost" value={p.revisedCost} detail="22% above original" tone="amber"/>
+    <IconCard icon={Landmark} title="Cumulative expenditure" value={p.expenditure} detail="53% of revised cost"/>
+    <IconCard icon={Gauge} title="Physical progress" value={p.progress} detail={`${p.planned} planned`} tone="green"/>
+    <IconCard icon={CalendarDays} title="Original completion" value={p.originalDate} detail="Approved date"/>
+    <IconCard icon={Clock3} title="Revised completion" value={p.revisedDate} detail="9-month movement" tone="red"/>
+  </div></Section>
+  <Section title="Why this project needs attention" subtitle="Observable signals, not assumed causes"><div className="reason-grid">{scheduleReasons.map(([title,text],i)=><article key={title}><span>{i+1}</span><strong>{title}</strong><p>{text}</p></article>)}</div></Section>
+  <EvidenceNote/>
+ </ProjectFrame>}
+
+export function SchedulePage(){return <ProjectFrame><div className="detail-columns"><main>
+  <Section title="Schedule outlook" subtitle="Three-month research warning horizon"><div className="outlook-panel risk"><div><StatusPill tone="red">Elevated schedule concern</StatusPill><strong className="hero-number">{p.schedule.value}</strong><span>machine-provisional likelihood of further slippage</span></div><div><StatusPill tone="amber">Reliability · Medium</StatusPill><p>{p.schedule.meaning}</p><small>Not an operational prediction. Officer review and release governance remain authoritative.</small></div></div></Section>
+  <Section title="Three-month forecast preview" subtitle="Research preview by future reporting month"><div className="forecast-grid">{scheduleForecast.map((f,i)=><article className={i?'high':'moderate'} key={f.month}><small>{f.month}</small><strong>{f.value}</strong><StatusPill tone={i?'red':'amber'}>{f.label}</StatusPill><span>{i?'Continued execution pressure':'Risk rising'}</span></article>)}</div></Section>
+  <Section title="Why this outlook" subtitle="As-of-safe contributors available at the reporting cut-off"><div className="contributor-grid">{scheduleReasons.map(([a,b],i)=><article key={a}><span className="contributor-icon"><TrendingUp/></span><div><b>{a}</b><StatusPill tone={i<2?'red':'amber'}>{i<2?'High':'Medium'}</StatusPill><p>{b}</p><progress max="100" value={i<2?78:58}/></div></article>)}</div></Section>
+  <Section title="Milestone Journey"><MilestoneJourney/></Section>
+  <div className="chart-pair"><Section title="Schedule concern trend"><LineChart/></Section><Section title="Physical progress vs planned"><LineChart variant="green"/></Section></div>
+ </main><aside className="right-stack"><Section title="Recommended officer action"><ol className="numbered-actions"><li>Review the latest completion-date movement.</li><li>Verify milestone slippage with the implementing agency.</li><li>Monitor the next reporting cycle.</li></ol></Section><Section title="Evidence used"><dl className="evidence-list"><div><dt>Latest source month</dt><dd>June 2026</dd></div><div><dt>Progress records</dt><dd>Mar 2022–Jun 2026</dd></div><div><dt>Timeline revisions</dt><dd>3 revisions</dd></div><div><dt>Data Quality</dt><dd><StatusPill tone="green">Good</StatusPill></dd></div></dl></Section><EvidenceNote/></aside></div></ProjectFrame>}
+
+export function CostPage(){return <ProjectFrame><div className="detail-columns"><main>
+  <Section title="Cost outlook" subtitle="Research preview for formal cost deterioration"><div className="outlook-panel amber"><div><StatusPill tone="amber">Monitor cost pressure</StatusPill><strong className="hero-number">{p.cost.value}</strong><span>machine-provisional cost deterioration signal</span></div><div><StatusPill tone="amber">Reliability · Limited</StatusPill><p>{p.cost.meaning}</p><small>Estimate-at-Completion is unavailable because verified actual final-cost truth is not present.</small></div></div></Section>
+  <Section title="Cost position"><div className="cost-position"><div><Donut value={53} label="spent"/><p>Cumulative expenditure as a share of latest revised cost</p></div><IconCard icon={IndianRupee} title="Original cost" value={p.originalCost} detail="Approved baseline"/><IconCard icon={Coins} title="Revised cost" value={p.revisedCost} detail="+22% movement" tone="amber"/></div></Section>
+  <Section title="Cost-risk contributors" subtitle="Evidence available before the reporting cut-off"><div className="signal-list">{costSignals.map(([a,b],i)=><article key={a}><span><Coins/></span><div><b>{a}</b><p>{b}</p></div><StatusPill tone={i===3?'gray':i===0?'red':'amber'}>{i===3?'Unavailable':i===0?'High':'Review'}</StatusPill></article>)}</div></Section>
+  <Section title="Cost and expenditure trend"><LineChart variant="green"/><div className="chart-legend"><span className="green-dot"/>Cumulative expenditure <span className="blue-dot"/>Latest revised cost</div></Section>
+ </main><aside className="right-stack"><Section title="Officer interpretation"><p>Use this preview to decide what evidence to verify, not as a sanctioned final-cost estimate.</p><button className="primary-btn">Request cost verification</button></Section><Section title="Similar Project Comparison"><dl className="evidence-list"><div><dt>Peer group</dt><dd>Open-cast coal projects</dd></div><div><dt>Peer position</dt><dd>Upper quartile cost movement</dd></div><div><dt>Comparable projects</dt><dd>18</dd></div><div><dt>Method</dt><dd>Real portfolio peers</dd></div></dl></Section><EvidenceNote/></aside></div></ProjectFrame>}
+
+export function ExecutionHealthPage(){return <ProjectFrame>
+  <div className="execution-summary"><div><Gauge/><span><small>Current execution state</small><strong>NEEDS ATTENTION</strong><p>Four observable delivery signals warrant review.</p></span></div><StatusPill tone="amber">Watch</StatusPill></div>
+  <Section title="Execution Health signals" subtitle="Signals describe observed pressure; they do not claim root cause"><div className="health-grid">{executionSignals.map(([a,b,c],i)=><article key={a}><span className={`health-icon h${i}`}><BarChart3/></span><div><strong>{a}</strong><StatusPill tone={b==='Healthy'||b==='Good'?'green':b==='Not reported'?'gray':b==='High concern'?'red':'amber'}>{b}</StatusPill><p>{c}</p></div></article>)}</div></Section>
+  <div className="detail-columns"><Section title="Recent delivery trajectory"><LineChart/></Section><Section title="Evidence and Data Quality"><div className="verification-grid"><div><Database/><b>Reporting continuity</b><span>Complete through June 2026</span></div><div><FileCheck2/><b>Project identity</b><span>Confirmed across source reports</span></div><div><CheckCircle2/><b>Data Quality</b><span>Good with field-level gaps</span></div><div><AlertTriangle/><b>Unavailable families</b><span>Land and clearance details</span></div></div></Section></div>
+  <EvidenceNote/>
+ </ProjectFrame>}
+
+export function MilestonesPage(){return <ProjectFrame>
+  <Section title="Milestone Journey" subtitle="Approved, reported and revised project stages"><MilestoneJourney/></Section>
+  <Section title="Milestone register"><div className="milestone-table"><div className="table-head"><span>Milestone</span><span>Reported date</span><span>Status</span><span>Variance</span><span>Evidence</span></div>{milestones.map(m=><div className="table-row" key={m.name}><strong>{m.name}</strong><span>{m.date}</span><StatusPill tone={m.state==='completed'?'green':m.state==='delayed'||m.state==='risk'?'red':m.state==='current'?'blue':'gray'}>{m.state}</StatusPill><span>{m.variance}</span><span>{m.evidence}</span></div>)}</div></Section>
+  <div className="detail-columns"><Section title="Next officer checkpoint"><div className="next-check"><CalendarDays/><div><strong>Validate revised major-completion date</strong><p>Ask the implementing agency to confirm the recovery plan and supporting milestone evidence.</p><button className="primary-btn">Record follow-up</button></div></div></Section><EvidenceNote/></div>
+ </ProjectFrame>}
