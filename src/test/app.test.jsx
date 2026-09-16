@@ -1,12 +1,14 @@
 import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it } from 'vitest';
 import App from '../app/App';
+import { DemoStoreProvider } from '../state/DemoStore';
 
-const renderAt=(path)=>render(<MemoryRouter initialEntries={[path]}><App/></MemoryRouter>);
+const renderAt=(path)=>{if(path.startsWith('/officer'))localStorage.setItem('prahari-v2-demo-session','true');return render(<MemoryRouter initialEntries={[path]}><DemoStoreProvider><App/></DemoStoreProvider></MemoryRouter>)};
 
 describe('PRAHARI Frontend V2 route contracts',()=>{
+  beforeEach(()=>localStorage.clear());
   it.each([
     ['/', 'Project Monitoring'], ['/login', 'Sign in to PAIMANA'], ['/officer/overview', 'Welcome back, Officer'],
     ['/officer/projects', 'Project list'], ['/officer/attention', 'Attention Queue'], ['/officer/alerts', 'Alert list'],
@@ -54,5 +56,34 @@ describe('PRAHARI Frontend V2 route contracts',()=>{
     fireEvent.click(screen.getByRole('button',{name:/Ask PRAHARI/}));
     expect(screen.getByLabelText('Ask PRAHARI assistant')).toHaveClass('open');
     expect(screen.getByText('Why is the schedule at risk?')).toBeInTheDocument();
+  });
+
+  it('filters projects and activates a saved view',()=>{
+    renderAt('/officer/projects');
+    fireEvent.change(screen.getByLabelText('Search'),{target:{value:'Bhatadi'}});
+    expect(screen.getByText(/BHATADI EXPANSION OC/i)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:/High concern/}));
+    expect(screen.getByRole('button',{name:/High concern/})).toHaveClass('active');
+  });
+
+  it('persists an alert acknowledgement in the workflow state',()=>{
+    renderAt('/officer/alerts/ALRT-2026-0187');
+    fireEvent.click(screen.getByRole('button',{name:'Acknowledge'}));
+    expect(screen.getAllByText('Acknowledged').length).toBeGreaterThan(0);
+    expect(screen.getByText('Alert acknowledged')).toBeInTheDocument();
+  });
+
+  it('adds an officer review note',()=>{
+    renderAt('/officer/reviews/REV-2026-0143');
+    fireEvent.change(screen.getByPlaceholderText('Add an evidence-backed review note'),{target:{value:'Source checked for demo.'}});
+    fireEvent.click(screen.getByRole('button',{name:'Add note'}));
+    expect(screen.getByText('Source checked for demo.')).toBeInTheDocument();
+  });
+
+  it('answers a curated Ask PRAHARI question deterministically',async()=>{
+    renderAt('/officer/projects/PRH-400033/schedule');
+    fireEvent.click(screen.getByRole('button',{name:/Ask PRAHARI/}));
+    fireEvent.click(screen.getByRole('button',{name:/Why is the schedule at risk/}));
+    await waitFor(()=>expect(screen.getByText(/Physical progress is below/)).toBeInTheDocument());
   });
 });
