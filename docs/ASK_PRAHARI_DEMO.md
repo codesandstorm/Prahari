@@ -14,4 +14,4 @@ Review: Summarize this review.; What actions are pending?; What evidence has bee
 
 Answers explicitly separate a short conclusion from evidence and remind the officer to verify material decisions. Unknown questions do not invent facts; they direct the user back to supported project, schedule, cost, alert, review, and evidence topics.
 
-UX: launcher, drawer close, Escape close, suggested prompts, free-text submission, history, typing indicator, auto-scroll where supported, context-aware prompt groups, and disabled empty send.
+UX: launcher, minimize/expand, drawer close, Escape close, suggested prompts, free-text submission, history, typing indicator, auto-scroll where supported, context-aware prompt groups, and disabled empty send.

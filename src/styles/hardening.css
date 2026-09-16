@@ -11,6 +11,7 @@
 .density-compact .kpi-card{min-height:78px}
 .density-compact .section-head{min-height:43px}
 .assistant-history{display:grid;gap:10px;margin-top:16px}
+.assistant-drawer.minimized{height:76px;top:auto;bottom:15px;overflow:hidden}.assistant-drawer.minimized .assistant-body,.assistant-drawer.minimized .assistant-form{display:none}
 .assistant-user{max-width:85%;margin:0 0 0 auto;padding:10px 12px;border-radius:12px 12px 3px 12px;color:#fff;background:#087bd0}
 .assistant-typing{padding:10px 12px;color:#56738c;font-size:.78rem}
 .assistant-typing span{animation:pulse 1s infinite}

@@ -56,6 +56,8 @@ describe('PRAHARI Frontend V2 route contracts',()=>{
     fireEvent.click(screen.getByRole('button',{name:/Ask PRAHARI/}));
     expect(screen.getByLabelText('Ask PRAHARI assistant')).toHaveClass('open');
     expect(screen.getByText('Why is the schedule at risk?')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:'Minimize Ask PRAHARI'}));
+    expect(screen.getByLabelText('Ask PRAHARI assistant')).toHaveClass('minimized');
   });
 
   it('filters projects and activates a saved view',()=>{
