@@ -1,10 +1,10 @@
 # Ask PRAHARI Deterministic Demo
 
-Ask PRAHARI makes no network or LLM call in Frontend V2. It resolves normalized questions against `src/data/mock/askPrahariResponses.js`, waits briefly, retains session conversation history, and uses a safe fallback for unsupported questions.
+Ask PRAHARI currently uses `DemoAssistantService` through the `AssistantService` contract. It makes no network or LLM call, resolves normalized questions against `src/data/mock/askPrahariResponses.js`, waits 600–850 ms, retains conversation history in local storage, and uses a safe fallback for unsupported questions.
 
 ## Supported questions
 
-Project: Why is the schedule at risk?; Which milestone is delayed?; What is the latest cost status?; What are the key risks for this project?; Summarize this project.; What action should I review first?
+Project: Why is the schedule at risk?; Which milestone is delayed?; What is the latest cost position?; Why does this project need attention?; What are the key execution concerns?; What evidence supports this assessment?; What should the officer review first?; Summarize BHATADI Expansion OC.; Has the completion date changed?; How does physical progress compare with planned progress?; What action should the officer take next?; Give me a brief for senior management.
 
 Portfolio: Which projects need attention?; Show high concern projects.; How many projects need data verification?; What changed this month?
 
@@ -12,6 +12,8 @@ Alert: Why was this alert raised?; What evidence supports this alert?; What shou
 
 Review: Summarize this review.; What actions are pending?; What evidence has been checked?
 
-Answers explicitly separate a short conclusion from evidence and remind the officer to verify material decisions. Unknown questions do not invent facts; they direct the user back to supported project, schedule, cost, alert, review, and evidence topics.
+Answers are derived from the canonical BHATADI project object and separate Answer, Key evidence, Recommended attention and Sources. Unknown questions do not invent facts.
 
-UX: launcher, minimize/expand, drawer close, Escape close, suggested prompts, free-text submission, history, typing indicator, auto-scroll where supported, context-aware prompt groups, and disabled empty send.
+UX: premium launcher, minimize/expand, drawer close, Escape close, clear conversation, suggested prompts, free-text submission, persisted history, typing indicator, auto-scroll, context indicator and disabled empty send.
+
+To replace the deterministic provider, instantiate `ApiAssistantService` (or a future `OllamaAssistantService`) in `src/services/assistant/AssistantService.js`. The drawer consumes only `assistantService.ask({ question, context, history })`, so the UI does not need to be rewritten.

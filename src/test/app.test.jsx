@@ -16,7 +16,7 @@ describe('PRAHARI Frontend V2 route contracts',()=>{
     ['/officer/reviews/REV-2026-0143', 'Review Workflow'], ['/officer/monitoring', 'Projects under continued monitoring'],
     ['/officer/analytics', 'Portfolio Progress Trend'], ['/officer/reports', 'Report library'],
     ['/officer/workspace', 'Assigned reviews'], ['/officer/notifications', 'Notification center'], ['/officer/settings', 'Display preferences'],
-    ['/officer/projects/PRH-400033', 'Project snapshot'], ['/officer/projects/PRH-400033/schedule', 'Three-month forecast preview'],
+    ['/officer/projects/PRH-400033', 'Project snapshot'], ['/officer/projects/PRH-400033/schedule', 'Three-month forecast'],
     ['/officer/projects/PRH-400033/cost', 'Cost-risk contributors'], ['/officer/projects/PRH-400033/execution-health', 'Execution Health signals'],
     ['/officer/projects/PRH-400033/milestones', 'Milestone register'],
   ])('renders %s',(route,expected)=>{
@@ -44,9 +44,9 @@ describe('PRAHARI Frontend V2 route contracts',()=>{
     expect(screen.getByRole('link',{name:'Projects'})).toBeInTheDocument();
   });
 
-  it('keeps research preview and evidence boundaries explicit',()=>{
+  it('keeps decision support and evidence boundaries explicit',()=>{
     renderAt('/officer/projects/PRH-400033');
-    expect(screen.getAllByText('Research preview').length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Forecast/).length).toBeGreaterThan(0);
     expect(screen.getAllByText('Execution Health').length).toBeGreaterThan(0);
     expect(screen.getByRole('heading',{name:'Milestone Journey'})).toBeInTheDocument();
   });
@@ -86,6 +86,6 @@ describe('PRAHARI Frontend V2 route contracts',()=>{
     renderAt('/officer/projects/PRH-400033/schedule');
     fireEvent.click(screen.getByRole('button',{name:/Ask PRAHARI/}));
     fireEvent.click(screen.getByRole('button',{name:/Why is the schedule at risk/}));
-    await waitFor(()=>expect(screen.getByText(/Physical progress is below/)).toBeInTheDocument());
+    await waitFor(()=>expect(screen.getByText(/physical progress remains behind/i)).toBeInTheDocument(),{timeout:1800});
   });
 });

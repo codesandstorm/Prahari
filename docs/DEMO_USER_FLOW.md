@@ -3,7 +3,7 @@
 ## Primary flow
 
 1. Open `/`; show the restrained hero carousel, ministry/sector switch, interactive state map, and public project search.
-2. Select **Officer Login** and sign in with `sih-demo-officer` / `Prahari@2026`.
+2. Select **Officer Login** and sign in with `monitoring-officer` / `Prahari@2026`.
 3. From Overview, open Projects. Search `BHATADI`, combine filters, then clear them.
 4. Open `PRH-400033`, move through Schedule and Milestone Journey, and select a milestone.
 5. Open Ask PRAHARI and ask **Why is the schedule at risk?** The deterministic answer cites the June 2026 demo evidence boundary.
@@ -20,4 +20,4 @@
 
 ## Repeatability
 
-Use Settings → Reset demo data → Confirm reset before each recording. This restores alerts, reviews, notes, notifications, and preferences. The state is local to the browser; it is not server persistence.
+Use Settings → Reset Experience → Confirm reset before each recording. This restores alerts, reviews, notes, notifications, assistant history, and preferences. The state is local to the browser; it is not server persistence.
