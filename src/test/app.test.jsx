@@ -7,6 +7,21 @@ import App from '../app/App';
 const renderAt=(path)=>render(<MemoryRouter initialEntries={[path]}><App/></MemoryRouter>);
 
 describe('PRAHARI Frontend V2 route contracts',()=>{
+  it.each([
+    ['/', 'Project Monitoring'], ['/login', 'Sign in to PAIMANA'], ['/officer/overview', 'Welcome back, Officer'],
+    ['/officer/projects', 'Project list'], ['/officer/attention', 'Attention Queue'], ['/officer/alerts', 'Alert list'],
+    ['/officer/alerts/ALRT-2026-0187', 'Alert Lifecycle'], ['/officer/reviews', 'Review Queue'],
+    ['/officer/reviews/REV-2026-0143', 'Review Workflow'], ['/officer/monitoring', 'Projects under continued monitoring'],
+    ['/officer/analytics', 'Portfolio Progress Trend'], ['/officer/reports', 'Report library'],
+    ['/officer/workspace', 'Assigned reviews'], ['/officer/notifications', 'Notification center'], ['/officer/settings', 'Display preferences'],
+    ['/officer/projects/PRH-400033', 'Project snapshot'], ['/officer/projects/PRH-400033/schedule', 'Three-month forecast preview'],
+    ['/officer/projects/PRH-400033/cost', 'Cost-risk contributors'], ['/officer/projects/PRH-400033/execution-health', 'Execution Health signals'],
+    ['/officer/projects/PRH-400033/milestones', 'Milestone register'],
+  ])('renders %s',(route,expected)=>{
+    renderAt(route);
+    expect(document.body).toHaveTextContent(expected);
+  });
+
   it('renders the public PAIMANA-first portal',()=>{
     renderAt('/');
     expect(screen.getByRole('heading',{name:'Project Monitoring'})).toBeInTheDocument();
