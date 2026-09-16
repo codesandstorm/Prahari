@@ -1,0 +1,45 @@
+.metric-main{min-width:0;overflow:hidden}
+.metric-main .surface{min-width:0}
+.metric-main .table-scroll{width:100%;max-width:100%;overflow:auto}
+.metric-main .data-table{min-width:1020px}
+.notification-list>a{padding:12px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--line);border-radius:6px;color:inherit;text-decoration:none}
+.notification-list>a:hover{background:#f4faff}
+.notification-list>a>span{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:#087bd0;background:#e7f5fd}
+.notification-list>a>div{flex:1}
+.side-list button.active{border-color:#1685d0;color:#075da8;background:#eaf6fd}
+.density-compact .data-table td{height:42px;padding-top:4px;padding-bottom:4px}
+.density-compact .kpi-card{min-height:78px}
+.density-compact .section-head{min-height:43px}
+.assistant-history{display:grid;gap:10px;margin-top:16px}
+.assistant-user{max-width:85%;margin:0 0 0 auto;padding:10px 12px;border-radius:12px 12px 3px 12px;color:#fff;background:#087bd0}
+.assistant-typing{padding:10px 12px;color:#56738c;font-size:.78rem}
+.assistant-typing span{animation:pulse 1s infinite}
+.assistant-form form{width:100%}
+.assistant-form button:disabled{opacity:.45}
+.search-input>button{width:28px;height:28px;border:0;border-radius:50%;color:#315a7e;background:#edf6fb}
+.pagination{padding:12px 14px;display:flex;justify-content:flex-end;align-items:center;gap:10px;border-top:1px solid var(--line);font-size:.75rem}
+.pagination button,.pagination select{height:34px;padding:0 10px;border:1px solid #bcd5e6;border-radius:6px;color:#16496f;background:#fff}
+.pagination button:disabled{opacity:.45}
+.pagination label{display:flex;align-items:center;gap:6px}
+.empty-state{padding:40px 20px;text-align:center;color:#55738c}
+.empty-state strong{display:block;color:var(--navy-800);font-size:1rem}
+.empty-state p{margin:5px 0 15px}
+.selected-row{background:#eef8fe!important}
+.page-back{margin:0 0 12px}
+.evidence-expansion{margin:12px;padding:12px;border-left:3px solid var(--blue-600);background:#f1f8fc}
+.note-composer{padding:12px;display:grid;grid-template-columns:1fr auto;gap:10px}
+.note-composer textarea{min-height:72px;padding:10px;border:1px solid #bcd5e6;border-radius:7px;resize:vertical}
+.review-next{padding:14px;display:flex;align-items:end;gap:10px}
+.review-next label{flex:1;font-size:.75rem;font-weight:700}
+.review-next input{width:100%;height:40px;margin-top:4px;padding:0 10px;border:1px solid #bcd5e6;border-radius:6px}
+.btn.danger{color:#fff;background:#c9283f}
+.btn:disabled,.text-link:disabled{opacity:.45;cursor:not-allowed}
+.success-note{color:#087e4d;border-color:#a9dfc6;background:#eefbf5}
+@keyframes pulse{50%{opacity:.3}}
+.project-card-link{margin-top:12px;display:flex;align-items:center;justify-content:space-between;color:#087bd0;text-decoration:none;font-size:.75rem;font-weight:750}.project-card-link svg{width:15px}.public-empty{grid-column:1/-1;padding:50px;text-align:center;color:#55738c}.landing-card-grid>article{transition:transform .22s,box-shadow .22s}.landing-card-grid>article:hover{transform:translateY(-4px);box-shadow:0 12px 30px #032d5024}
+.project-carousel-controls{display:flex;align-items:center;gap:8px}.project-carousel-controls button{width:36px;height:36px;border:1px solid #a9cde3;border-radius:50%;display:grid;place-items:center;color:#075b96;background:#fff}.project-carousel-controls button:hover{color:#fff;background:#075b96}.project-carousel-controls button svg{width:18px}
+.milestone-journey .milestone{font:inherit;border:0;background:transparent;color:inherit;cursor:pointer}.milestone-journey .milestone.selected{border-radius:8px;background:#edf8fe}.milestone-detail{margin:16px;padding:13px;border:1px solid #bcddeb;border-radius:8px;background:#f5fbfe}.milestone-detail strong,.milestone-detail span{display:block}.milestone-detail span{margin-top:3px;color:#4f708b;font-size:.75rem}.milestone-detail p{margin:8px 0 0}
+.health-grid>button{padding:0;border:1px solid transparent;border-radius:10px;display:flex;color:inherit;background:transparent;text-align:left;font:inherit}.health-grid>button.selected{border-color:#1685d0;background:#f2faff}.health-grid>button>div{padding:14px 14px 14px 0}
+.breadcrumb a{color:inherit;text-decoration:none}.breadcrumb a:hover{text-decoration:underline}
+@media(max-width:900px){.public-nav{display:none;height:auto;padding:10px 18px;align-items:stretch;flex-direction:column;gap:0}.public-nav.open{display:flex}.public-nav a{min-height:42px}.public-menu{display:block}}
+@media(max-width:650px){.note-composer,.review-next{grid-template-columns:1fr;display:grid}.pagination{justify-content:center;flex-wrap:wrap}}

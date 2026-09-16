@@ -7,11 +7,14 @@ import { AnalyticsPage, AttentionPage, MonitoringPage, NotificationsPage, Projec
 import { AlertDetailsPage, AlertsPage, ReviewDetailsPage, ReviewsPage } from '../pages/officer/WorkflowPages';
 import { CostPage, ExecutionHealthPage, MilestonesPage, ProjectOverviewPage, SchedulePage } from '../pages/project/ProjectPages';
 import LandingPage from '../pages/public/LandingPage';
+import { useDemoStore } from '../state/DemoStore';
+
+function ProtectedOfficer(){const {authenticated}=useDemoStore();return authenticated?<OfficerLayout/>:<Navigate to="/login" replace/>}
 
 export default function App(){return <Routes>
   <Route path="/" element={<LandingPage/>}/>
   <Route path="/login" element={<LoginPage/>}/>
-  <Route path="/officer" element={<OfficerLayout/>}>
+  <Route path="/officer" element={<ProtectedOfficer/>}>
     <Route index element={<Navigate to="overview" replace/>}/>
     <Route path="overview" element={<OverviewPage/>}/>
     <Route path="projects" element={<ProjectsPage/>}/>
